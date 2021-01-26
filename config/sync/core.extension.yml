@@ -1,5 +1,7 @@
 module:
   webform_clientside_validation: -1
+  admin_toolbar: 0
+  admin_toolbar_tools: 0
   aggregator: 0
   authorization: 0
   authorization_drupal_roles: 0
@@ -32,6 +34,7 @@ module:
   dblog: 0
   devel: 0
   diff: 0
+  draggableviews: 0
   dynamic_entity_reference: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
@@ -73,6 +76,9 @@ module:
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_drupal_ui: 0
   multiple_selects: 0
   node: 0
   node_revision_delete: 0
