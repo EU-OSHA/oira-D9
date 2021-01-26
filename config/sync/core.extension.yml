@@ -1,6 +1,8 @@
 module:
   webform_clientside_validation: -1
   aggregator: 0
+  authorization: 0
+  authorization_drupal_roles: 0
   automated_cron: 0
   better_exposed_filters: 0
   big_pipe: 0
@@ -30,11 +32,13 @@ module:
   dblog: 0
   devel: 0
   diff: 0
+  dynamic_entity_reference: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
   editor: 0
   entity: 0
   entity_print: 0
+  entity_reference_tree: 0
   entityqueue: 0
   exclude_node_title: 0
   facets: 0
@@ -46,32 +50,67 @@ module:
   filter: 0
   help: 0
   history: 0
+  hreflang: 0
   image: 0
+  imce: 0
   jquery_ui: 0
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
   language: 0
+  ldap_authentication: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
+  libraries: 0
   link: 0
+  linkchecker: 0
+  linkit: 0
   locale: 0
+  mailsystem: 0
+  matomo: 0
+  menu_block: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
+  multiple_selects: 0
   node: 0
+  node_revision_delete: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
+  pathologic: 0
   quickedit: 0
+  quicktabs: 0
+  r4032login: 0
   rdf: 0
+  redirect: 0
+  reroute_email: 0
+  responsive_menu: 0
   rest: 0
   search: 0
+  search_api: 0
+  search_api_attachments: 0
+  search_api_solr: 0
+  search_autocomplete: 0
   serialization: 0
   shortcut: 0
+  shs: 0
   sitemap: 0
+  smart_trim: 0
+  smtp: 0
+  spamspan: 0
+  stage_file_proxy: 0
   system: 0
   taxonomy: 0
+  taxonomy_access_fix: 0
+  taxonomy_manager: 0
   text: 0
+  tmgmt: 0
+  tmgmt_language_combination: 0
+  tmgmt_local: 0
+  tmgmt_locale: 0
   token: 0
   toolbar: 0
   tour: 0
@@ -89,7 +128,9 @@ module:
   workbench_moderation: 0
   xmlsitemap_engines: 0
   youtube: 0
+  pathauto: 1
   xmlsitemap: 1
+  externalauth: 10
   views: 10
   standard: 1000
   eu_cookie_compliance: 1001
