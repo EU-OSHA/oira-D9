@@ -14,6 +14,7 @@ dependencies:
     - image
     - path
     - text
+    - workbench_moderation
 _core:
   default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
 id: node.article.default
