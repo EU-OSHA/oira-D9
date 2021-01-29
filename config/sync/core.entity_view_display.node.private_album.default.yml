@@ -1,0 +1,32 @@
+uuid: e89bb35f-1aab-4f70-9d4e-2e767b3d05f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.private_album.body
+    - node.type.private_album
+  module:
+    - text
+    - user
+id: node.private_album.default
+targetEntityType: node
+bundle: private_album
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

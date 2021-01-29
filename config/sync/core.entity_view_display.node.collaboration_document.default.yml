@@ -1,0 +1,32 @@
+uuid: 63ca06e7-ce0f-429d-a2f8-d0d43e846cbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.collaboration_document.body
+    - node.type.collaboration_document
+  module:
+    - text
+    - user
+id: node.collaboration_document.default
+targetEntityType: node
+bundle: collaboration_document
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

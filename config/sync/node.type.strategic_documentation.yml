@@ -1,4 +1,4 @@
-uuid: d99f95e1-62a2-45ed-9d7e-6870a94b9f33
+uuid: d8592743-51f2-4461-9f1c-ab619abff97c
 langcode: en
 status: true
 dependencies:
@@ -9,12 +9,10 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: Article
-type: article
-description: 'Introductions and Sections'
+name: 'Strategic documentation'
+type: strategic_documentation
+description: 'Strategic Documentation'
 help: ''
 new_revision: true
-preview_mode: 1
+preview_mode: 0
 display_submitted: false

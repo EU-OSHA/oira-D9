@@ -1,4 +1,4 @@
-uuid: d99f95e1-62a2-45ed-9d7e-6870a94b9f33
+uuid: b6cbdb9f-c48d-42d4-a7b7-bdcd6572bc7b
 langcode: en
 status: true
 dependencies:
@@ -9,12 +9,10 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: Article
-type: article
-description: 'Introductions and Sections'
+name: 'OiRA Tools'
+type: oira_tools
+description: ''
 help: ''
 new_revision: true
-preview_mode: 1
+preview_mode: 0
 display_submitted: false

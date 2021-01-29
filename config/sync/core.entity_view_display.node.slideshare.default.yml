@@ -1,0 +1,32 @@
+uuid: fd749d6e-126d-4d92-90dd-bc921c2a8da3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slideshare.body
+    - node.type.slideshare
+  module:
+    - text
+    - user
+id: node.slideshare.default
+targetEntityType: node
+bundle: slideshare
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 16e2a8ad-4a0a-4d29-96d1-282ae619167a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.slideshare
+  module:
+    - text
+id: node.slideshare.body
+field_name: body
+entity_type: node
+bundle: slideshare
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

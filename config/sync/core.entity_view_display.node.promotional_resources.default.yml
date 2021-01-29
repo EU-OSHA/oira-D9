@@ -1,0 +1,32 @@
+uuid: 856f961d-c56b-4ee0-a31b-0d8dfc834529
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.promotional_resources.body
+    - node.type.promotional_resources
+  module:
+    - text
+    - user
+id: node.promotional_resources.default
+targetEntityType: node
+bundle: promotional_resources
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

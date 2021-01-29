@@ -1,0 +1,22 @@
+uuid: 2be08987-1f90-438a-a718-4821cd31c433
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_image
+id: node.private_image.promote
+field_name: promote
+entity_type: node
+bundle: private_image
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,32 @@
+uuid: 7a62c12a-6e95-4da6-8b38-22d00d8c3544
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slide.body
+    - node.type.slide
+  module:
+    - text
+    - user
+id: node.slide.default
+targetEntityType: node
+bundle: slide
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

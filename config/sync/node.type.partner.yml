@@ -1,0 +1,18 @@
+uuid: 3889fee5-4499-4b66-a258-56fecc7bf817
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Partner
+type: partner
+description: 'Content type to store info about OiRA partners'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

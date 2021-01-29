@@ -1,0 +1,22 @@
+uuid: 2214275a-c830-40c7-ae9c-9c8076202e83
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_album
+id: node.private_album.promote
+field_name: promote
+entity_type: node
+bundle: private_album
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

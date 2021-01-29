@@ -1,0 +1,34 @@
+uuid: 988e9b30-473d-4377-ba8b-cf366a8f7a5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.strategic_documentation.body
+    - node.type.strategic_documentation
+  module:
+    - text
+    - user
+id: node.strategic_documentation.teaser
+targetEntityType: node
+bundle: strategic_documentation
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

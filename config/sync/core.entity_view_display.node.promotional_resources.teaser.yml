@@ -1,0 +1,34 @@
+uuid: f52521d6-a3e3-4ee3-94e2-344ebd7f6e85
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.promotional_resources.body
+    - node.type.promotional_resources
+  module:
+    - text
+    - user
+id: node.promotional_resources.teaser
+targetEntityType: node
+bundle: promotional_resources
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
