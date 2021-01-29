@@ -1,0 +1,8 @@
+uuid: 0a995b44-cafd-46a1-8ebc-b80894466f6b
+langcode: und
+status: true
+dependencies: {  }
+name: 'Contact Type of Sender'
+vid: contact_type_of_sender
+description: 'Contact Form - type of sender'
+weight: 0

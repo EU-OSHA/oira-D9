@@ -1,0 +1,8 @@
+uuid: 8503f6e4-d471-4744-b63f-cb3fe952fc76
+langcode: und
+status: true
+dependencies: {  }
+name: Sectors
+vid: sectors
+description: ''
+weight: 0

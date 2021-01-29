@@ -1,0 +1,8 @@
+uuid: 57f47054-4667-48db-8997-1114bb9dedfc
+langcode: und
+status: true
+dependencies: {  }
+name: 'Sector category'
+vid: sector_category
+description: ''
+weight: 0

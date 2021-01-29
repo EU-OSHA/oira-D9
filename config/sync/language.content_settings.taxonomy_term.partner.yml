@@ -1,0 +1,11 @@
+uuid: 1f43fd50-30ae-4062-98b5-7245fd9d1d45
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.partner
+id: taxonomy_term.partner
+target_entity_type_id: taxonomy_term
+target_bundle: partner
+default_langcode: und
+language_alterable: false

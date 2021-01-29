@@ -1,0 +1,8 @@
+uuid: 48297378-a811-4f73-8479-b150fed46e45
+langcode: und
+status: true
+dependencies: {  }
+name: 'WG Category'
+vid: wg_category
+description: ''
+weight: 0

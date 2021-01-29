@@ -1,0 +1,11 @@
+uuid: 7b03cc5c-006b-47a0-86ac-de34e85ac76a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.esener
+id: taxonomy_term.esener
+target_entity_type_id: taxonomy_term
+target_bundle: esener
+default_langcode: und
+language_alterable: false
