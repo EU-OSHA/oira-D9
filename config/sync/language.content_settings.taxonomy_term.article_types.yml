@@ -1,0 +1,11 @@
+uuid: a8df6315-94f9-4197-89d7-8117bde85e8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.article_types
+id: taxonomy_term.article_types
+target_entity_type_id: taxonomy_term
+target_bundle: article_types
+default_langcode: und
+language_alterable: false

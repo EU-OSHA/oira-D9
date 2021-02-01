@@ -1,0 +1,8 @@
+uuid: fdbb9ac9-b56c-431c-a244-acd2cd97b59a
+langcode: und
+status: true
+dependencies: {  }
+name: 'WG Role 1'
+vid: wg_role_1
+description: ''
+weight: 0

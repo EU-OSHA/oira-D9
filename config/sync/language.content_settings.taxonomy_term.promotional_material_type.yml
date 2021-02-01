@@ -1,0 +1,11 @@
+uuid: fa1611cc-c899-428c-831d-e967192b7c39
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.promotional_material_type
+id: taxonomy_term.promotional_material_type
+target_entity_type_id: taxonomy_term
+target_bundle: promotional_material_type
+default_langcode: und
+language_alterable: false

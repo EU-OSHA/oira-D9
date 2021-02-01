@@ -1,0 +1,11 @@
+uuid: 31889083-4a11-495a-a18b-9f81ed58b208
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.contact_type_of_sender
+id: taxonomy_term.contact_type_of_sender
+target_entity_type_id: taxonomy_term
+target_bundle: contact_type_of_sender
+default_langcode: und
+language_alterable: false

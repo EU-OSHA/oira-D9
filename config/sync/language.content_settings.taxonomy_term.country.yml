@@ -1,0 +1,11 @@
+uuid: 606fbb96-ea22-457b-92f0-f165d08034f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.country
+id: taxonomy_term.country
+target_entity_type_id: taxonomy_term
+target_bundle: country
+default_langcode: und
+language_alterable: false

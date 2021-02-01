@@ -1,0 +1,8 @@
+uuid: 17a4e36b-739f-49c0-8b44-fc3745128c4f
+langcode: und
+status: true
+dependencies: {  }
+name: 'Wiki Categories'
+vid: wiki_categories
+description: ''
+weight: 0
