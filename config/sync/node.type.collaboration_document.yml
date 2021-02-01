@@ -1,0 +1,17 @@
+uuid: 297119ec-4ca3-49b9-8a65-f0a887339c11
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Collaboration document'
+type: collaboration_document
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,11 @@
+uuid: 1404ab3d-3ea5-41fb-abbd-ef083e18e223
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oira_tools
+id: node.oira_tools
+target_entity_type_id: node
+target_bundle: oira_tools
+default_langcode: und
+language_alterable: false

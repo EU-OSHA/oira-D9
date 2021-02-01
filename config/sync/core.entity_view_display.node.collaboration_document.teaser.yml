@@ -1,0 +1,42 @@
+uuid: 426ef2dd-5119-4205-997c-cadd211ca903
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.collaboration_document.body
+    - field.field.node.collaboration_document.field_collaboration_items
+    - field.field.node.collaboration_document.field_languages
+    - field.field.node.collaboration_document.field_multiple_sector
+    - field.field.node.collaboration_document.field_strategic_type_2
+    - node.type.collaboration_document
+  module:
+    - text
+    - user
+id: node.collaboration_document.teaser
+targetEntityType: node
+bundle: collaboration_document
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_collaboration_items: true
+  field_languages: true
+  field_multiple_sector: true
+  field_strategic_type_2: true
+  langcode: true

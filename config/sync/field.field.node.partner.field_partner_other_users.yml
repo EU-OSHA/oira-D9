@@ -1,0 +1,19 @@
+uuid: 971941c5-b272-406c-bfc9-d31a8a7e9515
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_other_users
+    - node.type.partner
+id: node.partner.field_partner_other_users
+field_name: field_partner_other_users
+entity_type: node
+bundle: partner
+label: 'Other users'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

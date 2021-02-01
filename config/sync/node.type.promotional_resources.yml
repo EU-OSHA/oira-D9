@@ -1,0 +1,18 @@
+uuid: 03428b31-906c-4769-827f-9d0ceab74f2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Promotional resources'
+type: promotional_resources
+description: 'Leaflet, poster, presentations, link to videos, etc...'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

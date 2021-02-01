@@ -1,0 +1,32 @@
+uuid: c855ae5a-f6a6-4b5f-b796-cc5f6e84ff4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.wiki_page.body
+    - node.type.wiki_page
+  module:
+    - text
+    - user
+id: node.wiki_page.default
+targetEntityType: node
+bundle: wiki_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

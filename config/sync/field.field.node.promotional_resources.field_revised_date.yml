@@ -1,0 +1,21 @@
+uuid: 94489643-aa72-4ef1-9ffb-95c2a600fafd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_revised_date
+    - node.type.promotional_resources
+  module:
+    - datetime
+id: node.promotional_resources.field_revised_date
+field_name: field_revised_date
+entity_type: node
+bundle: promotional_resources
+label: 'Revised date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

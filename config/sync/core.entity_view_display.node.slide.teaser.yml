@@ -1,0 +1,40 @@
+uuid: 12d407ff-afaf-4bce-86b4-4da96fbaa3d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slide.body
+    - field.field.node.slide.field_image
+    - field.field.node.slide.field_image_media
+    - field.field.node.slide.field_link
+    - node.type.slide
+  module:
+    - text
+    - user
+id: node.slide.teaser
+targetEntityType: node
+bundle: slide
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_image: true
+  field_image_media: true
+  field_link: true
+  langcode: true

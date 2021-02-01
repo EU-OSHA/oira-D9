@@ -1,0 +1,11 @@
+uuid: be7d63a3-b9b8-4b4d-b8b2-540402515ad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.strategic_documentation
+id: node.strategic_documentation
+target_entity_type_id: node
+target_bundle: strategic_documentation
+default_langcode: und
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: 2ae4b1ac-8f93-4d98-b91a-adb35017fe84
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_dedicated_oira_website
+field_name: field_dedicated_oira_website
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

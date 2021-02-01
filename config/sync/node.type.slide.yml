@@ -1,0 +1,18 @@
+uuid: 5f7815ad-8d76-4f9a-bfd8-e706622f7884
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Slide
+type: slide
+description: 'Custom content type used for slideshow.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

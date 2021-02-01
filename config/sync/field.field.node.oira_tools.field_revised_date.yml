@@ -1,0 +1,21 @@
+uuid: 695b8009-4224-4804-8f43-519658d2f913
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_revised_date
+    - node.type.oira_tools
+  module:
+    - datetime
+id: node.oira_tools.field_revised_date
+field_name: field_revised_date
+entity_type: node
+bundle: oira_tools
+label: 'Revised date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

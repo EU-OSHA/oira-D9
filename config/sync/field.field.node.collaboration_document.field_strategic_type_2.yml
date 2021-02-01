@@ -1,0 +1,29 @@
+uuid: 0022d291-da12-4138-8a6d-ac99c5602820
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_strategic_type_2
+    - node.type.collaboration_document
+    - taxonomy.vocabulary.strategic_type
+id: node.collaboration_document.field_strategic_type_2
+field_name: field_strategic_type_2
+entity_type: node
+bundle: collaboration_document
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      strategic_type: strategic_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

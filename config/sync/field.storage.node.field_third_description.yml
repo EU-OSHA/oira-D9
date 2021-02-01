@@ -1,0 +1,19 @@
+uuid: 83c4fa10-ff66-42d3-8cd1-a96508a52cb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_third_description
+field_name: field_third_description
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

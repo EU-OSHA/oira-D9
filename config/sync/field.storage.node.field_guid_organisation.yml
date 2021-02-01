@@ -1,0 +1,21 @@
+uuid: 90e34e85-6bc0-4f32-8713-7f4bd2c1bece
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_guid_organisation
+field_name: field_guid_organisation
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

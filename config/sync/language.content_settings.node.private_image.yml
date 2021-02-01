@@ -1,0 +1,11 @@
+uuid: afd97668-c83b-4049-9a1a-9cba191d1663
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_image
+id: node.private_image
+target_entity_type_id: node
+target_bundle: private_image
+default_langcode: und
+language_alterable: false

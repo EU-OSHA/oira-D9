@@ -1,0 +1,29 @@
+uuid: d39f1252-96a6-4e59-a728-a6f32b2035fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tool_type
+    - node.type.oira_tools
+    - taxonomy.vocabulary.type_of_tool
+id: node.oira_tools.field_tool_type
+field_name: field_tool_type
+entity_type: node
+bundle: oira_tools
+label: Type
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_of_tool: type_of_tool
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

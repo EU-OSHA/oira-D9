@@ -1,0 +1,34 @@
+uuid: ee09fc68-0356-4ae0-acbe-e70e9d7b1580
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.wiki_page.body
+    - node.type.wiki_page
+  module:
+    - text
+    - user
+id: node.wiki_page.teaser
+targetEntityType: node
+bundle: wiki_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

@@ -1,0 +1,28 @@
+uuid: b46657f9-20d9-4dc5-8661-d1cffdb35cbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slideshare.field_character_count
+    - field.field.node.slideshare.field_page_count
+    - node.type.slideshare
+  module:
+    - user
+id: node.slideshare.teaser
+targetEntityType: node
+bundle: slideshare
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_character_count: true
+  field_page_count: true
+  langcode: true
