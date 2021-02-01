@@ -1,0 +1,23 @@
+uuid: 0b17bff1-07f1-4381-9ef5-256bb0bd8696
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oira
+    - node.type.promotional_resources
+id: node.promotional_resources.field_oira
+field_name: field_oira
+entity_type: node
+bundle: promotional_resources
+label: 'OiRA / IRAT'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: OiRA
+  off_label: IRAT
+field_type: boolean

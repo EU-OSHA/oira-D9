@@ -4,8 +4,21 @@ status: true
 dependencies:
   config:
     - field.field.node.promotional_resources.body
+    - field.field.node.promotional_resources.field_co_author
+    - field.field.node.promotional_resources.field_country
+    - field.field.node.promotional_resources.field_image
+    - field.field.node.promotional_resources.field_image_home_latest_material
+    - field.field.node.promotional_resources.field_image_media
+    - field.field.node.promotional_resources.field_oira
+    - field.field.node.promotional_resources.field_publication_date
+    - field.field.node.promotional_resources.field_revised_date
+    - field.field.node.promotional_resources.field_wf_notification
+    - image.style.thumbnail
     - node.type.promotional_resources
   module:
+    - datetime
+    - image
+    - media_library
     - path
     - text
     - workbench_moderation
@@ -30,6 +43,77 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_co_author:
+    weight: 127
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_country:
+    weight: 128
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    weight: 123
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_image_home_latest_material:
+    type: media_library_widget
+    weight: 130
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_media:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_oira:
+    weight: 125
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_publication_date:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_revised_date:
+    weight: 126
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_wf_notification:
+    weight: 129
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   langcode:
     type: language_select
     weight: 2

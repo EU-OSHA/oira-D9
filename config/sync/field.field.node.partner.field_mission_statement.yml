@@ -1,0 +1,19 @@
+uuid: 3e98d3a1-d2d6-4ea0-bd88-9939f3d09dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mission_statement
+    - node.type.partner
+id: node.partner.field_mission_statement
+field_name: field_mission_statement
+entity_type: node
+bundle: partner
+label: 'Contribution to OiRA'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

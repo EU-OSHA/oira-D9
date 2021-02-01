@@ -11,7 +11,7 @@ id: node.oira_tools.body
 field_name: body
 entity_type: node
 bundle: oira_tools
-label: Body
+label: Description
 description: ''
 required: false
 translatable: true

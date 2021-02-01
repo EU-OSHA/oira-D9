@@ -3,22 +3,35 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.slideshare.body
+    - field.field.node.slideshare.field_character_count
+    - field.field.node.slideshare.field_page_count
     - node.type.slideshare
   module:
-    - text
     - user
 id: node.slideshare.default
 targetEntityType: node
 bundle: slideshare
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 101
-    settings: {  }
+  field_character_count:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_page_count:
+    weight: 101
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
     region: content
   links:
     weight: 100

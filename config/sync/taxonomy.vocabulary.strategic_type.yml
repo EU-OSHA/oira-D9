@@ -1,0 +1,8 @@
+uuid: 2702799d-2b63-4d23-941c-33807ed5a66d
+langcode: und
+status: true
+dependencies: {  }
+name: 'Strategic Type'
+vid: strategic_type
+description: ''
+weight: 0

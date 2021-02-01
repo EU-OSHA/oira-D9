@@ -1,0 +1,29 @@
+uuid: 449ed069-6e8c-4f39-bc4e-417ff161733f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sector
+    - node.type.private_image
+    - taxonomy.vocabulary.sectors
+id: node.private_image.field_sector
+field_name: field_sector
+entity_type: node
+bundle: private_image
+label: Sector
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sectors: sectors
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

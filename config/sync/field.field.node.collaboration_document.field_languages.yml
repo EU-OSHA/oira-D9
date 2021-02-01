@@ -1,0 +1,23 @@
+uuid: eb2dcc1a-1503-4d82-a6c0-ad57f9506d32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_languages
+    - node.type.collaboration_document
+id: node.collaboration_document.field_languages
+field_name: field_languages
+entity_type: node
+bundle: collaboration_document
+label: Languages
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:configurable_language'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: bc85e345-c3c2-4f50-b22f-d5f04286e1f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_oira
+field_name: field_oira
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

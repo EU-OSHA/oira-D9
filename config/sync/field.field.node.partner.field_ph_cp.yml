@@ -1,0 +1,19 @@
+uuid: f25aefc9-e939-4a4a-b005-cb84eafe67ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ph_cp
+    - node.type.partner
+id: node.partner.field_ph_cp
+field_name: field_ph_cp
+entity_type: node
+bundle: partner
+label: 'Postal code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,30 @@
+uuid: afe40e9e-3a67-4622-8ebb-fd2d2ba63958
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_resources
+    - node.type.news
+    - node.type.slideshare
+id: node.news.field_additional_resources
+field_name: field_additional_resources
+entity_type: node
+bundle: news
+label: 'Additional resources'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+      slideshare: slideshare
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: news
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 302d4aac-fd9e-43ea-8d23-f096dc1c9f9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_page_count
+field_name: field_page_count
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

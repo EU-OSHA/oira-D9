@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.collaboration_document.body
+    - field.field.node.collaboration_document.field_collaboration_items
+    - field.field.node.collaboration_document.field_languages
+    - field.field.node.collaboration_document.field_multiple_sector
+    - field.field.node.collaboration_document.field_strategic_type_2
     - node.type.collaboration_document
   module:
     - text
@@ -19,6 +23,39 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_collaboration_items:
+    type: entity_reference_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_languages:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_multiple_sector:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_strategic_type_2:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100

@@ -4,24 +4,16 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.private_album.body
+    - field.field.node.private_album.field_multiple_sector
+    - field.field.node.private_album.field_private_images
     - node.type.private_album
   module:
-    - text
     - user
 id: node.private_album.teaser
 targetEntityType: node
 bundle: private_album
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
@@ -31,4 +23,6 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_multiple_sector: true
+  field_private_images: true
   langcode: true

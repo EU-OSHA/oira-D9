@@ -1,0 +1,37 @@
+uuid: 66a0efa6-071a-47eb-b52d-fdad4d7df6c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_collaboration_items
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.collaboration_document
+id: node.collaboration_document.field_collaboration_items
+field_name: field_collaboration_items
+entity_type: node
+bundle: collaboration_document
+label: 'Collaboration items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: audio
+field_type: entity_reference

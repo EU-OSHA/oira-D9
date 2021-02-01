@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.private_image.body
+    - field.field.node.private_image.field_oira_private_image
+    - field.field.node.private_image.field_sector
     - node.type.private_image
   module:
     - text
@@ -19,6 +21,23 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_oira_private_image:
+    type: entity_reference_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_sector:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100

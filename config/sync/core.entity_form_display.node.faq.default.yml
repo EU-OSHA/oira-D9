@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - field.field.node.faq.body
+    - field.field.node.faq.field_oira
+    - field.field.node.faq.field_weight
     - node.type.faq
   module:
     - path
@@ -30,6 +32,20 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_oira:
+    weight: 122
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_weight:
+    weight: 123
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   langcode:
     type: language_select
     weight: 2

@@ -1,0 +1,23 @@
+uuid: 1ce20fdf-4605-45d7-b576-b735226a3672
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oira
+    - node.type.faq
+id: node.faq.field_oira
+field_name: field_oira
+entity_type: node
+bundle: faq
+label: OIRA
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OiRA
+  off_label: IRAT
+field_type: boolean

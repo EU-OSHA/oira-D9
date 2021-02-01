@@ -3,33 +3,37 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.slideshare.body
+    - field.field.node.slideshare.field_character_count
+    - field.field.node.slideshare.field_page_count
     - node.type.slideshare
   module:
     - path
-    - text
     - workbench_moderation
 id: node.slideshare.default
 targetEntityType: node
 bundle: slideshare
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 121
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_character_count:
+    weight: 122
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_page_count:
+    weight: 121
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   langcode:
     type: language_select
     weight: 2

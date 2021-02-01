@@ -4,8 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.slide.body
+    - field.field.node.slide.field_image
+    - field.field.node.slide.field_image_media
+    - field.field.node.slide.field_link
+    - image.style.thumbnail
     - node.type.slide
   module:
+    - image
+    - link
     - path
     - text
     - workbench_moderation
@@ -30,6 +36,32 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_image_media:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_link:
+    weight: 124
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   langcode:
     type: language_select
     weight: 2

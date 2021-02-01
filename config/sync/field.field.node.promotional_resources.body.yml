@@ -11,7 +11,7 @@ id: node.promotional_resources.body
 field_name: body
 entity_type: node
 bundle: promotional_resources
-label: Body
+label: Description
 description: ''
 required: false
 translatable: true

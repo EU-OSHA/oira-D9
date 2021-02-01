@@ -1,0 +1,19 @@
+uuid: 9b5e2627-9615-4a41-bb67-66ea6e2fce89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ph_town
+    - node.type.partner
+id: node.partner.field_ph_town
+field_name: field_ph_town
+entity_type: node
+bundle: partner
+label: City
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
