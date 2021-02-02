@@ -1,0 +1,21 @@
+uuid: 1be247f4-eaf3-4998-b941-a2db632f5f29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_revised_date
+    - node.type.wiki_page
+  module:
+    - datetime
+id: node.wiki_page.field_revised_date
+field_name: field_revised_date
+entity_type: node
+bundle: wiki_page
+label: 'Revised date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,23 @@
+uuid: c0558c33-4f09-4e51-a4d6-cafd1d1fa148
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wf_notification
+    - node.type.strategic_documentation
+id: node.strategic_documentation.field_wf_notification
+field_name: field_wf_notification
+entity_type: node
+bundle: strategic_documentation
+label: 'Disable notifications'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
