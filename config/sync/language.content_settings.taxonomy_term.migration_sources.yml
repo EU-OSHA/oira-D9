@@ -1,0 +1,11 @@
+uuid: aa1f6271-8b5b-4976-ab89-50c5171298f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migration_sources
+id: taxonomy_term.migration_sources
+target_entity_type_id: taxonomy_term
+target_bundle: migration_sources
+default_langcode: und
+language_alterable: false

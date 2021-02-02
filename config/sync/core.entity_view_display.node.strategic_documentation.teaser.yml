@@ -5,6 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.strategic_documentation.body
+    - field.field.node.strategic_documentation.field_country
+    - field.field.node.strategic_documentation.field_language
+    - field.field.node.strategic_documentation.field_link
+    - field.field.node.strategic_documentation.field_multiple_sector
+    - field.field.node.strategic_documentation.field_oira
+    - field.field.node.strategic_documentation.field_private_file
+    - field.field.node.strategic_documentation.field_private_image
+    - field.field.node.strategic_documentation.field_publication_date
+    - field.field.node.strategic_documentation.field_strategic_type
+    - field.field.node.strategic_documentation.field_wf_notification
     - node.type.strategic_documentation
   module:
     - text
@@ -31,4 +41,15 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_country: true
+  field_language: true
+  field_link: true
+  field_multiple_sector: true
+  field_oira: true
+  field_private_file: true
+  field_private_image: true
+  field_publication_date: true
+  field_strategic_type: true
+  field_wf_notification: true
   langcode: true
+  search_api_excerpt: true

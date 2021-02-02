@@ -4,8 +4,20 @@ status: true
 dependencies:
   config:
     - field.field.node.strategic_documentation.body
+    - field.field.node.strategic_documentation.field_country
+    - field.field.node.strategic_documentation.field_language
+    - field.field.node.strategic_documentation.field_link
+    - field.field.node.strategic_documentation.field_multiple_sector
+    - field.field.node.strategic_documentation.field_oira
+    - field.field.node.strategic_documentation.field_private_file
+    - field.field.node.strategic_documentation.field_private_image
+    - field.field.node.strategic_documentation.field_publication_date
+    - field.field.node.strategic_documentation.field_strategic_type
+    - field.field.node.strategic_documentation.field_wf_notification
     - node.type.strategic_documentation
   module:
+    - datetime
+    - link
     - text
     - user
 id: node.strategic_documentation.default
@@ -20,6 +32,97 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_country:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_language:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_link:
+    weight: 109
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_multiple_sector:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_oira:
+    weight: 111
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_private_file:
+    type: entity_reference_entity_view
+    weight: 108
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_private_image:
+    type: entity_reference_entity_view
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_publication_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_strategic_type:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_wf_notification:
+    weight: 110
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -30,3 +133,4 @@ hidden:
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   langcode: true
+  search_api_excerpt: true

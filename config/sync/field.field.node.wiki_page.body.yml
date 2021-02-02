@@ -11,7 +11,7 @@ id: node.wiki_page.body
 field_name: body
 entity_type: node
 bundle: wiki_page
-label: Body
+label: 'Article text'
 description: ''
 required: false
 translatable: true

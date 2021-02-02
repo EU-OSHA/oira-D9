@@ -1,0 +1,23 @@
+uuid: c04d930d-ed37-4af0-a5b8-b95e0585680f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oira
+    - node.type.strategic_documentation
+id: node.strategic_documentation.field_oira
+field_name: field_oira
+entity_type: node
+bundle: strategic_documentation
+label: 'OiRA / IRAT'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: OiRA
+  off_label: IRAT
+field_type: boolean
