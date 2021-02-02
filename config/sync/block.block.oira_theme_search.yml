@@ -1,15 +1,15 @@
-uuid: 50f6bd0f-5851-4f79-9608-7ac7feffdba9
+uuid: cd132611-18c1-43de-823c-abff46c225ed
 langcode: en
 status: true
 dependencies:
   module:
     - search
   theme:
-    - bartik
+    - oira_theme
 _core:
   default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
-id: bartik_search
-theme: bartik
+id: oira_theme_search
+theme: oira_theme
 region: sidebar_first
 weight: -1
 provider: null

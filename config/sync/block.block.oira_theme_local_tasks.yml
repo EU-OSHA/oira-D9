@@ -1,13 +1,13 @@
-uuid: 8c29a7b5-7e7d-45d0-be56-9ead37f87833
+uuid: 890a2b74-1b5f-44d4-ac60-1f7abc628079
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
+    - oira_theme
 _core:
   default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: bartik_local_tasks
-theme: bartik
+id: oira_theme_local_tasks
+theme: oira_theme
 region: content
 weight: -40
 provider: null

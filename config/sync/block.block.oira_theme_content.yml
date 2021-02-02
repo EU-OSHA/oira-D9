@@ -1,0 +1,22 @@
+uuid: e34187d0-f4ce-41f7-8678-33d1b05ea236
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oira_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: oira_theme_content
+theme: oira_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
