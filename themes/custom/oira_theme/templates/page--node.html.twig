@@ -113,11 +113,11 @@
 {% endblock %}
 
 {% block content %}
-        <div id="main" class="{{ container }}">
-          {{ page.breadcrumb }}
+        <div id="main">
+          <div class="container">{{ page.breadcrumb }}</div>
           <div class="row row-offcanvas row-offcanvas-left clearfix">
               <main{{ content_attributes }}>
-                <section class="section">
+                <section class="section container">
                   <a id="main-content" tabindex="-1"></a>
                   {{ page.content }}
                 </section>

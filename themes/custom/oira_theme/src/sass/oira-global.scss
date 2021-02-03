@@ -5,9 +5,10 @@
 @import 'base/variables';
 
 @import 'components/accordion';
+@import 'components/breadcrumbs';
 @import 'components/buttons';
 @import 'components/grid';
-@import 'components/helper';
+@import 'components/headings';
 @import 'components/links';
 @import 'components/modal';
 
@@ -20,3 +21,5 @@
 @import 'responsive/common/common-responsive';
 @import 'responsive/mobile/mobile-responsive';
 @import 'responsive/tablet/tablet-responsive';
+
+@import 'components/helper';

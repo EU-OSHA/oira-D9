@@ -1,0 +1,81 @@
+/* Common elements */
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: $text-color-black;
+  font-size: 16px;
+}
+
+a{
+  color: $text-color-purple;
+  font-weight: bold;
+  font-style: italic;
+  &:hover{
+    color: $text-color-purple;
+    text-decoration: underline;
+  }
+}
+
+.see-more{
+  display: block;
+  a{
+    color: $text-color-blue-light;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+    &:hover{
+      text-decoration: underline;
+    }
+    &:before {
+      content: '>';
+      margin-right: 5px;
+      display: inline-block;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+.datetime, .field--type-datetime{
+  color: $text-color-purple;
+  font-weight: bold;
+}
+
+.field--name-field-summary{
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* End Common elements */
+
+/* News view */
+.view-osh-news{
+  h2{
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .views-row{
+    padding: 30px;
+    width: 100%;
+  }
+  .views-row:nth-child(even){
+    background-color: $bg-color-white;
+  }
+  .views-row:nth-child(odd){
+    background-color: $bg-color-purple-light;
+  }
+  .see-more{
+    margin-top: 15px;
+  }
+}
+/* End News view */
+
+/* News detail */
+.node--type-news{
+  h1 {
+    color: $text-color-black;
+  }
+}
+
+/* End news detail */
