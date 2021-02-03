@@ -1,0 +1,23 @@
+uuid: 586049ee-3585-4b9e-a05b-3c2fdf3be9bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wiki_page_url
+    - node.type.wiki_page
+  module:
+    - link
+id: node.wiki_page.field_wiki_page_url
+field_name: field_wiki_page_url
+entity_type: node
+bundle: wiki_page
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -11,7 +11,9 @@ dependencies:
     - field.field.node.promotional_resources.field_image_home_latest_material
     - field.field.node.promotional_resources.field_image_media
     - field.field.node.promotional_resources.field_oira
+    - field.field.node.promotional_resources.field_promotional_material_type
     - field.field.node.promotional_resources.field_publication_date
+    - field.field.node.promotional_resources.field_resource_fc
     - field.field.node.promotional_resources.field_revised_date
     - field.field.node.promotional_resources.field_wf_notification
     - node.type.promotional_resources
@@ -46,7 +48,9 @@ hidden:
   field_image_home_latest_material: true
   field_image_media: true
   field_oira: true
+  field_promotional_material_type: true
   field_publication_date: true
+  field_resource_fc: true
   field_revised_date: true
   field_wf_notification: true
   langcode: true

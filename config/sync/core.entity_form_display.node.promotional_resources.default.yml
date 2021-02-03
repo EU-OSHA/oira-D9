@@ -10,7 +10,9 @@ dependencies:
     - field.field.node.promotional_resources.field_image_home_latest_material
     - field.field.node.promotional_resources.field_image_media
     - field.field.node.promotional_resources.field_oira
+    - field.field.node.promotional_resources.field_promotional_material_type
     - field.field.node.promotional_resources.field_publication_date
+    - field.field.node.promotional_resources.field_resource_fc
     - field.field.node.promotional_resources.field_revised_date
     - field.field.node.promotional_resources.field_wf_notification
     - image.style.thumbnail
@@ -95,11 +97,28 @@ content:
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_promotional_material_type:
+    weight: 131
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_publication_date:
     weight: 122
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_resource_fc:
+    type: media_library_widget
+    weight: 132
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
     region: content
   field_revised_date:
     weight: 126

@@ -10,7 +10,9 @@ dependencies:
     - field.field.node.promotional_resources.field_image_home_latest_material
     - field.field.node.promotional_resources.field_image_media
     - field.field.node.promotional_resources.field_oira
+    - field.field.node.promotional_resources.field_promotional_material_type
     - field.field.node.promotional_resources.field_publication_date
+    - field.field.node.promotional_resources.field_resource_fc
     - field.field.node.promotional_resources.field_revised_date
     - field.field.node.promotional_resources.field_wf_notification
     - node.type.promotional_resources
@@ -83,6 +85,14 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
+  field_promotional_material_type:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_publication_date:
     weight: 102
     label: above
@@ -91,6 +101,15 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_resource_fc:
+    type: entity_reference_entity_view
+    weight: 112
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
     region: content
   field_revised_date:
     weight: 106
