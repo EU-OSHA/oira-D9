@@ -1,0 +1,10 @@
+uuid: 5968c5a6-8d6c-4dad-9e24-cab3ca9d49a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.additional_resource
+label: 'Additional resource'
+targetEntityType: node
+cache: true
