@@ -1,15 +1,15 @@
-uuid: 7c42f29a-7b4b-4458-aaf4-94582643dede
+uuid: 6cbb0825-469f-449c-b98d-91f2461e809b
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - oira_theme
 _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
-id: bartik_breadcrumbs
-theme: bartik
+id: oira_theme_breadcrumbs
+theme: oira_theme
 region: breadcrumb
 weight: 0
 provider: null

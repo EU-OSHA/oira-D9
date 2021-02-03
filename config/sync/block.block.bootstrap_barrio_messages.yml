@@ -1,15 +1,15 @@
-uuid: 0f5f0796-4656-40dd-9625-c430f4646305
+uuid: d3590dc6-d76f-4ace-a9df-29f9c8f47589
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - bootstrap_barrio
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: bartik_messages
-theme: bartik
+id: bootstrap_barrio_messages
+theme: bootstrap_barrio
 region: highlighted
 weight: 0
 provider: null

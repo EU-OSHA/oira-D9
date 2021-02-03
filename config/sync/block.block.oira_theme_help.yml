@@ -1,0 +1,22 @@
+uuid: a3005b96-1d94-430d-9fb8-ddf9e358c4c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - oira_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: oira_theme_help
+theme: oira_theme
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
