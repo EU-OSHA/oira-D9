@@ -1,0 +1,8 @@
+uuid: bb06e9e7-6344-4542-a975-5d17f87b7d37
+langcode: und
+status: true
+dependencies: {  }
+id: private-zone
+label: 'Private zone'
+description: ''
+locked: false

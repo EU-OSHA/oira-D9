@@ -1,0 +1,8 @@
+uuid: b34e28f8-bbc4-432e-ad6d-4dc924619e47
+langcode: und
+status: true
+dependencies: {  }
+id: social-menu-footer
+label: 'Social menu footer'
+description: ''
+locked: false
