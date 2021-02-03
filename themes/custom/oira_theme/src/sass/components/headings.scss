@@ -1,0 +1,48 @@
+/*Headings*/
+
+h1, h2, h3{
+  color: $text-color-black;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: 'Oswald',sans-serif;
+  font-size: 2.5rem;
+  color: $text-color-purple;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+h2{
+  font-size: 1.45rem;
+  margin-bottom: 0;
+  padding-left: 0;
+  a{
+    color: $text-color-black;
+    text-decoration: none;
+    font-style: normal;
+    &:hover{
+      color: $text-color-black;
+      text-decoration: underline;
+      transition: all 1s;
+    }
+  }
+}
+
+h3{
+  font-size: 1.1rem;
+  color: $text-color-black;
+  a{
+    color: $text-color-black;
+    text-decoration: none;
+    font-style: normal;
+    &:hover{
+      text-decoration: underline;
+      transition: all 1s;
+    }
+  }
+}
+
+h1.page-header{
+  color: $text-color-purple;
+}
