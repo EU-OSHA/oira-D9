@@ -60,3 +60,4 @@ hidden:
   field_social_profile: true
   field_website: true
   langcode: true
+  search_api_excerpt: true

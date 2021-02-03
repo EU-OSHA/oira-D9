@@ -40,3 +40,4 @@ hidden:
   field_multiple_sector: true
   field_strategic_type_2: true
   langcode: true
+  search_api_excerpt: true

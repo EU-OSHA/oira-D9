@@ -1,0 +1,22 @@
+uuid: 18479fcb-56cf-4a40-a4ad-0360c175ef1e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oira_theme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: oira_theme_local_tasks
+theme: oira_theme
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

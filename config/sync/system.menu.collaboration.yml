@@ -1,0 +1,8 @@
+uuid: 3baa83ef-4c00-48f6-b55b-d7566c05a7dd
+langcode: und
+status: true
+dependencies: {  }
+id: collaboration
+label: Collaboration
+description: ''
+locked: false

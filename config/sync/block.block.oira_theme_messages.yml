@@ -1,0 +1,22 @@
+uuid: bed3fdd3-51d2-4d03-b2f6-8551e8aef591
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oira_theme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: oira_theme_messages
+theme: oira_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
