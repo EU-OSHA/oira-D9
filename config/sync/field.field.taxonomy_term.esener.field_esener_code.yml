@@ -1,0 +1,19 @@
+uuid: 66c37e85-6945-4ca3-84e2-fabd1d6163f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_esener_code
+    - taxonomy.vocabulary.esener
+id: taxonomy_term.esener.field_esener_code
+field_name: field_esener_code
+entity_type: taxonomy_term
+bundle: esener
+label: Code
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
