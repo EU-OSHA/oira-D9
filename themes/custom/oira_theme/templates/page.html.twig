@@ -1,6 +1,30 @@
 {% extends "@bootstrap_barrio/layout/page.html.twig" %}
 {% block head %}
 <header id="navbar" role="banner" class="{{ navbar_classes }}">
+  <div class="top-header-container container">
+    <div class="top-header-content row">
+      <div class="header-logo">
+        <a class="logo navbar-btn pull-left" href="https://osha.europa.eu/" target="_blank" title="{{ 'EU-OSHA corporate website'|trans }}">
+          <img src="{{ directory }}/images/EU-OSHA-en.png" alt="{{ 'EU-OSHA corporate website'|trans }}" />
+        </a>
+        <span class="logo-eu">
+              <img class="eu-logo" src="{{ directory }}/images/europeLogo.png" alt="{{ 'European Union"'|trans }}" />
+        </span>
+        <span class="logo-oira">
+           <img class="oira-logo" src="{{ directory }}/images/oiraLogo.gif" alt="{{ 'Home"'|trans }} "/>
+        </span>
+      </div>
+
+      <div class="push-right">
+        <div class="header-menu-news">
+          {{ page.header }}
+        </div>
+        <div class="header-blocks">
+          {{ page.header_form }}
+        </div>
+      </div>
+    </div>
+  </div>
    <nav{{ navbar_attributes }}>
       {% if page.primary_menu %}
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
