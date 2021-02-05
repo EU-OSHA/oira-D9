@@ -1,0 +1,23 @@
+uuid: 08399268-74cb-48a3-86ec-a61e5a22c2a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ncw_fp_link
+    - taxonomy.vocabulary.country
+  module:
+    - link
+id: taxonomy_term.country.field_ncw_fp_link
+field_name: field_ncw_fp_link
+entity_type: taxonomy_term
+bundle: country
+label: 'Focal point'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
