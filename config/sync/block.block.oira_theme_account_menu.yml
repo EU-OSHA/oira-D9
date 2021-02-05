@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.account
   module:
+    - context
     - system
   theme:
     - oira_theme
@@ -12,7 +13,7 @@ _core:
   default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
 id: oira_theme_account_menu
 theme: oira_theme
-region: secondary_menu
+region: top_header
 weight: 0
 provider: null
 plugin: 'system_menu_block:account'
@@ -24,4 +25,12 @@ settings:
   level: 1
   depth: 1
   expand_all_items: false
-visibility: {  }
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

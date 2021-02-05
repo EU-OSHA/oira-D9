@@ -1,0 +1,59 @@
+.top-header-content{
+  height: 135px;
+  display: flex;
+  align-content: center;
+  .header-logo{
+    .logo-eu, .logo-oira{
+      margin-left: 30px;
+    }
+  }
+  /* Link menu News */
+  .header-menu-news{
+    display: block;
+    float: left;
+    a{
+      color: $text-color-blue;
+      font-style: normal;
+      font-weight: normal;
+      background: url("../images/icon-news-menu.png") no-repeat;
+      padding-left: 36px;
+      background-size: 39px;
+      font-size: 0.9rem;
+      background-position-y: 3px;
+    }
+  }
+  .header-blocks{
+    display: block;
+    float: right;
+    /* Social media */
+    .region-header-form{
+      display: block;
+    }
+    /* Search*/
+    .block-search-form-block{
+      input{
+        border-radius: 0px;
+        border: 2px solid #003399;
+        width: 160px;
+        height: 30px;
+        float: right;
+      }
+      .btn-primary{
+        border-radius: 0px;
+        width: 30px;
+        height: 30px;
+        color: white;
+        background-color: #003399;
+        border: 0px solid #003399;
+        padding: 4px 0px 2px 11px;
+        overflow: hidden;
+        &:before{
+          content: "\e002";
+          margin-right: 30px;
+          margin-left: -5px;
+          font-family: 'Glyphicons Halflings';
+        }
+      }
+    }
+  }
+}
