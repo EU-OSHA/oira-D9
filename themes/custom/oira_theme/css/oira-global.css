@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Font Family*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -163,6 +164,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.push-right {
+  margin-left: auto;
+}
+
 .see-more {
   display: block;
 }
@@ -225,10 +230,69 @@ a:hover {
 }
 
 /* End news detail */
+.top-header-content {
+  height: 135px;
+  display: flex;
+  align-content: center;
+  /* Link menu News */
+}
+.top-header-content .header-logo .logo-eu, .top-header-content .header-logo .logo-oira {
+  margin-left: 30px;
+}
+.top-header-content .header-menu-news {
+  display: block;
+  float: left;
+}
+.top-header-content .header-menu-news a {
+  color: #003399;
+  font-style: normal;
+  font-weight: normal;
+  background: url("../images/icon-news-menu.png") no-repeat;
+  padding-left: 36px;
+  background-size: 39px;
+  font-size: 0.9rem;
+  background-position-y: 3px;
+}
+.top-header-content .header-blocks {
+  display: block;
+  float: right;
+  /* Social media */
+  /* Search*/
+}
+.top-header-content .header-blocks .region-header-form {
+  display: block;
+}
+.top-header-content .header-blocks .block-search-form-block input {
+  border-radius: 0px;
+  border: 2px solid #003399;
+  width: 160px;
+  height: 30px;
+  float: right;
+}
+.top-header-content .header-blocks .block-search-form-block .btn-primary {
+  border-radius: 0px;
+  width: 30px;
+  height: 30px;
+  color: white;
+  background-color: #003399;
+  border: 0px solid #003399;
+  padding: 4px 0px 2px 11px;
+  overflow: hidden;
+}
+.top-header-content .header-blocks .block-search-form-block .btn-primary:before {
+  content: "";
+  margin-right: 30px;
+  margin-left: -5px;
+  font-family: "Glyphicons Halflings";
+}
+
 #navbar-main {
   font-family: "Oswald", sans-serif;
   background-color: #10b2e4;
   color: #FFF;
+}
+#navbar-main #CollapsingNavbar > div.container {
+  justify-content: center;
 }
 #navbar-main ul.navbar-nav li {
   border-right: 1px solid #FFF;

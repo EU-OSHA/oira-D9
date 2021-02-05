@@ -1,26 +1,28 @@
-uuid: cd132611-18c1-43de-823c-abff46c225ed
+uuid: a0165611-35a8-4f6c-9d5f-e39984a3fd0c
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.header-menu
   module:
     - context
-    - search
+    - system
   theme:
     - oira_theme
-_core:
-  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
-id: oira_theme_search
+id: headermenu
 theme: oira_theme
-region: header_form
+region: header
 weight: -6
 provider: null
-plugin: search_form_block
+plugin: 'system_menu_block:header-menu'
 settings:
-  id: search_form_block
-  label: Search
-  provider: search
+  id: 'system_menu_block:header-menu'
+  label: 'Header menu'
+  provider: system
   label_display: '0'
-  page_id: node_search
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility:
   request_path_exclusion:
     id: request_path_exclusion

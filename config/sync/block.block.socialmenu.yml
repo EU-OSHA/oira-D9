@@ -1,26 +1,28 @@
-uuid: cd132611-18c1-43de-823c-abff46c225ed
+uuid: c6d65b69-0189-42e8-b8b8-9b89ee741914
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.social-menu
   module:
     - context
-    - search
+    - system
   theme:
     - oira_theme
-_core:
-  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
-id: oira_theme_search
+id: socialmenu
 theme: oira_theme
 region: header_form
-weight: -6
+weight: -7
 provider: null
-plugin: search_form_block
+plugin: 'system_menu_block:social-menu'
 settings:
-  id: search_form_block
-  label: Search
-  provider: search
+  id: 'system_menu_block:social-menu'
+  label: 'Social menu'
+  provider: system
   label_display: '0'
-  page_id: node_search
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
