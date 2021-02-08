@@ -1,0 +1,37 @@
+uuid: 06a69f7d-59f3-4b67-81ba-f4203472a318
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.promotional_material_type.field_image
+    - taxonomy.vocabulary.promotional_material_type
+  module:
+    - image
+    - text
+id: taxonomy_term.promotional_material_type.default
+targetEntityType: taxonomy_term
+bundle: promotional_material_type
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true
