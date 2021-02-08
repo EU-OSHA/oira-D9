@@ -1,23 +1,19 @@
-uuid: 7935187e-7f98-42ed-aa41-7809b80ae7a2
+uuid: 22b8e9f7-5f8a-46aa-8e90-259ce17a51d0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.country.field_country_status
-    - field.field.taxonomy_term.country.field_flag
-    - field.field.taxonomy_term.country.field_iso2
-    - field.field.taxonomy_term.country.field_ncw_fp_link
+    - field.field.taxonomy_term.promotional_material_type.field_image
     - image.style.thumbnail
-    - taxonomy.vocabulary.country
+    - taxonomy.vocabulary.promotional_material_type
   module:
     - image
-    - link
     - path
     - text
     - workbench_moderation
-id: taxonomy_term.country.default
+id: taxonomy_term.promotional_material_type.default
 targetEntityType: taxonomy_term
-bundle: country
+bundle: promotional_material_type
 mode: default
 content:
   description:
@@ -28,43 +24,17 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
-  field_country_status:
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_flag:
-    weight: 3
+  field_image:
+    weight: 2
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
-  field_iso2:
-    weight: 2
-    settings:
-      size: 2
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_ncw_fp_link:
-    weight: 4
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   langcode:
     type: language_select
-    weight: 6
+    weight: 3
     region: content
     settings:
       include_locked: true
@@ -79,7 +49,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -87,7 +57,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 5
     region: content
     third_party_settings: {  }
 hidden: {  }
