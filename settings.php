@@ -790,6 +790,16 @@ $databases['default']['default'] = [
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 ];
+$databases['migration']['default'] = [
+  'database' => 'oiraold',
+  'username' => 'root',
+  'password' => 'saretex1',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+];
 
 
 $settings['config_sync_directory'] = $app_root . '/' . $site_path . '/config/sync';
