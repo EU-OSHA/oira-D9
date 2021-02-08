@@ -1,0 +1,37 @@
+uuid: cd4882d1-068e-452c-9e90-fb158b718b02
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.country_taxonomy_term_name
+  module:
+    - context
+    - facets
+    - system
+  theme:
+    - oira_theme
+id: countrytaxonomytermname
+theme: oira_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:country_taxonomy_term_name'
+settings:
+  id: 'facet_block:country_taxonomy_term_name'
+  label: Country
+  provider: facets
+  label_display: visible
+  block_id: countrytaxonomytermname
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: "/oira-tools\r\n"
+    negate: false

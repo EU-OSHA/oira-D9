@@ -8,6 +8,7 @@ dependencies:
   module:
     - path
     - text
+    - workbench_moderation
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
 id: node.page.default
