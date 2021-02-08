@@ -40,7 +40,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 4
     region: content
     settings:
       rows: 9
@@ -56,53 +56,48 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
   field_additional_resources:
-    weight: 128
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 12
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_archived:
-    weight: 127
+    weight: 11
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_article_type:
-    weight: 121
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 2
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_character_count:
-    weight: 131
+    weight: 24
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_expiration_date:
-    weight: 134
-    settings: {  }
+    weight: 6
+    settings:
+      date_order: DMY
+      time_type: '24'
+      increment: 15
     third_party_settings: {  }
-    type: datetime_default
+    type: datetime_datelist
     region: content
   field_image:
     type: image_image
-    weight: 4
+    weight: 16
     region: content
     settings:
       progress_indicator: throbber
@@ -110,46 +105,41 @@ content:
     third_party_settings: {  }
   field_image_media:
     type: media_library_widget
-    weight: 122
+    weight: 23
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_page_count:
-    weight: 132
+    weight: 25
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_publication_date:
-    weight: 133
-    settings: {  }
+    weight: 5
+    settings:
+      date_order: DMY
+      time_type: '24'
+      increment: 15
     third_party_settings: {  }
-    type: datetime_default
+    type: datetime_datelist
     region: content
   field_recommended_articles:
-    weight: 130
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 14
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_recommended_resources:
-    weight: 129
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 13
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_related_oshwiki_articles:
-    weight: 126
+    weight: 10
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -159,17 +149,13 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_sector:
-    weight: 124
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 8
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_summary:
-    weight: 123
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -178,7 +164,7 @@ content:
     region: content
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 3
+    weight: 7
     region: content
     settings:
       match_operator: CONTAINS
@@ -187,25 +173,21 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_wiki_categories:
-    weight: 125
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 9
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 15
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 21
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -213,21 +195,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 18
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 22
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 19
     region: content
     third_party_settings: {  }
   title:
@@ -239,13 +221,9 @@ content:
       placeholder: ''
     third_party_settings: {  }
   uid:
-    type: entity_reference_autocomplete
-    weight: 5
+    type: options_select
+    weight: 1
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

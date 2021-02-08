@@ -1,17 +1,15 @@
-uuid: c434fd62-cc9c-4d25-a3d9-615c270154a9
+uuid: 03430068-ddf4-4151-9c78-71c73aafb51d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.tags.field_excluded_from
-    - field.field.taxonomy_term.tags.field_tags_code
-    - taxonomy.vocabulary.tags
+    - field.field.taxonomy_term.organisation_type.field_crm_code
+    - taxonomy.vocabulary.organisation_type
   module:
-    - options
     - text
-id: taxonomy_term.tags.default
+id: taxonomy_term.organisation_type.default
 targetEntityType: taxonomy_term
-bundle: tags
+bundle: organisation_type
 mode: default
 content:
   description:
@@ -21,15 +19,8 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_excluded_from:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_tags_code:
-    weight: 3
+  field_crm_code:
+    weight: 1
     label: above
     settings:
       link_to_entity: false

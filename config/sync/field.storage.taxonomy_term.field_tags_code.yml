@@ -1,11 +1,11 @@
-uuid: 92834ea4-0640-4a6d-827b-8f82de973945
+uuid: 8eff06b0-f507-43f3-902a-5f8b989476cf
 langcode: en
 status: true
 dependencies:
   module:
     - taxonomy
-id: taxonomy_term.field_code
-field_name: field_code
+id: taxonomy_term.field_tags_code
+field_name: field_tags_code
 entity_type: taxonomy_term
 type: string
 settings:

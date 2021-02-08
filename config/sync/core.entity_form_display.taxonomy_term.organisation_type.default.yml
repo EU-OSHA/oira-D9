@@ -1,18 +1,17 @@
-uuid: bbfe572f-cab7-4b77-9b15-8f0309b1a2a4
+uuid: d5c4ec75-6542-4898-9e1d-b4383c99ff74
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.tags.field_excluded_from
-    - field.field.taxonomy_term.tags.field_tags_code
-    - taxonomy.vocabulary.tags
+    - field.field.taxonomy_term.organisation_type.field_crm_code
+    - taxonomy.vocabulary.organisation_type
   module:
     - path
     - text
     - workbench_moderation
-id: taxonomy_term.tags.default
+id: taxonomy_term.organisation_type.default
 targetEntityType: taxonomy_term
-bundle: tags
+bundle: organisation_type
 mode: default
 content:
   description:
@@ -23,14 +22,8 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
-  field_excluded_from:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_tags_code:
-    weight: 7
+  field_crm_code:
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -39,7 +32,7 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 4
+    weight: 3
     region: content
     settings:
       include_locked: true
@@ -54,7 +47,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -62,7 +55,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 5
     region: content
     third_party_settings: {  }
 hidden: {  }

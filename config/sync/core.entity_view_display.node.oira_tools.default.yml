@@ -20,7 +20,6 @@ dependencies:
     - field.field.node.oira_tools.field_tool_link
     - field.field.node.oira_tools.field_tool_type
     - field.field.node.oira_tools.field_wf_notification
-    - image.style.views_thumbail
     - node.type.oira_tools
   module:
     - datetime
@@ -75,7 +74,7 @@ content:
     weight: 102
     label: above
     settings:
-      image_style: views_thumbail
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -177,9 +176,9 @@ content:
     region: content
   links:
     weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
