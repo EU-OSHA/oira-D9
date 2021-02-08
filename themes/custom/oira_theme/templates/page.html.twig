@@ -46,11 +46,25 @@
 </header>
 {% endblock %}
 
-{#{{ drupal_dump(node.bundle) }}#}
+
+
 
 {% block content %}
-  <div id="main">
-    <div class="container">{{ page.breadcrumb }}</div>
+{{ dump(node.bundle) }}
+  <div class="container">{{ page.breadcrumb }}</div>
+  {% if page.sidebar_first %}
+    <div class="content-two-columns">
+      <div{{ sidebar_first_attributes }}>
+        <aside class="section col-md-4" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      </div>
+  {% endif %}
+  {% if page.sidebar_first %}
+    <div id="main" class="col-md-8 two-column">
+  {% else %}
+    <div id="main">
+  {% endif %}
     <div class="oira-content">
         <main>
             {% if node.bundle == 'news' %}
@@ -62,22 +76,18 @@
                 {{ page.content }}
                 </section>
         </main>
-      {% if page.sidebar_first %}
-        <div{{ sidebar_first_attributes }}>
-          <aside class="section" role="complementary">
-            {{ page.sidebar_first }}
-          </aside>
-        </div>
-      {% endif %}
-      {% if page.sidebar_second %}
-        <div{{ sidebar_second_attributes }}>
-          <aside class="section" role="complementary">
-            {{ page.sidebar_second }}
-          </aside>
-        </div>
-      {% endif %}
     </div>
   </div>
+      {% if page.sidebar_first %}
+    </div>
+      {% endif %}
+  {% if page.sidebar_second %}
+    <div{{ sidebar_second_attributes }}>
+      <aside class="section" role="complementary">
+        {{ page.sidebar_second }}
+      </aside>
+    </div>
+  {% endif %}
 {% endblock %}
 
 {% block footer %}
