@@ -1,0 +1,26 @@
+uuid: e30e32f9-63a7-4b2c-9226-a324d04c27b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.country_status
+  module:
+    - text
+id: taxonomy_term.country_status.default
+targetEntityType: taxonomy_term
+bundle: country_status
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true
