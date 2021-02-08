@@ -1,0 +1,34 @@
+uuid: 1d90822c-fea5-4739-8ea2-da9d882ff1cf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
+  module:
+    - block_content
+    - context
+  theme:
+    - oira_theme
+id: copyright
+theme: oira_theme
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
+settings:
+  id: 'block_content:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
+  label: Copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

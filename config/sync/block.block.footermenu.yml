@@ -1,27 +1,25 @@
-uuid: 8294b491-8a68-4c7e-9605-31a4ea0f2fb8
+uuid: 04de7446-5f71-4387-86ad-9839477e2aa1
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.footer-menu
   module:
     - context
     - system
   theme:
     - oira_theme
-_core:
-  default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
-id: oira_theme_footer
+id: footermenu
 theme: oira_theme
 region: footer_fifth
 weight: 0
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:footer-menu'
 settings:
-  id: 'system_menu_block:footer'
+  id: 'system_menu_block:footer-menu'
   label: 'Footer menu'
   provider: system
-  label_display: visible
+  label_display: '0'
   level: 1
   depth: 0
   expand_all_items: false
