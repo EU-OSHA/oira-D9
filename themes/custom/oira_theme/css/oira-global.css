@@ -210,6 +210,42 @@ a:hover {
   margin-bottom: 15px;
 }
 
+#sidebar_first {
+  float: left;
+  background: #786586;
+}
+#sidebar_first .block {
+  border: 0;
+}
+#sidebar_first aside {
+  float: right;
+  color: #FFF;
+}
+#sidebar_first aside h2 {
+  font-family: "Oswald";
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-shadow: 0 0 0 #fff;
+}
+#sidebar_first aside a {
+  color: #FFF;
+}
+#sidebar_first aside .facets-widget-checkbox ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content-two-columns {
+  display: flex;
+}
+.content-two-columns .two-column {
+  float: right;
+  background: #dfd8e4;
+  border-left: 5px solid #FFF;
+  padding-bottom: 2rem;
+}
+
 /* End Common elements */
 /* News view */
 .view-osh-news h2 {
@@ -241,6 +277,41 @@ a:hover {
 }
 
 /* End news detail */
+/* OiRA Tools View */
+.view-oira-ws .view-content.row {
+  width: 70%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 2rem;
+  background: #FFF;
+}
+.view-oira-ws .views-row {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: #FFF;
+}
+.view-oira-ws .content-view-tools-view {
+  display: flex;
+  padding: 2em;
+  border-top: 2px solid #786586;
+}
+.view-oira-ws .content-view-tools-view .views-field.views-field-field-image {
+  float: left;
+  border: 1px solid grey;
+  margin-right: 1em;
+  width: auto;
+}
+.view-oira-ws .content-view-tools-view h2 {
+  color: #58585a;
+  font-weight: 500;
+  cursor: pointer;
+}
+.view-oira-ws .content-view-tools-view h2:hover {
+  color: #786586;
+  text-decoration: none;
+}
+
 .site-footer {
   width: 100%;
   height: 100px;
