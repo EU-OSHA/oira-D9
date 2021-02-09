@@ -1,15 +1,15 @@
-uuid: f81f1aee-bbf4-48c1-9388-37d01134927c
+uuid: 0497403a-4a92-4358-84c8-e5c840ef3d7e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.partner.field_ldap_section_code
-    - taxonomy.vocabulary.partner
+    - field.field.taxonomy_term.section.field_ldap_section_code
+    - taxonomy.vocabulary.section
   module:
     - text
-id: taxonomy_term.partner.default
+id: taxonomy_term.section.default
 targetEntityType: taxonomy_term
-bundle: partner
+bundle: section
 mode: default
 content:
   description:

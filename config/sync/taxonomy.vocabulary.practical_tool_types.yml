@@ -1,8 +1,8 @@
-uuid: edaa6a24-91e9-4d0f-92a1-12a740954eac
+uuid: e9d9670f-e97d-4a3c-8c1a-f33e141fa15d
 langcode: und
 status: true
 dependencies: {  }
 name: 'Type of tool'
-vid: type_of_tool
+vid: practical_tool_types
 description: ''
 weight: 0

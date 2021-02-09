@@ -1,4 +1,4 @@
-uuid: ec9ab049-a881-45ce-9ec8-21cdeced6bd2
+uuid: ea2bf2ba-e6f8-40fb-a7c4-149e43c6d0ed
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - field.storage.node.field_sector_category
     - node.type.oira_tools
     - taxonomy.vocabulary.country
-    - taxonomy.vocabulary.partner
+    - taxonomy.vocabulary.section
     - taxonomy.vocabulary.sector_category
     - user.role.administrator
   module:
@@ -80,8 +80,8 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
+            previous: ‹‹
+            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -105,7 +105,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: 'Views bulk operations'
           exclude: false
           alter:
             alter_text: false
@@ -151,16 +151,20 @@ display:
           form_step: true
           buttons: false
           clear_on_exposed: true
-          action_title: OPERATIONS
+          action_title: Action
           selected_actions:
-            8:
+            7:
               action_id: views_bulk_operations_delete_entity
               preconfiguration:
                 label_override: Delete
             9:
               action_id: 'entity:publish_action:node'
+              preconfiguration:
+                label_override: Publish
             11:
               action_id: 'entity:unpublish_action:node'
+              preconfiguration:
+                label_override: Unpublish
           plugin_id: views_bulk_operations_bulk_form
         title:
           id: title
@@ -216,7 +220,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Author/Partner '
+          label: Author/Partner
           exclude: false
           alter:
             alter_text: false
@@ -260,7 +264,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -323,7 +327,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -386,7 +390,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -469,7 +473,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: EDIT
+          label: 'Link to edit Content'
           exclude: true
           alter:
             alter_text: false
@@ -522,7 +526,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: DELETE
+          label: 'Link to delete Content'
           exclude: true
           alter:
             alter_text: false
@@ -579,7 +583,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{edit_node}} {{delete_node}}'
+            text: '{{ edit_node }} {{ delete_node }}'
             make_link: false
             path: ''
             absolute: false
@@ -682,45 +686,18 @@ display:
           plugin_id: field
       filters:
         status:
-          id: status
+          value: '1'
           table: node_field_data
           field: status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
           expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: status
-          plugin_id: boolean
+          group: 1
         type:
           id: type
           table: node_field_data
@@ -733,7 +710,6 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         combine:
           id: combine
           table: views
@@ -776,6 +752,7 @@ display:
             group_items: {  }
           fields:
             title: title
+            field_alternative_title: field_alternative_title
           plugin_id: combine
         field_country_target_id:
           id: field_country_target_id
@@ -799,7 +776,7 @@ display:
             identifier: field_country_target_id
             required: false
             remember: false
-            multiple: false
+            multiple: true
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -817,7 +794,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          reduce_duplicates: false
+          reduce_duplicates: true
           type: select
           limit: true
           vid: country
@@ -846,7 +823,7 @@ display:
             identifier: field_sector_category_target_id
             required: false
             remember: false
-            multiple: false
+            multiple: true
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -868,50 +845,9 @@ display:
           type: select
           limit: true
           vid: sector_category
-          hierarchy: false
+          hierarchy: true
           error_message: true
           plugin_id: taxonomy_index_tid
-        field_language_target_id:
-          id: field_language_target_id
-          table: node__field_language
-          field: field_language_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_language_target_id_op
-            label: 'Language '
-            description: ''
-            use_operator: false
-            operator: field_language_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: field_language_target_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: string
         field_publication_date_value:
           id: field_publication_date_value
           table: node__field_publication_date
@@ -929,7 +865,7 @@ display:
           exposed: true
           expose:
             operator_id: field_publication_date_value_op
-            label: 'Publication date '
+            label: 'Publication date'
             description: ''
             use_operator: false
             operator: field_publication_date_value_op
@@ -976,7 +912,7 @@ display:
           exposed: true
           expose:
             operator_id: field_revised_date_value_op
-            label: 'Revised date '
+            label: 'Revised date'
             description: ''
             use_operator: false
             operator: field_revised_date_value_op
@@ -1047,9 +983,9 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: textfield
+          type: select
           limit: true
-          vid: partner
+          vid: section
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
@@ -1074,10 +1010,6 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
     cache_metadata:
       max-age: 0
       contexts:
