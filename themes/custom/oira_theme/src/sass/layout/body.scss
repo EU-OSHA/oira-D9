@@ -88,15 +88,19 @@ a{
       font-size: 1.2rem;
       font-weight: normal;
       text-shadow: 0 0 0 #fff;
-      &:before{
-        content: '>';
-        display: block;
-        float: right;
+      &:after{
+        content: "\e252";
+        font-family: "Glyphicons Halflings";
+        display: inline-block;
+        margin-left: 10px;
       }
     }
     h2.active{
-      &:before{
-        content: '<';
+      &:after{
+        content: "\e250";
+        font-family: "Glyphicons Halflings";
+        display: inline-block;
+        margin-left: 10px;
       }
     }
     a{
@@ -213,11 +217,6 @@ a{
       padding: 1rem 0 0 0;
       margin-bottom: 0;
     }
-    .block-facets {
-      .content{
-        display: none;
-      }
-    }
   }
   .view{
     padding-left: 0.5rem;
@@ -264,9 +263,12 @@ a{
           font-weight: normal;
           font-style: normal;
           &:before{
-            content: '>';
+            font-family: "Glyphicons Halflings";
+            content: "\e164";
+            color: $text-color-blue-light;
             display: block;
             float: right;
+            margin-top: -2px;
             padding-left: 10px;
           }
         }
