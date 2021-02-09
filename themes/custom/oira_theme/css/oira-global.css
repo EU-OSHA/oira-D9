@@ -228,12 +228,21 @@ a:hover {
   font-weight: normal;
   text-shadow: 0 0 0 #fff;
 }
+#sidebar_first aside h2:before {
+  content: ">";
+  display: block;
+  float: right;
+}
+#sidebar_first aside h2.active:before {
+  content: "<";
+}
 #sidebar_first aside a {
   color: #FFF;
 }
 #sidebar_first aside .facets-widget-checkbox ul {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 5px;
 }
 
 .content-two-columns {
@@ -316,46 +325,78 @@ a:hover {
 }
 .page-view-oira-ws #sidebar_first aside h2 {
   border-bottom: 0;
+  cursor: pointer;
 }
 .page-view-oira-ws #sidebar_first .block {
   border-top: 2px solid #FFF;
   padding: 1rem 0 0 0;
   margin-bottom: 0;
 }
-.page-view-oira-ws #sidebar_first .block-facets .facets-widget-checkbox {
+.page-view-oira-ws #sidebar_first .block-facets .content {
   display: none;
 }
-.page-view-oira-ws .view-content.row {
+.page-view-oira-ws .view {
+  padding-left: 0.5rem;
+}
+.page-view-oira-ws .view .view-header {
+  width: 70%;
+  text-align: right;
+  margin-top: 20px;
+  padding: 15px 0 15px 0;
+  border-top: 2px solid #786586;
+  border-bottom: 2px solid #786586;
+}
+.page-view-oira-ws .view .view-content.row {
   width: 70%;
   margin-left: 0;
   margin-right: 0;
   padding-top: 2rem;
   background: #FFF;
 }
-.page-view-oira-ws .views-row {
+.page-view-oira-ws .view .view-content.row .views-row {
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
   background: #FFF;
 }
 .page-view-oira-ws .content-view-tools-view {
+  position: relative;
   display: flex;
   padding: 2em;
   border-top: 2px solid #786586;
 }
-.page-view-oira-ws .content-view-tools-view .views-field.views-field-field-image {
+.page-view-oira-ws .content-view-tools-view .group-right time {
+  color: #967ea7;
+  font-style: italic;
+  font-weight: 600;
+}
+.page-view-oira-ws .content-view-tools-view .group-right div:nth-child(1) a {
+  position: absolute;
+  right: 0;
+  font-size: 0.9rem;
+  color: #58585a;
+  font-weight: normal;
+  font-style: normal;
+}
+.page-view-oira-ws .content-view-tools-view .group-right div:nth-child(1) a:before {
+  content: ">";
+  display: block;
+  float: right;
+  padding-left: 10px;
+}
+.page-view-oira-ws .content-view-tools-view .group-right .views-field.views-field-field-image {
   float: left;
   border: 1px solid grey;
   margin-right: 1em;
   width: auto;
 }
-.page-view-oira-ws .content-view-tools-view h2 {
+.page-view-oira-ws .content-view-tools-view .group-right h2 {
   color: #58585a;
   font-weight: 500;
   cursor: pointer;
   border-bottom: 0;
 }
-.page-view-oira-ws .content-view-tools-view h2:hover {
+.page-view-oira-ws .content-view-tools-view .group-right h2:hover {
   color: #786586;
   text-decoration: none;
 }
