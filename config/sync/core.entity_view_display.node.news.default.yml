@@ -81,11 +81,11 @@ content:
     type: datetime_default
     region: content
   field_summary:
-    weight: 102
+    weight: 109
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   links:
     weight: 100

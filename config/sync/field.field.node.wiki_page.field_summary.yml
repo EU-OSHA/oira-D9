@@ -1,10 +1,12 @@
-uuid: a9968e0a-cfea-44bd-b3a3-7949ab32abbf
+uuid: a8d1347d-5270-43c1-9fc0-5644f583b5ab
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_summary
     - node.type.wiki_page
+  module:
+    - text
 id: node.wiki_page.field_summary
 field_name: field_summary
 entity_type: node
@@ -12,8 +14,8 @@ bundle: wiki_page
 label: Summary
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string_long
+field_type: text_long

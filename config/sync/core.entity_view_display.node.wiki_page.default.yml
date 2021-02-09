@@ -61,17 +61,17 @@ content:
     weight: 104
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_summary:
-    weight: 102
+    weight: 111
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   field_tags:
     weight: 103
@@ -85,8 +85,8 @@ content:
     weight: 105
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
     type: datetime_default
     region: content
@@ -112,9 +112,9 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
