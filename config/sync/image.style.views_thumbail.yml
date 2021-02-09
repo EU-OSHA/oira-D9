@@ -1,0 +1,15 @@
+uuid: b7fc233b-72a8-48a7-a6de-8c6ea551d2b2
+langcode: en
+status: true
+dependencies: {  }
+name: views_thumbail
+label: 'Views Thumbail'
+effects:
+  04e3f2dd-ddd5-4751-a5b7-d4013bc4bf29:
+    uuid: 04e3f2dd-ddd5-4751-a5b7-d4013bc4bf29
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 175
+      height: 175
+      anchor: center-center
