@@ -42,6 +42,29 @@ a{
   margin-left: auto;
 }
 
+select.custom-select{
+  width: auto;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  height: initial;
+  background: url(../images/select-ico.png) no-repeat 100% -2px;
+  background-color: rgba(0, 0, 0, 0);
+  padding-right: 1.5em;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0 rgba(38,143,255,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+  box-shadow: 0 0 0 0 rgba(38,143,255,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 rgba(38,143,255,.5);
+}
+
 .see-more{
   display: block;
   a{
@@ -204,6 +227,38 @@ a{
 
 /* OiRA Tools View */
 .page-view-oira-ws{
+  .two-column{
+    section{
+      position: relative;
+      #block-exposedformoira-wstools-ws{
+        position: absolute;
+        z-index: 99999;
+        top: 40px;
+        left: 7px;
+        .form-item-sort-by{
+          label{
+            float: left;
+            padding-top: 5px;
+            padding-right: 5px;
+          }
+          select.custom-select{
+            width: auto;
+            margin-top: 7px;
+            margin-left: 7px;
+            font-size: 0.9em;
+            display: inline-block;
+          }
+          select.custom-select:focus{
+            box-shadow: 0 0 0 0 rgba(0,123,255,.25);
+          }
+        }
+        button{
+          display: none;
+        }
+      }
+    }
+  }
+
   #sidebar_first {
     padding-top: 2rem;
     aside{
@@ -211,11 +266,47 @@ a{
         border-bottom: 0;
         cursor: pointer;
       }
+      #edit-submit-oira-ws--2{
+        position: absolute;
+        top: 46px;
+        right: 0px;
+        color: #786586;
+        border: none;
+        border-radius: 0px;
+        outline: none;
+        width: 35px;
+        line-height: 19px;
+        font-size: 1.2em;
+        padding-left: 7px;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0);
+        &:before{
+          content: "\e003";
+          font-family: "Glyphicons Halflings";
+          margin-right: 30px;
+        }
+      }
+
+      #edit-reset--2{
+        background: transparent;
+        color: $text-color-white;
+        border: 0;
+        padding-left: 0;
+      }
+
+      .form-item-sort-by {
+        display: none;
+      }
     }
     .block{
       border-top: 2px solid $bg-color-white;
       padding: 1rem 0 0 0;
       margin-bottom: 0;
+    }
+  }
+  #block-exposedformoira-wstools-ws{
+    .form-item-search-api-fulltext{
+      display: none;
     }
   }
   .view{
@@ -230,8 +321,7 @@ a{
     }
     .view-content.row{
       width: 70%;
-      margin-left: 0;
-      margin-right: 0;
+      margin: 2rem 0 0 0;
       padding-top: 2rem;
       background: $bg-color-white;
       .views-row{
