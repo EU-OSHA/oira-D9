@@ -111,6 +111,44 @@ a{
   }
 }
 
+/*Styling inputs*/
+.page-view-oira-ws{
+  .sidebar_first{
+    input[type=checkbox]{
+      display: none;
+    }
+
+    label{
+      font-size: 1rem;
+      padding-left: 0px;
+      padding-bottom: 5px;
+      margin-bottom: 0px;
+    }
+
+    input[type=checkbox] + label:before{
+      float: left;
+      content: "\2714";
+      border: 0;
+      border-radius: 0.2em;
+      transition: .2s;
+      clear: both;
+      background: #FFF;
+      width: 20px;
+      height: 20px;
+      padding-left: 5px;
+      padding-top: 0;
+      padding-right: 5px;
+      padding-bottom: 14px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+    input[type=checkbox]:checked + label:before{
+      background-color: #FFF;
+      border-color: #FFF;
+      color: $bg-color-purple;
+    }
+  }
+}
 
 /* End Common elements */
 
@@ -150,7 +188,25 @@ a{
 /* End news detail */
 
 /* OiRA Tools View */
-.view-oira-ws{
+.page-view-oira-ws{
+  #sidebar_first {
+    padding-top: 2rem;
+    aside{
+      h2{
+        border-bottom: 0;
+      }
+    }
+    .block{
+      border-top: 2px solid $bg-color-white;
+      padding: 1rem 0 0 0;
+      margin-bottom: 0;
+    }
+    .block-facets{
+      .facets-widget-checkbox{
+        display: none;
+      }
+    }
+  }
   .view-content.row{
     width: 70%;
     margin-left: 0;
@@ -180,6 +236,7 @@ a{
       color: $text-color-black;
       font-weight: 500;
       cursor: pointer;
+      border-bottom: 0;
       &:hover{
         color: $text-color-purple;
         text-decoration: none;
