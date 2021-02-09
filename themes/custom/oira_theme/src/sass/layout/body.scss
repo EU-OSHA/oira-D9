@@ -88,6 +88,16 @@ a{
       font-size: 1.2rem;
       font-weight: normal;
       text-shadow: 0 0 0 #fff;
+      &:before{
+        content: '>';
+        display: block;
+        float: right;
+      }
+    }
+    h2.active{
+      &:before{
+        content: '<';
+      }
     }
     a{
       color:$text-color-white;
@@ -96,6 +106,7 @@ a{
       ul{
         list-style: none;
         padding-left: 0;
+        margin-bottom: 5px;
       }
     }
   }
@@ -111,6 +122,44 @@ a{
   }
 }
 
+/*Styling inputs*/
+.page-view-oira-ws{
+  .sidebar_first{
+    input[type=checkbox]{
+      display: none;
+    }
+
+    label{
+      font-size: 1rem;
+      padding-left: 0px;
+      padding-bottom: 5px;
+      margin-bottom: 0px;
+    }
+
+    input[type=checkbox] + label:before{
+      float: left;
+      content: "\2714";
+      border: 0;
+      border-radius: 0.2em;
+      transition: .2s;
+      clear: both;
+      background: #FFF;
+      width: 20px;
+      height: 20px;
+      padding-left: 5px;
+      padding-top: 0;
+      padding-right: 5px;
+      padding-bottom: 14px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+    input[type=checkbox]:checked + label:before{
+      background-color: #FFF;
+      border-color: #FFF;
+      color: $bg-color-purple;
+    }
+  }
+}
 
 /* End Common elements */
 
@@ -150,39 +199,93 @@ a{
 /* End news detail */
 
 /* OiRA Tools View */
-.view-oira-ws{
-  .view-content.row{
-    width: 70%;
-    margin-left: 0;
-    margin-right: 0;
+.page-view-oira-ws{
+  #sidebar_first {
     padding-top: 2rem;
-    background: $bg-color-white;
-
+    aside{
+      h2{
+        border-bottom: 0;
+        cursor: pointer;
+      }
+    }
+    .block{
+      border-top: 2px solid $bg-color-white;
+      padding: 1rem 0 0 0;
+      margin-bottom: 0;
+    }
+    .block-facets {
+      .content{
+        display: none;
+      }
+    }
   }
-  .views-row{
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background: $bg-color-white;
+  .view{
+    padding-left: 0.5rem;
+    .view-header{
+      width: 70%;
+      text-align: right;
+      margin-top: 20px;
+      padding: 15px 0 15px 0;
+      border-top: 2px solid $bg-color-purple;
+      border-bottom: 2px solid $bg-color-purple;
+    }
+    .view-content.row{
+      width: 70%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 2rem;
+      background: $bg-color-white;
+      .views-row{
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background: $bg-color-white;
+      }
+    }
   }
 
   .content-view-tools-view{
+    position: relative;
     display: flex;
     padding: 2em;
     border-top: 2px solid $bg-color-purple;
-    .views-field.views-field-field-image{
-      float: left;
-      border: 1px solid grey;
-      margin-right: 1em;
-      width: auto;
-    }
-    h2{
-      color: $text-color-black;
-      font-weight: 500;
-      cursor: pointer;
-      &:hover{
-        color: $text-color-purple;
-        text-decoration: none;
+    .group-right{
+      time{
+        color: $text-color-purple-light;
+        font-style: italic;
+        font-weight: 600;
+      }
+      div:nth-child(1){
+        a{
+          position: absolute;
+          right: 0;
+          font-size: 0.9rem;
+          color: $text-color-black;
+          font-weight: normal;
+          font-style: normal;
+          &:before{
+            content: '>';
+            display: block;
+            float: right;
+            padding-left: 10px;
+          }
+        }
+      }
+      .views-field.views-field-field-image{
+        float: left;
+        border: 1px solid grey;
+        margin-right: 1em;
+        width: auto;
+      }
+      h2{
+        color: $text-color-black;
+        font-weight: 500;
+        cursor: pointer;
+        border-bottom: 0;
+        &:hover{
+          color: $text-color-purple;
+          text-decoration: none;
+        }
       }
     }
   }
