@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_tool_type
     - node.type.oira_tools
-    - taxonomy.vocabulary.type_of_tool
 id: node.oira_tools.field_tool_type
 field_name: field_tool_type
 entity_type: node
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles:
-      type_of_tool: type_of_tool
+    target_bundles: {  }
     sort:
       field: name
       direction: asc
