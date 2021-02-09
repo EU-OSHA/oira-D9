@@ -30,7 +30,7 @@ content:
     type: options_buttons
     region: content
   field_tags_code:
-    weight: 7
+    weight: 2
     settings:
       size: 60
       placeholder: ''

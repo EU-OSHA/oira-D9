@@ -1,29 +1,29 @@
-uuid: 8967029e-00ab-4e94-933a-9ff58a742809
+uuid: 09586b16-f5a9-4596-8580-660b7a3bcbb1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.partner.field_ldap_section_code
-    - taxonomy.vocabulary.partner
+    - field.field.taxonomy_term.section.field_ldap_section_code
+    - taxonomy.vocabulary.section
   module:
     - path
     - text
     - workbench_moderation
-id: taxonomy_term.partner.default
+id: taxonomy_term.section.default
 targetEntityType: taxonomy_term
-bundle: partner
+bundle: section
 mode: default
 content:
   description:
-    type: text_textarea
-    weight: 1
+    type: text_textfield
+    weight: 0
     region: content
     settings:
+      size: 60
       placeholder: ''
-      rows: 5
     third_party_settings: {  }
   field_ldap_section_code:
-    weight: 2
+    weight: 101
     settings:
       size: 60
       placeholder: ''
@@ -32,14 +32,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 3
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -47,7 +47,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 4
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -55,7 +55,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 100
     region: content
     third_party_settings: {  }
 hidden: {  }

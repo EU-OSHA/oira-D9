@@ -1,14 +1,14 @@
-uuid: a5e192b5-e1a8-487f-b0bf-b313eae0b289
+uuid: 18403bf8-106d-42e2-b9f6-8205a7581417
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_ldap_section_code
-    - taxonomy.vocabulary.partner
-id: taxonomy_term.partner.field_ldap_section_code
+    - taxonomy.vocabulary.section
+id: taxonomy_term.section.field_ldap_section_code
 field_name: field_ldap_section_code
 entity_type: taxonomy_term
-bundle: partner
+bundle: section
 label: 'LDAP Code'
 description: ''
 required: false

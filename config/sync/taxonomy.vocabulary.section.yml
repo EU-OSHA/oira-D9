@@ -1,8 +1,8 @@
-uuid: 7bc8278d-b7ce-4566-af35-62df300c2cb0
+uuid: 7b34faa9-d5c0-4f18-9d53-b27fd37f64bc
 langcode: und
 status: true
 dependencies: {  }
 name: Partner
-vid: partner
+vid: section
 description: 'Content section category'
 weight: 0
