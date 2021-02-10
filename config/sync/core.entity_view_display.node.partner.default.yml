@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.partner.field_collaborator
     - field.field.node.partner.field_country
     - field.field.node.partner.field_dedicated_oira_website
     - field.field.node.partner.field_general_email
@@ -31,6 +32,15 @@ targetEntityType: node
 bundle: partner
 mode: default
 content:
+  field_collaborator:
+    type: entity_reference_entity_view
+    weight: 120
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_country:
     weight: 101
     label: above
@@ -197,9 +207,9 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
