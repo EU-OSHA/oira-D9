@@ -24,6 +24,7 @@
         -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
         box-shadow: 0 6px 12px rgba(0,0,0,0.175);
         li{
+          background-color: $bg-color-blue-light;
           border: 0;
           border-bottom: 2px solid $bg-color-white;
           a{
