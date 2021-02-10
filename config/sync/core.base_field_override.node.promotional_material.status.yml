@@ -1,14 +1,14 @@
-uuid: 6720cf3c-e721-419f-b2f8-a4a45e41750e
+uuid: b98ac96f-595f-4dd6-9ff7-37a6c5a6d04d
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.promotional_resources
-id: node.promotional_resources.promote
-field_name: promote
+    - node.type.promotional_material
+id: node.promotional_material.status
+field_name: status
 entity_type: node
-bundle: promotional_resources
-label: 'Promoted to front page'
+bundle: promotional_material
+label: Published
 description: ''
 required: false
 translatable: true

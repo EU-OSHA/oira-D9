@@ -1,17 +1,17 @@
-uuid: 6c668a25-d422-4cdc-9d1e-091d3a8794c5
+uuid: 7fb243c5-1f90-4c88-8453-4a443e3e1fd0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.private_image
+    - node.type.promotional_material
   module:
     - text
-id: node.private_image.body
+id: node.promotional_material.body
 field_name: body
 entity_type: node
-bundle: private_image
-label: Body
+bundle: promotional_material
+label: Description
 description: ''
 required: false
 translatable: true

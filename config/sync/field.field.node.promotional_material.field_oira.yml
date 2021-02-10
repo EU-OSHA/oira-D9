@@ -1,14 +1,14 @@
-uuid: 0b17bff1-07f1-4381-9ef5-256bb0bd8696
+uuid: 5c43a597-92f2-4e33-b9aa-4e89a0e7a5ab
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_oira
-    - node.type.promotional_resources
-id: node.promotional_resources.field_oira
+    - node.type.promotional_material
+id: node.promotional_material.field_oira
 field_name: field_oira
 entity_type: node
-bundle: promotional_resources
+bundle: promotional_material
 label: 'OiRA / IRAT'
 description: ''
 required: true

@@ -1,16 +1,16 @@
-uuid: 91a6b5be-a02a-41aa-8719-edaba5506e73
+uuid: 2201f4f2-66e4-4524-ad02-6939a5084fed
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
-    - node.type.promotional_resources
+    - node.type.promotional_material
   module:
     - image
-id: node.promotional_resources.field_image
+id: node.promotional_material.field_image
 field_name: field_image
 entity_type: node
-bundle: promotional_resources
+bundle: promotional_material
 label: Image
 description: ''
 required: false

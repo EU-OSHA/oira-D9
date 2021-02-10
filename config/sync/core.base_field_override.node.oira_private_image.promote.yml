@@ -1,14 +1,14 @@
-uuid: f62d4760-cf55-488f-85dd-7dd80fe9c5ba
+uuid: 4401b2ef-d534-4fae-9e7b-c943caa0a89b
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.promotional_resources
-id: node.promotional_resources.status
-field_name: status
+    - node.type.oira_private_image
+id: node.oira_private_image.promote
+field_name: promote
 entity_type: node
-bundle: promotional_resources
-label: Published
+bundle: oira_private_image
+label: 'Promoted to front page'
 description: ''
 required: false
 translatable: true

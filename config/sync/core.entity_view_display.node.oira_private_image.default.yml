@@ -1,18 +1,18 @@
-uuid: ba7246dc-c2b3-41b9-909f-2e8e9c44ab20
+uuid: 16e79703-9070-43df-8bac-dfc359f3496e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.private_image.body
-    - field.field.node.private_image.field_oira_private_image
-    - field.field.node.private_image.field_sector
-    - node.type.private_image
+    - field.field.node.oira_private_image.body
+    - field.field.node.oira_private_image.field_oira_private_image
+    - field.field.node.oira_private_image.field_sector
+    - node.type.oira_private_image
   module:
     - text
     - user
-id: node.private_image.default
+id: node.oira_private_image.default
 targetEntityType: node
-bundle: private_image
+bundle: oira_private_image
 mode: default
 content:
   body:
@@ -23,16 +23,15 @@ content:
     third_party_settings: {  }
     region: content
   field_oira_private_image:
-    type: entity_reference_entity_view
-    weight: 103
+    weight: 102
     label: above
     settings:
-      view_mode: default
-      link: false
+      link: true
     third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_sector:
-    weight: 102
+    weight: 103
     label: above
     settings:
       link: true

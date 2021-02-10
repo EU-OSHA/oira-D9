@@ -1,18 +1,18 @@
-uuid: 03561d0c-9675-42e2-92f2-6bb1974a0e3f
+uuid: 92fd43a6-f814-4ca1-a06a-4797de1cc064
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_promotional_material_type
-    - node.type.promotional_resources
+    - node.type.promotional_material
     - taxonomy.vocabulary.promotional_material_type
-id: node.promotional_resources.field_promotional_material_type
+id: node.promotional_material.field_promotional_material_type
 field_name: field_promotional_material_type
 entity_type: node
-bundle: promotional_resources
+bundle: promotional_material
 label: 'Promotional material type'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

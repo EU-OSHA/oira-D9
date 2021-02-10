@@ -1,14 +1,14 @@
-uuid: a8d05ee6-b16e-41fa-8572-f0ae777fed19
+uuid: 619ef4e6-1871-4de2-8448-d8451a01702f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_wf_notification
-    - node.type.promotional_resources
-id: node.promotional_resources.field_wf_notification
+    - node.type.promotional_material
+id: node.promotional_material.field_wf_notification
 field_name: field_wf_notification
 entity_type: node
-bundle: promotional_resources
+bundle: promotional_material
 label: 'Disable notifications'
 description: ''
 required: false

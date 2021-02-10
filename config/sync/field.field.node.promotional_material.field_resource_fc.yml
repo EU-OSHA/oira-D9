@@ -1,4 +1,4 @@
-uuid: 8450b194-1c3c-4b51-a4ca-82a80afb90fa
+uuid: b14f5b38-bb6f-4233-90c3-03c48d2652c0
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,11 @@ dependencies:
     - media.type.image
     - media.type.remote_video
     - media.type.video
-    - node.type.promotional_resources
-id: node.promotional_resources.field_resource_fc
+    - node.type.promotional_material
+id: node.promotional_material.field_resource_fc
 field_name: field_resource_fc
 entity_type: node
-bundle: promotional_resources
+bundle: promotional_material
 label: Resource
 description: ''
 required: false

@@ -168,11 +168,11 @@ content:
     type: entity_reference_label
     region: content
   field_summary:
-    weight: 113
+    weight: 125
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   field_tags:
     type: entity_reference_label

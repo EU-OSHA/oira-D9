@@ -1,19 +1,19 @@
-uuid: 11d2f1e4-2c2b-4c18-b82a-95eef33f49ec
+uuid: e61f6a34-c8e9-447e-8e48-42946695becb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image_home_latest_material
+    - field.storage.node.field_oira_private_image
     - media.type.image
-    - node.type.promotional_resources
-id: node.promotional_resources.field_image_home_latest_material
-field_name: field_image_home_latest_material
+    - node.type.oira_private_image
+id: node.oira_private_image.field_oira_private_image
+field_name: field_oira_private_image
 entity_type: node
-bundle: promotional_resources
-label: 'Image Home latest materials'
+bundle: oira_private_image
+label: Image
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,11 @@
+uuid: cac8a6ae-39d5-4e95-9a9e-c9125911e6de
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oira_private_image
+id: node.oira_private_image
+target_entity_type_id: node
+target_bundle: oira_private_image
+default_langcode: und
+language_alterable: false

@@ -1,29 +1,28 @@
-uuid: 856f961d-c56b-4ee0-a31b-0d8dfc834529
+uuid: 8ac2ef5f-7214-4d4f-95bd-6823ca016040
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.promotional_resources.body
-    - field.field.node.promotional_resources.field_co_author
-    - field.field.node.promotional_resources.field_country
-    - field.field.node.promotional_resources.field_image
-    - field.field.node.promotional_resources.field_image_home_latest_material
-    - field.field.node.promotional_resources.field_image_media
-    - field.field.node.promotional_resources.field_oira
-    - field.field.node.promotional_resources.field_promotional_material_type
-    - field.field.node.promotional_resources.field_publication_date
-    - field.field.node.promotional_resources.field_resource_fc
-    - field.field.node.promotional_resources.field_revised_date
-    - field.field.node.promotional_resources.field_wf_notification
-    - node.type.promotional_resources
+    - field.field.node.promotional_material.body
+    - field.field.node.promotional_material.field_co_author
+    - field.field.node.promotional_material.field_country
+    - field.field.node.promotional_material.field_image
+    - field.field.node.promotional_material.field_image_home_latest_material
+    - field.field.node.promotional_material.field_oira
+    - field.field.node.promotional_material.field_promotional_material_type
+    - field.field.node.promotional_material.field_publication_date
+    - field.field.node.promotional_material.field_resource_fc
+    - field.field.node.promotional_material.field_revised_date
+    - field.field.node.promotional_material.field_wf_notification
+    - node.type.promotional_material
   module:
     - datetime
     - image
     - text
     - user
-id: node.promotional_resources.default
+id: node.promotional_material.default
 targetEntityType: node
-bundle: promotional_resources
+bundle: promotional_material
 mode: default
 content:
   body:
@@ -42,7 +41,7 @@ content:
     type: entity_reference_label
     region: content
   field_country:
-    weight: 108
+    weight: 110
     label: above
     settings:
       link: true
@@ -50,7 +49,7 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    weight: 103
+    weight: 104
     label: above
     settings:
       image_style: ''
@@ -59,24 +58,16 @@ content:
     type: image
     region: content
   field_image_home_latest_material:
-    type: entity_reference_entity_view
-    weight: 110
+    weight: 106
     label: above
     settings:
-      view_mode: default
-      link: false
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    region: content
-  field_image_media:
-    weight: 104
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+    type: image
     region: content
   field_oira:
-    weight: 105
+    weight: 102
     label: above
     settings:
       format: default
@@ -86,7 +77,7 @@ content:
     type: boolean
     region: content
   field_promotional_material_type:
-    weight: 111
+    weight: 105
     label: above
     settings:
       link: true
@@ -94,7 +85,7 @@ content:
     type: entity_reference_label
     region: content
   field_publication_date:
-    weight: 102
+    weight: 103
     label: above
     settings:
       format_type: medium
@@ -104,7 +95,7 @@ content:
     region: content
   field_resource_fc:
     type: entity_reference_entity_view
-    weight: 112
+    weight: 109
     label: above
     settings:
       view_mode: default
@@ -112,7 +103,7 @@ content:
     third_party_settings: {  }
     region: content
   field_revised_date:
-    weight: 106
+    weight: 108
     label: above
     settings:
       format_type: medium
@@ -121,7 +112,7 @@ content:
     type: datetime_default
     region: content
   field_wf_notification:
-    weight: 109
+    weight: 111
     label: above
     settings:
       format: default

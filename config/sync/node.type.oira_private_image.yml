@@ -1,4 +1,4 @@
-uuid: 03428b31-906c-4769-827f-9d0ceab74f2f
+uuid: 8eb04930-ad58-493f-88bb-03a2715dcdbc
 langcode: en
 status: true
 dependencies:
@@ -9,10 +9,10 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Promotional resources'
-type: promotional_resources
-description: 'Leaflet, poster, presentations, link to videos, etc...'
+name: 'Private image'
+type: oira_private_image
+description: ''
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 0
 display_submitted: false

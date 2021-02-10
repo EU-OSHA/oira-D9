@@ -1,15 +1,16 @@
-uuid: 449ed069-6e8c-4f39-bc4e-417ff161733f
+uuid: f42bfb45-cf95-4d77-97b0-b3334e8462c6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sector
-    - node.type.private_image
-id: node.private_image.field_sector
-field_name: field_sector
+    - field.storage.node.field_co_author
+    - node.type.promotional_material
+    - taxonomy.vocabulary.section
+id: node.promotional_material.field_co_author
+field_name: field_co_author
 entity_type: node
-bundle: private_image
-label: Sector
+bundle: promotional_material
+label: Co-author
 description: ''
 required: false
 translatable: true
@@ -18,7 +19,8 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      section: section
     sort:
       field: name
       direction: asc

@@ -1,15 +1,16 @@
-uuid: 96829733-1f41-4767-a4e4-7f7709ee521c
+uuid: 4e0e4f34-9515-412f-81a3-bfba8094a0e6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_co_author
-    - node.type.promotional_resources
-id: node.promotional_resources.field_co_author
-field_name: field_co_author
+    - field.storage.node.field_sector
+    - node.type.oira_private_image
+    - taxonomy.vocabulary.sector
+id: node.oira_private_image.field_sector
+field_name: field_sector
 entity_type: node
-bundle: promotional_resources
-label: Co-author
+bundle: oira_private_image
+label: Sector
 description: ''
 required: false
 translatable: true
@@ -18,7 +19,8 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      sector: sector
     sort:
       field: name
       direction: asc
