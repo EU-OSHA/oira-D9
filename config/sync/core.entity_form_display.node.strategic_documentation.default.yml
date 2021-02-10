@@ -29,7 +29,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 5
     settings:
       rows: 9
       summary_rows: 3
@@ -44,20 +44,16 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_country:
-    weight: 3
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_language:
-    weight: 18
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 6
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_link:
     weight: 10
@@ -81,32 +77,32 @@ content:
     region: content
   field_private_file:
     type: media_library_widget
-    weight: 9
+    weight: 8
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_private_image:
     type: media_library_widget
-    weight: 8
+    weight: 7
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_publication_date:
-    weight: 5
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_strategic_type:
-    weight: 4
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_wf_notification:
-    weight: 11
+    weight: 9
     settings:
       display_label: true
     third_party_settings: {  }
@@ -114,7 +110,7 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 7
+    weight: 18
     region: content
     settings:
       include_locked: true
