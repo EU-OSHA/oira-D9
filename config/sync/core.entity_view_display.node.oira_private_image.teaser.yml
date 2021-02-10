@@ -1,19 +1,19 @@
-uuid: 18a86fa4-c6f9-48d1-8f5f-eff2139b92dc
+uuid: d1184953-502b-4ec5-a646-cfc0d409d3d7
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.private_image.body
-    - field.field.node.private_image.field_oira_private_image
-    - field.field.node.private_image.field_sector
-    - node.type.private_image
+    - field.field.node.oira_private_image.body
+    - field.field.node.oira_private_image.field_oira_private_image
+    - field.field.node.oira_private_image.field_sector
+    - node.type.oira_private_image
   module:
     - text
     - user
-id: node.private_image.teaser
+id: node.oira_private_image.teaser
 targetEntityType: node
-bundle: private_image
+bundle: oira_private_image
 mode: teaser
 content:
   body:

@@ -1,14 +1,15 @@
-uuid: 449ed069-6e8c-4f39-bc4e-417ff161733f
+uuid: 4e0e4f34-9515-412f-81a3-bfba8094a0e6
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_sector
-    - node.type.private_image
-id: node.private_image.field_sector
+    - node.type.oira_private_image
+    - taxonomy.vocabulary.sector
+id: node.oira_private_image.field_sector
 field_name: field_sector
 entity_type: node
-bundle: private_image
+bundle: oira_private_image
 label: Sector
 description: ''
 required: false
@@ -18,7 +19,8 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      sector: sector
     sort:
       field: name
       direction: asc

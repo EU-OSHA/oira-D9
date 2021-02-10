@@ -1,16 +1,16 @@
-uuid: 6c668a25-d422-4cdc-9d1e-091d3a8794c5
+uuid: e1223e95-1268-4198-9641-ce3d09cef1ab
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.private_image
+    - node.type.oira_private_image
   module:
     - text
-id: node.private_image.body
+id: node.oira_private_image.body
 field_name: body
 entity_type: node
-bundle: private_image
+bundle: oira_private_image
 label: Body
 description: ''
 required: false

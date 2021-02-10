@@ -1,4 +1,4 @@
-uuid: f424d899-7bbf-431c-8eda-6429fff732f0
+uuid: 8eb04930-ad58-493f-88bb-03a2715dcdbc
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 name: 'Private image'
-type: private_image
+type: oira_private_image
 description: ''
 help: ''
 new_revision: false
