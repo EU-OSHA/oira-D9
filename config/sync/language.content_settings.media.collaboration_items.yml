@@ -1,0 +1,11 @@
+uuid: 5c993d77-5363-4e2b-8697-e796f69ae887
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.collaboration_items
+id: media.collaboration_items
+target_entity_type_id: media
+target_bundle: collaboration_items
+default_langcode: site_default
+language_alterable: false
