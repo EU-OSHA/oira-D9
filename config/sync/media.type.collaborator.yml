@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: collaborator
 label: Collaborator
-description: ''
+description: 'Used in Content type Partner'
 source: image
 queue_thumbnail_downloads: false
 new_revision: false

@@ -1,0 +1,13 @@
+uuid: 3907fd85-60ad-4994-9dff-debd1862564c
+langcode: en
+status: true
+dependencies: {  }
+id: resource_fc
+label: 'Resource FC'
+description: 'Used in Content type Promotional Resources'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }
