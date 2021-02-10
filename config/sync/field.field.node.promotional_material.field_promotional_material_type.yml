@@ -1,0 +1,29 @@
+uuid: 92fd43a6-f814-4ca1-a06a-4797de1cc064
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_promotional_material_type
+    - node.type.promotional_material
+    - taxonomy.vocabulary.promotional_material_type
+id: node.promotional_material.field_promotional_material_type
+field_name: field_promotional_material_type
+entity_type: node
+bundle: promotional_material
+label: 'Promotional material type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      promotional_material_type: promotional_material_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

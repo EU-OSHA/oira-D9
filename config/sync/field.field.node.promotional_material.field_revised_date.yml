@@ -1,0 +1,24 @@
+uuid: 0487447b-fba1-45ab-8073-369af853c142
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_revised_date
+    - node.type.promotional_material
+  module:
+    - datetime
+id: node.promotional_material.field_revised_date
+field_name: field_revised_date
+entity_type: node
+bundle: promotional_material
+label: 'Revised date'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime
