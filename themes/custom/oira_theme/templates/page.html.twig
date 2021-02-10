@@ -4,17 +4,8 @@
   <div class="top-header-container container">
     <div class="top-header-content row">
       <div class="header-logo">
-        <a class="logo navbar-btn pull-left" href="https://osha.europa.eu/" target="_blank" title="{{ 'EU-OSHA corporate website'|trans }}">
-          <img src="{{ directory }}/images/EU-OSHA-en.png" alt="{{ 'EU-OSHA corporate website'|trans }}" />
-        </a>
-        <span class="logo-eu">
-              <img class="eu-logo" src="{{ directory }}/images/europeLogo.png" alt="{{ 'European Union"'|trans }}" />
-        </span>
-        <span class="logo-oira">
-           <img class="oira-logo" src="{{ directory }}/images/oiraLogo.gif" alt="{{ 'Home"'|trans }} "/>
-        </span>
+        {{ page.top_header_logos }}
       </div>
-
       <div class="push-right">
         <div class="header-menu-news">
           {{ page.header }}
@@ -46,11 +37,7 @@
 </header>
 {% endblock %}
 
-
-
-
 {% block content %}
-{{ dump(node.bundle) }}
   <div class="container">{{ page.breadcrumb }}</div>
   {% if page.sidebar_first %}
     <div class="content-two-columns">
@@ -92,17 +79,9 @@
 
 {% block footer %}
   <div class="{{ container }}">
-    {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-      <div class="site-footer__top clearfix">
-        {{ page.footer_first }}
-        {{ page.footer_second }}
-        {{ page.footer_third }}
-        {{ page.footer_fourth }}
-      </div>
-    {% endif %}
-    {% if page.footer_fifth %}
+    {% if page.footer_end%}
       <div class="site-footer__bottom">
-        {{ page.footer_fifth }}
+        {{ page.footer_end }}
       </div>
     {% endif %}
   </div>

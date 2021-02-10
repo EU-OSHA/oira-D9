@@ -11,8 +11,8 @@ dependencies:
     - oira_theme
 id: footermenu
 theme: oira_theme
-region: footer_fifth
-weight: 0
+region: footer_end
+weight: -9
 provider: null
 plugin: 'system_menu_block:footer-menu'
 settings:

@@ -1,0 +1,13 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Reset
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Edit
+        delete_media:
+          text: Delete

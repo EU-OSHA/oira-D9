@@ -1,23 +1,23 @@
-uuid: 1d90822c-fea5-4739-8ea2-da9d882ff1cf
+uuid: 62051daa-f9ff-430b-904b-874fe24a2488
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
+    - 'block_content:block_image:c3bb7c7d-2f42-4707-a2dd-b46a2a0edfa7'
   module:
     - block_content
     - context
   theme:
     - oira_theme
-id: copyright
+id: logoosha
 theme: oira_theme
-region: footer_end
-weight: -10
+region: top_header_logos
+weight: 0
 provider: null
-plugin: 'block_content:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
+plugin: 'block_content:c3bb7c7d-2f42-4707-a2dd-b46a2a0edfa7'
 settings:
-  id: 'block_content:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
-  label: Copyright
+  id: 'block_content:c3bb7c7d-2f42-4707-a2dd-b46a2a0edfa7'
+  label: Logo-OSHA
   provider: block_content
   label_display: '0'
   status: true

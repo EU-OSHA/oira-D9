@@ -11,8 +11,8 @@ dependencies:
     - oira_theme
 id: socialmenu_2
 theme: oira_theme
-region: footer_fifth
-weight: 0
+region: footer_end
+weight: -8
 provider: null
 plugin: 'system_menu_block:social-menu'
 settings:

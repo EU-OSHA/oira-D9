@@ -14,7 +14,7 @@ _core:
 id: oira_theme_account_menu
 theme: oira_theme
 region: top_header
-weight: 0
+weight: -12
 provider: null
 plugin: 'system_menu_block:account'
 settings:
