@@ -1,7 +1,23 @@
 @charset "UTF-8";
-/*Font Family*/
+/* Icons */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot");
+  src: url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff") format("woff"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font: normal normal 16px/1 "Glyphicons Halflings";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 4px;
+}
+
+/*Font Family*/
 @font-face {
   font-family: "Roboto", sans-serif;
 }
@@ -179,6 +195,29 @@ a:hover {
   margin-left: auto;
 }
 
+select.custom-select {
+  width: auto;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  height: initial;
+  background: url(../images/select-ico.png) no-repeat 100% -2px;
+  background-color: rgba(0, 0, 0, 0);
+  padding-right: 1.5em;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0 rgba(38, 143, 255, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  box-shadow: 0 0 0 0 rgba(38, 143, 255, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 rgba(38, 143, 255, 0.5);
+}
+
 .see-more {
   display: block;
 }
@@ -228,13 +267,17 @@ a:hover {
   font-weight: normal;
   text-shadow: 0 0 0 #fff;
 }
-#sidebar_first aside h2:before {
-  content: ">";
-  display: block;
-  float: right;
+#sidebar_first aside h2:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  display: inline-block;
+  margin-left: 10px;
 }
-#sidebar_first aside h2.active:before {
-  content: "<";
+#sidebar_first aside h2.active:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  display: inline-block;
+  margin-left: 10px;
 }
 #sidebar_first aside a {
   color: #FFF;
@@ -320,6 +363,33 @@ a:hover {
 
 /* End news detail */
 /* OiRA Tools View */
+.page-view-oira-ws .two-column section {
+  position: relative;
+}
+.page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws {
+  position: absolute;
+  z-index: 99999;
+  top: 40px;
+  left: 7px;
+}
+.page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws .form-item-sort-by label {
+  float: left;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws .form-item-sort-by select.custom-select {
+  width: auto;
+  margin-top: 7px;
+  margin-left: 7px;
+  font-size: 0.9em;
+  display: inline-block;
+}
+.page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws .form-item-sort-by select.custom-select:focus {
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.25);
+}
+.page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws button {
+  display: none;
+}
 .page-view-oira-ws #sidebar_first {
   padding-top: 2rem;
 }
@@ -327,12 +397,41 @@ a:hover {
   border-bottom: 0;
   cursor: pointer;
 }
+.page-view-oira-ws #sidebar_first aside #edit-submit-oira-ws--2 {
+  position: absolute;
+  top: 46px;
+  right: 0px;
+  color: #786586;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  width: 35px;
+  line-height: 19px;
+  font-size: 1.2em;
+  padding-left: 7px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+.page-view-oira-ws #sidebar_first aside #edit-submit-oira-ws--2:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  margin-right: 30px;
+}
+.page-view-oira-ws #sidebar_first aside #edit-reset--2 {
+  background: transparent;
+  color: #FFF;
+  border: 0;
+  padding-left: 0;
+}
+.page-view-oira-ws #sidebar_first aside .form-item-sort-by {
+  display: none;
+}
 .page-view-oira-ws #sidebar_first .block {
   border-top: 2px solid #FFF;
   padding: 1rem 0 0 0;
   margin-bottom: 0;
 }
-.page-view-oira-ws #sidebar_first .block-facets .content {
+.page-view-oira-ws #block-exposedformoira-wstools-ws .form-item-search-api-fulltext {
   display: none;
 }
 .page-view-oira-ws .view {
@@ -348,8 +447,7 @@ a:hover {
 }
 .page-view-oira-ws .view .view-content.row {
   width: 70%;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 2rem 0 0 0;
   padding-top: 2rem;
   background: #FFF;
 }
@@ -379,9 +477,12 @@ a:hover {
   font-style: normal;
 }
 .page-view-oira-ws .content-view-tools-view .group-right div:nth-child(1) a:before {
-  content: ">";
+  font-family: "Glyphicons Halflings";
+  content: "";
+  color: #10b2e4;
   display: block;
   float: right;
+  margin-top: -2px;
   padding-left: 10px;
 }
 .page-view-oira-ws .content-view-tools-view .group-right .views-field.views-field-field-image {
@@ -532,6 +633,7 @@ a:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 }
 #navbar-main ul.navbar-nav li ul.dropdown-menu li {
+  background-color: #10b2e4;
   border: 0;
   border-bottom: 2px solid #FFF;
 }
