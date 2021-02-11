@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.rss
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_aditional_resources
     - field.field.node.article.field_archived
     - field.field.node.article.field_article_type
@@ -37,7 +36,6 @@ content:
     region: content
 hidden:
   body: true
-  comment: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
