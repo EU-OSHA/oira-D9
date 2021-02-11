@@ -1,0 +1,28 @@
+uuid: 890358b7-d251-4f8a-a78d-6bac3c43221b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.social-menu.field_image_menu_
+    - system.menu.social-menu
+id: menu_link_content.social-menu.default
+targetEntityType: menu_link_content
+bundle: social-menu
+mode: default
+content:
+  field_image_menu_:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  children: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

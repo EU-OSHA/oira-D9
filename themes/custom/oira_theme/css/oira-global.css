@@ -620,6 +620,14 @@ select.custom-select {
   font-family: "Glyphicons Halflings";
 }
 
+/* Hide menu link to view only the Share links images in header and footer */
+#block-socialmenu > ul, #block-socialmenu-2 > ul {
+  list-style: none;
+}
+#block-socialmenu > ul > li > a, #block-socialmenu-2 > ul > li > a {
+  display: none;
+}
+
 #navbar-main {
   font-family: "Oswald", sans-serif;
   background-color: #10b2e4;

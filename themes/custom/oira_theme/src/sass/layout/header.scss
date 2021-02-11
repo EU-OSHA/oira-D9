@@ -72,3 +72,16 @@
     }
   }
 }
+
+/* Hide menu link to view only the Share links images in header and footer */
+#block-socialmenu, #block-socialmenu-2{
+  > ul{
+    list-style: none;
+    > li{
+      > a{
+        display: none;
+      }
+    }
+  }
+}
+
