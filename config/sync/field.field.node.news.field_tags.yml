@@ -1,26 +1,26 @@
-uuid: cc682add-1461-487d-bed2-56ee3fb239fc
+uuid: c7d49cd0-fe4d-424f-9166-f1986d9b8c08
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_co_author
+    - field.storage.node.field_tags
     - node.type.news
-    - taxonomy.vocabulary.section
-id: node.news.field_co_author
-field_name: field_co_author
+    - taxonomy.vocabulary.tags
+id: node.news.field_tags
+field_name: field_tags
 entity_type: node
 bundle: news
-label: Co-author
+label: Tags
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      section: section
+      tags: tags
     sort:
       field: name
       direction: asc

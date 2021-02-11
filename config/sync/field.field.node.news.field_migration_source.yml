@@ -1,26 +1,26 @@
-uuid: cc682add-1461-487d-bed2-56ee3fb239fc
+uuid: 642a1ced-8494-4152-8510-989b9a395d28
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_co_author
+    - field.storage.node.field_migration_source
     - node.type.news
-    - taxonomy.vocabulary.section
-id: node.news.field_co_author
-field_name: field_co_author
+    - taxonomy.vocabulary.migration_sources
+id: node.news.field_migration_source
+field_name: field_migration_source
 entity_type: node
 bundle: news
-label: Co-author
+label: 'Migration Source'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      section: section
+      migration_sources: migration_sources
     sort:
       field: name
       direction: asc
