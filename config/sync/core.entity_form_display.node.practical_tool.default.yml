@@ -1,32 +1,33 @@
-uuid: 349510fc-8bf5-4b4a-a71d-5f56cbb74887
+uuid: dc6f4588-7dab-44fc-81b7-d795bc462917
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.oira_tools.body
-    - field.field.node.oira_tools.field_alternative_body
-    - field.field.node.oira_tools.field_alternative_title
-    - field.field.node.oira_tools.field_co_author
-    - field.field.node.oira_tools.field_country
-    - field.field.node.oira_tools.field_image
-    - field.field.node.oira_tools.field_image_media
-    - field.field.node.oira_tools.field_language
-    - field.field.node.oira_tools.field_publication_date
-    - field.field.node.oira_tools.field_revised_date
-    - field.field.node.oira_tools.field_sector_category
-    - field.field.node.oira_tools.field_third_description
-    - field.field.node.oira_tools.field_third_language
-    - field.field.node.oira_tools.field_third_title
-    - field.field.node.oira_tools.field_tool_link
-    - field.field.node.oira_tools.field_tool_type
-    - field.field.node.oira_tools.field_wf_notification
+    - field.field.node.practical_tool.body
+    - field.field.node.practical_tool.field_alternative_body
+    - field.field.node.practical_tool.field_alternative_title
+    - field.field.node.practical_tool.field_co_author
+    - field.field.node.practical_tool.field_country
+    - field.field.node.practical_tool.field_image
+    - field.field.node.practical_tool.field_image_media
+    - field.field.node.practical_tool.field_language
+    - field.field.node.practical_tool.field_publication_date
+    - field.field.node.practical_tool.field_revised_date
+    - field.field.node.practical_tool.field_sector_category
+    - field.field.node.practical_tool.field_third_description
+    - field.field.node.practical_tool.field_third_language
+    - field.field.node.practical_tool.field_third_title
+    - field.field.node.practical_tool.field_tool_link
+    - field.field.node.practical_tool.field_tool_type
+    - field.field.node.practical_tool.field_wf_notification
     - image.style.thumbnail
-    - node.type.oira_tools
+    - node.type.practical_tool
   module:
     - datetime
     - field_group
     - image
     - link
+    - media_library
     - path
     - text
     - workbench_moderation
@@ -38,12 +39,12 @@ third_party_settings:
         - field_alternative_body
         - field_language
       parent_name: ''
-      weight: 3
+      weight: 2
       format_type: fieldset
       region: content
       format_settings:
         id: ''
-        classes: 'group-alternative-language field-group-fieldset'
+        classes: ''
         description: ''
         required_fields: true
       label: 'Alternative language'
@@ -53,18 +54,18 @@ third_party_settings:
         - field_third_description
         - field_third_language
       parent_name: ''
-      weight: 4
+      weight: 3
       format_type: fieldset
       region: content
       format_settings:
         id: ''
-        classes: 'group-third-language field-group-fieldset'
+        classes: ''
         description: ''
         required_fields: true
       label: 'Third language'
-id: node.oira_tools.default
+id: node.practical_tool.default
 targetEntityType: node
-bundle: oira_tools
+bundle: practical_tool
 mode: default
 content:
   body:
@@ -79,12 +80,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 9
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   field_alternative_body:
-    weight: 29
+    weight: 11
     settings:
       rows: 9
       summary_rows: 3
@@ -94,7 +95,7 @@ content:
     type: text_textarea_with_summary
     region: content
   field_alternative_title:
-    weight: 28
+    weight: 10
     settings:
       size: 60
       placeholder: ''
@@ -102,27 +103,19 @@ content:
     type: string_textfield
     region: content
   field_co_author:
-    weight: 36
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 8
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_country:
-    weight: 39
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 11
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_image:
-    weight: 5
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -130,45 +123,38 @@ content:
     type: image_image
     region: content
   field_image_media:
-    weight: 6
+    weight: 5
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: media_library_widget
     region: content
   field_language:
-    weight: 30
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_publication_date:
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_revised_date:
-    weight: 35
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_sector_category:
-    weight: 40
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 12
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_third_description:
-    weight: 33
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
@@ -178,13 +164,13 @@ content:
     type: text_textarea_with_summary
     region: content
   field_third_language:
-    weight: 34
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_third_title:
-    weight: 32
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -192,7 +178,7 @@ content:
     type: string_textfield
     region: content
   field_tool_link:
-    weight: 37
+    weight: 9
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -200,17 +186,13 @@ content:
     type: link_default
     region: content
   field_tool_type:
-    weight: 38
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    weight: 10
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_wf_notification:
-    weight: 41
+    weight: 13
     settings:
       display_label: true
     third_party_settings: {  }
@@ -218,14 +200,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 20
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 12
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -233,21 +215,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 16
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 19
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 17
     region: content
     third_party_settings: {  }
   title:
@@ -260,7 +242,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60

@@ -1,14 +1,14 @@
-uuid: 96225d68-54ce-4239-b9e0-9509fecd5c28
+uuid: 240bd4ff-2266-46f8-91ef-f3112e7725c1
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.oira_tools
-id: node.oira_tools.promote
-field_name: promote
+    - node.type.practical_tool
+id: node.practical_tool.status
+field_name: status
 entity_type: node
-bundle: oira_tools
-label: 'Promoted to front page'
+bundle: practical_tool
+label: Published
 description: ''
 required: false
 translatable: true

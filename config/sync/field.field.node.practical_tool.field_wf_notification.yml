@@ -1,18 +1,18 @@
-uuid: 49e0a716-18e9-4c1c-939e-deb312d69f02
+uuid: eaba553d-2bf3-42a8-b13a-ab27057f43cc
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_wf_notification
-    - node.type.oira_tools
-id: node.oira_tools.field_wf_notification
+    - node.type.practical_tool
+id: node.practical_tool.field_wf_notification
 field_name: field_wf_notification
 entity_type: node
-bundle: oira_tools
+bundle: practical_tool
 label: 'Disable notifications'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 0

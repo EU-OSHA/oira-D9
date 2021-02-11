@@ -1,18 +1,18 @@
-uuid: ede2fdc6-c6db-4ef2-b6c8-01e02c6d2e5c
+uuid: 27b9af8c-c90c-4841-ab4c-d22678b35729
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_alternative_title
-    - node.type.oira_tools
-id: node.oira_tools.field_alternative_title
+    - node.type.practical_tool
+id: node.practical_tool.field_alternative_title
 field_name: field_alternative_title
 entity_type: node
-bundle: oira_tools
+bundle: practical_tool
 label: 'Alternative title'
-description: 'This title will be shown when user is navigating the website in tool''s language'
+description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

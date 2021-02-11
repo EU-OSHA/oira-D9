@@ -1,13 +1,13 @@
-uuid: f7365025-5aa3-4f59-aece-12dd3c2dd3a3
+uuid: c45127a7-879f-4599-b8a2-be7593dd73a4
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.oira_tools
-id: node.oira_tools.title
+    - node.type.practical_tool
+id: node.practical_tool.title
 field_name: title
 entity_type: node
-bundle: oira_tools
+bundle: practical_tool
 label: 'Tool name'
 description: ''
 required: true

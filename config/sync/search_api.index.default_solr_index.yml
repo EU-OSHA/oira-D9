@@ -8,7 +8,6 @@ dependencies:
     - user
     - search_api
   config:
-    - field.storage.node.field_tags
     - search_api.server.apachesolr
     - core.entity_view_mode.node.search_index
 third_party_settings:
@@ -84,14 +83,6 @@ field_settings:
     dependencies:
       module:
         - node
-  field_tags:
-    label: Tags
-    datasource_id: 'entity:node'
-    property_path: field_tags
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_tags
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -158,8 +149,9 @@ field_settings:
 datasource_settings:
   'entity:node':
     bundles:
-      default: true
-      selected: {  }
+      default: false
+      selected:
+        - practical_tool
     languages:
       default: true
       selected: {  }

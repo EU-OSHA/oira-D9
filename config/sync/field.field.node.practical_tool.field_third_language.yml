@@ -1,18 +1,18 @@
-uuid: ce9bef5b-f0a5-40e7-b4a1-7c318685e659
+uuid: 1048e873-e163-4361-a290-137e73230a2a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_language
-    - node.type.oira_tools
-id: node.oira_tools.field_language
-field_name: field_language
+    - field.storage.node.field_third_language
+    - node.type.practical_tool
+id: node.practical_tool.field_third_language
+field_name: field_third_language
 entity_type: node
-bundle: oira_tools
+bundle: practical_tool
 label: Language
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

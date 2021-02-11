@@ -1,20 +1,20 @@
-uuid: c3433832-5836-46d9-bc52-fb90f035f40c
+uuid: 990df7bb-342f-4c1e-9d94-77427ae1a4d0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_tool_link
-    - node.type.oira_tools
+    - node.type.practical_tool
   module:
     - link
-id: node.oira_tools.field_tool_link
+id: node.practical_tool.field_tool_link
 field_name: field_tool_link
 entity_type: node
-bundle: oira_tools
+bundle: practical_tool
 label: 'Tool link'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

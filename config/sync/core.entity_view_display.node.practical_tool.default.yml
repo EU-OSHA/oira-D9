@@ -1,53 +1,53 @@
-uuid: 47e38e33-3736-4f43-bef3-e6160d4919d9
+uuid: fe314f3e-6e6b-4a78-94bc-9aea863a657a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.oira_tools.body
-    - field.field.node.oira_tools.field_alternative_body
-    - field.field.node.oira_tools.field_alternative_title
-    - field.field.node.oira_tools.field_co_author
-    - field.field.node.oira_tools.field_country
-    - field.field.node.oira_tools.field_image
-    - field.field.node.oira_tools.field_image_media
-    - field.field.node.oira_tools.field_language
-    - field.field.node.oira_tools.field_publication_date
-    - field.field.node.oira_tools.field_revised_date
-    - field.field.node.oira_tools.field_sector_category
-    - field.field.node.oira_tools.field_third_description
-    - field.field.node.oira_tools.field_third_language
-    - field.field.node.oira_tools.field_third_title
-    - field.field.node.oira_tools.field_tool_link
-    - field.field.node.oira_tools.field_tool_type
-    - field.field.node.oira_tools.field_wf_notification
-    - node.type.oira_tools
+    - field.field.node.practical_tool.body
+    - field.field.node.practical_tool.field_alternative_body
+    - field.field.node.practical_tool.field_alternative_title
+    - field.field.node.practical_tool.field_co_author
+    - field.field.node.practical_tool.field_country
+    - field.field.node.practical_tool.field_image
+    - field.field.node.practical_tool.field_image_media
+    - field.field.node.practical_tool.field_language
+    - field.field.node.practical_tool.field_publication_date
+    - field.field.node.practical_tool.field_revised_date
+    - field.field.node.practical_tool.field_sector_category
+    - field.field.node.practical_tool.field_third_description
+    - field.field.node.practical_tool.field_third_language
+    - field.field.node.practical_tool.field_third_title
+    - field.field.node.practical_tool.field_tool_link
+    - field.field.node.practical_tool.field_tool_type
+    - field.field.node.practical_tool.field_wf_notification
+    - node.type.practical_tool
   module:
     - datetime
     - image
     - link
     - text
     - user
-id: node.oira_tools.default
+id: node.practical_tool.default
 targetEntityType: node
-bundle: oira_tools
+bundle: practical_tool
 mode: default
 content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     region: content
   field_alternative_body:
-    weight: 105
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_alternative_title:
-    weight: 104
+    weight: 8
     label: above
     settings:
       link_to_entity: false
@@ -55,7 +55,7 @@ content:
     type: string
     region: content
   field_co_author:
-    weight: 112
+    weight: 12
     label: above
     settings:
       link: true
@@ -63,7 +63,7 @@ content:
     type: entity_reference_label
     region: content
   field_country:
-    weight: 115
+    weight: 3
     label: above
     settings:
       link: true
@@ -71,7 +71,7 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    weight: 102
+    weight: 4
     label: above
     settings:
       image_style: ''
@@ -80,7 +80,7 @@ content:
     type: image
     region: content
   field_image_media:
-    weight: 103
+    weight: 5
     label: above
     settings:
       link: true
@@ -88,7 +88,7 @@ content:
     type: entity_reference_label
     region: content
   field_language:
-    weight: 106
+    weight: 7
     label: above
     settings:
       link: true
@@ -96,7 +96,7 @@ content:
     type: entity_reference_label
     region: content
   field_publication_date:
-    weight: 107
+    weight: 1
     label: above
     settings:
       format_type: medium
@@ -105,7 +105,7 @@ content:
     type: datetime_default
     region: content
   field_revised_date:
-    weight: 111
+    weight: 10
     label: above
     settings:
       format_type: medium
@@ -114,7 +114,7 @@ content:
     type: datetime_default
     region: content
   field_sector_category:
-    weight: 116
+    weight: 11
     label: above
     settings:
       link: true
@@ -122,14 +122,14 @@ content:
     type: entity_reference_label
     region: content
   field_third_description:
-    weight: 109
+    weight: 16
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_third_language:
-    weight: 110
+    weight: 17
     label: above
     settings:
       link: true
@@ -137,7 +137,7 @@ content:
     type: entity_reference_label
     region: content
   field_third_title:
-    weight: 108
+    weight: 14
     label: above
     settings:
       link_to_entity: false
@@ -145,7 +145,7 @@ content:
     type: string
     region: content
   field_tool_link:
-    weight: 113
+    weight: 6
     label: above
     settings:
       trim_length: 80
@@ -157,7 +157,7 @@ content:
     type: link
     region: content
   field_tool_type:
-    weight: 114
+    weight: 2
     label: above
     settings:
       link: true
@@ -165,7 +165,7 @@ content:
     type: entity_reference_label
     region: content
   field_wf_notification:
-    weight: 117
+    weight: 13
     label: above
     settings:
       format: default
@@ -175,10 +175,10 @@ content:
     type: boolean
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

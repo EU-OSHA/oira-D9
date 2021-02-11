@@ -1,20 +1,20 @@
-uuid: f4f52412-2105-4bd5-86d5-fdabcb93320a
+uuid: ac9ece21-f5b0-41f9-8e49-f9a9d97ecdbc
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_third_description
-    - node.type.oira_tools
+    - node.type.practical_tool
   module:
     - text
-id: node.oira_tools.field_third_description
+id: node.practical_tool.field_third_description
 field_name: field_third_description
 entity_type: node
-bundle: oira_tools
+bundle: practical_tool
 label: Description
 description: 'This description will be shown when user is navigating the site in third tool''s language'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,4 +1,4 @@
-uuid: b6cbdb9f-c48d-42d4-a7b7-bdcd6572bc7b
+uuid: 5d98dde3-c4f0-4d05-8aba-4e94c90dbf28
 langcode: en
 status: true
 dependencies:
@@ -10,9 +10,9 @@ third_party_settings:
       - main
     parent: 'main:'
 name: 'OiRA Tools'
-type: oira_tools
+type: practical_tool
 description: ''
-help: ''
+help: 'The English tool name'
 new_revision: true
 preview_mode: 0
 display_submitted: false

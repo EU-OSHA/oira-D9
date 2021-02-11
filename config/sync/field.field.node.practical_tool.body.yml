@@ -1,16 +1,16 @@
-uuid: e112a898-4f23-4724-87d3-8d796d2c1182
+uuid: 72cdb4e9-9c30-49b4-bb45-f6badc944d81
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.oira_tools
+    - node.type.practical_tool
   module:
     - text
-id: node.oira_tools.body
+id: node.practical_tool.body
 field_name: body
 entity_type: node
-bundle: oira_tools
+bundle: practical_tool
 label: Description
 description: ''
 required: false

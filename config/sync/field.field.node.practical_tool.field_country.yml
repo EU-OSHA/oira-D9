@@ -1,24 +1,26 @@
-uuid: d39f1252-96a6-4e59-a728-a6f32b2035fd
+uuid: c6a7317f-02d2-4c81-9714-a4ae98b67a82
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tool_type
-    - node.type.oira_tools
-id: node.oira_tools.field_tool_type
-field_name: field_tool_type
+    - field.storage.node.field_country
+    - node.type.practical_tool
+    - taxonomy.vocabulary.country
+id: node.practical_tool.field_country
+field_name: field_country
 entity_type: node
-bundle: oira_tools
-label: Type
+bundle: practical_tool
+label: Country
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      country: country
     sort:
       field: name
       direction: asc

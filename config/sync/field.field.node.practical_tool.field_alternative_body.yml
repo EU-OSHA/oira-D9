@@ -1,20 +1,20 @@
-uuid: 49124a92-eecd-4804-8d68-0dff61fcc590
+uuid: 49e6e3b9-9acc-452c-8ba6-f3efc7e2d219
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_alternative_body
-    - node.type.oira_tools
+    - node.type.practical_tool
   module:
     - text
-id: node.oira_tools.field_alternative_body
+id: node.practical_tool.field_alternative_body
 field_name: field_alternative_body
 entity_type: node
-bundle: oira_tools
+bundle: practical_tool
 label: 'Alternative description'
 description: 'This description will be shown when user is navigating the site in tool''s language'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
