@@ -1,0 +1,22 @@
+uuid: b85cab68-a5e4-4260-b2eb-16183438370e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.contact_topic
+id: taxonomy_term.contact_topic.status
+field_name: status
+entity_type: taxonomy_term
+bundle: contact_topic
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

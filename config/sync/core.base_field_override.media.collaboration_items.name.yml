@@ -1,0 +1,20 @@
+uuid: 48ff32b6-3149-4333-b96d-bb38af9691fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.collaboration_items
+id: media.collaboration_items.name
+field_name: name
+entity_type: media
+bundle: collaboration_items
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

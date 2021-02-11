@@ -1,0 +1,18 @@
+uuid: 027c2bc4-785c-460b-a9b5-e2ab8c992576
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collaboration_document
+id: node.collaboration_document.metatag
+field_name: metatag
+entity_type: node
+bundle: collaboration_document
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

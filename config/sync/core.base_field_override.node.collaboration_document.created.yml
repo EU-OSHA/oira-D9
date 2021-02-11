@@ -1,0 +1,18 @@
+uuid: d58b1e73-06a4-4c0f-938a-e5a8237e5b0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collaboration_document
+id: node.collaboration_document.created
+field_name: created
+entity_type: node
+bundle: collaboration_document
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

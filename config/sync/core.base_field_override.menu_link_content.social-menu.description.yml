@@ -1,0 +1,18 @@
+uuid: ff2511d9-a961-4d64-8267-5e240a40a469
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-menu
+id: menu_link_content.social-menu.description
+field_name: description
+entity_type: menu_link_content
+bundle: social-menu
+label: Description
+description: 'Shown when hovering over the menu link.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

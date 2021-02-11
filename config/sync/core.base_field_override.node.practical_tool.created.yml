@@ -1,0 +1,18 @@
+uuid: f5ba909e-4a2f-4419-88a2-3c0563721a79
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.practical_tool
+id: node.practical_tool.created
+field_name: created
+entity_type: node
+bundle: practical_tool
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

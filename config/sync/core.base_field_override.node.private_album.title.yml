@@ -1,0 +1,18 @@
+uuid: 7be82ac3-68fc-4f1e-aae8-b6c0d2ec52ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_album
+id: node.private_album.title
+field_name: title
+entity_type: node
+bundle: private_album
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

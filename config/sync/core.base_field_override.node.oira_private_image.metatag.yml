@@ -1,0 +1,18 @@
+uuid: abf48661-9e15-461d-9d3c-9d10e2bcb8ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oira_private_image
+id: node.oira_private_image.metatag
+field_name: metatag
+entity_type: node
+bundle: oira_private_image
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

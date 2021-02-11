@@ -14,7 +14,7 @@ bundle: collaboration_items
 label: 'Item files'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

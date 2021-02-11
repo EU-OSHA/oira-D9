@@ -1,0 +1,22 @@
+uuid: 96368ff9-64b2-4618-8960-4d860e25d699
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.wiki_page
+id: node.wiki_page.sticky
+field_name: sticky
+entity_type: node
+bundle: wiki_page
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

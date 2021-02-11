@@ -1,0 +1,20 @@
+uuid: 9b0e0e8b-2e76-4d4c-b562-287e7b3b6d97
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.strategic_type
+  module:
+    - path
+id: taxonomy_term.strategic_type.path
+field_name: path
+entity_type: taxonomy_term
+bundle: strategic_type
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

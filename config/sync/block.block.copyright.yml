@@ -2,10 +2,7 @@ uuid: 1d90822c-fea5-4739-8ea2-da9d882ff1cf
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
   module:
-    - block_content
     - context
   theme:
     - oira_theme

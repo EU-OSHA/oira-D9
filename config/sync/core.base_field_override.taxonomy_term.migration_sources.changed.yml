@@ -1,0 +1,18 @@
+uuid: c1d33d38-75d8-4193-aeea-e01f94e07305
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migration_sources
+id: taxonomy_term.migration_sources.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: migration_sources
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

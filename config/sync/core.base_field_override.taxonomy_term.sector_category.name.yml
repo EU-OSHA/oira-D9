@@ -1,0 +1,18 @@
+uuid: f350df0a-66c0-457b-a07c-1acbffacb7da
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sector_category
+id: taxonomy_term.sector_category.name
+field_name: name
+entity_type: taxonomy_term
+bundle: sector_category
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

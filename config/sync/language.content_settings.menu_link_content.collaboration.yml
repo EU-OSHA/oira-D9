@@ -1,0 +1,18 @@
+uuid: 3138202e-ce54-4171-ade6-2b3ecfd5008b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.collaboration
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.collaboration
+target_entity_type_id: menu_link_content
+target_bundle: collaboration
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,20 @@
+uuid: 1bc878f8-fb56-4b19-90ad-c2760324ed26
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oira_private_image
+id: node.oira_private_image.menu_link
+field_name: menu_link
+entity_type: node
+bundle: oira_private_image
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 07aa907b-9a9f-4f90-8d94-32b0b610f14d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.promotional_material_type
+id: taxonomy_term.promotional_material_type.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: promotional_material_type
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

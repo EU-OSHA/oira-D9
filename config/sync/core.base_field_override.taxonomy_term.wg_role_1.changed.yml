@@ -1,0 +1,18 @@
+uuid: e785a961-9a0c-46e3-9101-a0e6be97319a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.wg_role_1
+id: taxonomy_term.wg_role_1.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: wg_role_1
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

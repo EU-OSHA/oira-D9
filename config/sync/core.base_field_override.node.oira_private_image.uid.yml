@@ -1,0 +1,20 @@
+uuid: 1c86c6b7-dd72-4f59-b3f3-15605efc9e8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oira_private_image
+id: node.oira_private_image.uid
+field_name: uid
+entity_type: node
+bundle: oira_private_image
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference
