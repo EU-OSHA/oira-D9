@@ -504,7 +504,7 @@ select.custom-select {
 
 .site-footer {
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: #10b2e4;
   padding: 0 0 15px 0;
   position: absolute;
@@ -555,6 +555,21 @@ select.custom-select {
   align-content: center;
   /* Link menu News */
 }
+.top-header-content .region-top-header-logos {
+  float: left;
+}
+.top-header-content .region-top-header-logos .field--name-field-image {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+.top-header-content .region-top-header-logos .field--name-field-image .field__item {
+  float: left;
+  margin-right: 20px;
+}
+.top-header-content .region-top-header-logos .field--name-field-image .field__item img {
+  margin: 0;
+}
 .top-header-content .header-logo .logo-eu, .top-header-content .header-logo .logo-oira {
   margin-left: 30px;
 }
@@ -599,10 +614,18 @@ select.custom-select {
   overflow: hidden;
 }
 .top-header-content .header-blocks .block-search-form-block .btn-primary:before {
-  content: "";
+  content: "";
   margin-right: 30px;
   margin-left: -5px;
   font-family: "Glyphicons Halflings";
+}
+
+/* Hide menu link to view only the Share links images in header and footer */
+#block-socialmenu > ul, #block-socialmenu-2 > ul {
+  list-style: none;
+}
+#block-socialmenu > ul > li > a, #block-socialmenu-2 > ul > li > a {
+  display: none;
 }
 
 #navbar-main {
