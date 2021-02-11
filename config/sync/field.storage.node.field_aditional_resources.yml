@@ -1,11 +1,11 @@
-uuid: 0a3121d1-028a-4eaa-b342-31795b7ec77e
+uuid: c29d6e71-01bf-4a32-bed7-933e7ce2757a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_additional_resources
-field_name: field_additional_resources
+id: node.field_aditional_resources
+field_name: field_aditional_resources
 entity_type: node
 type: entity_reference
 settings:

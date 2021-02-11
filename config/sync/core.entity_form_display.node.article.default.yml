@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_additional_resources
+    - field.field.node.article.field_aditional_resources
     - field.field.node.article.field_archived
     - field.field.node.article.field_article_type
     - field.field.node.article.field_character_count
@@ -60,11 +60,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_additional_resources:
-    weight: 12
-    settings: {  }
+  field_aditional_resources:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   field_archived:
     weight: 11

@@ -1,16 +1,15 @@
-uuid: ed90dfd2-d217-4e13-a369-8768fac044a0
+uuid: b2c38cbc-3600-4a07-9020-909e92d33e38
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_additional_resources
-    - node.type.article
+    - field.storage.node.field_aditional_resources
     - node.type.news
     - node.type.slideshare
-id: node.article.field_additional_resources
-field_name: field_additional_resources
+id: node.news.field_aditional_resources
+field_name: field_aditional_resources
 entity_type: node
-bundle: article
+bundle: news
 label: 'Additional resources'
 description: ''
 required: false

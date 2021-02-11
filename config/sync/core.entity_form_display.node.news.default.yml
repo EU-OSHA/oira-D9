@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
-    - field.field.node.news.field_additional_resources
+    - field.field.node.news.field_aditional_resources
     - field.field.node.news.field_character_count
     - field.field.node.news.field_co_author
     - field.field.node.news.field_image
@@ -46,12 +46,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_additional_resources:
-    type: options_buttons
-    weight: 8
-    region: content
-    settings: {  }
+  field_aditional_resources:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_character_count:
     weight: 12
     settings:
