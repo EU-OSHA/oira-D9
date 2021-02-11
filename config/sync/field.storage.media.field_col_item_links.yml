@@ -1,18 +1,18 @@
-uuid: 24bba479-f953-4511-a825-c909c56bd563
+uuid: b1f13a64-3599-4769-8ca5-2fabec066ae2
 langcode: en
 status: true
 dependencies:
   module:
     - link
-    - node
-id: node.field_social_profile
-field_name: field_social_profile
-entity_type: node
+    - media
+id: media.field_col_item_links
+field_name: field_col_item_links
+entity_type: media
 type: link
 settings: {  }
 module: link
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

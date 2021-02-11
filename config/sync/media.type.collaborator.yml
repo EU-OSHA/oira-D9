@@ -1,0 +1,13 @@
+uuid: d412bf15-9ec5-420f-bb4a-62d5ed562def
+langcode: en
+status: true
+dependencies: {  }
+id: collaborator
+label: Collaborator
+description: 'Used in Content type Partner'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

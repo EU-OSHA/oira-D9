@@ -1339,7 +1339,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            oira_tools: oira_tools
+            practical_tool: practical_tool
           group: 1
           exposed: false
           expose:
@@ -1599,7 +1599,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            oira_tools: oira_tools
+            practical_tool: practical_tool
           group: 1
           exposed: false
           expose:

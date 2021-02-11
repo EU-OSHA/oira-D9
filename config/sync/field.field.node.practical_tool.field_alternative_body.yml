@@ -1,0 +1,23 @@
+uuid: 49e6e3b9-9acc-452c-8ba6-f3efc7e2d219
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alternative_body
+    - node.type.practical_tool
+  module:
+    - text
+id: node.practical_tool.field_alternative_body
+field_name: field_alternative_body
+entity_type: node
+bundle: practical_tool
+label: 'Alternative description'
+description: 'This description will be shown when user is navigating the site in tool''s language'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

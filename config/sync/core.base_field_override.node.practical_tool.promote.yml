@@ -1,0 +1,22 @@
+uuid: 3e2c961c-2e2c-47dc-b550-1ba41d1e541f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.practical_tool
+id: node.practical_tool.promote
+field_name: promote
+entity_type: node
+bundle: practical_tool
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

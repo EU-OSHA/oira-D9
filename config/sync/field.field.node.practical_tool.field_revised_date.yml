@@ -1,0 +1,24 @@
+uuid: b7f9bf0f-9f08-4487-b5b2-cb3924ac5d5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_revised_date
+    - node.type.practical_tool
+  module:
+    - datetime
+id: node.practical_tool.field_revised_date
+field_name: field_revised_date
+entity_type: node
+bundle: practical_tool
+label: 'Revised date'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

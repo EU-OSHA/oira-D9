@@ -1,0 +1,19 @@
+uuid: 7078736b-392c-49b2-82d9-762dc7943fa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_third_title
+    - node.type.practical_tool
+id: node.practical_tool.field_third_title
+field_name: field_third_title
+entity_type: node
+bundle: practical_tool
+label: Title
+description: 'This title will be shown when user is navigating the website in third tool''s language'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

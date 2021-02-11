@@ -1,0 +1,23 @@
+uuid: 72cdb4e9-9c30-49b4-bb45-f6badc944d81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.practical_tool
+  module:
+    - text
+id: node.practical_tool.body
+field_name: body
+entity_type: node
+bundle: practical_tool
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
