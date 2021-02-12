@@ -4,6 +4,13 @@ status: true
 dependencies:
   config:
     - node.type.collaboration_document
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: node.collaboration_document
 target_entity_type_id: node
 target_bundle: collaboration_document

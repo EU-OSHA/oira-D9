@@ -1,0 +1,20 @@
+uuid: 6b02f80a-ddf1-4ed1-8111-c2076ee2ed2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.resource_fc
+id: media.resource_fc.name
+field_name: name
+entity_type: media
+bundle: resource_fc
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

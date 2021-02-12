@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_multiple_sector
     - node.type.collaboration_document
+    - taxonomy.vocabulary.sector
 id: node.collaboration_document.field_multiple_sector
 field_name: field_multiple_sector
 entity_type: node
@@ -18,7 +19,8 @@ default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
-    target_bundles: {  }
+    target_bundles:
+      sector: sector
     sort:
       field: name
       direction: asc

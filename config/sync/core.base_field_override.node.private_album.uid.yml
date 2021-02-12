@@ -1,0 +1,20 @@
+uuid: 7b5bd225-5d92-485a-a108-a5432efad281
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_album
+id: node.private_album.uid
+field_name: uid
+entity_type: node
+bundle: private_album
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

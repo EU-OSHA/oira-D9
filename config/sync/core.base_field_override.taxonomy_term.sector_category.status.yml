@@ -1,0 +1,22 @@
+uuid: b5ac8c2e-b473-424d-8a51-b8e7eeeffb8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sector_category
+id: taxonomy_term.sector_category.status
+field_name: status
+entity_type: taxonomy_term
+bundle: sector_category
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

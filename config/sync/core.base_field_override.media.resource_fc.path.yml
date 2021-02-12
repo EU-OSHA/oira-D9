@@ -1,0 +1,20 @@
+uuid: 5687ab1a-600e-4dc7-a5ee-51c5e1ccd11d
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.resource_fc
+  module:
+    - path
+id: media.resource_fc.path
+field_name: path
+entity_type: media
+bundle: resource_fc
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

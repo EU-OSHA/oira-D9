@@ -15,7 +15,7 @@ bundle: practical_tool
 label: Type
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     target_uuid: e89b390e-0807-454a-bcd8-37650d5e1049

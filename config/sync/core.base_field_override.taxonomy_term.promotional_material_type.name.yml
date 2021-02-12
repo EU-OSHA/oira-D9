@@ -1,0 +1,18 @@
+uuid: 1c32b4cd-9044-4295-b3f1-6ee2e9f46446
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.promotional_material_type
+id: taxonomy_term.promotional_material_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: promotional_material_type
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

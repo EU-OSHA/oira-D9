@@ -1,0 +1,18 @@
+uuid: bc42fd13-fe93-46cd-9ec4-13c917ff0641
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-menu-footer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.social-menu-footer
+target_entity_type_id: menu_link_content
+target_bundle: social-menu-footer
+default_langcode: site_default
+language_alterable: false

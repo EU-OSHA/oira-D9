@@ -1,0 +1,18 @@
+uuid: ad3d66cc-e6c3-484f-a3a9-0678cd212853
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slideshare
+id: node.slideshare.created
+field_name: created
+entity_type: node
+bundle: slideshare
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

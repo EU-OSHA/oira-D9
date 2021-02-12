@@ -1,0 +1,18 @@
+uuid: 4cac3bb8-b2ed-44e0-90df-8d00263da612
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.private-zone
+id: menu_link_content.private-zone.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: private-zone
+label: 'View mode'
+description: 'Per item view mode selector.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

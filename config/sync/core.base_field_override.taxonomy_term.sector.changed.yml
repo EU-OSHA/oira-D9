@@ -1,0 +1,18 @@
+uuid: 21a4143c-c1db-4ed6-b92a-64233160d10c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sector
+id: taxonomy_term.sector.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: sector
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

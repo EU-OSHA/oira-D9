@@ -1,0 +1,18 @@
+uuid: d28d3f3b-8be5-411a-9d7c-fa522e96e81f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.private-zone
+id: menu_link_content.private-zone.title
+field_name: title
+entity_type: menu_link_content
+bundle: private-zone
+label: 'Menu link title'
+description: 'The text to be used for this link in the menu.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

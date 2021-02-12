@@ -1,0 +1,20 @@
+uuid: c22d5304-54d3-4322-a7cf-2f7fe898b5df
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.practical_tool_types
+  module:
+    - path
+id: taxonomy_term.practical_tool_types.path
+field_name: path
+entity_type: taxonomy_term
+bundle: practical_tool_types
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

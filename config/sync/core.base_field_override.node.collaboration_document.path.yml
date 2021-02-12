@@ -1,0 +1,20 @@
+uuid: fba7840f-1d1c-4523-9a0e-1b5f78402d5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collaboration_document
+  module:
+    - path
+id: node.collaboration_document.path
+field_name: path
+entity_type: node
+bundle: collaboration_document
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,20 @@
+uuid: bfca632e-f045-4e0f-8cf2-3a1f7f9ab77c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collaboration_document
+id: node.collaboration_document.uid
+field_name: uid
+entity_type: node
+bundle: collaboration_document
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

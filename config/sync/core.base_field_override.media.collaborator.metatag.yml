@@ -1,0 +1,18 @@
+uuid: 45b33001-7d49-4988-8598-7bc8e48af5e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.collaborator
+id: media.collaborator.metatag
+field_name: metatag
+entity_type: media
+bundle: collaborator
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

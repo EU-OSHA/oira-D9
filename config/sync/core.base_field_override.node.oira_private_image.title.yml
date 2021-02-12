@@ -1,0 +1,18 @@
+uuid: 18f0a28a-af65-44b5-8377-8062afc4ebaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oira_private_image
+id: node.oira_private_image.title
+field_name: title
+entity_type: node
+bundle: oira_private_image
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

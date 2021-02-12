@@ -1,0 +1,20 @@
+uuid: ce401cd7-3ad7-4682-a4e1-d5b7dab24853
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.private-zone
+id: menu_link_content.private-zone.moderation_state
+field_name: moderation_state
+entity_type: menu_link_content
+bundle: private-zone
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

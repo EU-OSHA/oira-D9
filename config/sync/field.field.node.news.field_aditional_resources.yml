@@ -1,0 +1,25 @@
+uuid: b2c38cbc-3600-4a07-9020-909e92d33e38
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aditional_resources
+    - node.type.news
+id: node.news.field_aditional_resources
+field_name: field_aditional_resources
+entity_type: node
+bundle: news
+label: 'Additional resources'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: aditional_resources
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference
