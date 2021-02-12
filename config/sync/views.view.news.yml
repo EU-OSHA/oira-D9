@@ -1,4 +1,4 @@
-uuid: d16fd8cd-8074-473c-8092-029165373e4e
+uuid: b2716f4e-e50d-4dc9-90c5-1cc730899749
 langcode: en
 status: true
 dependencies:
@@ -18,8 +18,8 @@ dependencies:
     - node
     - text
     - user
-id: osh_news
-label: 'OSH news'
+id: news
+label: 'Duplicate of OSH news'
 module: views
 description: ''
 tag: ''
