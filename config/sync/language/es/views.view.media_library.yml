@@ -4,10 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Reset
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -32,15 +29,6 @@ display:
           group_info:
             label: 'Tipos multimedia'
       title: Multimedia
-  page:
-    display_options:
-      fields:
-        name:
-          separator: ', '
-        edit_media:
-          text: Edit
-        delete_media:
-          text: Delete
   widget:
     display_options:
       filters:

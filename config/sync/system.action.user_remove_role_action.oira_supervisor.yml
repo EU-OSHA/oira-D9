@@ -1,0 +1,14 @@
+uuid: f9ef56d9-2e48-45a5-873e-916fc5c1e5cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oira_supervisor
+  module:
+    - user
+id: user_remove_role_action.oira_supervisor
+label: 'Remove the Oira Supervisor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: oira_supervisor
