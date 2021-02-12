@@ -2,6 +2,21 @@
   height: 135px;
   display: flex;
   align-content: center;
+  .region-top-header-logos{
+    float: left;
+    .field--name-field-image{
+      display: flex;
+      margin: 0;
+      align-items: center;
+      .field__item{
+        float: left;
+        margin-right: 20px;
+        img{
+          margin: 0;
+        }
+      }
+    }
+  }
   .header-logo{
     .logo-eu, .logo-oira{
       margin-left: 30px;
@@ -48,7 +63,7 @@
         padding: 4px 0px 2px 11px;
         overflow: hidden;
         &:before{
-          content: "\e002";
+          content: "\e003";
           margin-right: 30px;
           margin-left: -5px;
           font-family: 'Glyphicons Halflings';
@@ -57,3 +72,16 @@
     }
   }
 }
+
+/* Hide menu link to view only the Share links images in header and footer */
+#block-socialmenu, #block-socialmenu-2{
+  > ul{
+    list-style: none;
+    > li{
+      > a{
+        display: none;
+      }
+    }
+  }
+}
+

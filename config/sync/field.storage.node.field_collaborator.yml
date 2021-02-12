@@ -1,0 +1,20 @@
+uuid: 39e25b75-b8d4-49d5-bbe2-f200baacf5c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_collaborator
+field_name: field_collaborator
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

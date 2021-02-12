@@ -1,0 +1,29 @@
+uuid: 642a1ced-8494-4152-8510-989b9a395d28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_migration_source
+    - node.type.news
+    - taxonomy.vocabulary.migration_sources
+id: node.news.field_migration_source
+field_name: field_migration_source
+entity_type: node
+bundle: news
+label: 'Migration Source'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      migration_sources: migration_sources
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

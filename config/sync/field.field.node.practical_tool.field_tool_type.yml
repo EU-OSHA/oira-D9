@@ -1,0 +1,33 @@
+uuid: 79f35904-22df-4d23-a216-29a13c87b539
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tool_type
+    - node.type.practical_tool
+    - taxonomy.vocabulary.practical_tool_types
+  content:
+    - 'taxonomy_term:practical_tool_types:e89b390e-0807-454a-bcd8-37650d5e1049'
+id: node.practical_tool.field_tool_type
+field_name: field_tool_type
+entity_type: node
+bundle: practical_tool
+label: Type
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: e89b390e-0807-454a-bcd8-37650d5e1049
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      practical_tool_types: practical_tool_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

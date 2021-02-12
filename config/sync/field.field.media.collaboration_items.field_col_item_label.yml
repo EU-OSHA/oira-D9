@@ -1,0 +1,19 @@
+uuid: 54a1d377-2e7d-4ddb-af60-62a3aafcd122
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_col_item_label
+    - media.type.collaboration_items
+id: media.collaboration_items.field_col_item_label
+field_name: field_col_item_label
+entity_type: media
+bundle: collaboration_items
+label: 'Item label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

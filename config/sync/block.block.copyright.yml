@@ -8,8 +8,8 @@ dependencies:
     - oira_theme
 id: copyright
 theme: oira_theme
-region: footer_fifth
-weight: 0
+region: footer_end
+weight: -10
 provider: null
 plugin: 'block_content:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
 settings:

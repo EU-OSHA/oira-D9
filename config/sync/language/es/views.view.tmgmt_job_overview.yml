@@ -1,0 +1,39 @@
+display:
+  default:
+    display_title: Máster
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reset
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options_all_label: '- Todo -'
+            offset_label: Desplazamiento
+          tags:
+            previous: '‹ anterior'
+            next: 'siguiente ›'
+            first: '« primero'
+            last: 'último »'
+      fields:
+        state:
+          separator: ', '
+        label:
+          label: Etiqueta
+        source_language_1:
+          separator: ', '
+        target_language:
+          separator: ', '
+        translator:
+          label: Proveedor
+        operations:
+          label: Operaciones
+      filters:
+        translator:
+          expose:
+            label: Proveedor

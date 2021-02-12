@@ -1,0 +1,18 @@
+uuid: 7ea8e480-f544-4d5d-97cb-a82f94fdd42f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-login
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.header-login
+target_entity_type_id: menu_link_content
+target_bundle: header-login
+default_langcode: site_default
+language_alterable: false

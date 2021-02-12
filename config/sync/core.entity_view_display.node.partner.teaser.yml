@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.partner.field_collaborator
     - field.field.node.partner.field_country
     - field.field.node.partner.field_dedicated_oira_website
     - field.field.node.partner.field_general_email
@@ -40,6 +41,7 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_collaborator: true
   field_country: true
   field_dedicated_oira_website: true
   field_general_email: true

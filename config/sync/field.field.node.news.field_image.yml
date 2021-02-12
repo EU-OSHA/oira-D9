@@ -14,7 +14,7 @@ bundle: news
 label: Image
 description: "Image News list. \r\nRecommended image format: .png\r\n Manual Crop ratio: 259px 259px"
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,18 @@
+uuid: 4878a1ff-533e-483a-87b3-5202c0de6c0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-login
+id: menu_link_content.header-login.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: header-login
+label: Changed
+description: 'The time that the menu link was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

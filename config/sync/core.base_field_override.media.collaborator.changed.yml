@@ -1,0 +1,18 @@
+uuid: c474e00e-683a-46e8-bf7d-b02711d60a14
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.collaborator
+id: media.collaborator.changed
+field_name: changed
+entity_type: media
+bundle: collaborator
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

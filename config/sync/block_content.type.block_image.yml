@@ -1,0 +1,8 @@
+uuid: 174d958e-3bc8-4d28-83a3-511e317e3b5a
+langcode: en
+status: true
+dependencies: {  }
+id: block_image
+label: 'Block Image'
+revision: 1
+description: 'Text Block and Image'

@@ -1,0 +1,22 @@
+uuid: 3df1c419-877e-4e64-b405-fe86c4fa953d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.partner_types
+id: taxonomy_term.partner_types.status
+field_name: status
+entity_type: taxonomy_term
+bundle: partner_types
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

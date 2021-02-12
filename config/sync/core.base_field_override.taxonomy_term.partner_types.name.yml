@@ -1,0 +1,18 @@
+uuid: 6f4c2a0e-53e0-49ca-82ec-41f466de3cf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.partner_types
+id: taxonomy_term.partner_types.name
+field_name: name
+entity_type: taxonomy_term
+bundle: partner_types
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

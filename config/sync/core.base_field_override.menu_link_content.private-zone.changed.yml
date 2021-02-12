@@ -1,0 +1,18 @@
+uuid: 124de4e0-d84f-492e-a272-30a7e91b6123
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.private-zone
+id: menu_link_content.private-zone.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: private-zone
+label: Changed
+description: 'The time that the menu link was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

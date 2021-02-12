@@ -1,0 +1,13 @@
+uuid: f3a83a6e-7050-4cfa-b4f9-f0cd57be4ff6
+langcode: en
+status: true
+dependencies: {  }
+id: collaboration_items
+label: 'Collaboration items'
+description: 'Used in Content type Collaboration document'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file_1
+field_map: {  }

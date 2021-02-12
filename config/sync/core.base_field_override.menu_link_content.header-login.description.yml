@@ -1,0 +1,18 @@
+uuid: 7aaad912-fca2-4a1d-bdf7-296780842996
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-login
+id: menu_link_content.header-login.description
+field_name: description
+entity_type: menu_link_content
+bundle: header-login
+label: Description
+description: 'Shown when hovering over the menu link.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

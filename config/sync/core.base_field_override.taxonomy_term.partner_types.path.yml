@@ -1,0 +1,20 @@
+uuid: a030f8de-a52f-4a84-86c9-ba470e83a943
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.partner_types
+  module:
+    - path
+id: taxonomy_term.partner_types.path
+field_name: path
+entity_type: taxonomy_term
+bundle: partner_types
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

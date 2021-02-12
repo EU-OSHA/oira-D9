@@ -1,0 +1,20 @@
+uuid: 1c60e94c-2f18-428a-ab3d-88ce2ba89703
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.promotional_material
+  module:
+    - path
+id: node.promotional_material.path
+field_name: path
+entity_type: node
+bundle: promotional_material
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

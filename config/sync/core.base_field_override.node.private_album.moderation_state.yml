@@ -1,0 +1,20 @@
+uuid: 15691eb6-47cd-4c5e-83ef-96ae9898b84a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_album
+id: node.private_album.moderation_state
+field_name: moderation_state
+entity_type: node
+bundle: private_album
+label: 'Moderation state'
+description: 'The moderation state of this piece of content.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

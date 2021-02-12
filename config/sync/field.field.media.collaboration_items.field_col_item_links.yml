@@ -1,0 +1,23 @@
+uuid: 15cb1dc2-849b-4d2e-a40e-fdde7ff937c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_col_item_links
+    - media.type.collaboration_items
+  module:
+    - link
+id: media.collaboration_items.field_col_item_links
+field_name: field_col_item_links
+entity_type: media
+bundle: collaboration_items
+label: 'Item Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
