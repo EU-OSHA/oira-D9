@@ -1,0 +1,34 @@
+uuid: c6d65b69-0189-42e8-b8b8-9b89ee741914
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-menu
+  module:
+    - context
+    - system
+  theme:
+    - oira_theme
+id: socialmenu
+theme: oira_theme
+region: header_form
+weight: -7
+provider: null
+plugin: 'system_menu_block:social-menu'
+settings:
+  id: 'system_menu_block:social-menu'
+  label: 'Social menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

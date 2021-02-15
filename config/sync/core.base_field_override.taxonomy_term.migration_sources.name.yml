@@ -1,0 +1,18 @@
+uuid: c67584a0-2efd-4a7f-9297-c07b7a57d2e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migration_sources
+id: taxonomy_term.migration_sources.name
+field_name: name
+entity_type: taxonomy_term
+bundle: migration_sources
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,18 @@
+uuid: c91de9e5-0d1c-4cc2-9f80-a400db758196
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.practical_tool_types
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.practical_tool_types
+target_entity_type_id: taxonomy_term
+target_bundle: practical_tool_types
+default_langcode: und
+language_alterable: false

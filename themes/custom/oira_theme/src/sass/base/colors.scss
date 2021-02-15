@@ -1,3 +1,23 @@
+/* Icons */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot');
+  src: url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font: normal normal 16px/1 'Glyphicons Halflings';
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 4px;
+}
+
 /*Font Family*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -8,6 +28,7 @@
 
 /* Font colours */
 $text-color-purple: #786586;
+$text-color-purple-light: #967ea7;
 $text-color-black: #58585a;
 $text-color-blue: #003399;
 $text-color-blue-light: #10b2e4;
@@ -45,6 +66,7 @@ $bg-color-purple-light: #dfd8e4;
 $bg-color-purple-light-2: #b4a4bf;
 $bg-color-blue-light: #10b2e4;
 $bg-color-blue-light-hover: #0e98c3;
+$bg-color-blue-light-menu: #37d0ff;
 $bg-color-white: #FFF;
 
 .bg-color-purple{

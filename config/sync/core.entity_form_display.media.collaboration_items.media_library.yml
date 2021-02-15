@@ -1,0 +1,65 @@
+uuid: f15f65da-b0d9-4255-b963-db0cac4bec01
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.collaboration_items.field_col_item_desc
+    - field.field.media.collaboration_items.field_col_item_label
+    - field.field.media.collaboration_items.field_col_item_links
+    - field.field.media.collaboration_items.field_media_file_1
+    - media.type.collaboration_items
+  module:
+    - file
+    - link
+    - text
+id: media.collaboration_items.media_library
+targetEntityType: media
+bundle: collaboration_items
+mode: media_library
+content:
+  field_col_item_desc:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_col_item_label:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_col_item_links:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_media_file_1:
+    type: file_generic
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  langcode: true
+  path: true
+  status: true
+  uid: true

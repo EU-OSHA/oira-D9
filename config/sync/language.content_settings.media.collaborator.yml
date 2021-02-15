@@ -1,0 +1,18 @@
+uuid: 2ed6550f-f6a2-4454-8234-e7f6972b5dde
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.collaborator
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.collaborator
+target_entity_type_id: media
+target_bundle: collaborator
+default_langcode: site_default
+language_alterable: false

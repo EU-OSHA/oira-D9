@@ -1,0 +1,20 @@
+uuid: 6d7e1bbd-f0e7-4301-8bf0-6836f66201fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collaboration_document
+id: node.collaboration_document.menu_link
+field_name: menu_link
+entity_type: node
+bundle: collaboration_document
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,360 @@
+uuid: 07f6a43a-00d1-4959-9d33-59517df60293
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_solr
+    - taxonomy
+    - node
+    - search_api
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_alternative_body
+    - field.storage.node.field_alternative_title
+    - field.storage.node.field_co_author
+    - field.storage.node.field_country
+    - field.storage.node.field_image
+    - field.storage.taxonomy_term.field_iso2
+    - field.storage.node.field_language
+    - field.storage.node.field_publication_date
+    - field.storage.node.field_revised_date
+    - field.storage.node.field_sector_category
+    - field.storage.node.field_third_description
+    - field.storage.node.field_third_language
+    - field.storage.node.field_third_title
+    - field.storage.node.field_tool_link
+    - field.storage.node.field_wf_notification
+    - field.storage.node.field_tool_type
+    - search_api.server.apachesolr
+    - core.entity_view_mode.node.search_index
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+id: oira_tools
+name: 'OiRA Tools'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_alternative_body:
+    label: 'Alternative description'
+    datasource_id: 'entity:node'
+    property_path: field_alternative_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_alternative_body
+  field_alternative_title:
+    label: 'Alternative title'
+    datasource_id: 'entity:node'
+    property_path: field_alternative_title
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_alternative_title
+  field_co_author:
+    label: Co-author
+    datasource_id: 'entity:node'
+    property_path: field_co_author
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_co_author
+  field_country:
+    label: Country
+    datasource_id: 'entity:node'
+    property_path: field_country
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_country
+  field_image:
+    label: Image
+    datasource_id: 'entity:node'
+    property_path: field_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_image
+  field_iso2:
+    label: 'Country » Taxonomy term » ISO2'
+    datasource_id: 'entity:node'
+    property_path: 'field_country:entity:field_iso2'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_country
+        - field.storage.taxonomy_term.field_iso2
+      module:
+        - taxonomy
+  field_language:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: field_language
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_language
+  field_publication_date:
+    label: 'Publication date'
+    datasource_id: 'entity:node'
+    property_path: field_publication_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_publication_date
+  field_revised_date:
+    label: 'Revised date'
+    datasource_id: 'entity:node'
+    property_path: field_revised_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_revised_date
+  field_sector_category:
+    label: Sector
+    datasource_id: 'entity:node'
+    property_path: field_sector_category
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_sector_category
+  field_third_description:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: field_third_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_third_description
+  field_third_language:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: field_third_language
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_third_language
+  field_third_title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: field_third_title
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_third_title
+  field_tool_link:
+    label: 'Tool link'
+    datasource_id: 'entity:node'
+    property_path: field_tool_link
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tool_link
+  field_wf_notification:
+    label: 'Disable notifications'
+    datasource_id: 'entity:node'
+    property_path: field_wf_notification
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_wf_notification
+  langcode:
+    label: Language
+    datasource_id: 'entity:node'
+    property_path: langcode
+    type: string
+    dependencies:
+      module:
+        - node
+  language_with_fallback:
+    label: 'Language (with fallback)'
+    property_path: language_with_fallback
+    type: string
+  name:
+    label: 'Co-author » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_co_author:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_co_author
+      module:
+        - taxonomy
+  name_1:
+    label: 'Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_tool_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_tool_type
+      module:
+        - taxonomy
+  name_2:
+    label: 'Country » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_country:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_country
+      module:
+        - taxonomy
+  name_3:
+    label: 'Sector » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_sector_category:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_sector_category
+      module:
+        - taxonomy
+  nid:
+    label: ID
+    datasource_id: 'entity:node'
+    property_path: nid
+    type: integer
+    dependencies:
+      module:
+        - node
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          oira_tools: search_index
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: true
+  uuid:
+    label: UUID
+    datasource_id: 'entity:node'
+    property_path: uuid
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - practical_tool
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  language_with_fallback: {  }
+  rendered_item: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: apachesolr

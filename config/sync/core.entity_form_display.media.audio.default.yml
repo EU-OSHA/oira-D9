@@ -8,7 +8,6 @@ dependencies:
   module:
     - file
     - path
-    - workbench_moderation
 _core:
   default_config_hash: HGa6EpWJApUec2IS8zsOnJ3NhIhwY2QYNmLY7eS5zLM
 id: media.audio.default

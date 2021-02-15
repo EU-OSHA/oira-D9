@@ -1,0 +1,18 @@
+uuid: 7a2b27e9-2531-480a-9893-df1e84b841bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.collaboration_items
+id: media.collaboration_items.changed
+field_name: changed
+entity_type: media
+bundle: collaboration_items
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

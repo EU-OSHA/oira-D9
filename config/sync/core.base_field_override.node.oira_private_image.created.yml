@@ -1,0 +1,18 @@
+uuid: ce5cc9eb-25c3-45a4-96a4-46c95e3958c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oira_private_image
+id: node.oira_private_image.created
+field_name: created
+entity_type: node
+bundle: oira_private_image
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

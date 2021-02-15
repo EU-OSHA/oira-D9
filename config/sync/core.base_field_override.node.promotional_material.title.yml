@@ -1,0 +1,18 @@
+uuid: 787d5924-64ea-4265-9722-49d32abfdf0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.promotional_material
+id: node.promotional_material.title
+field_name: title
+entity_type: node
+bundle: promotional_material
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

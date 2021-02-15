@@ -1,0 +1,37 @@
+uuid: 0be78312-10ac-480e-998c-0e53938b7354
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.oira_ws
+  module:
+    - context
+    - system
+    - views
+  theme:
+    - oira_theme
+id: exposedformoira_wstools_ws
+theme: oira_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:oira_ws-tools_ws'
+settings:
+  id: 'views_exposed_filter_block:oira_ws-tools_ws'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /oira-tools
+    negate: false

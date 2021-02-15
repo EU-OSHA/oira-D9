@@ -1,0 +1,37 @@
+uuid: 43bb4e05-fb04-4230-9a5b-b95cc1dcbb02
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.language_with_fallback_
+  module:
+    - context
+    - facets
+    - system
+  theme:
+    - oira_theme
+id: languagewithfallback
+theme: oira_theme
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:language_with_fallback_'
+settings:
+  id: 'facet_block:language_with_fallback_'
+  label: Language
+  provider: facets
+  label_display: visible
+  block_id: languagewithfallback
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /oira-tools
+    negate: false

@@ -1,0 +1,64 @@
+uuid: 19d4f14b-bc00-4902-8d02-4feb2dce1521
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.collaboration_items.field_col_item_desc
+    - field.field.media.collaboration_items.field_col_item_label
+    - field.field.media.collaboration_items.field_col_item_links
+    - field.field.media.collaboration_items.field_media_file_1
+    - media.type.collaboration_items
+  module:
+    - file
+    - link
+    - text
+id: media.collaboration_items.default
+targetEntityType: media
+bundle: collaboration_items
+mode: default
+content:
+  field_col_item_desc:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_col_item_label:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_col_item_links:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_media_file_1:
+    label: above
+    weight: 2
+    settings:
+      use_description_as_link_text: false
+    third_party_settings: {  }
+    type: file_table
+    region: content
+hidden:
+  created: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

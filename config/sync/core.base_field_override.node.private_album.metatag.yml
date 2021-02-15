@@ -1,0 +1,18 @@
+uuid: cbe775cb-5e47-4b73-bc1c-3b93d7730d3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_album
+id: node.private_album.metatag
+field_name: metatag
+entity_type: node
+bundle: private_album
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

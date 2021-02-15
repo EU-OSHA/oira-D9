@@ -1,0 +1,22 @@
+uuid: 0297ae86-cfb4-456b-9798-4297efe57330
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slideshare
+id: node.slideshare.sticky
+field_name: sticky
+entity_type: node
+bundle: slideshare
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,60 @@
+uuid: f6238c9c-f08b-4de1-a80e-cd5005a29a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.esener.field_esener_code
+    - taxonomy.vocabulary.esener
+  module:
+    - path
+    - text
+id: taxonomy_term.esener.default
+targetEntityType: taxonomy_term
+bundle: esener
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_esener_code:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+hidden: {  }

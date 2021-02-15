@@ -1,0 +1,22 @@
+uuid: 687b3e0f-b7fc-43f8-b2f2-15c87c2c310c
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.collaborator
+id: media.collaborator.status
+field_name: status
+entity_type: media
+bundle: collaborator
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

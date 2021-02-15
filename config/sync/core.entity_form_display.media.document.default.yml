@@ -8,7 +8,6 @@ dependencies:
   module:
     - file
     - path
-    - workbench_moderation
 _core:
   default_config_hash: gtZlAQdQqZgVWvvZ6v-hfmACkfEimqn_GPDbQZqNAbw
 id: media.document.default

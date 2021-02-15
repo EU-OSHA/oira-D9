@@ -1,0 +1,23 @@
+uuid: e1223e95-1268-4198-9641-ce3d09cef1ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.oira_private_image
+  module:
+    - text
+id: node.oira_private_image.body
+field_name: body
+entity_type: node
+bundle: oira_private_image
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

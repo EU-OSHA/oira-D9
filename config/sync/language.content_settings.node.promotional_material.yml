@@ -1,0 +1,18 @@
+uuid: 4fd74948-4202-432f-b1c1-24f0a11025a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.promotional_material
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.promotional_material
+target_entity_type_id: node
+target_bundle: promotional_material
+default_langcode: und
+language_alterable: false

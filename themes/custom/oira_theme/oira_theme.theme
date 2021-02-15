@@ -31,4 +31,13 @@ function oira_theme_form_system_theme_settings_alter(&$form, FormStateInterface 
     'bg-white' => t('White'),
     'bg-transparent' => t('Transparent'),
   ];
+  $viewport = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'viewport',
+      'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
+    ),
+  );
+  $page['#attached']['html_head'][] = [$viewport, 'viewport'];
 }

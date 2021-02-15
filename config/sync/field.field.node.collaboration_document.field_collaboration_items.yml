@@ -4,11 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_collaboration_items
-    - media.type.audio
-    - media.type.document
-    - media.type.image
-    - media.type.remote_video
-    - media.type.video
+    - media.type.collaboration_items
     - node.type.collaboration_document
 id: node.collaboration_document.field_collaboration_items
 field_name: field_collaboration_items
@@ -24,11 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      audio: audio
-      document: document
-      image: image
-      remote_video: remote_video
-      video: video
+      collaboration_items: collaboration_items
     sort:
       field: _none
       direction: ASC

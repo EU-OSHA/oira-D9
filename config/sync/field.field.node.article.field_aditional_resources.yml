@@ -1,0 +1,25 @@
+uuid: 01cae77b-f3ab-41cb-941c-abcf9b7a3b10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aditional_resources
+    - node.type.article
+id: node.article.field_aditional_resources
+field_name: field_aditional_resources
+entity_type: node
+bundle: article
+label: 'Additional resources'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: aditional_resources
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

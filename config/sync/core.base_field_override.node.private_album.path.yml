@@ -1,0 +1,20 @@
+uuid: f8a0ef28-f90d-46db-8cd9-8ebe073e89e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_album
+  module:
+    - path
+id: node.private_album.path
+field_name: path
+entity_type: node
+bundle: private_album
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

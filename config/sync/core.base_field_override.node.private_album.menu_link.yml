@@ -1,0 +1,20 @@
+uuid: a5762be2-0dca-474a-84d2-9a10857fabde
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_album
+id: node.private_album.menu_link
+field_name: menu_link
+entity_type: node
+bundle: private_album
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

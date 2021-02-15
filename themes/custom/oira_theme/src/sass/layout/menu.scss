@@ -1,0 +1,55 @@
+#navbar-main{
+  font-family: 'Oswald',sans-serif;
+  background-color: $bg-color-blue-light;
+  color: $text-color-white;
+  #CollapsingNavbar > div.container{
+    justify-content: center;
+  }
+  ul.navbar-nav{
+    li{
+      border-right: 1px solid $bg-color-white ;
+      a{
+        font-family: 'Oswald',sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        color: $text-color-white;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      ul.dropdown-menu{
+        background-color: $bg-color-blue-light;
+        color: $text-color-white;
+        border: 0;
+        margin: 0;
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        li{
+          background-color: $bg-color-blue-light;
+          border: 0;
+          border-bottom: 2px solid $bg-color-white;
+          a{
+            &:hover{
+              text-decoration: none;
+            }
+          }
+          &:hover{
+            background-color: $bg-color-blue-light-hover;
+          }
+        }
+      }
+      &:hover{
+        ul.dropdown-menu{
+          display: block;
+        }
+      }
+    }
+    li:last-child{
+      border-right: 0;
+    }
+
+    .dropdown-toggle::after{
+      content: none;
+    }
+  }
+}
+

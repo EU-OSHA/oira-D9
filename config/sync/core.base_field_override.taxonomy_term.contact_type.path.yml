@@ -1,0 +1,20 @@
+uuid: 21be723f-c1ab-4d99-8646-bf8a6d83e94c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.contact_type
+  module:
+    - path
+id: taxonomy_term.contact_type.path
+field_name: path
+entity_type: taxonomy_term
+bundle: contact_type
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

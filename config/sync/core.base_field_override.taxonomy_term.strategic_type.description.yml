@@ -1,0 +1,20 @@
+uuid: d282e13d-e06c-4540-99a7-1e3cea868bba
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.strategic_type
+  module:
+    - text
+id: taxonomy_term.strategic_type.description
+field_name: description
+entity_type: taxonomy_term
+bundle: strategic_type
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

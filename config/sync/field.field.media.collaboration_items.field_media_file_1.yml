@@ -1,0 +1,27 @@
+uuid: 72a40fe1-0081-40c7-b215-a74e6b30f4d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file_1
+    - media.type.collaboration_items
+  module:
+    - file
+id: media.collaboration_items.field_media_file_1
+field_name: field_media_file_1
+entity_type: media
+bundle: collaboration_items
+label: 'Item files'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: collaboration-documents
+  file_extensions: 'txt pdf docx zip ppt pptx doc rar odt odp otp xls xlsx png gif jpg jpeg'
+  max_filesize: '100 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

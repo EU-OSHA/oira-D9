@@ -1,0 +1,12 @@
+uuid: 80c79a67-9b55-4791-b12c-ba11974eba1a
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_page__oira_ws__tools_ws
+name: 'search_api:views_page__oira_ws__tools_ws'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

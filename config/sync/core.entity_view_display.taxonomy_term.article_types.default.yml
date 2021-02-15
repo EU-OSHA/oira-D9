@@ -1,0 +1,35 @@
+uuid: e270695b-a585-4eb7-92cc-6b035051b2f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.article_types.field_article_type_code
+    - taxonomy.vocabulary.article_types
+  module:
+    - text
+id: taxonomy_term.article_types.default
+targetEntityType: taxonomy_term
+bundle: article_types
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_article_type_code:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

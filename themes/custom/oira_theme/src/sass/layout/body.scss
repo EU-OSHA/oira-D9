@@ -1,9 +1,20 @@
 /* Common elements */
 
 body{
+  position: relative;
   font-family: 'Roboto', sans-serif;
   color: $text-color-black;
   font-size: 16px;
+  min-height: 100vh;
+}
+
+#page{
+  /* This paddding requires the Height of the Footer */
+  padding-bottom: 100px;
+}
+
+#main-wrapper{
+  padding-bottom: 2rem;
 }
 
 a{
@@ -14,6 +25,44 @@ a{
     color: $text-color-purple;
     text-decoration: underline;
   }
+}
+
+.contextual-links, .toolbar{
+  a{
+    font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.push-right{
+  margin-left: auto;
+}
+
+select.custom-select{
+  width: auto;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  height: initial;
+  background: url(../images/select-ico.png) no-repeat 100% -2px;
+  background-color: rgba(0, 0, 0, 0);
+  padding-right: 1.5em;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0 rgba(38,143,255,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+  box-shadow: 0 0 0 0 rgba(38,143,255,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 rgba(38,143,255,.5);
 }
 
 .see-more{
@@ -47,6 +96,98 @@ a{
   margin-bottom: 15px;
 }
 
+#sidebar_first{
+  float: left;
+  background: $bg-color-purple;
+  .block{
+    border: 0;
+  }
+  aside{
+    float: right;
+    color:$text-color-white;
+    h2{
+      font-family: 'Oswald';
+      color:$text-color-white;
+      font-size: 1.2rem;
+      font-weight: normal;
+      text-shadow: 0 0 0 #fff;
+      &:after{
+        content: "\e252";
+        font-family: "Glyphicons Halflings";
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+    h2.active{
+      &:after{
+        content: "\e250";
+        font-family: "Glyphicons Halflings";
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+    a{
+      color:$text-color-white;
+    }
+    .facets-widget-checkbox{
+      ul{
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.content-two-columns{
+  display: flex;
+  .two-column{
+    float: right;
+    background: $bg-color-purple-light;
+    border-left: 5px solid $bg-color-white;
+    padding-bottom: 2rem;
+  }
+}
+
+/*Styling inputs*/
+.page-view-oira-ws{
+  .sidebar_first{
+    input[type=checkbox]{
+      display: none;
+    }
+
+    label{
+      font-size: 1rem;
+      padding-left: 0px;
+      padding-bottom: 5px;
+      margin-bottom: 0px;
+    }
+
+    input[type=checkbox] + label:before{
+      float: left;
+      content: "\2714";
+      border: 0;
+      border-radius: 0.2em;
+      transition: .2s;
+      clear: both;
+      background: #FFF;
+      width: 20px;
+      height: 20px;
+      padding-left: 5px;
+      padding-top: 0;
+      padding-right: 5px;
+      padding-bottom: 14px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+    input[type=checkbox]:checked + label:before{
+      background-color: #FFF;
+      border-color: #FFF;
+      color: $bg-color-purple;
+    }
+  }
+}
+
 /* End Common elements */
 
 /* News view */
@@ -55,6 +196,11 @@ a{
     margin-top: 5px;
     margin-bottom: 10px;
   }
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .views-row{
     padding: 30px;
     width: 100%;
@@ -77,5 +223,163 @@ a{
     color: $text-color-black;
   }
 }
-
 /* End news detail */
+
+/* OiRA Tools View */
+.page-view-oira-ws{
+  .two-column{
+    section{
+      position: relative;
+      #block-exposedformoira-wstools-ws{
+        position: absolute;
+        z-index: 99999;
+        top: 40px;
+        left: 7px;
+        .form-item-sort-by{
+          label{
+            float: left;
+            padding-top: 5px;
+            padding-right: 5px;
+          }
+          select.custom-select{
+            width: auto;
+            margin-top: 7px;
+            margin-left: 7px;
+            font-size: 0.9em;
+            display: inline-block;
+          }
+          select.custom-select:focus{
+            box-shadow: 0 0 0 0 rgba(0,123,255,.25);
+          }
+        }
+        button{
+          display: none;
+        }
+      }
+    }
+  }
+
+  #sidebar_first {
+    padding-top: 2rem;
+    aside{
+      h2{
+        border-bottom: 0;
+        cursor: pointer;
+      }
+      #edit-submit-oira-ws--2{
+        position: absolute;
+        top: 46px;
+        right: 0px;
+        color: #786586;
+        border: none;
+        border-radius: 0px;
+        outline: none;
+        width: 35px;
+        line-height: 19px;
+        font-size: 1.2em;
+        padding-left: 7px;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0);
+        &:before{
+          content: "\e003";
+          font-family: "Glyphicons Halflings";
+          margin-right: 30px;
+        }
+      }
+
+      #edit-reset--2{
+        background: transparent;
+        color: $text-color-white;
+        border: 0;
+        padding-left: 0;
+      }
+
+      .form-item-sort-by {
+        display: none;
+      }
+    }
+    .block{
+      border-top: 2px solid $bg-color-white;
+      padding: 1rem 0 0 0;
+      margin-bottom: 0;
+    }
+  }
+  #block-exposedformoira-wstools-ws{
+    .form-item-search-api-fulltext{
+      display: none;
+    }
+  }
+  .view{
+    padding-left: 0.5rem;
+    .view-header{
+      width: 70%;
+      text-align: right;
+      margin-top: 20px;
+      padding: 15px 0 15px 0;
+      border-top: 2px solid $bg-color-purple;
+      border-bottom: 2px solid $bg-color-purple;
+    }
+    .view-content.row{
+      width: 70%;
+      margin: 2rem 0 0 0;
+      padding-top: 2rem;
+      background: $bg-color-white;
+      .views-row{
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background: $bg-color-white;
+      }
+    }
+  }
+
+  .content-view-tools-view{
+    position: relative;
+    display: flex;
+    padding: 2em;
+    border-top: 2px solid $bg-color-purple;
+    .group-right{
+      time{
+        color: $text-color-purple-light;
+        font-style: italic;
+        font-weight: 600;
+      }
+      div:nth-child(1){
+        a{
+          position: absolute;
+          right: 0;
+          font-size: 0.9rem;
+          color: $text-color-black;
+          font-weight: normal;
+          font-style: normal;
+          &:before{
+            font-family: "Glyphicons Halflings";
+            content: "\e164";
+            color: $text-color-blue-light;
+            display: block;
+            float: right;
+            margin-top: -2px;
+            padding-left: 10px;
+          }
+        }
+      }
+      .views-field.views-field-field-image{
+        float: left;
+        border: 1px solid grey;
+        margin-right: 1em;
+        width: auto;
+      }
+      h2{
+        color: $text-color-black;
+        font-weight: 500;
+        cursor: pointer;
+        border-bottom: 0;
+        &:hover{
+          color: $text-color-purple;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+

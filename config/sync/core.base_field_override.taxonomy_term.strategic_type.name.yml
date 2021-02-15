@@ -1,0 +1,18 @@
+uuid: fc9b97ed-5437-4691-a352-619c74b700ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.strategic_type
+id: taxonomy_term.strategic_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: strategic_type
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

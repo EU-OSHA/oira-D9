@@ -1,0 +1,18 @@
+uuid: 6628fb54-e5de-4142-863e-ca3b7b757d62
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.strategic_documentation
+id: node.strategic_documentation.title
+field_name: title
+entity_type: node
+bundle: strategic_documentation
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

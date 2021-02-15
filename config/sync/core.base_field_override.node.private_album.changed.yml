@@ -1,0 +1,18 @@
+uuid: f11ec4b7-93fc-4047-9411-3e2ac2388094
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.private_album
+id: node.private_album.changed
+field_name: changed
+entity_type: node
+bundle: private_album
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

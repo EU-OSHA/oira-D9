@@ -1,0 +1,37 @@
+uuid: 898663d0-2dd9-4e17-9761-2d81d23f1683
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sector_taxonomy_term_name
+  module:
+    - context
+    - facets
+    - system
+  theme:
+    - oira_theme
+id: sectortaxonomytermname
+theme: oira_theme
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:sector_taxonomy_term_name'
+settings:
+  id: 'facet_block:sector_taxonomy_term_name'
+  label: Sector
+  provider: facets
+  label_display: visible
+  block_id: sectortaxonomytermname
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /oira-tools
+    negate: false

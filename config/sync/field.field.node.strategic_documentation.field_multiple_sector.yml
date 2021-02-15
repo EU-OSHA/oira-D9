@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_multiple_sector
     - node.type.strategic_documentation
-    - taxonomy.vocabulary.sectors
+    - taxonomy.vocabulary.sector
 id: node.strategic_documentation.field_multiple_sector
 field_name: field_multiple_sector
 entity_type: node
@@ -13,14 +13,14 @@ bundle: strategic_documentation
 label: Sector
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      sectors: sectors
+      sector: sector
     sort:
       field: name
       direction: asc

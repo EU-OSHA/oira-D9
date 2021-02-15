@@ -1,0 +1,20 @@
+uuid: fa0712f4-62f1-4a1a-a3df-ac94d544d84d
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.collaborator
+id: media.collaborator.name
+field_name: name
+entity_type: media
+bundle: collaborator
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

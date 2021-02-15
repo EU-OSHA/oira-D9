@@ -1,0 +1,20 @@
+uuid: 94d260b5-8112-4544-b5b6-e8a0a055a22c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.strategic_documentation
+  module:
+    - path
+id: node.strategic_documentation.path
+field_name: path
+entity_type: node
+bundle: strategic_documentation
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

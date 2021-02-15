@@ -1,0 +1,18 @@
+uuid: 8e68d9dd-ddf0-4450-b0fc-84a0fd80c752
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.collaboration_document
+id: node.collaboration_document.changed
+field_name: changed
+entity_type: node
+bundle: collaboration_document
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

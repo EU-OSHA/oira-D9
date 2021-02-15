@@ -1,0 +1,9 @@
+uuid: 716e0cec-7252-41f2-a84c-c38297bb58bd
+langcode: en
+status: true
+dependencies: {  }
+id: oira_project_manager
+label: 'Oira Project Manager'
+weight: 11
+is_admin: null
+permissions: {  }

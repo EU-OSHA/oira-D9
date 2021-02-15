@@ -1,0 +1,18 @@
+uuid: 7d92ef9c-ce36-4496-9d04-b1593ef38ccc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.strategic_documentation
+id: node.strategic_documentation.metatag
+field_name: metatag
+entity_type: node
+bundle: strategic_documentation
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

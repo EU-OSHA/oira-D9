@@ -1,0 +1,38 @@
+uuid: 5df57e9c-5d02-4fc7-ae62-fe9006a44fa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_home_latest_material
+    - node.type.promotional_material
+  module:
+    - image
+id: node.promotional_material.field_image_home_latest_material
+field_name: field_image_home_latest_material
+entity_type: node
+bundle: promotional_material
+label: 'Image Home latest materials'
+description: 'Image to Home page. Recommended image dimensions: 342 x 259 pixels'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '5 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
