@@ -1,0 +1,15 @@
+uuid: 9a02c22a-3e27-442d-8892-b549d711d9d8
+langcode: en
+status: true
+dependencies: {  }
+name: crop_and_scale_600x350__background_dfd8e4
+label: 'Crop and scale 600x350 (background #ffffff)'
+effects:
+  5e701aec-7c12-4a22-96c1-174033df580b:
+    uuid: 5e701aec-7c12-4a22-96c1-174033df580b
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 600
+      height: 350
+      anchor: center-center
