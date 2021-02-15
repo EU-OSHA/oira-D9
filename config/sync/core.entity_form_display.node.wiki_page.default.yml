@@ -22,7 +22,6 @@ dependencies:
     - media_library
     - path
     - text
-    - workbench_moderation
 id: node.wiki_page.default
 targetEntityType: node
 bundle: wiki_page

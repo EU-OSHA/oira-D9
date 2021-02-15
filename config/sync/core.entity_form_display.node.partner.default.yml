@@ -28,7 +28,6 @@ dependencies:
     - link
     - media_library
     - path
-    - workbench_moderation
 id: node.partner.default
 targetEntityType: node
 bundle: partner

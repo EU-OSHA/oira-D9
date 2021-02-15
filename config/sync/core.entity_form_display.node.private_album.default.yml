@@ -9,7 +9,6 @@ dependencies:
   module:
     - media_library
     - path
-    - workbench_moderation
 id: node.private_album.default
 targetEntityType: node
 bundle: private_album
