@@ -11,7 +11,6 @@ dependencies:
     - media_library
     - path
     - text
-    - workbench_moderation
 id: node.oira_private_image.default
 targetEntityType: node
 bundle: oira_private_image

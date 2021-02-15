@@ -14,7 +14,6 @@ dependencies:
     - link
     - path
     - text
-    - workbench_moderation
 id: taxonomy_term.country.default
 targetEntityType: taxonomy_term
 bundle: country

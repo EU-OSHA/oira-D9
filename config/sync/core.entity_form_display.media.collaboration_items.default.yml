@@ -13,7 +13,6 @@ dependencies:
     - link
     - path
     - text
-    - workbench_moderation
 id: media.collaboration_items.default
 targetEntityType: media
 bundle: collaboration_items

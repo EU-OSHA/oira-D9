@@ -1,0 +1,9 @@
+uuid: cdc1cf81-5ed3-44a6-a2e8-97612f6456e7
+langcode: en
+status: true
+dependencies: {  }
+id: content_validator
+label: 'Content Validator'
+weight: 8
+is_admin: null
+permissions: {  }

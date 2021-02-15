@@ -1,0 +1,9 @@
+uuid: b4810996-df25-412b-83df-f703d39ff253
+langcode: en
+status: true
+dependencies: {  }
+id: cs
+label: Czech
+direction: ltr
+weight: 3
+locked: false

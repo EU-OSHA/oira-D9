@@ -8,7 +8,6 @@ dependencies:
   module:
     - media
     - path
-    - workbench_moderation
 _core:
   default_config_hash: DfbjvjtGEMGLvm-1Zm7-MCRZj3wpGokUWZOuaK5-1Po
 id: media.remote_video.default

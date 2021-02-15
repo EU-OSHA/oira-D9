@@ -1,0 +1,9 @@
+uuid: 0eda9e5e-3595-4310-8be9-4e99da955890
+langcode: en
+status: true
+dependencies: {  }
+id: oira_supervisor
+label: 'Oira Supervisor'
+weight: 12
+is_admin: null
+permissions: {  }

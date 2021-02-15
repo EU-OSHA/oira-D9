@@ -11,7 +11,6 @@ dependencies:
   module:
     - file
     - link
-    - workbench_moderation
 id: media.resource_fc.media_library
 targetEntityType: media
 bundle: resource_fc

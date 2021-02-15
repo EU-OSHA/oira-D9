@@ -1,0 +1,9 @@
+uuid: ccf65821-a810-4b58-8e2a-55f7f0a07eeb
+langcode: en
+status: true
+dependencies: {  }
+id: layout_validator
+label: 'Layout Validator'
+weight: 7
+is_admin: null
+permissions: {  }

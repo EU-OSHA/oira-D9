@@ -5,10 +5,7 @@ display:
       exposed_form:
         options:
           submit_button: Aplicar
-          reset_button_label: Reset
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -25,5 +22,4 @@ display:
           label: Creado
         name:
           label: Nombre
-          separator: ', '
       title: Mensajes

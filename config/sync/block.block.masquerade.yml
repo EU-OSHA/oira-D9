@@ -1,0 +1,37 @@
+uuid: 4f4b39fd-2cbe-4664-9d3f-c6ab6c929e61
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - masquerade
+    - user
+  theme:
+    - oira_theme
+id: masquerade
+theme: oira_theme
+region: header_form
+weight: 0
+provider: null
+plugin: masquerade
+settings:
+  id: masquerade
+  label: Masquerade
+  provider: masquerade
+  label_display: '0'
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

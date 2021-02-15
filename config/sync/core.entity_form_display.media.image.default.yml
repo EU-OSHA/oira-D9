@@ -9,7 +9,6 @@ dependencies:
   module:
     - image
     - path
-    - workbench_moderation
 _core:
   default_config_hash: WeM0d1VqhuyGELo4SRiDJfhDQSLqfKavISEbrnlcTaE
 id: media.image.default
