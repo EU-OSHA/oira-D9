@@ -1227,7 +1227,7 @@ display:
     display_plugin: block
     id: oshnews_latest
     display_title: 'Latest News'
-    position: 3
+    position: 2
     display_options:
       display_extenders: {  }
       display_description: ''
