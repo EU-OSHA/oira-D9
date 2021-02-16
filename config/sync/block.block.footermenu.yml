@@ -12,7 +12,7 @@ dependencies:
 id: footermenu
 theme: oira_theme
 region: footer_end
-weight: -9
+weight: -10
 provider: null
 plugin: 'system_menu_block:footer-menu'
 settings:
