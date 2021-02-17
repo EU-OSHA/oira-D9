@@ -1,4 +1,4 @@
-uuid: 542071bc-f8f1-4f9d-90f4-100c50ae93a5
+uuid: d57f8345-152e-482b-9200-28b354d599b7
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
     - views.view.oira_ws
   module:
     - search_api
-id: language_with_fallback_
-name: 'Language (with fallback)'
-url_alias: language_with_fallback_
+id: language
+name: Language
+url_alias: language
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: language_with_fallback
+field_identifier: field_language
 facet_source_id: 'search_api:views_page__oira_ws__tools_ws'
 widget:
   type: checkbox
@@ -25,14 +25,14 @@ widget:
       show_more_label: 'Show more'
     show_reset_link: false
     reset_text: 'Show all'
-    hide_reset_when_no_selection: true
+    hide_reset_when_no_selection: false
 query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
 hard_limit: 0
 exclude: false
-only_visible_when_facet_source_is_visible: false
+only_visible_when_facet_source_is_visible: true
 processor_configs:
   active_widget_order:
     processor_id: active_widget_order
@@ -52,6 +52,11 @@ processor_configs:
       sort: 40
     settings:
       sort: ASC
+  translate_entity:
+    processor_id: translate_entity
+    weights:
+      build: 5
+    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

@@ -1,28 +1,27 @@
-uuid: 8cee3e44-b685-4d82-9432-1b90b9624735
+uuid: 7842a2ef-b755-4b2b-9e48-0f1b2323730f
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.promotional_materials
+    - facets.facet.language
   module:
     - context
+    - facets
     - system
-    - views
   theme:
     - oira_theme
-id: views_block__promotional_materials_block
+id: language
 theme: oira_theme
-region: content
-weight: 0
+region: sidebar_first
+weight: -9
 provider: null
-plugin: 'views_block:promotional_materials-block'
+plugin: 'facet_block:language'
 settings:
-  id: 'views_block:promotional_materials-block'
-  label: ''
-  provider: views
+  id: 'facet_block:language'
+  label: Language
+  provider: facets
   label_display: visible
-  views_label: ''
-  items_per_page: none
+  block_id: language
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
