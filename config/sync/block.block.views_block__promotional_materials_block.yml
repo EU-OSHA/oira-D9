@@ -1,0 +1,38 @@
+uuid: 8cee3e44-b685-4d82-9432-1b90b9624735
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.promotional_materials
+  module:
+    - context
+    - system
+    - views
+  theme:
+    - oira_theme
+id: views_block__promotional_materials_block
+theme: oira_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:promotional_materials-block'
+settings:
+  id: 'views_block:promotional_materials-block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /oira-tools
+    negate: false

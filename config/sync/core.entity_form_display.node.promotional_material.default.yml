@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.promotional_material.field_oira
     - field.field.node.promotional_material.field_promotional_material_type
     - field.field.node.promotional_material.field_publication_date
+    - field.field.node.promotional_material.field_related_partners
     - field.field.node.promotional_material.field_resource_fc
     - field.field.node.promotional_material.field_revised_date
     - field.field.node.promotional_material.field_wf_notification
@@ -22,6 +23,7 @@ dependencies:
     - media_library
     - path
     - text
+    - workbench_moderation
 id: node.promotional_material.default
 targetEntityType: node
 bundle: promotional_material
@@ -39,7 +41,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 14
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -89,6 +91,12 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_related_partners:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_resource_fc:
     type: media_library_widget
     weight: 9
@@ -103,7 +111,7 @@ content:
     type: datetime_default
     region: content
   field_wf_notification:
-    weight: 11
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }
@@ -111,14 +119,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 12
+    weight: 13
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 17
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -126,21 +134,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 16
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 19
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 17
     region: content
     third_party_settings: {  }
   title:
@@ -153,7 +161,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 13
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60
