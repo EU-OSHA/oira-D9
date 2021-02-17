@@ -1,20 +1,6 @@
 display:
   default:
-    display_title: Máster
     display_options:
-      exposed_form:
-        options:
-          submit_button: Aplicar
-          exposed_sorts_label: 'Ordenar por'
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Elementos por página'
-            items_per_page_options_all_label: '- Todo -'
-            offset_label: Desplazamiento
-          tags:
-            previous: '‹ Anterior'
-            next: 'Siguiente >'
       fields:
         label:
           label: Etiqueta
