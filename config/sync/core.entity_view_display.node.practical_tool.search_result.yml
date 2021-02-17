@@ -1,8 +1,9 @@
-uuid: fe314f3e-6e6b-4a78-94bc-9aea863a657a
+uuid: 1036c85e-c7c4-42c7-a457-209c9d050b69
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.practical_tool.body
     - field.field.node.practical_tool.field_alternative_body
     - field.field.node.practical_tool.field_alternative_title
@@ -25,13 +26,18 @@ dependencies:
   module:
     - datetime
     - image
+    - layout_builder
     - link
     - text
     - user
-id: node.practical_tool.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.practical_tool.search_result
 targetEntityType: node
 bundle: practical_tool
-mode: default
+mode: search_result
 content:
   body:
     label: hidden

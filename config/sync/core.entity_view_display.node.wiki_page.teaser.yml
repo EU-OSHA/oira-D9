@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.wiki_page.field_wiki_page_url
     - node.type.wiki_page
   module:
+    - link
     - text
     - user
 id: node.wiki_page.teaser
@@ -26,16 +27,28 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_wiki_page_url:
+    type: link
+    weight: 2
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
@@ -48,6 +61,5 @@ hidden:
   field_tags: true
   field_updated: true
   field_wiki_categories: true
-  field_wiki_page_url: true
   langcode: true
   search_api_excerpt: true

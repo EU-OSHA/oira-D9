@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.practical_tool.field_image_media
     - field.field.node.practical_tool.field_language
     - field.field.node.practical_tool.field_publication_date
+    - field.field.node.practical_tool.field_related_partners
     - field.field.node.practical_tool.field_revised_date
     - field.field.node.practical_tool.field_sector_category
     - field.field.node.practical_tool.field_third_description
@@ -55,6 +56,7 @@ hidden:
   field_image_media: true
   field_language: true
   field_publication_date: true
+  field_related_partners: true
   field_revised_date: true
   field_sector_category: true
   field_third_description: true
