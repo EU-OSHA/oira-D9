@@ -13,7 +13,6 @@ dependencies:
     - media_library
     - path
     - text
-    - workbench_moderation
 id: node.collaboration_document.default
 targetEntityType: node
 bundle: collaboration_document

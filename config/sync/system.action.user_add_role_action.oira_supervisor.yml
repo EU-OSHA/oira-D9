@@ -1,0 +1,14 @@
+uuid: 71a96c88-8f1e-4e63-829d-e73d0fa86253
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.oira_supervisor
+  module:
+    - user
+id: user_add_role_action.oira_supervisor
+label: 'Add the Oira Supervisor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: oira_supervisor

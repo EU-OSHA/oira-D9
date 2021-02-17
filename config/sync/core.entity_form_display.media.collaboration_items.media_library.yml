@@ -13,7 +13,6 @@ dependencies:
     - file
     - link
     - text
-    - workbench_moderation
 id: media.collaboration_items.media_library
 targetEntityType: media
 bundle: collaboration_items

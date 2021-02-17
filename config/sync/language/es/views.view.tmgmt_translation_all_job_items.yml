@@ -5,10 +5,7 @@ display:
       exposed_form:
         options:
           submit_button: Aplicar
-          reset_button_label: Reset
           exposed_sorts_label: 'Ordenar por'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -23,15 +20,5 @@ display:
           label: Etiqueta
         type:
           label: Tipo
-        source_language:
-          separator: ', '
-        target_language:
-          separator: ', '
-        word_count:
-          separator: ', '
-        tags_count:
-          separator: ', '
-        changed:
-          separator: ', '
         operations:
           label: Operaciones

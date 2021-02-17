@@ -10,7 +10,6 @@ dependencies:
     - image
     - path
     - text
-    - workbench_moderation
 id: taxonomy_term.promotional_material_type.default
 targetEntityType: taxonomy_term
 bundle: promotional_material_type
