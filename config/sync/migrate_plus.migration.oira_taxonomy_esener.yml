@@ -1,0 +1,48 @@
+uuid: 44d97ea8-b83a-4443-8920-7fa2b214e964
+langcode: en
+status: true
+dependencies: {  }
+id: oira_taxonomy_esener
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: oira_migrate
+label: 'Terms: Esener'
+source:
+  plugin: d7_taxonomy_term
+  bundle: esener
+process:
+  tid: tid
+  vid:
+    -
+      plugin: default_value
+      default_value: esener
+  name: name
+  description/value: description
+  description/format: format
+  weight: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: oira_taxonomy_esener
+  parent:
+    plugin: default_value
+    default_value: 0
+    source: '@parent_id'
+  forum_container: is_container
+  changed: timestamp
+  langcode: language
+  field_esener_code:
+    -
+      plugin: get
+      source: field_esener_code
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  optional:
+    - d7_field_instance
