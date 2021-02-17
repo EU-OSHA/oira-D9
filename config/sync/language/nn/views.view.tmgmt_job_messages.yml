@@ -1,0 +1,27 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          tags:
+            previous: '< forrige'
+            next: 'neste >'
+            first: '« første'
+            last: 'siste »'
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        created:
+          label: Laga
+        name:
+          label: Namn
+          separator: ', '
+      arguments:
+        tjid:
+          exception:
+            title: Alle

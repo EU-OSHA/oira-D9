@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+          tags:
+            previous: '< forrige'
+            next: 'neste >'
+            first: '« første'
+            last: 'siste »'
+      fields:
+        state:
+          separator: ', '
+        label:
+          label: Etikett
+        source_language_1:
+          label: Frå
+          separator: ', '
+        target_language:
+          label: Til
+          separator: ', '
+        operations:
+          label: Operasjonar
+  page_1:
+    display_title: Nettside

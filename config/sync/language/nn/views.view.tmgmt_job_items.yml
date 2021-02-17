@@ -1,0 +1,43 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+          tags:
+            previous: '< forrige'
+            next: 'neste >'
+            first: '« første'
+            last: 'siste »'
+      fields:
+        label:
+          label: Etikett
+        type:
+          label: Type
+        word_count:
+          separator: ', '
+        tags_count:
+          separator: ', '
+        operations:
+          label: Operasjonar
+      arguments:
+        tjid:
+          exception:
+            title: Alle
+  checkout:
+    display_options:
+      fields:
+        label:
+          label: Etikett
+        type:
+          label: Type
+        word_count:
+          separator: ', '
+        changed:
+          separator: ', '

@@ -1,0 +1,35 @@
+uuid: 7025be5b-b5a7-4404-b972-3950f0ed819e
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: oira_taxonomy_contact_type_of_sender_i18n
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: oira_migrate
+label: 'Terms: Contact Type Of Sender Translations'
+source:
+  plugin: d7_locale_terms
+  bundle: contact_type_of_sender
+  translations: true
+process:
+  tid:
+    plugin: migration_lookup
+    migration: oira_taxonomy_contact_type_of_sender
+    source: tid
+  langcode: ltlanguage
+  vid:
+    -
+      plugin: default_value
+      default_value: contact_type_of_sender
+  name: name_field_value
+destination:
+  plugin: 'entity:taxonomy_term'
+  translations: true
+migration_dependencies:
+  required:
+    - oira_taxonomy_contact_type_of_sender
