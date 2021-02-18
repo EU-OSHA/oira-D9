@@ -18,7 +18,6 @@ dependencies:
     - node.type.promotional_material
   module:
     - datetime
-    - image
     - text
     - user
 id: node.promotional_material.default
@@ -50,13 +49,12 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    weight: 104
+    weight: 115
     label: above
     settings:
-      image_style: ''
-      image_link: ''
+      link: true
     third_party_settings: {  }
-    type: image
+    type: entity_reference_label
     region: content
   field_image_home_latest_material:
     type: entity_reference_entity_view

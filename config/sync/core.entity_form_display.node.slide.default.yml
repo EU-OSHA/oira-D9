@@ -5,16 +5,13 @@ dependencies:
   config:
     - field.field.node.slide.body
     - field.field.node.slide.field_image
-    - field.field.node.slide.field_image_media
     - field.field.node.slide.field_link
-    - image.style.thumbnail
     - node.type.slide
   module:
-    - image
     - link
-    - media_library
     - path
     - text
+    - workbench_moderation
 id: node.slide.default
 targetEntityType: node
 bundle: slide
@@ -37,19 +34,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_image:
-    weight: 1
+    weight: 26
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: image_image
-    region: content
-  field_image_media:
-    weight: 2
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    type: media_library_widget
+    type: entity_reference_autocomplete
     region: content
   field_link:
     weight: 4
