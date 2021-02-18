@@ -17,6 +17,7 @@ dependencies:
     - field.storage.node.field_third_description
     - field.storage.node.field_wf_notification
     - field.storage.node.field_image
+    - field.storage.node.field_image_media
     - field.storage.node.field_third_language
     - field.storage.node.field_language
     - field.storage.node.field_publication_date
@@ -121,6 +122,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_image
+  field_image_media:
+    label: 'Image media'
+    datasource_id: 'entity:node'
+    property_path: field_image_media
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_image_media
   field_iso2:
     label: 'Country » Taxonomy term » ISO2'
     datasource_id: 'entity:node'

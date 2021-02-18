@@ -66,12 +66,11 @@ content:
     type: image_image
     region: content
   field_image_home_latest_material:
+    type: media_library_widget
     weight: 6
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_oira:
     weight: 1
