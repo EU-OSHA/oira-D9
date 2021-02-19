@@ -1,4 +1,4 @@
-uuid: 5700c14e-4783-4ea8-91b1-4a7fd00a440e
+uuid: f3a7b143-3a80-4ebd-929c-600d27ecf4c4
 langcode: en
 status: true
 dependencies:
@@ -27,9 +27,20 @@ process:
       plugin: default_value
       default_value: promotional_material_type
   name: name_field_value
-  field_image:
-    plugin: Image
-    source: field_image
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: oira_taxonomy_promotional_material_type
+  parent:
+    plugin: default_value
+    default_value: 0
+    source: '@parent_id'
+  forum_container: is_container
+  changed: timestamp
 destination:
   plugin: 'entity:taxonomy_term'
   translations: true

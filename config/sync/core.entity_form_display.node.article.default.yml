@@ -9,8 +9,8 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
-    - field.field.node.article.field_image
     - field.field.node.article.field_image_media
+    - field.field.node.article.field_imagen
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_recommended_articles
@@ -20,11 +20,9 @@ dependencies:
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
     - field.field.node.article.field_wiki_categories
-    - image.style.thumbnail
     - node.type.article
   module:
     - datetime
-    - image
     - media_library
     - path
     - text
@@ -83,17 +81,16 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_image:
-    type: image_image
-    weight: 4
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
   field_image_media:
     type: media_library_widget
     weight: 5
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_imagen:
+    type: media_library_widget
+    weight: 26
     settings:
       media_types: {  }
     third_party_settings: {  }
