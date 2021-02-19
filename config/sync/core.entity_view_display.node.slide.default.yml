@@ -5,11 +5,9 @@ dependencies:
   config:
     - field.field.node.slide.body
     - field.field.node.slide.field_image
-    - field.field.node.slide.field_image_media
     - field.field.node.slide.field_link
     - node.type.slide
   module:
-    - image
     - link
     - text
     - user
@@ -26,16 +24,7 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 102
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  field_image_media:
-    weight: 103
+    weight: 105
     label: above
     settings:
       link: true

@@ -1,4 +1,4 @@
-uuid: 80f50f2c-523c-4f7e-991e-2df14a209b0b
+uuid: a8f32fca-a26a-4714-b08a-245e9df1fcbf
 langcode: en
 status: true
 dependencies:
@@ -20,7 +20,7 @@ settings:
   id: 'views_exposed_filter_block:oira_ws-tools_ws'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
 visibility:
   request_path_exclusion:

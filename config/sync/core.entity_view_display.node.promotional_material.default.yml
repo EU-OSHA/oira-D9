@@ -11,13 +11,14 @@ dependencies:
     - field.field.node.promotional_material.field_oira
     - field.field.node.promotional_material.field_promotional_material_type
     - field.field.node.promotional_material.field_publication_date
+    - field.field.node.promotional_material.field_related_partners
     - field.field.node.promotional_material.field_resource_fc
     - field.field.node.promotional_material.field_revised_date
     - field.field.node.promotional_material.field_wf_notification
     - node.type.promotional_material
   module:
     - datetime
-    - image
+    - media
     - text
     - user
 id: node.promotional_material.default
@@ -28,12 +29,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_co_author:
-    weight: 107
+    weight: 6
     label: above
     settings:
       link: true
@@ -41,7 +42,7 @@ content:
     type: entity_reference_label
     region: content
   field_country:
-    weight: 110
+    weight: 9
     label: above
     settings:
       link: true
@@ -49,25 +50,25 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    weight: 104
+    weight: 1
     label: above
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: media_thumbnail
     region: content
   field_image_home_latest_material:
-    weight: 106
+    type: entity_reference_entity_view
+    weight: 12
     label: above
     settings:
-      image_style: ''
-      image_link: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: image
     region: content
   field_oira:
-    weight: 102
+    weight: 3
     label: above
     settings:
       format: default
@@ -77,7 +78,7 @@ content:
     type: boolean
     region: content
   field_promotional_material_type:
-    weight: 105
+    weight: 5
     label: above
     settings:
       link: true
@@ -85,7 +86,7 @@ content:
     type: entity_reference_label
     region: content
   field_publication_date:
-    weight: 103
+    weight: 4
     label: above
     settings:
       format_type: medium
@@ -93,9 +94,17 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_related_partners:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_resource_fc:
     type: entity_reference_entity_view
-    weight: 109
+    weight: 8
     label: above
     settings:
       view_mode: default
@@ -103,7 +112,7 @@ content:
     third_party_settings: {  }
     region: content
   field_revised_date:
-    weight: 108
+    weight: 7
     label: above
     settings:
       format_type: medium
@@ -112,7 +121,7 @@ content:
     type: datetime_default
     region: content
   field_wf_notification:
-    weight: 111
+    weight: 10
     label: above
     settings:
       format: default
@@ -122,10 +131,10 @@ content:
     type: boolean
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

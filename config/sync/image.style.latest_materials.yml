@@ -1,0 +1,15 @@
+uuid: 4b6ecffe-4edb-45ef-b948-99272a4a6507
+langcode: en
+status: true
+dependencies: {  }
+name: latest_materials
+label: 'Latest materials'
+effects:
+  0d4f5a1b-e1a0-4cc9-a2a5-0fe17855725a:
+    uuid: 0d4f5a1b-e1a0-4cc9-a2a5-0fe17855725a
+    id: image_crop
+    weight: 1
+    data:
+      width: 342
+      height: 259
+      anchor: center-center

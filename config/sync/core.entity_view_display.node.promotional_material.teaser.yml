@@ -12,11 +12,13 @@ dependencies:
     - field.field.node.promotional_material.field_oira
     - field.field.node.promotional_material.field_promotional_material_type
     - field.field.node.promotional_material.field_publication_date
+    - field.field.node.promotional_material.field_related_partners
     - field.field.node.promotional_material.field_resource_fc
     - field.field.node.promotional_material.field_revised_date
     - field.field.node.promotional_material.field_wf_notification
     - node.type.promotional_material
   module:
+    - media
     - text
     - user
 id: node.promotional_material.teaser
@@ -27,27 +29,36 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_image:
+    type: media_thumbnail
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   field_co_author: true
   field_country: true
-  field_image: true
   field_image_home_latest_material: true
   field_oira: true
   field_promotional_material_type: true
   field_publication_date: true
+  field_related_partners: true
   field_resource_fc: true
   field_revised_date: true
   field_wf_notification: true
