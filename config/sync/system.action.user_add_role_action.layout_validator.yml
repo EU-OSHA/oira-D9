@@ -1,0 +1,14 @@
+uuid: 3a2da8f9-24f3-4f07-801a-deba9fd2afbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.layout_validator
+  module:
+    - user
+id: user_add_role_action.layout_validator
+label: 'Add the Layout Validator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: layout_validator

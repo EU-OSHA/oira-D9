@@ -11,13 +11,13 @@ dependencies:
     - field.storage.node.field_revised_date
     - field.storage.node.field_tool_link
     - field.storage.taxonomy_term.field_iso2
-    - image.style.views_thumbail
+    - image.style.medium
     - search_api.index.oira_tools
   module:
     - better_exposed_filters
     - datetime
-    - image
     - link
+    - media
     - search_api
     - taxonomy
     - text
@@ -503,9 +503,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: media_thumbnail
           settings:
-            image_style: views_thumbail
+            image_style: medium
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -524,6 +524,34 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
+            display_methods:
+              audio:
+                display_method: label
+                view_mode: default
+              collaboration_items:
+                display_method: label
+                view_mode: default
+              collaborator:
+                display_method: label
+                view_mode: default
+              document:
+                display_method: label
+                view_mode: default
+              image:
+                display_method: label
+                view_mode: default
+              image_and_link:
+                display_method: label
+                view_mode: default
+              remote_video:
+                display_method: label
+                view_mode: default
+              resource_fc:
+                display_method: label
+                view_mode: default
+              video:
+                display_method: label
+                view_mode: default
           plugin_id: search_api_field
         body:
           id: body
@@ -1769,7 +1797,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Fulltext search'
+            label: Search
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -1783,7 +1811,20 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+              editor: '0'
+              approver: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              partner: '0'
+              oira_project_manager: '0'
+              oira_supervisor: '0'
+              superadministrator: '0'
             placeholder: ''
+            expose_fields: false
+            searched_fields_id: ''
           is_grouped: false
           group_info:
             label: ''

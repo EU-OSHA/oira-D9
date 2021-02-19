@@ -9,7 +9,6 @@ dependencies:
     - media.type.image
   module:
     - image
-    - workbench_moderation
 _core:
   default_config_hash: BMLrK4zKp8-FFnMseBdT_6h6YipUsKRfbDf_3WUB5HA
 id: media.image.media_library

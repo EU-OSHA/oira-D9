@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
     - field.field.node.article.field_image
-    - field.field.node.article.field_image_media
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_recommended_articles
@@ -20,11 +19,9 @@ dependencies:
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
     - field.field.node.article.field_wiki_categories
-    - image.style.thumbnail
     - node.type.article
   module:
     - datetime
-    - image
     - media_library
     - path
     - text
@@ -48,18 +45,18 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 21
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   field_aditional_resources:
-    weight: 13
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_archived:
-    weight: 12
+    weight: 11
     settings:
       display_label: true
     third_party_settings: {  }
@@ -72,66 +69,58 @@ content:
     type: options_select
     region: content
   field_character_count:
-    weight: 16
+    weight: 15
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_expiration_date:
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_image:
-    type: image_image
-    weight: 4
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_image_media:
     type: media_library_widget
-    weight: 5
+    weight: 4
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_page_count:
-    weight: 17
+    weight: 16
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_publication_date:
-    weight: 6
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_recommended_articles:
-    weight: 15
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_recommended_resources:
     weight: 14
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
+  field_recommended_resources:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_related_oshwiki_articles:
-    weight: 11
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_sector:
-    weight: 9
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -146,26 +135,26 @@ content:
     region: content
   field_tags:
     type: options_select
-    weight: 8
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   field_wiki_categories:
-    weight: 10
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   langcode:
     type: language_select
-    weight: 20
+    weight: 19
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 24
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -173,21 +162,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 22
+    weight: 21
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 17
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 23
+    weight: 22
     region: content
     third_party_settings: {  }
   title:
@@ -200,7 +189,7 @@ content:
     third_party_settings: {  }
   uid:
     type: options_select
-    weight: 19
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }

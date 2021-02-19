@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.wiki_page.body
     - field.field.node.wiki_page.field_image
-    - field.field.node.wiki_page.field_image_media
     - field.field.node.wiki_page.field_migration_source
     - field.field.node.wiki_page.field_revised_date
     - field.field.node.wiki_page.field_summary
@@ -13,11 +12,9 @@ dependencies:
     - field.field.node.wiki_page.field_updated
     - field.field.node.wiki_page.field_wiki_categories
     - field.field.node.wiki_page.field_wiki_page_url
-    - image.style.thumbnail
     - node.type.wiki_page
   module:
     - datetime
-    - image
     - link
     - media_library
     - path
@@ -40,27 +37,19 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_image:
     weight: 9
     settings:
-      preview_image_style: thumbnail
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_image_media:
-    weight: 10
-    settings:
       media_types: {  }
     third_party_settings: {  }
     type: media_library_widget
     region: content
   field_migration_source:
-    weight: 11
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -114,7 +103,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 16
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -122,21 +111,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 13
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 16
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 14
     region: content
     third_party_settings: {  }
   title:
@@ -149,7 +138,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 12
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60

@@ -1,0 +1,26 @@
+uuid: 9d1b52b7-7d58-4591-afc7-587b18b1945a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: tool_of_the_month
+label: 'Tool of the month'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      practical_tool: practical_tool
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 1
+  act_as_queue: false
+  reverse: false

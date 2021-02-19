@@ -24,19 +24,30 @@ dependencies:
     - field.field.node.partner.field_ph_town
     - field.field.node.partner.field_social_profile
     - field.field.node.partner.field_website
+    - image.style.medium
     - node.type.partner
   module:
+    - media
     - user
 id: node.partner.teaser
 targetEntityType: node
 bundle: partner
 mode: teaser
 content:
+  field_logo:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
@@ -48,7 +59,6 @@ hidden:
   field_general_phone: true
   field_guid_main_contact: true
   field_guid_organisation: true
-  field_logo: true
   field_main_contact: true
   field_main_contact_email: true
   field_mission_statement: true

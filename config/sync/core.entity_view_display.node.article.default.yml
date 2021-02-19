@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
     - field.field.node.article.field_image
-    - field.field.node.article.field_image_media
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_recommended_articles
@@ -20,11 +19,9 @@ dependencies:
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
     - field.field.node.article.field_wiki_categories
-    - image.style.large
     - node.type.article
   module:
     - datetime
-    - image
     - text
     - user
 _core:
@@ -36,13 +33,13 @@ mode: default
 content:
   body:
     type: text_default
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
     label: hidden
   field_aditional_resources:
-    weight: 126
+    weight: 4
     label: above
     settings:
       link: true
@@ -50,7 +47,7 @@ content:
     type: entity_reference_label
     region: content
   field_archived:
-    weight: 117
+    weight: 13
     label: above
     settings:
       format: default
@@ -60,7 +57,7 @@ content:
     type: boolean
     region: content
   field_article_type:
-    weight: 111
+    weight: 10
     label: above
     settings:
       link: true
@@ -68,7 +65,7 @@ content:
     type: entity_reference_label
     region: content
   field_character_count:
-    weight: 121
+    weight: 14
     label: above
     settings:
       thousand_separator: ''
@@ -77,7 +74,7 @@ content:
     type: number_integer
     region: content
   field_expiration_date:
-    weight: 124
+    weight: 8
     label: above
     settings:
       format_type: medium
@@ -86,25 +83,16 @@ content:
     type: datetime_default
     region: content
   field_image:
-    type: image
-    weight: -1
-    region: content
-    settings:
-      image_style: large
-      image_link: ''
-    third_party_settings: {  }
-    label: hidden
-  field_image_media:
     type: entity_reference_entity_view
-    weight: 112
-    label: above
+    weight: 0
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
   field_page_count:
-    weight: 122
+    weight: 15
     label: above
     settings:
       thousand_separator: ''
@@ -115,7 +103,7 @@ content:
     type: number_decimal
     region: content
   field_publication_date:
-    weight: 123
+    weight: 7
     label: above
     settings:
       format_type: medium
@@ -124,7 +112,7 @@ content:
     type: datetime_default
     region: content
   field_recommended_articles:
-    weight: 120
+    weight: 3
     label: above
     settings:
       link: true
@@ -132,7 +120,7 @@ content:
     type: entity_reference_label
     region: content
   field_recommended_resources:
-    weight: 119
+    weight: 2
     label: above
     settings:
       link: true
@@ -140,7 +128,7 @@ content:
     type: entity_reference_label
     region: content
   field_related_oshwiki_articles:
-    weight: 116
+    weight: 12
     label: above
     settings:
       link: true
@@ -148,7 +136,7 @@ content:
     type: entity_reference_label
     region: content
   field_sector:
-    weight: 114
+    weight: 6
     label: above
     settings:
       link: true
@@ -156,7 +144,7 @@ content:
     type: entity_reference_label
     region: content
   field_summary:
-    weight: 125
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -164,14 +152,14 @@ content:
     region: content
   field_tags:
     type: entity_reference_label
-    weight: 10
+    weight: 5
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
   field_wiki_categories:
-    weight: 115
+    weight: 11
     label: above
     settings:
       link: true
@@ -179,7 +167,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }

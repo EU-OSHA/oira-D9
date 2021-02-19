@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.news.field_co_author
     - field.field.node.news.field_image
     - field.field.node.news.field_image_home_latest_news
-    - field.field.node.news.field_image_media
     - field.field.node.news.field_migration_source
     - field.field.node.news.field_page_count
     - field.field.node.news.field_publication_date
@@ -19,7 +18,6 @@ dependencies:
     - node.type.news
   module:
     - datetime
-    - image
     - text
     - user
 id: node.news.default
@@ -60,13 +58,12 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    weight: 103
+    weight: 116
     label: above
     settings:
-      image_style: ''
-      image_link: ''
+      link: true
     third_party_settings: {  }
-    type: image
+    type: entity_reference_label
     region: content
   field_image_home_latest_news:
     type: entity_reference_entity_view
@@ -76,14 +73,6 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    region: content
-  field_image_media:
-    weight: 104
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_migration_source:
     weight: 114
