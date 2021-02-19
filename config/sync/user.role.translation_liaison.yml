@@ -6,4 +6,13 @@ id: translation_liaison
 label: 'Translation Liaison'
 weight: 6
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access dashboard'
+  - 'access toolbar'
+  - 'use text format filtered_html'
+  - 'use text format full_html'
+  - 'use text format full_html_minimal'
+  - 'view the administration theme'
+  - 'view translation job'
+  - 'view translation job item'
+  - 'view untranslated jobs'

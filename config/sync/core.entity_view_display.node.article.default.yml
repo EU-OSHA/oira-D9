@@ -9,7 +9,8 @@ dependencies:
     - field.field.node.article.field_article_type
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
-    - field.field.node.article.field_image
+    - field.field.node.article.field_image_media
+    - field.field.node.article.field_imagen
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_recommended_articles
@@ -33,13 +34,13 @@ mode: default
 content:
   body:
     type: text_default
-    weight: 1
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
     label: hidden
   field_aditional_resources:
-    weight: 4
+    weight: 126
     label: above
     settings:
       link: true
@@ -47,7 +48,7 @@ content:
     type: entity_reference_label
     region: content
   field_archived:
-    weight: 13
+    weight: 117
     label: above
     settings:
       format: default
@@ -57,7 +58,7 @@ content:
     type: boolean
     region: content
   field_article_type:
-    weight: 10
+    weight: 111
     label: above
     settings:
       link: true
@@ -65,7 +66,7 @@ content:
     type: entity_reference_label
     region: content
   field_character_count:
-    weight: 14
+    weight: 121
     label: above
     settings:
       thousand_separator: ''
@@ -74,7 +75,7 @@ content:
     type: number_integer
     region: content
   field_expiration_date:
-    weight: 8
+    weight: 124
     label: above
     settings:
       format_type: medium
@@ -82,17 +83,26 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_image:
+  field_image_media:
     type: entity_reference_entity_view
-    weight: 0
-    label: hidden
+    weight: 112
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_imagen:
+    type: entity_reference_entity_view
+    weight: 127
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
   field_page_count:
-    weight: 15
+    weight: 122
     label: above
     settings:
       thousand_separator: ''
@@ -103,7 +113,7 @@ content:
     type: number_decimal
     region: content
   field_publication_date:
-    weight: 7
+    weight: 123
     label: above
     settings:
       format_type: medium
@@ -112,7 +122,7 @@ content:
     type: datetime_default
     region: content
   field_recommended_articles:
-    weight: 3
+    weight: 120
     label: above
     settings:
       link: true
@@ -120,7 +130,7 @@ content:
     type: entity_reference_label
     region: content
   field_recommended_resources:
-    weight: 2
+    weight: 119
     label: above
     settings:
       link: true
@@ -128,7 +138,7 @@ content:
     type: entity_reference_label
     region: content
   field_related_oshwiki_articles:
-    weight: 12
+    weight: 116
     label: above
     settings:
       link: true
@@ -136,7 +146,7 @@ content:
     type: entity_reference_label
     region: content
   field_sector:
-    weight: 6
+    weight: 114
     label: above
     settings:
       link: true
@@ -144,7 +154,7 @@ content:
     type: entity_reference_label
     region: content
   field_summary:
-    weight: 9
+    weight: 125
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -152,14 +162,14 @@ content:
     region: content
   field_tags:
     type: entity_reference_label
-    weight: 5
+    weight: 10
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
   field_wiki_categories:
-    weight: 11
+    weight: 115
     label: above
     settings:
       link: true
@@ -167,7 +177,7 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 16
+    weight: 100
     region: content
     settings: {  }
     third_party_settings: {  }

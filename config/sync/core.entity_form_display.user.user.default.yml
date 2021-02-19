@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.user.user.field_cmw_mail_notifications
     - field.field.user.user.field_crm_guid
+    - field.field.user.user.field_metatag
     - field.field.user.user.field_phone
     - field.field.user.user.field_user_partner_guid
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - image
+    - metatag
     - path
     - user
 _core:
@@ -40,6 +42,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_metatag:
+    weight: 35
+    settings:
+      sidebar: true
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   field_phone:
     weight: 34
