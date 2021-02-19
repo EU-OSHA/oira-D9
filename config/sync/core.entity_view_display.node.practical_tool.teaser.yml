@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.practical_tool.field_wf_notification
     - node.type.practical_tool
   module:
+    - media
     - text
     - user
 id: node.practical_tool.teaser
@@ -33,16 +34,25 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_image:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
@@ -51,7 +61,6 @@ hidden:
   field_alternative_title: true
   field_co_author: true
   field_country: true
-  field_image: true
   field_language: true
   field_publication_date: true
   field_related_partners: true
