@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_country
     - field.storage.node.field_logo
     - field.storage.node.field_orgtype
+    - image.style.media_library
     - node.type.partner
     - taxonomy.vocabulary.partner_types
   content:
@@ -383,7 +384,7 @@ display:
           click_sort_column: target_id
           type: media_thumbnail
           settings:
-            image_style: ''
+            image_style: media_library
             image_link: content
           group_column: target_id
           group_columns: {  }
