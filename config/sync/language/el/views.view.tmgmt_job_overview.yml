@@ -14,10 +14,40 @@ display:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
+          tags:
+            previous: '‹ προηγούμενη'
+            next: 'επόμενη ›'
+            first: '« πρώτη'
+            last: 'τελευταία »'
       fields:
         state:
+          label: Κατάσταση
           separator: ', '
+        label:
+          label: Ετικέτα
         source_language_1:
+          label: Από
           separator: ', '
         target_language:
+          label: Προς
           separator: ', '
+        translator:
+          label: Πάροχος
+        tags_count:
+          label: Ετικέτες
+        changed:
+          label: Τροποποιημένο
+        operations:
+          label: Λειτουργίες
+      filters:
+        state:
+          expose:
+            label: Κατάσταση
+        source_language:
+          expose:
+            label: 'Γλώσσα προέλευσης'
+        translator:
+          expose:
+            label: Πάροχος
+  page_1:
+    display_title: Σελίδα

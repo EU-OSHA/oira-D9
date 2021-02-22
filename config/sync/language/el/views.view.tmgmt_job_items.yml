@@ -14,15 +14,43 @@ display:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
+          tags:
+            previous: '‹ προηγούμενη'
+            next: 'επόμενη ›'
+            first: '« πρώτη'
+            last: 'τελευταία »'
       fields:
+        state:
+          label: Κατάσταση
+        label:
+          label: Ετικέτα
+        type:
+          label: Τύπος
         word_count:
           separator: ', '
         tags_count:
+          label: Ετικέτες
           separator: ', '
+        changed:
+          label: Τροποποιημένο
+        operations:
+          label: Λειτουργίες
+      arguments:
+        tjid:
+          exception:
+            title: Όλες
   checkout:
+    display_title: 'Ολοκλήρωση Παραγγελίας'
     display_options:
       fields:
+        label:
+          label: Ετικέτα
+        type:
+          label: Τύπος
         word_count:
           separator: ', '
         changed:
+          label: Τροποποιημένο
           separator: ', '
+  submitted:
+    display_title: Υποβλήθηκε

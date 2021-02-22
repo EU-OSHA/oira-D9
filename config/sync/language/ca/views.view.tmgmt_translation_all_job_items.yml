@@ -15,7 +15,14 @@ display:
             items_per_page_label: 'Elements per pàgina'
             items_per_page_options_all_label: '- Tot -'
             offset_label: Desplaçament
+          tags:
+            previous: '‹ Anterior'
+            next: 'Següent ›'
+            first: '« Primer'
+            last: 'Últim »'
       fields:
+        state:
+          label: Estat
         label:
           label: Etiqueta
         type:
@@ -32,8 +39,23 @@ display:
           label: Etiquetes
           separator: ', '
         changed:
+          label: Canviat
           separator: ', '
         operations:
           label: Operacions
+      filters:
+        state:
+          expose:
+            label: Estats
+          group_info:
+            label: Estat
+        source_language:
+          expose:
+            label: 'Llengua de la font'
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Normal
   page_1:
     display_title: Pàgina

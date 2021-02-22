@@ -15,15 +15,43 @@ display:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
+          tags:
+            previous: '‹ edellinen'
+            next: 'seuraava ›'
+            first: '« ensimmäinen'
+            last: 'viimeinen »'
       fields:
+        state:
+          label: Tila
+        label:
+          label: Tunnus
+        type:
+          label: Tyyppi
         word_count:
           separator: ', '
         tags_count:
+          label: Tagit
           separator: ', '
+        changed:
+          label: Muuttunut
+        operations:
+          label: Toimenpiteet
+      arguments:
+        tjid:
+          exception:
+            title: Kaikki
   checkout:
+    display_title: Kassalle
     display_options:
       fields:
+        label:
+          label: Tunnus
+        type:
+          label: Tyyppi
         word_count:
           separator: ', '
         changed:
+          label: Muuttunut
           separator: ', '
+  submitted:
+    display_title: Lisätty

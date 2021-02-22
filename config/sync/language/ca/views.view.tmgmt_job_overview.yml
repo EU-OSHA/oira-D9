@@ -22,6 +22,7 @@ display:
             last: 'últim »'
       fields:
         state:
+          label: Estat
           separator: ', '
         label:
           label: Etiqueta
@@ -31,9 +32,23 @@ display:
         target_language:
           label: Per
           separator: ', '
+        translator:
+          label: Proveïdor
         tags_count:
           label: Etiquetes
+        changed:
+          label: Canviat
         operations:
           label: Operacions
+      filters:
+        state:
+          expose:
+            label: Estat
+        source_language:
+          expose:
+            label: 'Llengua de la font'
+        translator:
+          expose:
+            label: Proveïdor
   page_1:
     display_title: Pàgina

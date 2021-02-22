@@ -32,6 +32,8 @@ process:
   revision_timestamp: timestamp
   content_translation_source: source
   content_translation_outdated: translate
+  field_oira: field_oira
+  field_weight: field_weight
 destination:
   plugin: 'entity:node'
   translations: true

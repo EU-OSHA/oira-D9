@@ -10,10 +10,23 @@ display:
         options:
           expose:
             items_per_page_options_all_label: '- Alle -'
+          tags:
+            previous: '< forrige'
+            next: 'neste >'
+            first: '« første'
+            last: 'siste »'
       fields:
         state:
           separator: ', '
+        label:
+          label: Etikett
         source_language_1:
+          label: Frå
           separator: ', '
         target_language:
+          label: Til
           separator: ', '
+        operations:
+          label: Operasjonar
+  page_1:
+    display_title: Nettside

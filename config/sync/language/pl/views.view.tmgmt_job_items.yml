@@ -15,15 +15,47 @@ display:
             items_per_page_label: 'Elementów na stronę'
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
+          tags:
+            previous: '‹ poprzednia'
+            next: 'następna ›'
+            first: '« pierwsza'
+            last: 'ostatnia »'
       fields:
+        state:
+          label: Stan
+        label:
+          label: Etykieta
+        type:
+          label: Typ
+        progress:
+          label: Postęp
         word_count:
+          label: Słowa
           separator: ', '
         tags_count:
-          separator: ', '
-  checkout:
-    display_options:
-      fields:
-        word_count:
+          label: Tagi
           separator: ', '
         changed:
+          label: Zmieniono
+        operations:
+          label: Operacje
+      arguments:
+        tjid:
+          exception:
+            title: Wszystko
+  checkout:
+    display_title: 'Realizacja zamówienia'
+    display_options:
+      fields:
+        label:
+          label: Etykieta
+        type:
+          label: Typ
+        word_count:
+          label: Słowa
           separator: ', '
+        changed:
+          label: Zmieniono
+          separator: ', '
+  submitted:
+    display_title: Przesłano
