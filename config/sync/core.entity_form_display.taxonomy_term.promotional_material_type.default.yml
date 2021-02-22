@@ -10,7 +10,6 @@ dependencies:
     - image
     - path
     - text
-    - workbench_moderation
 id: taxonomy_term.promotional_material_type.default
 targetEntityType: taxonomy_term
 bundle: promotional_material_type
@@ -25,7 +24,7 @@ content:
       rows: 5
     third_party_settings: {  }
   field_image:
-    weight: 11
+    weight: 2
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -60,9 +59,4 @@ content:
     weight: 5
     region: content
     third_party_settings: {  }
-  translation:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden: {  }
