@@ -22,17 +22,40 @@ display:
           action_title: Acció
       filters:
         status:
+          expose:
+            label: 'Estat de la publicació'
           group_info:
             label: Publicat
             group_items:
               1:
                 title: Publicat
+              2:
+                title: 'Sense publicar'
         name:
           expose:
             label: Nom
+        bundle:
+          expose:
+            label: 'Tipus de mèdia'
+          group_info:
+            label: 'Tipus de mèdia'
         langcode:
           expose:
             label: Llengua
+      sorts:
+        created:
+          expose:
+            label: 'Els més nous primer'
+        name:
+          expose:
+            label: 'Nom (A-Z)'
+        name_1:
+          expose:
+            label: 'Nom (Z-A)'
+      title: Multimèdia
+      empty:
+        area_text_custom:
+          content: 'No hi ha mèdia disponible.'
   page:
     display_title: Pàgina
     display_options:
@@ -57,11 +80,16 @@ display:
           exception:
             title: Tot
       header:
+        display_link_grid:
+          label: Graella
         display_link_table:
           label: Taula
   widget_table:
+    display_title: 'Giny (taula)'
     display_options:
       fields:
+        thumbnail__target_id:
+          label: Miniatura
         name:
           label: Nom
         uid:
@@ -77,5 +105,7 @@ display:
           exception:
             title: Tot
       header:
+        display_link_grid:
+          label: Graella
         display_link_table:
           label: Taula

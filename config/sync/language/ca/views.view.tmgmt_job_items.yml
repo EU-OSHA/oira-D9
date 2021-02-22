@@ -21,6 +21,8 @@ display:
             first: '« primer'
             last: 'últim »'
       fields:
+        state:
+          label: Estat
         label:
           label: Etiqueta
         type:
@@ -30,6 +32,8 @@ display:
         tags_count:
           label: Etiquetes
           separator: ', '
+        changed:
+          label: Canviat
         operations:
           label: Operacions
       arguments:
@@ -37,6 +41,7 @@ display:
           exception:
             title: Tot
   checkout:
+    display_title: 'Passa per caixa'
     display_options:
       fields:
         label:
@@ -46,4 +51,7 @@ display:
         word_count:
           separator: ', '
         changed:
+          label: Canviat
           separator: ', '
+  submitted:
+    display_title: Tramès

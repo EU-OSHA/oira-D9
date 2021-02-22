@@ -10,10 +10,25 @@ display:
           sort_desc_label: Φθί
       pager:
         options:
+          tags:
+            previous: '‹ προηγούμενη'
+            next: 'επόμενη ›'
+            first: '« πρώτη'
+            last: 'τελευταία »'
           expose:
             items_per_page_label: 'Είδη ανά σελίδα'
             items_per_page_options_all_label: '- Όλα -'
             offset_label: Αντιστάθμιση
       fields:
+        created:
+          label: Δημιουργήθηκε
+        label:
+          label: Αντικείμενο
         name:
+          label: Όνομα
           separator: ', '
+      title: Μηνύματα
+      arguments:
+        tjid:
+          exception:
+            title: Όλες

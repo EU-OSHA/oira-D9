@@ -28,8 +28,6 @@ process:
     default_value: und
   title: title
   body: body
-  field_oira: field_oira
-  field_weight: field_weight
   uid: node_uid
   status: status
   created: created
@@ -39,6 +37,8 @@ process:
   revision_uid: revision_uid
   revision_log: log
   revision_timestamp: timestamp
+  field_oira: field_oira
+  field_weight: field_weight
 destination:
   plugin: 'entity:node'
 migration_dependencies:

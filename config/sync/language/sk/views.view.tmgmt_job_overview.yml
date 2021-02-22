@@ -14,10 +14,42 @@ display:
             items_per_page_label: 'Položiek na stránku'
             items_per_page_options_all_label: '- Všetko -'
             offset_label: 'Zobraziť od'
+          tags:
+            previous: '‹ predchádzajúca'
+            next: 'nasledujúca ›'
+            first: '« prvá'
+            last: 'posledná »'
       fields:
         state:
+          label: Stav
           separator: ', '
+        label:
+          label: Označenie
         source_language_1:
+          label: Od
           separator: ', '
         target_language:
+          label: Komu
           separator: ', '
+        translator:
+          label: Poskytovateľ
+        word_count:
+          label: Slov
+        tags_count:
+          label: Značky
+        changed:
+          label: Zmenené
+        operations:
+          label: Operácie
+      filters:
+        state:
+          expose:
+            label: Stav
+        source_language:
+          expose:
+            label: 'Zdrojový jazyk'
+        translator:
+          expose:
+            label: Poskytovateľ
+  page_1:
+    display_title: Stránka

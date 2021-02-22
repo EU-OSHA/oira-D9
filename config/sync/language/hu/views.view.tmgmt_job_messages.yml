@@ -11,10 +11,27 @@ display:
           sort_desc_label: Csökkenő
       pager:
         options:
+          tags:
+            previous: '‹ előző'
+            next: 'következő ›'
+            first: '« első'
+            last: 'utolsó »'
           expose:
             items_per_page_label: 'Elemek száma oldalanként'
             items_per_page_options_all_label: '– Mind –'
             offset_label: Eltolás
       fields:
+        created:
+          label: Létrehozva
+        label:
+          label: Tétel
         name:
+          label: Név
           separator: ', '
+      title: Üzenetek
+      arguments:
+        tjid:
+          exception:
+            title: Mind
+  embed:
+    display_title: Beágyazás

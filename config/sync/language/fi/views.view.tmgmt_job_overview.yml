@@ -15,10 +15,40 @@ display:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
             offset_label: Offset
+          tags:
+            previous: '‹ edellinen'
+            next: 'seuraava ›'
+            first: '« ensimmäinen'
+            last: 'viimeinen »'
       fields:
         state:
+          label: Tila
           separator: ', '
+        label:
+          label: Tunnus
         source_language_1:
+          label: Lähettäjä
           separator: ', '
         target_language:
+          label: Osoitteeseen
           separator: ', '
+        translator:
+          label: Sisältölähde
+        tags_count:
+          label: Tagit
+        changed:
+          label: Muuttunut
+        operations:
+          label: Toimenpiteet
+      filters:
+        state:
+          expose:
+            label: Tila
+        source_language:
+          expose:
+            label: Lähdekieli
+        translator:
+          expose:
+            label: Sisältölähde
+  page_1:
+    display_title: Sivu

@@ -23,10 +23,15 @@ display:
       fields:
         created:
           label: Creat
+        label:
+          label: Element
         name:
           label: Nom
           separator: ', '
+      title: Missatges
       arguments:
         tjid:
           exception:
             title: Tot
+  embed:
+    display_title: Incrustra

@@ -11,9 +11,15 @@ display:
           expose:
             items_per_page_options_all_label: '- Alle -'
       fields:
+        label:
+          label: Etikett
+        type:
+          label: Type
         source_language:
+          label: Frå
           separator: ', '
         target_language:
+          label: Til
           separator: ', '
         word_count:
           separator: ', '
@@ -21,3 +27,13 @@ display:
           separator: ', '
         changed:
           separator: ', '
+        operations:
+          label: Operasjonar
+      filters:
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Normal
+  page_1:
+    display_title: Nettside

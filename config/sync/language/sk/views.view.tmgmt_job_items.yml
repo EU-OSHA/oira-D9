@@ -14,15 +14,45 @@ display:
             items_per_page_label: 'Položiek na stránku'
             items_per_page_options_all_label: '- Všetko -'
             offset_label: 'Zobraziť od'
+          tags:
+            previous: '‹ predchádzajúca'
+            next: 'nasledujúca ›'
+            first: '« prvá'
+            last: 'posledná »'
       fields:
+        state:
+          label: Stav
+        label:
+          label: Označenie
+        type:
+          label: Typ
         word_count:
+          label: Slov
           separator: ', '
         tags_count:
-          separator: ', '
-  checkout:
-    display_options:
-      fields:
-        word_count:
+          label: Značky
           separator: ', '
         changed:
+          label: Zmenené
+        operations:
+          label: Operácie
+      arguments:
+        tjid:
+          exception:
+            title: Všetko
+  checkout:
+    display_title: Pokladňa
+    display_options:
+      fields:
+        label:
+          label: Označenie
+        type:
+          label: Typ
+        word_count:
+          label: Slov
           separator: ', '
+        changed:
+          label: Zmenené
+          separator: ', '
+  submitted:
+    display_title: Odoslané
