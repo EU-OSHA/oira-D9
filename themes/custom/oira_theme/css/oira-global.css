@@ -74,8 +74,11 @@
 /* Breadcrumbs */
 .breadcrumb {
   background-color: transparent;
-  padding-left: 0;
   font-size: 1rem;
+  padding-top: 8px;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .breadcrumb a {
   color: #10b2e4;
@@ -117,7 +120,7 @@ h1 {
   font-size: 2.5rem;
   color: #786586;
   margin-bottom: 0;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 }
 
 h2 {
@@ -500,6 +503,60 @@ select.custom-select {
 .page-view-oira-ws .content-view-tools-view .group-right h2:hover {
   color: #786586;
   text-decoration: none;
+}
+
+/* OiRA FAQs */
+.oira-faqs-content {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.oira-faqs-content .views-accordion-header {
+  font-family: "Oswald";
+  background: transparent;
+  color: #786586;
+  font-size: 1.3rem;
+  border: 0;
+  outline: none;
+}
+.oira-faqs-content .ui-state-focus {
+  border: 0;
+}
+.oira-faqs-content .ui-accordion-content-active {
+  background: transparent;
+  color: #58585a;
+}
+.oira-faqs-content .block-views-blockfaqs-oira-block .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row {
+  border-bottom: 2px solid #786586;
+}
+.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row span.field-content {
+  float: left;
+}
+.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row span.field-content:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  padding-left: 10px;
+  display: block;
+  float: right;
+}
+.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row .ui-state-active span.field-content:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  padding-left: 10px;
+  display: block;
+  float: right;
+}
+.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row .ui-accordion-header-icon {
+  visibility: hidden;
+}
+.oira-faqs-content .block-views-blockfaqs-oira-block .ui-accordion .ui-accordion-header {
+  padding-left: 0;
+}
+.oira-faqs-content .block-views-blockfaqs-oira-block .ui-accordion .ui-accordion-content {
+  padding: 0;
 }
 
 .site-footer {

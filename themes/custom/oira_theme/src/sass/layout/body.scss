@@ -383,3 +383,67 @@ select.custom-select{
   }
 }
 
+/* OiRA FAQs */
+.oira-faqs-content{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  .views-accordion-header{
+    font-family: "Oswald";
+    background: transparent;
+    color: $text-color-purple;
+    font-size: 1.3rem;
+    border: 0;
+    outline: none;
+  }
+  .ui-state-focus{
+    border: 0;
+  }
+  .ui-accordion-content-active{
+    background: transparent;
+    color: $text-color-black;
+  }
+  .block-views-blockfaqs-oira-block{
+    .row{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .views-row{
+      .views-row{
+        border-bottom: 2px solid $bg-color-purple;
+        span.field-content{
+          float: left;
+          &:after{
+            content: "\e252";
+            font-family: "Glyphicons Halflings";
+            padding-left: 10px;
+            display: block;
+            float: right;
+          }
+        }
+        .ui-state-active{
+          span.field-content{
+            &:after{
+              content: "\e253";
+              font-family: "Glyphicons Halflings";
+              padding-left: 10px;
+              display: block;
+              float: right;
+            }
+          }
+        }
+        .ui-accordion-header-icon{
+          visibility: hidden;
+        }
+
+      }
+    }
+    .ui-accordion .ui-accordion-header{
+      padding-left: 0;
+    }
+    .ui-accordion .ui-accordion-content {
+      padding: 0;
+    }
+
+  }
+
+}
