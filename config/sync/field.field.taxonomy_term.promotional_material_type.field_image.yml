@@ -1,4 +1,4 @@
-uuid: 17077f88-95e8-4509-bba4-89daf1b59d11
+uuid: dc741f3c-90ef-4df7-9a0a-14cb5eaa6ad6
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: taxonomy_term.promotional_material_type.field_image
 field_name: field_image
 entity_type: taxonomy_term
 bundle: promotional_material_type
-label: image
+label: Image
 description: ''
 required: false
 translatable: false

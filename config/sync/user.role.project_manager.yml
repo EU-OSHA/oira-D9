@@ -6,10 +6,4 @@ id: project_manager
 label: 'Project Manager'
 weight: 9
 is_admin: null
-permissions:
-  - 'accept job item translation'
-  - 'masquerade as any user'
-  - 'masquerade as user'
-  - 'use text format filtered_html'
-  - 'view translation job'
-  - 'view translation job item'
+permissions: {  }

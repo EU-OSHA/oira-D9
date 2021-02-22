@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_cmw_mail_notifications
     - field.field.user.user.field_crm_guid
-    - field.field.user.user.field_metatag
     - field.field.user.user.field_phone
     - field.field.user.user.field_user_partner_guid
     - field.field.user.user.user_picture
@@ -41,7 +40,6 @@ hidden:
   entity_print_view_word_docx: true
   field_cmw_mail_notifications: true
   field_crm_guid: true
-  field_metatag: true
   field_phone: true
   field_user_partner_guid: true
   langcode: true
