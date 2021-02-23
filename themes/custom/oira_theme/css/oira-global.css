@@ -244,20 +244,20 @@ select.custom-select {
   box-shadow: 0 0 0 0 rgba(38, 143, 255, 0.5);
 }
 
-.see-more {
+.see-more, .more-link {
   display: block;
 }
-.see-more a {
+.see-more a, .more-link a {
   color: #10b2e4;
   font-style: italic;
   font-weight: bold;
   text-decoration: none;
   text-align: left;
 }
-.see-more a:hover {
+.see-more a:hover, .more-link a:hover {
   text-decoration: underline;
 }
-.see-more a:before {
+.see-more a:before, .more-link a:before {
   content: ">";
   margin-right: 5px;
   display: inline-block;
@@ -759,6 +759,93 @@ select.custom-select {
 }
 #block-socialmenu > ul > li > a, #block-socialmenu-2 > ul > li > a {
   display: none;
+}
+
+.content-home h2 {
+  color: #967ea7;
+  border-bottom: 2px solid #967ea7;
+  font-size: 2.2rem;
+  padding-bottom: 15px;
+  font-family: "Oswald";
+}
+
+.content-purple {
+  background: #dfd8e4;
+  min-height: 400px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.content-white {
+  background: #FFF;
+  min-height: 400px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.home-slider {
+  min-height: 400px;
+}
+
+.content-oira-tools h2:after {
+  content: "";
+  background: url(../images/oira-tools.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+
+.content-latest-news h2:after {
+  content: "";
+  background: url(../images/latest-news.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+.content-latest-news .view-news .attachment-before {
+  border-bottom: 2px solid #786586;
+  padding-bottom: 0;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.content-latest-news .view-news .views-row {
+  padding: 0;
+}
+.content-latest-news .view-news .views-row:nth-child(odd) {
+  background-color: transparent;
+}
+.content-latest-news .view-news h3 a:hover {
+  color: #23527c;
+}
+.content-latest-news .view-news span.see-more, .content-latest-news .view-news .more-link {
+  float: right;
+}
+.content-latest-news .view-news .views-view-grid.horizontal .row {
+  display: flex;
+  justify-content: space-between;
+}
+.content-latest-news .view-news .views-view-grid.horizontal .row .col-md-4 {
+  flex-basis: 30%;
+}
+
+.content-promotional-materials h2:after {
+  content: "";
+  background: url(../images/promotional-materials.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+
+.content-oira-partners h2:after {
+  content: "";
+  background: url(../images/oira-partners.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  float: right;
 }
 
 #navbar-main {
