@@ -120,7 +120,7 @@ h1 {
   font-size: 2.5rem;
   color: #786586;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -196,6 +196,10 @@ a:hover {
 
 .push-right {
   margin-left: auto;
+}
+
+.node__content {
+  margin-top: 0;
 }
 
 select.custom-select {
@@ -293,6 +297,7 @@ select.custom-select {
 
 .content-two-columns {
   display: flex;
+  padding-top: 1rem;
 }
 .content-two-columns .two-column {
   float: right;
@@ -336,25 +341,25 @@ select.custom-select {
 
 /* End Common elements */
 /* News view */
-.view-osh-news h2 {
+.view-news h2 {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.view-osh-news .row {
+.view-news .row {
   margin-left: 0;
   margin-right: 0;
 }
-.view-osh-news .views-row {
+.view-news .views-row {
   padding: 30px;
   width: 100%;
 }
-.view-osh-news .views-row:nth-child(even) {
+.view-news .views-row:nth-child(even) {
   background-color: #FFF;
 }
-.view-osh-news .views-row:nth-child(odd) {
+.view-news .views-row:nth-child(odd) {
   background-color: #dfd8e4;
 }
-.view-osh-news .see-more {
+.view-news .see-more {
   margin-top: 15px;
 }
 

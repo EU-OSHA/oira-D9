@@ -42,6 +42,10 @@ a{
   margin-left: auto;
 }
 
+.node__content{
+  margin-top: 0;
+}
+
 select.custom-select{
   width: auto;
   padding: 0;
@@ -141,6 +145,7 @@ select.custom-select{
 
 .content-two-columns{
   display: flex;
+  padding-top: 1rem;
   .two-column{
     float: right;
     background: $bg-color-purple-light;
@@ -191,7 +196,7 @@ select.custom-select{
 /* End Common elements */
 
 /* News view */
-.view-osh-news{
+.view-news{
   h2{
     margin-top: 5px;
     margin-bottom: 10px;
