@@ -564,6 +564,45 @@ select.custom-select {
   padding: 0;
 }
 
+/* Promotional Resources */
+.oira-promotional-material-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.oira-promotional-material-content .view-promotional-materials-type .views-view-grid {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.oira-promotional-material-content .view-promotional-materials-type .views-view-grid > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.oira-promotional-material-content .view-promotional-materials-type .views-field-name a {
+  display: flex;
+  height: 80px;
+  align-items: flex-end;
+  color: #786586;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #786586;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-family: "Oswald";
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+}
+.oira-promotional-material-content .view-promotional-materials-type .views-field-name a:hover {
+  text-decoration: none;
+}
+.oira-promotional-material-content .view-promotional-materials-type .views-field-field-image img {
+  width: 100%;
+  height: auto;
+}
+.oira-promotional-material-content .view-promotional-materials-type .views-field-description__value {
+  font-size: 0.85rem;
+  padding-top: 10px;
+}
+
 .site-footer {
   width: 100%;
   height: auto;
