@@ -27,6 +27,30 @@ a{
   }
 }
 
+.container,fix-paddings{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.field--name-field-summary{
+  p{
+    font-size: 1.2rem;
+  }
+}
+.field--name-body{
+  p{
+    font-size: 1rem;
+  }
+}
+
+.image-fluid{
+  margin-bottom: 22px;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
 .contextual-links, .toolbar{
   a{
     font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
@@ -498,3 +522,17 @@ select.custom-select{
   }
 }
 
+/* Node Articles */
+.node--type-article {
+  h1{
+    color: $text-color-black;
+  }
+  h3{
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1rem;
+    color: $text-color-black;
+    font-weight: bold;
+  }
+}

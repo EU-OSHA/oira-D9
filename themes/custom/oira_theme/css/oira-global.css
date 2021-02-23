@@ -75,9 +75,7 @@
 .breadcrumb {
   background-color: transparent;
   font-size: 1rem;
-  padding-top: 8px;
-  padding-left: 0;
-  padding-bottom: 0;
+  padding: 8px 15px 8px 0;
   margin-bottom: 0;
 }
 .breadcrumb a {
@@ -183,6 +181,27 @@ a {
 a:hover {
   color: #786586;
   text-decoration: underline;
+}
+
+.container, fix-paddings {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.field--name-field-summary p {
+  font-size: 1.2rem;
+}
+
+.field--name-body p {
+  font-size: 1rem;
+}
+
+.image-fluid {
+  margin-bottom: 22px;
+}
+.image-fluid img {
+  width: 100%;
+  height: auto;
 }
 
 .contextual-links a, .toolbar a {
@@ -601,6 +620,19 @@ select.custom-select {
 .oira-promotional-material-content .view-promotional-materials-type .views-field-description__value {
   font-size: 0.85rem;
   padding-top: 10px;
+}
+
+/* Node Articles */
+.node--type-article h1 {
+  color: #58585a;
+}
+.node--type-article h3 {
+  font-size: 1.4rem;
+}
+.node--type-article h5 {
+  font-size: 1rem;
+  color: #58585a;
+  font-weight: bold;
 }
 
 .site-footer {
