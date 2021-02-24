@@ -1,8 +1,0 @@
-uuid: c0530541-cf3e-4080-afa6-db3c37fd5ce6
-langcode: und
-status: true
-dependencies: {  }
-name: 'Migration Sources'
-vid: migration_sources
-description: ''
-weight: 0

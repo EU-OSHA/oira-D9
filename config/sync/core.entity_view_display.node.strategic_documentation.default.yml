@@ -18,6 +18,7 @@ dependencies:
   module:
     - datetime
     - link
+    - options
     - text
     - user
 id: node.strategic_documentation.default
@@ -106,12 +107,11 @@ content:
     type: datetime_default
     region: content
   field_strategic_type:
-    weight: 106
+    weight: 112
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: list_default
     region: content
   field_wf_notification:
     weight: 110

@@ -1,17 +1,30 @@
-uuid: 226cba32-b9cb-40c8-a4d8-d23d1e8a8a17
+uuid: b0d60ed8-85ec-4220-a834-2063f0b1bda3
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
+    - options
 id: node.field_strategic_type
 field_name: field_strategic_type
 entity_type: node
-type: entity_reference
+type: list_string
 settings:
-  target_type: taxonomy_term
-module: core
+  allowed_values:
+    -
+      value: visual
+      label: 'Visual materials'
+    -
+      value: document
+      label: Documents
+    -
+      value: link
+      label: Links
+    -
+      value: photo
+      label: Photos
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

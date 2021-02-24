@@ -1,11 +1,12 @@
-uuid: baf5f453-086d-4a78-bc00-f016e5eee5b5
+uuid: bbf3da61-71a6-4684-b08c-361ffcc17d17
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_migration_source
     - node.type.wiki_page
-    - taxonomy.vocabulary.migration_sources
+  module:
+    - options
 id: node.wiki_page.field_migration_source
 field_name: field_migration_source
 entity_type: node
@@ -13,17 +14,8 @@ bundle: wiki_page
 label: 'Migration Source'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:taxonomy_term'
-  handler_settings:
-    target_bundles:
-      migration_sources: migration_sources
-    sort:
-      field: name
-      direction: asc
-    auto_create: false
-    auto_create_bundle: ''
-field_type: entity_reference
+settings: {  }
+field_type: list_string

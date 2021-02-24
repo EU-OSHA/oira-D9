@@ -77,7 +77,7 @@ content:
     third_party_settings: {  }
     region: content
   field_migration_source:
-    weight: 10
+    weight: 26
     settings: {  }
     third_party_settings: {  }
     type: options_select

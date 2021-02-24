@@ -16,6 +16,7 @@ dependencies:
   module:
     - datetime
     - link
+    - options
     - text
     - user
 id: node.wiki_page.default
@@ -39,12 +40,11 @@ content:
     type: entity_reference_label
     region: content
   field_migration_source:
-    weight: 106
+    weight: 113
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: list_default
     region: content
   field_revised_date:
     weight: 104

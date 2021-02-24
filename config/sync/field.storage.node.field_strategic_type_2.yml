@@ -1,17 +1,27 @@
-uuid: 91fac95b-5f3b-45bb-983d-5fd5dcfecc78
+uuid: c8ddf248-b152-4540-8d13-5d726a3dbd95
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
+    - options
 id: node.field_strategic_type_2
 field_name: field_strategic_type_2
 entity_type: node
-type: entity_reference
+type: list_string
 settings:
-  target_type: taxonomy_term
-module: core
+  allowed_values:
+    -
+      value: document
+      label: Documents
+    -
+      value: meeting
+      label: 'Meeting Documents/PPT'
+    -
+      value: audiovisual
+      label: 'Audiovisual materials'
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true
