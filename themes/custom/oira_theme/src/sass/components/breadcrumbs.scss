@@ -1,8 +1,9 @@
 /* Breadcrumbs */
 .breadcrumb{
   background-color: transparent;
-  padding-left: 0;
   font-size: 1rem;
+  padding: 8px 15px 8px 0;
+  margin-bottom: 0;
   a{
     color: $text-color-blue-light;
     text-decoration: none;

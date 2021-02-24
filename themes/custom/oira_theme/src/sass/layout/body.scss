@@ -27,6 +27,30 @@ a{
   }
 }
 
+.container,fix-paddings{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.field--name-field-summary{
+  p{
+    font-size: 1.2rem;
+  }
+}
+.field--name-body{
+  p{
+    font-size: 1rem;
+  }
+}
+
+.image-fluid{
+  margin-bottom: 22px;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
 .contextual-links, .toolbar{
   a{
     font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
@@ -40,6 +64,10 @@ a{
 
 .push-right{
   margin-left: auto;
+}
+
+.node__content{
+  margin-top: 0;
 }
 
 select.custom-select{
@@ -65,7 +93,7 @@ select.custom-select{
   box-shadow: 0 0 0 0 rgba(38,143,255,.5);
 }
 
-.see-more{
+.see-more, .more-link{
   display: block;
   a{
     color: $text-color-blue-light;
@@ -141,6 +169,7 @@ select.custom-select{
 
 .content-two-columns{
   display: flex;
+  padding-top: 1rem;
   .two-column{
     float: right;
     background: $bg-color-purple-light;
@@ -191,7 +220,7 @@ select.custom-select{
 /* End Common elements */
 
 /* News view */
-.view-osh-news{
+.view-news{
   h2{
     margin-top: 5px;
     margin-bottom: 10px;
@@ -383,3 +412,127 @@ select.custom-select{
   }
 }
 
+/* OiRA FAQs */
+.oira-faqs-content{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  .views-accordion-header{
+    font-family: "Oswald";
+    background: transparent;
+    color: $text-color-purple;
+    font-size: 1.3rem;
+    border: 0;
+    outline: none;
+  }
+  .ui-state-focus{
+    border: 0;
+  }
+  .ui-accordion-content-active{
+    background: transparent;
+    color: $text-color-black;
+  }
+  .block-views-blockfaqs-oira-block{
+    .row{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .views-row{
+      .views-row{
+        border-bottom: 2px solid $bg-color-purple;
+        span.field-content{
+          float: left;
+          &:after{
+            content: "\e252";
+            font-family: "Glyphicons Halflings";
+            padding-left: 10px;
+            display: block;
+            float: right;
+          }
+        }
+        .ui-state-active{
+          span.field-content{
+            &:after{
+              content: "\e253";
+              font-family: "Glyphicons Halflings";
+              padding-left: 10px;
+              display: block;
+              float: right;
+            }
+          }
+        }
+        .ui-accordion-header-icon{
+          visibility: hidden;
+        }
+
+      }
+    }
+    .ui-accordion .ui-accordion-header{
+      padding-left: 0;
+    }
+    .ui-accordion .ui-accordion-content {
+      padding: 0;
+    }
+
+  }
+}
+
+/* Promotional Resources */
+.oira-promotional-material-content{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .view-promotional-materials-type{
+    .views-view-grid{
+      margin-left: -15px;
+      margin-right: -15px;
+      > div{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    .views-field-name{
+      a{
+        display: flex;
+        height: 80px;
+        align-items: flex-end;
+        color: $text-color-purple;
+        font-size: 1.6rem;
+        border-bottom: 2px solid #786586;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        font-family: "Oswald";
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 400;
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .views-field-field-image{
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .views-field-description__value{
+      font-size: 0.85rem;
+      padding-top: 10px;
+    }
+  }
+}
+
+/* Node Articles */
+.node--type-article {
+  h1{
+    color: $text-color-black;
+  }
+  h3{
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1rem;
+    color: $text-color-black;
+    font-weight: bold;
+  }
+}
