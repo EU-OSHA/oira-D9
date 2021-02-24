@@ -26,11 +26,8 @@ display:
           label: Ετικέτα
         type:
           label: Τύπος
-        word_count:
-          separator: ', '
         tags_count:
           label: Ετικέτες
-          separator: ', '
         changed:
           label: Τροποποιημένο
         operations:
@@ -47,10 +44,7 @@ display:
           label: Ετικέτα
         type:
           label: Τύπος
-        word_count:
-          separator: ', '
         changed:
           label: Τροποποιημένο
-          separator: ', '
   submitted:
     display_title: Υποβλήθηκε

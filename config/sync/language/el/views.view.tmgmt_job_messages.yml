@@ -26,7 +26,6 @@ display:
           label: Αντικείμενο
         name:
           label: Όνομα
-          separator: ', '
       title: Μηνύματα
       arguments:
         tjid:

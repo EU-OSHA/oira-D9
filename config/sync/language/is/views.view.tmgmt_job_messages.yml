@@ -23,7 +23,6 @@ display:
           label: Hlutur
         name:
           label: Nafn
-          separator: ', '
       arguments:
         tjid:
           exception:

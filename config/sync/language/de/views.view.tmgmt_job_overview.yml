@@ -1,7 +1,6 @@
 label: Auftragsübersicht
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -24,23 +23,18 @@ display:
       fields:
         state:
           label: Status
-          separator: ', '
         label:
           label: Beschriftung
         source_language_1:
           label: Von
-          separator: ', '
         target_language:
           label: An
-          separator: ', '
         translator:
           label: Anbieter
         progress:
           label: Fortschritt
         word_count:
           label: Wörter
-        tags_count:
-          label: Tags
         changed:
           label: Geändert
         operations:

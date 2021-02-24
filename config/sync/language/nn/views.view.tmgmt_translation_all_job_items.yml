@@ -17,23 +17,9 @@ display:
           label: Type
         source_language:
           label: Frå
-          separator: ', '
         target_language:
           label: Til
-          separator: ', '
-        word_count:
-          separator: ', '
-        tags_count:
-          separator: ', '
-        changed:
-          separator: ', '
         operations:
           label: Operasjonar
-      filters:
-        job_type:
-          group_info:
-            group_items:
-              1:
-                title: Normal
   page_1:
     display_title: Nettside

@@ -19,15 +19,12 @@ display:
       fields:
         state:
           label: Fylki
-          separator: ', '
         label:
           label: Merking
         source_language_1:
           label: Frá
-          separator: ', '
         target_language:
           label: Til
-          separator: ', '
         tags_count:
           label: Efnisorð
         operations:

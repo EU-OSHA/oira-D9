@@ -6,7 +6,6 @@ display:
       exposed_form:
         options:
           submit_button: Toepassen
-          reset_button_label: Reset
           exposed_sorts_label: 'Sorteren op'
           sort_asc_label: Oplopend
           sort_desc_label: Aflopend
@@ -24,17 +23,12 @@ display:
       fields:
         state:
           label: Status
-          separator: ', '
         label:
           label: Label
         source_language_1:
           label: Van
-          separator: ', '
         target_language:
           label: Naar
-          separator: ', '
-        translator:
-          label: Provider
         progress:
           label: Voortgang
         word_count:
@@ -55,9 +49,6 @@ display:
         target_language:
           expose:
             label: Doeltaal
-        translator:
-          expose:
-            label: Provider
       empty:
         area_text_custom:
           content: 'Geen opdrachten beschikbaar.'

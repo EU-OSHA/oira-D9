@@ -1,6 +1,5 @@
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -23,7 +22,6 @@ display:
           label: stavka
         name:
           label: Naziv
-          separator: ', '
       title: Poruke
       arguments:
         tjid:

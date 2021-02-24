@@ -1,6 +1,5 @@
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -19,15 +18,12 @@ display:
       fields:
         state:
           label: Država
-          separator: ', '
         label:
           label: Oznaka
         source_language_1:
           label: Od
-          separator: ', '
         target_language:
           label: Za
-          separator: ', '
         translator:
           label: Pružatelj
         tags_count:

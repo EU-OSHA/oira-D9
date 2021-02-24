@@ -7,8 +7,6 @@ display:
           submit_button: Aplica
           reset_button_label: Reinicialitza
           exposed_sorts_label: 'Ordena per'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -23,15 +21,12 @@ display:
       fields:
         state:
           label: Estat
-          separator: ', '
         label:
           label: Etiqueta
         source_language_1:
           label: De
-          separator: ', '
         target_language:
           label: Per
-          separator: ', '
         translator:
           label: Proveïdor
         tags_count:
