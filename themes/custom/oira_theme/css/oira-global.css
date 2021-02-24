@@ -585,19 +585,21 @@ select.custom-select {
 }
 
 /* Promotional Resources */
-.oira-promotional-material-content {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.page-view-promotional-materials-type .oira-section {
+  background: #dfd8e4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.oira-promotional-material-content .view-promotional-materials-type .views-view-grid {
+
+.view-promotional-materials-type .views-view-grid {
   margin-left: -15px;
   margin-right: -15px;
 }
-.oira-promotional-material-content .view-promotional-materials-type .views-view-grid > div {
+.view-promotional-materials-type .views-view-grid > div {
   display: flex;
   flex-wrap: wrap;
 }
-.oira-promotional-material-content .view-promotional-materials-type .views-field-name a {
+.view-promotional-materials-type .views-field-name a {
   display: flex;
   height: 80px;
   align-items: flex-end;
@@ -611,14 +613,14 @@ select.custom-select {
   text-decoration: none;
   font-weight: 400;
 }
-.oira-promotional-material-content .view-promotional-materials-type .views-field-name a:hover {
+.view-promotional-materials-type .views-field-name a:hover {
   text-decoration: none;
 }
-.oira-promotional-material-content .view-promotional-materials-type .views-field-field-image img {
+.view-promotional-materials-type .views-field-field-image img {
   width: 100%;
   height: auto;
 }
-.oira-promotional-material-content .view-promotional-materials-type .views-field-description__value {
+.view-promotional-materials-type .views-field-description__value {
   font-size: 0.85rem;
   padding-top: 10px;
 }
