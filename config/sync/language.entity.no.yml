@@ -1,0 +1,9 @@
+uuid: aecfee0e-d2b5-49f7-8086-9a35b40a6a80
+langcode: en
+status: true
+dependencies: {  }
+id: 'no'
+label: Norwegian
+direction: ltr
+weight: 27
+locked: false
