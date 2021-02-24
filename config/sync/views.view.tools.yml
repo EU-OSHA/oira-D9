@@ -18,8 +18,7 @@ dependencies:
     - taxonomy.vocabulary.practical_tool_types
     - taxonomy.vocabulary.wiki_categories
   content:
-    - 'taxonomy_term:practical_tool_types:e89b390e-0807-454a-bcd8-37650d5e1049'
-    - 'taxonomy_term:wiki_categories:f03806d6-f587-46fc-b5a1-44e364b45a67'
+    - 'taxonomy_term:sector_category:40eafdb6-1441-496c-87c6-b4df078bb786'
   module:
     - datetime
     - entityqueue
@@ -602,20 +601,20 @@ display:
         type: grid
         options:
           grouping: {  }
-          columns: 3
-          automatic_width: true
+          columns: 12
+          automatic_width: false
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          col_class_default: false
+          col_class_custom: 'col-md-4 col-xs-12 views-col'
+          row_class_default: false
+          row_class_custom: 'row equal'
       row:
         type: fields
         options:
+          default_field_elements: false
           inline: {  }
           separator: ''
           hide_empty: false
-          default_field_elements: true
       fields:
         title:
           id: title
@@ -625,7 +624,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -653,7 +652,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
+          element_type: h3
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -668,7 +667,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -690,7 +689,7 @@ display:
           group_type: group
           admin_label: ''
           label: Country
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -743,7 +742,7 @@ display:
           delta_first_last: false
           multi_type: separator
           separator: ', '
-          field_api_classes: false
+          field_api_classes: true
           plugin_id: field
         field_language:
           id: field_language
@@ -753,7 +752,7 @@ display:
           group_type: group
           admin_label: ''
           label: Language
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -783,10 +782,10 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: div
+          element_label_type: ''
           element_label_class: ''
           element_label_colon: true
-          element_wrapper_type: div
+          element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
@@ -806,7 +805,7 @@ display:
           delta_first_last: false
           multi_type: separator
           separator: ', '
-          field_api_classes: false
+          field_api_classes: true
           plugin_id: field
         field_tool_link:
           id: field_tool_link
@@ -816,7 +815,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: '<a href="{{ field_tool_link__uri }}">Access the tool</a>'
@@ -863,7 +862,7 @@ display:
             url_only: false
             url_plain: false
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -883,7 +882,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: 'See more'
@@ -911,8 +910,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: span
+          element_class: see-more
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -1019,7 +1018,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: true
+            strip_tags: false
             trim: false
             preserve_tags: ''
             html: false
@@ -1042,7 +1041,7 @@ display:
             url_only: false
             url_plain: false
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1054,6 +1053,55 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        nothing_1:
+          id: nothing_1
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"views-item-columns-container\">\r\n<h3>{{ title }}</h3>\r\n{{ field_country }}\r\n{{ field_language }}\r\n{{ field_third_language }}\r\n<div class=\"views-field-field-tool-link\">{{ field_tool_link }}</div>\r\n<span class=\"see-more\">{{ nothing }}</span>\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
       relationships:
         entityqueue_relationship:
           id: entityqueue_relationship
