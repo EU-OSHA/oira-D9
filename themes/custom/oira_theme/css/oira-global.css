@@ -530,11 +530,12 @@ select.custom-select {
 }
 
 /* OiRA FAQs */
-.oira-faqs-content {
+.view-id-faqs_oira {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  background: #dfd8e4;
 }
-.oira-faqs-content .views-accordion-header {
+.view-id-faqs_oira .views-accordion-header {
   font-family: "Oswald";
   background: transparent;
   color: #786586;
@@ -542,44 +543,44 @@ select.custom-select {
   border: 0;
   outline: none;
 }
-.oira-faqs-content .ui-state-focus {
+.view-id-faqs_oira .ui-state-focus {
   border: 0;
 }
-.oira-faqs-content .ui-accordion-content-active {
+.view-id-faqs_oira .ui-accordion-content-active {
   background: transparent;
   color: #58585a;
 }
-.oira-faqs-content .block-views-blockfaqs-oira-block .row {
+.view-id-faqs_oira .row {
   margin-left: 0;
   margin-right: 0;
 }
-.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row {
+.view-id-faqs_oira .views-row .views-row {
   border-bottom: 2px solid #786586;
 }
-.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row span.field-content {
+.view-id-faqs_oira .views-row .views-row span.field-content {
   float: left;
 }
-.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row span.field-content:after {
+.view-id-faqs_oira .views-row .views-row span.field-content:after {
   content: "";
   font-family: "Glyphicons Halflings";
   padding-left: 10px;
   display: block;
   float: right;
 }
-.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row .ui-state-active span.field-content:after {
+.view-id-faqs_oira .views-row .views-row .ui-state-active span.field-content:after {
   content: "";
   font-family: "Glyphicons Halflings";
   padding-left: 10px;
   display: block;
   float: right;
 }
-.oira-faqs-content .block-views-blockfaqs-oira-block .views-row .views-row .ui-accordion-header-icon {
+.view-id-faqs_oira .views-row .views-row .ui-accordion-header-icon {
   visibility: hidden;
 }
-.oira-faqs-content .block-views-blockfaqs-oira-block .ui-accordion .ui-accordion-header {
+.view-id-faqs_oira .ui-accordion .ui-accordion-header {
   padding-left: 0;
 }
-.oira-faqs-content .block-views-blockfaqs-oira-block .ui-accordion .ui-accordion-content {
+.view-id-faqs_oira .ui-accordion .ui-accordion-content {
   padding: 0;
 }
 
