@@ -27,7 +27,6 @@ display:
           label: Artikel
         name:
           label: Namn
-          separator: ', '
       title: Meddelanden
       arguments:
         tjid:

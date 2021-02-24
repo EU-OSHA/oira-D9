@@ -5,8 +5,5 @@ settings:
   default_wizard_start_label: Byrjar
   default_preview_next_button_label: Førehandsvis
   default_preview_label: Førehandsvis
-  dialog_options:
-    normal:
-      title: Normal
 element:
   default_more_title: Meir

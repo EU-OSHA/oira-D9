@@ -1,0 +1,29 @@
+uuid: cf4a6d01-e4bb-4a81-ba6c-27f3290bad82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing.body
+    - field.field.node.landing.layout_builder__layout
+    - node.type.landing
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+id: node.landing.default
+targetEntityType: node
+bundle: landing
+mode: default
+content: {  }
+hidden:
+  body: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

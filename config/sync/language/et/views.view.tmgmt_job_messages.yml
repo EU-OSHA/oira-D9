@@ -27,7 +27,6 @@ display:
           label: Kirje
         name:
           label: Nimi
-          separator: ', '
       title: Sõnumid
       arguments:
         tjid:

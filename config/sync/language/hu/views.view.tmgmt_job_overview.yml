@@ -23,15 +23,12 @@ display:
       fields:
         state:
           label: Állapot
-          separator: ', '
         label:
           label: Címke
         source_language_1:
           label: Honnan
-          separator: ', '
         target_language:
           label: Hova
-          separator: ', '
         translator:
           label: Szolgáltató
         progress:

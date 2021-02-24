@@ -4,7 +4,12 @@ popup_agree_button_message: Accepta
 popup_more_info_button_message: 'Més informació'
 popup_find_more_button_message: 'Més informació'
 popup_hide_button_message: Oculta
+popup_info:
+  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
+popup_link: /
 disagree_button_label: 'No, gràcies'
+withdraw_message:
+  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
 withdraw_tab_button_label: 'Paràmetres de privadesa'
 save_preferences_button_label: 'Desa les preferència'
 accept_all_categories_button_label: 'Accepta totes les galetes'

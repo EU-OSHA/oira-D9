@@ -29,18 +29,12 @@ display:
           label: Liik
         source_language:
           label: Kellelt
-          separator: ', '
         target_language:
           label: Kellele
-          separator: ', '
-        word_count:
-          separator: ', '
         tags_count:
           label: Sildid
-          separator: ', '
         changed:
           label: Muudetud
-          separator: ', '
         operations:
           label: Toimingud
       filters:

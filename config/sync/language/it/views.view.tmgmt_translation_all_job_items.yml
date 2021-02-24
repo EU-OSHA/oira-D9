@@ -7,7 +7,6 @@ display:
           submit_button: Applica
           reset_button_label: Ripristina
           exposed_sorts_label: 'Ordina per'
-          sort_asc_label: Asc
           sort_desc_label: Disc
       pager:
         options:
@@ -29,18 +28,12 @@ display:
           label: Tipo
         source_language:
           label: Da
-          separator: ', '
         target_language:
           label: A
-          separator: ', '
-        word_count:
-          separator: ', '
         tags_count:
           label: Etichette
-          separator: ', '
         changed:
           label: Modificato
-          separator: ', '
         operations:
           label: Operazioni
       filters:

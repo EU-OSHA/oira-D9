@@ -1,6 +1,5 @@
 display:
   default:
-    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -23,11 +22,8 @@ display:
           label: Oznaka
         type:
           label: Vrsta
-        word_count:
-          separator: ', '
         tags_count:
           label: Oznake
-          separator: ', '
         operations:
           label: Operacije
       arguments:
@@ -42,7 +38,3 @@ display:
           label: Oznaka
         type:
           label: Vrsta
-        word_count:
-          separator: ', '
-        changed:
-          separator: ', '

@@ -27,7 +27,6 @@ display:
           label: Element
         name:
           label: Nazwa
-          separator: ', '
       title: Wiadomości
       arguments:
         tjid:

@@ -1,0 +1,17 @@
+uuid: 588eac8d-1292-4ae3-b985-4170f00252e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Landing
+type: landing
+description: 'Content type to Layout Builder'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

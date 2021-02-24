@@ -23,15 +23,12 @@ display:
       fields:
         state:
           label: Läge
-          separator: ', '
         label:
           label: Etikett
         source_language_1:
           label: Från
-          separator: ', '
         target_language:
           label: Till
-          separator: ', '
         translator:
           label: Leverantör
         progress:
