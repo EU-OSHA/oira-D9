@@ -22,12 +22,15 @@ display:
       fields:
         state:
           label: Κατάσταση
+          separator: ', '
         label:
           label: Ετικέτα
         source_language_1:
           label: Από
+          separator: ', '
         target_language:
           label: Προς
+          separator: ', '
         translator:
           label: Πάροχος
         tags_count:

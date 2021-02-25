@@ -27,8 +27,11 @@ display:
           label: Nimetus
         type:
           label: Liik
+        word_count:
+          separator: ', '
         tags_count:
           label: Sildid
+          separator: ', '
         changed:
           label: Muudetud
         operations:
@@ -45,7 +48,10 @@ display:
           label: Nimetus
         type:
           label: Liik
+        word_count:
+          separator: ', '
         changed:
           label: Muudetud
+          separator: ', '
   submitted:
     display_title: Vastatud

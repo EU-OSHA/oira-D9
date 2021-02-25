@@ -29,8 +29,11 @@ display:
           label: Typ
         progress:
           label: Framsteg
+        word_count:
+          separator: ', '
         tags_count:
           label: Etiketter
+          separator: ', '
         changed:
           label: Ändrad
         operations:
@@ -47,7 +50,10 @@ display:
           label: Etikett
         type:
           label: Typ
+        word_count:
+          separator: ', '
         changed:
           label: Ändrad
+          separator: ', '
   submitted:
     display_title: Skickad

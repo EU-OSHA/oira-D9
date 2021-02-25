@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.practical_tool.field_tool_link
     - field.field.node.practical_tool.field_tool_type
     - field.field.node.practical_tool.field_wf_notification
+    - field.field.node.practical_tool.field_workbench_access
     - node.type.practical_tool
   module:
     - media
@@ -72,5 +73,6 @@ hidden:
   field_tool_link: true
   field_tool_type: true
   field_wf_notification: true
+  field_workbench_access: true
   langcode: true
   search_api_excerpt: true

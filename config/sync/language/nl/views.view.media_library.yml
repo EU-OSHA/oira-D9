@@ -7,6 +7,7 @@ display:
       exposed_form:
         options:
           submit_button: 'Filters toepassen'
+          reset_button_label: Reset
           exposed_sorts_label: 'Sorteren op'
           sort_asc_label: Oplopend
           sort_desc_label: Aflopend
@@ -16,6 +17,9 @@ display:
             items_per_page_label: 'Items per pagina'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Startpunt
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         media_bulk_form:
           action_title: Actie
@@ -51,7 +55,6 @@ display:
         name_1:
           expose:
             label: 'Naam (Z-A)'
-      title: Media
       empty:
         area_text_custom:
           content: 'Geen media beschikbaar.'
@@ -61,6 +64,8 @@ display:
       fields:
         media_bulk_form:
           action_title: Actie
+        name:
+          separator: ', '
         edit_media:
           alter:
             text: '{{ name }} bewerken'

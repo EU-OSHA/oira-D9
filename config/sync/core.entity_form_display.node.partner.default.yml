@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.partner.field_ph_town
     - field.field.node.partner.field_social_profile
     - field.field.node.partner.field_website
+    - field.field.node.partner.field_workbench_access
     - node.type.partner
   module:
     - link
@@ -35,13 +36,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 23
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
   field_collaborator:
     type: media_library_widget
-    weight: 18
+    weight: 19
     settings:
       media_types: {  }
     third_party_settings: {  }
@@ -53,7 +54,7 @@ content:
     type: options_select
     region: content
   field_dedicated_oira_website:
-    weight: 12
+    weight: 13
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -77,7 +78,7 @@ content:
     type: string_textfield
     region: content
   field_guid_main_contact:
-    weight: 14
+    weight: 15
     settings:
       size: 60
       placeholder: ''
@@ -85,7 +86,7 @@ content:
     type: string_textfield
     region: content
   field_guid_organisation:
-    weight: 13
+    weight: 14
     settings:
       size: 60
       placeholder: ''
@@ -100,7 +101,7 @@ content:
     third_party_settings: {  }
     region: content
   field_main_contact:
-    weight: 16
+    weight: 17
     settings:
       size: 60
       placeholder: ''
@@ -108,7 +109,7 @@ content:
     type: string_textfield
     region: content
   field_main_contact_email:
-    weight: 17
+    weight: 18
     settings:
       size: 60
       placeholder: ''
@@ -124,20 +125,20 @@ content:
     type: string_textarea
     region: content
   field_oira_eu_level:
-    weight: 20
+    weight: 21
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_orgtype:
-    weight: 10
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_partner_other_users:
-    weight: 19
+    weight: 20
     settings:
       size: 60
       placeholder: ''
@@ -145,7 +146,7 @@ content:
     type: string_textfield
     region: content
   field_partner_type:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -175,7 +176,7 @@ content:
     type: string_textfield
     region: content
   field_social_profile:
-    weight: 15
+    weight: 16
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -190,16 +191,22 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
+  field_workbench_access:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   langcode:
     type: language_select
-    weight: 21
+    weight: 22
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 26
+    weight: 27
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -207,21 +214,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 24
+    weight: 25
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 27
+    weight: 28
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 25
+    weight: 26
     region: content
     third_party_settings: {  }
   title:
@@ -232,9 +239,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 29
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 22
+    weight: 23
     settings:
       match_operator: CONTAINS
       size: 60

@@ -24,10 +24,10 @@ display:
           label: Status
         label:
           label: Etiket
-        type:
-          label: Type
         progress:
           label: Fremdrift
+        tags_count:
+          label: Tags
         changed:
           label: Ændret
         operations:
@@ -42,8 +42,6 @@ display:
       fields:
         label:
           label: Etiket
-        type:
-          label: Type
         changed:
           label: Ændret
   submitted:

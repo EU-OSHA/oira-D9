@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.strategic_documentation.field_publication_date
     - field.field.node.strategic_documentation.field_strategic_type
     - field.field.node.strategic_documentation.field_wf_notification
+    - field.field.node.strategic_documentation.field_workbench_access
     - node.type.strategic_documentation
   module:
     - datetime
@@ -38,7 +39,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 15
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -55,7 +56,7 @@ content:
     type: options_select
     region: content
   field_link:
-    weight: 12
+    weight: 13
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -101,22 +102,28 @@ content:
     type: options_select
     region: content
   field_wf_notification:
-    weight: 11
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_workbench_access:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   langcode:
     type: language_select
-    weight: 19
+    weight: 20
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 18
+    weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -124,21 +131,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 17
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 14
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 18
     region: content
     third_party_settings: {  }
   title:
@@ -150,13 +157,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 11
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 14
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60

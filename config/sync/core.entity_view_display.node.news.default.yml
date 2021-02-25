@@ -15,10 +15,11 @@ dependencies:
     - field.field.node.news.field_summary
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
+    - field.field.node.news.field_workbench_access
     - node.type.news
   module:
     - datetime
-    - options
+    - media
     - text
     - user
 id: node.news.default
@@ -29,72 +30,21 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 2
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_aditional_resources:
-    weight: 115
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_character_count:
-    weight: 111
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_co_author:
-    weight: 106
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   field_image:
-    weight: 116
-    label: above
+    weight: 1
+    label: hidden
     settings:
-      link: true
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_image_home_latest_news:
-    type: entity_reference_entity_view
-    weight: 107
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
-  field_migration_source:
-    weight: 117
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  field_page_count:
-    weight: 112
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
+    type: media_thumbnail
     region: content
   field_publication_date:
-    weight: 108
+    weight: 3
     label: above
     settings:
       format_type: medium
@@ -103,38 +53,25 @@ content:
     type: datetime_default
     region: content
   field_summary:
-    weight: 109
-    label: above
+    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_tags:
-    weight: 110
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_wf_notification:
-    weight: 113
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_aditional_resources: true
+  field_character_count: true
+  field_co_author: true
+  field_image_home_latest_news: true
+  field_migration_source: true
+  field_page_count: true
+  field_tags: true
+  field_wf_notification: true
+  field_workbench_access: true
   langcode: true
+  links: true
   search_api_excerpt: true

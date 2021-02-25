@@ -7,6 +7,8 @@ display:
           submit_button: Appliquer
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -21,12 +23,15 @@ display:
       fields:
         state:
           label: État
+          separator: ', '
         label:
           label: Libellé
         source_language_1:
           label: 'A partir de'
+          separator: ', '
         target_language:
           label: À
+          separator: ', '
         translator:
           label: Fournisseur
         progress:

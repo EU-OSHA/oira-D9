@@ -1,0 +1,29 @@
+uuid: 6bc4fd55-86de-4467-b9bb-2f1b45d63f76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_workbench_access
+    - node.type.practical_tool
+    - taxonomy.vocabulary.section
+id: node.practical_tool.field_workbench_access
+field_name: field_workbench_access
+entity_type: node
+bundle: practical_tool
+label: Partner
+description: '<small>Select the proper editorial group for this content.</small>'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      section: section
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

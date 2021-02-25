@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.partner.field_ph_town
     - field.field.node.partner.field_social_profile
     - field.field.node.partner.field_website
+    - field.field.node.partner.field_workbench_access
     - node.type.partner
   module:
     - link
@@ -204,6 +205,14 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_workbench_access:
+    weight: 21
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 10
