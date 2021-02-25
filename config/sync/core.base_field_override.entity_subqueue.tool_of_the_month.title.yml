@@ -1,0 +1,18 @@
+uuid: 12dff845-5452-41cf-85f2-f3482f8e7964
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.tool_of_the_month
+id: entity_subqueue.tool_of_the_month.title
+field_name: title
+entity_type: entity_subqueue
+bundle: tool_of_the_month
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

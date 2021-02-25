@@ -12,7 +12,7 @@ bundle: practical_tool
 label: Title
 description: 'This title will be shown when user is navigating the website in third tool''s language'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

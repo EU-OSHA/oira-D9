@@ -13,7 +13,7 @@ bundle: news
 label: 'Image Home latest news'
 description: "Image to Home page. Recommended image dimensions: 1200 pixels x 800 pixels.\r\nRecommended image format: .png\r\nManual Crop ratio: 555px 367px"
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
