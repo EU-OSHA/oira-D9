@@ -1,16 +1,22 @@
-uuid: 0497403a-4a92-4358-84c8-e5c840ef3d7e
+uuid: 5bfeea9d-7fb9-47fb-8004-761f6a172b77
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.full
     - field.field.taxonomy_term.section.field_ldap_section_code
     - taxonomy.vocabulary.section
   module:
+    - layout_builder
     - text
-id: taxonomy_term.section.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: taxonomy_term.section.full
 targetEntityType: taxonomy_term
 bundle: section
-mode: default
+mode: full
 content:
   description:
     label: hidden
