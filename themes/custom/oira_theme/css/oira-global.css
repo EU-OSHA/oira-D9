@@ -368,9 +368,16 @@ select.custom-select {
   margin-left: 0;
   margin-right: 0;
 }
+.view-news .row .col-3 {
+  padding-left: 0;
+}
 .view-news .views-row {
   padding: 30px;
   width: 100%;
+}
+.view-news .views-row img {
+  width: 100%;
+  height: auto;
 }
 .view-news .views-row:nth-child(even) {
   background-color: #FFF;

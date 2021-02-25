@@ -228,11 +228,18 @@ select.custom-select{
   .row{
     margin-left: 0;
     margin-right: 0;
+    .col-3{
+      padding-left: 0;
+    }
   }
-
   .views-row{
     padding: 30px;
     width: 100%;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
   }
   .views-row:nth-child(even){
     background-color: $bg-color-white;
