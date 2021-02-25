@@ -1011,10 +1011,14 @@ select.custom-select {
 }
 
 @media only screen and (max-width: 768px) {
+  .content-latest-news .view-news .attachment-before .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .content-latest-news .view-news .attachment-before .views-field-nothing {
     float: none;
     margin-right: 0;
-    width: 1000%;
+    width: 100%;
   }
   .content-latest-news .view-news .attachment-before .views-field-nothing img {
     display: none;
