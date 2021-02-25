@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_tool_type
     - node.type.practical_tool
     - taxonomy.vocabulary.practical_tool_types
-  content:
-    - 'taxonomy_term:practical_tool_types:e89b390e-0807-454a-bcd8-37650d5e1049'
 id: node.practical_tool.field_tool_type
 field_name: field_tool_type
 entity_type: node
@@ -15,7 +13,7 @@ bundle: practical_tool
 label: Type
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     target_uuid: e89b390e-0807-454a-bcd8-37650d5e1049

@@ -1,0 +1,18 @@
+uuid: aa33ff1a-990e-41a5-ad47-dd370e1d3a8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.slideshow
+id: entity_subqueue.slideshow.title
+field_name: title
+entity_type: entity_subqueue
+bundle: slideshow
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

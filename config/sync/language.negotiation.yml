@@ -28,6 +28,9 @@ url:
     sv: sv
     ca: ca
     da: da
+    ro: ro
+    mt: mt
+    'no': 'no'
   domains:
     en: ''
     es: ''
@@ -54,6 +57,9 @@ url:
     sv: ''
     ca: ''
     da: ''
+    ro: ''
+    mt: ''
+    'no': ''
 selected_langcode: site_default
 _core:
   default_config_hash: uEePITI9tV6WqzmsTb7MfPCi5yPWXSxAN1xeLcYFQbM

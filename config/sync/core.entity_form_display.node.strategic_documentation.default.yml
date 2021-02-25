@@ -21,7 +21,6 @@ dependencies:
     - media_library
     - path
     - text
-    - workbench_moderation
 id: node.strategic_documentation.default
 targetEntityType: node
 bundle: strategic_documentation
