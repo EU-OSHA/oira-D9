@@ -12,7 +12,7 @@ bundle: promotional_material
 label: 'OiRA / IRAT'
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value:
   -
     value: 1

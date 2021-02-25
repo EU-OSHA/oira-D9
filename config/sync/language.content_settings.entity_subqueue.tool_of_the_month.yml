@@ -1,0 +1,18 @@
+uuid: f429dac9-1aeb-4001-a86a-2ab4f27c4cc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.tool_of_the_month
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: entity_subqueue.tool_of_the_month
+target_entity_type_id: entity_subqueue
+target_bundle: tool_of_the_month
+default_langcode: site_default
+language_alterable: false
