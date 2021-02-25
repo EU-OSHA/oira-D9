@@ -29,7 +29,11 @@ content:
     third_party_settings: {  }
   field_country_status:
     weight: 5
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     type: options_select
     region: content
