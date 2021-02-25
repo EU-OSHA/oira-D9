@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.article.field_workbench_access
     - taxonomy.vocabulary.section
 id: partner
 label: Partner
@@ -11,4 +12,8 @@ scheme: taxonomy
 scheme_settings:
   vocabularies:
     - section
-  fields: {  }
+  fields:
+    -
+      entity_type: node
+      bundle: article
+      field: field_workbench_access
