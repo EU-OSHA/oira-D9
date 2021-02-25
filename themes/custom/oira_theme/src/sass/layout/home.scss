@@ -150,6 +150,12 @@
       float: right;
     }
     .views-view-grid.horizontal{
+      padding-left: 0;
+      padding-right: 0;
+      .col-md-12.col-sm-12{
+        padding-left: 0;
+        padding-right: 0;
+      }
       .row{
         display: flex;
         justify-content: space-between;

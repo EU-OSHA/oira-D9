@@ -904,6 +904,14 @@ select.custom-select {
 .content-latest-news .view-news span.see-more, .content-latest-news .view-news .more-link {
   float: right;
 }
+.content-latest-news .view-news .views-view-grid.horizontal {
+  padding-left: 0;
+  padding-right: 0;
+}
+.content-latest-news .view-news .views-view-grid.horizontal .col-md-12.col-sm-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
 .content-latest-news .view-news .views-view-grid.horizontal .row {
   display: flex;
   justify-content: space-between;
