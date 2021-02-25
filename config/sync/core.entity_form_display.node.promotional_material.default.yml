@@ -21,7 +21,6 @@ dependencies:
     - media_library
     - path
     - text
-    - workbench_moderation
 id: node.promotional_material.default
 targetEntityType: node
 bundle: promotional_material

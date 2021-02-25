@@ -28,7 +28,6 @@ dependencies:
     - media_library
     - path
     - text
-    - workbench_moderation
 third_party_settings:
   field_group:
     group_alternative_language:
