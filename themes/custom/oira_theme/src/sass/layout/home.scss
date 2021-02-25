@@ -22,6 +22,17 @@
   padding-bottom: 2rem;
 }
 
+.field__label{
+  float: left;
+  &:after{
+    content: ':';
+  }
+}
+.field__item{
+  font-style: italic;
+  font-weight: 600;
+}
+
 .home-slider{
   min-height: 400px;
 }
@@ -65,16 +76,7 @@
       .field--name-field-country{
         margin-bottom: 0;
       }
-      .field__label{
-        float: left;
-        &:after{
-          content: ':';
-        }
-      }
-      .field__item{
-        font-style: italic;
-        font-weight: 600;
-      }
+
       span.see-more{
         position: absolute;
         cursor: pointer;
@@ -168,6 +170,22 @@
     height: 40px;
     float: right;
   }
+  .view-promotional-materials{
+    padding-bottom: 0;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    h4{
+      font-size: 1.25rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .views-field-nothing{
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 .content-oira-partners{
   h2:after {
@@ -178,4 +196,23 @@
     height: 40px;
     float: right;
   }
+  .view-oira-partners{
+    padding-bottom: 0;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .views-view-grid.horizontal{
+      margin-bottom: 20px;
+    }
+    .more-link{
+      width: 100%;
+      border-top: 2px solid $bg-color-purple;
+      padding-top: 20px;
+      text-align: right;
+    }
+  }
+
 }
