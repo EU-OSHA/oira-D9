@@ -1667,11 +1667,16 @@ display:
       path: news
       display_description: ''
       style:
-        type: default
+        type: grid
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
+          columns: 12
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: col-12
+          row_class_default: true
+          row_class_custom: ''
       defaults:
         style: false
         row: false

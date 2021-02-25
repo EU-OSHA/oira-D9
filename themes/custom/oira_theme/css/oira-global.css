@@ -769,6 +769,7 @@ select.custom-select {
   display: none;
 }
 
+/* SCSS to Home Page */
 .content-home h2 {
   color: #967ea7;
   border-bottom: 2px solid #967ea7;
@@ -779,26 +780,23 @@ select.custom-select {
 
 .content-purple {
   background: #dfd8e4;
-  min-height: 400px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 .content-white {
   background: #FFF;
-  min-height: 400px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.field__label {
+.content-home .field__label {
   float: left;
 }
-.field__label:after {
+.content-home .field__label:after {
   content: ":";
 }
-
-.field__item {
+.content-home .field__item {
   font-style: italic;
   font-weight: 600;
 }
