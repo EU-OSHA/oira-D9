@@ -40,7 +40,26 @@ jQuery(document).ready(function($){
       });
     }, 200);
   }
+
+
+    windowWidth= jQuery(window).width();
+
+    if(windowWidth <= 992){
+      //search header al hacer click
+      $("#edit-actions").click(function(){
+        $('#block-oira-theme-search .form-search').stop().show({direction: 'left'}, 500);
+        $('#block-oira-theme-search .btn-primary').css("pointer-events" , "auto");
+      });
+      $(".search-block-form").mouseleave(function(){
+        $('#block-oira-theme-search .form-search').stop().hide({direction: 'right'}, 500);
+        $('#block-oira-theme-search .btn-primary').css("pointer-events" , "none");
+      });
+    }
+
+
 });
+
+
 
 
 
