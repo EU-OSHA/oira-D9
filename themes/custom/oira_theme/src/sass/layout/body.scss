@@ -37,6 +37,18 @@ a{
     font-size: 1.2rem;
   }
 }
+
+.node__content{
+  .field--name-field-summary{
+    p{
+      font-size: 1rem;
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
 .field--name-body{
   p{
     font-size: 1rem;
@@ -260,6 +272,19 @@ select.custom-select{
   }
 }
 /* End news detail */
+
+/* Node News */
+.node--type-news{
+  .node__content{
+    .field--name-field-image {
+      display: inline-block;
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      border: 1px solid grey;
+    }
+  }
+}
 
 /* OiRA Tools View */
 .page-view-oira-ws{
