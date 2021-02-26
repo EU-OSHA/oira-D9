@@ -2066,7 +2066,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"col-md-9\">\r\n      {{field_publication_date}}\r\n      <h2>{{title}}</h2>\r\n      {{field_summary}}<span class=\"see-more\">{{ view_node_1 }}</span>\r\n    </div>\r\n  </div>\r\n</div>"
+            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"col-9\">\r\n      {{field_publication_date}}\r\n      <h2>{{title}}</h2>\r\n      {{field_summary}}<span class=\"see-more\">{{ view_node_1 }}</span>\r\n    </div>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
