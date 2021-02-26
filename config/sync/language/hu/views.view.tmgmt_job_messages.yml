@@ -27,6 +27,7 @@ display:
           label: Tétel
         name:
           label: Név
+          separator: ', '
       title: Üzenetek
       arguments:
         tjid:

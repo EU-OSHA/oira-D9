@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
     - field.field.node.article.field_wiki_categories
+    - field.field.node.article.field_workbench_access
     - image.style.thumbnail
     - node.type.article
   module:
@@ -75,6 +76,7 @@ hidden:
   field_sector: true
   field_summary: true
   field_wiki_categories: true
+  field_workbench_access: true
   langcode: true
   links: true
   search_api_excerpt: true

@@ -26,12 +26,18 @@ display:
           label: Τύπος
         source_language:
           label: Από
+          separator: ', '
         target_language:
           label: Προς
+          separator: ', '
+        word_count:
+          separator: ', '
         tags_count:
           label: Ετικέτες
+          separator: ', '
         changed:
           label: Τροποποιημένο
+          separator: ', '
         operations:
           label: Λειτουργίες
       filters:

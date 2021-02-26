@@ -18,8 +18,10 @@ display:
       fields:
         label:
           label: Etikett
-        type:
-          label: Type
+        word_count:
+          separator: ', '
+        tags_count:
+          separator: ', '
         operations:
           label: Operasjonar
       arguments:
@@ -31,5 +33,7 @@ display:
       fields:
         label:
           label: Etikett
-        type:
-          label: Type
+        word_count:
+          separator: ', '
+        changed:
+          separator: ', '

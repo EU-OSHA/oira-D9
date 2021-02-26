@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.strategic_documentation.field_publication_date
     - field.field.node.strategic_documentation.field_strategic_type
     - field.field.node.strategic_documentation.field_wf_notification
+    - field.field.node.strategic_documentation.field_workbench_access
     - node.type.strategic_documentation
   module:
     - text
@@ -51,5 +52,6 @@ hidden:
   field_publication_date: true
   field_strategic_type: true
   field_wf_notification: true
+  field_workbench_access: true
   langcode: true
   search_api_excerpt: true

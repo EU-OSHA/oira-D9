@@ -4,6 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
+          reset_button_label: Reset
           exposed_sorts_label: 'Řadit dle'
           sort_asc_label: Vzestupně
           sort_desc_label: Sestupně
@@ -13,6 +14,9 @@ display:
             items_per_page_label: 'Položek na stránku'
             items_per_page_options_all_label: '- Vše -'
             offset_label: Posun
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         media_bulk_form:
           action_title: Akce
@@ -44,6 +48,8 @@ display:
       fields:
         media_bulk_form:
           action_title: Akce
+        name:
+          separator: ', '
         edit_media:
           text: Upravit
         delete_media:

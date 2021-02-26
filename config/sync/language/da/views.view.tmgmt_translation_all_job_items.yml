@@ -24,14 +24,14 @@ display:
           label: Status
         label:
           label: Etiket
-        type:
-          label: Type
         source_language:
           label: Fra
         target_language:
           label: Til
         progress:
           label: Fremdrift
+        tags_count:
+          label: Tags
         changed:
           label: Ændret
         operations:

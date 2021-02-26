@@ -32,6 +32,8 @@ display:
           label: Udbyder
         progress:
           label: Fremdrift
+        tags_count:
+          label: Tags
         changed:
           label: Ændret
         operations:

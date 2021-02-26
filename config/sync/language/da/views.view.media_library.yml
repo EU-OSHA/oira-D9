@@ -42,7 +42,6 @@ display:
         created:
           expose:
             label: 'Nyeste først'
-      title: Media
       empty:
         area_text_custom:
           content: 'Ingen tilgængelige media'
@@ -74,8 +73,6 @@ display:
   widget_table:
     display_options:
       fields:
-        thumbnail__target_id:
-          label: Thumbnail
         name:
           label: Navn
         uid:
