@@ -15,7 +15,7 @@ dependencies:
     - field.field.node.news.field_summary
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
-    - field.field.node.news.field_workbench_access
+    - image.style.news_list_and_node
     - node.type.news
   module:
     - datetime
@@ -30,30 +30,30 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
-      image_style: ''
+      image_style: news_list_and_node
       image_link: ''
     third_party_settings: {  }
     type: media_thumbnail
     region: content
   field_publication_date:
-    weight: 3
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: day_only
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_summary:
-    weight: 0
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -71,7 +71,6 @@ hidden:
   field_page_count: true
   field_tags: true
   field_wf_notification: true
-  field_workbench_access: true
   langcode: true
   links: true
   search_api_excerpt: true
