@@ -61,13 +61,13 @@ display:
         type: grid
         options:
           grouping: {  }
-          columns: 3
-          automatic_width: true
+          columns: 12
+          automatic_width: false
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
+          col_class_default: false
+          col_class_custom: 'col-md-4 col-xs-12 views-col'
           row_class_default: true
-          row_class_custom: ''
+          row_class_custom: row
       row:
         type: fields
         options:
@@ -264,7 +264,7 @@ display:
           delta_first_last: false
           multi_type: separator
           separator: ', '
-          field_api_classes: false
+          field_api_classes: true
           plugin_id: field
         field_related_partners_1:
           id: field_related_partners_1
@@ -381,7 +381,7 @@ display:
           type: media_thumbnail
           settings:
             image_style: latest_materials
-            image_link: ''
+            image_link: content
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -404,7 +404,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class='materials-content-wrapper'>\r\n<a href=\"/node/{{field_related_partners}}\">\r\n{{field_image_home_latest_material}}\r\n</a>\r\n<h4>{{title}}</h4>\r\n<div>{{field_language}}</div>\r\n<div>Country: <span>{{field_country}}</span></div>\r\n<!-- aquí debería ir el see more/see less ¿? -->\r\n<div>{{ field_related_partners_1 }}</div>\r\n</div>"
+            text: "<div class='materials-content-wrapper'>\r\n<a href=\"/node/{{field_related_partners}}\">\r\n{{field_image_home_latest_material}}\r\n</a>\r\n<h4>{{title}}</h4>\r\n{{field_language}}\r\n{{field_country}}\r\n<!-- aquí debería ir el see more/see less ¿? -->\r\n<div>{{ field_related_partners_1 }}</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false

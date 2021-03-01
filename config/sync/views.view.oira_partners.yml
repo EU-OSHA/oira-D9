@@ -7,9 +7,6 @@ dependencies:
     - image.style.medium
     - node.type.partner
     - taxonomy.vocabulary.partner_types
-  content:
-    - 'taxonomy_term:partner_types:2262588b-2350-410f-96a1-d21dfbe440cc'
-    - 'taxonomy_term:partner_types:47635335-5690-4715-a18f-aec486ef5bfa'
   module:
     - media
     - node
@@ -62,13 +59,13 @@ display:
         type: grid
         options:
           grouping: {  }
-          columns: 5
-          automatic_width: true
+          columns: 12
+          automatic_width: false
           alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
+          col_class_default: false
+          col_class_custom: 'col-6 col-md-3 col-lg-2 views-col'
           row_class_default: true
-          row_class_custom: ''
+          row_class_custom: row
       row:
         type: fields
         options:

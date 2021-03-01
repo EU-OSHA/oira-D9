@@ -54,20 +54,16 @@
   {% endif %}
     <div class="oira-content">
         <main>
+          {{ drupal_dump(node.bundle) }}
             {% if node.bundle == 'news' %}
               <section class="section container">
             {% else %}
               <section class="section oira-section">
             {% endif %}
-                <a id="main-content" tabindex="-1"></a>
-                {% if drupal_view('promotional_materials_type', 'page_1') %}
-                <div class="container">
-                  {{ page.content }}
-                </div>
-                {% else %}
+              <div class="no-container">
                 {{ page.content }}
-                {% endif %}
-              </section>
+              </div>
+            </section>
         </main>
     </div>
   </div>

@@ -23,12 +23,15 @@ display:
       fields:
         state:
           label: Olek
+          separator: ', '
         label:
           label: Nimetus
         source_language_1:
           label: Kellelt
+          separator: ', '
         target_language:
           label: Kellele
+          separator: ', '
         translator:
           label: Teenusepakkuja
         tags_count:

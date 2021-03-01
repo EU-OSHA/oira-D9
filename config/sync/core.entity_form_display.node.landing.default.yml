@@ -8,7 +8,6 @@ dependencies:
     - node.type.landing
   module:
     - text
-    - workbench_moderation
 id: node.landing.default
 targetEntityType: node
 bundle: landing

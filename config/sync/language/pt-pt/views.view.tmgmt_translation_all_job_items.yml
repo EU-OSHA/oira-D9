@@ -7,6 +7,8 @@ display:
           submit_button: Aplicar
           reset_button_label: Reiniciar
           exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -27,16 +29,21 @@ display:
           label: Tipo
         source_language:
           label: De
+          separator: ', '
         target_language:
           label: Para
+          separator: ', '
         progress:
           label: Progresso
         word_count:
           label: Palavra
+          separator: ', '
         tags_count:
           label: Etiquetas
+          separator: ', '
         changed:
           label: Alterado
+          separator: ', '
         operations:
           label: Operações
       filters:

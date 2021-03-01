@@ -20,6 +20,7 @@ display:
           label: Laga
         name:
           label: Namn
+          separator: ', '
       arguments:
         tjid:
           exception:

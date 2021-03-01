@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.practical_tool.field_tool_link
     - field.field.node.practical_tool.field_tool_type
     - field.field.node.practical_tool.field_wf_notification
+    - field.field.node.practical_tool.field_workbench_access
     - node.type.practical_tool
   module:
     - datetime
@@ -28,7 +29,6 @@ dependencies:
     - media_library
     - path
     - text
-    - workbench_moderation
 third_party_settings:
   field_group:
     group_alternative_language:
@@ -78,7 +78,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 15
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -132,7 +132,7 @@ content:
     type: datetime_default
     region: content
   field_related_partners:
-    weight: 13
+    weight: 15
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -144,7 +144,7 @@ content:
     type: datetime_default
     region: content
   field_sector_category:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -188,22 +188,28 @@ content:
     type: options_select
     region: content
   field_wf_notification:
-    weight: 12
+    weight: 13
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
+  field_workbench_access:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   langcode:
     type: language_select
-    weight: 20
+    weight: 22
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 18
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -211,21 +217,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 18
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 19
+    weight: 21
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 19
     region: content
     third_party_settings: {  }
   title:
@@ -236,9 +242,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 14
+    weight: 16
     settings:
       match_operator: CONTAINS
       size: 60

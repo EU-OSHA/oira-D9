@@ -5,10 +5,10 @@ dependencies: {  }
 name: latest_materials
 label: 'Latest materials'
 effects:
-  0d4f5a1b-e1a0-4cc9-a2a5-0fe17855725a:
-    uuid: 0d4f5a1b-e1a0-4cc9-a2a5-0fe17855725a
-    id: image_crop
-    weight: 1
+  10f7dd6c-48a0-4029-8750-a3bd7077fbb2:
+    uuid: 10f7dd6c-48a0-4029-8750-a3bd7077fbb2
+    id: image_scale_and_crop
+    weight: 2
     data:
       width: 342
       height: 259

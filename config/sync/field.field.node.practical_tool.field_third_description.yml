@@ -14,7 +14,7 @@ bundle: practical_tool
 label: Description
 description: 'This description will be shown when user is navigating the site in third tool''s language'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

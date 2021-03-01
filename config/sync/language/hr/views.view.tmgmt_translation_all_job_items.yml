@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -17,10 +18,17 @@ display:
           label: Vrsta
         source_language:
           label: Od
+          separator: ', '
         target_language:
           label: Za
+          separator: ', '
+        word_count:
+          separator: ', '
         tags_count:
           label: Oznake
+          separator: ', '
+        changed:
+          separator: ', '
         operations:
           label: Operacije
       filters:

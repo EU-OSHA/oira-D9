@@ -246,8 +246,16 @@ display:
         row: false
         fields: false
       style:
-        type: default
-        options: {  }
+        type: grid
+        options:
+          grouping: {  }
+          columns: 12
+          automatic_width: false
+          alignment: horizontal
+          col_class_default: false
+          col_class_custom: 'col-md-12 col-sm-12'
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: fields
         options:
@@ -763,9 +771,9 @@ display:
       style:
         type: grid
         options:
-          uses_fields: false
-          columns: 2
-          automatic_width: true
+          grouping: {  }
+          columns: 12
+          automatic_width: false
           alignment: horizontal
           col_class_default: true
           col_class_custom: ''
@@ -1312,8 +1320,8 @@ display:
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: col-md-4
-          row_class_default: false
+          col_class_custom: 'col-md-4 col-sm-12'
+          row_class_default: true
           row_class_custom: row
       row:
         type: fields
@@ -2058,7 +2066,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"col-md-9\">\r\n      {{field_publication_date}}\r\n      <h2>{{title}}</h2>\r\n      {{field_summary}}<span class=\"see-more\">{{ view_node_1 }}</span>\r\n    </div>\r\n  </div>\r\n</div>"
+            text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"col-9\">\r\n      {{field_publication_date}}\r\n      <h2>{{title}}</h2>\r\n      {{field_summary}}<span class=\"see-more\">{{ view_node_1 }}</span>\r\n    </div>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false

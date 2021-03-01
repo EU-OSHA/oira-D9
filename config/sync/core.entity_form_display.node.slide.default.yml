@@ -12,7 +12,6 @@ dependencies:
     - media_library
     - path
     - text
-    - workbench_moderation
 id: node.slide.default
 targetEntityType: node
 bundle: slide

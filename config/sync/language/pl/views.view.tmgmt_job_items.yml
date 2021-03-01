@@ -31,8 +31,10 @@ display:
           label: Postęp
         word_count:
           label: Słowa
+          separator: ', '
         tags_count:
           label: Tagi
+          separator: ', '
         changed:
           label: Zmieniono
         operations:
@@ -51,7 +53,9 @@ display:
           label: Typ
         word_count:
           label: Słowa
+          separator: ', '
         changed:
           label: Zmieniono
+          separator: ', '
   submitted:
     display_title: Przesłano

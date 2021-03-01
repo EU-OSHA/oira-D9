@@ -7,11 +7,14 @@ display:
           submit_button: Käytä
           reset_button_label: Palauta
           exposed_sorts_label: Lajittele
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
             items_per_page_label: 'Merkintöjä sivua kohti'
             items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
           tags:
             previous: '‹ Edellinen'
             next: 'Seuraava ›'
@@ -26,12 +29,18 @@ display:
           label: Tyyppi
         source_language:
           label: Lähettäjä
+          separator: ', '
         target_language:
           label: Osoitteeseen
+          separator: ', '
+        word_count:
+          separator: ', '
         tags_count:
           label: Tagit
+          separator: ', '
         changed:
           label: Muuttunut
+          separator: ', '
         operations:
           label: Toimenpiteet
       filters:

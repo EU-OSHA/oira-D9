@@ -23,8 +23,11 @@ display:
           label: Merking
         type:
           label: Gerð
+        word_count:
+          separator: ', '
         tags_count:
           label: Efnisorð
+          separator: ', '
         operations:
           label: Aðgerðir
       arguments:
@@ -39,3 +42,7 @@ display:
           label: Merking
         type:
           label: Gerð
+        word_count:
+          separator: ', '
+        changed:
+          separator: ', '

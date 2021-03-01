@@ -29,14 +29,20 @@ display:
           label: Típus
         source_language:
           label: Honnan
+          separator: ', '
         target_language:
           label: Hova
+          separator: ', '
         progress:
           label: Feldolgozottság
+        word_count:
+          separator: ', '
         tags_count:
           label: Címkék
+          separator: ', '
         changed:
           label: Módosítva
+          separator: ', '
         operations:
           label: Műveletek
       filters:
