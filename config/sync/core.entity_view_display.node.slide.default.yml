@@ -9,6 +9,7 @@ dependencies:
     - node.type.slide
   module:
     - link
+    - slick
     - text
     - user
 id: node.slide.default
@@ -18,22 +19,78 @@ mode: default
 content:
   body:
     label: hidden
-    type: text_default
+    type: text_summary_or_trimmed
     weight: 101
-    settings: {  }
+    settings:
+      trim_length: 300
     third_party_settings: {  }
     region: content
   field_image:
     weight: 105
-    label: above
+    label: hidden
     settings:
-      link: true
+      style: ''
+      optionset: default
+      optionset_thumbnail: ''
+      skin: grid
+      skin_thumbnail: ''
+      image_style: ''
+      thumbnail_effect: hover
+      thumbnail_position: ''
+      media_switch: rendered
+      thumbnail_style: ''
+      ratio: ''
+      view_mode: default
+      grid: null
+      grid_medium: null
+      grid_small: null
+      visible_items: null
+      image: field_media_image
+      title: ''
+      link: ''
+      layout: ''
+      class: ''
+      cache: 0
+      current_view_mode: default
+      vanilla: false
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      preserve_keys: false
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      thumbnail_caption: ''
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      icon: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      id: ''
+      overlay: ''
     third_party_settings: {  }
-    type: entity_reference_label
+    type: slick_media
     region: content
   field_link:
     weight: 104
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -45,9 +102,9 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true

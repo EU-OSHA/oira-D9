@@ -26,6 +26,7 @@ display:
         label:
           label: Element
         name:
+          label: Name
           separator: ', '
       title: Benachrichtigungen
       arguments:
