@@ -47,6 +47,11 @@ content:
     third_party_settings: {  }
     label: hidden
     region: content
+  sharing_buttons:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
