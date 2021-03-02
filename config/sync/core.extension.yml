@@ -6,6 +6,7 @@ module:
   automated_cron: 0
   better_exposed_filters: 0
   big_pipe: 0
+  blazy: 0
   block: 0
   block_content: 0
   block_form_alter: 0
@@ -95,6 +96,9 @@ module:
   serialization: 0
   shortcut: 0
   sitemap: 0
+  slick: 0
+  slick_ui: 0
+  slick_views: 0
   sliderwidget: 0
   system: 0
   taxonomy: 0

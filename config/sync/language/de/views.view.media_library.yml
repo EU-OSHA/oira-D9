@@ -34,6 +34,9 @@ display:
                 title: Veröffentlicht
               2:
                 title: 'Nicht veröffentlicht'
+        name:
+          expose:
+            label: Name
         bundle:
           expose:
             label: Medientyp
@@ -71,6 +74,10 @@ display:
   widget:
     display_title: Steuerelement
     display_options:
+      filters:
+        name:
+          expose:
+            label: Name
       arguments:
         bundle:
           exception:
@@ -86,10 +93,16 @@ display:
       fields:
         thumbnail__target_id:
           label: Miniaturbild
+        name:
+          label: Name
         uid:
           label: Autor
         changed:
           label: Aktualisiert
+      filters:
+        name:
+          expose:
+            label: Name
       arguments:
         bundle:
           exception:
