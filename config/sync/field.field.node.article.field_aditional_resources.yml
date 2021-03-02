@@ -21,5 +21,6 @@ settings:
     view:
       view_name: aditional_resources
       display_name: entity_reference_1
-      arguments: {  }
+      arguments:
+        - title
 field_type: entity_reference
