@@ -2,13 +2,12 @@
 
 {% block content %}
   <div class="home-slider">
-    <h1 class="container" style="padding-top: 150px;">Slider Img</h1>
+    {{ drupal_view('slideshow', 'block_1') }}
   </div>
   <div class="content-home content-oira-tools content-purple ">
     <div class="container">
       <h2>{{ 'OiRA tools' | trans }}</h2>
       {{ drupal_view('tools', 'block_1') }}
-
     </div>
   </div>
   <div class="content-home content-latest-news content-white ">
