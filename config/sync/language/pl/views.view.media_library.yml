@@ -55,6 +55,7 @@ display:
         name_1:
           expose:
             label: 'Nazwa (Z-A)'
+      title: Media
       empty:
         area_text_custom:
           content: 'Brak mediów'

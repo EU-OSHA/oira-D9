@@ -25,6 +25,8 @@ display:
           label: Status
         label:
           label: Label
+        type:
+          label: Type
         source_language:
           label: Van
           separator: ', '

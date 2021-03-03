@@ -211,8 +211,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: h1
+          element_class: container
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -252,9 +252,9 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
-            absolute: false
+            make_link: true
+            path: '{{field_link}}'
+            absolute: true
             external: false
             replace_spaces: false
             path_case: none

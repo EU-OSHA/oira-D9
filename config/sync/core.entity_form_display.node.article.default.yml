@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.aditional_resources_browser
     - field.field.node.article.body
     - field.field.node.article.field_aditional_resources
     - field.field.node.article.field_archived
@@ -23,6 +24,7 @@ dependencies:
     - node.type.article
   module:
     - datetime
+    - entity_browser
     - media_library
     - path
     - text
@@ -51,9 +53,17 @@ content:
     third_party_settings: {  }
   field_aditional_resources:
     weight: 14
-    settings: {  }
+    settings:
+      entity_browser: aditional_resources_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: options_buttons
+    type: entity_browser_entity_reference
     region: content
   field_archived:
     weight: 13

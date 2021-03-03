@@ -25,6 +25,8 @@ display:
           label: État
         label:
           label: Libellé
+        type:
+          label: Type
         progress:
           label: Progression
         word_count:
@@ -48,6 +50,8 @@ display:
       fields:
         label:
           label: Libellé
+        type:
+          label: Type
         word_count:
           label: Mots
           separator: ', '
