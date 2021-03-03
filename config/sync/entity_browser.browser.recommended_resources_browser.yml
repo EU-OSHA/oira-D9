@@ -1,0 +1,31 @@
+uuid: 66008ab4-3b8b-4124-8ff2-398575516060
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recommended_resources_browser
+  module:
+    - views
+name: recommended_resources_browser
+label: 'Recommended resources browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  3a72f5ff-062c-42f6-ae56-f383d3d44be6:
+    settings:
+      view: recommended_resources_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 3a72f5ff-062c-42f6-ae56-f383d3d44be6
+    weight: 1
+    label: 'Recommended resources '
+    id: view
