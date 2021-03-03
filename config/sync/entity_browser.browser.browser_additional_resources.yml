@@ -1,13 +1,13 @@
-uuid: 826ff9c3-bdf8-4a8b-a386-603323801891
+uuid: f9c6f7bc-a7bc-432b-b704-15d83c4fb68f
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.aditional_resources_browser
+    - views.view.browser_additional_resources
   module:
     - views
-name: aditional_resources_browser
-label: 'Aditional resources browser'
+name: browser_additional_resources
+label: 'Browser Additional resources'
 display: modal
 display_configuration:
   width: '650'
@@ -16,16 +16,16 @@ display_configuration:
   auto_open: false
 selection_display: no_display
 selection_display_configuration: {  }
-widget_selector: tabs
+widget_selector: single
 widget_selector_configuration: {  }
 widgets:
-  fce5ddbb-2a0e-46d9-8f91-f6a789bcee86:
+  cc98f03a-e3c2-4927-bbbc-3f93ce8fa049:
     settings:
-      view: aditional_resources_browser
+      view: browser_additional_resources
       view_display: entity_browser_1
-      submit_text: Submit
+      submit_text: 'Select entities'
       auto_select: false
-    uuid: fce5ddbb-2a0e-46d9-8f91-f6a789bcee86
+    uuid: cc98f03a-e3c2-4927-bbbc-3f93ce8fa049
     weight: 1
-    label: 'Additional resources'
+    label: 'Additional Resources'
     id: view

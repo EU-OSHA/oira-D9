@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.recommended_resources_browser
+    - entity_browser.browser.browser_recommended_resources
     - field.field.node.article.body
     - field.field.node.article.field_aditional_resources
     - field.field.node.article.field_archived
@@ -54,12 +54,12 @@ content:
   field_aditional_resources:
     weight: 14
     settings:
-      entity_browser: aditional_resources_browser
+      entity_browser: browser_additional_resources
       field_widget_display: label
-      field_widget_edit: true
       field_widget_remove: true
       open: true
       selection_mode: selection_append
+      field_widget_edit: false
       field_widget_replace: false
       field_widget_display_settings: {  }
     third_party_settings: {  }
@@ -113,24 +113,32 @@ content:
     region: content
   field_recommended_articles:
     weight: 16
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
-    region: content
-  field_recommended_resources:
-    weight: 15
     settings:
-      entity_browser: recommended_resources_browser
+      entity_browser: browser_recommended_articles
       field_widget_display: label
-      field_widget_edit: true
       field_widget_remove: true
       open: true
       selection_mode: selection_append
+      field_widget_edit: false
       field_widget_replace: false
       field_widget_display_settings: {  }
     third_party_settings: {  }
     type: entity_browser_entity_reference
     region: content
+  field_recommended_resources:
+    type: entity_browser_entity_reference
+    weight: 15
+    region: content
+    settings:
+      entity_browser: browser_recommended_resources
+      field_widget_display: label
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_replace: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
   field_related_oshwiki_articles:
     weight: 11
     settings: {  }
