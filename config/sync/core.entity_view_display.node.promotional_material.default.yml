@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.promotional_material.field_resource_fc
     - field.field.node.promotional_material.field_revised_date
     - field.field.node.promotional_material.field_wf_notification
-    - field.field.node.promotional_material.field_workbench_access
     - node.type.promotional_material
   module:
     - datetime
@@ -130,14 +129,6 @@ content:
       format_custom_true: ''
     third_party_settings: {  }
     type: boolean
-    region: content
-  field_workbench_access:
-    weight: 13
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   links:
     weight: 0

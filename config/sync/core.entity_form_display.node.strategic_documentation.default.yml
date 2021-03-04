@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.strategic_documentation.field_publication_date
     - field.field.node.strategic_documentation.field_strategic_type
     - field.field.node.strategic_documentation.field_wf_notification
-    - field.field.node.strategic_documentation.field_workbench_access
     - node.type.strategic_documentation
   module:
     - datetime
@@ -29,7 +28,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 5
     settings:
       rows: 9
       summary_rows: 3
@@ -39,24 +38,24 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 16
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   field_country:
-    weight: 5
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_language:
-    weight: 8
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_link:
-    weight: 13
+    weight: 10
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -64,66 +63,60 @@ content:
     type: link_default
     region: content
   field_multiple_sector:
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_oira:
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_private_file:
     type: media_library_widget
-    weight: 10
+    weight: 8
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_private_image:
     type: media_library_widget
-    weight: 9
+    weight: 7
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_publication_date:
-    weight: 6
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_strategic_type:
-    weight: 4
+    weight: 26
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_wf_notification:
-    weight: 12
+    weight: 9
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_workbench_access:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   langcode:
     type: language_select
-    weight: 20
+    weight: 18
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 19
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -131,39 +124,34 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 15
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 12
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  translation:
-    weight: 11
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 15
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60

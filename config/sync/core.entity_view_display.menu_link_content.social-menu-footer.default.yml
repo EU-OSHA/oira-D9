@@ -1,24 +1,22 @@
-uuid: 890358b7-d251-4f8a-a78d-6bac3c43221b
+uuid: 384baa4c-1ad1-487f-8d7c-c97b88b988ca
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.menu_link_content.social-menu.field_image_menu_
-    - system.menu.social-menu
-  module:
-    - media
-id: menu_link_content.social-menu.default
+    - field.field.menu_link_content.social-menu-footer.field_image
+    - system.menu.social-menu-footer
+id: menu_link_content.social-menu-footer.default
 targetEntityType: menu_link_content
-bundle: social-menu
+bundle: social-menu-footer
 mode: default
 content:
-  field_image_menu_:
-    type: media_thumbnail
+  field_image:
+    type: entity_reference_entity_view
     weight: 0
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
     region: content
 hidden:

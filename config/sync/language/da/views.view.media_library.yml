@@ -46,6 +46,7 @@ display:
         created:
           expose:
             label: 'Nyeste først'
+      title: Media
       empty:
         area_text_custom:
           content: 'Ingen tilgængelige media'

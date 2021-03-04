@@ -42,6 +42,7 @@ display:
         created:
           expose:
             label: 'Prima i più recenti'
+      title: Media
       empty:
         area_text_custom:
           content: 'Non è disponibile alcun contributo mediale.'

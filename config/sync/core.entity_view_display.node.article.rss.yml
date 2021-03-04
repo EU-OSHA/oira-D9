@@ -22,7 +22,6 @@ dependencies:
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
     - field.field.node.article.field_wiki_categories
-    - field.field.node.article.field_workbench_access
     - node.type.article
   module:
     - user
@@ -35,11 +34,6 @@ mode: rss
 content:
   links:
     weight: 100
-    region: content
-  sharing_buttons:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
     region: content
 hidden:
   body: true
@@ -63,6 +57,5 @@ hidden:
   field_summary: true
   field_tags: true
   field_wiki_categories: true
-  field_workbench_access: true
   langcode: true
   search_api_excerpt: true

@@ -25,7 +25,6 @@ dependencies:
     - field.field.node.partner.field_ph_town
     - field.field.node.partner.field_social_profile
     - field.field.node.partner.field_website
-    - field.field.node.partner.field_workbench_access
     - image.style.medium
     - node.type.partner
   module:
@@ -74,6 +73,5 @@ hidden:
   field_ph_town: true
   field_social_profile: true
   field_website: true
-  field_workbench_access: true
   langcode: true
   search_api_excerpt: true

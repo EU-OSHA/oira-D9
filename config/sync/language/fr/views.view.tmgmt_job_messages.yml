@@ -28,6 +28,7 @@ display:
         name:
           label: Nom
           separator: ', '
+      title: Messages
       arguments:
         tjid:
           exception:

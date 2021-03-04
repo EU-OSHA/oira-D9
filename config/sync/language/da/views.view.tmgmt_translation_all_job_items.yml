@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -24,16 +25,24 @@ display:
           label: Status
         label:
           label: Etiket
+        type:
+          label: Type
         source_language:
           label: Fra
+          separator: ', '
         target_language:
           label: Til
+          separator: ', '
         progress:
           label: Fremdrift
+        word_count:
+          separator: ', '
         tags_count:
           label: Tags
+          separator: ', '
         changed:
           label: Ændret
+          separator: ', '
         operations:
           label: Handlinger
       filters:
@@ -45,5 +54,10 @@ display:
         source_language:
           expose:
             label: Kildesprog
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Normal
   page_1:
     display_title: Side

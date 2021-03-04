@@ -1,16 +1,16 @@
-uuid: 5c92c41f-18d5-4c88-8c88-fcaed9b61bb9
+uuid: 4f14dede-1f54-4da8-a2b4-901973a90855
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-    - taxonomy
-id: node.field_workbench_access
-field_name: field_workbench_access
-entity_type: node
+    - media
+    - menu_link_content
+id: menu_link_content.field_image
+field_name: field_image
+entity_type: menu_link_content
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: media
 module: core
 locked: false
 cardinality: 1
