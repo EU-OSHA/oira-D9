@@ -5,20 +5,18 @@ dependencies:
   config:
     - field.field.menu_link_content.social-menu.field_image_menu_
     - system.menu.social-menu
-  module:
-    - media
 id: menu_link_content.social-menu.default
 targetEntityType: menu_link_content
 bundle: social-menu
 mode: default
 content:
   field_image_menu_:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     weight: 0
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
     region: content
 hidden:

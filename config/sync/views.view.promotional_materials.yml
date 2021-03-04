@@ -381,7 +381,7 @@ display:
           type: media_thumbnail
           settings:
             image_style: latest_materials
-            image_link: content
+            image_link: ''
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -534,6 +534,11 @@ display:
       arguments: {  }
       display_extenders: {  }
       title: 'Latest materials'
+      use_more: true
+      use_more_always: true
+      use_more_text: 'View all'
+      link_url: /promotional-resources
+      link_display: custom_url
     cache_metadata:
       max-age: -1
       contexts:

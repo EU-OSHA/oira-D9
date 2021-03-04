@@ -22,6 +22,7 @@ dependencies:
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
     - field.field.node.article.field_wiki_categories
+    - field.field.node.article.field_workbench_access
     - image.style.thumbnail
     - node.type.article
   module:
@@ -60,6 +61,11 @@ content:
       link: true
     third_party_settings: {  }
     label: above
+  sharing_buttons:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
@@ -79,6 +85,7 @@ hidden:
   field_sector: true
   field_summary: true
   field_wiki_categories: true
+  field_workbench_access: true
   langcode: true
   links: true
   search_api_excerpt: true
