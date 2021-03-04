@@ -33,6 +33,8 @@ display:
         target_language:
           label: Naar
           separator: ', '
+        translator:
+          label: Provider
         progress:
           label: Voortgang
         word_count:
@@ -53,6 +55,9 @@ display:
         target_language:
           expose:
             label: Doeltaal
+        translator:
+          expose:
+            label: Provider
       empty:
         area_text_custom:
           content: 'Geen opdrachten beschikbaar.'

@@ -15,42 +15,8 @@ display:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
-          tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
       fields:
-        state:
-          label: State
-          separator: ', '
         label:
           label: Label
-        source_language_1:
-          label: From
-          separator: ', '
-        target_language:
-          label: To
-          separator: ', '
-        translator:
-          label: Provider
-        progress:
-          label: Progress
         tags_count:
           label: Etichete
-        changed:
-          label: Changed
-        operations:
-          label: Operations
-      filters:
-        state:
-          expose:
-            label: State
-        source_language:
-          expose:
-            label: 'Source language'
-        translator:
-          expose:
-            label: Provider
-  page_1:
-    display_title: Page
