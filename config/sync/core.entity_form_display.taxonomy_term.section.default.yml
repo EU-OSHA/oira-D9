@@ -14,15 +14,15 @@ bundle: section
 mode: default
 content:
   description:
-    type: text_textarea
-    weight: 1
+    type: text_textfield
+    weight: 0
     region: content
     settings:
+      size: 60
       placeholder: ''
-      rows: 5
     third_party_settings: {  }
   field_ldap_section_code:
-    weight: 3
+    weight: 101
     settings:
       size: 60
       placeholder: ''
@@ -31,14 +31,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 4
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -46,7 +46,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 2
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -54,12 +54,12 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 100
     region: content
     third_party_settings: {  }
   translation:
-    weight: 5
-    region: content
+    weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }

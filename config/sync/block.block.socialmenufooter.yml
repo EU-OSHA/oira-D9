@@ -1,23 +1,23 @@
-uuid: 3c0f38c1-3906-4a26-a61c-0eb876edea06
+uuid: e731e4be-e0e4-404f-ad09-9c07f2c4c4dc
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.social-menu
+    - system.menu.social-menu-footer
   module:
     - context
     - system
   theme:
     - oira_theme
-id: socialmenu_2
+id: socialmenufooter
 theme: oira_theme
 region: footer_end
-weight: -9
+weight: 0
 provider: null
-plugin: 'system_menu_block:social-menu'
+plugin: 'system_menu_block:social-menu-footer'
 settings:
-  id: 'system_menu_block:social-menu'
-  label: 'Social menu'
+  id: 'system_menu_block:social-menu-footer'
+  label: 'Social menu footer'
   provider: system
   label_display: '0'
   level: 1

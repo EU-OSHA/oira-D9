@@ -16,7 +16,6 @@ dependencies:
     - field.field.node.promotional_material.field_resource_fc
     - field.field.node.promotional_material.field_revised_date
     - field.field.node.promotional_material.field_wf_notification
-    - field.field.node.promotional_material.field_workbench_access
     - node.type.promotional_material
   module:
     - media
@@ -63,6 +62,5 @@ hidden:
   field_resource_fc: true
   field_revised_date: true
   field_wf_notification: true
-  field_workbench_access: true
   langcode: true
   search_api_excerpt: true

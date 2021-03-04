@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.promotional_material.field_resource_fc
     - field.field.node.promotional_material.field_revised_date
     - field.field.node.promotional_material.field_wf_notification
-    - field.field.node.promotional_material.field_workbench_access
     - node.type.promotional_material
   module:
     - datetime
@@ -39,7 +38,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 17
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -50,7 +49,7 @@ content:
     type: options_select
     region: content
   field_country:
-    weight: 12
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -88,7 +87,7 @@ content:
     type: datetime_default
     region: content
   field_related_partners:
-    weight: 13
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -107,28 +106,22 @@ content:
     type: datetime_default
     region: content
   field_wf_notification:
-    weight: 14
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
-  field_workbench_access:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   langcode:
     type: language_select
-    weight: 15
+    weight: 13
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 20
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -136,21 +129,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 16
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 21
+    weight: 19
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 19
+    weight: 17
     region: content
     third_party_settings: {  }
   title:
@@ -161,14 +154,9 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  translation:
-    weight: 11
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 16
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60

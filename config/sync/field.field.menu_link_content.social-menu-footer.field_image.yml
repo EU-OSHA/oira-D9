@@ -1,26 +1,26 @@
-uuid: a36a5ae3-d9d1-4c92-a9a7-e49a77e33285
+uuid: 3081ccdd-749e-484b-bf37-da4bbfde8296
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - media.type.image
-    - node.type.external_url
-id: node.external_url.field_image
+    - field.storage.menu_link_content.field_image
+    - media.type.image_and_link
+    - system.menu.social-menu-footer
+id: menu_link_content.social-menu-footer.field_image
 field_name: field_image
-entity_type: node
-bundle: external_url
+entity_type: menu_link_content
+bundle: social-menu-footer
 label: Image
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      image_and_link: image_and_link
     sort:
       field: _none
       direction: ASC
