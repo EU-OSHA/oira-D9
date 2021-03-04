@@ -18,6 +18,8 @@ display:
       fields:
         label:
           label: Etikett
+        type:
+          label: Type
         word_count:
           separator: ', '
         tags_count:
@@ -33,6 +35,8 @@ display:
       fields:
         label:
           label: Etikett
+        type:
+          label: Type
         word_count:
           separator: ', '
         changed:

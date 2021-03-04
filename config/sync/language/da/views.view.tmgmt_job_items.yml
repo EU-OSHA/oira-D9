@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -24,10 +25,15 @@ display:
           label: Status
         label:
           label: Etiket
+        type:
+          label: Type
         progress:
           label: Fremdrift
+        word_count:
+          separator: ', '
         tags_count:
           label: Tags
+          separator: ', '
         changed:
           label: Ændret
         operations:
@@ -42,7 +48,12 @@ display:
       fields:
         label:
           label: Etiket
+        type:
+          label: Type
+        word_count:
+          separator: ', '
         changed:
           label: Ændret
+          separator: ', '
   submitted:
     display_title: Indsendt

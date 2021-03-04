@@ -25,6 +25,8 @@ display:
           label: État
         label:
           label: Libellé
+        type:
+          label: Type
         source_language:
           label: 'A partir de'
           separator: ', '
