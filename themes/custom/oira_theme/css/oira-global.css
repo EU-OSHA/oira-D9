@@ -1055,6 +1055,12 @@ select.custom-select {
   text-align: right;
 }
 
+#block-oira-theme-main-menu > ul > li:nth-child(1) > a {
+  width: 37px;
+  background: url("../images/oira-home.png") no-repeat;
+  text-indent: -9999px;
+}
+
 #navbar-main {
   font-family: "Oswald", sans-serif;
   background-color: #10b2e4;
@@ -1062,9 +1068,14 @@ select.custom-select {
 }
 #navbar-main #CollapsingNavbar > div.container {
   justify-content: center;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 #navbar-main ul.navbar-nav li {
-  border-right: 1px solid #FFF;
+  border-right: 2px solid #FFF;
+}
+#navbar-main ul.navbar-nav li .nav-link {
+  padding: 0 0.5rem;
 }
 #navbar-main ul.navbar-nav li a {
   font-family: "Oswald", sans-serif;
@@ -1086,6 +1097,8 @@ select.custom-select {
   background-color: #10b2e4;
   border: 0;
   border-bottom: 2px solid #FFF;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 #navbar-main ul.navbar-nav li ul.dropdown-menu li a:hover {
   text-decoration: none;
@@ -1095,6 +1108,7 @@ select.custom-select {
 }
 #navbar-main ul.navbar-nav li:hover ul.dropdown-menu {
   display: block;
+  padding-bottom: 0;
 }
 #navbar-main ul.navbar-nav li:last-child {
   border-right: 0;
