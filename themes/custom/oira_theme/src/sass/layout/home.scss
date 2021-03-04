@@ -49,24 +49,31 @@
   .slick-dotted.slick-slider{
     margin-bottom: 0;
   }
-  .slide__media{
+  .views-field-field-image{
     img{
       width: 100%;
       height: auto;
     }
   }
-  .slide__caption{
+  .views-field-title, .views-field-body{
     position: relative;
     background-color: $bg-color-purple;
-    min-height: 200px !important;
+    min-height: auto !important;
     transform: initial !important;
+    color: $text-color-white;
     h1{
+      padding-top: 1.5rem;
       a{
         color: $text-color-white;
         font-style: normal;
         font-weight: normal;
       }
     }
+  }
+  .views-field-body{
+    padding-top: 0;
+    padding-bottom: 4.3rem;
+    font-size: 1.2rem;
   }
   .slick-dots{
     bottom: 20px;
