@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.browser_recommended_resources
+    - entity_browser.browser.browser_additional_resources
     - field.field.node.article.body
     - field.field.node.article.field_aditional_resources
     - field.field.node.article.field_archived
@@ -130,7 +130,7 @@ content:
     weight: 15
     region: content
     settings:
-      entity_browser: browser_recommended_resources
+      entity_browser: browser_additional_resources
       field_widget_display: label
       field_widget_remove: true
       open: true

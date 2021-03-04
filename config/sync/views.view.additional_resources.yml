@@ -250,6 +250,28 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      relationships:
+        field_aditional_resources:
+          id: field_aditional_resources
+          table: node__field_aditional_resources
+          field: field_aditional_resources
+          relationship: none
+          group_type: group
+          admin_label: 'Content entity referenced from field_aditional_resources'
+          required: false
+          plugin_id: standard
+        reverse__node__field_aditional_resources:
+          id: reverse__node__field_aditional_resources
+          table: node_field_data
+          field: reverse__node__field_aditional_resources
+          relationship: none
+          group_type: group
+          admin_label: field_aditional_resources
+          required: false
+          entity_type: node
+          plugin_id: entity_reverse
+      defaults:
+        relationships: false
     cache_metadata:
       max-age: -1
       contexts:

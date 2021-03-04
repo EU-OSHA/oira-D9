@@ -695,7 +695,7 @@ display:
             operator: workbench_access_section__partner_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: workbench_access_section__partner
+            identifier: access_id
             required: false
             remember: false
             multiple: false
@@ -768,7 +768,7 @@ display:
   additional_resources_page:
     display_plugin: page
     id: additional_resources_page
-    display_title: Page
+    display_title: 'Additional resources Page'
     position: 1
     display_options:
       display_extenders: {  }
@@ -779,9 +779,10 @@ display:
         description: ''
         expanded: false
         parent: ''
-        weight: 0
+        weight: -1
         context: '0'
         menu_name: main
+      display_description: ''
     cache_metadata:
       max-age: 0
       contexts:
