@@ -16,6 +16,8 @@ source:
   plugin: d7_node
   node_type: collaboration_document
 process:
+  nid: tnid
+  vid: vid
   type:
     -
       plugin: default_value

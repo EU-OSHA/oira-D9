@@ -21,43 +21,5 @@ display:
             first: '« Primul'
             last: 'Ultimul »'
       fields:
-        state:
-          label: Status
-        label:
-          label: Etichetă
-        type:
-          label: Tip
-        source_language:
-          label: 'De la'
-          separator: ', '
-        target_language:
-          label: Către
-          separator: ', '
-        progress:
-          label: Progres
-        word_count:
-          separator: ', '
         tags_count:
           label: Etichete
-          separator: ', '
-        changed:
-          label: Schimbat
-          separator: ', '
-        operations:
-          label: Operaţii
-      filters:
-        state:
-          expose:
-            label: Stări
-          group_info:
-            label: Status
-        source_language:
-          expose:
-            label: 'Limbă sursă'
-        job_type:
-          group_info:
-            group_items:
-              1:
-                title: Normal
-  page_1:
-    display_title: Pagina

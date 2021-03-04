@@ -1,0 +1,35 @@
+uuid: aae06741-1376-469a-a880-4b90ddaceaea
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_migrations
+id: oira_node_collaboration_document_media_documents_2
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: oira_migrate_media
+label: 'collaboration_document: Media Documents Mapping'
+source:
+  key: migrate
+  plugin: d7_node
+  node_type: collaboration_document
+process:
+  nid: nid
+  changed: changed
+  title: title
+  type:
+    plugin: default_value
+    default_value: collaboration_document
+  field_collaboration_items:
+    plugin: file_id_lookup
+    source: field_gp_factsheet
+    migration: oira_node_collaboration_document_media_documents_1
+    no_stub: true
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  optional:
+    - oira_node_collaboration_document
+    - oira_node_collaboration_document_media_documents_1

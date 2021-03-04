@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.collaborator.field_collaborator_name
     - field.field.media.collaborator.field_media_image
     - image.style.thumbnail
     - media.type.collaborator
@@ -32,6 +33,7 @@ content:
     region: content
 hidden:
   created: true
+  field_collaborator_name: true
   langcode: true
   path: true
   status: true

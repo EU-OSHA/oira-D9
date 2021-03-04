@@ -23,6 +23,8 @@ display:
       fields:
         created:
           label: Criado
+        label:
+          label: Item
         name:
           label: Nome
           separator: ', '

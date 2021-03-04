@@ -12,13 +12,13 @@
 .content-purple {
   background: $bg-color-purple-light;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.7rem;
 }
 
 .content-white {
   background: $bg-color-white;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.7rem;
 }
 
 .content-home{
@@ -35,7 +35,52 @@
 }
 
 .home-slider{
-  min-height: 400px;
+  .view-slideshow{
+    margin-top: 35px;
+    background-color: $bg-color-purple;
+    > .row{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .media--ratio--fluid{
+    padding-bottom: 0 !important;
+  }
+  .slick-dotted.slick-slider{
+    margin-bottom: 0;
+  }
+  .slide__media{
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .slide__caption{
+    position: relative;
+    background-color: $bg-color-purple;
+    min-height: 200px !important;
+    transform: initial !important;
+    h1{
+      a{
+        color: $text-color-white;
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+  }
+  .slick-dots{
+    bottom: 20px;
+  }
+  .slick-dots li.slick-active button:before{
+    color: $bg-color-white;
+    font-size: 1rem;
+    opacity: 1;
+  }
+  .slick-dots li button:before{
+    color: $bg-color-purple-light;
+    font-size: 1rem;
+    opacity: 1;
+  }
 }
 
 .content-oira-tools {
@@ -100,6 +145,11 @@
       }
     }
   }
+  .more-link{
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
 }
 
 .content-latest-news{
@@ -116,7 +166,6 @@
       border-bottom: 2px solid $bg-color-purple;
       padding-bottom: 0;
       padding-top: 20px;
-      margin-bottom: 20px;
       .views-field-nothing{
         float: left;
         margin-right: 1.5rem;
@@ -146,8 +195,11 @@
         color: $text-color-blue-hover;
       }
     }
-    span.see-more, .more-link{
+    span.see-more{
       float: right;
+    }
+    .more-link{
+     text-align: right;
     }
     .views-view-grid.horizontal{
       padding-left: 0;
@@ -186,7 +238,6 @@
   .view-promotional-materials{
     padding-bottom: 0;
     padding-top: 20px;
-    margin-bottom: 20px;
     .view-content.row{
       margin-left: 0;
       margin-right: 0;
@@ -203,6 +254,10 @@
       }
     }
   }
+  .more-link{
+    width: 100%;
+    text-align: right;
+  }
 }
 .content-oira-partners{
   h2:after {
@@ -216,7 +271,6 @@
   .view-oira-partners{
     padding-bottom: 0;
     padding-top: 20px;
-    margin-bottom: 20px;
     img {
       width: 100%;
       height: auto;
