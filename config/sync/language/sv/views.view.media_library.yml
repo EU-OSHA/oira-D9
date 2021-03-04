@@ -71,6 +71,7 @@ display:
             alt: 'Radera {{ name }}'
           text: Radera
   widget:
+    display_title: Widget
     display_options:
       filters:
         name:

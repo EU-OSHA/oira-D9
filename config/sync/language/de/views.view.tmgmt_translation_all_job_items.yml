@@ -62,6 +62,8 @@ display:
           group_info:
             label: Job-Typ
             group_items:
+              1:
+                title: Normal
               2:
                 title: Fortlaufend
       title: Auftragselemente

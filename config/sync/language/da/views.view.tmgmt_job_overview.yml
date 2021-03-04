@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -22,12 +23,15 @@ display:
       fields:
         state:
           label: Status
+          separator: ', '
         label:
           label: Etiket
         source_language_1:
           label: Fra
+          separator: ', '
         target_language:
           label: Til
+          separator: ', '
         translator:
           label: Udbyder
         progress:
