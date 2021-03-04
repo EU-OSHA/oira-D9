@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -30,6 +31,10 @@ display:
           label: Fortschritt
         word_count:
           label: Wörter
+          separator: ', '
+        tags_count:
+          label: Tags
+          separator: ', '
         changed:
           label: Geändert
         operations:
@@ -49,7 +54,9 @@ display:
           label: Typ
         word_count:
           label: Wörter
+          separator: ', '
         changed:
           label: Geändert
+          separator: ', '
   submitted:
     display_title: Gespeichert

@@ -29,14 +29,20 @@ display:
           label: Typ
         source_language:
           label: Från
+          separator: ', '
         target_language:
           label: Till
+          separator: ', '
         progress:
           label: Framsteg
+        word_count:
+          separator: ', '
         tags_count:
           label: Etiketter
+          separator: ', '
         changed:
           label: Ändrad
+          separator: ', '
         operations:
           label: Funktioner
       filters:
@@ -48,5 +54,10 @@ display:
         source_language:
           expose:
             label: Källspråk
+        job_type:
+          group_info:
+            group_items:
+              1:
+                title: Normal
   page_1:
     display_title: Sida

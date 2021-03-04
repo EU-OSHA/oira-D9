@@ -20,6 +20,10 @@ display:
           label: Etikett
         type:
           label: Type
+        word_count:
+          separator: ', '
+        tags_count:
+          separator: ', '
         operations:
           label: Operasjonar
       arguments:
@@ -33,3 +37,7 @@ display:
           label: Etikett
         type:
           label: Type
+        word_count:
+          separator: ', '
+        changed:
+          separator: ', '

@@ -31,8 +31,10 @@ display:
           label: Feldolgozottság
         word_count:
           label: Szavak
+          separator: ', '
         tags_count:
           label: Címkék
+          separator: ', '
         changed:
           label: Módosítva
         operations:
@@ -51,7 +53,9 @@ display:
           label: Típus
         word_count:
           label: Szavak
+          separator: ', '
         changed:
           label: Módosítva
+          separator: ', '
   submitted:
     display_title: Beküldött

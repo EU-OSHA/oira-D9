@@ -10,6 +10,8 @@ dependencies:
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
     - field.field.node.article.field_image
+    - field.field.node.article.field_image2
+    - field.field.node.article.field_image2_media
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_recommended_articles
@@ -85,6 +87,16 @@ content:
     weight: 4
     settings:
       media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_image2_media:
+    type: entity_reference_autocomplete
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_page_count:
@@ -186,10 +198,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: options_select
     weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_image2: true

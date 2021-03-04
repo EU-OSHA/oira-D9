@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.partner.field_mission_statement
     - field.field.node.partner.field_oira_eu_level
     - field.field.node.partner.field_orgtype
+    - field.field.node.partner.field_partner
     - field.field.node.partner.field_partner_other_users
     - field.field.node.partner.field_partner_type
     - field.field.node.partner.field_ph_address
@@ -64,6 +65,7 @@ hidden:
   field_mission_statement: true
   field_oira_eu_level: true
   field_orgtype: true
+  field_partner: true
   field_partner_other_users: true
   field_partner_type: true
   field_ph_address: true

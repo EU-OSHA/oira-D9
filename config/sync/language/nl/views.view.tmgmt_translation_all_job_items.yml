@@ -5,6 +5,7 @@ display:
       exposed_form:
         options:
           submit_button: Toepassen
+          reset_button_label: Reset
           exposed_sorts_label: 'Sorteren op'
           sort_asc_label: Oplopend
           sort_desc_label: Aflopend
@@ -28,16 +29,21 @@ display:
           label: Type
         source_language:
           label: Van
+          separator: ', '
         target_language:
           label: Naar
+          separator: ', '
         progress:
           label: Voortgang
         word_count:
           label: Woord
+          separator: ', '
         tags_count:
           label: Labels
+          separator: ', '
         changed:
           label: Gewijzigd
+          separator: ', '
         operations:
           label: Bewerkingen
       filters:

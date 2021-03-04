@@ -7,6 +7,8 @@ display:
           submit_button: Appliquer
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -29,8 +31,10 @@ display:
           label: Progression
         word_count:
           label: Mots
+          separator: ', '
         tags_count:
           label: Étiquettes
+          separator: ', '
         changed:
           label: Modifié
         operations:
@@ -50,7 +54,9 @@ display:
           label: Type
         word_count:
           label: Mots
+          separator: ', '
         changed:
           label: Modifié
+          separator: ', '
   submitted:
     display_title: Soumis

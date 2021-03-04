@@ -29,6 +29,8 @@ display:
     display_title: Nettside
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Rediger
         delete_media:

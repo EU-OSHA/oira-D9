@@ -5,6 +5,7 @@ display:
       exposed_form:
         options:
           submit_button: Toepassen
+          reset_button_label: Reset
           exposed_sorts_label: 'Sorteren op'
           sort_asc_label: Oplopend
           sort_desc_label: Aflopend
@@ -22,8 +23,11 @@ display:
       fields:
         created:
           label: Aangemaakt
+        label:
+          label: Item
         name:
           label: Naam
+          separator: ', '
       title: Berichten
       arguments:
         tjid:

@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -26,8 +27,11 @@ display:
           label: Element
         name:
           label: Navn
+          separator: ', '
       title: Beskeder
       arguments:
         tjid:
           exception:
             title: Alle
+  embed:
+    display_title: Embed

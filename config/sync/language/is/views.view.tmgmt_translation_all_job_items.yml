@@ -22,10 +22,17 @@ display:
           label: Gerð
         source_language:
           label: Frá
+          separator: ', '
         target_language:
           label: Til
+          separator: ', '
+        word_count:
+          separator: ', '
         tags_count:
           label: Efnisorð
+          separator: ', '
+        changed:
+          separator: ', '
         operations:
           label: Aðgerðir
       filters:

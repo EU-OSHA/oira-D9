@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -28,14 +29,21 @@ display:
           label: Typ
         source_language:
           label: Von
+          separator: ', '
         target_language:
           label: An
+          separator: ', '
         progress:
           label: Fortschritt
         word_count:
           label: Wort
+          separator: ', '
+        tags_count:
+          label: Tags
+          separator: ', '
         changed:
           label: Geändert
+          separator: ', '
         operations:
           label: Aktionen
       filters:
@@ -54,6 +62,8 @@ display:
           group_info:
             label: Job-Typ
             group_items:
+              1:
+                title: Normal
               2:
                 title: Fortlaufend
       title: Auftragselemente

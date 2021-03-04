@@ -17,6 +17,9 @@ display:
             items_per_page_label: 'Elementów na stronę'
             items_per_page_options_all_label: '- Wszystko -'
             offset_label: Przesunięcie
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         media_bulk_form:
           action_title: Akcja
@@ -62,6 +65,8 @@ display:
       fields:
         media_bulk_form:
           action_title: Akcja
+        name:
+          separator: ', '
         edit_media:
           alter:
             text: 'Edytuj {{ name }}'

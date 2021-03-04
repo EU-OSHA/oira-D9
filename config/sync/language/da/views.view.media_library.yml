@@ -1,5 +1,6 @@
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -13,6 +14,9 @@ display:
             items_per_page_label: 'Antal elementer'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskydning
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
         media_bulk_form:
           action_title: Handling
@@ -52,11 +56,14 @@ display:
       fields:
         media_bulk_form:
           action_title: Handling
+        name:
+          separator: ', '
         edit_media:
           text: Redigér
         delete_media:
           text: Slet
   widget:
+    display_title: Widget
     display_options:
       filters:
         name:
