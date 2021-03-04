@@ -38,13 +38,31 @@
       }
     }
   }
-  .menu--social-menu{
+  .menu--social-menu-footer{
     margin-top: 0;
     margin-left: auto;
+    > ul > li > a{
+      display: none;
+    }
     ul{
+      list-style: none;
       li{
+        float: left;
         a{
           padding: 0;
+        }
+      }
+      .field--type-entity-reference{
+        margin: 0;
+      }
+      .menu-item{
+        a{
+          border-right: 0;
+        }
+      }
+      .field--type-image{
+        img{
+          margin: 0 10px 0 0;
         }
       }
     }

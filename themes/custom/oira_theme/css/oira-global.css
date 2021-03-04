@@ -700,12 +700,30 @@ select.custom-select {
 .site-footer #block-footermenu ul li a:hover {
   text-decoration: underline;
 }
-.site-footer .menu--social-menu {
+.site-footer .menu--social-menu-footer {
   margin-top: 0;
   margin-left: auto;
 }
-.site-footer .menu--social-menu ul li a {
+.site-footer .menu--social-menu-footer > ul > li > a {
+  display: none;
+}
+.site-footer .menu--social-menu-footer ul {
+  list-style: none;
+}
+.site-footer .menu--social-menu-footer ul li {
+  float: left;
+}
+.site-footer .menu--social-menu-footer ul li a {
   padding: 0;
+}
+.site-footer .menu--social-menu-footer ul .field--type-entity-reference {
+  margin: 0;
+}
+.site-footer .menu--social-menu-footer ul .menu-item a {
+  border-right: 0;
+}
+.site-footer .menu--social-menu-footer ul .field--type-image img {
+  margin: 0 10px 0 0;
 }
 
 .top-header-content {
