@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.browser_additional_resources
+    - views.view.aditional_resources
   module:
     - views
 name: browser_additional_resources
@@ -21,7 +21,7 @@ widget_selector_configuration: {  }
 widgets:
   cc98f03a-e3c2-4927-bbbc-3f93ce8fa049:
     settings:
-      view: browser_additional_resources
+      view: aditional_resources
       view_display: entity_browser_1
       submit_text: 'Select entities'
       auto_select: false

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.browser_recommended_articles
+    - views.view.articles
   module:
     - views
 name: browser_recommended_articles
@@ -21,7 +21,7 @@ widget_selector_configuration: {  }
 widgets:
   a7961c38-b8a9-4cc4-b408-1d17a2f9d883:
     settings:
-      view: browser_recommended_articles
+      view: articles
       view_display: entity_browser_1
       submit_text: 'Select entities'
       auto_select: false
