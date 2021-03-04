@@ -13,8 +13,6 @@ display:
       fields:
         label:
           label: Etikett
-        type:
-          label: Type
         source_language:
           label: Frå
           separator: ', '

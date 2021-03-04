@@ -49,7 +49,6 @@ display:
         name_1:
           expose:
             label: 'Namn (Z-A)'
-      title: Media
       empty:
         area_text_custom:
           content: 'Ingen media tillgänglig.'

@@ -63,7 +63,7 @@ display:
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: 'col-md-2 col-sm-6 views-col'
+          col_class_custom: 'col-6 col-md-3 col-lg-2 views-col'
           row_class_default: true
           row_class_custom: row
       row:

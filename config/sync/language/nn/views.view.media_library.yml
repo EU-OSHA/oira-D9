@@ -24,7 +24,6 @@ display:
         langcode:
           expose:
             label: Språk
-      title: Media
   page:
     display_title: Nettside
     display_options:
