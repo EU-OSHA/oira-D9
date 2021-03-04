@@ -5,6 +5,9 @@ dependencies:
   config:
     - field.storage.node.field_recommended_resources
     - node.type.article
+    - node.type.external_url
+    - node.type.news
+    - node.type.slideshare
 id: node.article.field_recommended_resources
 field_name: field_recommended_resources
 entity_type: node
@@ -16,10 +19,15 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: views
+  handler: 'default:node'
   handler_settings:
-    view:
-      view_name: aditional_resources
-      display_name: entity_reference_1
-      arguments: {  }
+    target_bundles:
+      external_url: external_url
+      news: news
+      slideshare: slideshare
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: external_url
 field_type: entity_reference
