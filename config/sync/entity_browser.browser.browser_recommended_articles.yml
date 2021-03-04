@@ -1,0 +1,31 @@
+uuid: 5fa83f46-9efc-44fa-bc12-33a588fd9aa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.browser_recommended_articles
+  module:
+    - views
+name: browser_recommended_articles
+label: 'Browser Recommended Articles'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  a7961c38-b8a9-4cc4-b408-1d17a2f9d883:
+    settings:
+      view: browser_recommended_articles
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: a7961c38-b8a9-4cc4-b408-1d17a2f9d883
+    weight: 1
+    label: 'Recommended articles'
+    id: view

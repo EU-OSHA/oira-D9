@@ -9,6 +9,8 @@ dependencies:
     - node.type.slide
   module:
     - link
+    - linked_field
+    - media
     - text
     - user
 id: node.slide.default
@@ -18,22 +20,30 @@ mode: default
 content:
   body:
     label: hidden
-    type: text_default
+    type: text_summary_or_trimmed
     weight: 101
-    settings: {  }
+    settings:
+      trim_length: 300
     third_party_settings: {  }
     region: content
   field_image:
     weight: 105
-    label: above
+    label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_link
+        advanced: {  }
+        token: ''
+    type: media_thumbnail
     region: content
   field_link:
     weight: 104
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -45,9 +55,9 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
