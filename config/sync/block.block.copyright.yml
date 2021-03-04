@@ -1,8 +1,11 @@
-uuid: 1d90822c-fea5-4739-8ea2-da9d882ff1cf
+uuid: 3c617d37-740f-4813-b40d-b112f295667f
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:bfa207e6-8b4f-4fd6-9d7b-eb97be80ab22'
   module:
+    - block_content
     - context
   theme:
     - oira_theme
@@ -11,9 +14,9 @@ theme: oira_theme
 region: footer_end
 weight: -11
 provider: null
-plugin: 'block_content:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
+plugin: 'block_content:bfa207e6-8b4f-4fd6-9d7b-eb97be80ab22'
 settings:
-  id: 'block_content:651275cc-d2ce-4a26-bd06-4c91c5b811f8'
+  id: 'block_content:bfa207e6-8b4f-4fd6-9d7b-eb97be80ab22'
   label: Copyright
   provider: block_content
   label_display: '0'
