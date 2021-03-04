@@ -33,5 +33,3 @@ display:
         tjid:
           exception:
             title: Alle
-  embed:
-    display_title: Embed

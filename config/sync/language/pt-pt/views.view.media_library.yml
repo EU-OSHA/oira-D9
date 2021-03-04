@@ -70,7 +70,6 @@ display:
         delete_media:
           text: Eliminar
   widget:
-    display_title: Widget
     display_options:
       filters:
         name:

@@ -11,7 +11,7 @@ dependencies:
 id: masquerade
 theme: oira_theme
 region: header_form
-weight: -9
+weight: 0
 provider: null
 plugin: masquerade
 settings:

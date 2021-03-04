@@ -55,7 +55,6 @@ display:
           expose:
             label: Fournisseur
   page_1:
-    display_title: Page
     display_options:
       menu:
         title: Travaux
