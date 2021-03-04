@@ -1,4 +1,4 @@
-uuid: c6d65b69-0189-42e8-b8b8-9b89ee741914
+uuid: 2900ce02-4c32-421e-9707-89ba9143172d
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: socialmenu
 theme: oira_theme
 region: header_form
-weight: -7
+weight: -11
 provider: null
 plugin: 'system_menu_block:social-menu'
 settings:
