@@ -78,7 +78,6 @@ display:
             alt: '{{ name }} verwijderen'
           text: Verwijderen
   widget:
-    display_title: Widget
     display_options:
       filters:
         name:

@@ -18,8 +18,6 @@ display:
       fields:
         created:
           label: Geskep
-        label:
-          label: Item
         name:
           label: Naam
       arguments:

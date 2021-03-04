@@ -59,13 +59,10 @@ display:
           group_info:
             label: 'Catégorie de travail'
             group_items:
-              1:
-                title: Normal
               2:
                 title: Continu
       title: 'Éléments de travail'
   page_1:
-    display_title: Page
     display_options:
       menu:
         title: 'Éléments de travail'
