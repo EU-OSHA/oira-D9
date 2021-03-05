@@ -23,6 +23,8 @@ display:
       fields:
         created:
           label: Aangemaakt
+        label:
+          label: Item
         name:
           label: Naam
           separator: ', '
