@@ -15,45 +15,17 @@ display:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
-          tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
       fields:
-        state:
-          label: State
         label:
           label: Label
-        type:
-          label: Type
-        progress:
-          label: Progress
-        word_count:
-          separator: ', '
         tags_count:
           label: Etichete
-          separator: ', '
-        changed:
-          label: Changed
-        operations:
-          label: Operations
       arguments:
         tjid:
           exception:
             title: Toate
   checkout:
-    display_title: Checkout
     display_options:
       fields:
         label:
           label: Label
-        type:
-          label: Type
-        word_count:
-          separator: ', '
-        changed:
-          label: Changed
-          separator: ', '
-  submitted:
-    display_title: Submitted
