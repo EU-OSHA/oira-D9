@@ -1,4 +1,4 @@
-uuid: 04de7446-5f71-4387-86ad-9839477e2aa1
+uuid: de3488a4-59d8-4937-afdc-e526ba4a6c7a
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: footermenu
 theme: oira_theme
 region: footer_end
-weight: -9
+weight: -10
 provider: null
 plugin: 'system_menu_block:footer-menu'
 settings:

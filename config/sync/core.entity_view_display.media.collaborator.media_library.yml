@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
+    - field.field.media.collaborator.field_collaborator_name
     - field.field.media.collaborator.field_media_image
     - image.style.medium
     - media.type.collaborator
@@ -36,6 +37,7 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_collaborator_name: true
   field_media_image: true
   langcode: true
   search_api_excerpt: true

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browser_additional_resources
     - field.field.node.article.body
     - field.field.node.article.field_aditional_resources
     - field.field.node.article.field_archived
@@ -10,7 +11,6 @@ dependencies:
     - field.field.node.article.field_character_count
     - field.field.node.article.field_expiration_date
     - field.field.node.article.field_image
-    - field.field.node.article.field_image_media
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_recommended_articles
@@ -20,11 +20,11 @@ dependencies:
     - field.field.node.article.field_summary
     - field.field.node.article.field_tags
     - field.field.node.article.field_wiki_categories
-    - image.style.thumbnail
+    - field.field.node.article.field_workbench_access
     - node.type.article
   module:
     - datetime
-    - image
+    - entity_browser
     - media_library
     - path
     - text
@@ -37,7 +37,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 4
     region: content
     settings:
       rows: 9
@@ -47,31 +47,39 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 21
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   field_aditional_resources:
-    weight: 13
-    settings: {  }
+    weight: 14
+    settings:
+      entity_browser: browser_additional_resources
+      field_widget_display: label
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_replace: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: options_buttons
+    type: entity_browser_entity_reference
     region: content
   field_archived:
-    weight: 12
+    weight: 13
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_article_type:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_character_count:
-    weight: 16
+    weight: 17
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -84,14 +92,6 @@ content:
     type: datetime_default
     region: content
   field_image:
-    type: image_image
-    weight: 4
-    region: content
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_image_media:
     type: media_library_widget
     weight: 5
     settings:
@@ -99,7 +99,7 @@ content:
     third_party_settings: {  }
     region: content
   field_page_count:
-    weight: 17
+    weight: 18
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -112,17 +112,33 @@ content:
     type: datetime_default
     region: content
   field_recommended_articles:
-    weight: 15
-    settings: {  }
+    weight: 16
+    settings:
+      entity_browser: browser_recommended_articles
+      field_widget_display: label
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_replace: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: options_buttons
+    type: entity_browser_entity_reference
     region: content
   field_recommended_resources:
-    weight: 14
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
+    type: entity_browser_entity_reference
+    weight: 15
     region: content
+    settings:
+      entity_browser: browser_additional_resources
+      field_widget_display: label
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_replace: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
   field_related_oshwiki_articles:
     weight: 11
     settings: {  }
@@ -136,7 +152,7 @@ content:
     type: options_select
     region: content
   field_summary:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -155,16 +171,22 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
+  field_workbench_access:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   langcode:
     type: language_select
-    weight: 20
+    weight: 21
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 24
+    weight: 25
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -172,21 +194,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 22
+    weight: 23
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 19
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 23
+    weight: 24
     region: content
     third_party_settings: {  }
   title:
@@ -197,10 +219,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: options_select
-    weight: 19
+  translation:
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+  uid:
+    type: options_select
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_image2: true
+  field_image2_media: true

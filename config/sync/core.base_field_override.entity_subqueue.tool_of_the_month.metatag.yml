@@ -1,0 +1,18 @@
+uuid: fcea1471-d8ea-4f1d-af54-c55ce6f84491
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.tool_of_the_month
+id: entity_subqueue.tool_of_the_month.metatag
+field_name: metatag
+entity_type: entity_subqueue
+bundle: tool_of_the_month
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

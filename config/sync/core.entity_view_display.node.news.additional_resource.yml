@@ -10,17 +10,17 @@ dependencies:
     - field.field.node.news.field_co_author
     - field.field.node.news.field_image
     - field.field.node.news.field_image_home_latest_news
-    - field.field.node.news.field_image_media
     - field.field.node.news.field_migration_source
     - field.field.node.news.field_page_count
     - field.field.node.news.field_publication_date
     - field.field.node.news.field_summary
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
+    - field.field.node.news.field_workbench_access
     - node.type.news
   module:
     - datetime
-    - image
+    - media
     - text
     - user
 id: node.news.additional_resource
@@ -36,14 +36,14 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
+    type: media_thumbnail
     weight: 0
+    region: content
     label: above
     settings:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
-    type: image
-    region: content
   field_publication_date:
     weight: 1
     label: hidden
@@ -53,6 +53,13 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_summary:
+    type: text_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
@@ -61,12 +68,11 @@ hidden:
   field_character_count: true
   field_co_author: true
   field_image_home_latest_news: true
-  field_image_media: true
   field_migration_source: true
   field_page_count: true
-  field_summary: true
   field_tags: true
   field_wf_notification: true
+  field_workbench_access: true
   langcode: true
   links: true
   search_api_excerpt: true

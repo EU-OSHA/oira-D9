@@ -1,0 +1,29 @@
+uuid: 6b8c199d-9fc3-423a-83a9-7c3457167baf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_partners
+    - node.type.partner
+    - node.type.promotional_material
+id: node.promotional_material.field_related_partners
+field_name: field_related_partners
+entity_type: node
+bundle: promotional_material
+label: 'Related partners'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      partner: partner
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

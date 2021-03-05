@@ -57,11 +57,12 @@
             {% if node.bundle == 'news' %}
               <section class="section container">
             {% else %}
-              <section class="section">
+              <section class="section oira-section">
             {% endif %}
-                <a id="main-content" tabindex="-1"></a>
+              <div class="no-container">
                 {{ page.content }}
-                </section>
+              </div>
+            </section>
         </main>
     </div>
   </div>

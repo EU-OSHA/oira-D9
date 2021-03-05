@@ -1,0 +1,44 @@
+uuid: d73671ac-6563-4abe-bc2b-c4c5e403c7f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_workbench_access
+    - field.field.node.news.field_workbench_access
+    - field.field.node.partner.field_workbench_access
+    - field.field.node.practical_tool.field_workbench_access
+    - field.field.node.promotional_material.field_workbench_access
+    - field.field.node.strategic_documentation.field_workbench_access
+    - taxonomy.vocabulary.section
+id: partner
+label: Partner
+plural_label: Partners
+scheme: taxonomy
+scheme_settings:
+  vocabularies:
+    - section
+  fields:
+    -
+      entity_type: node
+      bundle: article
+      field: field_workbench_access
+    -
+      entity_type: node
+      bundle: news
+      field: field_workbench_access
+    -
+      entity_type: node
+      bundle: practical_tool
+      field: field_workbench_access
+    -
+      entity_type: node
+      bundle: partner
+      field: field_workbench_access
+    -
+      entity_type: node
+      bundle: promotional_material
+      field: field_workbench_access
+    -
+      entity_type: node
+      bundle: strategic_documentation
+      field: field_workbench_access

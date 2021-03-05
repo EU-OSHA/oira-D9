@@ -1,0 +1,22 @@
+uuid: a2962782-d256-43ea-aac9-c06c4398d0ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.tool_of_the_month
+id: entity_subqueue.tool_of_the_month.status
+field_name: status
+entity_type: entity_subqueue
+bundle: tool_of_the_month
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

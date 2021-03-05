@@ -1,0 +1,32 @@
+uuid: f3902be6-553f-4c61-b9ef-ee933333bada
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.menu_link_content.social-menu-footer.field_image
+    - system.menu.social-menu-footer
+id: menu_link_content.social-menu-footer.default
+targetEntityType: menu_link_content
+bundle: social-menu-footer
+mode: default
+content:
+  children:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

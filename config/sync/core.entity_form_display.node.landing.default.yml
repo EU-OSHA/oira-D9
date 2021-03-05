@@ -1,0 +1,42 @@
+uuid: 5d70e939-4d72-4e80-ab40-6f2ffc35e6d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing.body
+    - field.field.node.landing.layout_builder__layout
+    - node.type.landing
+  module:
+    - text
+id: node.landing.default
+targetEntityType: node
+bundle: landing
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  layout_builder__layout: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

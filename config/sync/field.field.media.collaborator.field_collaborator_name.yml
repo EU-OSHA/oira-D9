@@ -1,0 +1,19 @@
+uuid: f3662a04-8983-43ee-93f4-8218f91341d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_collaborator_name
+    - media.type.collaborator
+id: media.collaborator.field_collaborator_name
+field_name: field_collaborator_name
+entity_type: media
+bundle: collaborator
+label: collaborator_name
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

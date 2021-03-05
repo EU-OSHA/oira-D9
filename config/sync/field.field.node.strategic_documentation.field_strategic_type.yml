@@ -1,29 +1,21 @@
-uuid: 7f64a446-2e69-4e4c-89ee-9247a554e2c1
+uuid: ba2dd345-7f75-4d7b-9182-70bfc3a40315
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_strategic_type
     - node.type.strategic_documentation
-    - taxonomy.vocabulary.strategic_type
+  module:
+    - options
 id: node.strategic_documentation.field_strategic_type
 field_name: field_strategic_type
 entity_type: node
 bundle: strategic_documentation
 label: Type
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:taxonomy_term'
-  handler_settings:
-    target_bundles:
-      strategic_type: strategic_type
-    sort:
-      field: name
-      direction: asc
-    auto_create: false
-    auto_create_bundle: ''
-field_type: entity_reference
+settings: {  }
+field_type: list_string

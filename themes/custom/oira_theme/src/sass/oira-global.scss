@@ -15,11 +15,12 @@
 @import 'layout/body';
 @import 'layout/footer';
 @import 'layout/header';
+@import 'layout/home';
 @import 'layout/menu';
 @import 'layout/section';
 
 @import 'responsive/common/common-responsive';
-@import 'responsive/mobile/mobile-responsive';
 @import 'responsive/tablet/tablet-responsive';
+@import 'responsive/mobile/mobile-responsive';
 
 @import 'components/helper';

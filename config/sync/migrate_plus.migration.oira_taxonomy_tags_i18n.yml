@@ -1,4 +1,4 @@
-uuid: 650e7830-58db-4b8d-b134-9991d2dca1a4
+uuid: d5db90b9-d648-4060-8628-aeb13fc0bdf1
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ class: null
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
-migration_group: oira_migrate
+migration_group: oira_migrate_tax
 label: 'Terms: Tags Translations'
 source:
   plugin: d7_locale_terms
@@ -21,19 +21,37 @@ process:
     plugin: migration_lookup
     migration: oira_taxonomy_tags
     source: tid
-  langcode: ltlanguage
+  langcode:
+    plugin: static_map
+    bypass: true
+    source: ltlanguage
+    map:
+      pt: pt-pt
+      'no': nn
   vid:
     -
       plugin: default_value
       default_value: tags
   name: name_field_value
-  field_tags_code:
+  description/value: description
+  description/format: format
+  weight: weight
+  parent_id:
     -
-      plugin: get
-      source: field_tags_code
-  field_excluded_from:
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration: oira_taxonomy_tags
+  parent:
     plugin: default_value
-    default_value: field_excluded_from
+    default_value: 0
+    source: '@parent_id'
+  forum_container: is_container
+  changed: timestamp
+  field_tags_code: field_tags_code
+  field_excluded_from: field_excluded_from
 destination:
   plugin: 'entity:taxonomy_term'
   translations: true

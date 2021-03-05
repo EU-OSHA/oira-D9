@@ -1,12 +1,11 @@
-uuid: c6dc4f78-01bd-42eb-aad4-3de70222fe7d
+uuid: fbc0b1f9-f1b4-47d2-ae14-eea2640ed673
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_image
+    - media.type.image_and_link
     - node.type.slide
-  module:
-    - image
 id: node.slide.field_image
 field_name: field_image
 entity_type: node
@@ -14,25 +13,17 @@ bundle: slide
 label: Image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: true
-  alt_field_required: true
-  title_field: false
-  title_field_required: false
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  handler: 'default:file'
-  handler_settings: {  }
-field_type: image
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image_and_link: image_and_link
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

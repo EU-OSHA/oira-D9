@@ -1,4 +1,32 @@
 @media only screen and (max-width : 991px) {
+  /* Header Search */
+  .top-header-content{
+    .header-blocks{
+      .block-search-form-block{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        input {
+          display: none;
+          height: 30px;
+        }
+        .btn-primary{
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  #block-socialmenu{
+    display: none;
+  }
+  .top-header-content{
+    .header-menu-news {
+      position: absolute;
+      top: 70px;
+      right: 20px;
+    }
+  }
+
   /* Menu responsive */
   #navbar-main {
     padding: 0;
@@ -62,4 +90,4 @@
     }
   }
 
-}
+}/* End Media 991px */

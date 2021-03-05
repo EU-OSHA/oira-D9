@@ -1,4 +1,9 @@
 popup_agreed:
   value: '<h2>Tak forfi du accepterede cookies</h2><p>Du kan nu skjule denne meddelelse eller lære mere om cookies.</p>'
 popup_hide_button_message: Skjul
+popup_info:
+  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
+popup_link: /
+withdraw_message:
+  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
 withdraw_tab_button_label: 'Indstillinger for privatliv'

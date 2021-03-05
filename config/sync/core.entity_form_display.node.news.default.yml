@@ -9,18 +9,16 @@ dependencies:
     - field.field.node.news.field_co_author
     - field.field.node.news.field_image
     - field.field.node.news.field_image_home_latest_news
-    - field.field.node.news.field_image_media
     - field.field.node.news.field_migration_source
     - field.field.node.news.field_page_count
     - field.field.node.news.field_publication_date
     - field.field.node.news.field_summary
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
-    - image.style.thumbnail
+    - field.field.node.news.field_workbench_access
     - node.type.news
   module:
     - datetime
-    - image
     - media_library
     - path
     - text
@@ -65,12 +63,11 @@ content:
     type: options_select
     region: content
   field_image:
-    weight: 2
+    weight: 3
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
-    type: image_image
+    type: media_library_widget
     region: content
   field_image_home_latest_news:
     type: media_library_widget
@@ -79,15 +76,8 @@ content:
       media_types: {  }
     third_party_settings: {  }
     region: content
-  field_image_media:
-    weight: 3
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    type: media_library_widget
-    region: content
   field_migration_source:
-    weight: 11
+    weight: 21
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -106,7 +96,7 @@ content:
     type: datetime_default
     region: content
   field_summary:
-    weight: 1
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -125,6 +115,12 @@ content:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_workbench_access:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   langcode:
     type: language_select
@@ -162,11 +158,16 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 11
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

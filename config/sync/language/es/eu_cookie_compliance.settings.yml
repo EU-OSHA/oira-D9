@@ -4,5 +4,10 @@ popup_agree_button_message: Aceptar
 popup_more_info_button_message: 'Más info'
 popup_find_more_button_message: 'Más info'
 popup_hide_button_message: Ocultar
+popup_info:
+  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
+popup_link: /
+withdraw_message:
+  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
 withdraw_tab_button_label: 'Opciones de privacidad'
 save_preferences_button_label: 'Guardar preferencias'

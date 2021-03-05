@@ -1,10 +1,11 @@
 .top-header-content{
-  height: 135px;
+  height: 150px;
   display: flex;
   align-content: center;
   .region-top-header-logos{
     float: left;
     .field--name-field-image{
+      height: 150px;
       display: flex;
       margin: 0;
       align-items: center;
@@ -45,6 +46,10 @@
       display: block;
     }
     /* Search*/
+    .form-row>fieldset, .form-row>div{
+      padding-left: 0;
+      padding-right: 0;
+    }
     .block-search-form-block{
       input{
         border-radius: 0px;
@@ -73,11 +78,13 @@
   }
 }
 
-/* Hide menu link to view only the Share links images in header and footer */
-#block-socialmenu, #block-socialmenu-2{
+/* Hide menu link to view only the Share links images in header */
+#block-socialmenu{
   > ul{
     list-style: none;
     > li{
+      float: left;
+      margin-right: 10px;
       > a{
         display: none;
       }

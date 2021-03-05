@@ -1,0 +1,296 @@
+/* SCSS to Home Page */
+
+.content-home{
+  h2{
+    color: $text-color-purple-light;
+    border-bottom: 2px solid $text-color-purple-light;
+    font-size: 2.2rem;
+    padding-bottom: 15px;
+    font-family: 'Oswald';
+  }
+}
+.content-purple {
+  background: $bg-color-purple-light;
+  padding-top: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+.content-white {
+  background: $bg-color-white;
+  padding-top: 2rem;
+  padding-bottom: 0.7rem;
+}
+
+.content-home{
+  .field__label{
+    float: left;
+    &:after{
+      content: ':';
+    }
+  }
+  .field__item{
+    font-style: italic;
+    font-weight: 600;
+  }
+}
+
+.home-slider{
+  .view-slideshow{
+    margin-top: 35px;
+    background-color: $bg-color-purple;
+    > .row{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .media--ratio--fluid{
+    padding-bottom: 0 !important;
+  }
+  .slick-dotted.slick-slider{
+    margin-bottom: 0;
+  }
+  .views-field-field-image{
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .views-field-title, .views-field-body{
+    position: relative;
+    background-color: $bg-color-purple;
+    min-height: auto !important;
+    transform: initial !important;
+    color: $text-color-white;
+    h1{
+      padding-top: 1.5rem;
+      a{
+        color: $text-color-white;
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+  }
+  .views-field-body{
+    padding-top: 0;
+    padding-bottom: 4.3rem;
+    font-size: 1.2rem;
+  }
+  .slick-dots{
+    bottom: 20px;
+  }
+  .slick-dots li.slick-active button:before{
+    color: $bg-color-white;
+    font-size: 1rem;
+    opacity: 1;
+  }
+  .slick-dots li button:before{
+    color: $bg-color-purple-light;
+    font-size: 1rem;
+    opacity: 1;
+  }
+}
+
+.content-oira-tools {
+  h2:after {
+    content: "";
+    background: url(../images/oira-tools.png) no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    float: right;
+  }
+  h3{
+    margin-top: 10px;
+    margin-bottom: 10 px;
+    a:hover{
+      color: $text-color-blue-hover;
+    }
+  }
+  .view-tools{
+    padding-top: 1rem;
+    .views-item-columns-container{
+      background: $bg-color-white;
+      padding: 1rem;
+      height: 100%;
+      .views-field-field-tool-link{
+        margin-top: 5px;
+        a{
+          color: $text-color-black;
+          font-style: normal;
+          &:after {
+            position: absolute;
+            content: "\e164";
+            font-family: 'Glyphicons Halflings';
+            color: $text-color-blue-light;
+            padding-left: 5px;
+          }
+        }
+      }
+      .field--name-field-country{
+        margin-bottom: 0;
+      }
+
+      span.see-more{
+        position: absolute;
+        cursor: pointer;
+        color: $text-color-blue-light;
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: none;
+        right: 30px;
+        bottom: 15px;
+        &:hover{
+          text-decoration: underline;
+        }
+        &:before {
+          content: '>';
+          margin-right: 5px;
+          display: inline-block;
+          position: relative;
+          top: -1px;
+        }
+      }
+    }
+  }
+  .more-link{
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.content-latest-news{
+  h2:after {
+    content: "";
+    background: url(../images/latest-news.png) no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    float: right;
+  }
+  .view-news{
+    .attachment-before{
+      border-bottom: 2px solid $bg-color-purple;
+      padding-bottom: 0;
+      padding-top: 20px;
+      .views-field-nothing{
+        float: left;
+        margin-right: 1.5rem;
+        width: 50%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      h3{
+        a{
+          font-size: 2rem;
+        }
+      }
+      span.see-more{
+        float: none;
+      }
+    }
+    .views-row {
+      padding: 0;
+    }
+    .views-row:nth-child(odd) {
+      background-color: transparent;
+    }
+    h3{
+      a:hover{
+        color: $text-color-blue-hover;
+      }
+    }
+    span.see-more{
+      float: right;
+    }
+    .more-link{
+     text-align: right;
+    }
+    .views-view-grid.horizontal{
+      padding-left: 0;
+      padding-right: 0;
+      .col-md-12.col-sm-12{
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .row{
+        display: flex;
+        justify-content: space-between;
+        .col-md-4{
+          flex-basis: 30%;
+        }
+      }
+    }
+  }
+}
+
+.content-promotional-materials{
+  h2:after {
+    content: "";
+    background: url(../images/promotional-materials.png) no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    float: right;
+  }
+  .intro-text-view{
+    color: $text-color-purple-light;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    font-style: italic;
+  }
+  .view-promotional-materials{
+    padding-bottom: 0;
+    padding-top: 20px;
+    .view-content.row{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    h4{
+      font-size: 1.25rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .views-field-nothing{
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .more-link{
+    width: 100%;
+    text-align: right;
+  }
+}
+.content-oira-partners{
+  h2:after {
+    content: "";
+    background: url(../images/oira-partners.png) no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    float: right;
+  }
+  .view-oira-partners{
+    padding-bottom: 0;
+    padding-top: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .views-view-grid.horizontal{
+      margin-bottom: 20px;
+    }
+    .more-link{
+      width: 100%;
+      border-top: 2px solid $bg-color-purple;
+      padding-top: 20px;
+      text-align: right;
+    }
+  }
+
+}

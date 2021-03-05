@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.collaborator.field_collaborator_name
     - field.field.media.collaborator.field_media_image
     - image.style.large
     - media.type.collaborator
@@ -13,6 +14,14 @@ targetEntityType: media
 bundle: collaborator
 mode: default
 content:
+  field_collaborator_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_media_image:
     label: visually_hidden
     weight: 1
