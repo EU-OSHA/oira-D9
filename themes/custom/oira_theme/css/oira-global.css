@@ -193,7 +193,7 @@ a:hover {
 }
 
 .node__content .field--name-field-summary p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .node__content .field--name-field-summary p strong {
   font-weight: 700;
@@ -224,6 +224,57 @@ a:hover {
   margin-left: auto;
 }
 
+/* Share this on articles icons */
+#share-this-on {
+  float: left;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+#share-this-on .a2a_svg svg {
+  display: none;
+}
+#share-this-on .a2a_s__default {
+  background-color: transparent !important;
+}
+#share-this-on .a2a_button_facebook {
+  background: url(../images/share-facebook.png) no-repeat;
+  background-size: 23px;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  margin-right: 7px;
+}
+#share-this-on .a2a_button_twitter {
+  background: url(../images/share-twitter.png) no-repeat;
+  background-size: 23px;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  margin-right: 7px;
+}
+#share-this-on .a2a_button_linkedin_share button {
+  background: url(../images/share-linkedin.png) no-repeat;
+  background-size: 23px;
+  width: 23px;
+  height: 23px !important;
+  display: inline-block;
+  background-color: transparent !important;
+  text-indent: -9999px;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.addtoany_list.a2a_kit_size_32 a > span {
+  width: 23px !important;
+}
+
+.addtoany_list a:hover span {
+  opacity: 1;
+}
+
+/* END Share this on articles icons */
 .node__content {
   margin-top: 0;
 }
