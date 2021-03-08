@@ -7,4 +7,5 @@ label: Partner
 weight: 10
 is_admin: null
 permissions:
+  - 'use oira transition creating_final_draft'
   - 'use workbench access'

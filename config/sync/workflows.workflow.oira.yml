@@ -47,25 +47,25 @@ type_settings:
       to: final_draft
       weight: -3
     publish:
-      label: Publishing
+      label: 'Publishing Draft'
       to: published
       weight: -2
       from:
         - draft
     publishing:
-      label: Publishing
+      label: 'Publishing Approved Draft'
       from:
         - to_be_approved
       to: published
       weight: 3
     reject_approved_draft:
-      label: Reject
+      label: 'Reject Approved Draft'
       from:
         - to_be_approved
       to: draft
       weight: 2
     reject_reviewed_draft:
-      label: Reject
+      label: 'Reject Reviewed Draft'
       from:
         - needs_review
       to: draft
