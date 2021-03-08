@@ -1,0 +1,38 @@
+uuid: 7c62e75d-9d5e-444a-b470-7ac793188826
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.certificates.body
+    - field.field.node.certificates.field_workbench_access
+    - node.type.certificates
+  module:
+    - text
+    - user
+id: node.certificates.teaser
+targetEntityType: node
+bundle: certificates
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_workbench_access: true
+  langcode: true
+  search_api_excerpt: true
