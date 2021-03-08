@@ -1,0 +1,18 @@
+uuid: 9a577d73-148c-4735-b7e1-a5e06eb3a582
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Certificates
+type: certificates
+description: 'Content type to view the Certidicates iframe'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
