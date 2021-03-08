@@ -8,7 +8,7 @@ dependencies:
     - node
     - user
 id: related_partners
-label: 'Related partners'
+label: 'Related partners reference view'
 module: views
 description: ''
 tag: ''
