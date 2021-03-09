@@ -1,27 +1,27 @@
-uuid: a8f32fca-a26a-4714-b08a-245e9df1fcbf
+uuid: b7395cfa-819c-4172-92fa-8dae129ba1ff
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.oira_ws
+    - facets.facet.country_search_facet
   module:
     - context
+    - facets
     - system
-    - views
   theme:
     - oira_theme
-id: exposedformoira_wstools_ws_2
+id: countryforsearchsite
 theme: oira_theme
 region: sidebar_first
-weight: -13
+weight: -7
 provider: null
-plugin: 'views_exposed_filter_block:oira_ws-tools_ws'
+plugin: 'facet_block:country_search_facet'
 settings:
-  id: 'views_exposed_filter_block:oira_ws-tools_ws'
-  label: ''
-  provider: views
+  id: 'facet_block:country_search_facet'
+  label: Country
+  provider: facets
   label_display: visible
-  views_label: ''
+  block_id: countryforsearchsite
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -33,5 +33,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /oira-tools
+    pages: /search
     negate: false
