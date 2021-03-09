@@ -5,6 +5,7 @@ dependencies:
   module:
     - search_api_solr
     - node
+    - content_translation
     - search_api
   config:
     - field.storage.node.field_aditional_resources
@@ -87,6 +88,14 @@ field_settings:
     dependencies:
       module:
         - node
+  content_translation_source:
+    label: 'Translation source'
+    datasource_id: 'entity:node'
+    property_path: content_translation_source
+    type: string
+    dependencies:
+      module:
+        - content_translation
   created:
     label: 'Authored on'
     datasource_id: 'entity:node'
@@ -96,6 +105,14 @@ field_settings:
       module:
         - node
   default_langcode:
+    label: 'Default translation'
+    datasource_id: 'entity:node'
+    property_path: default_langcode
+    type: boolean
+    dependencies:
+      module:
+        - node
+  default_langcode_1:
     label: 'Default translation'
     datasource_id: 'entity:node'
     property_path: default_langcode
