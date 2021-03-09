@@ -6,4 +6,13 @@ id: oira_project_manager
 label: 'Oira Project Manager'
 weight: 11
 is_admin: null
-permissions: {  }
+permissions:
+  - 'use oira transition creating_final_draft'
+  - 'use oira transition publish'
+  - 'use oira transition publishing'
+  - 'use oira transition reject_approved_draft'
+  - 'use oira transition reject_reviewed_draft'
+  - 'use oira transition requesting_approval'
+  - 'use oira transition reviewing_final_draft'
+  - 'view any unpublished content'
+  - 'view latest version'
