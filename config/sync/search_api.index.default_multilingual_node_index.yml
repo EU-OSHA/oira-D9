@@ -5,71 +5,25 @@ dependencies:
   module:
     - search_api_solr
     - node
-    - content_moderation
-    - content_translation
     - search_api
   config:
     - field.storage.node.field_aditional_resources
-    - field.storage.node.field_ph_address
-    - field.storage.node.field_alternative_body
-    - field.storage.node.field_alternative_title
-    - field.storage.node.field_archived
-    - field.storage.node.field_article_type
     - field.storage.node.body
-    - field.storage.node.field_collaboration_items
-    - field.storage.node.field_collaborator
-    - field.storage.node.field_mission_statement
     - field.storage.node.field_country
-    - field.storage.node.field_dedicated_oira_website
-    - field.storage.node.field_third_description
     - field.storage.node.field_expiration_date
-    - field.storage.node.field_file
-    - field.storage.node.field_general_email
-    - field.storage.node.field_oira_private_image
     - field.storage.node.field_image
-    - field.storage.node.field_private_image
-    - field.storage.node.field_image_home_latest_material
-    - field.storage.node.field_image_home_latest_news
-    - field.storage.node.field_private_images
-    - field.storage.node.field_third_language
     - field.storage.node.field_language
     - field.storage.node.field_languages
-    - field.storage.node.field_link
-    - field.storage.node.field_logo
-    - field.storage.node.field_main_contact
-    - field.storage.node.field_main_contact_email
-    - field.storage.node.field_oira
-    - field.storage.node.field_oira_eu_level
-    - field.storage.node.field_guid_organisation
     - field.storage.node.field_orgtype
-    - field.storage.node.field_wiki_categories
-    - field.storage.node.field_related_oshwiki_articles
-    - field.storage.node.field_partner_other_users
-    - field.storage.node.field_page_count
     - field.storage.node.field_partner
     - field.storage.node.field_workbench_access
-    - field.storage.node.field_ph_cp
-    - field.storage.node.field_promotional_material_type
     - field.storage.node.field_publication_date
-    - field.storage.node.field_recommended_articles
-    - field.storage.node.field_recommended_resources
-    - field.storage.node.field_resource_fc
     - field.storage.node.field_revised_date
-    - field.storage.node.field_multiple_sector
     - field.storage.node.field_sector
     - field.storage.node.field_sector_category
-    - field.storage.node.field_social_profile
+    - field.storage.node.field_multiple_sector
     - field.storage.node.field_summary
     - field.storage.node.field_tags
-    - field.storage.node.field_third_title
-    - field.storage.node.field_tool_link
-    - field.storage.node.field_partner_type
-    - field.storage.node.field_strategic_type
-    - field.storage.node.field_strategic_type_2
-    - field.storage.node.field_tool_type
-    - field.storage.node.field_updated
-    - field.storage.node.field_wiki_page_url
-    - field.storage.node.field_website
     - search_api.server.apachesolr
 third_party_settings:
   search_api_solr:
@@ -133,22 +87,6 @@ field_settings:
     dependencies:
       module:
         - node
-  content_translation_outdated:
-    label: 'Translation outdated'
-    datasource_id: 'entity:node'
-    property_path: content_translation_outdated
-    type: boolean
-    dependencies:
-      module:
-        - content_translation
-  content_translation_source:
-    label: 'Translation source'
-    datasource_id: 'entity:node'
-    property_path: content_translation_source
-    type: string
-    dependencies:
-      module:
-        - content_translation
   created:
     label: 'Authored on'
     datasource_id: 'entity:node'
@@ -173,54 +111,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_aditional_resources
-  field_alternative_body:
-    label: 'Alternative description'
-    datasource_id: 'entity:node'
-    property_path: field_alternative_body
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_alternative_body
-  field_alternative_title:
-    label: 'Alternative title'
-    datasource_id: 'entity:node'
-    property_path: field_alternative_title
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_alternative_title
-  field_archived:
-    label: Archived
-    datasource_id: 'entity:node'
-    property_path: field_archived
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.field_archived
-  field_article_type:
-    label: 'Article type'
-    datasource_id: 'entity:node'
-    property_path: field_article_type
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_article_type
-  field_collaboration_items:
-    label: 'Collaboration items'
-    datasource_id: 'entity:node'
-    property_path: field_collaboration_items
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_collaboration_items
-  field_collaborator:
-    label: Collaborator
-    datasource_id: 'entity:node'
-    property_path: field_collaborator
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_collaborator
   field_country:
     label: Country
     datasource_id: 'entity:node'
@@ -229,14 +119,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_country
-  field_dedicated_oira_website:
-    label: 'Dedicated OiRA website'
-    datasource_id: 'entity:node'
-    property_path: field_dedicated_oira_website
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_dedicated_oira_website
   field_expiration_date:
     label: 'Expiration date'
     datasource_id: 'entity:node'
@@ -245,30 +127,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_expiration_date
-  field_file:
-    label: File
-    datasource_id: 'entity:node'
-    property_path: field_file
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_file
-  field_general_email:
-    label: 'General email'
-    datasource_id: 'entity:node'
-    property_path: field_general_email
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_general_email
-  field_guid_organisation:
-    label: 'Organisation GUID'
-    datasource_id: 'entity:node'
-    property_path: field_guid_organisation
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_guid_organisation
   field_image:
     label: Image
     datasource_id: 'entity:node'
@@ -277,22 +135,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_image
-  field_image_home_latest_material:
-    label: 'Image Home latest material'
-    datasource_id: 'entity:node'
-    property_path: field_image_home_latest_material
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_image_home_latest_material
-  field_image_home_latest_news:
-    label: 'Image Home latest news'
-    datasource_id: 'entity:node'
-    property_path: field_image_home_latest_news
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_image_home_latest_news
   field_language:
     label: 'Language '
     datasource_id: 'entity:node'
@@ -309,46 +151,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_languages
-  field_link:
-    label: Link
-    datasource_id: 'entity:node'
-    property_path: field_link
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_link
-  field_logo:
-    label: Logo
-    datasource_id: 'entity:node'
-    property_path: field_logo
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_logo
-  field_main_contact:
-    label: 'Main Contact'
-    datasource_id: 'entity:node'
-    property_path: field_main_contact
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_main_contact
-  field_main_contact_email:
-    label: 'Main Contact Email'
-    datasource_id: 'entity:node'
-    property_path: field_main_contact_email
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_main_contact_email
-  field_mission_statement:
-    label: 'Contribution to OiRA'
-    datasource_id: 'entity:node'
-    property_path: field_mission_statement
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_mission_statement
   field_multiple_sector:
     label: 'Sector multiple'
     datasource_id: 'entity:node'
@@ -357,30 +159,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_multiple_sector
-  field_oira:
-    label: OIRA
-    datasource_id: 'entity:node'
-    property_path: field_oira
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.field_oira
-  field_oira_eu_level:
-    label: 'Oira EU level'
-    datasource_id: 'entity:node'
-    property_path: field_oira_eu_level
-    type: boolean
-    dependencies:
-      config:
-        - field.storage.node.field_oira_eu_level
-  field_oira_private_image:
-    label: 'Image oira private'
-    datasource_id: 'entity:node'
-    property_path: field_oira_private_image
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_oira_private_image
   field_orgtype:
     label: 'Organisation Type'
     datasource_id: 'entity:node'
@@ -389,14 +167,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_orgtype
-  field_page_count:
-    label: 'Page count'
-    datasource_id: 'entity:node'
-    property_path: field_page_count
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_page_count
   field_partner:
     label: Partner
     datasource_id: 'entity:node'
@@ -405,62 +175,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_partner
-  field_partner_other_users:
-    label: 'Other users'
-    datasource_id: 'entity:node'
-    property_path: field_partner_other_users
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_partner_other_users
-  field_partner_type:
-    label: 'Type partner'
-    datasource_id: 'entity:node'
-    property_path: field_partner_type
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_partner_type
-  field_ph_address:
-    label: Address
-    datasource_id: 'entity:node'
-    property_path: field_ph_address
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_ph_address
-  field_ph_cp:
-    label: 'Postal code'
-    datasource_id: 'entity:node'
-    property_path: field_ph_cp
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_ph_cp
-  field_private_image:
-    label: 'Image private'
-    datasource_id: 'entity:node'
-    property_path: field_private_image
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_private_image
-  field_private_images:
-    label: Images
-    datasource_id: 'entity:node'
-    property_path: field_private_images
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_private_images
-  field_promotional_material_type:
-    label: 'Promotional material type'
-    datasource_id: 'entity:node'
-    property_path: field_promotional_material_type
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_promotional_material_type
   field_publication_date:
     label: 'Publication date'
     datasource_id: 'entity:node'
@@ -469,38 +183,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_publication_date
-  field_recommended_articles:
-    label: 'Recommended articles'
-    datasource_id: 'entity:node'
-    property_path: field_recommended_articles
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_recommended_articles
-  field_recommended_resources:
-    label: 'Recommended resources'
-    datasource_id: 'entity:node'
-    property_path: field_recommended_resources
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_recommended_resources
-  field_related_oshwiki_articles:
-    label: 'OSHwiki featured articles'
-    datasource_id: 'entity:node'
-    property_path: field_related_oshwiki_articles
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_related_oshwiki_articles
-  field_resource_fc:
-    label: Resource
-    datasource_id: 'entity:node'
-    property_path: field_resource_fc
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_resource_fc
   field_revised_date:
     label: 'Revised date'
     datasource_id: 'entity:node'
@@ -525,30 +207,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_sector_category
-  field_social_profile:
-    label: 'Social profile'
-    datasource_id: 'entity:node'
-    property_path: field_social_profile
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_social_profile
-  field_strategic_type:
-    label: 'Type strategic'
-    datasource_id: 'entity:node'
-    property_path: field_strategic_type
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_strategic_type
-  field_strategic_type_2:
-    label: 'Type strategic 2'
-    datasource_id: 'entity:node'
-    property_path: field_strategic_type_2
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_strategic_type_2
   field_summary:
     label: Summary
     datasource_id: 'entity:node'
@@ -565,78 +223,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_tags
-  field_third_description:
-    label: 'Description third'
-    datasource_id: 'entity:node'
-    property_path: field_third_description
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_third_description
-  field_third_language:
-    label: 'Language third'
-    datasource_id: 'entity:node'
-    property_path: field_third_language
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_third_language
-  field_third_title:
-    label: Title
-    datasource_id: 'entity:node'
-    property_path: field_third_title
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_third_title
-  field_tool_link:
-    label: 'Tool link'
-    datasource_id: 'entity:node'
-    property_path: field_tool_link
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_tool_link
-  field_tool_type:
-    label: 'Type tool'
-    datasource_id: 'entity:node'
-    property_path: field_tool_type
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_tool_type
-  field_updated:
-    label: Updated
-    datasource_id: 'entity:node'
-    property_path: field_updated
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_updated
-  field_website:
-    label: Website
-    datasource_id: 'entity:node'
-    property_path: field_website
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_website
-  field_wiki_categories:
-    label: 'OSHwiki category'
-    datasource_id: 'entity:node'
-    property_path: field_wiki_categories
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_wiki_categories
-  field_wiki_page_url:
-    label: URL
-    datasource_id: 'entity:node'
-    property_path: field_wiki_page_url
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_wiki_page_url
   field_workbench_access:
     label: 'Partner workbench access'
     datasource_id: 'entity:node'
@@ -657,14 +243,6 @@ field_settings:
     label: 'Language (with fallback)'
     property_path: language_with_fallback
     type: string
-  moderation_state:
-    label: 'Moderation state'
-    datasource_id: 'entity:node'
-    property_path: moderation_state
-    type: string
-    dependencies:
-      module:
-        - content_moderation
   nid:
     label: ID
     datasource_id: 'entity:node'
@@ -673,66 +251,10 @@ field_settings:
     dependencies:
       module:
         - node
-  promote:
-    label: 'Promoted to front page'
-    datasource_id: 'entity:node'
-    property_path: promote
-    type: boolean
-    dependencies:
-      module:
-        - node
-  revision_default:
-    label: 'Default revision'
-    datasource_id: 'entity:node'
-    property_path: revision_default
-    type: boolean
-    dependencies:
-      module:
-        - node
-  revision_log:
-    label: 'Revision log message'
-    datasource_id: 'entity:node'
-    property_path: revision_log
-    type: text
-    dependencies:
-      module:
-        - node
-  revision_timestamp:
-    label: 'Revision create time'
-    datasource_id: 'entity:node'
-    property_path: revision_timestamp
-    type: date
-    dependencies:
-      module:
-        - node
-  revision_translation_affected:
-    label: 'Revision translation affected'
-    datasource_id: 'entity:node'
-    property_path: revision_translation_affected
-    type: boolean
-    dependencies:
-      module:
-        - node
-  revision_uid:
-    label: 'Revision user'
-    datasource_id: 'entity:node'
-    property_path: revision_uid
-    type: integer
-    dependencies:
-      module:
-        - node
   status:
     label: Published
     datasource_id: 'entity:node'
     property_path: status
-    type: boolean
-    dependencies:
-      module:
-        - node
-  sticky:
-    label: 'Sticky at top of lists'
-    datasource_id: 'entity:node'
-    property_path: sticky
     type: boolean
     dependencies:
       module:
@@ -767,14 +289,6 @@ field_settings:
     type: string
     configuration:
       absolute: true
-  uuid:
-    label: UUID
-    datasource_id: 'entity:node'
-    property_path: uuid
-    type: string
-    dependencies:
-      module:
-        - node
   vid:
     label: 'Revision ID'
     datasource_id: 'entity:node'
@@ -809,53 +323,25 @@ processor_settings:
     weights:
       postprocess_query: 0
   html_filter:
-    all_fields: true
+    all_fields: false
     fields:
       - body
-      - content_translation_source
-      - field_alternative_body
-      - field_alternative_title
-      - field_dedicated_oira_website
-      - field_general_email
-      - field_guid_organisation
       - field_language
       - field_languages
-      - field_link
-      - field_main_contact
-      - field_main_contact_email
-      - field_mission_statement
-      - field_page_count
-      - field_partner_other_users
-      - field_ph_address
-      - field_ph_cp
-      - field_social_profile
-      - field_strategic_type
-      - field_strategic_type_2
       - field_summary
-      - field_third_description
-      - field_third_language
-      - field_third_title
-      - field_tool_link
-      - field_website
-      - field_wiki_page_url
       - langcode
       - language_with_fallback
-      - moderation_state
-      - revision_log
       - title
       - type
       - url
-      - uuid
-    title: true
+    title: false
     alt: true
     tags:
       b: 2
-      em: 1
       h1: 5
       h2: 3
       h3: 2
       strong: 2
-      u: 1
     weights:
       preprocess_index: -15
       preprocess_query: -15

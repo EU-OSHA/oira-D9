@@ -9,7 +9,6 @@ dependencies:
     - search_api
   config:
     - field.storage.node.field_alternative_body
-    - field.storage.node.field_alternative_title
     - field.storage.node.field_co_author
     - field.storage.node.field_country
     - field.storage.taxonomy_term.field_iso2
@@ -89,14 +88,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_alternative_body
-  field_alternative_title:
-    label: 'Alternative title'
-    datasource_id: 'entity:node'
-    property_path: field_alternative_title
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_alternative_title
   field_co_author:
     label: Co-author
     datasource_id: 'entity:node'
