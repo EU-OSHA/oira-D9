@@ -13,7 +13,7 @@ _core:
 id: workbench_access_content
 label: 'Workbench Access: Content'
 module: views
-description: 'Content overview page for Workbench.'
+description: 'Content assigned to the user''s editorial sections.'
 tag: Workbench
 base_table: node_field_data
 base_field: nid
