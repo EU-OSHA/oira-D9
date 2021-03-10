@@ -20,7 +20,7 @@ settings:
   label: Search
   provider: search
   label_display: '0'
-  page_id: node_search
+  page_id: search_site
 visibility:
   request_path_exclusion:
     id: request_path_exclusion

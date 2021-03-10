@@ -467,7 +467,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          link_to_item: true
+          link_to_item: false
           use_highlighting: false
           multi_type: separator
           multi_separator: ', '
@@ -483,7 +483,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ search_api_excerpt }} <a href="{{uri}}"> See more </a>'
+            text: '{{ search_api_excerpt }} <a href="{{url}}"> See more </a>'
             make_link: false
             path: ''
             absolute: false
@@ -1262,7 +1262,43 @@ display:
           content: 'No results'
           plugin_id: text_custom
       relationships: {  }
-      arguments: {  }
+      arguments:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_default_multilingual_node_index
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: query_parameter
+          default_argument_options:
+            query_param: keys
+            fallback: ''
+            multiple: and
+          default_argument_skip_url: false
+          summary_options: {  }
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: none
+            fail: ignore
+          validate_options: {  }
+          break_phrase: false
+          not: false
+          parse_mode: terms
+          fields: {  }
+          conjunction: OR
+          plugin_id: search_api_fulltext
       display_extenders: {  }
       filter_groups:
         operator: AND
@@ -1293,7 +1329,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: search
+      path: search/site
       exposed_block: true
       cache:
         type: none
