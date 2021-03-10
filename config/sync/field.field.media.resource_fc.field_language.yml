@@ -1,10 +1,12 @@
-uuid: 3b247bf6-0c7e-4721-9c78-6b6fbfb7677c
+uuid: c1cc32d9-fd24-4248-b23b-b165a3cf7e23
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.media.field_language
     - media.type.resource_fc
+  module:
+    - languagefield
 id: media.resource_fc.field_language
 field_name: field_language
 entity_type: media
@@ -15,9 +17,5 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:configurable_language'
-  handler_settings:
-    target_bundles: null
-    auto_create: false
-field_type: entity_reference
+settings: {  }
+field_type: language_field

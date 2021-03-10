@@ -1,10 +1,12 @@
-uuid: f6b6777d-8658-454a-abb7-2ca24729f75e
+uuid: e8583a61-1068-48b1-a677-75581dc95399
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_language
     - node.type.strategic_documentation
+  module:
+    - languagefield
 id: node.strategic_documentation.field_language
 field_name: field_language
 entity_type: node
@@ -15,9 +17,5 @@ required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:configurable_language'
-  handler_settings:
-    target_bundles: null
-    auto_create: false
-field_type: entity_reference
+settings: {  }
+field_type: language_field

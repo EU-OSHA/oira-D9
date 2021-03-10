@@ -1,10 +1,12 @@
-uuid: 3cd5772f-e4b5-4549-a0c2-762863525db5
+uuid: e0614999-afa4-4cb2-bdb5-3dc4134cd9f5
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_language
     - node.type.practical_tool
+  module:
+    - languagefield
 id: node.practical_tool.field_language
 field_name: field_language
 entity_type: node
@@ -12,12 +14,8 @@ bundle: practical_tool
 label: Language
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:configurable_language'
-  handler_settings:
-    target_bundles: null
-    auto_create: false
-field_type: entity_reference
+settings: {  }
+field_type: language_field
