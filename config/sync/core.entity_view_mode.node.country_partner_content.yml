@@ -1,0 +1,10 @@
+uuid: f6e43683-167f-46f3-b544-1e237680931f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.country_partner_content
+label: 'Content in country'
+targetEntityType: node
+cache: true
