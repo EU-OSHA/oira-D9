@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image
+    - field.storage.node.field_multiple_sector
     - field.storage.node.field_publication_date
+    - field.storage.node.field_sector
+    - field.storage.node.field_sector_category
     - image.style.thumbnail
     - search_api.index.default_multilingual_node_index
   module:
@@ -522,6 +525,357 @@ display:
           multi_type: separator
           multi_separator: ', '
           plugin_id: search_api
+        field_sector:
+          id: field_sector
+          table: search_api_index_default_multilingual_node_index
+          field: field_sector
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article_types:
+                display_method: label
+                view_mode: default
+              contact_topic:
+                display_method: label
+              contact_type:
+                display_method: label
+              contact_type_of_sender:
+                display_method: label
+              country:
+                display_method: label
+                view_mode: default
+              country_status:
+                display_method: label
+                view_mode: default
+              esener:
+                display_method: label
+                view_mode: default
+              organisation_type:
+                display_method: label
+                view_mode: default
+              partner_types:
+                display_method: label
+              practical_tool_types:
+                display_method: label
+              promotional_material_type:
+                display_method: label
+                view_mode: default
+              section:
+                display_method: label
+                view_mode: default
+              sector:
+                display_method: label
+              sector_category:
+                display_method: label
+              tags:
+                display_method: label
+                view_mode: default
+              wg_category:
+                display_method: label
+              wg_role_1:
+                display_method: label
+              wg_role_2:
+                display_method: label
+              wiki_categories:
+                display_method: label
+          plugin_id: search_api_field
+        field_sector_category:
+          id: field_sector_category
+          table: search_api_index_default_multilingual_node_index
+          field: field_sector_category
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article_types:
+                display_method: label
+                view_mode: default
+              contact_topic:
+                display_method: label
+              contact_type:
+                display_method: label
+              contact_type_of_sender:
+                display_method: label
+              country:
+                display_method: label
+                view_mode: default
+              country_status:
+                display_method: label
+                view_mode: default
+              esener:
+                display_method: label
+                view_mode: default
+              organisation_type:
+                display_method: label
+                view_mode: default
+              partner_types:
+                display_method: label
+              practical_tool_types:
+                display_method: label
+              promotional_material_type:
+                display_method: label
+                view_mode: default
+              section:
+                display_method: label
+                view_mode: default
+              sector:
+                display_method: label
+              sector_category:
+                display_method: label
+              tags:
+                display_method: label
+                view_mode: default
+              wg_category:
+                display_method: label
+              wg_role_1:
+                display_method: label
+              wg_role_2:
+                display_method: label
+              wiki_categories:
+                display_method: label
+          plugin_id: search_api_field
+        field_multiple_sector:
+          id: field_multiple_sector
+          table: search_api_index_default_multilingual_node_index
+          field: field_multiple_sector
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article_types:
+                display_method: label
+                view_mode: default
+              contact_topic:
+                display_method: label
+              contact_type:
+                display_method: label
+              contact_type_of_sender:
+                display_method: label
+              country:
+                display_method: label
+                view_mode: default
+              country_status:
+                display_method: label
+                view_mode: default
+              esener:
+                display_method: label
+                view_mode: default
+              organisation_type:
+                display_method: label
+                view_mode: default
+              partner_types:
+                display_method: label
+              practical_tool_types:
+                display_method: label
+              promotional_material_type:
+                display_method: label
+                view_mode: default
+              section:
+                display_method: label
+                view_mode: default
+              sector:
+                display_method: label
+              sector_category:
+                display_method: label
+              tags:
+                display_method: label
+                view_mode: default
+              wg_category:
+                display_method: label
+              wg_role_1:
+                display_method: label
+              wg_role_2:
+                display_method: label
+              wiki_categories:
+                display_method: label
+          plugin_id: search_api_field
       filters:
         status:
           id: status
@@ -869,7 +1223,10 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_multiple_sector'
         - 'config:field.storage.node.field_publication_date'
+        - 'config:field.storage.node.field_sector'
+        - 'config:field.storage.node.field_sector_category'
         - 'config:search_api.index.default_multilingual_node_index'
   page_1:
     display_plugin: page
@@ -894,5 +1251,8 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_multiple_sector'
         - 'config:field.storage.node.field_publication_date'
+        - 'config:field.storage.node.field_sector'
+        - 'config:field.storage.node.field_sector_category'
         - 'config:search_api.index.default_multilingual_node_index'
