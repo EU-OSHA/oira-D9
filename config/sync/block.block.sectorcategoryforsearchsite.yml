@@ -13,7 +13,7 @@ dependencies:
 id: sectorcategoryforsearchsite
 theme: oira_theme
 region: sidebar_first
-weight: 0
+weight: -7
 provider: null
 plugin: 'facet_block:sector_category_for_search_site'
 settings:
