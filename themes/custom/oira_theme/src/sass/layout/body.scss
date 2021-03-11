@@ -624,3 +624,11 @@ select.custom-select{
     font-weight: bold;
   }
 }
+
+/** Watch News **/
+.block-views-blocknews-block-1 {
+  background: $bg-color-purple;
+  h2 {
+    color: $text-color-white;
+  }
+}
