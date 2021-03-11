@@ -13,7 +13,7 @@ migration_tags: null
 migration_group: oira_migrate_node
 label: 'Node: practical_tool'
 source:
-  plugin: d7_node
+  plugin: ev_d7_node
   node_type: practical_tool
 process:
   nid: tnid
@@ -57,15 +57,6 @@ process:
           source: tid
   field_third_description: field_third_description
   field_wf_notification: field_wf_notification
-  field_language:
-    -
-      plugin: sub_process
-      source: field_language
-      process:
-        target_id:
-          plugin: get
-          source: tid
-  field_third_language: field_third_language
   field_publication_date/value:
     -
       plugin: extract
@@ -77,7 +68,6 @@ process:
       plugin: format_date
       from_format: 'Y-m-d H:i:s'
       to_format: 'Y-m-d\TH:i:s'
-      timezone: GMT
   field_related_partners:
     -
       plugin: sub_process
@@ -97,7 +87,6 @@ process:
       plugin: format_date
       from_format: 'Y-m-d H:i:s'
       to_format: 'Y-m-d\TH:i:s'
-      timezone: GMT
   field_sector_category:
     -
       plugin: sub_process
@@ -118,6 +107,24 @@ process:
         target_id:
           plugin: get
           source: tid
+  field_workbench_access:
+    -
+      plugin: sub_process
+      source: workbench_access
+      process:
+        target_id: tid
+  field_language:
+    -
+      plugin: sub_process
+      source: field_language
+      process:
+        value: value
+  field_third_language:
+    -
+      plugin: sub_process
+      source: field_third_language
+      process:
+        value: value
 destination:
   plugin: 'entity:node'
 migration_dependencies:
