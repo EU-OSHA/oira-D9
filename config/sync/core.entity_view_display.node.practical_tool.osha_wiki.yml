@@ -1,0 +1,200 @@
+uuid: bf772602-f188-475f-aca7-189e248c70a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.osha_wiki
+    - field.field.node.practical_tool.body
+    - field.field.node.practical_tool.field_alternative_body
+    - field.field.node.practical_tool.field_alternative_title
+    - field.field.node.practical_tool.field_co_author
+    - field.field.node.practical_tool.field_country
+    - field.field.node.practical_tool.field_image
+    - field.field.node.practical_tool.field_publication_date
+    - field.field.node.practical_tool.field_related_partners
+    - field.field.node.practical_tool.field_revised_date
+    - field.field.node.practical_tool.field_sector_category
+    - field.field.node.practical_tool.field_third_description
+    - field.field.node.practical_tool.field_third_title
+    - field.field.node.practical_tool.field_tool_link
+    - field.field.node.practical_tool.field_tool_type
+    - field.field.node.practical_tool.field_wf_notification
+    - field.field.node.practical_tool.field_workbench_access
+    - node.type.practical_tool
+  module:
+    - datetime
+    - layout_builder
+    - link
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.practical_tool.osha_wiki
+targetEntityType: node
+bundle: practical_tool
+mode: osha_wiki
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_alternative_body:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_alternative_title:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_co_author:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_country:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_image:
+    weight: 5
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: media_thumbnail
+    region: content
+  field_publication_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_related_partners:
+    weight: 18
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_revised_date:
+    weight: 10
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_sector_category:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_third_description:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_third_title:
+    weight: 14
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tool_link:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_tool_type:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_wf_notification:
+    weight: 13
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_workbench_access:
+    weight: 19
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  langcode:
+    type: language
+    weight: 17
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_language: true
+  field_third_language: true
+  search_api_excerpt: true

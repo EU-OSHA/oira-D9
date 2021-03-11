@@ -1,0 +1,35 @@
+uuid: 83510dfb-ccc3-471d-9fbe-1e23ad1f36c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.file.field_file
+    - node.type.file
+  module:
+    - user
+id: node.file.default
+targetEntityType: node
+bundle: file
+mode: default
+content:
+  field_file:
+    type: entity_reference_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

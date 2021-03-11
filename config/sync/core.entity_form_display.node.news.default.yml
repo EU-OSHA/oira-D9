@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.browser_additional_resources
     - field.field.node.news.body
     - field.field.node.news.field_aditional_resources
     - field.field.node.news.field_character_count
@@ -17,8 +18,11 @@ dependencies:
     - field.field.node.news.field_wf_notification
     - field.field.node.news.field_workbench_access
     - node.type.news
+    - workflows.workflow.oira
   module:
+    - content_moderation
     - datetime
+    - entity_browser
     - media_library
     - path
     - text
@@ -45,9 +49,17 @@ content:
     third_party_settings: {  }
   field_aditional_resources:
     weight: 8
-    settings: {  }
+    settings:
+      entity_browser: browser_additional_resources
+      field_widget_display: label
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_edit: false
+      field_widget_replace: false
+      field_widget_display_settings: {  }
     third_party_settings: {  }
-    type: options_buttons
+    type: entity_browser_entity_reference
     region: content
   field_character_count:
     weight: 12
@@ -128,6 +140,12 @@ content:
     region: content
     settings:
       include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
     third_party_settings: {  }
   path:
     type: path

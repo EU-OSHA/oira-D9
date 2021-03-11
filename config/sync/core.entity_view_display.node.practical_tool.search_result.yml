@@ -45,6 +45,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_alternative_body:
     weight: 9
     label: above
@@ -186,6 +191,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  addtoany: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

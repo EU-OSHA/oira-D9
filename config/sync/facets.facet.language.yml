@@ -1,4 +1,4 @@
-uuid: d85d9ea7-4902-485a-8f7f-43dabbbff227
+uuid: 6666a392-c3c0-47bf-8ade-5e5b70597357
 langcode: en
 status: true
 dependencies:
@@ -52,11 +52,6 @@ processor_configs:
       sort: 40
     settings:
       sort: ASC
-  translate_entity:
-    processor_id: translate_entity
-    weights:
-      build: 5
-    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:

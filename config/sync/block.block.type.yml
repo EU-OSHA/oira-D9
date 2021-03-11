@@ -1,27 +1,27 @@
-uuid: 5e67eb24-4abb-4509-8a7b-4e7b980bf430
+uuid: c8a896cd-7d79-446e-be97-20c8cceef4fa
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.language
+    - facets.facet.type
   module:
     - context
     - facets
     - system
   theme:
     - oira_theme
-id: language
+id: type
 theme: oira_theme
 region: sidebar_first
 weight: -9
 provider: null
-plugin: 'facet_block:language'
+plugin: 'facet_block:type'
 settings:
-  id: 'facet_block:language'
-  label: Language
+  id: 'facet_block:type'
+  label: Type
   provider: facets
   label_display: visible
-  block_id: language
+  block_id: type
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -33,5 +33,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /oira-tools
+    pages: /search/site
     negate: false

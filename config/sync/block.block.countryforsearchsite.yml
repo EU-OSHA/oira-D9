@@ -1,0 +1,37 @@
+uuid: b7395cfa-819c-4172-92fa-8dae129ba1ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.country_search_facet
+  module:
+    - context
+    - facets
+    - system
+  theme:
+    - oira_theme
+id: countryforsearchsite
+theme: oira_theme
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:country_search_facet'
+settings:
+  id: 'facet_block:country_search_facet'
+  label: Country
+  provider: facets
+  label_display: visible
+  block_id: countryforsearchsite
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /search/site
+    negate: false

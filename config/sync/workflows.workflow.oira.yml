@@ -1,0 +1,91 @@
+uuid: dff50416-7afa-4e09-81ed-22889b35ccee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+    - node.type.practical_tool
+    - node.type.promotional_material
+    - node.type.strategic_documentation
+  module:
+    - content_moderation
+id: oira
+label: OiRA
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      published: false
+      default_revision: false
+      weight: -3
+    final_draft:
+      published: false
+      default_revision: false
+      label: 'Final Draft'
+      weight: -2
+    needs_review:
+      published: false
+      default_revision: false
+      label: 'To Be Reviewed'
+      weight: -1
+    published:
+      label: Published
+      published: true
+      default_revision: true
+      weight: 1
+    to_be_approved:
+      published: false
+      default_revision: false
+      label: 'To Be Approved'
+      weight: 0
+  transitions:
+    creating_final_draft:
+      label: 'Creating Final Draft'
+      from:
+        - draft
+      to: final_draft
+      weight: -3
+    publish:
+      label: 'Publishing Draft'
+      to: published
+      weight: -2
+      from:
+        - draft
+    publishing:
+      label: 'Publishing Approved Draft'
+      from:
+        - to_be_approved
+      to: published
+      weight: 3
+    reject_approved_draft:
+      label: 'Reject Approved Draft'
+      from:
+        - to_be_approved
+      to: draft
+      weight: 2
+    reject_reviewed_draft:
+      label: 'Reject Reviewed Draft'
+      from:
+        - needs_review
+      to: draft
+      weight: 0
+    requesting_approval:
+      label: 'Requesting Approval'
+      from:
+        - needs_review
+      to: to_be_approved
+      weight: 1
+    reviewing_final_draft:
+      label: 'Reviewing Final Draft'
+      from:
+        - final_draft
+      to: needs_review
+      weight: -1
+  entity_types:
+    node:
+      - news
+      - practical_tool
+      - promotional_material
+      - strategic_documentation
+  default_moderation_state: draft

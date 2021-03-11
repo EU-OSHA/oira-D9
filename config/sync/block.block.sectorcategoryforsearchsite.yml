@@ -1,0 +1,37 @@
+uuid: 984d7880-c1df-4ee9-ac2a-afb839c28e10
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.sector_category_for_search_site
+  module:
+    - context
+    - facets
+    - system
+  theme:
+    - oira_theme
+id: sectorcategoryforsearchsite
+theme: oira_theme
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:sector_category_for_search_site'
+settings:
+  id: 'facet_block:sector_category_for_search_site'
+  label: Sector
+  provider: facets
+  label_display: visible
+  block_id: sectorcategoryforsearchsite
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /search/site
+    negate: false

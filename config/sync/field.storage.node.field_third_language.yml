@@ -1,17 +1,30 @@
-uuid: 5599268c-9de5-47fc-88b2-971bfb501b9f
+uuid: 72cffe12-7476-4eb5-9983-89b1d33513c2
 langcode: en
 status: true
 dependencies:
   module:
-    - language
+    - languagefield
     - node
 id: node.field_third_language
 field_name: field_third_language
 entity_type: node
-type: entity_reference
+type: language_field
 settings:
-  target_type: configurable_language
-module: core
+  language_range:
+    11: '11'
+    1: 0
+    12: 0
+    2: 0
+    site_default: 0
+    und: 0
+    current_interface: 0
+    authors_default: 0
+  included_languages: {  }
+  excluded_languages: {  }
+  groups: ''
+  maxlength: 12
+  allowed_values_function: languagefield_allowed_values
+module: languagefield
 locked: false
 cardinality: 1
 translatable: true

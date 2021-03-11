@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_alternative_body
-    - field.storage.node.field_alternative_title
     - field.storage.node.field_image
     - field.storage.node.field_language
     - field.storage.node.field_revised_date
@@ -16,6 +15,7 @@ dependencies:
   module:
     - better_exposed_filters
     - datetime
+    - languagefield
     - link
     - media
     - search_api
@@ -1682,7 +1682,6 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_alternative_body'
-        - 'config:field.storage.node.field_alternative_title'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_language'
         - 'config:field.storage.node.field_revised_date'
@@ -1860,7 +1859,6 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_alternative_body'
-        - 'config:field.storage.node.field_alternative_title'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_language'
         - 'config:field.storage.node.field_revised_date'
