@@ -274,8 +274,23 @@ field_settings:
     type: text
     configuration:
       roles:
-        - anonymous
-      view_mode: {  }
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: default
+          certificates: default
+          collaboration_document: default
+          faq: default
+          file: default
+          news: default
+          oira_private_image: default
+          partner: default
+          practical_tool: default
+          private_album: default
+          promotional_material: default
+          slideshare: default
+          strategic_documentation: default
+          wiki_page: default
   status:
     label: Published
     datasource_id: 'entity:node'
@@ -350,7 +365,8 @@ processor_settings:
     highlight_partial: false
     excerpt: true
     excerpt_length: 256
-    exclude_fields: {  }
+    exclude_fields:
+      - rendered_item
     prefix: '<strong>'
     suffix: '</strong>'
     weights:

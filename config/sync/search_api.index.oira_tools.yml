@@ -25,7 +25,6 @@ dependencies:
     - field.storage.node.field_tool_link
     - field.storage.node.field_tool_type
     - search_api.server.apachesolr
-    - core.entity_view_mode.node.search_index
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -271,7 +270,7 @@ field_settings:
         anonymous: anonymous
       view_mode:
         'entity:node':
-          oira_tools: search_index
+          practical_tool: default
   status:
     label: Published
     datasource_id: 'entity:node'
