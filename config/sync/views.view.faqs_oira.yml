@@ -486,6 +486,7 @@ display:
         weight: 0
         context: '0'
         menu_name: admin
+      rendering_language: '***LANGUAGE_entity_translation***'
     cache_metadata:
       max-age: 0
       contexts:
@@ -788,6 +789,7 @@ display:
         operator: AND
         groups:
           1: AND
+      rendering_language: '***LANGUAGE_entity_translation***'
     cache_metadata:
       max-age: -1
       contexts:
