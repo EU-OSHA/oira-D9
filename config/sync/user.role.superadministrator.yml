@@ -4,6 +4,7 @@ status: true
 dependencies: {  }
 id: superadministrator
 label: Superadministrator
-weight: 13
+weight: 2
 is_admin: null
-permissions: {  }
+permissions:
+  - 'masquerade as partner'

@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: oira_project_manager
 label: 'Oira Project Manager'
-weight: 11
+weight: 0
 is_admin: null
 permissions:
   - 'use oira transition creating_final_draft'

@@ -4,7 +4,7 @@ status: true
 dependencies: {  }
 id: partner
 label: Partner
-weight: 10
+weight: -1
 is_admin: null
 permissions:
   - 'use oira transition creating_final_draft'

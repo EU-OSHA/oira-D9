@@ -5,7 +5,6 @@ dependencies:
   module:
     - context
     - masquerade
-    - user
   theme:
     - oira_theme
 id: masquerade
@@ -28,10 +27,3 @@ visibility:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
-  user_role:
-    id: user_role
-    roles:
-      administrator: administrator
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
