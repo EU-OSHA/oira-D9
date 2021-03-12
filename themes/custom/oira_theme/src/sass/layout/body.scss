@@ -626,9 +626,272 @@ select.custom-select{
 }
 
 /** Watch News **/
+.page-node-450 {
+  /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
+  max-width: 100%;
+  overflow-x: hidden;
+  /*** ***/
+  h1 {
+    position: relative;
+    z-index: 2;
+    margin-top: -5.5rem;
+    margin-bottom: 3rem;
+    color: $text-color-white;
+  }
+  .image-fluid {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; botttom: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 140%);
+      z-index: 1;
+    }
+  }
+}
+
 .block-views-blocknews-block-1 {
+  padding: 30px 0;
+  width: 100vw;
+  position: relative;
+  @extend .full-width;
   background: $bg-color-purple;
   h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 30px;
+    padding-bottom: 15px;
+    max-width: 1140px;
     color: $text-color-white;
+    border-bottom: 2px solid $text-color-white;
+    font-size: 2.187rem;
+    font-family: $font-family-oswald;
+    font-weight: $font-weight-medium;
+    &:after {
+      display: block;
+      content:"";
+      width: 40px;
+      height: 40px;
+      background: url(../images/icon-news-white.png) right center no-repeat;
+      background-size: 100%;
+    }
+  }
+  .views-view-grid {
+    padding: 0;
+  }
+  .view-news {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
+  }
+  .view-news .views-row {
+    padding: 0;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .view-news .views-row:nth-child(odd) {
+    background: transparent;
+  }
+  .views-col {
+    padding: 1rem !important;
+    margin: 0;
+    max-width: 100%;
+    min-height: 230px;
+    background: white;
+  }
+  .views-field-field-publication-date,
+  .views-field-title {
+    margin: 0 0 11px;
+  }
+  .views-field-title .field-content a {
+    font-weight: $font-weight-bold;
+    color: $text-color-black;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    &:hover {
+      color: $text-color-blue-hover;
+    }
+  }
+  .views-field-body {
+    margin-bottom: 11px;
+  }
+  .views-field-view-node .field-content {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    a {
+      color: $text-color-blue-light;
+      &:before {
+        content: '>';
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        top: -1px;
+      }
+    }
+    a:hover {
+      color: $text-color-blue-light;
+      text-decoration: underline;
+    }
+  }
+  .more-link {
+    display:flex;
+    justify-content: flex-end;
+    a {
+      color: white;
+      text-align: right;
+    }
+  }
+}
+
+.block-views-blocktools-block-2 {
+  padding: 30px 0;
+  h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 30px;
+    padding-bottom: 15px;
+    max-width: 1140px;
+    color: $text-color-purple-light;
+    border-bottom: 2px solid $text-color-purple-light;
+    font-size: 2.187rem;
+    font-family: $font-family-oswald;
+    font-weight: $font-weight-medium;
+    &:after {
+      display: block;
+      content:"";
+      width: 40px;
+      height: 40px;
+      background: url(../images/icon-news-pale-purple.png) right center no-repeat;
+      background-size: 100%;
+    }
+  }
+  .views-row {
+    padding: 0;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .views-col {
+    padding: 1rem !important;
+    margin: 0;
+    width: 100% !important;
+    max-width: 100%;
+    min-height: 230px;
+    background: $bg-color-purple-light;
+  }
+  .views-field-title .field-content a {
+    font-weight: $font-weight-bold;
+    color: $text-color-black;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1.1;
+    &:hover {
+      color: $text-color-blue-hover;
+    }
+  }
+  .tool-teaser-content-wrapper {
+    margin-bottom: 11px;
+    a {
+      font-style: normal;
+      font-size: 1.125rem;
+      color: $text-color-black;
+      &:hover {
+        color: $text-color-blue-hover;
+      }
+    }
+  }
+  .views-field-view-node .field-content {
+    text-align: right;
+    &:before {
+      content: '>';
+      margin-right: 5px;
+      display: inline-block;
+      position: relative;
+      top: -1px;
+    }
+    &:hover {
+      color: $text-color-blue-light;
+      text-decoration: underline;
+    }
+  }
+  .more-link {
+    display:flex;
+    justify-content: flex-end;
+    a {
+      color: $bg-color-blue-light;
+      text-align: right;
+    }
+  }
+}
+
+/*** FAQs ***/
+.page-node-402 {
+  /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
+  max-width: 100%;
+  overflow-x: hidden;
+  /*** ***/
+  .image-fluid {
+    display: none;
+  }
+  h1 {
+    color: $text-color-purple-light;
+  }
+  .resume-section {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-weight: $font-weight-bold;
+  }
+  .esener-template ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .esener-template li {
+    @extend .full-width;
+    padding: 30px 0 30px;
+    list-style-type: none;
+    &:nth-child(odd) {
+      background: $bg-color-purple-light;
+    }
+    > div {
+      column-gap: 30px;
+    }
+  }
+  .col-left,
+  .col-right {
+    padding: 0;
+  }
+  .esener-item {
+    margin: 0 auto;
+    display: flex;
+    h2 {
+      margin-top: 0;
+      border-bottom: 2px solid $bg-color-purple;
+      padding-bottom: 20px;
+      line-height: 1.1;
+    }
+    .summary {
+      font-family: 'Oswald';
+      border-bottom: 2px solid $bg-color-purple;
+      padding-bottom: 17px;
+      padding-top: 5px;
+      margin-bottom: 15px;
+      font-size: 1.1em;
+    }
+    .content-image {
+      overflow: hidden;
+      border: 1px solid $bg-color-grey;
+      cursor: pointer;
+      position: relative;
+      max-height: 350px;
+      background-color: $bg-color-white;
+    }
   }
 }
