@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 id: translation_liaison
 label: 'Translation Liaison'
-weight: 6
+weight: -5
 is_admin: null
 permissions: {  }

@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 id: content_validator
 label: 'Content Validator'
-weight: 8
+weight: -3
 is_admin: null
 permissions: {  }
