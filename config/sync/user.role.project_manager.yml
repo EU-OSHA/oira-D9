@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 id: project_manager
 label: 'Project Manager'
-weight: 9
+weight: -2
 is_admin: null
 permissions: {  }

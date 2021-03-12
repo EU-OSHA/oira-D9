@@ -313,76 +313,6 @@ display:
             multi_type: separator
             multi_separator: ', '
           plugin_id: search_api_field
-        field_alternative_title:
-          id: field_alternative_title
-          table: search_api_index_oira_tools
-          field: field_alternative_title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: title_alt
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-          plugin_id: search_api_field
         field_revised_date:
           id: field_revised_date
           table: search_api_index_oira_tools
@@ -1391,17 +1321,17 @@ display:
             multi_separator: ', '
           entity_type: taxonomy_term
           plugin_id: search_api_field
-        language_with_fallback:
-          id: language_with_fallback
+        field_language_1:
+          id: field_language_1
           table: search_api_index_oira_tools
-          field: language_with_fallback
+          field: field_language
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: true
           alter:
-            alter_text: false
+            alter_text: true
             text: ''
             make_link: false
             path: ''
@@ -1439,11 +1369,32 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          link_to_item: false
-          use_highlighting: false
+          click_sort_column: value
+          type: languagefield_default
+          settings:
+            link_to_entity: 0
+            format:
+              iso: iso
+              name: name
+              name_native: 0
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
           multi_type: separator
-          multi_separator: ', '
-          plugin_id: search_api
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
       filters:
         status:
           id: status
@@ -1796,7 +1747,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: Search
+            label: ''
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -1805,7 +1756,7 @@ display:
             identifier: search_api_fulltext
             required: false
             remember: false
-            multiple: true
+            multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -1821,9 +1772,9 @@ display:
               oira_project_manager: '0'
               oira_supervisor: '0'
               superadministrator: '0'
-            placeholder: ''
+            placeholder: Search
             expose_fields: false
-            searched_fields_id: ''
+            searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
           group_info:
             label: ''
@@ -1836,9 +1787,12 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          parse_mode: direct
-          min_length: 2
+          parse_mode: terms
+          min_length: null
           fields:
+            - body
+            - field_alternative_body
+            - field_third_description
             - rendered_item
           plugin_id: search_api_fulltext
       filter_groups:
