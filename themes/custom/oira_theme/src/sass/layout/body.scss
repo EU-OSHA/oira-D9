@@ -625,7 +625,7 @@ select.custom-select{
   }
 }
 
-/** Watch News **/
+/** Wat's News **/
 .page-node-450 {
   /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
   max-width: 100%;
@@ -650,6 +650,9 @@ select.custom-select{
       z-index: 1;
     }
   }
+  #share-this-on {
+    display: none;
+  }
 }
 
 .block-views-blocknews-block-1 {
@@ -663,7 +666,7 @@ select.custom-select{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 30px;
-    padding-bottom: 15px;
+    padding: 0 0 15px;
     max-width: 1140px;
     color: $text-color-white;
     border-bottom: 2px solid $text-color-white;
@@ -686,15 +689,15 @@ select.custom-select{
     margin: 0 auto;
     width: 100%;
     max-width: 1140px;
-  }
-  .view-news .views-row {
-    padding: 0;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .view-news .views-row:nth-child(odd) {
-    background: transparent;
+    .views-row {
+      padding: 0;
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .views-row:nth-child(odd) {
+      background: transparent;
+    }
   }
   .views-col {
     padding: 1rem !important;
@@ -753,10 +756,11 @@ select.custom-select{
   padding: 30px 0;
   h2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 30px;
-    padding-bottom: 15px;
+    padding: 0 15px 15px;
     max-width: 1140px;
     color: $text-color-purple-light;
     border-bottom: 2px solid $text-color-purple-light;
@@ -848,25 +852,23 @@ select.custom-select{
     margin-bottom: 5px;
     font-weight: $font-weight-bold;
   }
-  .esener-template ul {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .esener-template li {
-    @extend .full-width;
-    padding: 30px 0 30px;
-    list-style-type: none;
-    &:nth-child(odd) {
-      background: $bg-color-purple-light;
+  .esener-template {
+    ul {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
     }
-    > div {
-      column-gap: 30px;
+    li {
+      @extend .full-width;
+      padding: 30px 0 30px;
+      list-style-type: none;
+      &:nth-child(odd) {
+        background: $bg-color-purple-light;
+      }
+      > div {
+        column-gap: 30px;
+      }
     }
-  }
-  .col-left,
-  .col-right {
-    padding: 0;
   }
   .esener-item {
     margin: 0 auto;
@@ -893,5 +895,9 @@ select.custom-select{
       max-height: 350px;
       background-color: $bg-color-white;
     }
+  }
+  .col-left,
+  .col-right {
+    padding: 0;
   }
 }

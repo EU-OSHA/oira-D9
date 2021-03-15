@@ -142,4 +142,10 @@
       }
     }
   }
+
+  .block-views-blocknews-block-1 {
+    .view-news .views-row {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 }/* End Media 480px */
