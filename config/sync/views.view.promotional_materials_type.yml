@@ -200,8 +200,8 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: 'promotional-resources-search?field_promotional_material_type{{tid}}={{tid}}'
-            absolute: false
+            path: 'promotional-resources-search/{{tid}}'
+            absolute: true
             external: false
             replace_spaces: false
             path_case: none
