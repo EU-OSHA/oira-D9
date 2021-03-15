@@ -345,7 +345,7 @@ select.custom-select{
       position: relative;
       #block-exposedformoira-wstools-ws{
         position: absolute;
-        z-index: 99999;
+        z-index: 1;
         top: 40px;
         left: 7px;
         .form-item-sort-by{
@@ -760,7 +760,7 @@ select.custom-select{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto 30px;
-    padding: 0 15px 15px;
+    padding: 0 0 15px;
     max-width: 1140px;
     color: $text-color-purple-light;
     border-bottom: 2px solid $text-color-purple-light;
@@ -835,7 +835,7 @@ select.custom-select{
   }
 }
 
-/*** FAQs ***/
+/*** FACTS AND FIGURES ***/
 .page-node-402 {
   /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
   max-width: 100%;
