@@ -18,8 +18,9 @@ dependencies:
     - field.storage.node.field_workbench_access
     - field.storage.taxonomy_term.field_image
     - field.storage.node.field_promotional_material_type
-    - field.storage.media.field_language
+    - field.storage.node.field_publication_date
     - field.storage.node.field_resource_fc
+    - field.storage.media.field_language
     - field.storage.media.field_link
     - field.storage.media.field_link_image
     - search_api.server.apachesolr
@@ -84,6 +85,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.body
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
   field_image:
     label: Image
     datasource_id: 'entity:node'
@@ -123,10 +132,21 @@ field_settings:
       module:
         - taxonomy
   field_language:
-    label: 'Resource » Media » Language name'
+    label: 'Resource » Media » Language name '
     datasource_id: 'entity:node'
     property_path: 'field_resource_fc:entity:field_language'
     type: string
+    dependencies:
+      config:
+        - field.storage.media.field_language
+        - field.storage.node.field_resource_fc
+      module:
+        - media
+  field_language_1:
+    label: 'Resource » Media » Language reso'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_fc:entity:field_language'
+    type: text
     dependencies:
       config:
         - field.storage.media.field_language
@@ -163,6 +183,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_promotional_material_type
+  field_publication_date:
+    label: 'Publication date'
+    datasource_id: 'entity:node'
+    property_path: field_publication_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_publication_date
   field_workbench_access:
     label: 'Partner wb access'
     datasource_id: 'entity:node'
@@ -201,6 +229,26 @@ field_settings:
         - field.storage.node.field_workbench_access
       module:
         - taxonomy
+  name_2:
+    label: 'Country » Taxonomy term » Name for search'
+    datasource_id: 'entity:node'
+    property_path: 'field_country:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_country
+      module:
+        - taxonomy
+  name_3:
+    label: 'Promotional material type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_promotional_material_type:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_promotional_material_type
+      module:
+        - taxonomy
   nid:
     label: ID
     datasource_id: 'entity:node'
@@ -234,7 +282,7 @@ field_settings:
     label: 'Description » Summary'
     datasource_id: 'entity:node'
     property_path: 'body:summary'
-    type: string
+    type: text
     dependencies:
       config:
         - field.storage.node.body
@@ -262,7 +310,7 @@ field_settings:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
-    type: string
+    type: text
     dependencies:
       module:
         - node

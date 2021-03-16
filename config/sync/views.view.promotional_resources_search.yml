@@ -7,11 +7,16 @@ dependencies:
     - field.storage.media.field_link
     - field.storage.node.body
     - field.storage.node.field_image
+    - field.storage.node.field_logo
     - field.storage.node.field_promotional_material_type
-    - field.storage.node.field_related_partners
+    - image.style.media_library
+    - image.style.thumbnail
     - search_api.index.promotional_resources
   module:
+    - better_exposed_filters
     - link
+    - media
+    - node
     - options
     - search_api
     - taxonomy
@@ -43,15 +48,45 @@ display:
           skip_access: false
           preserve_facet_query_args: false
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Apply
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
+          exposed_sorts_label: Order
+          expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: true
+              autosubmit_exclude_textfield: true
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: false
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            sort:
+              plugin_id: default
+              advanced:
+                combine: false
+                combine_rewrite: ''
+                reset: false
+                reset_label: ''
+                collapsible: false
+                collapsible_label: 'Sort options'
+                is_secondary: false
+            filter:
+              search_api_fulltext:
+                plugin_id: default
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
       pager:
         type: mini
         options:
@@ -76,12 +111,9 @@ display:
         type: fields
       fields:
         field_image:
+          id: field_image
           table: search_api_index_promotional_resources
           field: field_image
-          id: field_image
-          entity_type: null
-          entity_field: null
-          plugin_id: search_api_field
           relationship: none
           group_type: group
           admin_label: ''
@@ -118,7 +150,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -127,8 +159,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_label
-          settings: {  }
+          type: media_thumbnail
+          settings:
+            image_style: media_library
+            image_link: ''
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -146,7 +180,37 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-            display_methods: {  }
+            display_methods:
+              audio:
+                display_method: label
+                view_mode: default
+              collaboration_items:
+                display_method: label
+                view_mode: default
+              collaborator:
+                display_method: label
+                view_mode: default
+              document:
+                display_method: label
+                view_mode: default
+              image:
+                display_method: label
+                view_mode: default
+              image_and_link:
+                display_method: label
+                view_mode: default
+              remote_video:
+                display_method: label
+                view_mode: default
+              resource_fc:
+                display_method: label
+                view_mode: default
+              video:
+                display_method: label
+                view_mode: default
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
         name:
           id: name
           table: search_api_index_promotional_resources
@@ -691,11 +755,220 @@ display:
               node_type:
                 display_method: label
           plugin_id: search_api_field
-        field_related_partners:
-          id: field_related_partners
-          table: search_api_datasource_promotional_resources_entity_node
-          field: field_related_partners
+        name_2:
+          id: name_2
+          table: search_api_index_promotional_resources
+          field: name_2
           relationship: none
+          group_type: group
+          admin_label: 'Country name for search'
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
+        name_3:
+          id: name_3
+          table: search_api_index_promotional_resources
+          field: name_3
+          relationship: none
+          group_type: group
+          admin_label: 'Material type for search'
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
+        field_language_1:
+          id: field_language_1
+          table: search_api_index_promotional_resources
+          field: field_language_1
+          relationship: none
+          group_type: group
+          admin_label: 'Language for search'
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
+        field_logo:
+          id: field_logo
+          table: search_api_entity_node
+          field: field_logo
+          relationship: field_related_partners
           group_type: group
           admin_label: ''
           label: ''
@@ -740,9 +1013,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: media_thumbnail
           settings:
-            view_mode: teaser
+            image_style: thumbnail
+            image_link: content
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -761,62 +1035,160 @@ display:
             multi_type: separator
             multi_separator: ', '
             display_methods:
-              article:
+              audio:
                 display_method: label
                 view_mode: default
-              certificates:
+              collaboration_items:
                 display_method: label
                 view_mode: default
-              collaboration_document:
+              collaborator:
                 display_method: label
                 view_mode: default
-              external_url:
+              document:
                 display_method: label
                 view_mode: default
-              faq:
+              image:
                 display_method: label
                 view_mode: default
-              file:
+              image_and_link:
                 display_method: label
                 view_mode: default
-              landing:
+              remote_video:
                 display_method: label
                 view_mode: default
-              news:
+              resource_fc:
                 display_method: label
                 view_mode: default
-              oira_private_image:
-                display_method: label
-                view_mode: default
-              page:
-                display_method: label
-                view_mode: default
-              partner:
-                display_method: label
-                view_mode: default
-              practical_tool:
-                display_method: label
-                view_mode: default
-              private_album:
-                display_method: label
-                view_mode: default
-              promotional_material:
-                display_method: label
-                view_mode: default
-              slide:
-                display_method: label
-                view_mode: default
-              slideshare:
-                display_method: label
-                view_mode: default
-              strategic_documentation:
-                display_method: label
-                view_mode: default
-              wiki_page:
+              video:
                 display_method: label
                 view_mode: default
           entity_type: node
           plugin_id: search_api_field
+        title_1:
+          id: title_1
+          table: search_api_entity_node
+          field: title
+          relationship: field_related_partners
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: h4
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api_field
+        path:
+          id: path
+          table: search_api_entity_node
+          field: path
+          relationship: field_related_partners
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: 'See partner''s profile'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: true
+          use_highlighting: false
+          multi_type: separator
+          multi_separator: ', '
+          entity_type: node
+          plugin_id: search_api
       filters:
         type:
           id: type
@@ -859,9 +1231,107 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: search_api_options
-      sorts: {  }
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_promotional_resources
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: ''
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search_api_fulltext
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              editor: '0'
+              approver: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              partner: '0'
+              oira_project_manager: '0'
+              oira_supervisor: '0'
+              superadministrator: '0'
+              administrator: '0'
+            placeholder: Search
+            expose_fields: false
+            searched_fields_id: search_api_fulltext_searched_fields
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: terms
+          min_length: null
+          fields:
+            - body
+            - field_language_1
+            - name_2
+            - name_3
+            - rendered_item
+            - summary
+            - title
+          plugin_id: search_api_fulltext
+      sorts:
+        field_publication_date:
+          id: field_publication_date
+          table: search_api_index_promotional_resources
+          field: field_publication_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: 'Latest first'
+          plugin_id: search_api
+        title:
+          id: title
+          table: search_api_index_promotional_resources
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: Alphabetically
+          plugin_id: search_api
       title: 'Promotional Resources Search'
-      header: {  }
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: 'Showing @start - @end from @total'
+          plugin_id: result
       footer: {  }
       empty: {  }
       relationships:
@@ -872,6 +1342,17 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Promotional material type: Taxonomy term'
+          required: false
+          skip_access: false
+          entity_type: node
+          plugin_id: search_api
+        field_related_partners:
+          id: field_related_partners
+          table: search_api_datasource_promotional_resources_entity_node
+          field: field_related_partners
+          relationship: none
+          group_type: group
+          admin_label: 'Related partners: Content'
           required: false
           skip_access: false
           entity_type: node
@@ -920,14 +1401,15 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.media.field_language'
         - 'config:field.storage.media.field_link'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_logo'
         - 'config:field.storage.node.field_promotional_material_type'
-        - 'config:field.storage.node.field_related_partners'
         - 'config:search_api.index.promotional_resources'
   page_1:
     display_plugin: page
@@ -941,6 +1423,7 @@ display:
         type: none
       defaults:
         cache: false
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -948,12 +1431,13 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.media.field_language'
         - 'config:field.storage.media.field_link'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image'
+        - 'config:field.storage.node.field_logo'
         - 'config:field.storage.node.field_promotional_material_type'
-        - 'config:field.storage.node.field_related_partners'
         - 'config:search_api.index.promotional_resources'
