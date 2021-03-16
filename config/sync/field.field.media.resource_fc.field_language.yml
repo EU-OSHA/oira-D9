@@ -11,7 +11,7 @@ id: media.resource_fc.field_language
 field_name: field_language
 entity_type: media
 bundle: resource_fc
-label: Language
+label: 'Language reso'
 description: ''
 required: false
 translatable: false

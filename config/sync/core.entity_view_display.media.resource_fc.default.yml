@@ -9,12 +9,23 @@ dependencies:
     - media.type.resource_fc
   module:
     - file
+    - languagefield
     - link
 id: media.resource_fc.default
 targetEntityType: media
 bundle: resource_fc
 mode: default
 content:
+  field_language:
+    type: languagefield_default
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      format:
+        name: name
+    third_party_settings: {  }
   field_link:
     weight: 1
     label: above
@@ -35,21 +46,12 @@ content:
     third_party_settings: {  }
     type: file_default
     region: content
-  langcode:
-    type: language
-    weight: 0
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
 hidden:
   created: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
-  field_language: true
+  langcode: true
   name: true
   search_api_excerpt: true
   thumbnail: true

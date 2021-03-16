@@ -1,27 +1,27 @@
-uuid: 4b58b474-713b-4174-9652-e68cb2192b5d
+uuid: 1f29e2ab-de0c-407b-890b-234926736253
 langcode: en
 status: true
 dependencies:
   config:
-    - facets.facet.sector
+    - facets.facet.resource_media_language_name_resource
   module:
     - context
     - facets
     - system
   theme:
     - oira_theme
-id: sector
+id: resourcemedialanguagenameresource
 theme: oira_theme
 region: sidebar_first
-weight: -12
+weight: -5
 provider: null
-plugin: 'facet_block:sector'
+plugin: 'facet_block:resource_media_language_name_resource'
 settings:
-  id: 'facet_block:sector'
-  label: Sector
+  id: 'facet_block:resource_media_language_name_resource'
+  label: Language
   provider: facets
   label_display: visible
-  block_id: sector
+  block_id: resourcemedialanguagenameresource
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -33,5 +33,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /oira-tools
+    pages: '/promotional-resources-search/*'
     negate: false

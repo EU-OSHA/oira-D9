@@ -17,7 +17,7 @@ bundle: resource_fc
 mode: media_library
 content:
   field_language:
-    type: options_select
+    type: options_buttons
     weight: 1
     region: content
     settings: {  }
