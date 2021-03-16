@@ -12,10 +12,10 @@ type: language_field
 settings:
   language_range:
     11: '11'
-    1: 0
-    12: 0
+    1: '1'
+    12: '12'
+    site_default: site_default
     2: 0
-    site_default: 0
     und: 0
     current_interface: 0
     authors_default: 0

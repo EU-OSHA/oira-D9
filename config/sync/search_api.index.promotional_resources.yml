@@ -8,7 +8,6 @@ dependencies:
     - taxonomy
     - path
     - media
-    - workbench_access
     - search_api
   config:
     - field.storage.node.field_country
@@ -16,12 +15,11 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_image
     - field.storage.node.field_image_home_latest_material
-    - field.storage.node.field_logo
     - field.storage.node.field_workbench_access
     - field.storage.taxonomy_term.field_image
     - field.storage.node.field_promotional_material_type
-    - field.storage.node.field_resource_fc
     - field.storage.media.field_language
+    - field.storage.node.field_resource_fc
     - field.storage.media.field_link
     - field.storage.media.field_link_image
     - search_api.server.apachesolr
@@ -125,7 +123,7 @@ field_settings:
       module:
         - taxonomy
   field_language:
-    label: 'Resource » Media » Language'
+    label: 'Resource » Media » Language name'
     datasource_id: 'entity:node'
     property_path: 'field_resource_fc:entity:field_language'
     type: string
@@ -157,14 +155,6 @@ field_settings:
         - field.storage.node.field_resource_fc
       module:
         - media
-  field_logo:
-    label: Logo
-    datasource_id: 'entity:node'
-    property_path: field_logo
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_logo
   field_promotional_material_type:
     label: 'Promotional material type'
     datasource_id: 'entity:node'
@@ -174,23 +164,15 @@ field_settings:
       config:
         - field.storage.node.field_promotional_material_type
   field_workbench_access:
-    label: Partner
+    label: 'Partner wb access'
     datasource_id: 'entity:node'
     property_path: field_workbench_access
     type: integer
     dependencies:
       config:
         - field.storage.node.field_workbench_access
-  id:
-    label: ID
-    datasource_id: 'entity:section_association'
-    property_path: id
-    type: integer
-    dependencies:
-      module:
-        - workbench_access
   langcode:
-    label: 'Resource » Media » Language'
+    label: 'Resource » Media » Language code'
     datasource_id: 'entity:node'
     property_path: 'field_resource_fc:entity:langcode'
     type: string
@@ -248,14 +230,6 @@ field_settings:
       view_mode:
         'entity:node':
           promotional_material: ''
-  section_id:
-    label: 'Section ID'
-    datasource_id: 'entity:section_association'
-    property_path: section_id
-    type: string
-    dependencies:
-      module:
-        - workbench_access
   summary:
     label: 'Description » Summary'
     datasource_id: 'entity:node'
@@ -305,13 +279,8 @@ datasource_settings:
     bundles:
       default: false
       selected:
-        - partner
         - promotional_material
     languages:
-      default: true
-      selected: {  }
-  'entity:section_association':
-    bundles:
       default: true
       selected: {  }
 processor_settings:

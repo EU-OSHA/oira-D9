@@ -19,7 +19,7 @@ mode: media_library
 content:
   field_link:
     type: link
-    weight: 1
+    weight: 0
     region: content
     label: above
     settings:
@@ -31,24 +31,15 @@ content:
     third_party_settings: {  }
   field_media_file:
     type: file_default
-    weight: 2
+    weight: 1
     region: content
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-  langcode:
-    type: language
-    weight: 0
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
   thumbnail:
     type: image
-    weight: 3
+    weight: 2
     region: content
     label: hidden
     settings:
@@ -61,6 +52,7 @@ hidden:
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   field_language: true
+  langcode: true
   name: true
   search_api_excerpt: true
   uid: true
