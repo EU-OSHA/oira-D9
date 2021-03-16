@@ -72,3 +72,113 @@
   }
 }
 
+/*** Private menu ***/
+.menu--private-zone {
+  overflow: hidden;
+  @extend .full-width;
+  padding: 15px 0;
+  background: $bg-color-purple;
+  .menu-level-0 {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 auto;
+    max-width: 1140px;
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a{
+        color: white;
+      }
+    }
+    > .menu-item {
+      a {
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 5px;
+        padding: 70px 0 0;
+        background-size: 56px 56px;
+        background-repeat: no-repeat;
+        background-position: center 10px;
+        border-radius: 120px;
+        text-align: center;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.7);
+          text-decoration: none;
+          color: $bg-color-purple;
+        }
+      }
+      &:first-child {
+        a {
+          background-image: url(../images/news-menu.png);
+          &:hover {
+            background-image: url(../images/news-menu-color.png);
+          }
+        }
+      }
+      &:nth-child(2) {
+        a {
+          background-image: url(../images/tools-menu.png);
+          &:hover {
+            background-image: url(../images/tools-menu-color.png);
+          }
+        }
+      }
+      &:nth-child(3) {
+        a {
+          background-image: url(../images/profile-menu.png);
+          &:hover {
+            background-image: url(../images/profile-menu-color.png);
+          }
+        }
+      }
+      &:nth-child(4) {
+        a {
+          background-image: url(../images/collaboration-menu.png);
+          &:hover {
+            background-image: url(../images/collaboration-menu-color.png);
+          }
+        }
+      }
+      &:last-child {
+        a {
+          background-image: url(../images/promotional-menu.png);
+          &:hover {
+            background-image: url(../images/promotional-menu-color.png);
+          }
+        }
+      }
+    }
+    .menu-level-1 {
+      padding: 0;
+      display: flex;
+      .menu-item a {
+        padding: 2px 0;
+        background-color: white;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 140px;
+        border-radius: 5px;
+        font-style: italic;
+        font-size: 0.9em;
+        line-height: 16px;
+        text-decoration: none;
+        opacity: 0.8;
+        color: $text-color-purple;
+        &:hover {
+          opacity: 1;
+          color: #786586;
+          background-image: none;
+        }
+      }
+    }
+  }
+}
+

@@ -901,3 +901,21 @@ select.custom-select{
     padding: 0;
   }
 }
+
+/**** Tabs ***/
+.tabs {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/**** User Related ***/
+
+.user-login-form {
+  margin: 0 auto;
+  max-width: 1140px;
+  .btn.btn-primary {
+    background: $bg-color-purple;
+    border: 1px solid $bg-color-purple;
+    color: white;
+  }
+}
