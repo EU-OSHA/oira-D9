@@ -9,6 +9,7 @@ dependencies:
     - media.type.resource_fc
   module:
     - file
+    - languagefield
     - link
     - path
 id: media.resource_fc.default
@@ -23,13 +24,16 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_language:
-    weight: 1
-    settings: {  }
+    weight: 3
+    settings:
+      size: '60'
+      autocomplete_route_name: languagefield.autocomplete
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: languagefield_autocomplete
     region: content
   field_link:
-    weight: 2
+    weight: 1
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -37,19 +41,12 @@ content:
     type: link_default
     region: content
   field_media_file:
-    weight: 3
+    weight: 2
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
-  langcode:
-    type: language_select
-    weight: 8
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   name:
     type: string_textfield
     weight: 0
@@ -81,4 +78,5 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true
