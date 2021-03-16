@@ -23,8 +23,10 @@ dependencies:
     - field.field.node.practical_tool.field_workbench_access
     - node.type.practical_tool
   module:
+    - content_moderation
     - datetime
     - field_group
+    - languagefield
     - link
     - media_library
     - path
@@ -121,9 +123,12 @@ content:
     region: content
   field_language:
     weight: 12
-    settings: {  }
+    settings:
+      size: '60'
+      autocomplete_route_name: languagefield.autocomplete
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: languagefield_autocomplete
     region: content
   field_publication_date:
     weight: 5
@@ -161,9 +166,12 @@ content:
     region: content
   field_third_language:
     weight: 7
-    settings: {  }
+    settings:
+      size: '60'
+      autocomplete_route_name: languagefield.autocomplete
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: languagefield_autocomplete_tags
     region: content
   field_third_title:
     weight: 5
