@@ -171,7 +171,7 @@ content:
       autocomplete_route_name: languagefield.autocomplete
       placeholder: ''
     third_party_settings: {  }
-    type: languagefield_autocomplete_tags
+    type: languagefield_autocomplete
     region: content
   field_third_title:
     weight: 5

@@ -21,11 +21,13 @@ dependencies:
     - field.field.node.practical_tool.field_tool_type
     - field.field.node.practical_tool.field_wf_notification
     - field.field.node.practical_tool.field_workbench_access
+    - image.style.media_library
     - node.type.practical_tool
   module:
     - datetime
     - link
     - media
+    - options
     - text
     - user
 id: node.practical_tool.default
@@ -36,7 +38,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 3
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -45,31 +47,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_alternative_body:
-    weight: 9
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_alternative_title:
-    weight: 8
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_co_author:
-    weight: 12
-    label: above
+    weight: 8
+    label: hidden
     settings:
-      link: true
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_country:
-    weight: 4
+    weight: 5
     label: above
     settings:
       link: true
@@ -77,82 +65,50 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    weight: 5
-    label: above
+    weight: 0
+    label: hidden
     settings:
-      image_style: ''
+      image_style: media_library
       image_link: ''
     third_party_settings: {  }
     type: media_thumbnail
     region: content
   field_language:
-    weight: 7
+    weight: 4
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: list_default
     region: content
   field_publication_date:
     weight: 1
-    label: above
+    label: hidden
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: day_only
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_related_partners:
-    weight: 18
-    label: above
+    weight: 7
+    label: hidden
     settings:
-      link: true
+      view_mode: related_partner
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_revised_date:
-    weight: 10
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
+    type: entity_reference_entity_view
     region: content
   field_sector_category:
-    weight: 11
+    weight: 3
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_third_description:
-    weight: 15
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_third_language:
-    weight: 16
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_third_title:
-    weight: 14
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_tool_link:
     weight: 6
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -162,43 +118,8 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_tool_type:
-    weight: 2
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_wf_notification:
-    weight: 13
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_workbench_access:
-    weight: 19
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  langcode:
-    type: language
-    weight: 17
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
   links:
-    weight: 0
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -207,4 +128,14 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_alternative_body: true
+  field_alternative_title: true
+  field_revised_date: true
+  field_third_description: true
+  field_third_language: true
+  field_third_title: true
+  field_tool_type: true
+  field_wf_notification: true
+  field_workbench_access: true
+  langcode: true
   search_api_excerpt: true
