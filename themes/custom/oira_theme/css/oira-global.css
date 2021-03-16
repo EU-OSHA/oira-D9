@@ -1032,6 +1032,19 @@ select.custom-select {
   color: white;
 }
 
+/*** Language switcher ***/
+.block-lang-dropdown .form-select {
+  border: 2px solid #003399;
+  outline: none;
+  border-radius: 0px;
+  height: initial;
+  padding: 2px 3px;
+  background-color: #786586;
+  color: #ffffff;
+  width: 190px !important;
+  font-size: 1rem;
+}
+
 .site-footer {
   width: 100%;
   height: auto;
