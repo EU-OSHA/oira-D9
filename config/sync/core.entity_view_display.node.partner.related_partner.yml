@@ -1,8 +1,9 @@
-uuid: 819e58c4-4184-4a48-a5d8-65f6ad86addb
+uuid: ee922e6d-95db-475d-90b5-300f2c4aac7d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.related_partner
     - field.field.node.partner.field_collaborator
     - field.field.node.partner.field_country
     - field.field.node.partner.field_dedicated_oira_website
@@ -25,119 +26,75 @@ dependencies:
     - field.field.node.partner.field_social_profile
     - field.field.node.partner.field_website
     - field.field.node.partner.field_workbench_access
+    - image.style.thumbnail
     - node.type.partner
   module:
-    - link
+    - layout_builder
+    - linked_field
+    - media
     - user
-id: node.partner.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.partner.related_partner
 targetEntityType: node
 bundle: partner
-mode: default
+mode: related_partner
 content:
-  field_country:
-    weight: 4
-    label: hidden
-    settings:
-      link: false
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_dedicated_oira_website:
-    type: link
-    weight: 6
-    region: content
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
   field_logo:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     weight: 0
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: thumbnail
+      image_link: content
     third_party_settings: {  }
     region: content
-  field_main_contact:
-    type: string
-    weight: 8
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_main_contact_email:
-    type: basic_string
-    weight: 9
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_mission_statement:
-    type: basic_string
-    weight: 7
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_ph_address:
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_ph_cp:
+  field_workbench_access:
+    type: entity_reference_label
     weight: 2
+    region: content
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
+      link: false
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[node:url:absolute]'
+        advanced:
+          text: '> See partner''s profile'
+        token: ''
+  links:
+    weight: 1
     region: content
-  field_ph_town:
-    weight: 3
-    label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
-    region: content
-  field_website:
-    weight: 5
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
 hidden:
   addtoany: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   field_collaborator: true
+  field_country: true
+  field_dedicated_oira_website: true
   field_general_email: true
   field_general_phone: true
   field_guid_main_contact: true
   field_guid_organisation: true
+  field_main_contact: true
+  field_main_contact_email: true
+  field_mission_statement: true
   field_oira_eu_level: true
   field_orgtype: true
   field_partner: true
   field_partner_other_users: true
   field_partner_type: true
+  field_ph_address: true
+  field_ph_cp: true
+  field_ph_town: true
   field_social_profile: true
-  field_workbench_access: true
+  field_website: true
   langcode: true
-  links: true
   search_api_excerpt: true

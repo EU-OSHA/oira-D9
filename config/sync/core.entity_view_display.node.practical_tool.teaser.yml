@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.practical_tool.field_alternative_body
     - field.field.node.practical_tool.field_alternative_title
     - field.field.node.practical_tool.field_co_author
+    - field.field.node.practical_tool.field_co_author_node
     - field.field.node.practical_tool.field_country
     - field.field.node.practical_tool.field_image
     - field.field.node.practical_tool.field_language
@@ -67,6 +68,7 @@ hidden:
   field_alternative_body: true
   field_alternative_title: true
   field_co_author: true
+  field_co_author_node: true
   field_country: true
   field_language: true
   field_publication_date: true
