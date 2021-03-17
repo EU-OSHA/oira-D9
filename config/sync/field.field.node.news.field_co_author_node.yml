@@ -1,0 +1,29 @@
+uuid: df0489a0-729a-42f6-96b4-404740088add
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co_author_node
+    - node.type.news
+    - node.type.partner
+id: node.news.field_co_author_node
+field_name: field_co_author_node
+entity_type: node
+bundle: news
+label: 'Co-author node'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      partner: partner
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

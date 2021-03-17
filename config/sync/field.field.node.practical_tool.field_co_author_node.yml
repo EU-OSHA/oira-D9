@@ -1,0 +1,29 @@
+uuid: 762ec727-d718-441e-8274-c93596380d21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co_author_node
+    - node.type.partner
+    - node.type.practical_tool
+id: node.practical_tool.field_co_author_node
+field_name: field_co_author_node
+entity_type: node
+bundle: practical_tool
+label: 'Co-author node'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      partner: partner
+    sort:
+      field: nid
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
