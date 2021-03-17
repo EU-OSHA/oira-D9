@@ -84,6 +84,13 @@
   transform: translate(-50%, -50%);
 }
 
+/**** Forms ****/
+input[type=text],
+input[type=search] {
+  border-radius: 0;
+  border: none;
+}
+
 /* Font Family */
 /* Font-weights */
 /* Breadcrumbs */
@@ -527,7 +534,7 @@ select.custom-select {
 }
 .page-view-oira-ws #sidebar_first aside #edit-submit-oira-ws--2 {
   position: absolute;
-  top: 46px;
+  top: 18px;
   right: 0px;
   color: #786586;
   border: none;
@@ -628,6 +635,34 @@ select.custom-select {
 .page-view-oira-ws .content-view-tools-view .group-right h2:hover {
   color: #786586;
   text-decoration: none;
+}
+
+/*** OiRA Pager ***/
+.pagination {
+  margin: 2rem auto;
+}
+.pagination .page-item {
+  color: #10b2e4;
+  font-weight: bold;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+}
+.pagination .page-item.active .page-link {
+  background: transparent;
+  border: none;
+  color: #10b2e4;
+}
+.pagination .page-item .page-link {
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: #10b2e4;
+}
+.pagination .pager__item--next .page-link {
+  background: transparent;
+  border: none;
+  color: #10b2e4;
 }
 
 /* OiRA FAQs */
