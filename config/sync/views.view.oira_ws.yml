@@ -842,7 +842,7 @@ display:
           field: name_2
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'country name'
           label: country_name
           exclude: true
           alter:
@@ -1059,7 +1059,7 @@ display:
           field: name_3
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'sector name'
           label: sector_name
           exclude: true
           alter:
@@ -1702,7 +1702,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"content-view-tools-view\">\r\n  \r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n  </div>\r\n  \r\n  <div class=\"group-right \">\r\n    <div>{{ field_tool_link }}</div>\r\n    <div>{{ field_revised_date }}</div>\r\n    <div>{{ field_language }}</div>\r\n    <div><h2>{{ title }}</h2></div>\r\n  </div>\r\n  \r\n   <div class=\"expandible\">\r\n       <div>{{body}}</div>\r\n\r\n       <div class=\"partners-wrapper\">\r\n      \r\n          <div class=\"related-partners\">\r\n             {{field_logo}}\r\n             <h4>{{ title_1 }}</h4>\r\n          </div>\r\n\r\n         <div class=\"co-author\">\r\n           {{ field_logo_1 }} \r\n           <h4>{{ title_2 }}</h4>\r\n         </div>\r\n\r\n      </div> \r\n\r\n    </div>\r\n\r\n\r\n</div> "
+            text: "<div class=\"content-view-tools-view\">\r\n  \r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n  </div>\r\n  \r\n  <div class=\"group-right \">\r\n    <div>{{ field_tool_link }}</div>\r\n    <div>{{ field_revised_date }}</div>\r\n    <div> <p>{{ name_3 }}</p> <p>{{ name_2 }}</p> <p>{{field_language }}</p> </div>\r\n    <div><h2>{{ title }}</h2></div>\r\n\r\n\r\n   <div class=\"expandible\">\r\n       <div>{{body}}</div>\r\n\r\n       <div class=\"partners-wrapper\">\r\n      \r\n          <div class=\"related-partners\">\r\n             {{field_logo}}\r\n             <h4>{{ title_1 }}</h4>\r\n          </div>\r\n\r\n         <div class=\"co-author\">\r\n           {{ field_logo_1 }} \r\n           <h4>{{ title_2 }}</h4>\r\n         </div>\r\n\r\n      </div> \r\n\r\n    </div>\r\n\r\n  </div>\r\n  \r\n\r\n\r\n</div> "
             make_link: false
             path: ''
             absolute: false
