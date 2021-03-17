@@ -1,0 +1,29 @@
+uuid: bd24c133-d34b-4e15-b247-5ee5803a4e52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_partners
+    - node.type.news
+    - node.type.partner
+id: node.news.field_related_partners
+field_name: field_related_partners
+entity_type: node
+bundle: news
+label: 'Related partners'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      partner: partner
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

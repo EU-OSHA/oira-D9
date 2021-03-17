@@ -8,11 +8,13 @@ dependencies:
     - field.field.node.news.field_aditional_resources
     - field.field.node.news.field_character_count
     - field.field.node.news.field_co_author
+    - field.field.node.news.field_co_author_node
     - field.field.node.news.field_image
     - field.field.node.news.field_image_home_latest_news
     - field.field.node.news.field_migration_source
     - field.field.node.news.field_page_count
     - field.field.node.news.field_publication_date
+    - field.field.node.news.field_related_partners
     - field.field.node.news.field_summary
     - field.field.node.news.field_tags
     - field.field.node.news.field_wf_notification
@@ -73,9 +75,11 @@ hidden:
   field_aditional_resources: true
   field_character_count: true
   field_co_author: true
+  field_co_author_node: true
   field_image_home_latest_news: true
   field_migration_source: true
   field_page_count: true
+  field_related_partners: true
   field_tags: true
   field_wf_notification: true
   field_workbench_access: true
