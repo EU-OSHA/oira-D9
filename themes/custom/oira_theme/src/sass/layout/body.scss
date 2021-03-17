@@ -964,3 +964,116 @@ select.custom-select{
     font-size: 1rem;
   }
 }
+
+/**** Tables in Private ZOne ****/
+.path-private-zone {
+  .block-system.block-system-main-block {
+    padding-top: 1.8rem;
+    background-color: $bg-color-purple-light;
+  }
+  .view-filters {
+    margin: 0 0 0.3rem;
+    padding: 1rem;
+    background-color: $bg-color-purple;
+    color: white;
+  }
+  .views-exposed-form {
+    display: flex;
+    flex-wrap: wrap;
+    .form-row {
+      margin: 0;
+      align-items: flex-start;
+      fieldset {
+        padding: 0;
+      }
+    }
+    .form-group {
+      width: 25%;
+      min-width: 25%;
+      display: flex;
+      margin-right: 0.8rem;
+      .form-group {
+        margin-right: 0;
+        width: auto;
+        min-width: auto;
+      }
+    }
+    input, select {
+      background: white;
+      border-radius: 0;
+      width: 100%;
+    }
+    select {
+      padding: 0.4rem;
+      background: #fff url(../images/down-arrow-inputs-blue.png) right center no-repeat;
+      background-size: contain;
+    }
+    #edit-field-publication-date-value-wrapper {
+      width: auto;
+      min-width: auto;
+      margin-right: 0;
+      .form-group {
+        margin-right: 0.8rem;
+      }
+      .fieldset-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+      }
+      legend {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1rem;
+        color: $bg-color-purple-light;
+      }
+    }
+    .form-actions {
+      width: auto;
+      margin: 0 0 2rem;
+      display: flex;
+      justify-content: flex-start;
+      .form-submit {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        background: $text-color-blue-light;
+        font-weight: bold;
+      }
+    }
+  }
+  table {
+    thead > tr {
+      border: none;
+      background-color: $bg-color-purple;
+      th {
+        background: transparent;
+      }
+    }
+    tr {
+      td {
+        color: $text-color-black;
+        border: none;
+        border-bottom: 2px solid $bg-color-purple-light-3;
+        font-weight: normal;
+        a {
+          font-weight: normal;
+          font-style: normal;
+        }
+      }
+      th {
+        border: none;
+        background-color: $bg-color-purple;
+        color: white;
+      }
+    }
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $bg-color-grey-light;
+  }
+  .table-striped > tbody > tr:nth-of-type(even) {
+    background-color: transparent;
+    &:hover {
+      background-color: $bg-color-grey-light;
+    }
+  }
+}
