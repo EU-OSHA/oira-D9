@@ -7,10 +7,12 @@ dependencies:
     - field.storage.node.field_alternative_body
     - field.storage.node.field_image
     - field.storage.node.field_language
+    - field.storage.node.field_logo
     - field.storage.node.field_revised_date
     - field.storage.node.field_tool_link
     - field.storage.taxonomy_term.field_iso2
     - image.style.medium
+    - image.style.thumbnail
     - search_api.index.oira_tools
   module:
     - better_exposed_filters
@@ -18,6 +20,7 @@ dependencies:
     - languagefield
     - link
     - media
+    - node
     - search_api
     - taxonomy
     - text
@@ -97,10 +100,10 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ '
+            next: ›
+            first: «
+            last: »
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -691,6 +694,78 @@ display:
             multi_type: separator
             multi_separator: ', '
           plugin_id: search_api_field
+        langcode:
+          id: langcode
+          table: search_api_entity_taxonomy_term
+          field: langcode
+          relationship: field_country
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: language
+          settings:
+            link_to_entity: false
+            native_language: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          entity_type: taxonomy_term
+          plugin_id: search_api_field
         field_iso2:
           id: field_iso2
           table: search_api_index_oira_tools
@@ -767,7 +842,7 @@ display:
           field: name_2
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'country name'
           label: country_name
           exclude: true
           alter:
@@ -813,6 +888,80 @@ display:
           type: string
           settings:
             link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
+        field_language_1:
+          id: field_language_1
+          table: search_api_index_oira_tools
+          field: field_language
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: languagefield_default
+          settings:
+            link_to_entity: 0
+            format:
+              iso: iso
+              name: name
+              name_native: 0
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -910,7 +1059,7 @@ display:
           field: name_3
           relationship: none
           group_type: group
-          admin_label: ''
+          admin_label: 'sector name'
           label: sector_name
           exclude: true
           alter:
@@ -1200,18 +1349,18 @@ display:
               - '1'
               - '@count'
           plugin_id: search_api_field
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
+        field_logo:
+          id: field_logo
+          table: search_api_entity_node
+          field: field_logo
+          relationship: field_related_partners
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
-            alter_text: true
-            text: "<div class=\"content-view-tools-view\">\r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n  </div>\r\n  <div class=\"group-right \">\r\n    <div>{{ field_tool_link }}</div>\r\n    <div>{{ field_revised_date }}</div>\r\n    <div>{{ field_language }}</div>\r\n    <div><h2>{{ title }}</h2></div>\r\n  </div>\r\n</div>"
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -1247,13 +1396,64 @@ display:
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
-        langcode:
-          id: langcode
-          table: search_api_entity_taxonomy_term
-          field: langcode
-          relationship: field_country
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: media_thumbnail
+          settings:
+            image_style: thumbnail
+            image_link: content
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              audio:
+                display_method: label
+                view_mode: default
+              collaboration_items:
+                display_method: label
+                view_mode: default
+              collaborator:
+                display_method: label
+                view_mode: default
+              document:
+                display_method: label
+                view_mode: default
+              image:
+                display_method: label
+                view_mode: default
+              image_and_link:
+                display_method: label
+                view_mode: default
+              remote_video:
+                display_method: label
+                view_mode: default
+              resource_fc:
+                display_method: label
+                view_mode: default
+              video:
+                display_method: label
+                view_mode: default
+          entity_type: node
+          plugin_id: search_api_field
+        title_1:
+          id: title_1
+          table: search_api_entity_node
+          field: title
+          relationship: field_related_partners
           group_type: group
           admin_label: ''
           label: ''
@@ -1298,10 +1498,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: language
+          type: string
           settings:
-            link_to_entity: false
-            native_language: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1319,19 +1518,119 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          entity_type: taxonomy_term
+          entity_type: node
           plugin_id: search_api_field
-        field_language_1:
-          id: field_language_1
-          table: search_api_index_oira_tools
-          field: field_language
-          relationship: none
+        field_logo_1:
+          id: field_logo_1
+          table: search_api_entity_node
+          field: field_logo
+          relationship: field_co_author_node
           group_type: group
           admin_label: ''
           label: ''
           exclude: true
           alter:
-            alter_text: true
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: media_thumbnail
+          settings:
+            image_style: thumbnail
+            image_link: content
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              audio:
+                display_method: label
+                view_mode: default
+              collaboration_items:
+                display_method: label
+                view_mode: default
+              collaborator:
+                display_method: label
+                view_mode: default
+              document:
+                display_method: label
+                view_mode: default
+              image:
+                display_method: label
+                view_mode: default
+              image_and_link:
+                display_method: label
+                view_mode: default
+              remote_video:
+                display_method: label
+                view_mode: default
+              resource_fc:
+                display_method: label
+                view_mode: default
+              video:
+                display_method: label
+                view_mode: default
+          entity_type: node
+          plugin_id: search_api_field
+        title_2:
+          id: title_2
+          table: search_api_entity_node
+          field: title
+          relationship: field_co_author_node
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
             text: ''
             make_link: false
             path: ''
@@ -1370,13 +1669,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: languagefield_default
+          type: string
           settings:
-            link_to_entity: 0
-            format:
-              iso: iso
-              name: name
-              name_native: 0
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1394,7 +1689,57 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
+          entity_type: node
           plugin_id: search_api_field
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"content-view-tools-view\">\r\n  \r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n  </div>\r\n  \r\n  <div class=\"group-right \">\r\n    <div>{{ field_tool_link }}</div>\r\n    <div>{{ field_revised_date }}</div>\r\n    <div> <p>{{ name_3 }}</p> <p>{{ name_2 }}</p> <p>{{field_language }}</p> </div>\r\n    <div><h2>{{ title }}</h2></div>\r\n\r\n\r\n   <div class=\"expandible\">\r\n       <div>{{body}}</div>\r\n\r\n       <div class=\"partners-wrapper\">\r\n      \r\n          <div class=\"related-partners\">\r\n             {{field_logo}}\r\n             <h4>{{ title_1 }}</h4>\r\n          </div>\r\n\r\n         <div class=\"co-author\">\r\n           {{ field_logo_1 }} \r\n           <h4>{{ title_2 }}</h4>\r\n         </div>\r\n\r\n      </div> \r\n\r\n    </div>\r\n\r\n  </div>\r\n  \r\n\r\n\r\n</div> "
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
       filters:
         status:
           id: status
@@ -1605,13 +1950,24 @@ display:
           skip_access: false
           entity_type: node
           plugin_id: search_api
-        field_co_author:
-          id: field_co_author
+        field_co_author_node:
+          id: field_co_author_node
           table: search_api_datasource_oira_tools_entity_node
-          field: field_co_author
+          field: field_co_author_node
           relationship: none
           group_type: group
-          admin_label: 'Co-author: Taxonomy term'
+          admin_label: 'Co-author node: Content'
+          required: false
+          skip_access: false
+          entity_type: node
+          plugin_id: search_api
+        field_related_partners:
+          id: field_related_partners
+          table: search_api_datasource_oira_tools_entity_node
+          field: field_related_partners
+          relationship: none
+          group_type: group
+          admin_label: 'Related partners: Content'
           required: false
           skip_access: false
           entity_type: node
@@ -1621,6 +1977,7 @@ display:
       filter_groups:
         operator: AND
         groups: {  }
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1635,6 +1992,7 @@ display:
         - 'config:field.storage.node.field_alternative_body'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_language'
+        - 'config:field.storage.node.field_logo'
         - 'config:field.storage.node.field_revised_date'
         - 'config:field.storage.node.field_tool_link'
         - 'config:field.storage.taxonomy_term.field_iso2'
@@ -1815,6 +2173,7 @@ display:
         - 'config:field.storage.node.field_alternative_body'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_language'
+        - 'config:field.storage.node.field_logo'
         - 'config:field.storage.node.field_revised_date'
         - 'config:field.storage.node.field_tool_link'
         - 'config:field.storage.taxonomy_term.field_iso2'
