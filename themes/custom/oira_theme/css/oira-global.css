@@ -1526,6 +1526,27 @@ select.custom-select {
   font-size: 1.2rem;
 }
 
+.view-tools.view-display-id-block_1 .views-field-field-tool-link {
+  margin-bottom: 15px;
+}
+.view-tools.view-display-id-block_1 .partners-wrapper {
+  display: none;
+}
+.view-tools.view-display-id-block_1 .related-partners,
+.view-tools.view-display-id-block_1 .co-author {
+  display: flex;
+  align-items: stretch;
+}
+.view-tools.view-display-id-block_1 .related-partners h4 a,
+.view-tools.view-display-id-block_1 .co-author h4 a {
+  font-size: 1.125rem;
+}
+.view-tools.view-display-id-block_1 .related-partners a,
+.view-tools.view-display-id-block_1 .co-author a {
+  color: #58585a;
+  font-style: normal;
+}
+
 .content-latest-news h2:after {
   content: "";
   background: url(../images/latest-news.png) no-repeat;

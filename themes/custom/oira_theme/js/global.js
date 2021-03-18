@@ -56,6 +56,11 @@ jQuery(document).ready(function($){
       });
     }
 
+    $('.see-more').click(function(){
+      $(this).toggleClass('expanded');
+      $('.partners-wrapper').toggleClass('expanded-wrapper');
+      $('.partners-wrapper').slideToggle('slow');
+    });
 
 });
 
