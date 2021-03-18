@@ -93,6 +93,30 @@ input[type=search] {
 
 /* Font Family */
 /* Font-weights */
+input [type=text],
+input [type=number],
+input [type=search],
+input [type=password],
+textarea,
+select {
+  background-color: #FFF !important;
+  border-radius: 0;
+  width: 100%;
+}
+
+select {
+  padding: 0.4rem;
+  background: #fff url(../images/down-arrow-inputs-blue.png) right center no-repeat;
+  background-size: contain;
+}
+
+legend {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #dfd8e4;
+}
+
 /* Breadcrumbs */
 .breadcrumb {
   background-color: transparent;
@@ -187,6 +211,40 @@ h3 a:hover {
 
 h1.page-header {
   color: #786586;
+}
+
+/*** OiRA Pager ***/
+.pagination {
+  padding: 10px;
+  margin: 0.5rem auto;
+  border-radius: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination .page-item {
+  color: #10b2e4;
+  font-weight: bold;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+}
+.pagination .page-item.active .page-link {
+  background: transparent;
+  border: none;
+  color: #10b2e4;
+}
+.pagination .page-item .page-link {
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: #10b2e4;
+}
+.pagination .pager__item--next .page-link {
+  background: transparent;
+  border: none;
+  color: #10b2e4;
 }
 
 /* Common elements */
@@ -637,34 +695,6 @@ select.custom-select {
   text-decoration: none;
 }
 
-/*** OiRA Pager ***/
-.pagination {
-  margin: 2rem auto;
-}
-.pagination .page-item {
-  color: #10b2e4;
-  font-weight: bold;
-  font-size: 1rem;
-  background: transparent;
-  border: none;
-}
-.pagination .page-item.active .page-link {
-  background: transparent;
-  border: none;
-  color: #10b2e4;
-}
-.pagination .page-item .page-link {
-  padding: 0;
-  background: transparent;
-  border: none;
-  color: #10b2e4;
-}
-.pagination .pager__item--next .page-link {
-  background: transparent;
-  border: none;
-  color: #10b2e4;
-}
-
 /* OiRA FAQs */
 .view-id-faqs_oira {
   padding-top: 1.5rem;
@@ -1080,9 +1110,14 @@ select.custom-select {
   font-size: 1rem;
 }
 
-/**** Tables in Private ZOne ****/
+/**** Tables in Private Zone ****/
+.path-private-zone {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .path-private-zone .block-system.block-system-main-block {
   padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
   background-color: #dfd8e4;
 }
 .path-private-zone .view-filters {
@@ -1096,6 +1131,7 @@ select.custom-select {
   flex-wrap: wrap;
 }
 .path-private-zone .views-exposed-form .form-row {
+  width: 100%;
   margin: 0;
   align-items: flex-start;
 }
@@ -1114,7 +1150,7 @@ select.custom-select {
   min-width: auto;
 }
 .path-private-zone .views-exposed-form input, .path-private-zone .views-exposed-form select {
-  background: white;
+  background: #FFF;
   border-radius: 0;
   width: 100%;
 }
@@ -2059,6 +2095,29 @@ select.custom-select {
   .page-node-402 .esener-item {
     padding: 0 15px;
     flex-direction: column;
+  }
+
+  .path-private-zone .views-exposed-form .form-group {
+    width: 100%;
+    margin-right: 0;
+  }
+  .path-private-zone .views-exposed-form .form-group .form-group {
+    width: auto;
+  }
+  .path-private-zone .views-exposed-form #edit-field-publication-date-value-wrapper {
+    width: 100%;
+    min-width: 100%;
+  }
+  .path-private-zone .views-exposed-form #edit-field-publication-date-value-wrapper .fieldset-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .path-private-zone .views-exposed-form #edit-field-publication-date-value-wrapper .fieldset-wrapper .form-group {
+    width: 48%;
+    margin-right: 0;
+  }
+  .path-private-zone .views-exposed-form .form-actions {
+    padding: 0;
   }
 }
 /* End Media 480px */
