@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 id: translation_manager
 label: 'Translation Manager'
-weight: 5
+weight: -6
 is_admin: null
 permissions: {  }

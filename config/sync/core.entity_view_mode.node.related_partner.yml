@@ -1,0 +1,10 @@
+uuid: 2c2795b6-66e0-4e82-b2d8-70ba5a08cf5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.related_partner
+label: 'Related Partner'
+targetEntityType: node
+cache: true

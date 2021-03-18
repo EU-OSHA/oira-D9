@@ -123,7 +123,7 @@ field_settings:
       module:
         - taxonomy
   field_language:
-    label: Language
+    label: 'Language field_language'
     datasource_id: 'entity:node'
     property_path: field_language
     type: string
@@ -155,7 +155,7 @@ field_settings:
       config:
         - field.storage.node.field_sector_category
   field_third_description:
-    label: Description
+    label: 'Description third'
     datasource_id: 'entity:node'
     property_path: field_third_description
     type: text
@@ -163,7 +163,7 @@ field_settings:
       config:
         - field.storage.node.field_third_description
   field_third_language:
-    label: Language
+    label: 'Language third'
     datasource_id: 'entity:node'
     property_path: field_third_language
     type: string
@@ -171,7 +171,7 @@ field_settings:
       config:
         - field.storage.node.field_third_language
   field_third_title:
-    label: Title
+    label: 'Title third'
     datasource_id: 'entity:node'
     property_path: field_third_title
     type: string
@@ -195,7 +195,7 @@ field_settings:
       config:
         - field.storage.node.field_wf_notification
   langcode:
-    label: Language
+    label: 'Language langcode'
     datasource_id: 'entity:node'
     property_path: langcode
     type: string

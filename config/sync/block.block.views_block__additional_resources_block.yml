@@ -1,0 +1,39 @@
+uuid: a7e7dd3b-9328-4ba5-bb83-44c6a005dda3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.additional_resources
+  module:
+    - context
+    - system
+    - views
+  theme:
+    - oira_theme
+id: views_block__additional_resources_block
+theme: oira_theme
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:additional_resources-block'
+settings:
+  id: 'views_block:additional_resources-block'
+  label: 'Additional resources'
+  provider: views
+  label_display: visible
+  views_label: 'Additional resources'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /what-risk-assessment
+    negate: false

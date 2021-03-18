@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.promotional_material.body
     - field.field.node.promotional_material.field_co_author
+    - field.field.node.promotional_material.field_co_author_node
     - field.field.node.promotional_material.field_country
     - field.field.node.promotional_material.field_image
     - field.field.node.promotional_material.field_image_home_latest_material
@@ -36,9 +37,9 @@ content:
     region: content
   content_moderation_control:
     weight: -20
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_co_author:
     weight: 6
     label: above
@@ -66,7 +67,7 @@ content:
     region: content
   field_image_home_latest_material:
     type: entity_reference_entity_view
-    weight: 12
+    weight: 11
     label: above
     settings:
       view_mode: default
@@ -101,7 +102,7 @@ content:
     type: datetime_default
     region: content
   field_related_partners:
-    weight: 11
+    weight: 12
     label: above
     settings:
       link: true
@@ -136,14 +137,6 @@ content:
     third_party_settings: {  }
     type: boolean
     region: content
-  field_workbench_access:
-    weight: 13
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   links:
     weight: 0
     region: content
@@ -154,5 +147,7 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_co_author_node: true
+  field_workbench_access: true
   langcode: true
   search_api_excerpt: true
