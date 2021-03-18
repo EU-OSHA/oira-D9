@@ -1,0 +1,35 @@
+/*** OiRA Pager ***/
+.pagination {
+  padding: 10px;
+  margin: 0.5rem auto;
+  border-radius: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .page-item {
+    color: $text-color-blue-light;
+    font-weight: bold;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    &.active .page-link {
+      background: transparent;
+      border: none;
+      color: $text-color-blue-light;
+    }
+    .page-link {
+      padding: 0;
+      background: transparent;
+      border: none;
+      color: $text-color-blue-light;
+    }
+  }
+  .pager__item--next {
+    .page-link {
+      background: transparent;
+      border: none;
+      color: $text-color-blue-light;
+    }
+  }
+}

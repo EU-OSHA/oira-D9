@@ -381,7 +381,7 @@ select.custom-select{
       }
       #edit-submit-oira-ws--2{
         position: absolute;
-        top: 46px;
+        top: 18px;
         right: 0px;
         color: #786586;
         border: none;
@@ -495,6 +495,7 @@ select.custom-select{
     }
   }
 }
+
 
 /* OiRA FAQs */
 .view-id-faqs_oira{
@@ -931,5 +932,122 @@ select.custom-select{
     color: #ffffff;
     width: 190px !important;
     font-size: 1rem;
+  }
+}
+
+/**** Tables in Private Zone ****/
+.path-private-zone {
+  max-width: 100%;
+  overflow-x: hidden;
+  .block-system.block-system-main-block {
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    background-color: $bg-color-purple-light;
+  }
+  .view-filters {
+    margin: 0 0 0.3rem;
+    padding: 1rem;
+    background-color: $bg-color-purple;
+    color: white;
+  }
+  .views-exposed-form {
+    display: flex;
+    flex-wrap: wrap;
+    .form-row {
+      width: 100%;
+      margin: 0;
+      align-items: flex-start;
+      fieldset {
+        padding: 0;
+      }
+    }
+    .form-group {
+      width: 25%;
+      min-width: 25%;
+      display: flex;
+      margin-right: 0.8rem;
+      .form-group {
+        margin-right: 0;
+        width: auto;
+        min-width: auto;
+      }
+    }
+    input, select {
+      background: $bg-color-white;
+      border-radius: 0;
+      width: 100%;
+    }
+    select {
+      padding: 0.4rem;
+      background: #fff url(../images/down-arrow-inputs-blue.png) right center no-repeat;
+      background-size: contain;
+    }
+    #edit-field-publication-date-value-wrapper {
+      width: auto;
+      min-width: auto;
+      margin-right: 0;
+      .form-group {
+        margin-right: 0.8rem;
+      }
+      .fieldset-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+      }
+      legend {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1rem;
+        color: $bg-color-purple-light;
+      }
+    }
+    .form-actions {
+      width: auto;
+      margin: 0 0 2rem;
+      display: flex;
+      justify-content: flex-start;
+      .form-submit {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        background: $text-color-blue-light;
+        font-weight: bold;
+      }
+    }
+  }
+  table {
+    thead > tr {
+      border: none;
+      background-color: $bg-color-purple;
+      th {
+        background: transparent;
+      }
+    }
+    tr {
+      td {
+        color: $text-color-black;
+        border: none;
+        border-bottom: 2px solid $bg-color-purple-light-3;
+        font-weight: normal;
+        a {
+          font-weight: normal;
+          font-style: normal;
+        }
+      }
+      th {
+        border: none;
+        background-color: $bg-color-purple;
+        color: white;
+      }
+    }
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $bg-color-grey-light;
+  }
+  .table-striped > tbody > tr:nth-of-type(even) {
+    background-color: transparent;
+    &:hover {
+      background-color: $bg-color-grey-light;
+    }
   }
 }
