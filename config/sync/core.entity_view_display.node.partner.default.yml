@@ -54,6 +54,13 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+  field_general_email:
+    type: basic_string
+    weight: 7
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
   field_logo:
     type: entity_reference_entity_view
     weight: 0
@@ -63,28 +70,6 @@ content:
       link: false
     third_party_settings: {  }
     region: content
-  field_main_contact:
-    type: string
-    weight: 8
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_main_contact_email:
-    type: basic_string
-    weight: 9
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_mission_statement:
-    type: basic_string
-    weight: 7
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
   field_ph_address:
     weight: 1
     label: hidden
@@ -109,6 +94,18 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_social_profile:
+    type: link
+    weight: 8
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
   field_website:
     weight: 5
     label: above
@@ -127,16 +124,17 @@ hidden:
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   field_collaborator: true
-  field_general_email: true
   field_general_phone: true
   field_guid_main_contact: true
   field_guid_organisation: true
+  field_main_contact: true
+  field_main_contact_email: true
+  field_mission_statement: true
   field_oira_eu_level: true
   field_orgtype: true
   field_partner: true
   field_partner_other_users: true
   field_partner_type: true
-  field_social_profile: true
   field_workbench_access: true
   langcode: true
   links: true

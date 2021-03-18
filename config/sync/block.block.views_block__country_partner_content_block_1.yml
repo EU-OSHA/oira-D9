@@ -1,27 +1,29 @@
-uuid: f9342486-e6f3-46c1-8d16-010f4919a185
+uuid: 0fb60c6e-9a9a-4e45-b010-213009df2884
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - views.view.oira_ws
+    - views.view.country_partner_content
   module:
     - context
     - system
     - views
   theme:
     - oira_theme
-id: exposedformoira_wstools_ws
+id: views_block__country_partner_content_block_1
 theme: oira_theme
 region: content
-weight: -14
+weight: -6
 provider: null
-plugin: 'views_exposed_filter_block:oira_ws-tools_ws'
+plugin: 'views_block:country_partner_content-block_1'
 settings:
-  id: 'views_exposed_filter_block:oira_ws-tools_ws'
+  id: 'views_block:country_partner_content-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
+  items_per_page: none
+  context_mapping: {  }
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -33,5 +35,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /oira-tools
+    pages: "/Partners/*\r\n/oira-community/*"
     negate: false

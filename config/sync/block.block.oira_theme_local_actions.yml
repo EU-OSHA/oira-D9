@@ -9,7 +9,7 @@ _core:
 id: oira_theme_local_actions
 theme: oira_theme
 region: content
-weight: -13
+weight: -16
 provider: null
 plugin: local_actions_block
 settings:
