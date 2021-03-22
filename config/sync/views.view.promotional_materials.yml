@@ -707,7 +707,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class='materials-content-wrapper'>\r\n<a href=\"/node/{{field_related_partners}}\">\r\n{{field_image_home_latest_material}}\r\n</a>\r\n<h4>{{title}}</h4>\r\n{{field_language}}\r\n{{field_country}}\r\n<span class=\"more-link\"> See more</span>\r\n\r\n<div class=\"related-partners\">\r\n{{ field_logo }} \r\n<h4>{{ title_1 }}</h4>\r\n{{ view_node }}\r\n</div>\r\n\r\n<div class=\"co-autor\"> \r\n{{ field_logo_1 }} \r\n<h4>{{ title_2 }}</h4>\r\n{{ view_node_1 }} \r\n</div>\r\n\r\n</div>"
+            text: "<div class='materials-content-wrapper'>\r\n<a href=\"/node/{{field_related_partners}}\">\r\n{{field_image_home_latest_material}}\r\n</a>\r\n<h4>{{title}}</h4>\r\n{{field_language}}\r\n{{field_country}}\r\n<span class=\"more-link\"> See more</span>\r\n\r\n<div class=\"partners-wrapper\">\r\n\r\n<div class=\"related-partners\">\r\n{{ field_logo }} \r\n<h4>{{ title_1 }}</h4>\r\n{{ view_node }}\r\n</div>\r\n\r\n<div class=\"co-autor\"> \r\n{{ field_logo_1 }} \r\n<h4>{{ title_2 }}</h4>\r\n{{ view_node_1 }} \r\n</div>\r\n\r\n</div>\r\n\r\n</div>"
             make_link: false
             path: ''
             absolute: false

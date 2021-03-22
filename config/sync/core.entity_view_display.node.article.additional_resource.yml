@@ -1,8 +1,9 @@
-uuid: e4b9a77c-979f-434e-bb98-d262818d54cc
+uuid: 267fe9aa-68d7-40c0-9419-3e6071007a5d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.additional_resource
     - field.field.node.article.body
     - field.field.node.article.field_aditional_resources
     - field.field.node.article.field_archived
@@ -24,14 +25,19 @@ dependencies:
     - field.field.node.article.field_workbench_access
     - node.type.article
   module:
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
-id: node.article.default
+id: node.article.additional_resource
 targetEntityType: node
 bundle: article
-mode: default
+mode: additional_resource
 content:
   addtoany:
     weight: 1
