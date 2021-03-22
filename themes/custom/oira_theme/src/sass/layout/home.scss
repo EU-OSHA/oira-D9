@@ -111,7 +111,6 @@
     .views-item-columns-container{
       background: $bg-color-white;
       padding: 1rem;
-      height: 100%;
       .views-field-field-tool-link{
         margin-top: 5px;
         a{
@@ -163,10 +162,14 @@
   .views-item-columns-container {
     padding: 15px;
     span.see-more {
-      bottom: 10px;
+      position: relative;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
       &.expanded {
         text-align: right !important;
-        width: 20px;
         height: 12px;
         overflow: hidden;
         font-style: normal;
@@ -211,6 +214,7 @@
         height: auto;
       }
       h4 {
+        margin-bottom: 1rem;
         a {
           color: $text-color-black;
           font-style: normal;
@@ -313,8 +317,9 @@
   }
   .view-news{
     .attachment-before{
+      margin-bottom: 20px;
       border-bottom: 2px solid $bg-color-purple;
-      padding-bottom: 0;
+      padding-bottom: 20px;
       padding-top: 20px;
       .views-field-nothing{
         float: left;
@@ -336,6 +341,14 @@
     }
     .views-row {
       padding: 0;
+      .col-sm-12 {
+        padding: 15px;
+      }
+    }
+    .views-field-title {
+      h3 {
+        margin: 11px 0;
+      }
     }
     .views-row:nth-child(odd) {
       background-color: transparent;

@@ -784,11 +784,10 @@ select.custom-select{
     grid-template-columns: repeat(3, 1fr);
   }
   .views-col {
-    padding: 1rem !important;
+    padding: 15px 15px 1rem;
     margin: 0;
     width: 100% !important;
     max-width: 100%;
-    min-height: 230px;
     background: $bg-color-purple-light;
   }
   .views-field-title .field-content a {
@@ -801,8 +800,50 @@ select.custom-select{
       color: $text-color-blue-hover;
     }
   }
+  .field--name-field-country {
+    display: flex;
+    .field__item {
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+  .partners-wrapper {
+    display: none;
+    .partner-wrapper {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      background: white;
+      color: $text-color-black;
+    }
+    .partner-inner-group {
+      padding: 0 15px;
+      &.partner-inner-group--img {
+        width: 42%;
+      }
+      &.partner-inner-group--data {
+        width: 58%;
+      }
+      a {
+        display: block;
+        color: $text-color-black;
+        font-size: 1rem;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      h4 {
+        a {
+          color: $text-color-black;
+          font-style: normal;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
   .tool-teaser-content-wrapper {
-    margin-bottom: 11px;
     a {
       font-style: normal;
       font-size: 1.125rem;
@@ -829,9 +870,22 @@ select.custom-select{
   .more-link {
     display:flex;
     justify-content: flex-end;
-    a {
-      color: $bg-color-blue-light;
-      text-align: right;
+    color: $bg-color-blue-light;
+    text-align: right;
+    font-weight: bold;
+  }
+  .views-col .more-link {
+    &:before {
+      display: inline-block;
+      content: '>';
+      margin-right: 5px;
+      display: inline-block;
+      position: relative;
+      top: -1px;
+    }
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
 }
