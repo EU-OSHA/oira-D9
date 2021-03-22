@@ -56,7 +56,7 @@ content:
     third_party_settings: {  }
   field_general_email:
     type: basic_string
-    weight: 9
+    weight: 7
     region: content
     label: above
     settings: {  }
@@ -70,21 +70,6 @@ content:
       link: false
     third_party_settings: {  }
     region: content
-  field_main_contact:
-    type: string
-    weight: 8
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_mission_statement:
-    type: basic_string
-    weight: 7
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
   field_ph_address:
     weight: 1
     label: hidden
@@ -110,16 +95,16 @@ content:
     type: string
     region: content
   field_social_profile:
-    type: link_separate
-    weight: 10
+    type: link
+    weight: 8
     region: content
     label: above
     settings:
       trim_length: 80
       url_only: false
       url_plain: false
-      rel: '0'
-      target: '0'
+      rel: ''
+      target: ''
     third_party_settings: {  }
   field_website:
     weight: 5
@@ -142,7 +127,9 @@ hidden:
   field_general_phone: true
   field_guid_main_contact: true
   field_guid_organisation: true
+  field_main_contact: true
   field_main_contact_email: true
+  field_mission_statement: true
   field_oira_eu_level: true
   field_orgtype: true
   field_partner: true
