@@ -56,10 +56,16 @@ jQuery(document).ready(function($){
       });
     }
 
+    // See more - less
     $('.see-more').click(function(){
       $(this).toggleClass('expanded');
       $('.partners-wrapper').toggleClass('expanded-wrapper');
       $('.partners-wrapper').slideToggle('slow');
+    });
+    $('.view-promotional-materials.view-display-id-block .more-link').click(function(){
+      $(this).toggleClass('expanded');
+      $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+      $(this).siblings('.partners-wrapper').slideToggle('slow');
     });
 
 });
