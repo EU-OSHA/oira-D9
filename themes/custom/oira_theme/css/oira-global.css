@@ -71,7 +71,7 @@
   background: #FFF;
 }
 
-.full-width, .menu--private-zone, .page-node-402 .esener-template li, .block-views-blocknews-block-1 {
+.full-width, .menu--private-zone, .block-views-blockadditional-resources-block, .block-views-blocknews-block-2, .page-node-402 .esener-template li, .block-views-blocknews-block-1 {
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -1271,6 +1271,140 @@ select.custom-select {
   background-color: #f9f9f9;
 }
 
+/**** Risks Page ***/
+.page-node-31 {
+  /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
+  max-width: 100%;
+  overflow-x: hidden;
+  /*** ***/
+}
+.page-node-31 #main-wrapper {
+  padding-bottom: 0;
+}
+
+.block-views-blocknews-block-2 {
+  background: #786586;
+  padding-top: 22px;
+}
+.block-views-blocknews-block-2 h2, .block-views-blocknews-block-2 .content {
+  margin: 0 auto;
+  max-width: 1140px;
+  color: white;
+}
+.block-views-blocknews-block-2 h2 {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+  border-bottom: 2px solid #ffffff;
+}
+.block-views-blocknews-block-2 h2:after {
+  content: "";
+  background: url(../images/icon-news-white.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  float: right;
+  width: 35px;
+}
+.block-views-blocknews-block-2 .view-news .views-row {
+  padding: 0;
+  background: transparent;
+}
+.block-views-blocknews-block-2 .view-news .views-row a {
+  display: block;
+  margin-bottom: 15px;
+  color: #FFF;
+  font-weight: bold;
+}
+.block-views-blocknews-block-2 .view-news .views-row a:hover {
+  text-decoration: underline;
+}
+.block-views-blocknews-block-2 .view-news .more-link {
+  padding: 15px 0;
+  border-top: 2px solid #FFF;
+  text-align: right;
+  color: #FFF;
+}
+.block-views-blocknews-block-2 .view-news .more-link a {
+  color: #FFF;
+}
+
+.block-views-blockadditional-resources-block {
+  padding-top: 25px;
+  padding-bottom: 23px;
+  background: #dfd8e4;
+}
+.block-views-blockadditional-resources-block h2, .block-views-blockadditional-resources-block .content {
+  margin: 0 auto;
+  max-width: 1140px;
+  color: #786586;
+}
+.block-views-blockadditional-resources-block h2 {
+  margin-bottom: 22px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #967ea7;
+  font-size: 2.1875rem;
+  /*** 35px ***/
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+}
+.block-views-blockadditional-resources-block h2:after {
+  content: "";
+  background: url(../images/icon-resources.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  float: right;
+  width: 35px;
+}
+.block-views-blockadditional-resources-block .view-header {
+  font-size: 1.375rem;
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+}
+.block-views-blockadditional-resources-block .views-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.block-views-blockadditional-resources-block .views-col {
+  position: relative;
+  margin: 0;
+  width: 100% !important;
+  max-width: 100%;
+  padding: 15px 15px 35px;
+  background: #FFF;
+}
+.block-views-blockadditional-resources-block h5 a {
+  color: #58585a;
+  font-style: normal;
+}
+.block-views-blockadditional-resources-block h5 a:hover {
+  color: #23527c;
+}
+.block-views-blockadditional-resources-block .field-content > a {
+  display: block;
+  color: transparent;
+  font-size: 0;
+  text-align: right;
+  height: 5px;
+}
+.block-views-blockadditional-resources-block .field-content > a:after {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  font-size: 1rem;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  color: #10b2e4;
+}
+
 .site-footer {
   width: 100%;
   height: auto;
@@ -1676,6 +1810,22 @@ select.custom-select {
 .view-promotional-materials.view-display-id-block .field-content .more-link:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+.view-promotional-materials.view-display-id-block .field-content .more-link.expanded {
+  text-align: right !important;
+  height: 12px;
+  overflow: hidden;
+  font-style: normal;
+  font-size: 0;
+  margin-top: 0px;
+}
+.view-promotional-materials.view-display-id-block .field-content .more-link.expanded:before {
+  text-align: right;
+  display: block;
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-size: 1.2rem;
+  line-height: 1;
 }
 .view-promotional-materials.view-display-id-block .views-field-nothing {
   padding-bottom: 1rem;
