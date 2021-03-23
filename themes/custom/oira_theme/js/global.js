@@ -68,14 +68,19 @@ jQuery(document).ready(function($){
       $(this).siblings('.partners-wrapper').slideToggle('slow');
     });
 
-  $('.view-tools.view-display-id-block_2 .views-col .more-link').click(function(){
-    $(this).toggleClass('expanded');
-    $(this).siblings('.partners-wrapper').slideToggle('slow');
-    $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
-  });
+    $('.view-tools.view-display-id-block_2 .views-col .more-link').click(function(){
+      $(this).toggleClass('expanded');
+      $(this).siblings('.partners-wrapper').slideToggle('slow');
+      $(this).siblings('.partners-wrapper').toggleClass('expanded-wrapper');
+    });
+
+    //See more less, Oira Tools
+    $('.view-display-id-tools_ws h2').click(function(){
+      $(this).toggleClass('expanded');
+      $(this).parents('.group-right').find('.expandible').fadeToggle('fast');
+    });
 
 });
-
 
 
 
