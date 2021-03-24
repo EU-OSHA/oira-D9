@@ -555,7 +555,130 @@ select.custom-select {
   border: 1px solid grey;
 }
 
+/**** Promotional Resources Search View ***/
+.page-view-promotional-resources-search .form-item-sort-by .form-select {
+  background-color: transparent !important;
+}
+.page-view-promotional-resources-search .block-page-title-block {
+  display: none;
+}
+.page-view-promotional-resources-search .sidebar_first #views-exposed-form-promotional-resources-search-page-1 {
+  margin-top: 30px;
+}
+.page-view-promotional-resources-search .sidebar_first .views-exposed-form {
+  padding: 0;
+  margin: 0;
+}
+.page-view-promotional-resources-search .sidebar_first .views-exposed-form .form-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.page-view-promotional-resources-search .sidebar_first .views-exposed-form .form-row fieldset {
+  padding: 0;
+}
+.page-view-promotional-resources-search .sidebar_first .views-exposed-form #edit-submit-promotional-resources-search--2 {
+  position: absolute;
+  overflow: hidden;
+  top: 9px;
+  right: 3px;
+  color: #786586;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  padding: 0 0 10px;
+  line-height: 19px;
+  font-size: 0;
+  padding-left: 7px;
+  overflow: hidden;
+  background-color: transparent;
+}
+.page-view-promotional-resources-search .sidebar_first .views-exposed-form #edit-submit-promotional-resources-search--2:before {
+  font-size: 1.2rem;
+  display: block;
+  content: "";
+  font-family: "Glyphicons Halflings";
+}
+.page-view-promotional-resources-search .sidebar_first .form-item-sort-by {
+  display: none;
+}
+.page-view-promotional-resources-search .sidebar_first .form-actions #edit-reset--2 {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+}
+.page-view-promotional-resources-search .sidebar_first .block.block-facet--links {
+  border-top: 2px solid #FFF !important;
+  padding: 10px 0 0;
+  margin-top: 15px;
+}
+.page-view-promotional-resources-search .sidebar_first .block.block-facet--links h2 {
+  border: none;
+  font-size: 1.1875rem;
+}
+.page-view-promotional-resources-search .sidebar_first .block.block-facet--links .item-list__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.page-view-promotional-resources-search .sidebar_first .block.block-facet--links .facet-item {
+  list-style: none;
+}
+.page-view-promotional-resources-search .sidebar_first .block.block-facet--links .facet-item a {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.page-view-promotional-resources-search .sidebar_first .block.block-facet--links .facet-item a:hover {
+  text-decoration: none;
+}
+.page-view-promotional-resources-search main {
+  position: relative;
+  max-width: 70%;
+  padding: 30px;
+}
+.page-view-promotional-resources-search main .form-row {
+  width: 100%;
+  text-align: right;
+  margin: 30px 0;
+  padding: 15px 0 15px 0;
+  border-top: 2px solid #786586;
+  border-bottom: 2px solid #786586;
+}
+.page-view-promotional-resources-search main .form-row .form-item-sort-by {
+  margin: 0;
+}
+.page-view-promotional-resources-search main .form-row .form-item-sort-by label {
+  margin: 0 10px 0 0;
+}
+.page-view-promotional-resources-search main .form-row .form-actions button {
+  display: none;
+}
+.page-view-promotional-resources-search main .form-item-search-api-fulltext {
+  display: none;
+}
+.page-view-promotional-resources-search main .view-header {
+  position: absolute;
+  right: 0;
+  top: -70px;
+}
+.page-view-promotional-resources-search main .view-content.row {
+  margin: 0;
+  background: #FFF;
+}
+
 /* OiRA Tools View */
+.page-view-oira-ws .form-item-sort-by .form-select {
+  background-color: transparent !important;
+}
 .page-view-oira-ws .two-column section {
   position: relative;
 }
