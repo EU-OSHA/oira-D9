@@ -511,6 +511,44 @@ select.custom-select{
       }
     }
   }
+  .pagination {
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .page-item {
+      display: flex;
+      align-items: center;
+    }
+    a.page-link {
+      display: block;
+      padding: 0;
+      width: 18px;
+    }
+    .page-item:first-child {
+      &:after {
+        padding: 0 3px;
+        display: inline-block;
+        content: "/";
+      }
+    }
+    .pager__item--next {
+      a {
+        text-indent: -999999rem;
+        background: url(../images/pager-next.png) center center no-repeat;
+      }
+    }
+    .pager__item--next + .page-item {
+      a {
+        width: 28px;
+        text-indent: -999999rem;
+        background: url(../images/pager-last.png) center center no-repeat;
+      }
+    }
+  }
 }
 
 /*** OiRA Tools Views ***/

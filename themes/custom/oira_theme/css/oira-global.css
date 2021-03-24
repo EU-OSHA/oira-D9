@@ -715,6 +715,38 @@ select.custom-select {
   font-family: "Glyphicons Halflings";
   font-size: 1.5rem;
 }
+.page-view-oira-ws .pagination {
+  width: 70%;
+  margin-left: 0;
+  margin-right: 0;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-view-oira-ws .pagination .page-item {
+  display: flex;
+  align-items: center;
+}
+.page-view-oira-ws .pagination a.page-link {
+  display: block;
+  padding: 0;
+  width: 18px;
+}
+.page-view-oira-ws .pagination .page-item:first-child:after {
+  padding: 0 3px;
+  display: inline-block;
+  content: "/";
+}
+.page-view-oira-ws .pagination .pager__item--next a {
+  text-indent: -999999rem;
+  background: url(../images/pager-next.png) center center no-repeat;
+}
+.page-view-oira-ws .pagination .pager__item--next + .page-item a {
+  width: 28px;
+  text-indent: -999999rem;
+  background: url(../images/pager-last.png) center center no-repeat;
+}
 
 /*** OiRA Tools Views ***/
 .view-display-id-tools_ws .expandible {
