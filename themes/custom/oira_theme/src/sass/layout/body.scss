@@ -250,6 +250,7 @@ select.custom-select{
     }
 
     label{
+      display: flex;
       font-size: 1rem;
       padding-left: 0px;
       padding-bottom: 5px;
@@ -431,11 +432,11 @@ select.custom-select{
   main {
     position: relative;
     max-width: 70%;
-    padding: 30px;
+    padding: 15px;
     .form-row {
       width: 100%;
       text-align: right;
-      margin: 30px 0;
+      margin: 15px 0 30px;
       padding: 15px 0 15px 0;
       border-top: 2px solid $bg-color-purple;
       border-bottom: 2px solid $bg-color-purple;
@@ -461,9 +462,25 @@ select.custom-select{
     }
     .view-content.row {
       margin: 0;
+      padding: 30px;
       background: $bg-color-white;
     }
-
+    .views-row {
+      .content-view-pm-view {
+        display: flex;
+        border-top: 2px solid #786586;
+        padding: 30px 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+      .group-left {
+        flex: 0 1 25%;
+        padding-right: 15px;
+      }
+      .group-right {
+        padding: 0 15px;
+      }
+    }
   }
 }
 
@@ -662,11 +679,7 @@ select.custom-select{
       width: 18px;
     }
     .page-item:first-child {
-      &:after {
-        padding: 0 3px;
-        display: inline-block;
-        content: "/";
-      }
+
     }
     .pager__item--next {
       a {

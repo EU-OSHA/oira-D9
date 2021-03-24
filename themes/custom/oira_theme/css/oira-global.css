@@ -480,6 +480,7 @@ select.custom-select {
   display: none;
 }
 .page-view-oira-ws .sidebar_first label {
+  display: flex;
   font-size: 1rem;
   padding-left: 0px;
   padding-bottom: 5px;
@@ -643,12 +644,12 @@ select.custom-select {
 .page-view-promotional-resources-search main {
   position: relative;
   max-width: 70%;
-  padding: 30px;
+  padding: 15px;
 }
 .page-view-promotional-resources-search main .form-row {
   width: 100%;
   text-align: right;
-  margin: 30px 0;
+  margin: 15px 0 30px;
   padding: 15px 0 15px 0;
   border-top: 2px solid #786586;
   border-bottom: 2px solid #786586;
@@ -672,7 +673,22 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .view-content.row {
   margin: 0;
+  padding: 30px;
   background: #FFF;
+}
+.page-view-promotional-resources-search main .views-row .content-view-pm-view {
+  display: flex;
+  border-top: 2px solid #786586;
+  padding: 30px 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.page-view-promotional-resources-search main .views-row .group-left {
+  flex: 0 1 25%;
+  padding-right: 15px;
+}
+.page-view-promotional-resources-search main .views-row .group-right {
+  padding: 0 15px;
 }
 
 /* OiRA Tools View */
@@ -855,11 +871,6 @@ select.custom-select {
   display: block;
   padding: 0;
   width: 18px;
-}
-.page-view-oira-ws .pagination .page-item:first-child:after {
-  padding: 0 3px;
-  display: inline-block;
-  content: "/";
 }
 .page-view-oira-ws .pagination .pager__item--next a {
   text-indent: -999999rem;
