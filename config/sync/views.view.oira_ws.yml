@@ -1028,10 +1028,14 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: languagefield_default
           settings:
-            link: false
+            link_to_entity: 0
+            format:
+              name: name
+              iso: 0
+              name_native: 0
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -1485,7 +1489,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h4
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -1702,7 +1706,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"content-view-tools-view\">\r\n  \r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n  </div>\r\n  \r\n  <div class=\"group-right \">\r\n    <div>{{ field_tool_link }}</div>\r\n    <div>{{ field_revised_date }}</div>\r\n    <div> <p>{{ name_3 }}</p> <p>{{ name_2 }}</p> <p>{{field_language }}</p> </div>\r\n    <div><h2>{{ title }}</h2></div>\r\n\r\n\r\n   <div class=\"expandible\">\r\n       <div>{{body}}</div>\r\n\r\n       <div class=\"partners-wrapper\">\r\n      \r\n          <div class=\"related-partners\">\r\n             {{field_logo}}\r\n             <h4>{{ title_1 }}</h4>\r\n          </div>\r\n\r\n         <div class=\"co-author\">\r\n           {{ field_logo_1 }} \r\n           <h4>{{ title_2 }}</h4>\r\n         </div>\r\n\r\n      </div> \r\n\r\n    </div>\r\n\r\n  </div>\r\n  \r\n\r\n\r\n</div> "
+            text: "<div class=\"content-view-tools-view\">\r\n  \r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n  </div>\r\n  \r\n  <div class=\"group-right \">\r\n    \r\n    <div class=\"tool-link\">{{ field_tool_link }}</div>\r\n    \r\n    <div class=\"revised-date\">{{ field_revised_date }}</div>\r\n    \r\n    <div class=\"tags\"> \r\n      <p class=\"tag-sector\">{{ name_3 }}</p> \r\n      <p class=\"tag-country\">{{ name_2 }}</p> \r\n      {{field_language}}\r\n    </div>\r\n    \r\n    <div><h2 class=\"title\">{{ title }}</h2></div>\r\n\r\n\r\n   <div class=\"expandible\">\r\n       <div class=\"tool-body\">{{body}}</div>\r\n\r\n       <div class=\"partners-wrapper\">\r\n      \r\n           {% if (title_1) %}\r\n          <div class=\"related-partners\">\r\n             {{field_logo}}\r\n             <h4>{{ title_1 }}</h4>\r\n          </div>\r\n          {% endif %}\r\n\r\n         {%if (title_2) %}\r\n         <div class=\"co-author\">\r\n           {{ field_logo_1 }} \r\n           <h4>{{ title_2 }}</h4>\r\n         </div>\r\n         {% endif %}\r\n\r\n      </div> \r\n\r\n    </div>\r\n\r\n  </div>\r\n  \r\n\r\n\r\n</div> "
             make_link: false
             path: ''
             absolute: false
