@@ -1,23 +1,23 @@
-uuid: cba41b9c-b1dc-4daf-b307-08498ec2df6f
+uuid: fd3e7b3f-b706-4d78-94b4-20c02296c0f2
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.promotional_resources_search
+    - views.view.search
   module:
     - context
     - system
     - views
   theme:
     - oira_theme
-id: exposedformpromotional_resources_searchpage_1
+id: exposedformsearchpage_1_2
 theme: oira_theme
 region: content
-weight: -16
+weight: -15
 provider: null
-plugin: 'views_exposed_filter_block:promotional_resources_search-page_1'
+plugin: 'views_exposed_filter_block:search-page_1'
 settings:
-  id: 'views_exposed_filter_block:promotional_resources_search-page_1'
+  id: 'views_exposed_filter_block:search-page_1'
   label: ''
   provider: views
   label_display: '0'
@@ -33,5 +33,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: '/promotional-resources-search/*'
+    pages: /search/site
     negate: false
