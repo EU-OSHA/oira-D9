@@ -1,29 +1,24 @@
-uuid: 2a3fe5a5-ed09-4813-abc2-6ad431f67612
+uuid: 8858b6f8-fc34-49da-98c5-8237bc0475b3
 langcode: en
-status: false
+status: true
 dependencies:
-  config:
-    - views.view.country_partner_content
   module:
     - context
+    - quicktabs
     - system
-    - views
   theme:
     - oira_theme
-id: views_block__country_partner_content_block_5
+id: quicktabspartnercontent
 theme: oira_theme
 region: content
-weight: -8
+weight: 0
 provider: null
-plugin: 'views_block:country_partner_content-block_5'
+plugin: 'quicktabs_block:partner_content'
 settings:
-  id: 'views_block:country_partner_content-block_5'
-  label: ''
-  provider: views
-  label_display: visible
-  views_label: ''
-  items_per_page: none
-  context_mapping: {  }
+  id: 'quicktabs_block:partner_content'
+  label: 'QuickTabs - Partner Content'
+  provider: quicktabs
+  label_display: '0'
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
