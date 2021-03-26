@@ -1,29 +1,28 @@
-uuid: a74a86e4-e6e9-4a16-bf42-dd3f76589f6b
+uuid: 61f64847-5363-44ec-9056-0c43266e40c7
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - views.view.country_partner_content
+    - views.view.oshwiki_featured_articles
   module:
     - context
     - system
     - views
   theme:
     - oira_theme
-id: views_block__country_partner_content_block_4
+id: views_block__oshwiki_featured_articles_oshwiki_related_articles
 theme: oira_theme
 region: content
-weight: -4
+weight: -12
 provider: null
-plugin: 'views_block:country_partner_content-block_4'
+plugin: 'views_block:oshwiki_featured_articles-oshwiki_related_articles'
 settings:
-  id: 'views_block:country_partner_content-block_4'
+  id: 'views_block:oshwiki_featured_articles-oshwiki_related_articles'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -35,5 +34,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/Partners/*\r\n/oira-community/*"
+    pages: /what-risk-assessment
     negate: false

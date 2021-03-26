@@ -6,6 +6,9 @@ dependencies:
     - field.storage.node.field_wiki_categories
     - node.type.wiki_page
     - taxonomy.vocabulary.wiki_categories
+  content:
+    - 'taxonomy_term:wiki_categories:26f2c7c2-2860-4d6c-86dc-dfbb5f1fa8f0'
+    - 'taxonomy_term:wiki_categories:e6e87157-d141-4c3b-8d8f-498bfc252438'
 id: node.wiki_page.field_wiki_categories
 field_name: field_wiki_categories
 entity_type: node
@@ -14,7 +17,11 @@ label: 'Wiki categories'
 description: ''
 required: false
 translatable: true
-default_value: {  }
+default_value:
+  -
+    target_uuid: e6e87157-d141-4c3b-8d8f-498bfc252438
+  -
+    target_uuid: 26f2c7c2-2860-4d6c-86dc-dfbb5f1fa8f0
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
