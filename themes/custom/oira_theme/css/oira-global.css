@@ -247,6 +247,61 @@ h1.page-header {
   color: #10b2e4;
 }
 
+.page-view-oira-ws .pagination {
+  width: 70%;
+  margin-left: 0;
+  margin-right: 0;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-view-oira-ws .pagination .page-item {
+  margin: 0 0.3rem;
+  display: none;
+  align-items: center;
+}
+.page-view-oira-ws .pagination .page-item.active {
+  display: flex;
+  margin-right: 2px;
+}
+.page-view-oira-ws .pagination .page-item.active:after {
+  margin: 0 0 0 2px;
+  content: "/";
+  display: inline-block;
+}
+.page-view-oira-ws .pagination .page-item.last {
+  display: flex;
+  margin-left: 0;
+}
+.page-view-oira-ws .pagination a.page-link {
+  display: block;
+  padding: 0;
+  width: 18px;
+  font-style: normal;
+}
+.page-view-oira-ws .pagination .page-item--ellipses {
+  display: none;
+}
+.page-view-oira-ws .pagination .page-item--first a {
+  width: 28px;
+  text-indent: -999999rem;
+  background: url(../images/pager-first.png) center center no-repeat;
+}
+.page-view-oira-ws .pagination .page-item--previous a {
+  text-indent: -999999rem;
+  background: url(../images/pager-previous.png) center center no-repeat;
+}
+.page-view-oira-ws .pagination .pager__item--next a {
+  text-indent: -999999rem;
+  background: url(../images/pager-next.png) center center no-repeat;
+}
+.page-view-oira-ws .pagination .page-item--last a {
+  width: 28px;
+  text-indent: -999999rem;
+  background: url(../images/pager-last.png) center center no-repeat;
+}
+
 /* Common elements */
 body {
   position: relative;
@@ -676,6 +731,9 @@ select.custom-select {
   padding: 30px;
   background: #FFF;
 }
+.page-view-promotional-resources-search main .views-row {
+  width: 100%;
+}
 .page-view-promotional-resources-search main .views-row .content-view-pm-view {
   display: flex;
   border-top: 2px solid #786586;
@@ -712,6 +770,7 @@ select.custom-select {
   font-size: 28px;
 }
 .page-view-promotional-resources-search main .views-row .partners-wrapper {
+  display: none;
   background: #786586;
   padding: 15px;
   color: #FFF;
@@ -767,6 +826,22 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .views-row .more-link:before:hover {
   text-decoration: none;
+}
+.page-view-promotional-resources-search main .views-row .more-link.expanded {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0;
+  color: transparent;
+}
+.page-view-promotional-resources-search main .views-row .more-link.expanded:before {
+  margin: 0;
+  display: block;
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 0;
+  color: #10b2e4;
 }
 
 /* OiRA Tools View */
@@ -931,33 +1006,6 @@ select.custom-select {
   content: "";
   font-family: "Glyphicons Halflings";
   font-size: 1.5rem;
-}
-.page-view-oira-ws .pagination {
-  width: 70%;
-  margin-left: 0;
-  margin-right: 0;
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.page-view-oira-ws .pagination .page-item {
-  display: flex;
-  align-items: center;
-}
-.page-view-oira-ws .pagination a.page-link {
-  display: block;
-  padding: 0;
-  width: 18px;
-}
-.page-view-oira-ws .pagination .pager__item--next a {
-  text-indent: -999999rem;
-  background: url(../images/pager-next.png) center center no-repeat;
-}
-.page-view-oira-ws .pagination .pager__item--next + .page-item a {
-  width: 28px;
-  text-indent: -999999rem;
-  background: url(../images/pager-last.png) center center no-repeat;
 }
 
 /*** OiRA Tools Views ***/

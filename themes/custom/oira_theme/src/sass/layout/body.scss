@@ -466,6 +466,7 @@ select.custom-select{
       background: $bg-color-white;
     }
     .views-row {
+      width: 100%;
       .content-view-pm-view {
         display: flex;
         border-top: 2px solid #786586;
@@ -504,6 +505,7 @@ select.custom-select{
         }
       }
       .partners-wrapper {
+        display: none;
         background: $bg-color-purple;
         padding: 15px;
         color: $text-color-white;
@@ -557,6 +559,22 @@ select.custom-select{
           top: -1px;
           &:hover {
             text-decoration: none;
+          }
+        }
+        &.expanded {
+          display:flex;
+          justify-content: flex-end;
+          font-size: 0;
+          color: transparent;
+          &:before {
+            margin: 0;
+            display: block;
+            content: "\e253";
+            font-family: "Glyphicons Halflings";
+            font-style: normal;
+            font-size: 1.2rem;
+            line-height: 0;
+            color: $text-color-blue-light;
           }
         }
       }
@@ -741,40 +759,6 @@ select.custom-select{
       }
     }
   }
-  .pagination {
-    width: 70%;
-    margin-left: 0;
-    margin-right: 0;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .page-item {
-      display: flex;
-      align-items: center;
-    }
-    a.page-link {
-      display: block;
-      padding: 0;
-      width: 18px;
-    }
-    .page-item:first-child {
-
-    }
-    .pager__item--next {
-      a {
-        text-indent: -999999rem;
-        background: url(../images/pager-next.png) center center no-repeat;
-      }
-    }
-    .pager__item--next + .page-item {
-      a {
-        width: 28px;
-        text-indent: -999999rem;
-        background: url(../images/pager-last.png) center center no-repeat;
-      }
-    }
-  }
 }
 
 /*** OiRA Tools Views ***/
@@ -876,7 +860,6 @@ select.custom-select{
       .ui-accordion-header-icon{
         visibility: hidden;
       }
-
     }
   }
   .ui-accordion .ui-accordion-header{
@@ -919,8 +902,7 @@ select.custom-select{
       font-style: normal;
       text-decoration: none;
       font-weight: 400;
-
-      &:hover{
+      &:hover {
         text-decoration: none;
       }
     }

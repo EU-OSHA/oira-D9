@@ -33,3 +33,69 @@
     }
   }
 }
+
+.page-view-oira-ws {
+  .pagination {
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .page-item {
+      margin: 0 0.3rem;
+      display: none;
+      align-items: center;
+      &.active {
+        display: flex;
+        margin-right: 2px;
+        &:after {
+          margin: 0 0 0 2px;
+          content:"/";
+          display: inline-block;
+        }
+      }
+      &.last {
+        display: flex;
+        margin-left: 0;
+      }
+    }
+    a.page-link {
+      display: block;
+      padding: 0;
+      width: 18px;
+      font-style: normal;
+    }
+    .page-item--ellipses {
+      display: none;
+    }
+    .page-item--first {
+      a {
+        width: 28px;
+        text-indent: -999999rem;
+        background: url(../images/pager-first.png) center center no-repeat;
+      }
+    }
+    .page-item--previous {
+      a {
+        text-indent: -999999rem;
+        background: url(../images/pager-previous.png) center center no-repeat;
+      }
+    }
+    .pager__item--next {
+      a {
+        text-indent: -999999rem;
+        background: url(../images/pager-next.png) center center no-repeat;
+      }
+    }
+    .page-item--last {
+      a {
+        width: 28px;
+        text-indent: -999999rem;
+        background: url(../images/pager-last.png) center center no-repeat;
+      }
+    }
+  }
+}
+
