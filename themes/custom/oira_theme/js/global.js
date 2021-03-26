@@ -103,6 +103,12 @@ jQuery(document).ready(function($){
       }
     });
 
+    //Toggle Sidebar
+    $('#toggle-sidebar').click(function(){
+      $(this).toggleClass('clicked');
+      $('#sidebar_first').toggleClass('sidebar-expanded');
+    });
+
 });
 
 

@@ -2827,6 +2827,34 @@ select.custom-select {
     max-width: 720px;
   }
 
+  /*** Sidebar Toggle ***/
+  .toggle-sidebar {
+    border: none;
+    background-color: #786586;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+  }
+  .toggle-sidebar .text {
+    display: none;
+  }
+  .toggle-sidebar:before {
+    display: block;
+    content: "";
+    font-family: "Glyphicons Halflings";
+    font-size: 1.3rem;
+    color: #FFF;
+  }
+
+  .sidebar_first.sidebar-expanded {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
   /*** OiRA TOols ***/
   .page-view-oira-ws .content-two-columns .two-column {
     background-color: white;
@@ -2874,6 +2902,10 @@ select.custom-select {
   }
   .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row .content-view-tools-view .group-right h2 {
     font-weight: 700;
+    font-size: 1.375rem;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row .content-view-tools-view .group-right h2:after {
+    font-size: 1.375rem;
   }
 }
 /* End Media 767px */

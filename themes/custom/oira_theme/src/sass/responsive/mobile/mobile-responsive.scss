@@ -133,6 +133,34 @@
     }
   }
 
+  /*** Sidebar Toggle ***/
+  .toggle-sidebar {
+    border: none;
+    background-color: $bg-color-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    .text {
+      display: none;
+    }
+    &:before {
+      display: block;
+      content: "\e003";
+      font-family: "Glyphicons Halflings";
+      font-size: 1.3rem;
+      color: $text-color-white;
+    }
+  }
+
+  .sidebar_first.sidebar-expanded {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+
   /*** OiRA TOols ***/
   .page-view-oira-ws {
     .content-two-columns .two-column {
@@ -178,6 +206,10 @@
               }
               .group-right h2 {
                 font-weight: $font-weight-bold;
+                font-size: 1.375rem;
+                &:after {
+                  font-size: 1.375rem;
+                }
               }
             }
           }
