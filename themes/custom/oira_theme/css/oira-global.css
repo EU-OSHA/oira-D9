@@ -270,9 +270,10 @@ h1.page-header {
   content: "/";
   display: inline-block;
 }
-.page-view-oira-ws .pagination .page-item.last {
+.page-view-oira-ws .pagination .page-item.last, .page-view-oira-ws .pagination .page-item:last-child {
   display: flex;
   margin-left: 0;
+  margin-right: 0;
 }
 .page-view-oira-ws .pagination a.page-link {
   display: block;
@@ -283,23 +284,45 @@ h1.page-header {
 .page-view-oira-ws .pagination .page-item--ellipses {
   display: none;
 }
-.page-view-oira-ws .pagination .page-item--first a {
+.page-view-oira-ws .pagination .page-item--first,
+.page-view-oira-ws .pagination .page-item--previous,
+.page-view-oira-ws .pagination .pager__item--next,
+.page-view-oira-ws .pagination .page-item--last {
+  margin: 0 1px;
+}
+.page-view-oira-ws .pagination .page-item--first a,
+.page-view-oira-ws .pagination .page-item--previous a,
+.page-view-oira-ws .pagination .pager__item--next a,
+.page-view-oira-ws .pagination .page-item--last a {
+  display: block;
   width: 28px;
+  height: 28px;
+  padding: 5px;
   text-indent: -999999rem;
-  background: url(../images/pager-first.png) center center no-repeat;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+}
+.page-view-oira-ws .pagination .page-item--first a:hover,
+.page-view-oira-ws .pagination .page-item--previous a:hover,
+.page-view-oira-ws .pagination .pager__item--next a:hover,
+.page-view-oira-ws .pagination .page-item--last a:hover {
+  background-color: #eeeeee;
+}
+.page-view-oira-ws .pagination .page-item--first a {
+  background-image: url(../images/pager-first.png);
 }
 .page-view-oira-ws .pagination .page-item--previous a {
-  text-indent: -999999rem;
-  background: url(../images/pager-previous.png) center center no-repeat;
+  background-image: url(../images/pager-previous.png);
 }
 .page-view-oira-ws .pagination .pager__item--next a {
-  text-indent: -999999rem;
-  background: url(../images/pager-next.png) center center no-repeat;
+  background-image: url(../images/pager-next.png);
 }
 .page-view-oira-ws .pagination .page-item--last a {
-  width: 28px;
-  text-indent: -999999rem;
-  background: url(../images/pager-last.png) center center no-repeat;
+  background-image: url(../images/pager-last.png);
 }
 
 /* Common elements */
@@ -2751,6 +2774,8 @@ select.custom-select {
   .block-views-blocktools-block-2 h2 {
     max-width: 720px;
   }
+
+  /*** OiRA TOols ***/
 }
 /* End Media 767px */
 @media only screen and (max-width: 480px) {
