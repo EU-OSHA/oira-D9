@@ -1,0 +1,39 @@
+uuid: cda70e2c-ce83-4904-8b85-acd5071fa3c9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b6fdbd84-bbcd-447e-86b1-3af778d21bd7'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - oira_theme
+id: togglesidebar
+theme: oira_theme
+region: content
+weight: -21
+provider: null
+plugin: 'block_content:b6fdbd84-bbcd-447e-86b1-3af778d21bd7'
+settings:
+  id: 'block_content:b6fdbd84-bbcd-447e-86b1-3af778d21bd7'
+  label: 'Toggle Sidebar'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: "/oira-tools\r\n/search/*\r\n/promotional-resources-search/*"
+    negate: false
