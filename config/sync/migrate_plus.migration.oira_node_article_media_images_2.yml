@@ -10,7 +10,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: null
 migration_group: oira_migrate_media
-label: 'Article: Media Images Mapping'
+label: 'Article: Media Images Step 2'
 source:
   key: migrate
   plugin: d7_node
