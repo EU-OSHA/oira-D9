@@ -1,3 +1,16 @@
+@media(max-width: 1023px) {
+  .content-two-columns {
+    flex-direction: column;
+  }
+  .page-view-oira-ws .view .view-header,
+  .page-view-oira-ws .view .view-content.row {
+    width: 100%;
+  }
+  #sidebar_first {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   /**** What's News ***/
   .block-views-blocknews-block-1 {

@@ -71,7 +71,8 @@
   background: #FFF;
 }
 
-.full-width, .menu--private-zone, .block-views-blockadditional-resources-block, .block-views-blocknews-block-2, .page-node-402 .esener-template li, .block-views-blocknews-block-1 {
+.full-width, .menu--private-zone, .block-views-blockadditional-resources-block, .block-views-blocknews-block-2, .page-node-402 .esener-template li,
+.facts-and-figures .esener-template li, .block-views-blocknews-block-1 {
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -1038,6 +1039,22 @@ select.custom-select {
 .view-display-id-tools_ws .expandible p {
   font-size: 1rem;
 }
+.view-display-id-tools_ws .tags {
+  display: flex;
+}
+.view-display-id-tools_ws .tags > * {
+  background-color: #b4a4bf;
+  display: inline-block;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 0em;
+  margin-right: 5px;
+  border-radius: 15px;
+  margin-bottom: 2px;
+}
 .view-display-id-tools_ws .partners-wrapper {
   margin-top: 32px;
   padding: 2em 0.8em 1em;
@@ -1188,23 +1205,27 @@ select.custom-select {
 }
 
 /** Wat's News **/
-.page-node-450 {
+.page-node-450,
+.whats-is-new {
   /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
   max-width: 100%;
   overflow-x: hidden;
   /*** ***/
 }
-.page-node-450 h1 {
+.page-node-450 h1,
+.whats-is-new h1 {
   position: relative;
   z-index: 2;
   margin-top: -5.5rem;
   margin-bottom: 3rem;
   color: #FFF;
 }
-.page-node-450 .image-fluid {
+.page-node-450 .image-fluid,
+.whats-is-new .image-fluid {
   position: relative;
 }
-.page-node-450 .image-fluid:after {
+.page-node-450 .image-fluid:after,
+.whats-is-new .image-fluid:after {
   content: "";
   position: absolute;
   top: 0;
@@ -1216,7 +1237,8 @@ select.custom-select {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 140%);
   z-index: 1;
 }
-.page-node-450 #share-this-on {
+.page-node-450 #share-this-on,
+.whats-is-new #share-this-on {
   display: none;
 }
 
@@ -1448,49 +1470,60 @@ select.custom-select {
 }
 
 /*** FACTS AND FIGURES ***/
-.page-node-402 {
+.page-node-402,
+.facts-and-figures {
   /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
   max-width: 100%;
   overflow-x: hidden;
   /*** ***/
 }
-.page-node-402 .image-fluid {
+.page-node-402 .image-fluid,
+.facts-and-figures .image-fluid {
   display: none;
 }
-.page-node-402 h1 {
+.page-node-402 h1,
+.facts-and-figures h1 {
   color: #967ea7;
 }
-.page-node-402 .resume-section {
+.page-node-402 .resume-section,
+.facts-and-figures .resume-section {
   margin-top: 25px;
   margin-bottom: 5px;
   font-weight: 700;
 }
-.page-node-402 .esener-template ul {
+.page-node-402 .esener-template ul,
+.facts-and-figures .esener-template ul {
   list-style: none;
   margin: 0 auto;
   padding: 0;
 }
-.page-node-402 .esener-template li {
+.page-node-402 .esener-template li,
+.facts-and-figures .esener-template li {
   padding: 30px 0 30px;
   list-style-type: none;
 }
-.page-node-402 .esener-template li:nth-child(odd) {
+.page-node-402 .esener-template li:nth-child(odd),
+.facts-and-figures .esener-template li:nth-child(odd) {
   background: #dfd8e4;
 }
-.page-node-402 .esener-template li > div {
+.page-node-402 .esener-template li > div,
+.facts-and-figures .esener-template li > div {
   column-gap: 30px;
 }
-.page-node-402 .esener-item {
+.page-node-402 .esener-item,
+.facts-and-figures .esener-item {
   margin: 0 auto;
   display: flex;
 }
-.page-node-402 .esener-item h2 {
+.page-node-402 .esener-item h2,
+.facts-and-figures .esener-item h2 {
   margin-top: 0;
   border-bottom: 2px solid #786586;
   padding-bottom: 20px;
   line-height: 1.1;
 }
-.page-node-402 .esener-item .summary {
+.page-node-402 .esener-item .summary,
+.facts-and-figures .esener-item .summary {
   font-family: "Oswald";
   border-bottom: 2px solid #786586;
   padding-bottom: 17px;
@@ -1498,7 +1531,8 @@ select.custom-select {
   margin-bottom: 15px;
   font-size: 1.1em;
 }
-.page-node-402 .esener-item .content-image {
+.page-node-402 .esener-item .content-image,
+.facts-and-figures .esener-item .content-image {
   overflow: hidden;
   border: 1px solid #808080;
   cursor: pointer;
@@ -1507,7 +1541,9 @@ select.custom-select {
   background-color: #FFF;
 }
 .page-node-402 .col-left,
-.page-node-402 .col-right {
+.page-node-402 .col-right,
+.facts-and-figures .col-left,
+.facts-and-figures .col-right {
   padding: 0;
 }
 
@@ -1655,13 +1691,15 @@ select.custom-select {
 }
 
 /**** Risks Page ***/
-.page-node-31 {
+.page-node-31,
+.what-risk-assessment {
   /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
   max-width: 100%;
   overflow-x: hidden;
   /*** ***/
 }
-.page-node-31 #main-wrapper {
+.page-node-31 #main-wrapper,
+.what-risk-assessment #main-wrapper {
   padding-bottom: 0;
 }
 
@@ -2539,6 +2577,20 @@ select.custom-select {
   background-image: none;
 }
 
+@media (max-width: 1023px) {
+  .content-two-columns {
+    flex-direction: column;
+  }
+
+  .page-view-oira-ws .view .view-header,
+.page-view-oira-ws .view .view-content.row {
+    width: 100%;
+  }
+
+  #sidebar_first {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1024px) {
   /**** What's News ***/
   .block-views-blocknews-block-1 h2 {
@@ -2776,6 +2828,53 @@ select.custom-select {
   }
 
   /*** OiRA TOols ***/
+  .page-view-oira-ws .content-two-columns .two-column {
+    background-color: white;
+    padding: 15px;
+  }
+  .page-view-oira-ws .content-two-columns .two-column section #block-exposedformoira-wstools-ws {
+    display: none;
+  }
+  .page-view-oira-ws .block-system-main-block .view {
+    padding: 0;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-header {
+    display: none;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-content.row {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row {
+    margin-bottom: 2em;
+    background: rgba(223, 216, 228, 0.2);
+    padding: 1rem;
+    border-bottom: 2px solid #786586;
+    border-radius: 12px;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row .content-view-tools-view {
+    padding: 0;
+    flex-direction: column;
+    border-top: none;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row .content-view-tools-view .tool-link {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row .content-view-tools-view .revised-date {
+    margin: 0 0 0.5rem;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row .content-view-tools-view .tags {
+    flex-direction: column;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row .content-view-tools-view .tags > * {
+    margin: 0 0 4px;
+  }
+  .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row .content-view-tools-view .group-right h2 {
+    font-weight: 700;
+  }
 }
 /* End Media 767px */
 @media only screen and (max-width: 480px) {

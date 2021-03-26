@@ -135,7 +135,55 @@
 
   /*** OiRA TOols ***/
   .page-view-oira-ws {
-
+    .content-two-columns .two-column {
+      background-color: white;
+      padding: 15px;
+      section #block-exposedformoira-wstools-ws {
+        display: none;
+      }
+    }
+    .block-system-main-block {
+      .view {
+        padding: 0;
+        .view-header {
+          display: none;
+        }
+        .view-content.row {
+          padding: 0;
+          margin: 0;
+          border: 0;
+          .views-row {
+            margin-bottom: 2em;
+            background: rgba($bg-color-purple-light, .2);
+            padding: 1rem;
+            border-bottom: 2px solid #786586;
+            border-radius: 12px;
+            .content-view-tools-view {
+              padding: 0;
+              flex-direction: column;
+              border-top: none;
+              .tool-link {
+                position: relative;
+                top: 0;
+                left: 0;
+              }
+              .revised-date {
+                margin: 0 0 0.5rem;
+              }
+              .tags {
+                flex-direction: column;
+                > * {
+                  margin: 0 0 4px;
+                }
+              }
+              .group-right h2 {
+                font-weight: $font-weight-bold;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
 }/* End Media 767px */
