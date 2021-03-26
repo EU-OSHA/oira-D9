@@ -1,6 +1,6 @@
 uuid: a74a86e4-e6e9-4a16-bf42-dd3f76589f6b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.country_partner_content
