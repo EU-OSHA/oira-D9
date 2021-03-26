@@ -1,0 +1,107 @@
+uuid: 8315b6b0-78c4-4e4d-87cd-487898b6bc89
+langcode: en
+status: true
+dependencies: {  }
+id: partner_content
+label: 'Partner Content'
+renderer: quick_tabs
+options:
+  quick_tabs:
+    class: ''
+    style: tabsbar
+    ajax: false
+hide_empty_tabs: true
+default_tab: 0
+configuration_data:
+  -
+    title: 'Show all'
+    weight: -10
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: addtoany_block
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: country_partner_content
+          display: block_1
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: 'OiRA Tools'
+    weight: -9
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: addtoany_block
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: country_partner_content
+          display: block_3
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: 'Promotional resources'
+    weight: -8
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: addtoany_block
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: country_partner_content
+          display: block_5
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: News
+    weight: -7
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: addtoany_block
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: country_partner_content
+          display: block_4
+          args: ''
+      qtabs_content:
+        options:
+          machine_name: ''
