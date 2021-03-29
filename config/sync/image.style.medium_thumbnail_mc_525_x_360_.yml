@@ -1,0 +1,15 @@
+uuid: ea2bcd44-ec8f-4578-99be-818929ae76a5
+langcode: en
+status: true
+dependencies: {  }
+name: medium_thumbnail_mc_525_x_360_
+label: 'Medium thumbnail MC (525 X 360)'
+effects:
+  60c19466-9933-46a6-91b7-5825c1b5c617:
+    uuid: 60c19466-9933-46a6-91b7-5825c1b5c617
+    id: image_crop
+    weight: 1
+    data:
+      width: 525
+      height: 350
+      anchor: center-center

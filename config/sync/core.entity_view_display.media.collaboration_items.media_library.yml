@@ -8,68 +8,44 @@ dependencies:
     - field.field.media.collaboration_items.field_col_item_label
     - field.field.media.collaboration_items.field_col_item_links
     - field.field.media.collaboration_items.field_media_file_1
-    - image.style.medium
     - media.type.collaboration_items
   module:
     - file
-    - image
     - link
-    - text
 id: media.collaboration_items.media_library
 targetEntityType: media
 bundle: collaboration_items
 mode: media_library
 content:
-  field_col_item_desc:
-    type: text_default
-    weight: 2
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-  field_col_item_label:
-    type: string
+  field_col_item_links:
+    type: link
     weight: 1
     region: content
     label: above
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_col_item_links:
-    type: link_separate
-    weight: 4
-    region: content
-    label: above
-    settings:
       trim_length: 80
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
+      rel: '0'
     third_party_settings: {  }
   field_media_file_1:
-    type: file_table
-    weight: 3
+    type: file_default
+    weight: 0
     region: content
-    label: above
-    settings:
-      use_description_as_link_text: true
-    third_party_settings: {  }
-  thumbnail:
-    type: image
     label: hidden
     settings:
-      image_style: medium
-      image_link: ''
-    weight: 0
+      use_description_as_link_text: false
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_col_item_desc: true
+  field_col_item_label: true
   langcode: true
   name: true
   search_api_excerpt: true
+  thumbnail: true
   uid: true
