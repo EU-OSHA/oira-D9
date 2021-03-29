@@ -109,6 +109,11 @@ jQuery(document).ready(function($){
       $('#sidebar_first').toggleClass('sidebar-expanded');
     });
 
+    $('.sidebar_first aside').click(function(){
+      $(this).toggleClass('clicked');
+      $('#sidebar_first').removeClass('sidebar-expanded');
+    });
+
 });
 
 

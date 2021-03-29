@@ -153,12 +153,25 @@
     }
   }
 
-  .sidebar_first.sidebar-expanded {
-    display: block !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999;
+  .sidebar_first {
+    &.sidebar-expanded {
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      padding-bottom: 1.5rem;
+    }
+    aside {
+      &:after {
+        display:block;
+        content: "\e253";
+        font-family: "Glyphicons Halflings";
+        font-size: 1.2em;
+        color: $text-color-white;
+        float: right;
+      }
+    }
   }
 
   /*** OiRA TOols ***/

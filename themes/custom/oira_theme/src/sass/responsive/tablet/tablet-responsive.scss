@@ -9,6 +9,48 @@
   #sidebar_first {
     display: none;
   }
+
+  /*** Sidebar Toggle ***/
+  .toggle-sidebar {
+    border: none;
+    background-color: $bg-color-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 6px 12px;
+    .text {
+      display: none;
+    }
+    &:before {
+      display: block;
+      content: "\e003";
+      font-family: "Glyphicons Halflings";
+      font-size: 1.3rem;
+      color: $text-color-white;
+    }
+  }
+
+  .sidebar_first {
+    &.sidebar-expanded {
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      padding-bottom: 1.5rem;
+    }
+    aside {
+      &:after {
+        display:block;
+        content: "\e253";
+        font-family: "Glyphicons Halflings";
+        font-size: 1.2em;
+        color: $text-color-white;
+        float: right;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {
