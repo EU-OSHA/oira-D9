@@ -131,8 +131,103 @@
     h2 {
       max-width: 720px;
     }
-    .views-view-grid {
+  }
 
+  /*** Sidebar Toggle ***/
+  .toggle-sidebar {
+    border: none;
+    background-color: $bg-color-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    .text {
+      display: none;
+    }
+    &:before {
+      display: block;
+      content: "\e003";
+      font-family: "Glyphicons Halflings";
+      font-size: 1.3rem;
+      color: $text-color-white;
+    }
+  }
+
+  .sidebar_first {
+    &.sidebar-expanded {
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      padding-bottom: 1.5rem;
+    }
+    aside {
+      &:after {
+        display:block;
+        content: "\e253";
+        font-family: "Glyphicons Halflings";
+        font-size: 1.2em;
+        color: $text-color-white;
+        float: right;
+      }
+    }
+  }
+
+  /*** OiRA TOols ***/
+  .page-view-oira-ws {
+    .content-two-columns .two-column {
+      background-color: white;
+      padding: 15px;
+      section #block-exposedformoira-wstools-ws {
+        display: none;
+      }
+    }
+    .block-system-main-block {
+      .view {
+        padding: 0;
+        .view-header {
+          display: none;
+        }
+        .view-content.row {
+          padding: 0;
+          margin: 0;
+          border: 0;
+          .views-row {
+            margin-bottom: 2em;
+            background: rgba($bg-color-purple-light, .2);
+            padding: 1rem;
+            border-bottom: 2px solid #786586;
+            border-radius: 12px;
+            .content-view-tools-view {
+              padding: 0;
+              flex-direction: column;
+              border-top: none;
+              .tool-link {
+                position: relative;
+                top: 0;
+                left: 0;
+              }
+              .revised-date {
+                margin: 0 0 0.5rem;
+              }
+              .tags {
+                flex-direction: column;
+                > * {
+                  margin: 0 0 4px;
+                }
+              }
+              .group-right h2 {
+                font-weight: $font-weight-bold;
+                font-size: 1.375rem;
+                &:after {
+                  font-size: 1.375rem;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 

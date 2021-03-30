@@ -264,6 +264,22 @@
       cursor: pointer;
       text-decoration: underline;
     }
+    &.expanded {
+      text-align: right !important;
+      height: 12px;
+      overflow: hidden;
+      font-style: normal;
+      font-size: 0;
+      margin-top: 0px;
+      &:before {
+        text-align: right;
+        display: block;
+        content: "\e253";
+        font-family: "Glyphicons Halflings";
+        font-size: 1.2rem;
+        line-height: 1;
+      }
+    }
   }
   .views-field-nothing {
     padding-bottom: 1rem;
