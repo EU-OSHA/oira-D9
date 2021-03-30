@@ -1,0 +1,47 @@
+.block-quicktabs {
+  .tabsbar {
+    border: none;
+    .item-list {
+      background-color: $bg-color-purple;
+    }
+    .quicktabs-tabs {
+      max-width: 1170px;
+      padding: 0 15px;
+      margin: 0 auto;
+      border-radius: 0;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      > li {
+        border: none;
+        > a {
+          color: white;
+          font-style: normal;
+          border: none;
+          background: transparent;
+        }
+      }
+    }
+    .quicktabs-main {
+      padding: 1rem 0;
+      margin: 1rem auto 0;
+      background: $bg-color-purple-light;
+    }
+    .quicktabs-tabpage {
+
+    }
+    .quicktabs-tabpage {
+      max-width: 1170px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+  }
+  li.list-group-item {
+    border: none;
+    &.active {
+      border: none;
+      background: transparent;
+    }
+  }
+}

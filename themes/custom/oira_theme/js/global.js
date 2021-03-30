@@ -114,6 +114,13 @@ jQuery(document).ready(function($){
       $('#sidebar_first').removeClass('sidebar-expanded');
     });
 
+    //Sidebar toggle facets
+    $('.block-facets h2').click(function(){
+      $(this).toggleClass('clicked');
+      $(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
+    });
+
+
 });
 
 
