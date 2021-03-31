@@ -1,9 +1,9 @@
-uuid: cda70e2c-ce83-4904-8b85-acd5071fa3c9
+uuid: 84f22ad7-2c1a-4ec5-8a23-2660be35d196
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:b6fdbd84-bbcd-447e-86b1-3af778d21bd7'
+    - 'block_content:basic:e948cdb2-8a0b-46eb-8ae2-4d39efd86628'
   module:
     - block_content
     - context
@@ -13,11 +13,11 @@ dependencies:
 id: togglesidebar
 theme: oira_theme
 region: content
-weight: -21
+weight: -22
 provider: null
-plugin: 'block_content:b6fdbd84-bbcd-447e-86b1-3af778d21bd7'
+plugin: 'block_content:e948cdb2-8a0b-46eb-8ae2-4d39efd86628'
 settings:
-  id: 'block_content:b6fdbd84-bbcd-447e-86b1-3af778d21bd7'
+  id: 'block_content:e948cdb2-8a0b-46eb-8ae2-4d39efd86628'
   label: 'Toggle Sidebar'
   provider: block_content
   label_display: '0'

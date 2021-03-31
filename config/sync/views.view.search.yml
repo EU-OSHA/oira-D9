@@ -123,11 +123,11 @@ display:
         type: html_list
         options:
           grouping: {  }
-          row_class: ''
+          row_class: search-results__result
           default_row_class: true
           type: ul
           wrapper_class: item-list
-          class: ''
+          class: search-results__list
       row:
         type: fields
       fields:
@@ -2653,7 +2653,6 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              administrator: '0'
               editor: '0'
               approver: '0'
               translation_manager: '0'
@@ -2665,7 +2664,8 @@ display:
               oira_project_manager: '0'
               oira_supervisor: '0'
               superadministrator: '0'
-            placeholder: ''
+              administrator: '0'
+            placeholder: Search
             expose_fields: false
             searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
@@ -2721,7 +2721,7 @@ display:
           expose:
             label: Date
           plugin_id: search_api
-      title: Search
+      title: ''
       header:
         result:
           id: result
@@ -2733,17 +2733,7 @@ display:
           empty: false
           content: 'Displaying @start - @end of @total'
           plugin_id: result
-      footer:
-        result:
-          id: result
-          table: views
-          field: result
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          content: 'Displaying @start - @end of @total'
-          plugin_id: result
+      footer: {  }
       empty:
         area_text_custom:
           id: area_text_custom

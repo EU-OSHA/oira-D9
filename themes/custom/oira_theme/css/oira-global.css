@@ -2119,7 +2119,7 @@ select.custom-select {
 .view-partner-intro {
   max-width: 1170px;
   padding: 0 15px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 .view-partner-intro .partner__intro-data {
   display: flex;
@@ -2140,6 +2140,16 @@ select.custom-select {
 }
 .view-partner-intro .partner__title h1 {
   font-size: 2.5625rem;
+}
+.view-partner-intro .partner__address .field__label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #786586;
+}
+.view-partner-intro .partner__address .field__content {
+  display: flex;
+  flex-direction: column;
 }
 
 .view-country-partner-content h3 {
