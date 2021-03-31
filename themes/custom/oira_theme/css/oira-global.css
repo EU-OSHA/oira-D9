@@ -383,7 +383,6 @@ h1.page-header {
 .block-quicktabs .tabsbar .quicktabs-main {
   padding: 1rem 0;
   margin: 1rem auto 0;
-  background: #dfd8e4;
 }
 .block-quicktabs .tabsbar .quicktabs-tabpage {
   max-width: 1170px;
@@ -2141,6 +2140,9 @@ select.custom-select {
 .view-partner-intro .partner__title h1 {
   font-size: 2.5625rem;
 }
+.view-partner-intro .partner__address {
+  padding: 0 15px;
+}
 .view-partner-intro .partner__address .field__label {
   display: block;
   margin-bottom: 15px;
@@ -2151,20 +2153,109 @@ select.custom-select {
   display: flex;
   flex-direction: column;
 }
+.view-partner-intro .partner__address .field__content.field__content-url {
+  margin-top: 15px;
+}
+.view-partner-intro .partner__address .field__content.field__content-url .field__label {
+  margin: 0;
+  color: #58585a;
+  font-style: normal;
+}
+.view-partner-intro .partner__address .field__content.field__content-url a {
+  font-weight: 400;
+  font-style: normal;
+}
+.view-partner-intro .partner__socialprofile {
+  padding: 0 15px;
+}
+.view-partner-intro .partner__socialprofile .field__label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #786586;
+}
+.view-partner-intro .partner__socialprofile .list-group {
+  margin: 0;
+}
+.view-partner-intro .partner__socialprofile .list-group .list-group-item {
+  margin-bottom: 5px;
+  border: none;
+}
+.view-partner-intro .partner__socialprofile .list-group a {
+  color: #58585a;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.view-country-partner-content > .view-content.row {
+  background: #FFF;
+}
 .view-country-partner-content h3 {
   color: #967ea7;
   border-bottom: 2px solid #967ea7;
   font-size: 2.1875rem;
+  line-height: 1.6;
   padding-bottom: 5px;
   font-family: "Oswald";
   margin-top: 30px;
+  margin-bottom: 15px;
   width: 100%;
+}
+.view-country-partner-content .view-header,
+.view-country-partner-content .view-footer {
+  padding-bottom: 30px;
+}
+.view-country-partner-content .view-header .view-content > h3,
+.view-country-partner-content .view-footer .view-content > h3 {
+  padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.view-country-partner-content .view-header .view-content > h3:after,
+.view-country-partner-content .view-footer .view-content > h3:after {
+  display: block;
+  content: "";
+  background: url(../images/oira-tools.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  float: right;
+}
+.view-country-partner-content .view-header .view-content.row,
+.view-country-partner-content .view-footer .view-content.row {
+  padding: 30px 0;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #dfd8e4;
+}
+.view-country-partner-content .view-header .views-row,
+.view-country-partner-content .view-footer .views-row {
+  padding: 15px 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.view-country-partner-content .view-footer .view-content > h3:after {
+  display: block;
+  content: "";
+  background: url(../images/news-menu-color.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  float: right;
 }
 .view-country-partner-content .views-row {
   width: 100%;
   padding: 30px 0;
   border-bottom: 2px solid #967ea7;
+}
+.view-country-partner-content .views-row:last-child {
+  margin-bottom: 30px;
 }
 .view-country-partner-content .view-show-all {
   display: flex;
@@ -2185,6 +2276,22 @@ select.custom-select {
   color: #58585a;
   border-bottom: none;
 }
+.view-country-partner-content .tool-link {
+  display: flex;
+  justify-content: flex-end;
+}
+.view-country-partner-content .tool-link a {
+  font-weight: 700;
+  color: #58585a;
+  font-style: normal;
+}
+.view-country-partner-content .tool-link a:after {
+  margin-left: 10px;
+  content: "";
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  color: #10b2e4;
+}
 .view-country-partner-content .tags {
   display: flex;
 }
@@ -2200,6 +2307,35 @@ select.custom-select {
   margin-right: 5px;
   border-radius: 15px;
   margin-bottom: 15px;
+}
+.view-country-partner-content .partners-wrapper {
+  display: none;
+}
+.view-country-partner-content .partners-wrapper .partner-wrapper {
+  display: flex;
+  background-color: #786586;
+  padding: 15px;
+  color: #FFF;
+  margin-top: 50px;
+}
+.view-country-partner-content .partners-wrapper .partner-wrapper a {
+  color: #FFF;
+}
+.view-country-partner-content .more-link {
+  color: #10b2e4;
+  font-weight: 700;
+  font-style: italic;
+  display: block;
+}
+.view-country-partner-content .more-link:hover {
+  cursor: pointer;
+}
+.view-country-partner-content .more-link:before {
+  content: ">";
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+  top: -1px;
 }
 
 .site-footer {

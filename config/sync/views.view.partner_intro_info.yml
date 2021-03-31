@@ -496,55 +496,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        nothing_1:
-          id: nothing_1
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: "<div class=\"partner__address\">\r\n<strong class=\"field__label\">Contact information</strong>\r\n<div class=\"field__content\">\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_address }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_town }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_country }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_cp }}\r\n</div>\r\n</div>\r\n</div>"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
         field_website:
           id: field_website
           table: node__field_website
@@ -553,7 +504,7 @@ display:
           group_type: group
           admin_label: ''
           label: Website
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -620,7 +571,7 @@ display:
           group_type: group
           admin_label: ''
           label: 'Dedicated OiRA website'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -687,7 +638,7 @@ display:
           group_type: group
           admin_label: ''
           label: 'General email'
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -741,6 +692,55 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        nothing_1:
+          id: nothing_1
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "<div class=\"partner__address\">\r\n<strong class=\"field__label\">Contact information</strong>\r\n<div class=\"field__content\">\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_address }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_town }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_country }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_cp }}\r\n</div>\r\n<div class=\"field__content field__content-url\">\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Website:</strong>\r\n{{ field_website }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Dedicated OiRA website:</strong>\r\n{{ field_dedicated_oira_website }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Email:</strong>\r\n{{ field_general_email }}\r\n</div>\r\n</div>\r\n</div>\r\n</div>"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
         field_social_profile:
           id: field_social_profile
           table: node__field_social_profile

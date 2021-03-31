@@ -1832,6 +1832,7 @@ select.custom-select{
     }
   }
   .partner__address {
+    padding: 0 15px;
     .field__label {
       display: block;
       margin-bottom: 15px;
@@ -1841,24 +1842,113 @@ select.custom-select{
     .field__content {
       display: flex;
       flex-direction: column;
+      &.field__content-url {
+        margin-top: 15px;
+        .field__label {
+          margin: 0;
+          color: $text-color-black;
+          font-style: normal;
+        }
+        a {
+          font-weight: $font-weight-normal;
+          font-style: normal;
+        }
+      }
+    }
+  }
+  .partner__socialprofile {
+    padding: 0 15px;
+    .field__label {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: $font-weight-bold;
+      color: $text-color-purple;
+    }
+    .list-group {
+      margin: 0;
+      .list-group-item {
+        margin-bottom: 5px;
+        border: none;
+      }
+      a {
+        color: $text-color-black;
+        font-weight: $font-weight-normal;
+        font-style: normal;
+      }
     }
   }
 }
 
 .view-country-partner-content {
+  > .view-content.row {
+    background: $bg-color-white;
+  }
   h3 {
     color: $text-color-purple-light;
     border-bottom: 2px solid $text-color-purple-light;
     font-size: 2.1875rem;
+    line-height: 1.6;
     padding-bottom: 5px;
     font-family: 'Oswald';
     margin-top: 30px;
+    margin-bottom: 15px;
     width: 100%;
+  }
+  .view-header,
+  .view-footer {
+    padding-bottom: 30px;
+    .view-content > h3 {
+      padding: 0 15px;
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 15px;
+      &:after {
+        display: block;
+        content: "";
+        background: url(../images/oira-tools.png) no-repeat;
+        background-size: 100%;
+        width: 40px;
+        height: 40px;
+        float: right;
+      }
+    }
+    .view-content.row {
+      padding: 30px 0;
+      width: 100vw;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      background: $bg-color-purple-light;
+    }
+    .views-row {
+      padding: 15px 15px;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+  }
+  .view-footer {
+    .view-content > h3 {
+      &:after {
+        display: block;
+        content: "";
+        background: url(../images/news-menu-color.png) no-repeat;
+        background-size: 100%;
+        width: 40px;
+        height: 40px;
+        float: right;
+      }
+    }
   }
   .views-row {
     width: 100%;
     padding: 30px 0;
     border-bottom: 2px solid $text-color-purple-light;
+    &:last-child {
+      margin-bottom: 30px;
+    }
   }
   .view-show-all {
     display: flex;
@@ -1881,6 +1971,22 @@ select.custom-select{
       border-bottom: none;
     }
   }
+  .tool-link {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      font-weight: $font-weight-bold;
+      color: $text-color-black;
+      font-style: normal;
+      &:after {
+        margin-left: 10px;
+        content: "\e164";
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        color: $text-color-blue-light;
+      }
+    }
+  }
   .tags {
     display: flex;
     .tag {
@@ -1895,6 +2001,35 @@ select.custom-select{
       margin-right: 5px;
       border-radius: 15px;
       margin-bottom: 15px;
+    }
+  }
+  .partners-wrapper {
+    display: none;
+    .partner-wrapper {
+      display: flex;
+      background-color: $bg-color-purple;
+      padding: 15px;
+      color: $text-color-white;
+      margin-top: 50px;
+      a {
+        color: $text-color-white;
+      }
+    }
+  }
+  .more-link {
+    color: $text-color-blue-light;
+    font-weight: $font-weight-bold;
+    font-style: italic;
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+    &:before {
+      content: '>';
+      margin-right: 5px;
+      display: inline-block;
+      position: relative;
+      top: -1px;
     }
   }
 }

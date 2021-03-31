@@ -86,6 +86,12 @@ jQuery(document).ready(function($){
       $(this).parents('.group-right').find('.expandible').fadeToggle('fast');
     });
 
+    // See more/less, Partners node
+    $('.view-country-partner-content .more-link').click(function(){
+      $(this).toggleClass('clicked');
+      $(this).parents('.expandible').find('.partners-wrapper').slideToggle('fast');
+    });
+
     // Pager index
     $('.pagination').each(function () {
       let itemLength = $(this).find('.page-item').length;

@@ -650,6 +650,7 @@ display:
         pager: false
         group_by: false
         footer: false
+        css_class: false
       title: 'Partner content - profile page'
       relationships:
         field_co_author_node:
@@ -2265,7 +2266,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            news: news
+            promotional_material: promotional_material
           group: 1
           exposed: false
           expose:
@@ -2428,6 +2429,7 @@ display:
           view_to_insert: 'country_partner_content:block_7'
           inherit_arguments: false
           plugin_id: view
+      css_class: view-main-content
     cache_metadata:
       max-age: -1
       contexts:
@@ -5695,6 +5697,7 @@ display:
         query: false
         pager: false
         group_by: false
+        css_class: false
       title: 'Partner content - profile page'
       relationships:
         field_co_author_node:
@@ -7429,7 +7432,7 @@ display:
               field: type
               rendered: true
               rendered_strip: false
-          row_class: container-fluid
+          row_class: ''
           default_row_class: true
       row:
         type: fields
@@ -7450,6 +7453,7 @@ display:
           items_per_page: 2
           offset: 0
       group_by: false
+      css_class: view-header-content
     cache_metadata:
       max-age: -1
       contexts:
@@ -7501,6 +7505,7 @@ display:
         query: false
         pager: false
         group_by: false
+        css_class: false
       title: 'Partner content - profile page'
       relationships:
         field_co_author_node:
@@ -9116,7 +9121,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            promotional_material: promotional_material
+            news: news
           group: 1
           exposed: false
           expose:
@@ -9235,7 +9240,7 @@ display:
               field: type
               rendered: true
               rendered_strip: false
-          row_class: container-fluid
+          row_class: ''
           default_row_class: true
       row:
         type: fields
@@ -9256,6 +9261,7 @@ display:
           items_per_page: 1
           offset: 0
       group_by: false
+      css_class: view-footer-content
     cache_metadata:
       max-age: -1
       contexts:
