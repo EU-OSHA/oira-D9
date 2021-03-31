@@ -18,12 +18,8 @@ display:
       fields:
         label:
           label: Label
-        type:
-          label: Type
         tags_count:
           label: Etichete
-        operations:
-          label: Operations
       arguments:
         tjid:
           exception:
@@ -33,5 +29,3 @@ display:
       fields:
         label:
           label: Label
-        type:
-          label: Type

@@ -1,17 +1,17 @@
-uuid: a3005b96-1d94-430d-9fb8-ddf9e358c4c5
+uuid: 95106722-84f3-48c2-950f-a60ef1d360a0
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - oira_theme
+    - claro
 _core:
-  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
-id: oira_theme_help
-theme: oira_theme
-region: content
-weight: -19
+  default_config_hash: bMLNWPKf3uHuqgmVszMb5zhM205c4Y-r7j5Tw6NDo-o
+id: claro_help
+theme: claro
+region: help
+weight: 0
 provider: null
 plugin: help_block
 settings:

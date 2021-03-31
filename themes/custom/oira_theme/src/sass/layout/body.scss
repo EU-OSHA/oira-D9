@@ -1810,7 +1810,7 @@ select.custom-select{
 .view-partner-intro {
   max-width: 1170px;
   padding: 0 15px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   .partner__intro-data {
     display: flex;
     align-items: center;
@@ -1829,6 +1829,18 @@ select.custom-select{
     padding: 0 15px;
     h1 {
       font-size: 2.5625rem;
+    }
+  }
+  .partner__address {
+    .field__label {
+      display: block;
+      margin-bottom: 15px;
+      font-weight: $font-weight-bold;
+      color: $text-color-purple;
+    }
+    .field__content {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
