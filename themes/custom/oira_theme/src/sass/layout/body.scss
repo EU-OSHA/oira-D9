@@ -1780,14 +1780,10 @@ select.custom-select{
       cursor: pointer;
     }
     .tool-link {
-      position: absolute;
-      right: 0;
-      bottom: 0;
       display: flex;
       justify-content: flex-end;
       font-weight: bold;
-      margin-top: 15px;
-      margin-bottom: 30px;
+      margin: 15px 0;
       a {
         display: block;
         text-align: right;
@@ -1804,10 +1800,14 @@ select.custom-select{
         }
       }
     }
+    .expand {
+      display: none;
+    }
     .result-item.type-tools {
       .more-link {
-        display: inline-block;
-        curosr: pointer;
+        margin: -30px 0 0;
+        display: flex;
+        cursor: pointer;
         color: $text-color-blue-light;
         font-style: italic;
         font-weight: bold;
@@ -1823,11 +1823,27 @@ select.custom-select{
         &:hover {
           text-decoration: underline;
         }
+        &.clicked {
+          justify-content: flex-end;
+          font-size: 0;
+          margin: 15px 0;
+          &:hover {
+            text-decoration: none;
+          }
+          &:before {
+            content: "\e253";
+            font-family: "Glyphicons Halflings";
+            font-size: 1.2rem;
+            font-style: normal;
+            color: $text-color-blue-light;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
       }
     }
     .partners-wrapper {
-      padding: 15px;
-      background: $bg-color-purple;
       color: text-color-white;
       a {
         color: $text-color-white;
@@ -1835,6 +1851,8 @@ select.custom-select{
     }
     .partner-wrapper {
       display: flex;
+      padding: 15px;
+      background: $bg-color-purple;
     }
     .partner-inner-group--img {
       width: 41.6%;

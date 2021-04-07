@@ -1284,6 +1284,7 @@ display:
           not: false
           plugin_id: numeric
       block_description: 'Related news'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:
