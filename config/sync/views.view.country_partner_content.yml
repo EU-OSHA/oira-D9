@@ -650,6 +650,7 @@ display:
         pager: false
         group_by: false
         footer: false
+        css_class: false
       title: 'Partner content - profile page'
       relationships:
         field_co_author_node:
@@ -2265,7 +2266,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            news: news
+            promotional_material: promotional_material
           group: 1
           exposed: false
           expose:
@@ -2428,6 +2429,7 @@ display:
           view_to_insert: 'country_partner_content:block_7'
           inherit_arguments: false
           plugin_id: view
+      css_class: view-main-content
     cache_metadata:
       max-age: -1
       contexts:
@@ -2594,6 +2596,7 @@ display:
         style: false
         row: false
         query: false
+        css_class: false
       title: 'OiRA Tools'
       relationships:
         field_co_author_node:
@@ -3567,7 +3570,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n</div>\r\n\r\n<div class=\"group-right\">\r\n  <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n  <div class=\"tags\">\r\n    <p class=\"tag-sector\"> {{ field_sector }} </p>\r\n    <p class=\"tag-country\"> {{ field_country }} </p>\r\n    {{ field_language}}\r\n  </div>\r\n  <div class=\"tool-title\"> {{title}} </div>\r\n  <div class=\"tool-body\"> {{body}} <br> {{ field_alternative_body }} </div>\r\n  <div class=\"tool-link\"> {{ field_tool_link }} </div>\r\n\r\n  <div class=\"expandible\">\r\n     \r\n    <div class=\"partners-wrapper\">\r\n\r\n      {% if (title_1) %}\r\n      <div class=\"partner-wrapper partner-wrapper-related\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n         {{field_logo}}\r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n          <h4>{{ title_1 }}</h4>\r\n          {{view_node }} \r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n  \r\n      {% if (title_2)%}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_2 }}</h4>\r\n           {{ view_node_1 }}\r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n      \r\n    </div> \r\n\r\n    <span class=\"more-link\"> See more</span>\r\n  </div>\r\n</div>"
+            text: "<div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n</div>\r\n\r\n<div class=\"group-right\">\r\n  <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n  <div class=\"tags\">\r\n    <p class=\"tag tag-sector\"> {{ field_sector }} </p>\r\n    <p class=\"tag tag-country\"> {{ field_country }} </p>\r\n    {{ field_language}}\r\n  </div>\r\n  <h3 class=\"item__title\"> {{title}} </h3>\r\n  <div class=\"tool-body\"> {{body}} <br> {{ field_alternative_body }} </div>\r\n  <div class=\"tool-link\"> {{ field_tool_link }} </div>\r\n\r\n  <div class=\"expandible\">\r\n     \r\n    <div class=\"partners-wrapper\">\r\n\r\n      {% if (title_1) %}\r\n      <div class=\"partner-wrapper partner-wrapper-related\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n         {{field_logo}}\r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n          <h4>{{ title_1 }}</h4>\r\n          {{view_node }} \r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n  \r\n      {% if (title_2)%}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_2 }}</h4>\r\n           {{ view_node_1 }}\r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n      \r\n    </div> \r\n\r\n    <span class=\"more-link\"> See more</span>\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -3592,14 +3595,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: '0'
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: views-wrapper
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -3762,18 +3765,7 @@ display:
           not: false
           plugin_id: numeric
       block_description: 'Partner content tools'
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: '<hr>'
-          plugin_id: text_custom
+      header: {  }
       style:
         type: default
         options:
@@ -3793,6 +3785,7 @@ display:
           query_comment: ''
           query_tags: null
           contextual_filters_or: 1
+      css_class: view-country-partner--tools
     cache_metadata:
       max-age: -1
       contexts:
@@ -3837,6 +3830,7 @@ display:
         style: false
         row: false
         query: false
+        css_class: false
       title: News
       relationships:
         field_co_author_node:
@@ -3910,7 +3904,7 @@ display:
           type: media_thumbnail
           settings:
             image_style: medium
-            image_link: ''
+            image_link: content
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -4175,7 +4169,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n</div>\r\n<div class=\"group-right\">\r\n    <div> {{ field_publication_date }}</div>\r\n    <div> {{ title }}  </div>\r\n    <div> {{ field_summary }}  </div>\r\n   <div>  {{ view_node }}  </div>\r\n</div>"
+            text: "<div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n</div>\r\n<div class=\"group-right\">\r\n    <div class=\"news__publication-date\"> {{ field_publication_date }}</div>\r\n    <h3 class=\"news__title\">{{ title }}</h3>\r\n    <div class=\"news__summary\">{{ field_summary }}</div>\r\n   <div class=\"news__view-node\">{{ view_node }}</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -4200,13 +4194,13 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: '0'
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_type: div
+          element_wrapper_class: views-wrapper
           element_default_classes: true
           empty: ''
           hide_empty: false
@@ -4370,18 +4364,7 @@ display:
           not: false
           plugin_id: numeric
       block_description: 'Partner content news'
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: "<hr>\r\n"
-          plugin_id: text_custom
+      header: {  }
       style:
         type: default
         options:
@@ -4401,6 +4384,7 @@ display:
           query_comment: ''
           query_tags: null
           contextual_filters_or: 1
+      css_class: view-country-partner--news
     cache_metadata:
       max-age: -1
       contexts:
@@ -4440,6 +4424,7 @@ display:
         row: false
         query: false
         group_by: false
+        css_class: false
       title: 'Promotional resources'
       relationships:
         field_co_author_node:
@@ -5313,14 +5298,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: '0'
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
+          element_wrapper_type: '0'
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -5422,7 +5407,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"group-left\">\r\n  <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n</div>\r\n\r\n<div class=\"group-right\">\r\n  <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n  <div class=\"tags\">\r\n    <p class=\"tag-country\"> {{ field_country }} </p>\r\n    <p class=\"tag-type\"> {{ field_promotional_material_type }}  </p>\r\n    {{ field_language}}\r\n  </div>\r\n  <div class=\"pm-title\"> {{title}} </div>\r\n  <div class=\"pm-body\"> {{body}}  </div>\r\n  <div class=\"res-link\"> {{ field_link }} </div>\r\n  <div class=\"res-file\"> {{ field_media_file }} </div>\r\n  <div class=\"expandible\">\r\n     <div class=\"partners-wrapper\">\r\n\r\n        {% if (title_1) %}\r\n        <div class=\"partner-wrapper partner-wrapper-related\">\r\n          <div class=\"partner-inner-group partner-inner-group--img\">\r\n            {{field_logo}}\r\n          </div>\r\n          <div class=\"partner-inner-group partner-inner-group--data\">\r\n            <h4>{{ title_1 }}</h4>\r\n            {{ view_node }} \r\n          </div>\r\n      </div>\r\n      {% endif %}\r\n  \r\n      {% if (title_2)%}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_2 }}</h4>\r\n           {{ view_node_1 }}\r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      </div> \r\n  </div>\r\n\r\n  <span class=\"more-link\"> See more </span>\r\n\r\n</div>"
+            text: "<div class=\"group-left\">\r\n  <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n</div>\r\n\r\n<div class=\"group-right\">\r\n  <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n  <div class=\"tags\">\r\n    <p class=\"tag tag-country\">{{ field_country }}</p>\r\n    <p class=\"tag tag-type\">{{ field_promotional_material_type }}</p>\r\n    {{ field_language}}\r\n  </div>\r\n  <h3 class=\"item__title\"> {{title}} </h3>\r\n  <div class=\"pm-body\"> {{body}}  </div>\r\n  <div class=\"res-link\"> {{ field_link }} </div>\r\n  <div class=\"res-file\"> {{ field_media_file }} </div>\r\n  <div class=\"expandible\">\r\n     <div class=\"partners-wrapper\">\r\n\r\n        {% if (title_1) %}\r\n        <div class=\"partner-wrapper partner-wrapper-related\">\r\n          <div class=\"partner-inner-group partner-inner-group--img\">\r\n            {{field_logo}}\r\n          </div>\r\n          <div class=\"partner-inner-group partner-inner-group--data\">\r\n            <h4>{{ title_1 }}</h4>\r\n            {{ view_node }} \r\n          </div>\r\n      </div>\r\n      {% endif %}\r\n  \r\n      {% if (title_2)%}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_2 }}</h4>\r\n           {{ view_node_1 }}\r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      </div> \r\n     <span class=\"more-link\"> See more </span>\r\n  </div>\r\n\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -5447,14 +5432,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: '0'
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: views-wrapper
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -5617,18 +5602,7 @@ display:
           not: false
           plugin_id: numeric
       block_description: 'Partner content promotional resources'
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: '<hr>'
-          plugin_id: text_custom
+      header: {  }
       style:
         type: default
         options:
@@ -5649,6 +5623,7 @@ display:
           query_tags: {  }
           contextual_filters_or: 1
       group_by: false
+      css_class: view-country-partner--promotional-resources
     cache_metadata:
       max-age: -1
       contexts:
@@ -5695,6 +5670,7 @@ display:
         query: false
         pager: false
         group_by: false
+        css_class: false
       title: 'Partner content - profile page'
       relationships:
         field_co_author_node:
@@ -7429,7 +7405,7 @@ display:
               field: type
               rendered: true
               rendered_strip: false
-          row_class: container-fluid
+          row_class: ''
           default_row_class: true
       row:
         type: fields
@@ -7450,6 +7426,7 @@ display:
           items_per_page: 2
           offset: 0
       group_by: false
+      css_class: view-header-content
     cache_metadata:
       max-age: -1
       contexts:
@@ -7501,6 +7478,7 @@ display:
         query: false
         pager: false
         group_by: false
+        css_class: false
       title: 'Partner content - profile page'
       relationships:
         field_co_author_node:
@@ -9116,7 +9094,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            promotional_material: promotional_material
+            news: news
           group: 1
           exposed: false
           expose:
@@ -9235,7 +9213,7 @@ display:
               field: type
               rendered: true
               rendered_strip: false
-          row_class: container-fluid
+          row_class: ''
           default_row_class: true
       row:
         type: fields
@@ -9256,6 +9234,7 @@ display:
           items_per_page: 1
           offset: 0
       group_by: false
+      css_class: view-footer-content
     cache_metadata:
       max-age: -1
       contexts:

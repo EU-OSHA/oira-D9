@@ -13,23 +13,32 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      overflow: hidden;
       > li {
+        margin-right: 20px;
+        padding: 0;
         border: none;
+        border-radius: 0;
         > a {
+          display: block;
+          padding: 15px;
           color: white;
-          font-style: normal;
+          font-style: italic;
           border: none;
+          border-radius: 0;
           background: transparent;
+          &:focus,
+          &:hover {
+            background-color: $bg-color-purple-light;
+            color: $text-color-purple;
+            text-decoration: none;
+          }
         }
       }
     }
     .quicktabs-main {
-      padding: 1rem 0;
+      padding: 0;
       margin: 1rem auto 0;
-      background: $bg-color-purple-light;
-    }
-    .quicktabs-tabpage {
-
     }
     .quicktabs-tabpage {
       max-width: 1170px;
@@ -42,6 +51,107 @@
     &.active {
       border: none;
       background: transparent;
+      > a {
+          background-color: $bg-color-purple-light;
+          color: $text-color-purple;
+          text-decoration: none;
+      }
+    }
+  }
+}
+
+/*** Node type partner ***/
+.node--type-partner {
+  .block-quicktabs {
+    .tabsbar {
+      .quicktabs-tabs {
+        li a {
+          &:before {
+            display: inline-block;
+            content: "";
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }
+        li.list-group-item {
+          &:first-child {
+            a {
+              &:before {
+                background-image: url(../images/show-all-icon-w.png);
+              }
+              &:hover,
+              &:focus {
+                &:before {
+                  background-image: url(../images/show-all-icon-p.png);
+                }
+              }
+            }
+          }
+          &.active:first-child {
+            a:before {
+              background-image: url(../images/show-all-icon-p.png);
+            }
+          }
+        }
+        li.list-group-item:nth-child(2) {
+          a {
+            &:before {
+              background-image: url(../images/tools-icon-w.png);
+            }
+            &:hover,
+            &:focus {
+              &:before {
+                background-image: url(../images/tools-icon-p.png);
+              }
+            }
+          }
+          &.active {
+            a:before {
+              background-image: url(../images/tools-icon-p.png);
+            }
+          }
+        }
+        #quicktabs-tab-partner_content-2 {
+          a {
+            &:before {
+              background-image: url(../images/promotional-resources-icon-w.png);
+            }
+            &:hover,
+            &:focus {
+              &:before {
+                background-image: url(../images/promotional-resources-icon-p.png);
+              }
+            }
+          }
+          &.active {
+            a:before {
+              background-image: url(../images/promotional-resources-icon-p.png);
+            }
+          }
+        }
+        #quicktabs-tab-partner_content-3 {
+          a {
+            &:before {
+              background-image: url(../images/news-icon-w.png);
+            }
+            &:hover,
+            &:focus {
+              &:before {
+                background-image: url(../images/news-icon-p.png);
+              }
+            }
+          }
+          &.active {
+            a:before {
+              background-image: url(../images/news-icon-p.png);
+            }
+          }
+        }
+      }
     }
   }
 }
