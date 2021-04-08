@@ -593,7 +593,7 @@ select.custom-select{
       #block-exposedformoira-wstools-ws{
         position: absolute;
         z-index: 1;
-        top: 40px;
+        top: 12px;
         left: 7px;
         .form-item-sort-by{
           label{
@@ -1947,9 +1947,27 @@ select.custom-select{
   }
 }
 
+.node--type-partner {
+  /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
+  max-width: 100%;
+  overflow-x: hidden;
+  /*** ***/
+}
+
 .view-country-partner-content {
   > .view-content.row {
     background: $bg-color-white;
+    > h3 {
+      &:after {
+        display: block;
+        content: "";
+        background: url(../images/083.png) no-repeat;
+        background-size: 100%;
+        width: 45px;
+        height: 45px;
+        float: right;
+      }
+    }
   }
   h3 {
     color: $text-color-purple-light;
@@ -1985,6 +2003,7 @@ select.custom-select{
       }
     }
     .view-content.row {
+      flex-direction: column;
       padding: 30px 0;
       width: 100vw;
       margin-left: 50%;
@@ -2202,3 +2221,9 @@ select.custom-select{
   }
 }
 
+
+/**** Partners List Page ***/
+.view-partners-list {
+  margin: 0 auto;
+  padding: 0 15px;
+}
