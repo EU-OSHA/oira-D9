@@ -2244,7 +2244,7 @@ select.custom-select{
     margin-bottom: 45px;
   }
   .partner__data-wrapper {
-    padding: 50px 15px 60px 0;
+    padding: 50px 15px 30px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2254,18 +2254,20 @@ select.custom-select{
     align-items: center;
     &.partner__group--01 {
       width: 60%;
-      .partner__logo {
-        width: 30%;
-        padding-right: 15px;
-      }
-      .partner__name {
-        width: 70%;
-        padding: 0 15px;
-      }
     }
     &.partner__group--02 {
       width: 41%;
     }
+  }
+  .partner__logo {
+    width: 30%;
+    min-width: 30%;
+    padding-right: 15px;
+  }
+  .partner__name {
+    padding: 0 15px;
+    margin: 0;
+    line-height: 1.2;
   }
   .partner__country {
     padding-bottom: 15px;

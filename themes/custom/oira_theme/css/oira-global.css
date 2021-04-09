@@ -2633,7 +2633,7 @@ select.custom-select {
   margin-bottom: 45px;
 }
 .view-partners-list .partner__data-wrapper {
-  padding: 50px 15px 60px 0;
+  padding: 50px 15px 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2645,16 +2645,18 @@ select.custom-select {
 .view-partners-list .partner__group.partner__group--01 {
   width: 60%;
 }
-.view-partners-list .partner__group.partner__group--01 .partner__logo {
-  width: 30%;
-  padding-right: 15px;
-}
-.view-partners-list .partner__group.partner__group--01 .partner__name {
-  width: 70%;
-  padding: 0 15px;
-}
 .view-partners-list .partner__group.partner__group--02 {
   width: 41%;
+}
+.view-partners-list .partner__logo {
+  width: 30%;
+  min-width: 30%;
+  padding-right: 15px;
+}
+.view-partners-list .partner__name {
+  padding: 0 15px;
+  margin: 0;
+  line-height: 1.2;
 }
 .view-partners-list .partner__country {
   padding-bottom: 15px;
@@ -3828,6 +3830,15 @@ select.custom-select {
   .page-view-oira-ws .block-system-main-block .view .view-content.row .views-row .content-view-tools-view .group-right h2:after {
     font-size: 1.375rem;
   }
+
+  /*** National Partners ****/
+  .view-partners-list .partner__logo {
+    width: 30%;
+    min-width: 30%;
+  }
+  .view-partners-list .count-item__label {
+    font-size: 13px;
+  }
 }
 /* End Media 767px */
 @media only screen and (max-width: 480px) {
@@ -3904,6 +3915,51 @@ select.custom-select {
   }
   .path-private-zone .views-exposed-form .form-actions {
     padding: 0;
+  }
+
+  /*** National Partners ****/
+  .view-partners-list .partner__data-wrapper {
+    flex-direction: column;
+  }
+  .view-partners-list .partner__group {
+    flex-direction: column;
+  }
+  .view-partners-list .partner__group.partner__group--01 {
+    width: 100%;
+  }
+  .view-partners-list .partner__group.partner__group--02 {
+    width: 100%;
+  }
+  .view-partners-list .partner__logo {
+    padding: 0;
+    margin: 0 auto 15px;
+    width: auto;
+  }
+  .view-partners-list .partner__name {
+    margin-bottom: 15px;
+  }
+  .view-partners-list .count-item__label {
+    font-size: 13px;
+  }
+  .view-partners-list .content-count {
+    flex-direction: column;
+  }
+  .view-partners-list .content-count-item {
+    border: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+  .view-partners-list .content-count-item:first-child {
+    border: none;
+  }
+  .view-partners-list .content-count-item > * {
+    text-align: left;
+    display: inline-block;
+  }
+  .view-partners-list .content-count-item .count-item__label {
+    font-weight: 700;
+    font-style: italic;
   }
 }
 /* End Media 480px */
