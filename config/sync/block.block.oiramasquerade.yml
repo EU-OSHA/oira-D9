@@ -1,22 +1,22 @@
-uuid: 4f4b39fd-2cbe-4664-9d3f-c6ab6c929e61
+uuid: 6cab856b-ee9b-4b75-9447-7135533792d2
 langcode: en
 status: true
 dependencies:
   module:
     - context
-    - masquerade
+    - oira_masquerade
   theme:
     - oira_theme
-id: masquerade
+id: oiramasquerade
 theme: oira_theme
 region: header_form
-weight: -9
+weight: -21
 provider: null
-plugin: masquerade
+plugin: oira_masquerade
 settings:
-  id: masquerade
-  label: Masquerade
-  provider: masquerade
+  id: oira_masquerade
+  label: 'Oira Masquerade'
+  provider: oira_masquerade
   label_display: '0'
 visibility:
   request_path_exclusion:

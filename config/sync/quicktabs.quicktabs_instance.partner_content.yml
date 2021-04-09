@@ -4,8 +4,12 @@ status: true
 dependencies: {  }
 id: partner_content
 label: 'Partner Content'
-renderer: quick_tabs
+renderer: opcc_quick_tabs
 options:
+  opcc_quick_tabs:
+    class: ''
+    style: tabsbar
+    ajax: '0'
   quick_tabs:
     class: ''
     style: tabsbar

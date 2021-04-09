@@ -13,7 +13,7 @@ migration_tags: null
 migration_group: oira_migrate_node
 label: 'Node: News'
 source:
-  plugin: d7_node
+  plugin: ev_d7_node
   node_type: news
 process:
   nid: tnid
@@ -69,6 +69,12 @@ process:
       target_id:
         plugin: get
         source: tid
+  field_workbench_access:
+    -
+      plugin: sub_process
+      source: workbench_access
+      process:
+        target_id: tid
 destination:
   plugin: 'entity:node'
 migration_dependencies:

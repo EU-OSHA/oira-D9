@@ -245,40 +245,7 @@ select.custom-select{
 /*Styling inputs*/
 .page-view-oira-ws{
   .sidebar_first{
-    input[type=checkbox]{
-      display: none;
-    }
 
-    label{
-      display: flex;
-      font-size: 1rem;
-      padding-left: 0px;
-      padding-bottom: 5px;
-      margin-bottom: 0px;
-    }
-
-    input[type=checkbox] + label:before{
-      float: left;
-      content: "\2714";
-      border: 0;
-      border-radius: 0.2em;
-      transition: .2s;
-      clear: both;
-      background: #FFF;
-      width: 20px;
-      height: 20px;
-      padding-left: 5px;
-      padding-top: 0;
-      padding-right: 5px;
-      padding-bottom: 14px;
-      margin-bottom: 10px;
-      margin-right: 10px;
-    }
-    input[type=checkbox]:checked + label:before{
-      background-color: #FFF;
-      border-color: #FFF;
-      color: $bg-color-purple;
-    }
   }
 }
 
@@ -593,7 +560,7 @@ select.custom-select{
       #block-exposedformoira-wstools-ws{
         position: absolute;
         z-index: 1;
-        top: 40px;
+        top: 12px;
         left: 7px;
         .form-item-sort-by{
           label{
@@ -1947,9 +1914,27 @@ select.custom-select{
   }
 }
 
+.node--type-partner {
+  /*** To avoid horizontal scrollbar because some browsers understand 100vw with the vertical scroll ***/
+  max-width: 100%;
+  overflow-x: hidden;
+  /*** ***/
+}
+
 .view-country-partner-content {
   > .view-content.row {
     background: $bg-color-white;
+    > h3 {
+      &:after {
+        display: block;
+        content: "";
+        background: url(../images/083.png) no-repeat;
+        background-size: 100%;
+        width: 45px;
+        height: 45px;
+        float: right;
+      }
+    }
   }
   h3 {
     color: $text-color-purple-light;
@@ -1985,6 +1970,7 @@ select.custom-select{
       }
     }
     .view-content.row {
+      flex-direction: column;
       padding: 30px 0;
       width: 100vw;
       margin-left: 50%;
@@ -2202,3 +2188,93 @@ select.custom-select{
   }
 }
 
+/*** Intro nodes for pages ***/
+.view-intro-nodes-for-pages {
+  margin-bottom: 10px;
+  .intro__text {
+    font-weight: $font-weight-bold;
+  }
+}
+
+/**** Partners List Page ***/
+.view-partners-list {
+  margin: 0 auto;
+  padding: 0 15px;
+  .partners__wrapper {
+    width: 100%;
+  }
+  .partners__list {
+    list-style: none;
+    padding: 0;
+  }
+  .partner__item {
+    margin-bottom: 45px;
+  }
+  .partner__data-wrapper {
+    padding: 50px 15px 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .partner__group {
+    display: flex;
+    align-items: center;
+    &.partner__group--01 {
+      width: 60%;
+    }
+    &.partner__group--02 {
+      width: 41%;
+    }
+  }
+  .partner__logo {
+    width: 30%;
+    min-width: 30%;
+    padding-right: 15px;
+  }
+  .partner__name {
+    padding: 0 15px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .partner__country {
+    padding-bottom: 15px;
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: $font-weight-bold;
+    color: $text-color-purple;
+    border-bottom: 2px solid $bg-color-purple;
+  }
+  .partner__name {
+    font-size: 1.75rem;
+    a {
+      font-style: normal;
+      color: $text-color-black;
+    }
+  }
+  .content-count {
+    display: flex;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .content-count-item {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 2px solid $bg-color-purple;
+    text-align: center;
+    color: $text-color-purple;
+    line-height:1.2;
+    &:first-child {
+      border-left: 2px solid $bg-color-purple;
+    }
+    span {
+      font-size: 2.1875rem;
+      font-weight: $font-weight-bold;
+    }
+    a {
+      font-style: normal;
+    }
+  }
+}

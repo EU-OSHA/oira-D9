@@ -4,6 +4,36 @@ status: true
 dependencies: {  }
 id: oira_supervisor
 label: 'Oira Supervisor'
-weight: 1
+weight: 12
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access dashboard'
+  - 'access media browser'
+  - 'access toolbar'
+  - 'access workbench access by role'
+  - 'create files'
+  - 'edit any content in needs_review'
+  - 'edit any news content'
+  - 'edit any practical_tool content'
+  - 'edit any promotional_material content'
+  - 'edit any strategic_documentation content'
+  - 'moderate content from final_draft to needs_review'
+  - 'moderate content from needs_review to to_be_approved'
+  - 'select content section'
+  - 'use manualcrop'
+  - 'use media wysiwyg'
+  - 'use text format filtered_html'
+  - 'use text format full_html'
+  - 'use text format full_html_minimal'
+  - 'view all unpublished content'
+  - 'view files'
+  - 'view osh approver needs review tab'
+  - 'view osh my content tab'
+  - 'view own private files'
+  - 'view own unpublished content'
+  - 'view private files'
+  - 'view revisions'
+  - 'view the administration theme'
