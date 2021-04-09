@@ -2701,6 +2701,26 @@ select.custom-select {
   font-style: normal;
 }
 
+/*** Header Nodes in View Pages ***/
+.field--name-field-article-header {
+  padding: 0 15px;
+  margin: 0 0 15px;
+}
+.field--name-field-article-header .field-name-body p {
+  font-size: 1.375rem;
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+  font-weight: 300;
+}
+.field--name-field-article-header .field-name-body p:last-child {
+  margin: 0;
+}
+
+.page-view-partners-list .field--name-field-article-header .field-name-body p {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", Arial, sans-serif;
+  font-weight: 700;
+}
+
 .site-footer {
   width: 100%;
   height: auto;

@@ -13,7 +13,6 @@ dependencies:
     - node.type.partner
     - system.menu.main
     - taxonomy.vocabulary.partner_types
-    - views.view.intro_nodes_for_pages
   content:
     - 'taxonomy_term:country:db2dad12-ca1f-4477-aa4d-48254e1cf951'
     - 'taxonomy_term:partner_types:386de8a7-9b66-4fc1-a39d-411f79b9ef89'
@@ -4766,18 +4765,7 @@ display:
           replica: false
           query_comment: ''
           query_tags: null
-      header:
-        view:
-          id: view
-          table: views
-          field: view
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          view_to_insert: 'intro_nodes_for_pages:block_1'
-          inherit_arguments: false
-          plugin_id: view
+      header: {  }
     cache_metadata:
       max-age: -1
       contexts:

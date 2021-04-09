@@ -14,8 +14,6 @@ dependencies:
     - image.style.medium
     - image.style.thumbnail
     - search_api.index.oira_tools
-  content:
-    - 'node:article:49d55c64-52d3-40a7-bed2-cc1b2dd7e19a'
   module:
     - better_exposed_filters
     - datetime
@@ -1910,19 +1908,6 @@ display:
           plugin_id: search_api
       title: ''
       header:
-        entity_node:
-          id: entity_node
-          table: views
-          field: entity_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: true
-          target: 49d55c64-52d3-40a7-bed2-cc1b2dd7e19a
-          view_mode: default
-          bypass_access: false
-          plugin_id: entity
         result:
           id: result
           table: views

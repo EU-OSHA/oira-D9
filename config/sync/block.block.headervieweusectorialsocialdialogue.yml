@@ -1,0 +1,39 @@
+uuid: e96eee06-3a3f-42bb-81dd-cc5b91b8bf4e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_header_view:9efa7896-6851-409b-9711-3af1f228d770'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - oira_theme
+id: headervieweusectorialsocialdialogue
+theme: oira_theme
+region: header_view
+weight: 0
+provider: null
+plugin: 'block_content:9efa7896-6851-409b-9711-3af1f228d770'
+settings:
+  id: 'block_content:9efa7896-6851-409b-9711-3af1f228d770'
+  label: 'Header view EU Sectorial Social Dialogue'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /sectoral-social-partners
+    negate: false

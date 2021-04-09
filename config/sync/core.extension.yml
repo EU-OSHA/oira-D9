@@ -22,6 +22,8 @@ module:
   clientside_validation_jquery: 0
   color: 0
   color_field: 0
+  colorbox: 0
+  colorbox_inline: 0
   comment: 0
   config: 0
   config_translation: 0
@@ -145,8 +147,10 @@ module:
   workflows: 0
   xmlsitemap_engines: 0
   youtube: 0
+  ds: 1
   pathauto: 1
   xmlsitemap: 1
+  ds_extras: 2
   content_translation: 10
   views: 10
   linked_field: 100
