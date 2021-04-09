@@ -39,6 +39,9 @@
 
 {% block content %}
   <div class="container">{{ page.breadcrumb }}</div>
+{% if page.header_view %}
+  <div class="container">{{ page.header_view }}</div>
+{% endif %}
   {% if page.sidebar_first %}
     <div class="content-two-columns">
       <div class="sidebar_first sidebar col-12 col-lg-4 order-first" id="sidebar_first">
