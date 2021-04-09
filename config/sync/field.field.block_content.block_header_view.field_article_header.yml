@@ -1,0 +1,25 @@
+uuid: 314b7a69-cc92-4819-831e-84dc4f32a724
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_header_view
+    - field.storage.block_content.field_article_header
+id: block_content.block_header_view.field_article_header
+field_name: field_article_header
+entity_type: block_content
+bundle: block_header_view
+label: 'Article header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: article_headers
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference
