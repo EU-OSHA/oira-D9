@@ -22,3 +22,14 @@ legend {
   font-size: 1rem;
   color: $bg-color-purple-light;
 }
+
+
+/*** Facets ***/
+.facet-item {
+  label {
+
+    &:before {
+
+    }
+  }
+}
