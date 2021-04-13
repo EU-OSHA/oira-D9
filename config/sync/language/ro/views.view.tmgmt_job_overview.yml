@@ -22,3 +22,5 @@ display:
           label: Etichete
         operations:
           label: Operations
+  page_1:
+    display_title: Pagina
