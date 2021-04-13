@@ -1,0 +1,39 @@
+uuid: 5bc39ecf-97a6-4642-ac35-278761a7a412
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_header_view:cffeb09a-ee68-458e-9c28-fb385051bf32'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - oira_theme
+id: headerviewiratpartners
+theme: oira_theme
+region: header_view
+weight: 0
+provider: null
+plugin: 'block_content:cffeb09a-ee68-458e-9c28-fb385051bf32'
+settings:
+  id: 'block_content:cffeb09a-ee68-458e-9c28-fb385051bf32'
+  label: 'Header view IRAT Partners'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /irat-network
+    negate: false

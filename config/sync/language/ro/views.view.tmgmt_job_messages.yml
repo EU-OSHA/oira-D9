@@ -16,6 +16,8 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
+        label:
+          label: Produs
         name:
           label: Name
       arguments:

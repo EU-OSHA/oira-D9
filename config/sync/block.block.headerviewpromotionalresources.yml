@@ -1,0 +1,39 @@
+uuid: d9eb7fe2-4af8-4c9a-b4e2-b95da775496a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_header_view:689a94b1-8d4a-4ce3-83a8-1eb2ea78d4cc'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - oira_theme
+id: headerviewpromotionalresources
+theme: oira_theme
+region: header_view
+weight: 0
+provider: null
+plugin: 'block_content:689a94b1-8d4a-4ce3-83a8-1eb2ea78d4cc'
+settings:
+  id: 'block_content:689a94b1-8d4a-4ce3-83a8-1eb2ea78d4cc'
+  label: 'Header View Promotional Resources'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: '/promotional-resources-search/*'
+    negate: false

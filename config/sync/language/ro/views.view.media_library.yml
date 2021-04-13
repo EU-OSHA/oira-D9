@@ -18,7 +18,9 @@ display:
         name:
           expose:
             label: Name
+      title: Media
   page:
+    display_title: Pagina
     display_options:
       fields:
         edit_media:
@@ -26,6 +28,7 @@ display:
         delete_media:
           text: Delete
   widget:
+    display_title: Widget
     display_options:
       filters:
         name:

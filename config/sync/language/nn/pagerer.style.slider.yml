@@ -1,0 +1,12 @@
+default_config:
+  tags:
+    pages:
+      prefix_label: Nettside
+      first_title: 'Gå til første side'
+      previous_title: 'Gå til forrige side'
+      next_title: 'Gå til neste side'
+      last_title: 'Gå til siste side'
+    items:
+      first_reader: 'Fyrste punkt'
+    item_ranges:
+      prefix_label: Element

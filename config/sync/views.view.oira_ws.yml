@@ -14,8 +14,6 @@ dependencies:
     - image.style.medium
     - image.style.thumbnail
     - search_api.index.oira_tools
-  content:
-    - 'node:article:49d55c64-52d3-40a7-bed2-cc1b2dd7e19a'
   module:
     - better_exposed_filters
     - datetime
@@ -23,6 +21,7 @@ dependencies:
     - link
     - media
     - node
+    - pagerer
     - search_api
     - taxonomy
     - text
@@ -95,26 +94,21 @@ display:
                   collapsible: false
                   is_secondary: false
       pager:
-        type: full
+        type: pagerer
         options:
+          preset: custom_minimal
           items_per_page: 10
           offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '‹ '
-            next: ›
-            first: «
-            last: »
+          id: '0'
+          total_pages: ''
           expose:
-            items_per_page: false
+            items_per_page: 0
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
+            items_per_page_options_all: 0
             items_per_page_options_all_label: '- All -'
-            offset: false
+            offset: 0
             offset_label: Offset
-          quantity: 9
       style:
         type: default
       row:
@@ -1910,19 +1904,6 @@ display:
           plugin_id: search_api
       title: ''
       header:
-        entity_node:
-          id: entity_node
-          table: views
-          field: entity_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: true
-          target: 49d55c64-52d3-40a7-bed2-cc1b2dd7e19a
-          view_mode: default
-          bypass_access: false
-          plugin_id: entity
         result:
           id: result
           table: views

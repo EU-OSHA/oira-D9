@@ -20,6 +20,8 @@ display:
           label: Label
         tags_count:
           label: Etichete
+        operations:
+          label: Operations
       arguments:
         tjid:
           exception:
