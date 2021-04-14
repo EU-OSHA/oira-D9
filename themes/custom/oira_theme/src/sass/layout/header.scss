@@ -1,11 +1,16 @@
-.top-header-content{
-  height: 150px;
+.site__header {
   display: flex;
-  align-content: center;
-  .region-top-header-logos{
-    float: left;
+  flex-direction: column;
+}
+
+.top-header-content{
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .region-top-header-logos {
     .field--name-field-image{
-      height: 150px;
+      //height: 150px;
       display: flex;
       margin: 0;
       align-items: center;
@@ -20,37 +25,97 @@
   }
   .header-logo{
     .logo-eu, .logo-oira{
-      margin-left: 30px;
+      margin-left: 40px;
     }
   }
-  /* Link menu News */
-  .header-menu-news{
-    display: block;
-    float: left;
-    a{
+  .header-menu-news {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header-blocks {
+    margin-left: 30px;
+  }
+  .block__font-size {
+    span a {
+      cursor: pointer;
       color: $text-color-blue;
       font-style: normal;
       font-weight: normal;
-      background: url("../images/icon-news-menu.png") no-repeat;
-      padding-left: 36px;
-      background-size: 39px;
+      line-height: 1;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .a_small {
+      a {
+        font-size: 1.4rem;
+      }
+    }
+    .a_big {
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+  .block__print {
+    margin-left: 20px;
+  }
+  /* Link menu News */
+  .menu--header-menu {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      color: $text-color-blue;
+      font-style: normal;
+      font-weight: normal;
+      padding: 0;
+      height: 40px;
       font-size: 0.9rem;
-      background-position-y: 3px;
+      &:before {
+        margin-right: 1px;
+        display: inline-block;
+        content:"";
+        width: 40px;
+        height: 40px;
+        background: url("../images/icon-news-menu.png") no-repeat;
+        background-position: left center;
+        background-size: 39px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .header-blocks{
     display: block;
-    float: right;
     /* Social media */
     .region-header-form{
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      #search-block-form {
+        padding: 0;
+        .form-group {
+          margin: 0;
+        }
+      }
+      .lang-dropdown-form {
+        .form-type-select {
+          margin: 0;
+        }
+      }
     }
     /* Search*/
     .form-row>fieldset, .form-row>div{
       padding-left: 0;
       padding-right: 0;
     }
-    .block-search-form-block{
+    .block-search-form-block {
       input{
         border-radius: 0px;
         border: 2px solid #003399;
@@ -78,13 +143,45 @@
   }
 }
 
+.region-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*** Block utilies ***/
+#block-headerprintandfontsize {
+  .field--name-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .block__font-size {
+
+  }
+  .block__print {
+    a.print-friendly {
+      background: url(../images/print-icon.png) no-repeat;
+      width: 30px;
+      height: 27px;
+      display: block;
+    }
+  }
+}
+
 /* Hide menu link to view only the Share links images in header */
 #block-socialmenu{
   > ul{
+    margin: 0 0 7px;
+    padding: 0;
     list-style: none;
-    > li{
-      float: left;
-      margin-right: 10px;
+    display: flex;
+    li {
+      margin-left: 10px;
+      .field--type-image,
+      .field--type-entity-reference,
+      img {
+        margin: 0;
+      }
       > a{
         display: none;
       }
