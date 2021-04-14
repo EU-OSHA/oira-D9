@@ -35,5 +35,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /whats-is-new
+    pages: /what-is-new
     negate: false
