@@ -2765,6 +2765,7 @@ select.custom-select {
 
 .top-header-content {
   padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2775,15 +2776,19 @@ select.custom-select {
   margin: 0;
   align-items: center;
 }
-.top-header-content .region-top-header-logos .field--name-field-image .field__item {
-  float: left;
-  margin-right: 20px;
+.top-header-content .region-top-header-logos .field--name-field-image > .field__item:last-child {
+  margin-left: 30px;
+  display: initial;
+  margin-top: 41px;
 }
-.top-header-content .region-top-header-logos .field--name-field-image .field__item img {
-  margin: 0;
+.top-header-content .region-top-header-logos .field--name-field-image > .field__item:last-child img {
+  width: 75px;
 }
 .top-header-content .header-logo .logo-eu, .top-header-content .header-logo .logo-oira {
   margin-left: 40px;
+}
+.top-header-content #block-logooira .field--type-entity-reference {
+  margin: 0;
 }
 .top-header-content .header-menu-news {
   display: flex;
