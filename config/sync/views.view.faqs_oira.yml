@@ -554,6 +554,7 @@ display:
         fields: false
         filters: false
         filter_groups: false
+        sorts: false
       access:
         type: perm
         options:
@@ -833,6 +834,21 @@ display:
         groups:
           1: AND
       rendering_language: '***LANGUAGE_entity_translation***'
+      sorts:
+        weight:
+          id: weight
+          table: draggableviews_structure
+          field: weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          draggable_views_reference: 'faqs_oira:page'
+          draggable_views_null_order: after
+          plugin_id: standard
     cache_metadata:
       max-age: -1
       contexts:
