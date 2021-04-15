@@ -1,0 +1,18 @@
+uuid: 3aa477a4-50d5-4de7-9d41-655fce20d072
+langcode: en
+status: true
+dependencies: {  }
+id: develop
+label: Develop
+description: ''
+folder: sites/oira/config/develop
+module:
+  search_api: 0
+  search_api_solr: 0
+  search_api_solr_admin: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

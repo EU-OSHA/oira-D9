@@ -3,11 +3,8 @@ default_config:
     pages:
       prefix_label: Seite
       suffix_label: 'von @total'
-      page_current: '@number'
-      first: «
       previous: ‹
       next: ›
-      last: »
       page_current_title: 'Aktuelle Seite'
       first_title: 'Zur ersten Seite'
       previous_title: 'Zur vorherigen Seite'
@@ -20,8 +17,6 @@ default_config:
       last_reader: 'Letzte Seite'
     items:
       prefix_label: Element
-      first: «
       previous: ‹
       next: ›
-      last: »
       first_reader: 'Erstes Element'

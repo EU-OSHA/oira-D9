@@ -2,10 +2,8 @@ default_config:
   tags:
     pages:
       prefix_label: Page
-      first: «
       previous: ‹
       next: ›
-      last: »
       page_current_title: 'Page courante'
       first_title: 'Aller à la première page'
       previous_title: 'Aller à la page précédente'
@@ -18,14 +16,10 @@ default_config:
       last_reader: 'Dernière page'
     items:
       prefix_label: Élément
-      first: «
       previous: ‹
       next: ›
-      last: »
       first_reader: 'Premier élément'
     item_ranges:
       prefix_label: Éléments
-      first: «
       previous: ‹
       next: ›
-      last: »
