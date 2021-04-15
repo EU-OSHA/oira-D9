@@ -4,9 +4,6 @@ default_config:
     pages:
       prefix_label: Seite
       suffix_label: 'von @total'
-      page_current: '@number'
-      page_previous: '@number'
-      page_next: '@number'
       first: '« Anfang'
       previous: '‹ Vorherige Seite'
       next: 'Nächste Seite ›'

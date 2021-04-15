@@ -18,9 +18,15 @@ display:
       fields:
         label:
           label: Label
+        translator:
+          label: Furnizor
         tags_count:
           label: Etichete
         operations:
           label: Operations
+      filters:
+        translator:
+          expose:
+            label: Furnizor
   page_1:
     display_title: Pagina

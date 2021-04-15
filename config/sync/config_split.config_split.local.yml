@@ -1,0 +1,25 @@
+uuid: 5caac4c5-c108-4c43-a816-eee975c77d01
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: Local
+description: ''
+folder: sites/oira/config/local
+module:
+  custom_migrations: 0
+  devel: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_file_to_media: 0
+  migrate_file_to_media_example: 0
+  migrate_plus: 0
+  migrate_tools: 0
+  search_api: 0
+  search_api_solr: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
