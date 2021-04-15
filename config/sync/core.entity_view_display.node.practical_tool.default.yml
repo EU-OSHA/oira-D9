@@ -28,6 +28,7 @@ dependencies:
     - node.type.practical_tool
   module:
     - datetime
+    - ds
     - link
     - media
     - options
@@ -113,9 +114,17 @@ content:
     weight: 9
     label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+      view_mode: related_partner
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
     region: content
   field_tool_link:
     weight: 6
