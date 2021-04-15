@@ -1,0 +1,44 @@
+div#sliding-popup {
+  background: url(../images/bg-cookies.png) repeat;
+   .popup-content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     p,
+     .find-more-button {
+       font-size: .875rem;
+       font-weight: $font-weight-bold;
+     }
+   }
+  button.agree-button,
+  button.decline-button {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 1em;
+    vertical-align: middle;
+    overflow: visible;
+    width: auto;
+    box-shadow: inset 0 1px 0 0 $bg-color-white;
+    background-color: $bg-color-grey-light-3;
+    background-image: -moz-linear-gradient(top,#ededed 5%,#dfdfdf 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(5%,#ededed),color-stop(100%,#dfdfdf));
+    background-image: -webkit-linear-gradient(top,#ededed 5%,#dfdfdf 100%);
+    background-image: -o-linear-gradient(top,#ededed 5%,#dfdfdf 100%);
+    background-image: -ms-linear-gradient(top,#ededed 5%,#dfdfdf 100%);
+    background-image: linear-gradient(to bottom,#ededed 5%,#dfdfdf 100%);
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    color: black !important;
+    font-family: Arial,sans-serif;
+    font-weight: $font-weight-bold;
+    font-size: 11.5px;
+    padding: 1px 5px !important;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 $bg-color-grey-light-3;
+    &:hover {
+      background-image: linear-gradient(to bottom,#dfdfdf 5%,#ededed 100%);
+    }
+  }
+}

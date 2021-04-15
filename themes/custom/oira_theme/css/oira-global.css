@@ -99,6 +99,52 @@ input[type=search] {
 
 /* Font Family */
 /* Font-weights */
+div#sliding-popup {
+  background: url(../images/bg-cookies.png) repeat;
+}
+div#sliding-popup .popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div#sliding-popup .popup-content p,
+div#sliding-popup .popup-content .find-more-button {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+div#sliding-popup button.agree-button,
+div#sliding-popup button.decline-button {
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 1em;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+  box-shadow: inset 0 1px 0 0 #FFF;
+  background-color: #ededed;
+  background-image: -moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ededed), color-stop(100%, #dfdfdf));
+  background-image: -webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background-image: -o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background-image: -ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background-image: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  color: black !important;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 11.5px;
+  padding: 1px 5px !important;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #ededed;
+}
+div#sliding-popup button.agree-button:hover,
+div#sliding-popup button.decline-button:hover {
+  background-image: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+}
+
 /* Breadcrumbs */
 .breadcrumb {
   background-color: transparent;
@@ -2787,7 +2833,8 @@ select.custom-select {
 .top-header-content .header-logo .logo-eu, .top-header-content .header-logo .logo-oira {
   margin-left: 40px;
 }
-.top-header-content #block-logooira .field--type-entity-reference {
+.top-header-content #block-logooira .field--type-entity-reference,
+.top-header-content #block-logooira img {
   margin: 0;
 }
 .top-header-content .header-menu-news {
