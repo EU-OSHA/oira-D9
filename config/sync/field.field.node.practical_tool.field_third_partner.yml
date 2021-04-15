@@ -1,0 +1,29 @@
+uuid: 733558d0-4fa5-4fe8-97cf-6e3adbd259d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_third_partner
+    - node.type.practical_tool
+    - taxonomy.vocabulary.section
+id: node.practical_tool.field_third_partner
+field_name: field_third_partner
+entity_type: node
+bundle: practical_tool
+label: '3rd Partner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      section: section
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
