@@ -838,7 +838,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -2113,7 +2113,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"partner__group partner__group--01\">\r\n<div class=\"partner__logo\">\r\n{{ field_logo }}\r\n</div>\r\n<h3 class=\"partner__name\">\r\n{{title}}\r\n</h3>\r\n</div>\r\n<div class=\"partner__group partner__group--02\">\r\n{{ node_type_flagger }}\r\n</div>"
+            text: "<div class=\"partner__group partner__group--01\">\r\n<div class=\"partner__logo\">\r\n{{ field_logo }}\r\n</div>\r\n<h3 class=\"partner__name\">\r\n{{title}}\r\n</h3>\r\n</div>\r\n<div class=\"partner__group partner__group--02\">\r\n\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -2377,7 +2377,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -2958,7 +2958,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
