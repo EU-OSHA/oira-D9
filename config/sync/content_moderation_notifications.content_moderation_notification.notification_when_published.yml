@@ -1,0 +1,20 @@
+uuid: 37d8a63f-f6c5-4663-8272-2f5c34769fce
+langcode: en
+status: true
+dependencies: {  }
+id: notification_when_published
+workflow: oira
+transitions:
+  publish: publish
+roles:
+  administrator: administrator
+  oira_project_manager: oira_project_manager
+  oira_supervisor: oira_supervisor
+author: false
+site_mail: false
+emails: ''
+subject: 'OiRA - [node:type] - Published'
+body:
+  value: "<p>A new [node:type] added by [node:author:name] ([node:author:mail]) has been published.</p>\r\n\r\n<p>You can see it by going to this link [node:url]</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n"
+  format: full_html
+label: 'Notification when published'
