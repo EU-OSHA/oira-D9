@@ -1638,9 +1638,6 @@ select.custom-select{
       margin: 0;
       padding: 0;
     }
-    #edit-reset--2 {
-      display: none;
-    }
     #edit-submit-search--2 {
       position: absolute;
       top: 2px;
@@ -1663,6 +1660,7 @@ select.custom-select{
       }
     }
   }
+
   #main {
     padding-bottom: 90px;
     padding-left: 30px;
@@ -1838,6 +1836,16 @@ select.custom-select{
   }
   .pagination {
     background-color: transparent;
+  }
+}
+
+#edit-reset--2 {
+  display: none;
+  &.show-me {
+    display: block;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

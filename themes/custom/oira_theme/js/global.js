@@ -148,6 +148,12 @@ jQuery(document).ready(function($){
       $(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
     });
 
+    //Clear filters toggler
+
+    $('.facets-checkbox').filter(':checked').each(function(index) {
+      $(this).parents('#sidebar_first').find('#edit-reset--2').addClass("show-me");
+    });
+
 });
 
 
