@@ -11,7 +11,7 @@ id: node.practical_tool.field_third_language
 field_name: field_third_language
 entity_type: node
 bundle: practical_tool
-label: 'Language 3'
+label: 'Language '
 description: ''
 required: false
 translatable: false
