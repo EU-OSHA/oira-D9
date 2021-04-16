@@ -1,0 +1,18 @@
+uuid: 82bbf994-440d-4eb1-90e4-0d9e19b12f09
+langcode: en
+status: true
+dependencies: {  }
+id: notification_when_to_be_approved
+workflow: oira
+transitions:
+  requesting_approval: requesting_approval
+roles:
+  oira_project_manager: oira_project_manager
+author: false
+site_mail: false
+emails: ''
+subject: 'OiRA - [node:type] - To be approved'
+body:
+  value: "<p>You have a new [node:type] to approve, added by [node:author:name] ([node:author:mail]).</p>\r\n\r\n<p>You can approve it by going to this link [node:url]</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n"
+  format: full_html
+label: 'Notification when to be approved'

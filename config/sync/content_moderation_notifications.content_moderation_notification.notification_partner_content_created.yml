@@ -1,0 +1,21 @@
+uuid: 0e5c7af2-3718-4bf5-a6da-7cd5f7e7f3ec
+langcode: en
+status: true
+dependencies: {  }
+id: notification_partner_content_created
+workflow: oira
+transitions:
+  creating_final_draft: creating_final_draft
+roles:
+  administrator: administrator
+  editor: editor
+  partner: partner
+  oira_supervisor: oira_supervisor
+author: true
+site_mail: false
+emails: ''
+subject: 'OiRA - [node:content-type] - New content added for your organisation'
+body:
+  value: "<p>Subject: OiRA: New content added for your organisation</p>\r\n<p>Dear partner,</p>\r\n<p>Your [node:type] is currently in the “draft” status which means that you can still edit it before you decide to “submit” it for \"validation”.</p>\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n<p>Thank you for your participation in the OiRA project.</p>"
+  format: full_html
+label: 'Notification partner content created'
