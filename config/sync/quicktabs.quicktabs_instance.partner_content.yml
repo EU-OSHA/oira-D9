@@ -8,11 +8,11 @@ renderer: opcc_quick_tabs
 options:
   opcc_quick_tabs:
     class: ''
-    style: tabsbar
+    style: ''
     ajax: '0'
   quick_tabs:
     class: ''
-    style: tabsbar
+    style: ''
     ajax: false
 hide_empty_tabs: true
 default_tab: 0

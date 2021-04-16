@@ -20,6 +20,55 @@ module:
 theme: {  }
 blacklist: {  }
 graylist:
+  - migrate_plus.migration.oira_node_article
+  - migrate_plus.migration.oira_node_article_i18n
+  - migrate_plus.migration.oira_node_article_media_images_1
+  - migrate_plus.migration.oira_node_article_media_images_2
+  - migrate_plus.migration.oira_node_collaboration_document
+  - migrate_plus.migration.oira_node_collaboration_document_media_documents_1
+  - migrate_plus.migration.oira_node_faq
+  - migrate_plus.migration.oira_node_faq_i18n
+  - migrate_plus.migration.oira_node_news
+  - migrate_plus.migration.oira_node_news_i18n
+  - migrate_plus.migration.oira_node_news_media_images_1
+  - migrate_plus.migration.oira_node_news_media_images_2
+  - migrate_plus.migration.oira_node_partner
+  - migrate_plus.migration.oira_node_partner_media_images_1
+  - migrate_plus.migration.oira_node_partner_media_images_2
+  - migrate_plus.migration.oira_node_practical_tool
+  - migrate_plus.migration.oira_node_practical_tool_media_images_1
+  - migrate_plus.migration.oira_node_promotional_material
+  - migrate_plus.migration.oira_node_promotional_material_media_images_1
+  - migrate_plus.migration.oira_node_wiki_page
+  - migrate_plus.migration.oira_node_wiki_page_i18n
+  - migrate_plus.migration.oira_node_wiki_page_media_images_1
+  - migrate_plus.migration.oira_taxonomy_article_types
+  - migrate_plus.migration.oira_taxonomy_contact_type_of_sender
+  - migrate_plus.migration.oira_taxonomy_contact_type_of_sender_i18n
+  - migrate_plus.migration.oira_taxonomy_country
+  - migrate_plus.migration.oira_taxonomy_country_i18n
+  - migrate_plus.migration.oira_taxonomy_country_status
+  - migrate_plus.migration.oira_taxonomy_country_status_i18n
+  - migrate_plus.migration.oira_taxonomy_organisation_type
+  - migrate_plus.migration.oira_taxonomy_organisation_type_i18n
+  - migrate_plus.migration.oira_taxonomy_partner_types
+  - migrate_plus.migration.oira_taxonomy_practical_tool_types
+  - migrate_plus.migration.oira_taxonomy_practical_tool_types_i18n
+  - migrate_plus.migration.oira_taxonomy_promotional_material_type
+  - migrate_plus.migration.oira_taxonomy_promotional_material_type_i18n
+  - migrate_plus.migration.oira_taxonomy_section
+  - migrate_plus.migration.oira_taxonomy_section_i18n
+  - migrate_plus.migration.oira_taxonomy_sector
+  - migrate_plus.migration.oira_taxonomy_sector_category
+  - migrate_plus.migration.oira_taxonomy_sector_category_i18n
+  - migrate_plus.migration.oira_taxonomy_sector_i18n
+  - migrate_plus.migration.oira_taxonomy_tags
+  - migrate_plus.migration.oira_taxonomy_tags_i18n
+  - migrate_plus.migration.oira_taxonomy_wiki_categories
+  - migrate_plus.migration.oira_taxonomy_wiki_categories_i18n
+  - migrate_plus.migration_group.oira_migrate_media
+  - migrate_plus.migration_group.oira_migrate_node
+  - migrate_plus.migration_group.oira_migrate_tax
   - search_api.index.default_multilingual_node_index
   - search_api.index.default_solr_index
   - search_api.index.oira_tools
