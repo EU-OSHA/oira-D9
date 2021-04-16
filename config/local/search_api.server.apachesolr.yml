@@ -60,10 +60,10 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: osha-d9-stg-solr.mainstrat.com
+    host: ddev--solr
     port: 8080
     path: /
-    core: Oira
+    core: dev
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10
