@@ -18,6 +18,8 @@ dependencies:
     - field.field.node.practical_tool.field_sector_category
     - field.field.node.practical_tool.field_third_description
     - field.field.node.practical_tool.field_third_language
+    - field.field.node.practical_tool.field_third_partner
+    - field.field.node.practical_tool.field_third_partner_node
     - field.field.node.practical_tool.field_third_title
     - field.field.node.practical_tool.field_tool_link
     - field.field.node.practical_tool.field_tool_type
@@ -77,6 +79,8 @@ hidden:
   field_sector_category: true
   field_third_description: true
   field_third_language: true
+  field_third_partner: true
+  field_third_partner_node: true
   field_third_title: true
   field_tool_link: true
   field_tool_type: true

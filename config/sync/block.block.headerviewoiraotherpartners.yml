@@ -1,0 +1,39 @@
+uuid: d89d697c-b669-4a3d-b453-3785a7d868a9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_header_view:4cf3072a-9e4a-4555-8020-025193feaf03'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - oira_theme
+id: headerviewoiraotherpartners
+theme: oira_theme
+region: header_view
+weight: 0
+provider: null
+plugin: 'block_content:4cf3072a-9e4a-4555-8020-025193feaf03'
+settings:
+  id: 'block_content:4cf3072a-9e4a-4555-8020-025193feaf03'
+  label: 'Header view OiRA Other Partners'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /others-partners
+    negate: false

@@ -17,6 +17,8 @@ dependencies:
     - field.field.node.practical_tool.field_sector_category
     - field.field.node.practical_tool.field_third_description
     - field.field.node.practical_tool.field_third_language
+    - field.field.node.practical_tool.field_third_partner
+    - field.field.node.practical_tool.field_third_partner_node
     - field.field.node.practical_tool.field_third_title
     - field.field.node.practical_tool.field_tool_link
     - field.field.node.practical_tool.field_tool_type
@@ -26,6 +28,7 @@ dependencies:
     - node.type.practical_tool
   module:
     - datetime
+    - ds
     - link
     - media
     - options
@@ -107,6 +110,22 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_third_partner_node:
+    weight: 9
+    label: hidden
+    settings:
+      view_mode: related_partner
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
+    region: content
   field_tool_link:
     weight: 6
     label: hidden
@@ -120,7 +139,7 @@ content:
     type: link
     region: content
   links:
-    weight: 9
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -135,6 +154,7 @@ hidden:
   field_revised_date: true
   field_third_description: true
   field_third_language: true
+  field_third_partner: true
   field_third_title: true
   field_tool_type: true
   field_wf_notification: true

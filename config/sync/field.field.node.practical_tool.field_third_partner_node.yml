@@ -1,18 +1,18 @@
-uuid: 29de6cb0-d941-4d1f-be22-9e4d72a07f7f
+uuid: db2fccd4-805b-4c39-8088-4b58c231891e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_related_partners
+    - field.storage.node.field_third_partner_node
     - node.type.practical_tool
-id: node.practical_tool.field_related_partners
-field_name: field_related_partners
+id: node.practical_tool.field_third_partner_node
+field_name: field_third_partner_node
 entity_type: node
 bundle: practical_tool
-label: 'Related partners'
+label: '3rd Partner node'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
