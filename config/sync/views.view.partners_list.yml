@@ -3528,7 +3528,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"partner__group partner__group--01\">\r\n<div class=\"partner__logo\">\r\n{{ field_logo }}\r\n</div>\r\n<h3 class=\"partner__name\">\r\n{{title}}\r\n</h3>\r\n</div>\r\n<div class=\"partner__group partner__group--02\">\r\n{{ node_type_flagger }}\r\n</div>"
+            text: "<div class=\"partner__group partner__group--01\">\r\n<div class=\"partner__logo\">\r\n{{ field_logo }}\r\n</div>\r\n<h3 class=\"partner__name\">\r\n{{title}}\r\n</h3>\r\n</div>\r\n<div class=\"partner__group partner__group--02\">\r\n{{ node_type_flagger }}\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
