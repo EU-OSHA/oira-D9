@@ -1,4 +1,9 @@
 @media only screen and (max-width : 767px) {
+  .page-view-oira-ws {
+    .pagerer-center-pane {
+      width: 100%;
+    }
+  }
   .row{
     margin-left: 0;
     margin-right: 0;
@@ -131,8 +136,114 @@
     h2 {
       max-width: 720px;
     }
-    .views-view-grid {
+  }
 
+  /*** Sidebar Toggle ***/
+  .toggle-sidebar {
+    border: none;
+    background-color: $bg-color-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    .text {
+      display: none;
+    }
+    &:before {
+      display: block;
+      content: "\e003";
+      font-family: "Glyphicons Halflings";
+      font-size: 1.3rem;
+      color: $text-color-white;
+    }
+  }
+
+  .sidebar_first {
+    &.sidebar-expanded {
+      display: block !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      padding-bottom: 1.5rem;
+    }
+    aside {
+      &:after {
+        display:block;
+        content: "\e253";
+        font-family: "Glyphicons Halflings";
+        font-size: 1.2em;
+        color: $text-color-white;
+        float: right;
+      }
+    }
+  }
+
+  /*** OiRA TOols ***/
+  .page-view-oira-ws {
+    .content-two-columns .two-column {
+      background-color: white;
+      padding: 15px;
+      section #block-exposedformoira-wstools-ws {
+        display: none;
+      }
+    }
+    .block-system-main-block {
+      .view {
+        padding: 0;
+        .view-header {
+          display: none;
+        }
+        .view-content.row {
+          padding: 0;
+          margin: 0;
+          border: 0;
+          .views-row {
+            margin-bottom: 2em;
+            background: rgba($bg-color-purple-light, .2);
+            padding: 1rem;
+            border-bottom: 2px solid #786586;
+            border-radius: 12px;
+            .content-view-tools-view {
+              padding: 0;
+              flex-direction: column;
+              border-top: none;
+              .tool-link {
+                position: relative;
+                top: 0;
+                left: 0;
+              }
+              .revised-date {
+                margin: 0 0 0.5rem;
+              }
+              .tags {
+                flex-direction: column;
+                > * {
+                  margin: 0 0 4px;
+                }
+              }
+              .group-right h2 {
+                font-weight: $font-weight-bold;
+                font-size: 1.375rem;
+                &:after {
+                  font-size: 1.375rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*** National Partners ****/
+  .view-partners-list {
+    .partner__logo {
+      width: 30%;
+      min-width: 30%;
+    }
+    .count-item__label {
+      font-size: 13px;
     }
   }
 
@@ -235,6 +346,53 @@
       }
       .form-actions {
         padding: 0;
+      }
+    }
+  }
+
+  /*** National Partners ****/
+  .view-partners-list {
+    .partner__data-wrapper {
+      flex-direction: column;
+    }
+    .partner__group {
+      flex-direction: column;
+      &.partner__group--01 {
+        width: 100%;
+      }
+      &.partner__group--02 {
+        width: 100%;
+      }
+    }
+    .partner__logo {
+      padding: 0;
+      margin: 0 auto 15px;
+      width: auto;
+    }
+    .partner__name {
+      margin-bottom: 15px;
+    }
+    .count-item__label {
+      font-size: 13px;
+    }
+    .content-count {
+      flex-direction: column;
+    };
+    .content-count-item {
+      border: none;
+      width: 100%;
+      display: block;
+      text-align: left;
+      &:first-child {
+        border: none;
+      }
+      > * {
+        text-align: left;
+        display: inline-block;
+      }
+      .count-item__label {
+        font-weight: $font-weight-bold;
+        font-style: italic;
       }
     }
   }

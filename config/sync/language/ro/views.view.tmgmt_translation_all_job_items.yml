@@ -25,3 +25,7 @@ display:
           label: Label
         tags_count:
           label: Etichete
+        operations:
+          label: Operations
+  page_1:
+    display_title: Pagina

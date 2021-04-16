@@ -1,0 +1,7 @@
+custom:
+  text_current: '{current} / {total}'
+  text_previous: '« Edellinen'
+  text_next: 'Seuraava »'
+  text_close: Sulje
+  slideshow:
+    text_stop: 'pysäytä kuvaesitys'

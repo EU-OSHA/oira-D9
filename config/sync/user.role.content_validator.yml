@@ -4,6 +4,17 @@ status: true
 dependencies: {  }
 id: content_validator
 label: 'Content Validator'
-weight: -3
+weight: 8
 is_admin: null
-permissions: {  }
+permissions:
+  - 'abort job item'
+  - 'access dashboard'
+  - 'access toolbar'
+  - 'preview layout validation'
+  - 'use text format filtered_html'
+  - 'use text format full_html'
+  - 'use text format full_html_minimal'
+  - 'view needs content validation list'
+  - 'view the administration theme'
+  - 'view translation job'
+  - 'view translation job item'

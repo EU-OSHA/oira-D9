@@ -1,35 +1,87 @@
 /*** OiRA Pager ***/
-.pagination {
-  padding: 10px;
-  margin: 0.5rem auto;
-  border-radius: 0;
-  background-color: white;
+.div.pagerer-panes {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  .page-item {
+}
+div.pagerer-left-pane,
+div.pagerer-center-pane,
+div.pagerer-right-pane {
+  display: flex;
+}
+
+.pagerer-pager-basic {
+  margin: 1.5rem auto;
+  .pager__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pager__item {
     color: $text-color-blue-light;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     font-size: 1rem;
     background: transparent;
     border: none;
-    &.active .page-link {
-      background: transparent;
-      border: none;
-      color: $text-color-blue-light;
+    span, a {
+      display: inline-block;
     }
-    .page-link {
-      padding: 0;
-      background: transparent;
-      border: none;
-      color: $text-color-blue-light;
+    a {
+      margin: 0 auto;
+      display: block;
+      padding: 14px 13px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: 21px;
+      border-radius: 4px;
+      &:hover {
+        background-color: $bg-color-grey-light-2;
+        color: $text-color-purple;
+      }
     }
-  }
-  .pager__item--next {
-    .page-link {
-      background: transparent;
-      border: none;
-      color: $text-color-blue-light;
+    &.pagerer-prefix {
+      margin: 0 6px;
+      a {
+        width: auto;
+        padding: 0 3px;
+      }
+    }
+    &.pager__item--first{
+      a {
+        background-image: url(../images/pager-first.png);
+      }
+      span {
+        display: none;
+      }
+    }
+    &.pager__item--previous{
+      a {
+        background-image: url(../images/pager-previous.png);
+      }
+      span {
+        display: none;
+      }
+    }
+    &.pager__item--next {
+      a{
+        background-image: url(../images/pager-next.png);
+      }
+      span {
+        display: none;
+      }
+    }
+    &.pager__item--last {
+      a{
+        background-image: url(../images/pager-last.png);
+      }
+      span {
+        display: none;
+      }
     }
   }
 }
+
+.page-view-oira-ws {
+  .pagerer-center-pane {
+    width: 70%;
+  }
+}
+

@@ -4,7 +4,6 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   aggregator: 0
-  automated_cron: 0
   better_exposed_filters: 0
   big_pipe: 0
   blazy: 0
@@ -16,14 +15,19 @@ module:
   calendar_datetime: 0
   captcha: 0
   chosen: 0
+  chosen_field: 0
   chosen_lib: 0
   ckeditor: 0
   clientside_validation: 0
   clientside_validation_jquery: 0
   color: 0
   color_field: 0
+  colorbox: 0
+  colorbox_inline: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_split: 0
   config_translation: 0
   config_update: 0
   contact: 0
@@ -34,11 +38,9 @@ module:
   contextual: 0
   csv_serialization: 0
   ctools: 0
-  custom_migrations: 0
   date_popup: 0
   datetime: 0
   dblog: 0
-  devel: 0
   diff: 0
   draggableviews: 0
   dynamic_page_cache: 0
@@ -65,6 +67,9 @@ module:
   inline_entity_form: 0
   jquery_ui: 0
   jquery_ui_accordion: 0
+  jquery_ui_button: 0
+  jquery_ui_checkboxradio: 0
+  jquery_ui_controlgroup: 0
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
   jquery_ui_tooltip: 0
@@ -87,24 +92,20 @@ module:
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_file_to_media: 0
-  migrate_file_to_media_example: 0
-  migrate_plus: 0
-  migrate_tools: 0
   node: 0
+  oira_masquerade: 0
+  oira_partner: 0
+  oira_partner_content_count: 0
   options: 0
   page_cache: 0
+  pagerer: 0
   path: 0
   path_alias: 0
   quickedit: 0
+  quicktabs: 0
   rdf: 0
   rest: 0
   search: 0
-  search_api: 0
-  search_api_solr: 0
-  search_api_solr_admin: 0
   serialization: 0
   shortcut: 0
   sitemap: 0
@@ -128,6 +129,7 @@ module:
   video_embed_field: 0
   views_accordion: 0
   views_bulk_operations: 0
+  views_contextual_filters_or: 0
   views_data_export: 0
   views_json_source: 0
   views_slideshow: 0
@@ -140,9 +142,12 @@ module:
   workflows: 0
   xmlsitemap_engines: 0
   youtube: 0
+  ds: 1
   pathauto: 1
   xmlsitemap: 1
+  ds_extras: 2
   content_translation: 10
+  externalauth: 10
   views: 10
   linked_field: 100
   standard: 1000
@@ -151,6 +156,7 @@ theme:
   seven: 0
   bootstrap_barrio: 0
   oira_theme: 0
+  claro: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

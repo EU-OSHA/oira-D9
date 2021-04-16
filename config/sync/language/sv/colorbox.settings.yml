@@ -1,0 +1,8 @@
+custom:
+  text_current: '{current} av {total}'
+  text_previous: '« Föregående'
+  text_next: 'Nästa »'
+  text_close: Stäng
+  slideshow:
+    text_start: 'starta bildspel'
+    text_stop: 'dtoppa bildspel'

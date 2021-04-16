@@ -19,6 +19,7 @@ regions:
   page_bottom: 'Page bottom'
   highlighted: Highlighted
   breadcrumb: Breadcrumb
+  header_view: Header View
   content: Content
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'

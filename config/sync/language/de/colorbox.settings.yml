@@ -1,0 +1,8 @@
+custom:
+  text_current: '{current} von {total}'
+  text_previous: '« Zurück'
+  text_next: 'Weiter »'
+  text_close: Schließen
+  slideshow:
+    text_start: 'Slideshow starten'
+    text_stop: 'Slideshow anhalten'

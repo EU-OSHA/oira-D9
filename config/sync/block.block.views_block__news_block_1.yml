@@ -13,7 +13,7 @@ dependencies:
 id: views_block__news_block_1
 theme: oira_theme
 region: content
-weight: -10
+weight: -11
 provider: null
 plugin: 'views_block:news-block_1'
 settings:
@@ -34,5 +34,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /whats-is-new
+    pages: /what-is-new
     negate: false

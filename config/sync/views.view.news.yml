@@ -1178,7 +1178,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -1284,6 +1284,7 @@ display:
           not: false
           plugin_id: numeric
       block_description: 'Related news'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

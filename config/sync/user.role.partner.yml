@@ -4,8 +4,41 @@ status: true
 dependencies: {  }
 id: partner
 label: Partner
-weight: -1
+weight: 10
 is_admin: null
 permissions:
-  - 'use oira transition creating_final_draft'
+  - 'access content'
+  - 'access media browser'
+  - 'access workbench access by role'
+  - 'create files'
+  - 'create news content'
+  - 'create practical_tool content'
+  - 'create promotional_material content'
+  - 'create strategic_documentation content'
+  - 'delete any content in draft'
+  - 'delete own news content'
+  - 'delete own practical_tool content'
+  - 'delete own promotional_material content'
+  - 'delete own strategic_documentation content'
+  - 'edit any content in draft'
+  - 'edit any content in final_draft'
+  - 'edit any news content'
+  - 'edit any partner content'
+  - 'edit any practical_tool content'
+  - 'edit any promotional_material content'
+  - 'edit any strategic_documentation content'
+  - 'edit own news content'
+  - 'edit own practical_tool content'
+  - 'edit own promotional_material content'
+  - 'edit own strategic_documentation content'
+  - 'moderate content from draft to final_draft'
+  - 'use manualcrop'
+  - 'use media wysiwyg'
   - 'use workbench access'
+  - 'view all unpublished content'
+  - 'view any unpublished content'
+  - 'view files'
+  - 'view osh my content tab'
+  - 'view own private files'
+  - 'view own unpublished content'
+  - 'view private files'

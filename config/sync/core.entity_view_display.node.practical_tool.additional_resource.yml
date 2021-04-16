@@ -18,6 +18,8 @@ dependencies:
     - field.field.node.practical_tool.field_sector_category
     - field.field.node.practical_tool.field_third_description
     - field.field.node.practical_tool.field_third_language
+    - field.field.node.practical_tool.field_third_partner
+    - field.field.node.practical_tool.field_third_partner_node
     - field.field.node.practical_tool.field_third_title
     - field.field.node.practical_tool.field_tool_link
     - field.field.node.practical_tool.field_tool_type
@@ -201,4 +203,6 @@ hidden:
   field_co_author_node: true
   field_language: true
   field_third_language: true
+  field_third_partner: true
+  field_third_partner_node: true
   search_api_excerpt: true

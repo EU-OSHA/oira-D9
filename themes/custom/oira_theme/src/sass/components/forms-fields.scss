@@ -1,0 +1,63 @@
+
+input [type=text],
+input [type=number],
+input [type=search],
+input [type=password],
+textarea,
+select {
+  background-color: $bg-color-white !important;
+  border-radius: 0;
+  width: 100%;
+}
+
+select {
+  padding: 0.4rem;
+  background: #fff url(../images/down-arrow-inputs-blue.png) right center no-repeat;
+  background-size: contain;
+}
+
+legend {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: $bg-color-purple-light;
+}
+
+
+/*** Facets ***/
+.facet-item {
+  input[type=checkbox]{
+    display: none;
+  }
+
+  label{
+    display: flex;
+    font-size: 1rem;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+  }
+
+  input[type=checkbox] + label:before{
+    float: left;
+    content: "\2714";
+    border: 0;
+    border-radius: 0.2em;
+    transition: .2s;
+    clear: both;
+    background: #FFF;
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    padding-top: 0;
+    padding-right: 5px;
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  input[type=checkbox]:checked + label:before{
+    background-color: #FFF;
+    border-color: #FFF;
+    color: $bg-color-purple;
+  }
+}

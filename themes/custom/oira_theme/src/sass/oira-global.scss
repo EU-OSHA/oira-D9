@@ -3,7 +3,6 @@
 @import 'base/reset';
 @import 'base/utils';
 @import 'base/variables';
-@import 'base/forms';
 
 @import 'components/accordion';
 @import 'components/breadcrumbs';
@@ -13,6 +12,8 @@
 @import 'components/links';
 @import 'components/modal';
 @import 'components/pager';
+@import 'components/tabs';
+@import 'components/forms-fields';
 
 @import 'layout/body';
 @import 'layout/footer';

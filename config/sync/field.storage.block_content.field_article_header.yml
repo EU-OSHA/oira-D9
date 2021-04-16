@@ -1,0 +1,20 @@
+uuid: 84bb30fd-0a69-4e07-9124-d2bf0c13bb89
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - node
+id: block_content.field_article_header
+field_name: field_article_header
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

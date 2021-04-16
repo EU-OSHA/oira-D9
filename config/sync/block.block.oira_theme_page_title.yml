@@ -2,6 +2,9 @@ uuid: 69546c84-5c2d-4030-8bc6-6ab7439c098f
 langcode: en
 status: true
 dependencies:
+  module:
+    - context
+    - ctools
   theme:
     - oira_theme
 _core:
@@ -9,7 +12,7 @@ _core:
 id: oira_theme_page_title
 theme: oira_theme
 region: content
-weight: -16
+weight: -21
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +20,19 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      partner: partner
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

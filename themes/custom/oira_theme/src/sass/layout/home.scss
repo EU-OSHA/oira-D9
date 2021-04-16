@@ -111,7 +111,6 @@
     .views-item-columns-container{
       background: $bg-color-white;
       padding: 1rem;
-      height: 100%;
       .views-field-field-tool-link{
         margin-top: 5px;
         a{
@@ -159,6 +158,170 @@
   }
 }
 
+.view-tools.view-display-id-block_1 {
+  .views-item-columns-container {
+    padding: 15px;
+    span.see-more {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      &.expanded {
+        text-align: right !important;
+        height: 12px;
+        overflow: hidden;
+        font-style: normal;
+        font-size: 0;
+        margin-top: 0px;
+        &:before {
+          text-align: right;
+          display: block;
+          content: "\e253";
+          font-family: "Glyphicons Halflings";
+          font-size: 1.2rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+  .views-field-field-tool-link {
+    margin-bottom: 15px;
+  }
+  .partners-wrapper {
+    display: none;
+    .partner-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+    }
+    .partner-inner-group {
+      padding: 0 15px;
+      &.partner-inner-group--img {
+        width: 42%;
+      }
+      &.partner-inner-group--data {
+        width: 58%;
+      }
+      a {
+        display: block;
+        color: $text-color-black;
+        font-size: 1rem;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      h4 {
+        margin-bottom: 1rem;
+        a {
+          color: $text-color-black;
+          font-style: normal;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+  .related-partners,
+  .co-author {
+    display: flex;
+    align-items: stretch;
+    h4 {
+      a {
+        font-size: 1.125rem;
+      }
+    }
+    a {
+      color: $text-color-black;
+      font-style: normal;
+    }
+  }
+}
+
+/**** View promotional materials homepage ***/
+.view-promotional-materials.view-display-id-block {
+  .view-content + .more-link {
+    margin: 1.5rem 0;
+  }
+  .views-col {
+    position: relative;
+  }
+  .field-content .more-link {
+    margin-top: 15px;
+    color: $text-color-blue-light;
+    font-style: italic;
+    font-weight: bold;
+    &:before {
+      display: inline-block;
+      content: '>';
+      margin-right: 5px;
+      display: inline-block;
+      position: relative;
+      top: -1px;
+    }
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    &.expanded {
+      text-align: right !important;
+      height: 12px;
+      overflow: hidden;
+      font-style: normal;
+      font-size: 0;
+      margin-top: 0px;
+      &:before {
+        text-align: right;
+        display: block;
+        content: "\e253";
+        font-family: "Glyphicons Halflings";
+        font-size: 1.2rem;
+        line-height: 1;
+      }
+    }
+  }
+  .views-field-nothing {
+    padding-bottom: 1rem;
+  }
+  .partners-wrapper {
+    display: none;
+    .partner-wrapper {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      background: $bg-color-purple;
+      color: white;
+    }
+    .partner-inner-group {
+      padding: 0 15px;
+      &.partner-inner-group--img {
+        width: 42%;
+      }
+      &.partner-inner-group--data {
+        width: 58%;
+      }
+      a {
+        display: block;
+        color: white;
+        font-size: 1rem;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      h4 {
+        a {
+          color: white;
+          font-style: normal;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
+
 .content-latest-news{
   h2:after {
     content: "";
@@ -170,8 +333,9 @@
   }
   .view-news{
     .attachment-before{
+      margin-bottom: 20px;
       border-bottom: 2px solid $bg-color-purple;
-      padding-bottom: 0;
+      padding-bottom: 20px;
       padding-top: 20px;
       .views-field-nothing{
         float: left;
@@ -182,7 +346,7 @@
           height: auto;
         }
       }
-      h3{
+      h3 {
         a{
           font-size: 2rem;
         }
@@ -193,6 +357,14 @@
     }
     .views-row {
       padding: 0;
+      .col-sm-12 {
+        padding: 15px;
+      }
+    }
+    .views-field-title {
+      h3 {
+        margin: 11px 0;
+      }
     }
     .views-row:nth-child(odd) {
       background-color: transparent;

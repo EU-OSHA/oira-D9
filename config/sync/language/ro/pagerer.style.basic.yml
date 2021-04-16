@@ -1,0 +1,13 @@
+default_config:
+  tags:
+    pages:
+      first_title: 'Mergi la prima pagină'
+      previous_title: 'Mergi la pagina anterioară'
+      next_title: 'Mergi la pagina următoare'
+      last_title: 'Mergi la ultima pagină'
+      first_reader: 'Prima pagină'
+      previous_reader: 'Pagina anterioară'
+      next_reader: 'Pagina următoare'
+      last_reader: 'Ultima pagină'
+    items:
+      first_reader: 'Primul articol'

@@ -1,0 +1,15 @@
+uuid: c290bc2f-0327-48ff-96be-931f8ba91808
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: oira_migrate_node
+label: 'Migrate oira Node'
+description: 'Migration files from D7 to Drupal 8'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: migrate

@@ -41,3 +41,13 @@ function oira_theme_form_system_theme_settings_alter(&$form, FormStateInterface 
   );
   $page['#attached']['html_head'][] = [$viewport, 'viewport'];
 }
+
+/**
+ * Add class url-alias in body tag
+ */
+function oira_theme_preprocess_html(&$variables){
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path_alias = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+  $path_alias = ltrim($path_alias, '/');
+  $variables['attributes']['class'][] = \Drupal\Component\Utility\Html::cleanCssIdentifier($path_alias);
+}

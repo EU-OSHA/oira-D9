@@ -13,7 +13,7 @@ dependencies:
 id: views_block__tools_block_2
 theme: oira_theme
 region: content
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:tools-block_2'
 settings:
@@ -35,5 +35,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /whats-is-new
+    pages: /what-is-new
     negate: false

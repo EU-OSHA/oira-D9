@@ -1,0 +1,8 @@
+custom:
+  text_current: '{current} / {total}'
+  text_previous: '« Előző'
+  text_next: 'Következő »'
+  text_close: Bezár
+  slideshow:
+    text_start: 'Diavetítés indítása'
+    text_stop: 'Diavetítés megállítása'
