@@ -1,0 +1,19 @@
+uuid: 970663d0-ea50-4a22-9c77-f5cd1ea15c55
+langcode: en
+status: true
+dependencies: {  }
+id: notification_partners_users_when_to_be_reviewed
+workflow: oira
+transitions:
+  reviewing_final_draft: reviewing_final_draft
+roles:
+  administrator: administrator
+  oira_supervisor: oira_supervisor
+author: true
+site_mail: false
+emails: ''
+subject: 'OiRA - [node:content-type] - New content has been sent for validation'
+body:
+  value: "<p>Subject: OiRA: New content has been sent for validation</p>\r\n\r\n<p>Dear Partner,</p>\r\n\r\n<p>Thank you for submitting a [node:type] item for publication on your organisation’s profile on OiRA website. Once validated by EU-OSHA, this update will be visible on your public profile. You will be informed when the update has been published.</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n\r\n<p>Thank you for your participation in the OiRA project.</p>\r\n"
+  format: full_html
+label: 'Notification partners users when to be reviewed'
