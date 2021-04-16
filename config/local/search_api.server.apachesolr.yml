@@ -60,7 +60,7 @@ backend_config:
   connector: standard
   connector_config:
     scheme: http
-    host: ddev--solr
+    host: solr
     port: 8080
     path: /
     core: dev

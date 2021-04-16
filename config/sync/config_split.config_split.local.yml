@@ -66,6 +66,8 @@ graylist:
   - migrate_plus.migration.oira_taxonomy_tags_i18n
   - migrate_plus.migration.oira_taxonomy_wiki_categories
   - migrate_plus.migration.oira_taxonomy_wiki_categories_i18n
+  - migrate_plus.migration_group.default
+  - migrate_plus.migration_group.oira_migrate
   - migrate_plus.migration_group.oira_migrate_media
   - migrate_plus.migration_group.oira_migrate_node
   - migrate_plus.migration_group.oira_migrate_tax
