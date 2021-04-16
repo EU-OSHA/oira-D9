@@ -148,7 +148,6 @@ jQuery(document).ready(function($){
       $(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
     });
 
-
 });
 
 
