@@ -595,8 +595,9 @@ display:
           plugin_id: draggable_views_sort_default
       show_admin_links: false
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'edit any faq content'
       style:
         type: table
         options:
@@ -638,6 +639,7 @@ display:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
+        - user.permissions
       tags: {  }
   page_1:
     display_plugin: page
