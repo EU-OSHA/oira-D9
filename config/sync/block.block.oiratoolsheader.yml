@@ -2,10 +2,7 @@ uuid: 8a33ee17-6c8e-4a84-9468-6f4484d05b1b
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:block_header_view:e1c9ac17-8f3f-4bdd-b819-f68d005d347a'
   module:
-    - block_content
     - context
     - system
   theme:

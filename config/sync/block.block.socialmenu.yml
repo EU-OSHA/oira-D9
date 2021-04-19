@@ -12,7 +12,7 @@ dependencies:
 id: socialmenu
 theme: oira_theme
 region: header_form
-weight: -22
+weight: -26
 provider: null
 plugin: 'system_menu_block:social-menu'
 settings:

@@ -140,7 +140,7 @@ select.custom-select{
   border: none;
   font-weight: bold;
   height: initial;
-  background: url(../images/select-ico.png) no-repeat 100% -2px;
+  background: url(../images/select-arrow-gray.svg) no-repeat 100% 50%;
   background-color: rgba(0, 0, 0, 0);
   padding-right: 1.5em;
 }
@@ -1270,6 +1270,7 @@ select.custom-select{
 
 /*** Language switcher ***/
 .block-lang-dropdown {
+  margin-bottom: 6px;
   .form-select {
     border: 2px solid #003399;
     outline: none;
@@ -1277,6 +1278,8 @@ select.custom-select{
     height: initial;
     padding: 2px 3px;
     background-color: $bg-color-purple !important;
+    background-image: url(../images/select-arrow.svg);
+    background-position: 97% 50%;
     color: #ffffff;
     width: 190px !important;
     font-size: 1rem;
