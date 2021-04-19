@@ -171,9 +171,6 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
-  .block__font-size {
-
-  }
   .block__print {
     a.print-friendly {
       background: url(../images/print-icon.png) no-repeat;
@@ -207,7 +204,7 @@
 
 /*** Stiky header ***/
 body {
-  padding-top: 185px !important;
+  padding-top: 290px !important;
 }
 
 body.user-logged-in.toolbar-tray-open{

@@ -78,7 +78,7 @@
   @extend .full-width;
   padding: 15px 0;
   background: $bg-color-purple;
-  .menu-level-0 {
+  > .nav {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -86,15 +86,15 @@
     align-items: stretch;
     margin: 0 auto;
     max-width: 1140px;
-    .menu-item {
+    .nav-item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      a{
+      a {
         color: white;
       }
     }
-    > .menu-item {
+    > .nav-item {
       a {
         display: block;
         width: 150px;
@@ -153,10 +153,10 @@
         }
       }
     }
-    .menu-level-1 {
+    .menu {
       padding: 0;
       display: flex;
-      .menu-item a {
+      .nav-item a {
         padding: 2px 0;
         background-color: white;
         vertical-align: middle;
