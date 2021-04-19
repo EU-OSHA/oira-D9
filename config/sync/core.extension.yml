@@ -38,9 +38,11 @@ module:
   contextual: 0
   csv_serialization: 0
   ctools: 0
+  custom_migrations: 0
   date_popup: 0
   datetime: 0
   dblog: 0
+  devel: 0
   diff: 0
   draggableviews: 0
   dynamic_page_cache: 0
@@ -92,6 +94,12 @@ module:
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
+  migrate: 0
+  migrate_drupal: 0
+  migrate_file_to_media: 0
+  migrate_file_to_media_example: 0
+  migrate_plus: 0
+  migrate_tools: 0
   node: 0
   oira_masquerade: 0
   oira_partner: 0
@@ -106,6 +114,8 @@ module:
   rdf: 0
   rest: 0
   search: 0
+  search_api: 0
+  search_api_solr: 0
   serialization: 0
   shortcut: 0
   sitemap: 0

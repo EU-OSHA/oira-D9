@@ -241,6 +241,62 @@ h1.page-header {
   color: #786586;
 }
 
+.ui-dialog {
+  border-radius: 8px;
+  padding: 0;
+}
+.ui-dialog .ui-dialog-titlebar {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  border-radius: 0;
+}
+.ui-dialog .ui-dialog-titlebar:before, .ui-dialog .ui-dialog-titlebar:after {
+  display: none !important;
+}
+.ui-dialog .ui-dialog-content {
+  padding: 1rem 1rem 0.5rem;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+  position: relative;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.ui-dialog .ui-dialog-titlebar-close:before {
+  display: block;
+  content: "x";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  color: #58585a;
+}
+.ui-dialog .form-select {
+  max-width: 360px;
+  padding: 0.3rem;
+  border: 1px solid #eeeeee;
+}
+.ui-dialog .form-actions button {
+  background: #003399;
+  color: #FFF;
+  border-radius: 0;
+  border: none;
+}
+.ui-dialog .form-actions button:before {
+  content: "> ";
+}
+
 /*** OiRA Pager ***/
 .div.pagerer-panes {
   display: flex;
@@ -614,7 +670,7 @@ select.custom-select {
   border: none;
   font-weight: bold;
   height: initial;
-  background: url(../images/select-ico.png) no-repeat 100% -2px;
+  background: url(../images/select-arrow-gray.svg) no-repeat 100% 50%;
   background-color: rgba(0, 0, 0, 0);
   padding-right: 1.5em;
 }
@@ -1690,6 +1746,9 @@ select.custom-select {
 }
 
 /*** Language switcher ***/
+.block-lang-dropdown {
+  margin-bottom: 6px;
+}
 .block-lang-dropdown .form-select {
   border: 2px solid #003399;
   outline: none;
@@ -1697,6 +1756,8 @@ select.custom-select {
   height: initial;
   padding: 2px 3px;
   background-color: #786586 !important;
+  background-image: url(../images/select-arrow.svg);
+  background-position: 97% 50%;
   color: #ffffff;
   width: 190px !important;
   font-size: 1rem;
@@ -2854,7 +2915,7 @@ select.custom-select {
   align-items: flex-end;
 }
 .top-header-content .header-blocks {
-  margin-left: 30px;
+  margin-left: 60px;
 }
 .top-header-content .block__font-size span a {
   cursor: pointer;
@@ -2914,6 +2975,7 @@ select.custom-select {
 }
 .top-header-content .header-blocks .region-header-form #search-block-form {
   padding: 0;
+  margin-right: 1px;
 }
 .top-header-content .header-blocks .region-header-form #search-block-form .form-group {
   margin: 0;
@@ -2991,10 +3053,6 @@ body {
   padding-top: 185px !important;
 }
 
-body.user-logged-in #header {
-  padding-top: 40px;
-}
-
 body.user-logged-in.toolbar-tray-open #header {
   padding-top: 75px;
 }
@@ -3014,6 +3072,24 @@ body.user-logged-in.toolbar-tray-open #header {
   transition: all 0.6s;
   z-index: 10;
   width: 100%;
+}
+
+.block-oira-masquerade a {
+  background-color: #003399;
+  border-radius: 0;
+  border: none;
+  padding: 3px 12px;
+  font-size: 1rem;
+  float: right;
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+}
+.block-oira-masquerade a:before {
+  content: "> ";
+}
+.block-oira-masquerade a:hover {
+  color: #FFF;
 }
 
 /* SCSS to Home Page */
