@@ -17,6 +17,22 @@
 
 
 jQuery(document).ready(function($){
+  $('#_biggify').on('click', function() {
+    var fontSize = $('html').css('font-size');
+    var newFontSize = parseInt(fontSize)+1;
+    $('html').css('font-size', newFontSize+'px')
+  });
+
+  $('#_smallify').on('click', function() {
+    var fontSize = $('html').css('font-size');
+    var newFontSize = parseInt(fontSize)-1;
+    $('html').css('font-size', newFontSize+'px')
+  });
+
+  $('#_reset').on('click', function() {
+    $('html').css('font-size', '16px')
+  });
+
   //Menu responsive
   $(function(){
     // Add slideDown animation to Bootstrap dropdown when expanding.
@@ -132,6 +148,11 @@ jQuery(document).ready(function($){
       $(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
     });
 
+    //Clear filters toggler
+
+    $('.facets-checkbox').filter(':checked').each(function(index) {
+      $(this).parents('#sidebar_first').find('#edit-reset--2').addClass("show-me");
+    });
 
 });
 

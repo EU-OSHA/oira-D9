@@ -1276,10 +1276,11 @@ select.custom-select{
     border-radius: 0px;
     height: initial;
     padding: 2px 3px;
-    background-color: #786586;
+    background-color: $bg-color-purple !important;
     color: #ffffff;
     width: 190px !important;
     font-size: 1rem;
+    font-weight: $font-weight-normal;
   }
 }
 
@@ -1637,9 +1638,6 @@ select.custom-select{
       margin: 0;
       padding: 0;
     }
-    #edit-reset--2 {
-      display: none;
-    }
     #edit-submit-search--2 {
       position: absolute;
       top: 2px;
@@ -1662,6 +1660,7 @@ select.custom-select{
       }
     }
   }
+
   #main {
     padding-bottom: 90px;
     padding-left: 30px;
@@ -1837,6 +1836,16 @@ select.custom-select{
   }
   .pagination {
     background-color: transparent;
+  }
+}
+
+#edit-reset--2 {
+  display: none;
+  &.show-me {
+    display: block;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
