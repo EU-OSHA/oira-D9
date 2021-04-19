@@ -14,7 +14,7 @@ options:
     class: ''
     style: ''
     ajax: false
-hide_empty_tabs: true
+hide_empty_tabs: false
 default_tab: 0
 configuration_data:
   -
@@ -27,16 +27,16 @@ configuration_data:
           bid: addtoany_block
           block_title: ''
           display_title: false
-      node_content:
-        options:
-          nid: ''
-          view_mode: full
-          hide_title: true
       view_content:
         options:
           vid: country_partner_content
           display: block_1
           args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
       qtabs_content:
         options:
           machine_name: ''
@@ -50,16 +50,16 @@ configuration_data:
           bid: addtoany_block
           block_title: ''
           display_title: false
-      node_content:
-        options:
-          nid: ''
-          view_mode: full
-          hide_title: true
       view_content:
         options:
           vid: country_partner_content
           display: block_3
           args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
       qtabs_content:
         options:
           machine_name: ''
@@ -73,16 +73,16 @@ configuration_data:
           bid: addtoany_block
           block_title: ''
           display_title: false
-      node_content:
-        options:
-          nid: ''
-          view_mode: full
-          hide_title: true
       view_content:
         options:
           vid: country_partner_content
           display: block_5
           args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
       qtabs_content:
         options:
           machine_name: ''
@@ -96,16 +96,16 @@ configuration_data:
           bid: addtoany_block
           block_title: ''
           display_title: false
-      node_content:
-        options:
-          nid: ''
-          view_mode: full
-          hide_title: true
       view_content:
         options:
           vid: country_partner_content
           display: block_4
           args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
       qtabs_content:
         options:
           machine_name: ''
