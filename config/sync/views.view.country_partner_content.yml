@@ -2384,7 +2384,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           view_to_insert: 'country_partner_content:block_6'
           inherit_arguments: false
           plugin_id: view
@@ -2425,7 +2425,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           view_to_insert: 'country_partner_content:block_7'
           inherit_arguments: false
           plugin_id: view
