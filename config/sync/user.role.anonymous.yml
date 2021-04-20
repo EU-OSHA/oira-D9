@@ -25,4 +25,3 @@ permissions:
   - 'use exclude node title'
   - 'use manualcrop'
   - 'view files'
-  - 'view media'

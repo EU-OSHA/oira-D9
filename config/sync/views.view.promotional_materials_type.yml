@@ -36,10 +36,11 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
+          contextual_filters_or: 0
       exposed_form:
         type: basic
         options:
@@ -425,10 +426,10 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
       tags:
