@@ -204,12 +204,23 @@
 
 /*** Stiky header ***/
 body {
-  padding-top: 290px !important;
+  padding-top: 185px;
 }
 
-body.user-logged-in.toolbar-tray-open{
-  #header{
-    padding-top: 75px;
+body.user-logged-in {
+    padding-top: 185px;
+}
+
+body.user-logged-in.toolbar-fixed {
+  padding-top: 256px !important;
+  #header {
+    padding-top: 40px;
+  }
+  &.toolbar-tray-open {
+    padding-top: 290px !important;
+    #header {
+      padding-top: 75px;
+    }
   }
 }
 
