@@ -3050,7 +3050,7 @@ select.custom-select {
 
 /*** Stiky header ***/
 body {
-  padding-top: 185px !important;
+  padding-top: 290px !important;
 }
 
 body.user-logged-in.toolbar-tray-open #header {
@@ -3596,7 +3596,7 @@ body.user-logged-in.toolbar-tray-open #header {
   padding: 15px 0;
   background: #786586;
 }
-.menu--private-zone .menu-level-0 {
+.menu--private-zone > .nav {
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -3605,15 +3605,15 @@ body.user-logged-in.toolbar-tray-open #header {
   margin: 0 auto;
   max-width: 1140px;
 }
-.menu--private-zone .menu-level-0 .menu-item {
+.menu--private-zone > .nav .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.menu--private-zone .menu-level-0 .menu-item a {
+.menu--private-zone > .nav .nav-item a {
   color: white;
 }
-.menu--private-zone .menu-level-0 > .menu-item a {
+.menu--private-zone > .nav > .nav-item a {
   display: block;
   width: 150px;
   height: 150px;
@@ -3625,46 +3625,46 @@ body.user-logged-in.toolbar-tray-open #header {
   border-radius: 120px;
   text-align: center;
 }
-.menu--private-zone .menu-level-0 > .menu-item a:hover {
+.menu--private-zone > .nav > .nav-item a:hover {
   background-color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   color: #786586;
 }
-.menu--private-zone .menu-level-0 > .menu-item:first-child a {
+.menu--private-zone > .nav > .nav-item:first-child a {
   background-image: url(../images/news-menu.png);
 }
-.menu--private-zone .menu-level-0 > .menu-item:first-child a:hover {
+.menu--private-zone > .nav > .nav-item:first-child a:hover {
   background-image: url(../images/news-menu-color.png);
 }
-.menu--private-zone .menu-level-0 > .menu-item:nth-child(2) a {
+.menu--private-zone > .nav > .nav-item:nth-child(2) a {
   background-image: url(../images/tools-menu.png);
 }
-.menu--private-zone .menu-level-0 > .menu-item:nth-child(2) a:hover {
+.menu--private-zone > .nav > .nav-item:nth-child(2) a:hover {
   background-image: url(../images/tools-menu-color.png);
 }
-.menu--private-zone .menu-level-0 > .menu-item:nth-child(3) a {
+.menu--private-zone > .nav > .nav-item:nth-child(3) a {
   background-image: url(../images/profile-menu.png);
 }
-.menu--private-zone .menu-level-0 > .menu-item:nth-child(3) a:hover {
+.menu--private-zone > .nav > .nav-item:nth-child(3) a:hover {
   background-image: url(../images/profile-menu-color.png);
 }
-.menu--private-zone .menu-level-0 > .menu-item:nth-child(4) a {
+.menu--private-zone > .nav > .nav-item:nth-child(4) a {
   background-image: url(../images/collaboration-menu.png);
 }
-.menu--private-zone .menu-level-0 > .menu-item:nth-child(4) a:hover {
+.menu--private-zone > .nav > .nav-item:nth-child(4) a:hover {
   background-image: url(../images/collaboration-menu-color.png);
 }
-.menu--private-zone .menu-level-0 > .menu-item:last-child a {
+.menu--private-zone > .nav > .nav-item:last-child a {
   background-image: url(../images/promotional-menu.png);
 }
-.menu--private-zone .menu-level-0 > .menu-item:last-child a:hover {
+.menu--private-zone > .nav > .nav-item:last-child a:hover {
   background-image: url(../images/promotional-menu-color.png);
 }
-.menu--private-zone .menu-level-0 .menu-level-1 {
+.menu--private-zone > .nav .menu {
   padding: 0;
   display: flex;
 }
-.menu--private-zone .menu-level-0 .menu-level-1 .menu-item a {
+.menu--private-zone > .nav .menu .nav-item a {
   padding: 2px 0;
   background-color: white;
   vertical-align: middle;
@@ -3681,10 +3681,56 @@ body.user-logged-in.toolbar-tray-open #header {
   opacity: 0.8;
   color: #786586;
 }
-.menu--private-zone .menu-level-0 .menu-level-1 .menu-item a:hover {
+.menu--private-zone > .nav .menu .nav-item a:hover {
   opacity: 1;
   color: #786586;
   background-image: none;
+}
+
+.node-form {
+  background-color: #dfd8e4;
+  overflow: auto;
+  margin: 0 auto 15px;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+.node-form .content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.node-form .content > * {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.node-form label {
+  color: #786586;
+  font-weight: 700;
+}
+.node-form .form-item .form-group,
+.node-form .js-form-item {
+  display: flex;
+  flex-direction: column;
+}
+.node-form select.custom-select {
+  padding: 0.5rem;
+  background-position: 98% 50%;
+  border-radius: 0;
+}
+.node-form input {
+  border: none;
+  border-radius: 0;
+}
+.node-form .button {
+  background: #786586;
+  color: white;
+  border-radius: 0;
+  border: none;
+  font-weight: 700;
+}
+.node-form js-filter-guidelines {
+  display: none;
 }
 
 @media (max-width: 1023px) {

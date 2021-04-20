@@ -1,0 +1,46 @@
+.node-form {
+  background-color: $bg-color-purple-light;
+  overflow: auto;
+  margin: 0 auto 15px;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1170px;
+    > * {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  label {
+    color: $text-color-purple;
+    font-weight: $font-weight-bold;
+  }
+  .form-item .form-group,
+  .js-form-item {
+      display: flex;
+      flex-direction: column;
+  }
+  select.custom-select {
+    padding: 0.5rem;
+    background-position: 98% 50%;
+    border-radius: 0;
+  }
+  input {
+    border: none;
+    border-radius: 0;
+  }
+  .button {
+    background: $bg-color-purple;
+    color: white;
+    border-radius: 0;
+    border: none;
+    font-weight: $font-weight-bold;
+  }
+  js-filter-guidelines {
+    display: none;
+  }
+}
+
