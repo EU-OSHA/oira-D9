@@ -190,7 +190,6 @@ select.custom-select{
 
 .sidebar_first {
   float: left;
-  background: $bg-color-purple;
   .block{
     border: 0;
   }
@@ -233,21 +232,26 @@ select.custom-select{
 
 .content-two-columns{
   display: flex;
-  padding-top: 1rem;
-  .two-column{
-    float: right;
-    background: $bg-color-purple-light;
+  /** background: url(../images/background-two-colors.jpg) top center repeat-y; **/
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#765e84+1,765e84+35,dfd8e4+35,dfd8e4+35,dfd8e4+100 */
+  background: #765e84; /* Old browsers */
+  background: -moz-linear-gradient(left,  #765e84 1%, #765e84 35%, #dfd8e4 35%, #dfd8e4 35%, #dfd8e4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #765e84 1%,#765e84 35%,#dfd8e4 35%,#dfd8e4 35%,#dfd8e4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #765e84 1%,#765e84 35%,#dfd8e4 35%,#dfd8e4 35%,#dfd8e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#765e84', endColorstr='#dfd8e4',GradientType=1 ); /* IE6-9 */
+
+  .sidebar_first {
+    background: #765e84;
+  }
+  .main-column {
     border-left: 5px solid $bg-color-white;
     padding-bottom: 2rem;
+    background: #dfd8e4;
   }
 }
 
 /*Styling inputs*/
-.page-view-oira-ws{
-  .sidebar_first{
-
-  }
-}
 
 /* End Common elements */
 
@@ -639,7 +643,6 @@ select.custom-select{
   .view{
     padding-left: 0.5rem;
     .view-header{
-      width: 70%;
       text-align: right;
       margin-top: 20px;
       padding: 15px 0 15px 0;
@@ -647,7 +650,6 @@ select.custom-select{
       border-bottom: 2px solid $bg-color-purple;
     }
     .view-content.row{
-      width: 70%;
       margin: 2rem 0 0 0;
       padding-top: 2rem;
       background: $bg-color-white;
