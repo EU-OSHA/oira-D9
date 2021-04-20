@@ -15,6 +15,7 @@ permissions:
   - 'access devel information'
   - 'access news feeds'
   - 'access site map'
+  - 'access site-wide contact form'
   - 'display EU Cookie Compliance popup'
   - 'download any document files'
   - 'post comments'
@@ -24,3 +25,4 @@ permissions:
   - 'use exclude node title'
   - 'use manualcrop'
   - 'view files'
+  - 'view media'

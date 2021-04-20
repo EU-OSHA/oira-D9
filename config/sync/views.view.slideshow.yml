@@ -156,11 +156,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: uri
-          type: link
+          type: link_separate
           settings:
             trim_length: 80
-            url_only: true
-            url_plain: true
+            url_only: false
+            url_plain: false
             rel: '0'
             target: '0'
           group_column: ''
