@@ -718,14 +718,10 @@ select.custom-select {
   margin-bottom: 15px;
 }
 
-.sidebar_first {
-  float: left;
-}
 .sidebar_first .block {
   border: 0;
 }
 .sidebar_first aside {
-  float: right;
   color: #FFF;
 }
 .sidebar_first aside h2 {
@@ -758,7 +754,6 @@ select.custom-select {
 
 .content-two-columns {
   display: flex;
-  /** background: url(../images/background-two-colors.jpg) top center repeat-y; **/
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#765e84+1,765e84+35,dfd8e4+35,dfd8e4+35,dfd8e4+100 */
   background: #765e84;
   /* Old browsers */
@@ -773,10 +768,11 @@ select.custom-select {
 }
 .content-two-columns .sidebar_first {
   background: #765e84;
+  padding: 30px 30px 30px 15px;
 }
 .content-two-columns .main-column {
   border-left: 5px solid #FFF;
-  padding-bottom: 2rem;
+  padding: 14px 15px 30px 30px;
   background: #dfd8e4;
 }
 
@@ -1092,16 +1088,13 @@ select.custom-select {
 .page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws button {
   display: none;
 }
-.page-view-oira-ws #sidebar_first {
-  padding-top: 2rem;
-}
 .page-view-oira-ws #sidebar_first aside h2 {
   border-bottom: 0;
   cursor: pointer;
 }
 .page-view-oira-ws #sidebar_first aside #edit-submit-oira-ws--2 {
   position: absolute;
-  top: 18px;
+  top: 4px;
   right: 0px;
   color: #786586;
   border: none;
@@ -1133,15 +1126,15 @@ select.custom-select {
   padding: 1rem 0 0 0;
   margin-bottom: 0;
 }
+.page-view-oira-ws #sidebar_first .block:first-child {
+  border-top: none;
+  padding-top: 0;
+}
 .page-view-oira-ws #block-exposedformoira-wstools-ws .form-item-search-api-fulltext {
   display: none;
 }
-.page-view-oira-ws .view {
-  padding-left: 0.5rem;
-}
 .page-view-oira-ws .view .view-header {
   text-align: right;
-  margin-top: 20px;
   padding: 15px 0 15px 0;
   border-top: 2px solid #786586;
   border-bottom: 2px solid #786586;
@@ -2891,6 +2884,21 @@ select.custom-select {
   flex-direction: column;
 }
 
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #003399;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.navbar-brand:hover {
+  color: #003399;
+  text-decoration: underline;
+}
+
 .top-header-content {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -2898,6 +2906,9 @@ select.custom-select {
   align-items: center;
   justify-content: space-between;
   /* Link menu News */
+}
+.top-header-content .region-top-header-logos {
+  margin: 0;
 }
 .top-header-content .region-top-header-logos .field--name-field-image {
   display: flex;
@@ -2911,6 +2922,12 @@ select.custom-select {
 }
 .top-header-content .region-top-header-logos .field--name-field-image > .field__item:last-child img {
   width: 75px;
+}
+.top-header-content .region-medium-header-logos {
+  margin: 0 auto;
+}
+.top-header-content .region-wrapper {
+  margin: 0;
 }
 .top-header-content .header-logo .logo-eu, .top-header-content .header-logo .logo-oira {
   margin-left: 40px;
@@ -3757,8 +3774,54 @@ body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
 }
 
 @media (max-width: 1023px) {
+  #block-logoosha {
+    max-width: 280px;
+  }
+
+  .block-lang-dropdown {
+    margin-right: 65px;
+  }
+  .block-lang-dropdown .form-select {
+    width: 137px !important;
+  }
+
+  #block-headerprintandfontsize {
+    display: none;
+  }
+
+  .top-header-content .header-blocks {
+    margin-left: 0;
+  }
+  .top-header-content .header-blocks .region-header-form {
+    align-items: flex-start;
+  }
+  .top-header-content .menu--header-menu a {
+    position: relative;
+    max-width: 40px;
+    font-size: 0;
+    color: transparent;
+  }
+  .top-header-content .menu--header-menu a:before {
+    position: absolute;
+  }
+  .top-header-content .region-wrapper {
+    padding: 0 15px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .top-header-content .header-menu-news {
+    order: 2;
+    max-width: 40px;
+  }
+
   .content-two-columns {
     flex-direction: column;
+    background: #dfd8e4;
+  }
+  .content-two-columns .main-column {
+    padding: 30px 15px 30px;
+    background: #dfd8e4;
+    border-left: none !important;
   }
 
   .page-view-oira-ws .view .view-header,
@@ -3833,6 +3896,11 @@ body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
     column-gap: 24px;
     max-width: 960px;
   }
+
+  .page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws {
+    top: 76px;
+    left: 12px;
+  }
 }
 /*** End 1024px ***/
 @media only screen and (max-width: 991px) {
@@ -3840,7 +3908,7 @@ body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
   .top-header-content .header-blocks .block-search-form-block {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 28px;
   }
   .top-header-content .header-blocks .block-search-form-block input {
     display: none;
@@ -3856,8 +3924,8 @@ body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
 
   .top-header-content .header-menu-news {
     position: absolute;
-    top: 70px;
-    right: 20px;
+    top: 60px;
+    right: 55px;
   }
 
   /* Menu responsive */
@@ -3940,6 +4008,31 @@ body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
 }
 /* End Media 991px */
 @media only screen and (max-width: 767px) {
+  /*** Stiky header ***/
+  body {
+    padding-top: 165px;
+  }
+
+  body.user-logged-in {
+    padding-top: 165px !important;
+  }
+  body.user-logged-in #header {
+    padding-top: 40px;
+  }
+
+  body.user-logged-in.toolbar-fixed {
+    padding-top: 256px !important;
+  }
+  body.user-logged-in.toolbar-fixed #header {
+    padding-top: 40px;
+  }
+  body.user-logged-in.toolbar-fixed.toolbar-tray-open {
+    padding-top: 290px !important;
+  }
+  body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
+    padding-top: 75px;
+  }
+
   .region-top-header-logos,
 .region-medium-header-logos {
     width: 50%;
