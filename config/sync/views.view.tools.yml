@@ -26,7 +26,6 @@ dependencies:
     - link
     - media
     - node
-    - options
     - text
     - user
 id: tools
@@ -2254,7 +2253,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Language:'
+          label: Language
           exclude: true
           alter:
             alter_text: false
@@ -2283,12 +2282,12 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: div
           element_class: ''
-          element_label_type: ''
+          element_label_type: div
           element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: div
+          element_label_colon: true
+          element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
@@ -2296,8 +2295,13 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: list_default
-          settings: {  }
+          type: languagefield_default
+          settings:
+            link_to_entity: 0
+            format:
+              name: name
+              iso: 0
+              name_native: 0
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -2877,7 +2881,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"tool-teaser-content-wrapper\">\r\n<div>{{title}}</div>\r\n<div>{{field_language}}</div>\r\n<div>{{field_country}}</div>\r\n<div class=\"views-field-field-tool-link\">{{ field_tool_link }}</div>\r\n\r\n<div class=\"partners-wrapper\">\r\n  \r\n  {% if (field_related_partners )%}\r\n  <div class=\"partner-wrapper partner-wrapper-related\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n       {{field_logo}}\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4>{{ title_1 }}</h4>\r\n      {{ view_node }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (field_co_author_node) %}\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n      {{ field_logo_1 }} \r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n       <h4>{{ title_2 }}</h4>\r\n   {{ view_node_1 }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n</div>\r\n<span class=\"more-link\"> See more</span>\r\n</div>"
+            text: "<div class=\"tool-teaser-content-wrapper\">\r\n<div>{{title}}</div>\r\n{{ field_language }}\r\n<div>{{field_country}}</div>\r\n<div class=\"views-field-field-tool-link\">{{ field_tool_link }}</div>\r\n\r\n<div class=\"partners-wrapper\">\r\n  \r\n  {% if (field_related_partners )%}\r\n  <div class=\"partner-wrapper partner-wrapper-related\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n       {{field_logo}}\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4>{{ title_1 }}</h4>\r\n      {{ view_node }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (field_co_author_node) %}\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n      {{ field_logo_1 }} \r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n       <h4>{{ title_2 }}</h4>\r\n   {{ view_node_1 }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n</div>\r\n<span class=\"more-link\"> See more</span>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
