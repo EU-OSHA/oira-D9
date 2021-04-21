@@ -1,29 +1,27 @@
-uuid: 1a84f93f-6025-4863-b0fa-278d53c3a82c
+uuid: 4b58b474-713b-4174-9652-e68cb2192b5d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.tools
+    - facets.facet.sector
   module:
     - context
+    - facets
     - system
-    - views
   theme:
     - oira_theme
-id: views_block__tools_block_2
+id: sector
 theme: oira_theme
-region: content
-weight: -11
+region: sidebar_first
+weight: -13
 provider: null
-plugin: 'views_block:tools-block_2'
+plugin: 'facet_block:sector'
 settings:
-  id: 'views_block:tools-block_2'
-  label: ''
-  provider: views
+  id: 'facet_block:sector'
+  label: Sector
+  provider: facets
   label_display: visible
-  views_label: ''
-  items_per_page: none
-  context_mapping: {  }
+  block_id: sector
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -35,5 +33,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /what-is-new
+    pages: /oira-tools
     negate: false

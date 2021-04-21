@@ -892,7 +892,7 @@ display:
           exposed: false
           expose:
             label: ''
-          granularity: second
+          granularity: minute
           plugin_id: datetime
       header: {  }
       footer: {  }

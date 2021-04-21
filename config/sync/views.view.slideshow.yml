@@ -63,13 +63,13 @@ display:
         options:
           vanilla: true
           optionset: default
-          skin: classic
-          layout: bottom
+          skin: default
+          layout: ''
           caption:
-            field_link: field_link
-            title: title
-            body: body
+            field_link: '0'
             field_image: '0'
+            title: '0'
+            body: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_position: ''
@@ -82,8 +82,8 @@ display:
           image: field_image
           thumbnail: ''
           overlay: ''
-          title: ''
-          link: ''
+          title: title
+          link: field_link
           class: ''
           id: ''
           override: true

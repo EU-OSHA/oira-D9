@@ -6,7 +6,7 @@ dependencies:
     - node.type.article
     - taxonomy.vocabulary.article_types
   content:
-    - 'taxonomy_term:article_types:2518edb1-8669-490d-a43c-adf9d56eab0e'
+    - 'taxonomy_term:article_types:93492fe9-62d5-452b-b280-04221d9e8b9e'
   module:
     - node
     - taxonomy
@@ -218,7 +218,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
           group: 1
           exposed: false
           expose:
