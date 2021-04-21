@@ -631,7 +631,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a href="{{field_tool_link__uri}}">Access the tool</a>'
+            text: '<a target="_blank" href="{{field_tool_link__uri}}">Access the tool</a>'
             make_link: false
             path: ''
             absolute: false
@@ -742,7 +742,7 @@ display:
             url_only: false
             url_plain: false
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -2040,8 +2040,8 @@ display:
           type: link
           settings:
             trim_length: 80
-            url_only: false
-            url_plain: false
+            url_only: true
+            url_plain: true
             rel: '0'
             target: _blank
           group_column: ''
@@ -2446,7 +2446,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a href="{{ field_tool_link__uri }}">Access the tool</a>'
+            text: '<a  target="_blank" href="{{ field_tool_link__uri }}">Access the tool</a>'
             make_link: false
             path: ''
             absolute: false
@@ -2487,10 +2487,10 @@ display:
           type: link
           settings:
             trim_length: 80
-            url_only: false
-            url_plain: false
+            url_only: true
+            url_plain: true
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true

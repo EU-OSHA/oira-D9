@@ -7,6 +7,8 @@ dependencies:
     - field.field.block_content.block_image.body
     - field.field.block_content.block_image.field_image
   module:
+    - ds
+    - linked_field
     - text
 id: block_content.block_image.default
 targetEntityType: block_content
@@ -16,18 +18,39 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 1
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: content
   field_image:
     type: entity_reference_entity_view
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       view_mode: default
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[site:url]'
+        advanced: {  }
+        token: ''
     region: content
 hidden:
   entity_print_view_epub: true

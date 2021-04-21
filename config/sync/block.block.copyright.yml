@@ -12,7 +12,7 @@ dependencies:
 id: copyright
 theme: oira_theme
 region: footer_end
-weight: -11
+weight: -10
 provider: null
 plugin: 'block_content:bfa207e6-8b4f-4fd6-9d7b-eb97be80ab22'
 settings:

@@ -1,32 +1,28 @@
-uuid: 27cc3753-be5b-418a-9c21-05b6ffc251e0
+uuid: 74202577-bf27-49f4-b822-44d7d8ef8567
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.partner_intro_info
   module:
+    - addtoany
     - context
     - node
-    - views
   theme:
     - oira_theme
-id: views_block__partner_intro_info_block_1
+id: addtoanybuttons
 theme: oira_theme
 region: content
-weight: -18
+weight: -16
 provider: null
-plugin: 'views_block:partner_intro_info-block_1'
+plugin: addtoany_block
 settings:
-  id: 'views_block:partner_intro_info-block_1'
-  label: ''
-  provider: views
+  id: addtoany_block
+  label: 'AddToAny buttons'
+  provider: addtoany
   label_display: '0'
-  views_label: ''
-  items_per_page: none
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
+    pages: /oira-community
     negate: null
   view_inclusion:
     id: view_inclusion
@@ -35,7 +31,8 @@ visibility:
   node_type:
     id: node_type
     bundles:
-      partner: partner
+      article: article
+      news: news
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
