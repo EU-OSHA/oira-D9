@@ -375,13 +375,13 @@ div.pagerer-right-pane {
   width: 70%;
 }
 
-.block-quicktabs .tabsbar {
+.block-quicktabs .content {
   border: none;
 }
-.block-quicktabs .tabsbar .item-list {
+.block-quicktabs .content .item-list {
   background-color: #786586;
 }
-.block-quicktabs .tabsbar .quicktabs-tabs {
+.block-quicktabs .content .quicktabs-tabs {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
@@ -392,13 +392,13 @@ div.pagerer-right-pane {
   align-items: center;
   overflow: hidden;
 }
-.block-quicktabs .tabsbar .quicktabs-tabs > li {
+.block-quicktabs .content .quicktabs-tabs > li {
   margin-right: 20px;
   padding: 0;
   border: none;
   border-radius: 0;
 }
-.block-quicktabs .tabsbar .quicktabs-tabs > li > a {
+.block-quicktabs .content .quicktabs-tabs > li > a {
   display: block;
   padding: 15px;
   color: white;
@@ -407,16 +407,16 @@ div.pagerer-right-pane {
   border-radius: 0;
   background: transparent;
 }
-.block-quicktabs .tabsbar .quicktabs-tabs > li > a:focus, .block-quicktabs .tabsbar .quicktabs-tabs > li > a:hover {
+.block-quicktabs .content .quicktabs-tabs > li > a:focus, .block-quicktabs .content .quicktabs-tabs > li > a:hover {
   background-color: #dfd8e4;
   color: #786586;
   text-decoration: none;
 }
-.block-quicktabs .tabsbar .quicktabs-main {
+.block-quicktabs .content .quicktabs-main {
   padding: 0;
   margin: 1rem auto 0;
 }
-.block-quicktabs .tabsbar .quicktabs-tabpage {
+.block-quicktabs .content .quicktabs-tabpage {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
@@ -435,7 +435,7 @@ div.pagerer-right-pane {
 }
 
 /*** Node type partner ***/
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs li a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li a:before {
   display: inline-block;
   content: "";
   background-size: 100%;
@@ -445,40 +445,40 @@ div.pagerer-right-pane {
   vertical-align: middle;
   margin-right: 10px;
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs li.list-group-item:first-child a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:first-child a:before {
   background-image: url(../images/show-all-icon-w.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs li.list-group-item:first-child a:hover:before, .node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs li.list-group-item:first-child a:focus:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:first-child a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:first-child a:focus:before {
   background-image: url(../images/show-all-icon-p.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs li.list-group-item.active:first-child a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item.active:first-child a:before {
   background-image: url(../images/show-all-icon-p.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs li.list-group-item:nth-child(2) a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:before {
   background-image: url(../images/tools-icon-w.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs li.list-group-item:nth-child(2) a:hover:before, .node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs li.list-group-item:nth-child(2) a:focus:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:focus:before {
   background-image: url(../images/tools-icon-p.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs li.list-group-item:nth-child(2).active a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2).active a:before {
   background-image: url(../images/tools-icon-p.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs #quicktabs-tab-partner_content-2 a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:before {
   background-image: url(../images/promotional-resources-icon-w.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs #quicktabs-tab-partner_content-2 a:hover:before, .node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs #quicktabs-tab-partner_content-2 a:focus:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:focus:before {
   background-image: url(../images/promotional-resources-icon-p.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs #quicktabs-tab-partner_content-2.active a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2.active a:before {
   background-image: url(../images/promotional-resources-icon-p.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs #quicktabs-tab-partner_content-3 a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-3 a:before {
   background-image: url(../images/news-icon-w.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs #quicktabs-tab-partner_content-3 a:hover:before, .node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs #quicktabs-tab-partner_content-3 a:focus:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-3 a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-3 a:focus:before {
   background-image: url(../images/news-icon-p.png);
 }
-.node--type-partner .block-quicktabs .tabsbar .quicktabs-tabs #quicktabs-tab-partner_content-3.active a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-3.active a:before {
   background-image: url(../images/news-icon-p.png);
 }
 

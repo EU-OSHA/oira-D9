@@ -1,5 +1,5 @@
 .block-quicktabs {
-  .tabsbar {
+  .content {
     border: none;
     .item-list {
       background-color: $bg-color-purple;
@@ -63,7 +63,7 @@
 /*** Node type partner ***/
 .node--type-partner {
   .block-quicktabs {
-    .tabsbar {
+    .item-list {
       .quicktabs-tabs {
         li a {
           &:before {
