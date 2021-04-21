@@ -1615,6 +1615,7 @@ display:
         row: false
         fields: false
         pager: false
+        header: false
       row:
         type: fields
         options:
@@ -2063,6 +2064,18 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<div class=\"container page-title-container\">\r\n<h1 class=\"page-header\">News</h1>\r\n</div>"
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:
