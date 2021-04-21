@@ -7,6 +7,21 @@
   flex-direction: column;
 }
 
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $text-color-blue;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  &:hover {
+    color: $text-color-blue;
+    text-decoration: underline;
+  }
+}
+
 .top-header-content{
   padding-top: 15px;
   padding-bottom: 15px;
@@ -14,6 +29,7 @@
   align-items: center;
   justify-content: space-between;
   .region-top-header-logos {
+    margin: 0;
     .field--name-field-image {
       display: flex;
       margin: 0;
@@ -29,6 +45,12 @@
         }
       }
     }
+  }
+  .region-medium-header-logos {
+    margin: 0 auto;
+  }
+  .region-wrapper {
+    margin: 0;
   }
   .header-logo{
     .logo-eu, .logo-oira{
@@ -208,7 +230,7 @@ body {
 }
 
 body.user-logged-in {
-    padding-top: 185px;
+  padding-top: 185px;
 }
 
 body.user-logged-in.toolbar-fixed {

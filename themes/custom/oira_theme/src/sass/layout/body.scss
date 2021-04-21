@@ -189,12 +189,10 @@ select.custom-select{
 }
 
 .sidebar_first {
-  float: left;
   .block{
     border: 0;
   }
   aside{
-    float: right;
     color:$text-color-white;
     h2{
       font-family: 'Oswald';
@@ -232,8 +230,6 @@ select.custom-select{
 
 .content-two-columns{
   display: flex;
-  /** background: url(../images/background-two-colors.jpg) top center repeat-y; **/
-
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#765e84+1,765e84+35,dfd8e4+35,dfd8e4+35,dfd8e4+100 */
   background: #765e84; /* Old browsers */
   background: -moz-linear-gradient(left,  #765e84 1%, #765e84 35%, #dfd8e4 35%, #dfd8e4 35%, #dfd8e4 100%); /* FF3.6-15 */
@@ -243,10 +239,11 @@ select.custom-select{
 
   .sidebar_first {
     background: #765e84;
+    padding: 30px 30px 30px 15px;
   }
   .main-column {
     border-left: 5px solid $bg-color-white;
-    padding-bottom: 2rem;
+    padding: 14px 15px 30px 30px;
     background: #dfd8e4;
   }
 }
@@ -572,7 +569,7 @@ select.custom-select{
             padding-top: 5px;
             padding-right: 5px;
           }
-          select.custom-select{
+          select.custom-select {
             width: auto;
             margin-top: 7px;
             margin-left: 7px;
@@ -591,7 +588,6 @@ select.custom-select{
   }
 
   #sidebar_first {
-    padding-top: 2rem;
     aside{
       h2{
         border-bottom: 0;
@@ -599,7 +595,7 @@ select.custom-select{
       }
       #edit-submit-oira-ws--2{
         position: absolute;
-        top: 18px;
+        top: 4px;
         right: 0px;
         color: #786586;
         border: none;
@@ -633,6 +629,10 @@ select.custom-select{
       border-top: 2px solid $bg-color-white;
       padding: 1rem 0 0 0;
       margin-bottom: 0;
+      &:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
     }
   }
   #block-exposedformoira-wstools-ws{
@@ -641,10 +641,8 @@ select.custom-select{
     }
   }
   .view{
-    padding-left: 0.5rem;
     .view-header{
       text-align: right;
-      margin-top: 20px;
       padding: 15px 0 15px 0;
       border-top: 2px solid $bg-color-purple;
       border-bottom: 2px solid $bg-color-purple;
