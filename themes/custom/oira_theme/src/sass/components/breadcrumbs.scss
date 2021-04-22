@@ -1,8 +1,16 @@
 /* Breadcrumbs */
+.block-system-breadcrumb-block {
+  margin-right: -15px;
+  margin-left: -15px;
+  .content {
+    @extend .col-sm-12;
+  }
+}
+
 .breadcrumb{
   background-color: transparent;
   font-size: 1rem;
-  padding: 8px 15px 8px 0;
+  padding: 10px 15px;
   margin-bottom: 0;
   a{
     color: $text-color-blue-light;
