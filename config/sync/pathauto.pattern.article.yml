@@ -9,14 +9,23 @@ label: Article
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  d07af9c6-ca2d-4cea-a58e-4072ab971f73:
+  1e1f0e15-4a6e-4932-a598-9c89949ed951:
     id: node_type
     bundles:
       article: article
+      certificates: certificates
+      collaboration_document: collaboration_document
+      external_url: external_url
+      faq: faq
+      landing: landing
+      page: page
+      promotional_material: promotional_material
+      slide: slide
+      wiki_page: wiki_page
     negate: false
     context_mapping:
       node: node
-    uuid: d07af9c6-ca2d-4cea-a58e-4072ab971f73
+    uuid: 1e1f0e15-4a6e-4932-a598-9c89949ed951
 selection_logic: and
 weight: -5
 relationships: {  }
