@@ -530,6 +530,23 @@ display:
         context: '0'
         menu_name: admin
       rendering_language: '***LANGUAGE_entity_translation***'
+      sorts:
+        weight:
+          id: weight
+          table: draggableviews_structure
+          field: weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          draggable_views_reference: this
+          draggable_views_null_order: after
+          plugin_id: standard
+      defaults:
+        sorts: false
     cache_metadata:
       max-age: 0
       contexts:
