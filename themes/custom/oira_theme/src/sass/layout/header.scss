@@ -69,7 +69,7 @@
     align-items: flex-end;
   }
   .header-blocks {
-    margin-left: 60px;
+    margin-left: 45px;
   }
   .block__font-size {
     span a {
@@ -183,7 +183,7 @@
 
 .region-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 /*** Block utilies ***/
@@ -226,7 +226,7 @@
 
 /*** Stiky header ***/
 body {
-  padding-top: 185px;
+  padding-top: 195px;
 }
 
 body.user-logged-in {

@@ -1858,18 +1858,22 @@ select.custom-select{
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto 30px;
+  .view-content.row {
+
+  }
+  .views-row {
+    width: 100%;
+  }
   .partner__intro-data {
     display: flex;
     align-items: center;
     background-color: $bg-color-white;
     border-bottom: 2px solid $text-color-purple;
-    padding-top: 10px;
-    margin-bottom: 35px;
-    padding-bottom: 10px;
-  }
-  .partner__logo {
-    width: 25%;
-    max-width: 25%;
+    padding: 10px 0;
+    margin: 0 15px 35px;
+    img {
+      margin: 0;
+    }
   }
   .partner__title {
     width: 66%;
@@ -1878,13 +1882,17 @@ select.custom-select{
       font-size: 2.5625rem;
     }
   }
-  .partner__address {
+  .views-field-nothing-1 {
+    width: 25%;
     padding: 0 15px;
+    margin-bottom: 40px;
+  }
+  .partner__address {
     .field__label {
       display: block;
       margin-bottom: 15px;
       font-weight: $font-weight-bold;
-      color: $text-color-purple;
+      color: $text-color-purple-light;
     }
     .field__content {
       display: flex;
@@ -1904,12 +1912,13 @@ select.custom-select{
     }
   }
   .partner__socialprofile {
+    width: 25%;
     padding: 0 15px;
     .field__label {
       display: block;
       margin-bottom: 15px;
       font-weight: $font-weight-bold;
-      color: $text-color-purple;
+      color: $text-color-purple-light;
     }
     .list-group {
       margin: 0;
@@ -1936,6 +1945,8 @@ select.custom-select{
 .view-country-partner-content {
   > .view-content.row {
     background: $bg-color-white;
+    margin-left: 0;
+    margin-rigth: 0;
     > h3 {
       &:after {
         display: block;
@@ -1946,6 +1957,18 @@ select.custom-select{
         height: 45px;
         float: right;
       }
+    }
+  }
+  .datetime {
+    color: $text-color-purple-light;
+  }
+  .views-field-field-image {
+    a {
+      display: block;
+    }
+    img {
+      width: 100%;
+      border: 1px solid $bg-color-grey;
     }
   }
   h3 {
@@ -1961,16 +1984,13 @@ select.custom-select{
   }
   .view-header,
   .view-footer {
-    padding-bottom: 30px;
     .view-content > h3 {
-      padding: 0 15px;
       max-width: 1140px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-top: 0;
-      margin-bottom: 15px;
       &:after {
         display: block;
         content: "";
@@ -1990,7 +2010,7 @@ select.custom-select{
       background: $bg-color-purple-light;
     }
     .views-row {
-      padding: 15px 15px;
+      padding: 30px 15px;
       max-width: 1140px;
       margin: 0 auto;
     }
@@ -2025,9 +2045,19 @@ select.custom-select{
     padding: 0 15px;
   }
   .group-right {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 75%;
     padding: 0 15px;
+    .revised-date,
+    .tags,
+    .expandible {
+      flex: 0 0 auto;
+    }
+    .title {
+      flex: 1 1 auto;
+    }
   }
   .title {
     h3 {
@@ -2041,6 +2071,7 @@ select.custom-select{
   .tool-link {
     position: absolute;
     right: 0;
+    bottom: 0;
     display: flex;
     justify-content: flex-end;
     a {
@@ -2144,17 +2175,15 @@ select.custom-select{
     .views-field-field-image {
       position: relative;
       display: inline-block;
-      float: left;
-      margin-right: 30px;
-      margin-bottom: 35px;
       border: 1px solid grey;
+      width: 100%;
       a {
         display: block;
       }
     }
   }
   .group-right {
-    width: auto;
+    width: 100%;
     padding: 0 15px;
     .news__view-node {
       a {
@@ -2220,10 +2249,11 @@ select.custom-select{
     padding: 0;
   }
   .partner__item {
-    margin-bottom: 45px;
+    position: relative;
+    margin-bottom: 35px;
   }
   .partner__data-wrapper {
-    padding: 50px 15px 30px 0;
+    padding: 30px 15px 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2249,12 +2279,27 @@ select.custom-select{
     line-height: 1.2;
   }
   .partner__country {
-    padding-bottom: 15px;
+    padding: 22px 0 11px;
     font-size: 1.75rem;
     font-style: italic;
     font-weight: $font-weight-bold;
     color: $text-color-purple;
     border-bottom: 2px solid $bg-color-purple;
+  }
+  .views-field-field-flag {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    .field-content {
+      width: 45px;
+      position: relative;
+      height: 29px;
+      overflow: hidden;
+      border: 1px solid $bg-color-grey;
+      img {
+        display: block;
+      }
+    }
   }
   .partner__name {
     font-size: 1.75rem;
