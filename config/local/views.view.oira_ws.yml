@@ -956,8 +956,8 @@ display:
             link_to_entity: 0
             format:
               iso: iso
-              name: name
-              name_native: 0
+              name_native: name_native
+              name: 0
           group_column: value
           group_columns: {  }
           group_rows: true
