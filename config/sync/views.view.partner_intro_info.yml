@@ -67,6 +67,69 @@ display:
       row:
         type: fields
       fields:
+        field_country:
+          id: field_country
+          table: node__field_country
+          field: field_country
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: div
+          element_class: partner__country
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: '0'
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_logo:
           id: field_logo
           table: node__field_logo
@@ -206,7 +269,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"partner__logo\">{{ field_logo }}</div>\r\n<h1 class=\"partner__title page-title\">{{ title }}</div>"
+            text: "<div class=\"partner__logo\">{{ field_logo }}</div>\r\n<h1 class=\"partner__title page-title\">{{ title }} - {{ field_country }} </div>"
             make_link: false
             path: ''
             absolute: false
@@ -289,7 +352,7 @@ display:
           element_wrapper_class: partner__address
           element_default_classes: false
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
@@ -360,69 +423,6 @@ display:
           settings:
             link_to_entity: false
           group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_country:
-          id: field_country
-          table: node__field_country
-          field: field_country
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: div
-          element_class: partner__country
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: '0'
-          element_wrapper_class: ''
-          element_default_classes: false
-          empty: ''
-          hide_empty: true
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -561,7 +561,7 @@ display:
           delta_first_last: false
           multi_type: separator
           separator: ', '
-          field_api_classes: false
+          field_api_classes: true
           plugin_id: field
         field_dedicated_oira_website:
           id: field_dedicated_oira_website
@@ -608,7 +608,7 @@ display:
           element_wrapper_class: partner__dedicated-website
           element_default_classes: false
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: uri
@@ -628,7 +628,7 @@ display:
           delta_first_last: false
           multi_type: separator
           separator: ', '
-          field_api_classes: false
+          field_api_classes: true
           plugin_id: field
         field_general_email:
           id: field_general_email
@@ -703,7 +703,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"partner__address\">\r\n<strong class=\"field__label\">Contact information</strong>\r\n<div class=\"field__content\">\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_address }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_town }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_country }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_cp }}\r\n</div>\r\n<div class=\"field__content field__content-url\">\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Website:</strong>\r\n{{ field_website }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Dedicated OiRA website:</strong>\r\n{{ field_dedicated_oira_website }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Email:</strong>\r\n{{ field_general_email }}\r\n</div>\r\n</div>\r\n</div>\r\n</div>"
+            text: "<div class=\"partner__address\">\r\n<strong class=\"field__label\">Contact information</strong>\r\n<div class=\"field__content\">\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_address }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_town }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_country }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_cp }}\r\n</div>\r\n<div class=\"field__content field__content-url\">\r\n<div class=\"field__content-bit\">\r\n<!-- <strong class=\"field__label\">Website:</strong> -->\r\n{{ field_website }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n<!--<strong class=\"field__label\">Dedicated OiRA website:</strong>-->\r\n{{ field_dedicated_oira_website }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n<!-- <strong class=\"field__label\">Email:</strong> -->\r\n{{ field_general_email }}\r\n</div>\r\n</div>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -737,9 +737,9 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
-          hide_alter_empty: false
+          hide_alter_empty: true
           plugin_id: custom
         field_social_profile:
           id: field_social_profile
@@ -790,7 +790,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: uri
-          type: link
+          type: link_separate
           settings:
             trim_length: 80
             url_only: false

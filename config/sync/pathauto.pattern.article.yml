@@ -9,14 +9,25 @@ label: Article
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  d07af9c6-ca2d-4cea-a58e-4072ab971f73:
+  94434da7-7928-4e4a-9a35-9b8d2b3d3ecb:
     id: node_type
     bundles:
       article: article
+      certificates: certificates
+      collaboration_document: collaboration_document
+      external_url: external_url
+      faq: faq
+      landing: landing
+      page: page
+      promotional_material: promotional_material
+      slide: slide
+      wiki_page: wiki_page
     negate: false
     context_mapping:
       node: node
-    uuid: d07af9c6-ca2d-4cea-a58e-4072ab971f73
+    uuid: 94434da7-7928-4e4a-9a35-9b8d2b3d3ecb
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships:
+  'node:langcode:language':
+    label: Language

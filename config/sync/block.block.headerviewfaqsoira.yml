@@ -1,0 +1,39 @@
+uuid: b6bde74c-bb4b-43d3-982c-a0dc50e3fb9e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_header_view:41b9823c-eead-47b8-9461-4594f19e681e'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - oira_theme
+id: headerviewfaqsoira
+theme: oira_theme
+region: header_view
+weight: 0
+provider: null
+plugin: 'block_content:41b9823c-eead-47b8-9461-4594f19e681e'
+settings:
+  id: 'block_content:41b9823c-eead-47b8-9461-4594f19e681e'
+  label: 'Header View Faqs Oira'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /oira-faqs
+    negate: false
