@@ -7,5 +7,5 @@ dependencies:
 id: block_content.block_header_view
 target_entity_type_id: block_content
 target_bundle: block_header_view
-default_langcode: site_default
-language_alterable: false
+default_langcode: und
+language_alterable: true

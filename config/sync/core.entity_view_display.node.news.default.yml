@@ -30,10 +30,15 @@ targetEntityType: node
 bundle: news
 mode: default
 content:
+  addtoany:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -43,7 +48,7 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       image_style: news_list_and_node
@@ -52,7 +57,7 @@ content:
     type: media_thumbnail
     region: content
   field_publication_date:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       timezone_override: ''
@@ -61,14 +66,13 @@ content:
     type: datetime_default
     region: content
   field_summary:
-    weight: 1
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
 hidden:
-  addtoany: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

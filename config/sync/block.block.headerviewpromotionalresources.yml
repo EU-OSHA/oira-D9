@@ -35,5 +35,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: '/promotional-resources-search/*'
+    pages: "/promotional-resources\r\n/promotional-resources-search/*"
     negate: false
