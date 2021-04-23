@@ -2898,6 +2898,13 @@ select.custom-select {
   order: 1;
 }
 
+/*** Page How to carry out risk assessment ***/
+.page-node-65 .text-formatted h4,
+.how-carry-out-risk-assessment .text-formatted h4 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
 .site-footer {
   width: 100%;
   height: auto;
