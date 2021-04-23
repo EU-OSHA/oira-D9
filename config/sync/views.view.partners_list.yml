@@ -14,11 +14,11 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.partner_types
   content:
-    - 'taxonomy_term:country:db2dad12-ca1f-4477-aa4d-48254e1cf951'
+    - 'taxonomy_term:country:c6c72fdb-d0b6-4a6e-b233-a160a4169f00'
+    - 'taxonomy_term:partner_types:0dd6e0d0-a2ac-4f61-9b9d-6f02646c4c1a'
     - 'taxonomy_term:partner_types:386de8a7-9b66-4fc1-a39d-411f79b9ef89'
-    - 'taxonomy_term:partner_types:681b2fc0-76cd-4f2a-bd68-c49d8cfe44fb'
-    - 'taxonomy_term:partner_types:baff9e73-14f4-45f8-afb5-d7d6470c492f'
-    - 'taxonomy_term:partner_types:db042554-da72-4cc6-a614-8fe0736f95e8'
+    - 'taxonomy_term:partner_types:cf2868b6-cf50-4933-89d3-4affcacc2039'
+    - 'taxonomy_term:partner_types:e55ab3a4-7560-465a-93cd-b5e1f33c1d74'
   module:
     - image
     - media
@@ -1623,7 +1623,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
