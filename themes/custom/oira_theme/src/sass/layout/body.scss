@@ -898,7 +898,10 @@ select.custom-select{
   }
   .views-field-description__value{
     font-size: 0.85rem;
-    padding-top: 10px;
+    padding-top: 15px;
+    p {
+      margin-bottom: 11px;
+    }
   }
 }
 
@@ -1420,16 +1423,17 @@ select.custom-select{
   @extend .full-width;
   background: $bg-color-purple;
   padding-top: 22px;
-  h2, .content {
+  .content {
     margin: 0 auto;
     max-width: 1140px;
-    color: white;
+    color: $text-color-white;
   }
   h2 {
+    max-width: 1140px;
     padding-bottom: 15px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
     font-family: $font-family-oswald;
-    color: #ffffff;
+    color: $text-color-white;
     font-size: 2rem;
     border-bottom: 2px solid #ffffff;
     &:after {
@@ -1438,8 +1442,8 @@ select.custom-select{
       background-size: 100%;
       width: 40px;
       height: 40px;
-      float: right;
       width: 35px;
+      float: right;
     }
   }
   .view-news {
@@ -1479,7 +1483,11 @@ select.custom-select{
   h2, .content {
     margin: 0 auto;
     max-width: 1140px;
-    color: $text-color-purple;
+    color: $text-color-purple-light;
+  }
+  .content {
+    border-bottom: 2px solid $text-color-purple-light;
+    padding-bottom: 23px;
   }
   h2 {
     margin-bottom: 22px;
@@ -2390,5 +2398,42 @@ select.custom-select{
       display: block;
       color: $text-color-white;
     }
+  }
+}
+
+#block-oiracommunity{
+  @extend .full-width;
+  padding: 48px 0 40px;
+  margin-bottom: 20px;
+  background: $bg-color-purple;
+}
+
+.menu--oira-community {
+  .menu {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+  }
+  .menu-item {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 0 auto;
+    }
+    > a {
+      order: 2;
+      color: $text-color-white;
+    }
+  }
+  .menu-link-contentoira-community {
+    order: 1;
   }
 }

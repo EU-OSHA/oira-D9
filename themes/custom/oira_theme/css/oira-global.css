@@ -76,7 +76,7 @@ img {
   height: auto;
 }
 
-.full-width, .menu--private-zone, .block-views-blockadditional-resources-block, .block-views-blocknews-block-2, .page-node-402 .esener-template li,
+.full-width, .menu--private-zone, #block-oiracommunity, .block-views-blockadditional-resources-block, .block-views-blocknews-block-2, .page-node-402 .esener-template li,
 .facts-and-figures .esener-template li, .block-views-blocknews-block-1 {
   width: 100vw;
   margin-left: 50%;
@@ -155,6 +155,13 @@ div#sliding-popup button.decline-button:hover {
   font-size: 1rem;
   padding: 10px 15px;
   margin-bottom: 0;
+}
+.breadcrumb .breadcrumb-item {
+  font-size: 1rem;
+}
+.breadcrumb .breadcrumb-item:last-child {
+  color: #58585a;
+  font-style: normal;
 }
 .breadcrumb a {
   color: #10b2e4;
@@ -1376,7 +1383,10 @@ select.custom-select {
 }
 .view-promotional-materials-type .views-field-description__value {
   font-size: 0.85rem;
-  padding-top: 10px;
+  padding-top: 15px;
+}
+.view-promotional-materials-type .views-field-description__value p {
+  margin-bottom: 11px;
 }
 
 /* Node Articles */
@@ -1901,16 +1911,17 @@ select.custom-select {
   background: #786586;
   padding-top: 22px;
 }
-.block-views-blocknews-block-2 h2, .block-views-blocknews-block-2 .content {
+.block-views-blocknews-block-2 .content {
   margin: 0 auto;
   max-width: 1140px;
-  color: white;
+  color: #FFF;
 }
 .block-views-blocknews-block-2 h2 {
+  max-width: 1140px;
   padding-bottom: 15px;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
-  color: #ffffff;
+  color: #FFF;
   font-size: 2rem;
   border-bottom: 2px solid #ffffff;
 }
@@ -1920,8 +1931,8 @@ select.custom-select {
   background-size: 100%;
   width: 40px;
   height: 40px;
-  float: right;
   width: 35px;
+  float: right;
 }
 .block-views-blocknews-block-2 .view-news .views-row {
   padding: 0;
@@ -1957,7 +1968,11 @@ select.custom-select {
 .block-views-blockadditional-resources-block h2, .block-views-blockadditional-resources-block .content {
   margin: 0 auto;
   max-width: 1140px;
-  color: #786586;
+  color: #967ea7;
+}
+.block-views-blockadditional-resources-block .content {
+  border-bottom: 2px solid #967ea7;
+  padding-bottom: 23px;
 }
 .block-views-blockadditional-resources-block h2 {
   margin-bottom: 22px;
@@ -2849,6 +2864,40 @@ select.custom-select {
   color: #FFF;
 }
 
+#block-oiracommunity {
+  padding: 48px 0 40px;
+  margin-bottom: 20px;
+  background: #786586;
+}
+
+.menu--oira-community .menu {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  list-style: none;
+}
+.menu--oira-community .menu-item {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu--oira-community .menu-item img {
+  margin: 0 auto;
+}
+.menu--oira-community .menu-item > a {
+  order: 2;
+  color: #FFF;
+}
+.menu--oira-community .menu-link-contentoira-community {
+  order: 1;
+}
+
 .site-footer {
   width: 100%;
   height: auto;
@@ -2887,6 +2936,9 @@ select.custom-select {
 }
 .site-footer #block-footermenu ul li a:hover {
   text-decoration: underline;
+}
+.site-footer #block-footermenu ul li:last-child {
+  border-right: none;
 }
 .site-footer .menu--social-menu-footer {
   margin-top: 0;
