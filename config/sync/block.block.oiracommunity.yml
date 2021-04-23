@@ -1,27 +1,28 @@
-uuid: cba41b9c-b1dc-4daf-b307-08498ec2df6f
+uuid: d15578a1-edd4-4918-81ba-f7073603f5a5
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.promotional_resources_search
+    - system.menu.oira-community
   module:
     - context
     - system
-    - views
   theme:
     - oira_theme
-id: exposedformpromotional_resources_searchpage_1
+id: oiracommunity
 theme: oira_theme
 region: content
-weight: -20
+weight: -18
 provider: null
-plugin: 'views_exposed_filter_block:promotional_resources_search-page_1'
+plugin: 'system_menu_block:oira-community'
 settings:
-  id: 'views_exposed_filter_block:promotional_resources_search-page_1'
-  label: ''
-  provider: views
+  id: 'system_menu_block:oira-community'
+  label: 'Oira Community'
+  provider: system
   label_display: '0'
-  views_label: ''
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -33,5 +34,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: '/promotional-resources-search/*'
+    pages: /oira-community
     negate: false
