@@ -1,0 +1,8 @@
+uuid: fcac5996-4e52-4ba7-98e0-c61d2891648c
+langcode: und
+status: true
+dependencies: {  }
+id: oira-community
+label: 'Oira Community'
+description: ''
+locked: false

@@ -1,27 +1,28 @@
-uuid: fd3e7b3f-b706-4d78-94b4-20c02296c0f2
+uuid: 259f1513-7bb6-49c9-a4a2-89fdc41c8754
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.search
+    - system.menu.collaboration
   module:
     - context
     - system
-    - views
   theme:
     - oira_theme
-id: exposedformsearchpage_1_2
+id: collaboration
 theme: oira_theme
 region: content
-weight: -19
+weight: -8
 provider: null
-plugin: 'views_exposed_filter_block:search-page_1'
+plugin: 'system_menu_block:collaboration'
 settings:
-  id: 'views_exposed_filter_block:search-page_1'
-  label: ''
-  provider: views
+  id: 'system_menu_block:collaboration'
+  label: Collaboration
+  provider: system
   label_display: '0'
-  views_label: ''
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -33,5 +34,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /search/site
+    pages: /private-zone/collaboration-area
     negate: false
