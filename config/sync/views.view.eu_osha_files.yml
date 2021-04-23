@@ -579,6 +579,8 @@ display:
         pager: false
         header: false
         title: false
+        style: false
+        row: false
       fields:
         nothing:
           id: nothing
@@ -639,8 +641,28 @@ display:
         options:
           items_per_page: 1
           offset: 0
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<div class=\"page-title-wrapper\">\r\n          <div class=\"container page-title-container\">\r\n            <h1 class=\"page-header\">EU-OSHA Files</h1>\r\n          </div>\r\n        </div>"
+          plugin_id: text_custom
       title: 'EU-OSHA Files'
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+        options: {  }
     cache_metadata:
       max-age: -1
       contexts:

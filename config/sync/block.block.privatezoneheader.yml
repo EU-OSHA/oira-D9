@@ -1,24 +1,24 @@
-uuid: 84f22ad7-2c1a-4ec5-8a23-2660be35d196
+uuid: 29465c76-21e2-4c6d-8134-fabc8d4b1f71
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:e948cdb2-8a0b-46eb-8ae2-4d39efd86628'
+    - 'block_content:basic:8605ea21-9290-4675-854c-ada9b02ce9e7'
   module:
     - block_content
     - context
     - system
   theme:
     - oira_theme
-id: togglesidebar
+id: privatezoneheader
 theme: oira_theme
 region: content
-weight: -28
+weight: -23
 provider: null
-plugin: 'block_content:e948cdb2-8a0b-46eb-8ae2-4d39efd86628'
+plugin: 'block_content:8605ea21-9290-4675-854c-ada9b02ce9e7'
 settings:
-  id: 'block_content:e948cdb2-8a0b-46eb-8ae2-4d39efd86628'
-  label: 'Toggle Sidebar'
+  id: 'block_content:8605ea21-9290-4675-854c-ada9b02ce9e7'
+  label: 'Private zone header'
   provider: block_content
   label_display: '0'
   status: true
@@ -35,5 +35,5 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/oira-tools\r\n/search/*\r\n/promotional-resources-search/*"
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*"
     negate: false
