@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_collaboration_items
     - node.type.collaboration_document
+    - user.role.administrator
+    - user.role.partner
   module:
     - node
     - options
@@ -316,22 +318,7 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
+      sorts: {  }
       title: 'Background documents'
       header:
         result:
@@ -570,3 +557,94 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_collaboration_items'
+  page_1:
+    display_plugin: page
+    id: page_1
+    display_title: Page
+    position: 4
+    display_options:
+      display_extenders: {  }
+      path: private-zone/collaboration-area
+      access:
+        type: role
+        options:
+          role:
+            administrator: administrator
+            partner: partner
+      defaults:
+        access: false
+        fields: false
+        filters: false
+        filter_groups: false
+        pager: false
+        header: false
+        title: false
+      fields:
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: 'This section has been designed as a networking space where OiRA partners will be able to share documents, materials and resources. It can also be used as a source of information from where to find, for instance, images to be used in the OiRA tools and for OiRA related presentations and publications.'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
+          plugin_id: custom
+      filters: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      pager:
+        type: some
+        options:
+          items_per_page: 1
+          offset: 0
+      header: {  }
+      title: 'EU-OSHA Files'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.roles
+      tags: {  }

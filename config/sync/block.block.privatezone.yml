@@ -35,11 +35,12 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/Partners/*\r\n/oira-community/*"
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*"
     negate: false
   user_role:
     id: user_role
     roles:
+      administrator: administrator
       partner: partner
     negate: false
     context_mapping:
