@@ -23,12 +23,24 @@ display:
       fields:
         title:
           label: Titlu
+          separator: ', '
+        type:
+          label: Tip
+          separator: ', '
+        status:
+          separator: ', '
         name:
           label: Autor
+          separator: ', '
+        changed:
+          separator: ', '
       filters:
         title:
           expose:
             label: Titlu
+        type:
+          expose:
+            label: Tip
   block_1:
     display_options:
       pager:
@@ -43,5 +55,12 @@ display:
       fields:
         title:
           label: Titlu
+          separator: ', '
+        type:
+          label: Tip
+          separator: ', '
         name:
           label: Autor
+          separator: ', '
+        changed:
+          separator: ', '

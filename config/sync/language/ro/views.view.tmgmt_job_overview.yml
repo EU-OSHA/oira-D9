@@ -15,16 +15,33 @@ display:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
+          tags:
+            previous: '‹ anterior'
+            next: 'următor ›'
+            first: '« primul'
+            last: 'ultima »'
       fields:
+        state:
+          label: Status
+          separator: ', '
         label:
           label: Label
+        source_language_1:
+          separator: ', '
+        target_language:
+          separator: ', '
         translator:
           label: Furnizor
         tags_count:
           label: Etichete
+        changed:
+          label: Schimbat
         operations:
           label: Operations
       filters:
+        state:
+          expose:
+            label: Status
         translator:
           expose:
             label: Furnizor

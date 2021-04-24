@@ -22,6 +22,14 @@ display:
       fields:
         title:
           label: Titlu
+          separator: ', '
+        type:
+          separator: ', '
+        moderation_state:
+          separator: ', '
+        changed:
+          label: Actualizat
+          separator: ', '
         operations:
           label: Operations
       filters:

@@ -15,9 +15,16 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
+        type:
+          label: Tip
         name:
           label: User
+          separator: ', '
         link:
           label: Operations
+      filters:
+        type:
+          expose:
+            label: Tip
   page:
     display_title: Pagina

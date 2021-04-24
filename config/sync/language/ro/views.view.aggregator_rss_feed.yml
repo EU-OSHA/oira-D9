@@ -20,3 +20,5 @@ display:
             next: 'Următor ›'
             first: '« Primul'
             last: 'Ultimul »'
+  feed_items:
+    display_title: Flux

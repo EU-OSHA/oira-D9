@@ -15,11 +15,25 @@ display:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
+          tags:
+            previous: '‹ anterior'
+            next: 'următor ›'
+            first: '« primul'
+            last: 'ultima »'
       fields:
+        state:
+          label: Status
         label:
           label: Label
+        type:
+          label: Tip
+        word_count:
+          separator: ', '
         tags_count:
           label: Etichete
+          separator: ', '
+        changed:
+          label: Schimbat
         operations:
           label: Operations
       arguments:
@@ -31,3 +45,10 @@ display:
       fields:
         label:
           label: Label
+        type:
+          label: Tip
+        word_count:
+          separator: ', '
+        changed:
+          label: Schimbat
+          separator: ', '

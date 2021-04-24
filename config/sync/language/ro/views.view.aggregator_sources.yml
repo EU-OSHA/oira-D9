@@ -20,5 +20,15 @@ display:
             next: 'Următor ›'
             first: '« Primul'
             last: 'Ultimul »'
+      title: Surse
+  feed_1:
+    display_title: Flux
+    display_options:
+      fields:
+        title:
+          separator: ', '
   page_1:
     display_title: Pagina
+    display_options:
+      menu:
+        title: Surse

@@ -1,3 +1,4 @@
+label: Conţinut
 display:
   default:
     display_options:
@@ -17,10 +18,14 @@ display:
       fields:
         title:
           label: Titlu
+        type:
+          separator: ', '
         name:
           label: Autor
         status:
           label: Stare
+        changed:
+          label: Actualizat
         operations:
           label: Operations
       filters:
@@ -30,6 +35,15 @@ display:
         status:
           expose:
             label: Stare
+        langcode:
+          expose:
+            label: Limba
+      title: Conţinut
     display_title: Expert
   page_1:
+    display_options:
+      menu:
+        title: Conţinut
+      tab_options:
+        title: Conţinut
     display_title: Pagina

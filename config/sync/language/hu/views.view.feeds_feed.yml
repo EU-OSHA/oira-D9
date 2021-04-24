@@ -1,0 +1,57 @@
+label: Hírcsatornák
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növekvő
+          sort_desc_label: Csökkenő
+      pager:
+        options:
+          tags:
+            previous: '‹ előző'
+            next: 'következő ›'
+            first: '« első'
+            last: 'utolsó »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      fields:
+        feeds_feed_bulk_form:
+          label: 'Tömeges frissítés'
+          action_title: 'A kiválasztottakkal'
+        title:
+          label: Cím
+          separator: ', '
+        type:
+          label: Típus
+          separator: ', '
+        name:
+          label: Szerző
+          separator: ', '
+        changed:
+          label: Frissítve
+          separator: ', '
+        imported:
+          label: Importált
+          separator: ', '
+        operations:
+          label: Műveletek
+      filters:
+        title:
+          expose:
+            label: Cím
+        type:
+          expose:
+            label: Típus
+      title: Hírcsatornák
+  page_1:
+    display_title: Oldal
+    display_options:
+      menu:
+        title: Hírcsatornák
