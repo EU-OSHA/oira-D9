@@ -1,0 +1,29 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        title:
+          label: Tittel
+          separator: ', '
+        type:
+          separator: ', '
+        moderation_state:
+          separator: ', '
+        changed:
+          label: Oppdatert
+          separator: ', '
+        operations:
+          label: Operasjonar
+      filters:
+        title:
+          expose:
+            label: Tittel

@@ -1,0 +1,84 @@
+display:
+  default:
+    display_title: Nadřízené
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Použít
+          reset_button_label: Reset
+          exposed_sorts_label: 'Řadit dle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      pager:
+        options:
+          tags:
+            previous: '‹ Předchozí'
+            next: 'Následující ›'
+            first: '« První'
+            last: 'Poslední »'
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+      fields:
+        title:
+          label: Nadpis
+          separator: ', '
+        type:
+          label: Typ
+          separator: ', '
+        status:
+          label: Zveřejněno
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        changed:
+          label: 'Poslední změna'
+          separator: ', '
+        edit_node:
+          label: Akce
+          text: upravit
+      filters:
+        title:
+          expose:
+            label: Nadpis
+        type:
+          expose:
+            label: Typ
+        status:
+          expose:
+            label: Zveřejněno
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« První'
+            last: 'Poslední »'
+          expose:
+            items_per_page_label: 'Položek na stránku'
+            items_per_page_options_all_label: '- Vše -'
+            offset_label: Posun
+      filters:
+        status:
+          expose:
+            label: Zveřejněno
+      fields:
+        title:
+          label: Nadpis
+          separator: ', '
+        type:
+          label: Typ
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        changed:
+          label: 'Poslední změna'
+          separator: ', '
+        edit_node:
+          label: Akce
+          text: upravit

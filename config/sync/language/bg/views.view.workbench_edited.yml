@@ -1,0 +1,32 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Търси
+          reset_button_label: Рестартирай
+      fields:
+        title:
+          label: Заглавие
+        type:
+          label: Тип
+        status:
+          label: Публикувано
+        changed:
+          label: 'Последно обновяване'
+        uid:
+          label: Автор
+      filters:
+        title:
+          expose:
+            label: Заглавие
+        type:
+          expose:
+            label: Тип
+        status:
+          expose:
+            label: Публикувано
+      arguments:
+        uid_revision:
+          exception:
+            title: Всички

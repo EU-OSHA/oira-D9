@@ -17,6 +17,7 @@ permissions:
   - 'access site map'
   - 'display EU Cookie Compliance popup'
   - 'download any document files'
+  - 'opt-in or out of matomo tracking'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

@@ -1,0 +1,52 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: Tittel
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        status:
+          label: Publisert
+          separator: ', '
+        changed:
+          label: 'Sist oppdatert'
+          separator: ', '
+        uid:
+          label: Forfattar
+          separator: ', '
+        revision_uid:
+          separator: ', '
+      filters:
+        title:
+          expose:
+            label: Tittel
+        type:
+          expose:
+            label: Type
+        status:
+          expose:
+            label: Publisert
+      arguments:
+        uid_revision:
+          exception:
+            title: Alle
+  block_1:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'

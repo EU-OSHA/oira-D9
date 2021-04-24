@@ -1,0 +1,89 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Udfør
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
+      pager:
+        options:
+          tags:
+            previous: '‹ Forrige'
+            next: 'Næste ›'
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      fields:
+        title:
+          label: Titel
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        status:
+          label: Udgivet
+          separator: ', '
+        name:
+          label: Forfatter
+          separator: ', '
+        changed:
+          label: 'Senest opdateret'
+          separator: ', '
+        edit_node:
+          label: Handlinger
+          text: redigér
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Type
+        status:
+          expose:
+            label: Udgivet
+      empty:
+        area:
+          content:
+            value: 'Der er ikke noget indhold, som du kan redigere.'
+      use_more_text: 'vis alle'
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Første'
+            last: 'Sidste »'
+          expose:
+            items_per_page_label: 'Antal elementer'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskydning
+      filters:
+        status:
+          expose:
+            label: Udgivet
+      fields:
+        title:
+          label: Titel
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        name:
+          label: Forfatter
+          separator: ', '
+        changed:
+          label: 'Senest opdateret'
+          separator: ', '
+        edit_node:
+          label: Handlinger
+          text: redigér

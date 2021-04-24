@@ -1,0 +1,42 @@
+display:
+  default:
+    display_title: Isäntä
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Käytä
+          reset_button_label: Palauta
+          exposed_sorts_label: Lajittele
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Edellinen'
+            next: 'Seuraava ›'
+            first: '« Ensimmäinen'
+            last: 'Viimeinen »'
+          expose:
+            items_per_page_label: 'Merkintöjä sivua kohti'
+            items_per_page_options_all_label: '- Kaikki -'
+            offset_label: Offset
+      title: 'Esimerkki 1'
+  example_1:
+    display_title: 'Esimerkki 1'
+  example_2:
+    display_title: 'Esimerkki 2'
+    display_options:
+      title: 'Esimerkki 2'
+      arguments:
+        parameter:
+          exception:
+            title: Kaikki
+  example_3:
+    display_title: 'Esimerkki 3'
+    display_options:
+      title: 'Esimerkki 3'
+      fields:
+        value:
+          label: ID
+        value_1:
+          label: Tekijä

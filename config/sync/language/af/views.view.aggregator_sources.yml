@@ -1,0 +1,21 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      title: Bronne
+  feed_1:
+    display_options:
+      title: OPML-voer
+  page_1:
+    display_title: Bladsy
+    display_options:
+      menu:
+        title: Bronne

@@ -1,0 +1,42 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicar
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Seguinte ›'
+            first: '« Primeira'
+            last: 'Última »'
+          expose:
+            items_per_page_label: 'Itens por página'
+            items_per_page_options_all_label: '- Todos -'
+            offset_label: Deslocamento
+      title: 'Exemplo 1'
+  example_1:
+    display_title: 'Exemplo 1'
+  example_2:
+    display_title: 'Exemplo 2'
+    display_options:
+      title: 'Exemplo 2'
+      arguments:
+        parameter:
+          exception:
+            title: Todos
+  example_3:
+    display_title: 'Exemplo 3'
+    display_options:
+      title: 'Exemplo 3'
+      fields:
+        value:
+          label: ID
+        value_1:
+          label: Autor

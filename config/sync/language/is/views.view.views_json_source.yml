@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          tags:
+            previous: '< Fyrri'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+  example_2:
+    display_options:
+      arguments:
+        parameter:
+          exception:
+            title: Allt
+  example_3:
+    display_options:
+      fields:
+        value:
+          label: Kenni
+        value_1:
+          label: Höfundur
