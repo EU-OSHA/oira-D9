@@ -37,6 +37,7 @@ module:
   context_ui: 0
   contextual: 0
   crop: 0
+  csrf_checks: 0
   csv_serialization: 0
   ctools: 0
   date_popup: 0
