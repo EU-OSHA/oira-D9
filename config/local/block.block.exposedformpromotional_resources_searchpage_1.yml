@@ -1,28 +1,27 @@
-uuid: 27cc3753-be5b-418a-9c21-05b6ffc251e0
+uuid: cba41b9c-b1dc-4daf-b307-08498ec2df6f
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.partner_intro_info
+    - views.view.promotional_resources_search
   module:
     - context
-    - node
+    - system
     - views
   theme:
     - oira_theme
-id: views_block__partner_intro_info_block_1
+id: exposedformpromotional_resources_searchpage_1
 theme: oira_theme
 region: content
-weight: -20
+weight: -22
 provider: null
-plugin: 'views_block:partner_intro_info-block_1'
+plugin: 'views_exposed_filter_block:promotional_resources_search-page_1'
 settings:
-  id: 'views_block:partner_intro_info-block_1'
+  id: 'views_exposed_filter_block:promotional_resources_search-page_1'
   label: ''
   provider: views
   label_display: '0'
   views_label: ''
-  items_per_page: none
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -32,10 +31,7 @@ visibility:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
-  node_type:
-    id: node_type
-    bundles:
-      partner: partner
+  request_path:
+    id: request_path
+    pages: '/promotional-resources-search/*'
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
