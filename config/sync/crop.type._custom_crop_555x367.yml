@@ -1,0 +1,12 @@
+uuid: 64503b9c-905a-47b1-a1ad-577a528d4b8b
+langcode: en
+status: true
+dependencies: {  }
+id: _custom_crop_555x367
+label: 'Custom crop 555x367'
+description: ''
+aspect_ratio: ''
+soft_limit_width: 555
+soft_limit_height: 367
+hard_limit_width: null
+hard_limit_height: null

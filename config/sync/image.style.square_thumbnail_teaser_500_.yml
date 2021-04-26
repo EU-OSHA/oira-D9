@@ -1,0 +1,15 @@
+uuid: b8bdaed8-a29c-4f1b-bf63-0dffbd7a65e6
+langcode: en
+status: true
+dependencies: {  }
+name: square_thumbnail_teaser_500_
+label: 'Square thumbnail teaser (500)'
+effects:
+  5fb87b10-6ca3-4556-a868-172f94638812:
+    uuid: 5fb87b10-6ca3-4556-a868-172f94638812
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 500
+      anchor: center-center
