@@ -2256,6 +2256,9 @@ select.custom-select{
     list-style: none;
     padding: 0;
   }
+  .item-list {
+    width: 100%;
+  }
   .partner__item {
     position: relative;
     margin-bottom: 35px;
@@ -2287,6 +2290,10 @@ select.custom-select{
     line-height: 1.2;
   }
   .partner__country {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 22px 0 11px;
     font-size: 1.75rem;
     font-style: italic;
@@ -2294,19 +2301,14 @@ select.custom-select{
     color: $text-color-purple;
     border-bottom: 2px solid $bg-color-purple;
   }
-  .views-field-field-flag {
-    position: absolute;
-    top: 22px;
-    right: 0;
-    .field-content {
-      width: 45px;
-      position: relative;
-      height: 29px;
-      overflow: hidden;
-      border: 1px solid $bg-color-grey;
-      img {
-        display: block;
-      }
+  .partner__country-flag {
+    width: 45px;
+    position: relative;
+    height: 29px;
+    overflow: hidden;
+    border: 1px solid $bg-color-grey;
+    img {
+      display: block;
     }
   }
   .partner__name {

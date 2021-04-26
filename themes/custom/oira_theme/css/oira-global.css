@@ -2728,6 +2728,9 @@ select.custom-select {
   list-style: none;
   padding: 0;
 }
+.view-partners-list .item-list {
+  width: 100%;
+}
 .view-partners-list .partner__item {
   position: relative;
   margin-bottom: 35px;
@@ -2759,6 +2762,10 @@ select.custom-select {
   line-height: 1.2;
 }
 .view-partners-list .partner__country {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 22px 0 11px;
   font-size: 1.75rem;
   font-style: italic;
@@ -2766,19 +2773,14 @@ select.custom-select {
   color: #786586;
   border-bottom: 2px solid #786586;
 }
-.view-partners-list .views-field-field-flag {
-  position: absolute;
-  top: 22px;
-  right: 0;
-}
-.view-partners-list .views-field-field-flag .field-content {
+.view-partners-list .partner__country-flag {
   width: 45px;
   position: relative;
   height: 29px;
   overflow: hidden;
   border: 1px solid #808080;
 }
-.view-partners-list .views-field-field-flag .field-content img {
+.view-partners-list .partner__country-flag img {
   display: block;
 }
 .view-partners-list .partner__name {
