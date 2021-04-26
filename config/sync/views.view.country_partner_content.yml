@@ -651,6 +651,11 @@ display:
         group_by: false
         footer: false
         css_class: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
       title: 'Partner content - profile page'
       relationships:
         field_co_author_node:
@@ -2430,6 +2435,11 @@ display:
           inherit_arguments: false
           plugin_id: view
       css_class: view-main-content
+      use_more: false
+      use_more_always: false
+      use_more_text: 'View all the tools'
+      link_display: custom_url
+      link_url: /quicktabs/nojs/partner_content/2
     cache_metadata:
       max-age: -1
       contexts:
