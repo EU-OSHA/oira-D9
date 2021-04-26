@@ -12,6 +12,7 @@ display:
         title:
           label: Tittel
         type:
+          label: 'Content type'
           separator: ', '
         name:
           label: Forfattar
@@ -28,6 +29,9 @@ display:
         title:
           expose:
             label: Tittel
+        type:
+          expose:
+            label: 'Content type'
         status:
           expose:
             label: Status

@@ -9,6 +9,8 @@ display:
       fields:
         title:
           label: Titel
+        type:
+          label: 'Content type'
         name:
           label: Outeur
         status:
@@ -22,6 +24,9 @@ display:
         title:
           expose:
             label: Titel
+        type:
+          expose:
+            label: 'Content type'
         status:
           expose:
             label: Status

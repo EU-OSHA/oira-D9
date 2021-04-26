@@ -20,22 +20,12 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
-        subject:
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '
       filters:
         combine:
           expose:
@@ -50,19 +40,9 @@ display:
           expose:
             label: Limba
       fields:
-        subject:
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '
