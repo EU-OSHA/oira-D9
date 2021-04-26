@@ -303,6 +303,7 @@ select.custom-select{
       margin-right: 30px;
       margin-bottom: 20px;
       border: 1px solid grey;
+      max-width: 260px;
     }
   }
 }
@@ -399,7 +400,6 @@ select.custom-select{
   }
   main {
     position: relative;
-    max-width: 70%;
     padding: 15px;
     .form-row {
       width: 100%;
@@ -1679,7 +1679,6 @@ select.custom-select{
   }
   .oira-content {
     .views-exposed-form {
-      max-width: 70%;
       margin-bottom: 30px;
       padding: 15px 0;
       border-radius: 0px;
@@ -1705,7 +1704,6 @@ select.custom-select{
     }
   }
   .view-search {
-    max-width: 70%;
     position: relative;
     .view-content.row {
       margin: 0;
@@ -1713,7 +1711,6 @@ select.custom-select{
       padding: 30px;
     }
     .view-header {
-      max-width: 70%;
       position: absolute;
       top: -68px;
       right: -0;
@@ -2403,6 +2400,42 @@ select.custom-select{
   }
 }
 
+/*** Page Partners ***/
+.page-node-67 {
+  h1 {
+    color: $text-color-purple;
+  }
+  .field--name-field-summary p {
+    font-family: $font-family-oswald;
+    font-size: 1.375rem;
+    font-weight: $font-weight-normal;
+    line-height: 1.45;
+  }
+  #share-this-on {
+    display: none;
+  }
+  .field--name-body {
+    h2 {
+      font-size: 1.5625rem;
+      margin-bottom: 20px;
+      color: $text-color-purple;
+    }
+    hr {
+      margin: 35px 0 40px;
+      border-top: 2px solid $text-color-purple;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 #block-oiracommunity{
   @extend .full-width;
   padding: 48px 0 40px;
@@ -2447,6 +2480,133 @@ select.custom-select{
     h4 {
       font-size: 1.25rem;
       font-weight: normal;
+    }
+  }
+}
+
+/*** SiteMap ***/
+.sitemap {
+  .sitemap-item {
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: $bg-color-purple-light;
+  }
+  .block-system-main-block {
+    .navbar-nav {
+      margin: 0 auto;
+      max-width: 1170px;
+      padding: 0 15px;
+    }
+    .nav-item {
+      margin-top: 8px;
+      .dropdown {
+        margin-bottom: 0;
+      }
+      &:before {
+        display: inline-block;
+        content:">";
+      }
+      .nav-link {
+        display: inline-block;
+        padding: 0;
+        &:after {
+          display: none;
+        }
+      }
+      a {
+        padding: 0;
+      }
+    }
+    .dropdown-menu {
+      padding: 0 0 0 1.5rem;
+      display: block !important;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+    }
+    .menu-item--expanded {
+      .dropdown-toggle {
+        font-weight: $font-weight-bold;
+        font-style: italic;
+      }
+      .dropdown-item {
+        margin-top: 8px;
+        padding: 0;
+        background: transparent;
+        &:before {
+          content: "-";
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+/*** Contacto ***/
+.contact-us {
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $text-color-purple-light;
+    border-bottom: 2px solid $text-color-purple-light !important;
+    padding-bottom: 15px;
+    &:after {
+      content: "";
+      background: url(../images/icon-contact.png) no-repeat;
+      background-size: 100%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .node--type-article {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    p {
+      font-family: $font-family-oswald;
+      font-size: 1.375rem;
+      line-height: 1.45;
+    }
+  }
+  .addtoany_list{
+    display: none;
+  }
+  .block-webform {
+    background: $bg-color-purple;
+    @extend .full-width;
+    padding: 20px 0;
+    .form-group {
+      label {
+        color: white;
+        font-weight: $font-weight-bold;
+      }
+    }
+    .webform-submission-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    select.custom-select,
+    .form-control,
+    textarea {
+      border-radius: 0;
+    }
+    select.custom-select {
+      padding: 0.5rem;
+      background-position: 97% 50%;
+    }
+    .form-actions {
+      .btn.btn-primary {
+        margin: 15px 0;
+        background: white;
+        border: none;
+        border-radius: 0;
+        color: $text-color-blue-light;
+        font-style: italic;
+        font-weight: $font-weight-bold;
+      }
     }
   }
 }

@@ -146,13 +146,17 @@ jQuery(document).ready(function($){
     $('.block-facets h2').click(function(){
       $(this).toggleClass('clicked');
       $(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
+      $(this).parent('.block-facets').find('.facets-widget-checkbox').slideToggle();
     });
 
     //Clear filters toggler
-
     $('.facets-checkbox').filter(':checked').each(function(index) {
       $(this).parents('#sidebar_first').find('#edit-reset--2').addClass("show-me");
     });
+
+    //Move the summary before the menu (in node 67)
+    $('.page-node-67 .field--name-field-summary').insertBefore("#block-oiracommunity");
+    $('.page-node-67 .field--name-field-summary').addClass(".jquery--element-moved");
 
 });
 
