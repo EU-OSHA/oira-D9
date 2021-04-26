@@ -1,8 +1,398 @@
-page_title: Sitemap
+page_title: 'Site map'
 message:
-  format: plain_text
-  value: ''
-plugins: {  }
+  value: "<div class=\"container page-title-container\">\r\n<h1 class=\"page-header\">Site map</h1>\r\n</div>"
+  format: full_html
+plugins:
+  frontpage:
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Front page'
+      rss: /rss.xml
+  'menu:header-login':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Header login'
+      show_disabled: false
+  'menu:account':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'User account menu'
+      show_disabled: false
+  'menu:admin':
+    enabled: false
+    weight: 0
+    settings:
+      title: Administration
+      show_disabled: false
+  'menu:collaboration':
+    enabled: false
+    weight: 0
+    settings:
+      title: Collaboration
+      show_disabled: false
+  'menu:features':
+    enabled: false
+    weight: 0
+    settings:
+      title: Features
+      show_disabled: false
+  'menu:footer':
+    enabled: false
+    weight: 0
+    settings:
+      title: Footer
+      show_disabled: false
+  'menu:footer-menu':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Footer menu'
+      show_disabled: false
+  'menu:header-menu':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Header menu'
+      show_disabled: false
+  'vocabulary:wg_role_2':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'WG Role 2'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'menu:main':
+    enabled: true
+    weight: 0
+    settings:
+      title: ''
+      show_disabled: false
+  'menu:oira-community':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Oira Community'
+      show_disabled: false
+  'menu:private-zone':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Private zone'
+      show_disabled: false
+  'menu:search':
+    enabled: false
+    weight: 0
+    settings:
+      title: Search
+      show_disabled: false
+  'menu:social-menu':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Social menu'
+      show_disabled: false
+  'menu:social-menu-footer':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Social menu footer'
+      show_disabled: false
+  'menu:tools':
+    enabled: false
+    weight: 0
+    settings:
+      title: Tools
+      show_disabled: false
+  'vocabulary:wiki_categories':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Wiki Categories'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:wg_role_1':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'WG Role 1'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  book:
+    enabled: false
+    weight: 0
+  'vocabulary:esener':
+    enabled: false
+    weight: 0
+    settings:
+      title: Esener
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:article_types':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Article Types'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:contact_topic':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Contact Topic'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:contact_type':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Contact Type'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:contact_type_of_sender':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Contact Type of Sender'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:country':
+    enabled: false
+    weight: 0
+    settings:
+      title: Country
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:country_status':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Country Status'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:organisation_type':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Organisation type'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:wg_category':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'WG Category'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:partner_types':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Partner types'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:practical_tool_types':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Type of tool'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:promotional_material_type':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Promotional material type'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:section':
+    enabled: false
+    weight: 0
+    settings:
+      title: Partner
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:sector':
+    enabled: false
+    weight: 0
+    settings:
+      title: Sectors
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:sector_category':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Sector category'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:tags':
+    enabled: false
+    weight: 0
+    settings:
+      title: Tags
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'menu:workbench':
+    enabled: false
+    weight: 0
+    settings:
+      title: Workbench
+      show_disabled: false
 include_css: true
 _core:
   default_config_hash: xu0yG13sSQJcXrOJJqsn44W_hUWAIFHVlphrzxT2ycU

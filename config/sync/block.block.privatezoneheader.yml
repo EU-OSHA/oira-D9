@@ -8,12 +8,13 @@ dependencies:
     - block_content
     - context
     - system
+    - user
   theme:
     - oira_theme
 id: privatezoneheader
 theme: oira_theme
 region: content
-weight: -23
+weight: -24
 provider: null
 plugin: 'block_content:8605ea21-9290-4675-854c-ada9b02ce9e7'
 settings:
@@ -37,3 +38,10 @@ visibility:
     id: request_path
     pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*"
     negate: false
+  user_role:
+    id: user_role
+    roles:
+      partner: partner
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

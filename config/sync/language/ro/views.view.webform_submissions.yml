@@ -1,0 +1,98 @@
+display:
+  default:
+    display_title: Expert
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Aplicare
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            first: '« Primul'
+            last: 'Ultimul »'
+          expose:
+            items_per_page_label: 'Elemente pe pagină'
+            items_per_page_options_all_label: '- Toate -'
+            offset_label: Decalaj
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        view_webform_submission:
+          label: Operations
+      arguments:
+        in_draft:
+          exception:
+            title: Toate
+  embed_administer:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        operations:
+          label: Operations
+  embed_manage:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        view_webform_submission:
+          label: Operations
+        edit_webform_submission:
+          label: Operations
+  embed_review:
+    display_options:
+      fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
+        created:
+          label: Creat
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
+        view_webform_submission:
+          label: Operations

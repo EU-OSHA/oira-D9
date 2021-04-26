@@ -1,0 +1,24 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      title: Kjelder
+  feed_1:
+    display_options:
+      fields:
+        title:
+          separator: ', '
+      title: OPML-nyheitskjelde
+  page_1:
+    display_title: Nettside
+    display_options:
+      menu:
+        title: Kjelder

@@ -9,7 +9,7 @@ _core:
 id: oira_theme_local_tasks
 theme: oira_theme
 region: content
-weight: -26
+weight: -27
 provider: null
 plugin: local_tasks_block
 settings:

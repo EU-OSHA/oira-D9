@@ -1,0 +1,43 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          tags:
+            previous: '< forrige'
+            next: 'neste >'
+            first: '« første'
+            last: 'siste »'
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        title:
+          label: Tittel
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        name:
+          label: Forfattar
+          separator: ', '
+        changed:
+          label: Oppdatert
+          separator: ', '
+        imported:
+          separator: ', '
+        operations:
+          label: Operasjonar
+      filters:
+        title:
+          expose:
+            label: Tittel
+        type:
+          expose:
+            label: Type
+  page_1:
+    display_title: Nettside

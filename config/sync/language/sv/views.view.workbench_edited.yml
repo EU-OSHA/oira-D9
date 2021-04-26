@@ -1,0 +1,69 @@
+display:
+  default:
+    display_title: Huvud
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Verkställ
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      pager:
+        options:
+          tags:
+            previous: '‹ Föregående'
+            next: 'Nästa ›'
+            first: '« Första'
+            last: 'Sista »'
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: Titel
+          separator: ', '
+        type:
+          label: Typ
+          separator: ', '
+        status:
+          label: Publicerad
+          separator: ', '
+        changed:
+          label: 'Senast uppdaterad'
+          separator: ', '
+        uid:
+          label: Författare
+          separator: ', '
+        revision_uid:
+          separator: ', '
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Typ
+        status:
+          expose:
+            label: Publicerad
+      arguments:
+        uid_revision:
+          exception:
+            title: Alla
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Första'
+            last: 'Sista »'
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera

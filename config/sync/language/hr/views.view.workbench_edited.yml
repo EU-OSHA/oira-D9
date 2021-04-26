@@ -1,0 +1,52 @@
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Primjeni
+          reset_button_label: Poništi
+          exposed_sorts_label: 'Rasporedi po'
+          sort_asc_label: Uzlazno
+          sort_desc_label: Silazno
+      fields:
+        nid:
+          separator: ', '
+        title:
+          label: Naziv
+          separator: ', '
+        type:
+          label: Vrsta
+          separator: ', '
+        status:
+          label: Objavljeno
+          separator: ', '
+        changed:
+          label: 'Posljednje osvježenje'
+          separator: ', '
+        uid:
+          label: Autor
+          separator: ', '
+        revision_uid:
+          separator: ', '
+      filters:
+        title:
+          expose:
+            label: Naziv
+        type:
+          expose:
+            label: Vrsta
+        status:
+          expose:
+            label: Objavljeno
+      arguments:
+        uid_revision:
+          exception:
+            title: Svi
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››

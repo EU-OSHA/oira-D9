@@ -1,0 +1,28 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+          tags:
+            previous: '< Fyrri'
+      title: Uppsprettur
+  feed_1:
+    display_title: Veita
+    display_options:
+      fields:
+        title:
+          separator: ', '
+      title: 'OPML veita'
+  page_1:
+    display_title: Síða
+    display_options:
+      menu:
+        title: Uppsprettur

@@ -1,0 +1,35 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      pager:
+        options:
+          tags:
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laaste »'
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        title:
+          label: Titel
+        type:
+          label: Tipe
+        name:
+          label: Outeur
+        operations:
+          label: Aksies
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Tipe
+  page_1:
+    display_title: Bladsy
