@@ -1,0 +1,74 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Virkja
+          reset_button_label: Endursetja
+          exposed_sorts_label: 'Raða eftir'
+      pager:
+        options:
+          tags:
+            previous: '< Fyrri'
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      fields:
+        title:
+          label: Titill
+          separator: ', '
+        type:
+          label: Gerð
+          separator: ', '
+        status:
+          label: Birt
+          separator: ', '
+        name:
+          label: Höfundur
+          separator: ', '
+        changed:
+          label: 'Síðast uppfært'
+          separator: ', '
+        edit_node:
+          label: Aðgerðir
+          text: breyta
+      filters:
+        title:
+          expose:
+            label: Titill
+        type:
+          expose:
+            label: Gerð
+        status:
+          expose:
+            label: Birt
+  block_1:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'Hlutir per síðu'
+            items_per_page_options_all_label: '- Allt -'
+      filters:
+        status:
+          expose:
+            label: Birt
+      fields:
+        title:
+          label: Titill
+          separator: ', '
+        type:
+          label: Gerð
+          separator: ', '
+        name:
+          label: Höfundur
+          separator: ', '
+        changed:
+          label: 'Síðast uppfært'
+          separator: ', '
+        edit_node:
+          label: Aðgerðir
+          text: breyta

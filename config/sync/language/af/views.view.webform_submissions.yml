@@ -1,0 +1,52 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        created:
+          label: Geskep
+        view_webform_submission:
+          label: Aksies
+          text: bekyk
+      arguments:
+        in_draft:
+          exception:
+            title: Alle
+  embed_administer:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Aksie
+        created:
+          label: Geskep
+        operations:
+          label: Aksies
+  embed_manage:
+    display_options:
+      fields:
+        webform_submission_bulk_form:
+          action_title: Aksie
+        created:
+          label: Geskep
+        view_webform_submission:
+          label: Aksies
+          text: bekyk
+        edit_webform_submission:
+          label: Aksies
+          text: redigeer
+  embed_review:
+    display_options:
+      fields:
+        created:
+          label: Geskep
+        view_webform_submission:
+          label: Aksies
+          text: bekyk

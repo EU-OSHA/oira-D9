@@ -1,0 +1,26 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+  example_2:
+    display_options:
+      arguments:
+        parameter:
+          exception:
+            title: Visi
+  example_3:
+    display_options:
+      fields:
+        value:
+          label: ID
+        value_1:
+          label: Autorius

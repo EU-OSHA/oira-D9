@@ -1,0 +1,15 @@
+uuid: 627bbc83-5dc2-4fd2-b4e9-0739ac64bc5d
+langcode: en
+status: true
+dependencies: {  }
+name: new_tools_600x350_background_ffffff_
+label: 'New tools 600x350 (background #ffffff)'
+effects:
+  83611984-a12b-4ab4-ba40-f5440b99d747:
+    uuid: 83611984-a12b-4ab4-ba40-f5440b99d747
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 350
+      anchor: center-center

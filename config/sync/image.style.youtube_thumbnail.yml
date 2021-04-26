@@ -1,0 +1,15 @@
+uuid: 3c742daa-0469-4f76-8b17-7dbfadecb16c
+langcode: en
+status: true
+dependencies: {  }
+name: youtube_thumbnail
+label: 'Youtube Thumbnail'
+effects:
+  e7017e83-6017-4ff8-98aa-b1b5cfeef91d:
+    uuid: e7017e83-6017-4ff8-98aa-b1b5cfeef91d
+    id: image_scale
+    weight: 1
+    data:
+      width: 75
+      height: null
+      upscale: false

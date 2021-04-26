@@ -1,0 +1,58 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 'Pas toe'
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        title:
+          label: Titel
+        type:
+          label: Tipe
+        status:
+          label: Gepubliseerd
+        name:
+          label: Outeur
+        changed:
+          label: 'Laas opgedateer'
+        edit_node:
+          label: Aksies
+          text: redigeer
+      filters:
+        title:
+          expose:
+            label: Titel
+        type:
+          expose:
+            label: Tipe
+        status:
+          expose:
+            label: Gepubliseerd
+  block_1:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      filters:
+        status:
+          expose:
+            label: Gepubliseerd
+      fields:
+        title:
+          label: Titel
+        type:
+          label: Tipe
+        name:
+          label: Outeur
+        changed:
+          label: 'Laas opgedateer'
+        edit_node:
+          label: Aksies
+          text: redigeer

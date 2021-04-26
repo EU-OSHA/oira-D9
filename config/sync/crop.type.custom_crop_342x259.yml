@@ -1,0 +1,12 @@
+uuid: df818397-3c6f-4704-a94d-7d300eda577a
+langcode: en
+status: true
+dependencies: {  }
+id: custom_crop_342x259
+label: 'Custom crop 342x259'
+description: ''
+aspect_ratio: ''
+soft_limit_width: 342
+soft_limit_height: 259
+hard_limit_width: null
+hard_limit_height: null

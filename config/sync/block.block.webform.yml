@@ -1,0 +1,39 @@
+uuid: fa46be8f-98a1-46f5-9bb8-0dbb5f6b8f90
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.contact_us
+  module:
+    - context
+    - system
+    - webform
+  theme:
+    - oira_theme
+id: webform
+theme: oira_theme
+region: content
+weight: -17
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  provider: webform
+  label_display: '0'
+  webform_id: contact_us
+  default_data: ''
+  redirect: false
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /node/58
+    negate: false

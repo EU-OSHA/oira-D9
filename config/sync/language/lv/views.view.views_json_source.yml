@@ -1,0 +1,26 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apstiprināt
+          reset_button_label: Attīrīt
+          exposed_sorts_label: 'Kārtot pēc'
+          sort_desc_label: Dilst.
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Visi -'
+  example_2:
+    display_options:
+      arguments:
+        parameter:
+          exception:
+            title: Visi
+  example_3:
+    display_options:
+      fields:
+        value:
+          label: ID
+        value_1:
+          label: Autors

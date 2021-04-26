@@ -21,11 +21,29 @@ display:
             first: '« Primul'
             last: 'Ultimul »'
       fields:
+        state:
+          label: Status
         label:
           label: Label
+        type:
+          label: Tip
+        source_language:
+          separator: ', '
+        target_language:
+          separator: ', '
+        word_count:
+          separator: ', '
         tags_count:
           label: Etichete
+          separator: ', '
+        changed:
+          label: Schimbat
+          separator: ', '
         operations:
           label: Operations
+      filters:
+        state:
+          group_info:
+            label: Status
   page_1:
     display_title: Pagina

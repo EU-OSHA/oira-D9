@@ -1,0 +1,17 @@
+uuid: dc39a4ad-b287-4b15-afeb-1eca470bbac9
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_and_scale_600x350
+  module:
+    - crop
+name: generic_thumb_image_mc_large_
+label: 'Generic thumb image MC (large)'
+effects:
+  46d5b4f0-31ad-4c56-9541-505a9c39fbb6:
+    uuid: 46d5b4f0-31ad-4c56-9541-505a9c39fbb6
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_and_scale_600x350

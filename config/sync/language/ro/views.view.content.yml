@@ -1,0 +1,49 @@
+label: Conţinut
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: Resetează
+          exposed_sorts_label: 'Sortare după'
+          sort_asc_label: Ascendent
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Anterior'
+            next: 'Următor ›'
+            first: '« Primul'
+            last: 'Ultimul »'
+      fields:
+        title:
+          label: Titlu
+        type:
+          separator: ', '
+        name:
+          label: Autor
+        status:
+          label: Stare
+        changed:
+          label: Actualizat
+        operations:
+          label: Operations
+      filters:
+        title:
+          expose:
+            label: Titlu
+        status:
+          expose:
+            label: Stare
+        langcode:
+          expose:
+            label: Limba
+      title: Conţinut
+    display_title: Expert
+  page_1:
+    display_options:
+      menu:
+        title: Conţinut
+      tab_options:
+        title: Conţinut
+    display_title: Pagina
