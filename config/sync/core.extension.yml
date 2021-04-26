@@ -1,5 +1,6 @@
 module:
   webform_clientside_validation: -1
+  action: 0
   addtoany: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
@@ -99,6 +100,7 @@ module:
   menu_ui: 0
   metatag: 0
   node: 0
+  node_export: 0
   oira_masquerade: 0
   oira_partner: 0
   oira_partner_content_count: 0
