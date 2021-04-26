@@ -1596,12 +1596,24 @@ select.custom-select {
 .block-views-blocktools-block-2 .views-field-title .field-content a:hover {
   color: #23527c;
 }
-.block-views-blocktools-block-2 .field--name-field-country {
+.block-views-blocktools-block-2 .field--name-field-country,
+.block-views-blocktools-block-2 .field--name-field-language {
+  margin: 0;
   display: flex;
+  align-items: flex-start;
 }
-.block-views-blocktools-block-2 .field--name-field-country .field__item {
+.block-views-blocktools-block-2 .field--name-field-country .field__label,
+.block-views-blocktools-block-2 .field--name-field-language .field__label {
+  margin-right: 4px;
+}
+.block-views-blocktools-block-2 .field--name-field-country .field__item,
+.block-views-blocktools-block-2 .field--name-field-language .field__item {
   font-weight: bold;
   font-style: italic;
+}
+.block-views-blocktools-block-2 .field--name-field-country .field__item p,
+.block-views-blocktools-block-2 .field--name-field-language .field__item p {
+  margin: 0;
 }
 .block-views-blocktools-block-2 .partners-wrapper {
   display: none;
@@ -1644,6 +1656,15 @@ select.custom-select {
 }
 .block-views-blocktools-block-2 .tool-teaser-content-wrapper a:hover {
   color: #23527c;
+}
+.block-views-blocktools-block-2 .views-field-field-tool-link a:after {
+  display: inline-block;
+  margin-left: 10px;
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  color: #10b2e4;
 }
 .block-views-blocktools-block-2 .views-field-view-node .field-content {
   text-align: right;
@@ -2736,16 +2757,17 @@ select.custom-select {
 .view-partners-list .partners__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 .view-partners-list .item-list {
   width: 100%;
 }
 .view-partners-list .partner__item {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 .view-partners-list .partner__data-wrapper {
-  padding: 30px 15px 15px 0;
+  padding: 10px 15px 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2824,6 +2846,20 @@ select.custom-select {
 }
 .view-partners-list .content-count-item a {
   font-style: normal;
+}
+
+.view-oira-partners.view-oira-national-partners-page .partner__item,
+.view-oira-partners.view-display-id-page_1 .partner__item {
+  padding: 30px 15px !important;
+  border-top: 2px solid #786586;
+}
+.view-oira-partners.view-oira-national-partners-page .partner__item:first-child,
+.view-oira-partners.view-display-id-page_1 .partner__item:first-child {
+  border-top: none;
+}
+.view-oira-partners.view-oira-national-partners-page .partner__item .partner__data-wrapper,
+.view-oira-partners.view-display-id-page_1 .partner__item .partner__data-wrapper {
+  padding: 0;
 }
 
 /*** Header Nodes in View Pages ***/
