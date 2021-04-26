@@ -24,8 +24,6 @@ display:
           label: Autor
         status:
           label: Stare
-        changed:
-          label: Actualizat
         operations:
           label: Operations
       filters:

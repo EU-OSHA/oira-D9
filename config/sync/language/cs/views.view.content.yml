@@ -30,8 +30,6 @@ display:
           settings:
             format_custom_true: Zveřejněno
             format_custom_false: Skryto
-        changed:
-          label: Aktualizováno
         operations:
           label: Operace
       filters:

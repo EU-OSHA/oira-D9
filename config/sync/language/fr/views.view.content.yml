@@ -30,8 +30,6 @@ display:
           settings:
             format_custom_true: Publié
             format_custom_false: 'Non publié'
-        changed:
-          label: 'Mis à jour'
         operations:
           label: Actions
       filters:

@@ -20,6 +20,8 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
+        subject:
+          label: Subiect
         name:
           label: Autor
         changed:
@@ -27,6 +29,9 @@ display:
         operations:
           label: Operations
       filters:
+        subject:
+          expose:
+            label: Subiect
         combine:
           expose:
             label: 'Nume autor'
@@ -36,10 +41,15 @@ display:
   page_unapproved:
     display_options:
       filters:
+        subject:
+          expose:
+            label: Subiect
         langcode:
           expose:
             label: Limba
       fields:
+        subject:
+          label: Subiect
         name:
           label: Autor
         changed:

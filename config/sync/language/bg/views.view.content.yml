@@ -17,8 +17,6 @@ display:
           label: Статус
           settings:
             format_custom_true: Публикувано
-        changed:
-          label: Обновено
         operations:
           label: Действия
       filters:

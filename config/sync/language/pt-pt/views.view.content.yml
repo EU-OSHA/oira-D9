@@ -30,8 +30,6 @@ display:
           settings:
             format_custom_true: Publicado
             format_custom_false: 'Não publicado'
-        changed:
-          label: Atualizado
         operations:
           label: Operações
       filters:

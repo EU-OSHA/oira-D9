@@ -27,6 +27,8 @@ display:
           label: Label
         type:
           label: Tip
+        target_language:
+          label: Către
         tags_count:
           label: Etichete
         changed:
