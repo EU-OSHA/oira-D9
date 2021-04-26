@@ -1,0 +1,11 @@
+table {
+  border: 1px solid $text-color-black;
+  tbody tr:first-child td {
+    background-color: $text-color-blue-light;
+    color: #ffffff;
+  }
+  tr td {
+    background: white;
+    border: 1px solid $text-color-black;
+  }
+}

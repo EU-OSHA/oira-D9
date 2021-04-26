@@ -12,6 +12,13 @@
   font-size: 1rem;
   padding: 10px 15px;
   margin-bottom: 0;
+  .breadcrumb-item {
+    font-size: 1rem;
+    &:last-child {
+      color: $text-color-black;
+      font-style: normal;
+    }
+  }
   a{
     color: $text-color-blue-light;
     text-decoration: none;
