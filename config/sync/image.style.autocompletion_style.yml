@@ -1,0 +1,15 @@
+uuid: 23510fa0-e48f-4ad4-9738-d2c4869b7a85
+langcode: en
+status: true
+dependencies: {  }
+name: autocompletion_style
+label: autocompletion_style
+effects:
+  86ae59fe-77c5-4216-b34b-b70cc06eeaf7:
+    uuid: 86ae59fe-77c5-4216-b34b-b70cc06eeaf7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center

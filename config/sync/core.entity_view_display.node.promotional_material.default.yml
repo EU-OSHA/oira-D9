@@ -17,9 +17,11 @@ dependencies:
     - field.field.node.promotional_material.field_revised_date
     - field.field.node.promotional_material.field_wf_notification
     - field.field.node.promotional_material.field_workbench_access
+    - image.style.generic_thumb_image_mc_large_
     - node.type.promotional_material
   module:
     - datetime
+    - ds
     - media
     - text
     - user
@@ -60,9 +62,17 @@ content:
     weight: 1
     label: above
     settings:
-      image_style: ''
+      image_style: generic_thumb_image_mc_large_
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: media_thumbnail
     region: content
   field_image_home_latest_material:

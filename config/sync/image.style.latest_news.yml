@@ -1,0 +1,17 @@
+uuid: d98a7b29-c107-4bac-8c30-5aacd10f4114
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type._custom_crop_555x367
+  module:
+    - crop
+name: latest_news
+label: 'Latest news'
+effects:
+  fe763ac6-17dc-4ba9-9fd8-8a2954b534bd:
+    uuid: fe763ac6-17dc-4ba9-9fd8-8a2954b534bd
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: _custom_crop_555x367

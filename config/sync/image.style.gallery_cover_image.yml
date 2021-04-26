@@ -1,0 +1,17 @@
+uuid: 7cde619f-6fa0-44f8-ae71-8bbf9ed12bc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.rop_and_scale_1170x350
+  module:
+    - crop
+name: gallery_cover_image
+label: gallery_cover_image
+effects:
+  8e7535b6-72d6-4219-85ae-1e7bd2cea38b:
+    uuid: 8e7535b6-72d6-4219-85ae-1e7bd2cea38b
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: rop_and_scale_1170x350
