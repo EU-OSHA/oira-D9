@@ -37,7 +37,7 @@ display:
           label: 'Enviado en'
           separator: ', '
         changed:
-          label: Actualizado
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operaciones
@@ -97,7 +97,7 @@ display:
           label: 'Enviado en'
           separator: ', '
         changed:
-          label: Actualizado
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operaciones

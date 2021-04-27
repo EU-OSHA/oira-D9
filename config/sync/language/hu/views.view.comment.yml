@@ -37,7 +37,7 @@ display:
           label: 'Hozzászólás ehhez'
           separator: ', '
         changed:
-          label: Frissítve
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Műveletek
@@ -97,7 +97,7 @@ display:
           label: 'Hozzászólás ehhez'
           separator: ', '
         changed:
-          label: Frissítve
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Műveletek

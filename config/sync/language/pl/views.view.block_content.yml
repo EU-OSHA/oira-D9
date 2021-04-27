@@ -28,7 +28,7 @@ display:
           label: 'Rodzaj bloku'
           separator: ', '
         changed:
-          label: Uaktualniono
+          label: 'Updated date'
         operations:
           label: Operacje
       filters:

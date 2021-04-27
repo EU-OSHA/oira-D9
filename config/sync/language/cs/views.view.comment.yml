@@ -37,7 +37,7 @@ display:
           label: Příspěvek
           separator: ', '
         changed:
-          label: Aktualizováno
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operace
@@ -94,7 +94,7 @@ display:
           label: Příspěvek
           separator: ', '
         changed:
-          label: Aktualizováno
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operace

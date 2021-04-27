@@ -5,6 +5,7 @@ display:
     display_options:
       exposed_form:
         options:
+          submit_button: Filtru
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
@@ -23,20 +24,30 @@ display:
       fields:
         thumbnail__target_id:
           label: Thumbnail
+          separator: ', '
+        name:
+          separator: ', '
         bundle:
           label: Tip
+          separator: ', '
         uid:
           label: Autor
+          separator: ', '
         status:
           label: Stare
+          separator: ', '
         changed:
           label: Actualizat
+          separator: ', '
         operations:
           label: Operations
       filters:
         bundle:
           expose:
             label: Tip
+        status:
+          group_info:
+            label: 'Published status'
         langcode:
           expose:
             label: Limba

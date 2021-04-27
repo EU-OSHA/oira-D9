@@ -37,7 +37,7 @@ display:
           label: 'Geplaatst in'
           separator: ', '
         changed:
-          label: Bijgewerkt
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Bewerkingen
@@ -97,7 +97,7 @@ display:
           label: 'Geplaatst in'
           separator: ', '
         changed:
-          label: Bijgewerkt
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Bewerkingen

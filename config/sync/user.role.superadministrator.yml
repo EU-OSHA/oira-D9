@@ -121,6 +121,7 @@ permissions:
   - 'administer phpexcel'
   - 'administer print'
   - 'administer quicktabs'
+  - 'administer redirect settings'
   - 'administer redirects'
   - 'administer reroute email'
   - 'administer responsive menus'

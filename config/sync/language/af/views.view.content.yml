@@ -9,8 +9,6 @@ display:
       fields:
         title:
           label: Titel
-        type:
-          label: 'Content type'
         name:
           label: Outeur
         status:
@@ -18,19 +16,19 @@ display:
           settings:
             format_custom_true: Gepubliseerd
             format_custom_false: Ongepubliseerd
+        changed:
+          label: Updated
         operations:
           label: Aksies
       filters:
         title:
           expose:
             label: Titel
-        type:
-          expose:
-            label: 'Content type'
         status:
           expose:
             label: Status
           group_info:
+            label: 'Published '
             group_items:
               1:
                 title: Gepubliseerd

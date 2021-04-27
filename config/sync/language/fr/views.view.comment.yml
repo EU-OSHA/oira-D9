@@ -37,7 +37,7 @@ display:
           label: 'Posté sur'
           separator: ', '
         changed:
-          label: 'Mis à jour'
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Actions
@@ -97,7 +97,7 @@ display:
           label: 'Posté sur'
           separator: ', '
         changed:
-          label: 'Mis à jour'
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Actions

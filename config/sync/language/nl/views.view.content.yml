@@ -30,6 +30,8 @@ display:
           settings:
             format_custom_true: Gepubliceerd
             format_custom_false: 'Niet gepubliceerd'
+        changed:
+          label: 'Updated date'
         operations:
           label: Bewerkingen
       filters:

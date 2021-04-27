@@ -30,6 +30,8 @@ display:
           settings:
             format_custom_true: Közzétéve
             format_custom_false: Rejtett
+        changed:
+          label: 'Updated date'
         operations:
           label: Műveletek
       filters:

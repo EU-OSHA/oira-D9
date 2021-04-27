@@ -26,7 +26,7 @@ display:
           settings:
             format_custom_true: Publicēts
         changed:
-          label: Atjaunināts
+          label: 'Updated date'
         operations:
           label: Darbības
       filters:
@@ -37,6 +37,7 @@ display:
           expose:
             label: Jā
           group_info:
+            label: 'Published '
             group_items:
               1:
                 title: Publicēts

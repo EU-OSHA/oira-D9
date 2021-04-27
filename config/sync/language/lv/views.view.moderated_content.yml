@@ -17,7 +17,7 @@ display:
         type:
           label: 'Satura veids'
         changed:
-          label: Atjaunināts
+          label: 'Updated date'
         operations:
           label: Darbības
       filters:

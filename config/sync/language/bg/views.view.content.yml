@@ -17,6 +17,8 @@ display:
           label: Статус
           settings:
             format_custom_true: Публикувано
+        changed:
+          label: 'Updated date'
         operations:
           label: Действия
       filters:
@@ -30,6 +32,7 @@ display:
           expose:
             label: Статус
           group_info:
+            label: 'Published '
             group_items:
               1:
                 title: Публикувано

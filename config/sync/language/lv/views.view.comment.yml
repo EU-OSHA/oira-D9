@@ -27,7 +27,7 @@ display:
         entity_id:
           label: Ievietots
         changed:
-          label: Atjaunināts
+          label: 'Updated date'
         operations:
           label: Darbības
       filters:
@@ -72,6 +72,6 @@ display:
         entity_id:
           label: Ievietots
         changed:
-          label: Atjaunināts
+          label: 'Updated date'
         operations:
           label: Darbības

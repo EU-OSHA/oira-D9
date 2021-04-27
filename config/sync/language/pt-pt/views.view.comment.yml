@@ -37,7 +37,7 @@ display:
           label: 'Colocado em'
           separator: ', '
         changed:
-          label: Atualizado
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operações
@@ -97,7 +97,7 @@ display:
           label: 'Colocado em'
           separator: ', '
         changed:
-          label: Atualizado
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operações

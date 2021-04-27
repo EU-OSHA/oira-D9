@@ -22,6 +22,8 @@ display:
           settings:
             format_custom_true: Gepubliseerd
             format_custom_false: Ongepubliseerd
+        changed:
+          label: Updated
         operations:
           label: Aksies
       filters:
@@ -30,6 +32,7 @@ display:
             label: Tipe
         status:
           group_info:
+            label: 'Published '
             group_items:
               1:
                 title: Gepubliseerd

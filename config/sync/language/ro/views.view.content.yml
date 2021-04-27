@@ -4,6 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
+          submit_button: Filtru
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
@@ -19,23 +20,24 @@ display:
         title:
           label: Titlu
         type:
-          label: 'Content type'
+          separator: ', '
         name:
           label: Autor
         status:
           label: Stare
+        changed:
+          label: Actualizat
         operations:
           label: Operations
       filters:
         title:
           expose:
             label: Titlu
-        type:
-          expose:
-            label: 'Content type'
         status:
           expose:
             label: Stare
+          group_info:
+            label: 'Published status'
         langcode:
           expose:
             label: Limba

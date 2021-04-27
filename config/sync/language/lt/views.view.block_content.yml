@@ -18,7 +18,7 @@ display:
         type:
           label: 'Bloko tipas'
         changed:
-          label: Atnaujinta
+          label: 'Updated date'
         operations:
           label: Veiksmai
       filters:

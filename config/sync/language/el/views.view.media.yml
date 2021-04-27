@@ -39,7 +39,7 @@ display:
             format_custom_false: 'Μη δημοσιευμένο'
           separator: ', '
         changed:
-          label: Ενημερώθηκε
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Λειτουργίες

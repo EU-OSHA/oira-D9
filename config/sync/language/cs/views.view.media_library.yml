@@ -80,7 +80,7 @@ display:
         uid:
           label: Autor
         changed:
-          label: Aktualizováno
+          label: 'Updated date'
       filters:
         name:
           expose:

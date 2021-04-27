@@ -11,7 +11,7 @@ display:
         type:
           label: 'Tip vsebine'
         changed:
-          label: Posodobljeno
+          label: 'Updated date'
         operations:
           label: Operacije
       filters:

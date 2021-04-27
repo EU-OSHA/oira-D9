@@ -33,7 +33,7 @@ display:
           label: 'Modereerimise olek'
           separator: ', '
         changed:
-          label: Uuendatud
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Toimingud

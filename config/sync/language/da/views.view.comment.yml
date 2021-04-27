@@ -37,7 +37,7 @@ display:
           label: 'Indsendt til'
           separator: ', '
         changed:
-          label: Opdateret
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Handlinger
@@ -96,7 +96,7 @@ display:
           label: 'Indsendt til'
           separator: ', '
         changed:
-          label: Opdateret
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Handlinger

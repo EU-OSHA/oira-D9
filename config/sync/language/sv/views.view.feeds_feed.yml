@@ -35,7 +35,7 @@ display:
           label: Författare
           separator: ', '
         changed:
-          label: Uppdaterad
+          label: 'Updated date'
           separator: ', '
         imported:
           separator: ', '

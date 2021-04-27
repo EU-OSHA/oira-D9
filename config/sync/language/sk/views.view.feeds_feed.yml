@@ -34,7 +34,7 @@ display:
           label: Autor
           separator: ', '
         changed:
-          label: Aktualizované
+          label: 'Updated date'
           separator: ', '
         imported:
           separator: ', '

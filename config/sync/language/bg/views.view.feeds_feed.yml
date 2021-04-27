@@ -20,7 +20,7 @@ display:
         name:
           label: Автор
         changed:
-          label: Обновено
+          label: 'Updated date'
         operations:
           label: Действия
       filters:

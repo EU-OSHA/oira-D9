@@ -17,7 +17,7 @@ display:
         type:
           label: 'Turinio tipas'
         changed:
-          label: Atnaujinta
+          label: 'Updated date'
         operations:
           label: Veiksmai
       filters:

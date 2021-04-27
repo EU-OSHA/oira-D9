@@ -36,7 +36,7 @@ display:
           label: Kirjoitus
           separator: ', '
         changed:
-          label: Päivitetty
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Toimenpiteet
@@ -92,7 +92,7 @@ display:
           label: Kirjoitus
           separator: ', '
         changed:
-          label: Päivitetty
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Toimenpiteet

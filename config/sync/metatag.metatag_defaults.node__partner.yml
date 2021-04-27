@@ -1,0 +1,9 @@
+uuid: 29cec2ef-f743-4242-b798-b0f8ac547b1d
+langcode: en
+status: true
+dependencies: {  }
+id: node__partner
+label: 'Content: Partner'
+tags:
+  keywords: '[node:field_tags]'
+  description: '[node:title] has decided to join the OiRA community and will develop and implement the OiRA programme in [node:field-country:name]'

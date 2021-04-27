@@ -33,7 +33,7 @@ display:
           label: 'Moderációs állapot'
           separator: ', '
         changed:
-          label: Frissítve
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Műveletek

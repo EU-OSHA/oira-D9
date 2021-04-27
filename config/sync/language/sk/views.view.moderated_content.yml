@@ -31,7 +31,7 @@ display:
           label: 'Stav moderácie'
           separator: ', '
         changed:
-          label: Aktualizované
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operácie

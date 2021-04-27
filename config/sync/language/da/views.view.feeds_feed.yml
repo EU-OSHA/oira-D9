@@ -34,7 +34,7 @@ display:
           label: Forfatter
           separator: ', '
         changed:
-          label: Opdateret
+          label: 'Updated date'
           separator: ', '
         imported:
           separator: ', '

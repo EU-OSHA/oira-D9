@@ -42,7 +42,7 @@ display:
             format_custom_false: 'Non pubblicato'
           separator: ', '
         changed:
-          label: Aggiornato
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operazioni

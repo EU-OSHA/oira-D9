@@ -11,7 +11,7 @@ display:
         type:
           label: 'Тип на съдържанието'
         changed:
-          label: Обновено
+          label: 'Updated date'
         operations:
           label: Действия
       filters:

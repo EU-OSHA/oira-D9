@@ -15,7 +15,7 @@ display:
         info:
           label: 'Bloka apraksts'
         changed:
-          label: Atjaunināts
+          label: 'Updated date'
         operations:
           label: Darbības
       filters:

@@ -37,7 +37,7 @@ display:
           label: 'Erstellt in'
           separator: ', '
         changed:
-          label: Aktualisiert
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Aktionen
@@ -97,7 +97,7 @@ display:
           label: 'Erstellt in'
           separator: ', '
         changed:
-          label: Aktualisiert
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Aktionen

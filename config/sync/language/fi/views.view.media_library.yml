@@ -88,7 +88,7 @@ display:
         uid:
           label: Tekijä
         changed:
-          label: Päivitetty
+          label: 'Updated date'
       filters:
         name:
           expose:

@@ -32,7 +32,7 @@ display:
           label: 'Stato moderazione'
           separator: ', '
         changed:
-          label: Aggiornato
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operazioni

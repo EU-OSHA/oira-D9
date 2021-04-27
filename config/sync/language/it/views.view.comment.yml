@@ -36,7 +36,7 @@ display:
           label: 'Inserito in'
           separator: ', '
         changed:
-          label: Aggiornato
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operazioni
@@ -92,7 +92,7 @@ display:
           label: 'Inserito in'
           separator: ', '
         changed:
-          label: Aggiornato
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operazioni

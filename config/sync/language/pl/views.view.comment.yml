@@ -37,7 +37,7 @@ display:
           label: 'Odpowiedź do'
           separator: ', '
         changed:
-          label: Uaktualniono
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operacje
@@ -97,7 +97,7 @@ display:
           label: 'Odpowiedź do'
           separator: ', '
         changed:
-          label: Uaktualniono
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operacje

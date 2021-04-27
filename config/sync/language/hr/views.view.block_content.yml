@@ -16,7 +16,7 @@ display:
         type:
           separator: ', '
         changed:
-          label: Osvježeno
+          label: 'Updated date'
         operations:
           label: Operacije
       filters:

@@ -12,6 +12,8 @@ display:
       pager:
         options:
           tags:
+            previous: ‹‹
+            next: ››
             first: '« Primul'
             last: 'Ultimul »'
           expose:
@@ -19,8 +21,15 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
         created:
           label: Creat
+          separator: ', '
+        remote_addr:
+          separator: ', '
         view_webform_submission:
           label: Operations
       arguments:
@@ -30,15 +39,41 @@ display:
   embed_administer:
     display_options:
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
         created:
           label: Creat
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
         operations:
           label: Operations
   embed_manage:
     display_options:
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
         created:
           label: Creat
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
         view_webform_submission:
           label: Operations
         edit_webform_submission:
@@ -46,7 +81,20 @@ display:
   embed_review:
     display_options:
       fields:
+        sid:
+          separator: ', '
+        in_draft:
+          separator: ', '
+        sticky:
+          separator: ', '
+        locked:
+          separator: ', '
         created:
           label: Creat
+          separator: ', '
+        completed:
+          separator: ', '
+        remote_addr:
+          separator: ', '
         view_webform_submission:
           label: Operations

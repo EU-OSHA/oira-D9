@@ -54,7 +54,7 @@ display:
         uid:
           label: Автор
         changed:
-          label: Обновено
+          label: 'Updated date'
       filters:
         name:
           expose:

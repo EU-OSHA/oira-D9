@@ -44,7 +44,7 @@ display:
             format_custom_false: 'Niet gepubliceerd'
           separator: ', '
         changed:
-          label: Bijgewerkt
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Bewerkingen

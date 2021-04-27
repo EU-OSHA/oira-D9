@@ -42,7 +42,7 @@ display:
             format_custom_false: Nezverejnené
           separator: ', '
         changed:
-          label: Aktualizované
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operácie
