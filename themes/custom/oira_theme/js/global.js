@@ -131,10 +131,15 @@ jQuery(document).ready(function($){
       }
     });
 
+  /*$('.block-facet--checkbox h2').click(function(){
+    $(this).toggleClass('clicked');
+    $(this).parent('.block-facets').find('.facets-widget-checkbox').slideToggle();
+  });*/
+
   //Sidebar toggle facets
   $('.block-facets h2').click(function(){
     $(this).toggleClass('clicked');
-    $(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
+    //$(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
     $(this).parent('.block-facets').find('.facets-widget-checkbox').slideToggle();
   });
 

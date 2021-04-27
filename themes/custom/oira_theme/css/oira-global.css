@@ -522,6 +522,7 @@ legend {
   display: none;
 }
 .facet-item label {
+  cursor: pointer;
   display: flex;
   font-size: 1rem;
   padding-left: 0px;
@@ -741,6 +742,10 @@ select.custom-select {
   margin-bottom: 15px;
 }
 
+.sidebar .block {
+  padding: 0;
+}
+
 .sidebar_first .block {
   border: 0;
 }
@@ -748,17 +753,23 @@ select.custom-select {
   color: #FFF;
 }
 .sidebar_first aside h2 {
+  cursor: pointer;
+  padding: 10px 0;
+  margin-bottom: 5px;
   font-family: "Oswald";
   color: #FFF;
   font-size: 1.2rem;
   font-weight: normal;
-  text-shadow: 0 0 0 #fff;
+  text-shadow: 0 0 0 #FFF;
+  border-top: 2px solid #FFF;
+  border-bottom: none;
 }
 .sidebar_first aside h2:after {
   content: "";
   font-family: "Glyphicons Halflings";
   display: inline-block;
   margin-left: 10px;
+  line-height: 1;
 }
 .sidebar_first aside h2.active:after {
   content: "";
@@ -979,6 +990,7 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .views-row .group-left {
   flex: 0 1 25%;
+  min-width: 25%;
   padding-right: 15px;
 }
 .page-view-promotional-resources-search main .views-row .group-right {
@@ -1145,8 +1157,6 @@ select.custom-select {
   display: none;
 }
 .page-view-oira-ws #sidebar_first .block {
-  border-top: 2px solid #FFF;
-  padding: 1rem 0 0 0;
   margin-bottom: 0;
 }
 .page-view-oira-ws #sidebar_first .block:first-child {
