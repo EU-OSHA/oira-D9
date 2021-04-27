@@ -1,25 +1,25 @@
-uuid: fdd4fdd0-bc8f-4bf8-87c2-7fe3e83ffd2e
+uuid: 6f747835-1bdf-4123-9be8-61a51105c958
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.oira_tools
-    - views.view.oira_ws
+    - search_api.index.promotional_resources
+    - views.view.promotional_resources_search
   module:
     - search_api
-id: country
-name: Country
-url_alias: country
+id: resource_media_language_name_resource
+name: 'Resource » Media » Language name resource'
+url_alias: resource_media_language_name_resource
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: name_2
-facet_source_id: 'search_api:views_page__oira_ws__tools_ws'
+field_identifier: field_language
+facet_source_id: 'search_api:views_page__promotional_resources_search__page_1'
 widget:
   type: checkbox
   config:
     show_numbers: true
-    soft_limit: 20
+    soft_limit: 0
     soft_limit_settings:
       show_less_label: 'Show less'
       show_more_label: 'Show more'
@@ -30,7 +30,7 @@ query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
 enable_parent_when_child_gets_disabled: true
-hard_limit: 50
+hard_limit: 0
 exclude: false
 only_visible_when_facet_source_is_visible: true
 processor_configs:
@@ -46,6 +46,11 @@ processor_configs:
       sort: -9
     settings:
       sort: ASC
+  list_item:
+    processor_id: list_item
+    weights:
+      build: 5
+    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:
