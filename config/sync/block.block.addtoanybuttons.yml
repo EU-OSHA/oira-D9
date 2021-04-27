@@ -22,7 +22,7 @@ settings:
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: "/oira-community\r\n/node/58"
+    pages: "/oira-community\r\n/node/58\r\n/page-not-found"
     negate: null
   view_inclusion:
     id: view_inclusion
