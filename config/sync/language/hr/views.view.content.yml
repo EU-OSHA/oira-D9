@@ -22,8 +22,6 @@ display:
           label: Status
           settings:
             format_custom_true: Objavljeno
-        changed:
-          label: Osvježeno
         operations:
           label: Operacije
       filters:

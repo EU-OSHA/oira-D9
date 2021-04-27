@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.external_url
+    - node.type.file
     - node.type.news
     - node.type.slideshare
   module:
+    - better_exposed_filters
     - entity_browser
     - node
     - user
@@ -29,7 +31,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       query:
         type: views_query
@@ -40,7 +42,7 @@ display:
           query_comment: ''
           query_tags: {  }
       exposed_form:
-        type: basic
+        type: bef
         options:
           submit_button: Apply
           reset_button: false
@@ -49,6 +51,31 @@ display:
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+          bef:
+            general:
+              autosubmit: false
+              autosubmit_exclude_textfield: false
+              autosubmit_textfield_delay: 500
+              autosubmit_hide: false
+              input_required: true
+              allow_secondary: false
+              secondary_label: 'Advanced options'
+              secondary_open: false
+            filter:
+              type:
+                plugin_id: default
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''
+                  collapsible: false
+                  is_secondary: false
+              title:
+                plugin_id: default
+                advanced:
+                  collapsible: false
+                  is_secondary: false
       pager:
         type: full
         options:
@@ -262,7 +289,7 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
@@ -306,6 +333,7 @@ display:
           operator: in
           value:
             external_url: external_url
+            file: file
             news: news
             slideshare: slideshare
           group: 1
@@ -320,8 +348,8 @@ display:
             operator_list: {  }
             identifier: type
             required: false
-            remember: false
-            multiple: false
+            remember: true
+            multiple: true
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -340,16 +368,39 @@ display:
             reduce: true
           is_grouped: false
           group_info:
-            label: ''
+            label: 'Content type'
             description: ''
-            identifier: ''
+            identifier: type
             optional: true
             widget: select
             multiple: false
             remember: false
-            default_group: All
+            default_group: '1'
             default_group_multiple: {  }
-            group_items: {  }
+            group_items:
+              1:
+                title: Select
+                operator: in
+                value:
+                  external_url: external_url
+                  file: file
+                  news: news
+                  slideshare: slideshare
+                  all: '0'
+                  article: '0'
+                  page: '0'
+                  certificates: '0'
+                  collaboration_document: '0'
+                  faq: '0'
+                  landing: '0'
+                  practical_tool: '0'
+                  partner: '0'
+                  private_album: '0'
+                  oira_private_image: '0'
+                  promotional_material: '0'
+                  slide: '0'
+                  strategic_documentation: '0'
+                  wiki_page: '0'
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -407,6 +458,48 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: string
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
       sorts:
         type:
           id: type

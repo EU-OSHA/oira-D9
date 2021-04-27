@@ -12,6 +12,7 @@ display:
         title:
           label: Tittel
         type:
+          label: 'Content type'
           separator: ', '
         name:
           label: Forfattar
@@ -20,14 +21,15 @@ display:
           settings:
             format_custom_true: Publisert
             format_custom_false: Upublisert
-        changed:
-          label: Oppdatert
         operations:
           label: Operasjonar
       filters:
         title:
           expose:
             label: Tittel
+        type:
+          expose:
+            label: 'Content type'
         status:
           expose:
             label: Status

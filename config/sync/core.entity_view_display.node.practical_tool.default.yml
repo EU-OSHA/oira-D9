@@ -29,9 +29,9 @@ dependencies:
   module:
     - datetime
     - ds
+    - languagefield
     - link
     - media
-    - options
     - text
     - user
 id: node.practical_tool.default
@@ -80,9 +80,12 @@ content:
   field_language:
     weight: 4
     label: above
-    settings: {  }
+    settings:
+      link_to_entity: false
+      format:
+        name: name
     third_party_settings: {  }
-    type: list_default
+    type: languagefield_default
     region: content
   field_publication_date:
     weight: 1

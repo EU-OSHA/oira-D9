@@ -21,23 +21,12 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
-        nid:
-          separator: ', '
         title:
           label: Titlu
-          separator: ', '
         type:
           label: Tip
-          separator: ', '
-        status:
-          separator: ', '
-        changed:
-          separator: ', '
         uid:
           label: Autor
-          separator: ', '
-        revision_uid:
-          separator: ', '
       filters:
         title:
           expose:
