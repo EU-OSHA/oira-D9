@@ -3,8 +3,8 @@ name: 'Online interactive Risk Assessment'
 mail: ruben.ramos@bilbomatica.es
 slogan: ''
 page:
-  403: ''
-  404: ''
+  403: /node/1140
+  404: /node/1139
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
