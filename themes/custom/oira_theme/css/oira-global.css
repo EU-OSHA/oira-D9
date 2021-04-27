@@ -737,6 +737,15 @@ select.custom-select {
   font-weight: bold;
 }
 
+.node--type-article .field--name-body ul {
+  margin-left: 30px;
+  padding: 0;
+  list-style: disc;
+}
+.node--type-article .field--name-body .highlighted-text {
+  font-weight: 700;
+}
+
 .field--name-field-summary {
   font-weight: bold;
   margin-bottom: 15px;
@@ -2116,6 +2125,7 @@ select.custom-select {
   margin: 0;
 }
 .path-search .sidebar_first .views-exposed-form {
+  margin-bottom: 15px;
   position: relative;
 }
 .path-search .sidebar_first .form-item-sort-by {
@@ -2129,10 +2139,7 @@ select.custom-select {
   display: none;
 }
 .path-search .sidebar_first .block-facets {
-  border-top: 2px solid #FFF !important;
-  padding-top: 10px;
   clear: both;
-  margin-top: 15px;
 }
 .path-search .sidebar_first .block-facets .facets-widget-links {
   display: none;
