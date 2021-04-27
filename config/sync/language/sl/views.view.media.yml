@@ -17,7 +17,7 @@ display:
           settings:
             format_custom_true: Objavljeno
         changed:
-          label: Posodobljeno
+          label: 'Updated date'
         operations:
           label: Operacije
       filters:
@@ -26,6 +26,7 @@ display:
             label: Tip
         status:
           group_info:
+            label: 'Published '
             group_items:
               1:
                 title: Objavljeno

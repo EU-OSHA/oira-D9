@@ -9,7 +9,7 @@ display:
         info:
           label: 'Описание на блока'
         changed:
-          label: Обновено
+          label: 'Updated date'
         operations:
           label: Действия
       filters:

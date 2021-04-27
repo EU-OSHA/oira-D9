@@ -95,7 +95,7 @@ display:
         uid:
           label: Autor
         changed:
-          label: Atualizado
+          label: 'Updated date'
       filters:
         name:
           expose:

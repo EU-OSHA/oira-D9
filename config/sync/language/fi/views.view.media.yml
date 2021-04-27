@@ -42,7 +42,7 @@ display:
             format_custom_false: Julkaisematon
           separator: ', '
         changed:
-          label: Päivitetty
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Toimenpiteet

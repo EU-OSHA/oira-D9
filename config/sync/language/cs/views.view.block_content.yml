@@ -28,7 +28,7 @@ display:
           label: 'Typ bloku'
           separator: ', '
         changed:
-          label: Aktualizováno
+          label: 'Updated date'
         operations:
           label: Operace
       filters:

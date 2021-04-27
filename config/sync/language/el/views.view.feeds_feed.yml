@@ -33,7 +33,7 @@ display:
           label: Συντάκτης
           separator: ', '
         changed:
-          label: Ενημερώθηκε
+          label: 'Updated date'
           separator: ', '
         imported:
           separator: ', '

@@ -27,7 +27,7 @@ display:
             format_custom_true: Paskelbtas
             format_custom_false: Nepaskelbtas
         changed:
-          label: Atnaujinta
+          label: 'Updated date'
         operations:
           label: Veiksmai
       filters:

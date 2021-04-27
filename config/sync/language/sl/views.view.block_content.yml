@@ -8,7 +8,7 @@ display:
         info:
           label: 'Opis bloka'
         changed:
-          label: Posodobljeno
+          label: 'Updated date'
         operations:
           label: Operacije
       filters:

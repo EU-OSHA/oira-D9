@@ -28,6 +28,8 @@ display:
           settings:
             format_custom_true: Δημοσιευμένο
             format_custom_false: 'Μη δημοσιευμένο'
+        changed:
+          label: 'Updated date'
         operations:
           label: Λειτουργίες
       filters:

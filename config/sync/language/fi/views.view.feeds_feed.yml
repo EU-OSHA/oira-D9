@@ -34,7 +34,7 @@ display:
           label: Tekijä
           separator: ', '
         changed:
-          label: Päivitetty
+          label: 'Updated date'
           separator: ', '
         imported:
           separator: ', '

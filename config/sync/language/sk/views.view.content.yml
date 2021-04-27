@@ -30,6 +30,8 @@ display:
           settings:
             format_custom_true: Zverejnené
             format_custom_false: Nezverejnené
+        changed:
+          label: 'Updated date'
         operations:
           label: Operácie
       filters:

@@ -35,7 +35,7 @@ display:
           label: 'Αναρτήθηκε στο'
           separator: ', '
         changed:
-          label: Ενημερώθηκε
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Λειτουργίες
@@ -88,7 +88,7 @@ display:
           label: 'Αναρτήθηκε στο'
           separator: ', '
         changed:
-          label: Ενημερώθηκε
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Λειτουργίες

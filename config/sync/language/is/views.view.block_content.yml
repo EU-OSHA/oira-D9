@@ -20,7 +20,7 @@ display:
         type:
           separator: ', '
         changed:
-          label: Uppfært
+          label: 'Updated date'
         operations:
           label: Aðgerðir
       filters:

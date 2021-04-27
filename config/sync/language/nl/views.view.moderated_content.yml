@@ -33,7 +33,7 @@ display:
           label: Moderatiestatus
           separator: ', '
         changed:
-          label: Bijgewerkt
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Bewerkingen

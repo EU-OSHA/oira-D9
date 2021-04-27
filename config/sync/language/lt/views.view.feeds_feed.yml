@@ -26,7 +26,7 @@ display:
         name:
           label: Autorius
         changed:
-          label: Atnaujinta
+          label: 'Updated date'
         operations:
           label: Veiksmai
       filters:

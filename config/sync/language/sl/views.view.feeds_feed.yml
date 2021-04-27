@@ -19,7 +19,7 @@ display:
         name:
           label: Avtor
         changed:
-          label: Posodobljeno
+          label: 'Updated date'
         operations:
           label: Operacije
       filters:

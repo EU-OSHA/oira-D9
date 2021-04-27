@@ -4,6 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
+          submit_button: Filtru
           reset_button_label: Resetează
           exposed_sorts_label: 'Sortare după'
           sort_asc_label: Ascendent
@@ -20,6 +21,7 @@ display:
       fields:
         filename:
           label: Name
+          separator: ', '
         filesize:
           label: Mărime
         status:

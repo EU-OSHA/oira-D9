@@ -44,7 +44,7 @@ display:
             format_custom_false: Nieopublikowany
           separator: ', '
         changed:
-          label: Uaktualniono
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operacje

@@ -27,7 +27,7 @@ display:
         entity_id:
           label: kategorijoje
         changed:
-          label: Atnaujinta
+          label: 'Updated date'
         operations:
           label: Veiksmai
       filters:
@@ -69,6 +69,6 @@ display:
         entity_id:
           label: kategorijoje
         changed:
-          label: Atnaujinta
+          label: 'Updated date'
         operations:
           label: Veiksmai

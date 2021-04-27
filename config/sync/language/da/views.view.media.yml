@@ -42,7 +42,7 @@ display:
             format_custom_false: 'Ikke udgivet'
           separator: ', '
         changed:
-          label: Opdateret
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Handlinger

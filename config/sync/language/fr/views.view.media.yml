@@ -44,7 +44,7 @@ display:
             format_custom_false: 'Non publié'
           separator: ', '
         changed:
-          label: 'Mis à jour'
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Actions

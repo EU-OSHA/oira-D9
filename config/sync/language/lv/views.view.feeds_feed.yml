@@ -25,7 +25,7 @@ display:
         name:
           label: Autors
         changed:
-          label: Atjaunināts
+          label: 'Updated date'
         operations:
           label: Darbības
       filters:

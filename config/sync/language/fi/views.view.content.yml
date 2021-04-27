@@ -30,6 +30,8 @@ display:
           settings:
             format_custom_true: Julkaistu
             format_custom_false: Julkaisematon
+        changed:
+          label: 'Updated date'
         operations:
           label: Toimenpiteet
       filters:

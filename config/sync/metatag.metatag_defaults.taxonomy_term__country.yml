@@ -1,0 +1,11 @@
+uuid: 41582fe3-c4ee-4dea-aadf-0b83ebc52554
+langcode: en
+status: true
+dependencies: {  }
+id: taxonomy_term__country
+label: 'Taxonomy term: Country'
+tags:
+  keywords: 'OSH, OSHA, EU-OSHA, Occupational safety, Occupational health, European Agency'
+  canonical_url: '[current-page:url:absolute]'
+  description: 'List of organisations that have decided to join the OiRA community to support the OiRA programme in [term:name]'
+  shortlink: '[current-page:url:unaliased]'

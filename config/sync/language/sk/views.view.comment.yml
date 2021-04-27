@@ -36,7 +36,7 @@ display:
           label: 'Poslané do'
           separator: ', '
         changed:
-          label: Aktualizované
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operácie
@@ -89,7 +89,7 @@ display:
           label: 'Poslané do'
           separator: ', '
         changed:
-          label: Aktualizované
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operácie

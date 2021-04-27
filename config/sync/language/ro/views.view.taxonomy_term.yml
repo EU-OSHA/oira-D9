@@ -15,6 +15,9 @@ display:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
+          tags:
+            previous: ‹‹
+            next: ››
       arguments:
         tid:
           exception:

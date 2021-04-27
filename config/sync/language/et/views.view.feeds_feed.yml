@@ -33,7 +33,7 @@ display:
           label: Autor
           separator: ', '
         changed:
-          label: Uuendatud
+          label: 'Updated date'
           separator: ', '
         imported:
           separator: ', '

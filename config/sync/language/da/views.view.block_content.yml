@@ -28,7 +28,7 @@ display:
           label: Bloktype
           separator: ', '
         changed:
-          label: Opdateret
+          label: 'Updated date'
         operations:
           label: Handlinger
       filters:

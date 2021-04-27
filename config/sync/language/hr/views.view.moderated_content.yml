@@ -20,7 +20,7 @@ display:
         moderation_state:
           separator: ', '
         changed:
-          label: Osvježeno
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operacije

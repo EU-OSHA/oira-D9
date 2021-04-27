@@ -42,7 +42,7 @@ display:
             format_custom_false: 'Sense publicar'
           separator: ', '
         changed:
-          label: Actualitzat
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operacions

@@ -34,7 +34,7 @@ display:
           label: Autore
           separator: ', '
         changed:
-          label: Aggiornato
+          label: 'Updated date'
           separator: ', '
         imported:
           separator: ', '

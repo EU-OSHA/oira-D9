@@ -32,7 +32,7 @@ display:
           label: 'Objavljeno u'
           separator: ', '
         changed:
-          label: Osvježeno
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operacije
@@ -82,7 +82,7 @@ display:
           label: 'Objavljeno u'
           separator: ', '
         changed:
-          label: Osvježeno
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operacije

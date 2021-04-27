@@ -30,6 +30,8 @@ display:
           settings:
             format_custom_true: Opublikowane
             format_custom_false: Nieopublikowany
+        changed:
+          label: 'Updated date'
         operations:
           label: Operacje
       filters:

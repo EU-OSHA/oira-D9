@@ -26,7 +26,7 @@ display:
           label: 'Τύπος μπλοκ'
           separator: ', '
         changed:
-          label: Ενημερώθηκε
+          label: 'Updated date'
         operations:
           label: Λειτουργίες
       filters:

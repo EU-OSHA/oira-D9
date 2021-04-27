@@ -15,7 +15,6 @@ display:
           label: Tittel
           separator: ', '
         type:
-          label: 'Content type'
           separator: ', '
         moderation_state:
           separator: ', '
@@ -28,6 +27,3 @@ display:
         title:
           expose:
             label: Tittel
-        type:
-          expose:
-            label: 'Content type'

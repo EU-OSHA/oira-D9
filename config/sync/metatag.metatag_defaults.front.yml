@@ -7,5 +7,9 @@ _core:
 id: front
 label: 'Front page'
 tags:
+  generator: 'Drupal 9 (http://drupal.org)'
+  keywords: 'risk assesment, web platform, sectoral risk, tool'
   canonical_url: '[site:url]'
+  title: '[site:name] | [current-page:pager][site:slogan]'
+  description: 'OiRA is a web platform that enables the creation of sectoral risk assessment tools in any language in an easy and standardised way'
   shortlink: '[site:url]'

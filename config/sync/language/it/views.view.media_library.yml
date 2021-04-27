@@ -84,7 +84,7 @@ display:
         uid:
           label: Autore
         changed:
-          label: Aggiornato
+          label: 'Updated date'
       filters:
         name:
           expose:

@@ -17,6 +17,8 @@ display:
           label: Stanje
           settings:
             format_custom_true: Objavljeno
+        changed:
+          label: 'Updated date'
         operations:
           label: Operacije
       filters:
@@ -30,6 +32,7 @@ display:
           expose:
             label: Stanje
           group_info:
+            label: 'Published '
             group_items:
               1:
                 title: Objavljeno

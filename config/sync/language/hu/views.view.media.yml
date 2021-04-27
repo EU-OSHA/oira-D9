@@ -44,7 +44,7 @@ display:
             format_custom_false: Rejtett
           separator: ', '
         changed:
-          label: Frissítve
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Műveletek

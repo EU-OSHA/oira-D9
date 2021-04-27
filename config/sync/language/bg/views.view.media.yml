@@ -20,7 +20,7 @@ display:
           settings:
             format_custom_true: Публикувано
         changed:
-          label: Обновено
+          label: 'Updated date'
         operations:
           label: Действия
       filters:
@@ -29,6 +29,7 @@ display:
             label: Тип
         status:
           group_info:
+            label: 'Published '
             group_items:
               1:
                 title: Публикувано

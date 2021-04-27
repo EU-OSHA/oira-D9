@@ -31,7 +31,7 @@ display:
         moderation_state:
           separator: ', '
         changed:
-          label: Päivitetty
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Toimenpiteet

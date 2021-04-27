@@ -76,7 +76,7 @@ display:
         uid:
           label: Autor
         changed:
-          label: Aktualizované
+          label: 'Updated date'
       filters:
         name:
           expose:

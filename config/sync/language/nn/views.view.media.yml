@@ -39,6 +39,7 @@ display:
             label: Type
         status:
           group_info:
+            label: 'Published '
             group_items:
               1:
                 title: Publisert

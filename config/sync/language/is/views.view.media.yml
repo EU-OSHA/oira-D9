@@ -34,7 +34,7 @@ display:
             format_custom_false: 'Ekki birt'
           separator: ', '
         changed:
-          label: Uppfært
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Aðgerðir
@@ -46,6 +46,7 @@ display:
           expose:
             label: Rétt
           group_info:
+            label: 'Published '
             group_items:
               1:
                 title: Birt

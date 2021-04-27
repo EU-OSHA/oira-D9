@@ -37,7 +37,7 @@ display:
           label: 'Publicat a'
           separator: ', '
         changed:
-          label: Actualitzat
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operacions
@@ -97,7 +97,7 @@ display:
           label: 'Publicat a'
           separator: ', '
         changed:
-          label: Actualitzat
+          label: 'Updated date'
           separator: ', '
         operations:
           label: Operacions

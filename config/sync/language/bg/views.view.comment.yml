@@ -23,7 +23,7 @@ display:
         entity_id:
           label: 'Публикуван в'
         changed:
-          label: Обновено
+          label: 'Updated date'
         operations:
           label: Действия
       filters:
@@ -62,6 +62,6 @@ display:
         entity_id:
           label: 'Публикуван в'
         changed:
-          label: Обновено
+          label: 'Updated date'
         operations:
           label: Действия
