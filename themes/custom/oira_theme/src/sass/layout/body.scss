@@ -1096,11 +1096,20 @@ select.custom-select{
       color: $text-color-blue-hover;
     }
   }
-  .field--name-field-country {
+  .field--name-field-country,
+  .field--name-field-language {
+    margin: 0;
     display: flex;
+    align-items: flex-start;
+    .field__label {
+      margin-right: 4px;
+    }
     .field__item {
       font-weight: bold;
       font-style: italic;
+      p {
+        margin: 0;
+      }
     }
   }
   .partners-wrapper {
@@ -1147,6 +1156,17 @@ select.custom-select{
       &:hover {
         color: $text-color-blue-hover;
       }
+    }
+  }
+  .views-field-field-tool-link a {
+    &:after {
+      display: inline-block;
+      margin-left: 10px;
+      content: "\e164";
+      font-family: 'Glyphicons Halflings';
+      font-style: normal;
+      font-weight: $font-weight-normal;
+      color: $text-color-blue-light;
     }
   }
   .views-field-view-node .field-content {
@@ -2252,16 +2272,17 @@ select.custom-select{
   .partners__list {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   .item-list {
     width: 100%;
   }
   .partner__item {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 0;
   }
   .partner__data-wrapper {
-    padding: 30px 15px 15px 0;
+    padding: 10px 15px 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2339,6 +2360,20 @@ select.custom-select{
     }
     a {
       font-style: normal;
+    }
+  }
+}
+
+.view-oira-partners.view-oira-national-partners-page,
+.view-oira-partners.view-display-id-page_1{
+  .partner__item {
+    padding: 30px 15px !important;
+    border-top: 2px solid $bg-color-purple;
+    &:first-child {
+      border-top: none;
+    }
+    .partner__data-wrapper {
+      padding: 0;
     }
   }
 }

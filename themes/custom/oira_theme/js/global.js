@@ -131,6 +131,13 @@ jQuery(document).ready(function($){
       }
     });
 
+  //Sidebar toggle facets
+  $('.block-facets h2').click(function(){
+    $(this).toggleClass('clicked');
+    $(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
+    $(this).parent('.block-facets').find('.facets-widget-checkbox').slideToggle();
+  });
+
     //Toggle Sidebar
     $('#toggle-sidebar').click(function(){
       $(this).toggleClass('clicked');
@@ -140,13 +147,6 @@ jQuery(document).ready(function($){
     $('.sidebar_first aside').click(function(){
       $(this).toggleClass('clicked');
       $('#sidebar_first').removeClass('sidebar-expanded');
-    });
-
-    //Sidebar toggle facets
-    $('.block-facets h2').click(function(){
-      $(this).toggleClass('clicked');
-      $(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
-      $(this).parent('.block-facets').find('.facets-widget-checkbox').slideToggle();
     });
 
     //Clear filters toggler
