@@ -13,7 +13,7 @@ dependencies:
 id: language
 theme: oira_theme
 region: sidebar_first
-weight: -14
+weight: -25
 provider: null
 plugin: 'facet_block:language'
 settings:

@@ -1,34 +1,34 @@
-uuid: fdd4fdd0-bc8f-4bf8-87c2-7fe3e83ffd2e
+uuid: b0e3c310-e0c5-4943-9aa0-19def49a71e7
 langcode: en
 status: true
 dependencies:
   config:
-    - search_api.index.oira_tools
-    - views.view.oira_ws
+    - search_api.index.default_multilingual_node_index
+    - views.view.search
   module:
     - search_api
-id: country
-name: Country
-url_alias: country
+id: sector_category_for_search_site
+name: 'Sector category for search site'
+url_alias: sector_category_for_search_site
 weight: 0
 min_count: 1
 show_only_one_result: false
-field_identifier: name_2
-facet_source_id: 'search_api:views_page__oira_ws__tools_ws'
+field_identifier: field_sector_category
+facet_source_id: 'search_api:views_page__search__page_1'
 widget:
   type: checkbox
   config:
     show_numbers: true
-    soft_limit: 20
+    soft_limit: 0
     soft_limit_settings:
       show_less_label: 'Show less'
       show_more_label: 'Show more'
     show_reset_link: false
     reset_text: 'Show all'
     hide_reset_when_no_selection: false
-query_operator: or
+query_operator: and
 use_hierarchy: false
-expand_hierarchy: false
+expand_hierarchy: true
 enable_parent_when_child_gets_disabled: true
 hard_limit: 50
 exclude: false
@@ -40,12 +40,17 @@ processor_configs:
       sort: -8
     settings:
       sort: ASC
-  display_value_widget_order:
-    processor_id: display_value_widget_order
+  count_widget_order:
+    processor_id: count_widget_order
     weights:
       sort: -9
     settings:
-      sort: ASC
+      sort: DESC
+  translate_entity:
+    processor_id: translate_entity
+    weights:
+      build: 5
+    settings: {  }
   url_processor_handler:
     processor_id: url_processor_handler
     weights:
