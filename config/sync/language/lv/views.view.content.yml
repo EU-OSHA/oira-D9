@@ -20,8 +20,6 @@ display:
           label: Statuss
           settings:
             format_custom_true: Publicēts
-        changed:
-          label: Atjaunināts
         operations:
           label: Darbības
       filters:

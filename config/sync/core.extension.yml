@@ -1,5 +1,6 @@
 module:
   webform_clientside_validation: -1
+  action: 0
   addtoany: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
@@ -66,6 +67,7 @@ module:
   filter: 0
   help: 0
   history: 0
+  htmlmail: 0
   image: 0
   image_widget_crop: 0
   inline_entity_form: 0
@@ -88,6 +90,7 @@ module:
   layoutcomponents: 0
   link: 0
   locale: 0
+  mailsystem: 0
   masquerade: 0
   matomo: 0
   media: 0
@@ -98,6 +101,7 @@ module:
   menu_ui: 0
   metatag: 0
   node: 0
+  node_export: 0
   oira_masquerade: 0
   oira_partner: 0
   oira_partner_content_count: 0

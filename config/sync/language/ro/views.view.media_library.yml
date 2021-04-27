@@ -26,8 +26,6 @@ display:
     display_title: Pagina
     display_options:
       fields:
-        name:
-          separator: ', '
         edit_media:
           text: Edit
         delete_media:

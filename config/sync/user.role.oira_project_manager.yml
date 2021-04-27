@@ -52,6 +52,7 @@ permissions:
   - 'use text format filtered_html'
   - 'use text format full_html'
   - 'use text format full_html_minimal'
+  - 'use workbench access'
   - 'use workbench_moderation needs review tab'
   - 'view all unpublished content'
   - 'view files'

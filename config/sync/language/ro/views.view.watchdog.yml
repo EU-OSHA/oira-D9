@@ -19,7 +19,6 @@ display:
           label: Tip
         name:
           label: User
-          separator: ', '
         link:
           label: Operations
       filters:

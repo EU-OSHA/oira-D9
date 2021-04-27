@@ -23,13 +23,10 @@ display:
       fields:
         state:
           label: Status
-          separator: ', '
         label:
           label: Label
-        source_language_1:
-          separator: ', '
         target_language:
-          separator: ', '
+          label: Către
         translator:
           label: Furnizor
         tags_count:

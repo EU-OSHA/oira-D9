@@ -26,18 +26,12 @@ display:
           action_title: 'Cu cele selectate'
         title:
           label: Titlu
-          separator: ', '
         type:
           label: Tip
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
-        imported:
-          separator: ', '
         operations:
           label: Operations
       filters:

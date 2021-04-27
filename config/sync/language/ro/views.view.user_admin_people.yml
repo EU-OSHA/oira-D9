@@ -32,8 +32,6 @@ display:
           label: Roluri
         operations:
           label: Operations
-        mail:
-          separator: ', '
       filters:
         status:
           group_info:

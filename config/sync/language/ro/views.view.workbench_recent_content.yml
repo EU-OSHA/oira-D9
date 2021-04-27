@@ -23,17 +23,10 @@ display:
       fields:
         title:
           label: Titlu
-          separator: ', '
         type:
           label: Tip
-          separator: ', '
-        status:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
-        changed:
-          separator: ', '
       filters:
         title:
           expose:
@@ -55,12 +48,7 @@ display:
       fields:
         title:
           label: Titlu
-          separator: ', '
         type:
           label: Tip
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
-        changed:
-          separator: ', '

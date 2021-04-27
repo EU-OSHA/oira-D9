@@ -21,22 +21,17 @@ display:
             offset_label: Decalaj
       fields:
         subject:
-          separator: ', '
-        uid:
-          separator: ', '
+          label: Subiect
         name:
           label: Autor
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '
       filters:
+        subject:
+          expose:
+            label: Subiect
         combine:
           expose:
             label: 'Nume autor'
@@ -46,23 +41,18 @@ display:
   page_unapproved:
     display_options:
       filters:
+        subject:
+          expose:
+            label: Subiect
         langcode:
           expose:
             label: Limba
       fields:
         subject:
-          separator: ', '
-        uid:
-          separator: ', '
+          label: Subiect
         name:
           label: Autor
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '

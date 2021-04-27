@@ -50,9 +50,10 @@ display:
       query:
         type: views_query
         options:
-          bypass_access: false
-          skip_access: false
-          preserve_facet_query_args: false
+          skip_access: 0
+          bypass_access: 0
+          preserve_facet_query_args: 1
+          contextual_filters_or: 0
       exposed_form:
         type: bef
         options:
@@ -1138,7 +1139,7 @@ display:
             make_link: true
             path: '{{ field_tool_link__uri }} '
             absolute: false
-            external: false
+            external: true
             replace_spaces: false
             path_case: none
             trim_whitespace: false
@@ -1147,7 +1148,7 @@ display:
             link_class: ''
             prefix: ''
             suffix: ''
-            target: ''
+            target: _blank
             nl2br: false
             max_length: 0
             word_boundary: true
@@ -1178,7 +1179,7 @@ display:
             url_only: true
             url_plain: false
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
