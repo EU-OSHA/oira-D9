@@ -651,6 +651,11 @@ display:
         group_by: false
         footer: false
         css_class: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
       title: 'Partner content - profile page'
       relationships:
         field_co_author_node:
@@ -2384,7 +2389,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           view_to_insert: 'country_partner_content:block_6'
           inherit_arguments: false
           plugin_id: view
@@ -2425,11 +2430,16 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
+          empty: true
           view_to_insert: 'country_partner_content:block_7'
           inherit_arguments: false
           plugin_id: view
       css_class: view-main-content
+      use_more: false
+      use_more_always: false
+      use_more_text: 'View all the tools'
+      link_display: custom_url
+      link_url: /quicktabs/nojs/partner_content/2
     cache_metadata:
       max-age: -1
       contexts:
@@ -9236,7 +9246,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 1
+          items_per_page: 2
           offset: 0
       group_by: false
       css_class: view-footer-content

@@ -4,6 +4,7 @@
 @import 'base/utils';
 @import 'base/variables';
 
+@import 'components/cookies';
 @import 'components/accordion';
 @import 'components/breadcrumbs';
 @import 'components/buttons';
@@ -14,6 +15,7 @@
 @import 'components/pager';
 @import 'components/tabs';
 @import 'components/forms-fields';
+@import 'components/tables';
 
 @import 'layout/body';
 @import 'layout/footer';
@@ -21,6 +23,7 @@
 @import 'layout/home';
 @import 'layout/menu';
 @import 'layout/section';
+@import 'layout/node-form';
 
 @import 'responsive/common/common-responsive';
 @import 'responsive/tablet/tablet-responsive';

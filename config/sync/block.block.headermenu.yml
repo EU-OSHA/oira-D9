@@ -12,7 +12,7 @@ dependencies:
 id: headermenu
 theme: oira_theme
 region: header
-weight: -11
+weight: -25
 provider: null
 plugin: 'system_menu_block:header-menu'
 settings:

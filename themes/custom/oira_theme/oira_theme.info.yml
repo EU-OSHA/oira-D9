@@ -12,6 +12,7 @@ libraries:
 regions:
   top_header: 'Top header'
   top_header_logos: 'Top header logos'
+  medium_header_logos: 'Medium header logos'
   header: Header
   header_form: 'Header form'
   primary_menu: 'Primary menu'

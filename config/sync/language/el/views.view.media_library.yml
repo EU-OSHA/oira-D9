@@ -79,7 +79,7 @@ display:
         uid:
           label: Συντάκτης
         changed:
-          label: Ενημερώθηκε
+          label: 'Updated date'
       filters:
         name:
           expose:

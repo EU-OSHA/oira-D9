@@ -1,6 +1,6 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
+  path: sites/oira/themes/custom/oira_theme/favicon.ico
   url: ''
   use_default: true
 features:
@@ -9,8 +9,8 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: ''
+  path: sites/oira/themes/custom/oira_theme/images/oiraLogo.gif
   url: ''
-  use_default: true
+  use_default: false
 _core:
   default_config_hash: 9rAU4Pku7eMBQxauQqAgjzlcicFZ2As6zEa6zvTlCB8

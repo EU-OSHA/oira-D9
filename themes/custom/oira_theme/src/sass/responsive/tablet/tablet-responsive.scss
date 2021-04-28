@@ -1,6 +1,50 @@
 @media(max-width: 1023px) {
+  #block-logoosha {
+    max-width: 280px;
+  }
+  .block-lang-dropdown {
+    margin-right: 65px;
+    .form-select {
+      width: 137px !important;
+    }
+  }
+  #block-headerprintandfontsize {
+    display: none;
+  }
+  .top-header-content {
+    .header-blocks {
+      margin-left: 0;
+      .region-header-form {
+        align-items: flex-start;
+      }
+    }
+    .menu--header-menu a {
+      position: relative;
+      max-width: 40px;
+      font-size: 0;
+      color: transparent;
+      &:before {
+        position: absolute;
+      }
+    }
+    .region-wrapper {
+      padding:0 15px;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .header-menu-news {
+      order: 2;
+      max-width: 40px;
+    }
+  }
   .content-two-columns {
     flex-direction: column;
+    background: $bg-color-purple-light;
+    .main-column {
+      padding: 30px 15px 30px;
+      background: $bg-color-purple-light;
+      border-left: none !important;
+    }
   }
   .page-view-oira-ws .view .view-header,
   .page-view-oira-ws .view .view-content.row {
@@ -84,6 +128,11 @@
       max-width: 960px;
     }
   }
+
+  .page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws {
+    top: 76px;
+    left: 12px;
+  }
 }
 /*** End 1024px ***/
 
@@ -94,7 +143,7 @@
       .block-search-form-block{
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 28px;
         input {
           display: none;
           height: 30px;
@@ -111,8 +160,8 @@
   .top-header-content{
     .header-menu-news {
       position: absolute;
-      top: 70px;
-      right: 20px;
+      top: 60px;
+      right: 55px;
     }
   }
 

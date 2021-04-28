@@ -1,0 +1,23 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: 'Sett til standard'
+          exposed_sorts_label: 'Sorter etter'
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+  example_2:
+    display_options:
+      arguments:
+        parameter:
+          exception:
+            title: Alle
+  example_3:
+    display_options:
+      fields:
+        value_1:
+          label: Forfattar

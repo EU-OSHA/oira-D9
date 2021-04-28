@@ -104,7 +104,7 @@ display:
         uid:
           label: Szerző
         changed:
-          label: Frissítve
+          label: 'Updated date'
       filters:
         name:
           expose:

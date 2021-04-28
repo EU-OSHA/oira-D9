@@ -1,0 +1,37 @@
+uuid: c8a896cd-7d79-446e-be97-20c8cceef4fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type
+  module:
+    - context
+    - facets
+    - system
+  theme:
+    - oira_theme
+id: type
+theme: oira_theme
+region: sidebar_first
+weight: -23
+provider: null
+plugin: 'facet_block:type'
+settings:
+  id: 'facet_block:type'
+  label: Type
+  provider: facets
+  label_display: visible
+  block_id: type
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /search/site
+    negate: false

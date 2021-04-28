@@ -1,0 +1,37 @@
+uuid: 5aae19c5-abac-4a53-a06a-468baa1049ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.country
+  module:
+    - context
+    - facets
+    - system
+  theme:
+    - oira_theme
+id: country
+theme: oira_theme
+region: sidebar_first
+weight: -26
+provider: null
+plugin: 'facet_block:country'
+settings:
+  id: 'facet_block:country'
+  label: Country
+  provider: facets
+  label_display: visible
+  block_id: country
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: /oira-tools
+    negate: false

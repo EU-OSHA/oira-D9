@@ -1,0 +1,42 @@
+display:
+  default:
+    display_title: Mester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Alkalmaz
+          reset_button_label: Alaphelyzet
+          exposed_sorts_label: Rendezés
+          sort_asc_label: Növekvő
+          sort_desc_label: Csökkenő
+      pager:
+        options:
+          tags:
+            previous: '‹ Előző'
+            next: 'Következő ›'
+            first: '« Első'
+            last: 'Utolsó »'
+          expose:
+            items_per_page_label: 'Elemek száma oldalanként'
+            items_per_page_options_all_label: '– Mind –'
+            offset_label: Eltolás
+      title: 'Példa #1'
+  example_1:
+    display_title: 'Példa #1'
+  example_2:
+    display_title: 'Példa #2'
+    display_options:
+      title: 'Példa #2'
+      arguments:
+        parameter:
+          exception:
+            title: Mind
+  example_3:
+    display_title: 'Példa #3'
+    display_options:
+      title: 'Példa #3'
+      fields:
+        value:
+          label: Azonosító
+        value_1:
+          label: Szerző

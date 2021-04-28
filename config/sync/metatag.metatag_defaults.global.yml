@@ -7,5 +7,8 @@ _core:
 id: global
 label: Global
 tags:
-  canonical_url: '[current-page:url]'
+  keywords: 'OSH, OSHA, EU-OSHA, Occupational safety, Occupational health, European Agency'
+  canonical_url: '[current-page:url:absolute]'
   title: '[current-page:title] | [site:name]'
+  description: 'Safety and health at work - EU-OSHA'
+  content_language: '[current-page:url:unaliased]'

@@ -631,7 +631,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a href="{{field_tool_link__uri}}">Access the tool</a>'
+            text: '<a target="_blank" href="{{field_tool_link__uri}}">Access the tool</a>'
             make_link: false
             path: ''
             absolute: false
@@ -742,7 +742,7 @@ display:
             url_only: false
             url_plain: false
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1436,7 +1436,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"views-item-columns-container\">\r\n\r\n<h3>{{ title }}</h3>\r\n{{ field_country }}\r\n{{ field_language }}\r\n{{ field_third_language }}\r\n\r\n<div class=\"views-field-field-tool-link\">{{ field_tool_link }}</div>\r\n\r\n<div class=\"partners-wrapper\">\r\n  <div class=\"partner-wrapper partner-wrapper-related\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n       {{field_logo}}\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4>{{ title_1 }}</h4>\r\n      {{ view_node }}\r\n    </div>\r\n  </div>\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n      {{ field_logo_1 }} \r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n       <h4>{{ title_2 }}</h4>\r\n   {{ view_node_1 }}\r\n    </div>\r\n  </div>\r\n</div>\r\n<span class=\"see-more\">See more</span>\r\n</div>\r\n\r\n"
+            text: "<div class=\"views-item-columns-container\">\r\n\r\n<h3>{{ title }}</h3>\r\n{{ field_country }}\r\n{{ field_language }}\r\n\r\n\r\n<div class=\"views-field-field-tool-link\">{{ field_tool_link }}</div>\r\n\r\n<div class=\"partners-wrapper\">\r\n  <div class=\"partner-wrapper partner-wrapper-related\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n       {{field_logo}}\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4>{{ title_1 }}</h4>\r\n      {{ view_node }}\r\n    </div>\r\n  </div>\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n      {{ field_logo_1 }} \r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n       <h4>{{ title_2 }}</h4>\r\n   {{ view_node_1 }}\r\n    </div>\r\n  </div>\r\n</div>\r\n<span class=\"see-more\">See more</span>\r\n</div>\r\n\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -1857,10 +1857,11 @@ display:
       row:
         type: fields
         options:
-          inline: {  }
-          separator: ''
-          hide_empty: false
           default_field_elements: true
+          inline:
+            field_language: field_language
+          separator: ''
+          hide_empty: true
       fields:
         field_related_partners:
           id: field_related_partners
@@ -1999,7 +2000,7 @@ display:
           exclude: true
           alter:
             alter_text: false
-            text: ''
+            text: '<a target="_blank" href="{{field_tool_link__uri}}">Access the tool</a>'
             make_link: false
             path: ''
             absolute: false
@@ -2031,7 +2032,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -2041,7 +2042,7 @@ display:
           settings:
             trim_length: 80
             url_only: false
-            url_plain: false
+            url_plain: true
             rel: '0'
             target: _blank
           group_column: ''
@@ -2247,68 +2248,6 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_language:
-          id: field_language
-          table: node__field_language
-          field: field_language
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Language:'
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: div
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: true
-          plugin_id: field
         field_country:
           id: field_country
           table: node__field_country
@@ -2345,12 +2284,12 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: strong
           element_class: ''
-          element_label_type: div
+          element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: div
+          element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
@@ -2370,7 +2309,7 @@ display:
           delta_first_last: false
           multi_type: separator
           separator: ', '
-          field_api_classes: true
+          field_api_classes: false
           plugin_id: field
         field_tool_type:
           id: field_tool_type
@@ -2435,6 +2374,68 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_language:
+          id: field_language
+          table: node__field_language
+          field: field_language
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: list_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_tool_link:
           id: field_tool_link
           table: node__field_tool_link
@@ -2446,7 +2447,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a href="{{ field_tool_link__uri }}">Access the tool</a>'
+            text: '<a  target="_blank" href="{{ field_tool_link__uri }}">Access the tool</a>'
             make_link: false
             path: ''
             absolute: false
@@ -2487,10 +2488,10 @@ display:
           type: link
           settings:
             trim_length: 80
-            url_only: false
-            url_plain: false
+            url_only: true
+            url_plain: true
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -2877,7 +2878,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"tool-teaser-content-wrapper\">\r\n<div>{{title}}</div>\r\n<div>{{field_language}}</div>\r\n<div>{{field_country}}</div>\r\n<div class=\"views-field-field-tool-link\">{{ field_tool_link }}</div>\r\n\r\n<div class=\"partners-wrapper\">\r\n  \r\n  {% if (field_related_partners )%}\r\n  <div class=\"partner-wrapper partner-wrapper-related\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n       {{field_logo}}\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4>{{ title_1 }}</h4>\r\n      {{ view_node }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (field_co_author_node) %}\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n      {{ field_logo_1 }} \r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n       <h4>{{ title_2 }}</h4>\r\n   {{ view_node_1 }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n</div>\r\n<span class=\"more-link\"> See more</span>\r\n</div>"
+            text: "<div class=\"views-item-columns-container\">\r\n<div class=\"tool-teaser-content-wrapper\">\r\n<h3>{{title}}</h3>\r\n{% if (field_language) %} <div><span class=\"field__label\">Language: </span> <strong>{{field_language}}</strong> </div>{% endif %}\r\n{% if (field_country) %} <div><span class=\"field__label\">Country: </span> <strong>{{field_country}}</strong></div> {% endif %}\r\n\r\n\r\n<div class=\"views-field-field-tool-link\">{{ field_tool_link }}</div>\r\n\r\n<div class=\"partners-wrapper\">\r\n  \r\n  {% if (field_related_partners )%}\r\n  <div class=\"partner-wrapper partner-wrapper-related\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n       {{field_logo}}\r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n        <h4>{{ title_1 }}</h4>\r\n      {{ view_node }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (field_co_author_node) %}\r\n  <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n    <div class=\"partner-inner-group partner-inner-group--img\">\r\n      {{ field_logo_1 }} \r\n    </div>\r\n    <div class=\"partner-inner-group partner-inner-group--data\">\r\n       <h4>{{ title_2 }}</h4>\r\n   {{ view_node_1 }}\r\n    </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n</div>\r\n<span class=\"more-link\"> See more</span>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false

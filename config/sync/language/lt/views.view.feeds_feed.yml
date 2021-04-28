@@ -1,0 +1,40 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Pritaikyti
+          reset_button_label: Išvalyti
+          exposed_sorts_label: 'Rikiuoti pagal'
+      pager:
+        options:
+          tags:
+            previous: '‹ ankstesnis'
+            next: 'kitas  ›'
+            first: '« pirmas'
+            last: 'paskutinis  »'
+          expose:
+            items_per_page_label: 'Vienetų kiekis puslapyje'
+            items_per_page_options_all_label: '- Visos -'
+      fields:
+        feeds_feed_bulk_form:
+          action_title: 'Su pasirinktais'
+        title:
+          label: Pavadinimas
+        type:
+          label: Tipas
+        name:
+          label: Autorius
+        changed:
+          label: 'Updated date'
+        operations:
+          label: Veiksmai
+      filters:
+        title:
+          expose:
+            label: Pavadinimas
+        type:
+          expose:
+            label: Tipas
+  page_1:
+    display_title: Puslapis

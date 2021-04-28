@@ -1,0 +1,15 @@
+uuid: b120dff6-4c84-4ce9-9a78-6705ac787242
+langcode: en
+status: true
+dependencies: {  }
+name: linkit_thumb
+label: linkit_thumb
+effects:
+  78a0e647-8648-4a0d-9134-379dc3e17691:
+    uuid: 78a0e647-8648-4a0d-9134-379dc3e17691
+    id: image_scale
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      upscale: false

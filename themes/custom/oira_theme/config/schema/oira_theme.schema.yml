@@ -1,5 +1,5 @@
 # Schema for the configuration files of the Bootstrap Barrio Subtheme.
 
 oira_theme.settings:
-  type: oira_theme.settings
-  label: 'oira_theme settings'
+  type: bootstrap_barrio.settings
+  label: 'Bootstrap Barrio settings'

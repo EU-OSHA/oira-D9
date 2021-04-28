@@ -72,7 +72,7 @@ display:
         uid:
           label: Autorius
         changed:
-          label: Atnaujinta
+          label: 'Updated date'
       filters:
         name:
           expose:

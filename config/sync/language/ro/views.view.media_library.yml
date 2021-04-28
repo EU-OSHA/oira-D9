@@ -14,14 +14,23 @@ display:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
+          tags:
+            previous: ‹‹
+            next: ››
       filters:
         name:
           expose:
             label: Name
+        langcode:
+          expose:
+            label: Limba
+      title: Media
   page:
     display_title: Pagina
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: Edit
         delete_media:
@@ -46,6 +55,8 @@ display:
           label: Name
         uid:
           label: Autor
+        changed:
+          label: Actualizat
       filters:
         name:
           expose:

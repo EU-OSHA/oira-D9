@@ -1,0 +1,50 @@
+display:
+  default:
+    display_title: Peamine
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Rakenda
+          reset_button_label: Tühista
+          exposed_sorts_label: 'Sorteerimise alus'
+          sort_asc_label: Kasvav
+          sort_desc_label: Kahanev
+      pager:
+        options:
+          tags:
+            previous: '‹ eelmine'
+            next: 'järgmine ›'
+            first: '« esimene'
+            last: 'viimane »'
+          expose:
+            items_per_page_label: 'Kirjeid lehel'
+            items_per_page_options_all_label: '- Kõik -'
+            offset_label: Nihe
+      fields:
+        feeds_feed_bulk_form:
+          label: Massuuendus
+        title:
+          label: Pealkiri
+          separator: ', '
+        type:
+          label: Liik
+          separator: ', '
+        name:
+          label: Autor
+          separator: ', '
+        changed:
+          label: 'Updated date'
+          separator: ', '
+        imported:
+          separator: ', '
+        operations:
+          label: Toimingud
+      filters:
+        title:
+          expose:
+            label: Pealkiri
+        type:
+          expose:
+            label: Liik
+  page_1:
+    display_title: Lehekülg

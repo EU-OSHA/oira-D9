@@ -1,0 +1,18 @@
+uuid: 50d29f37-78d7-4709-878f-d33c0a1c8a23
+langcode: en
+status: true
+dependencies: {  }
+id: notification_when_to_be_reviewed_for_project_manager_
+workflow: oira
+transitions:
+  reviewing_final_draft: reviewing_final_draft
+roles:
+  oira_supervisor: oira_supervisor
+author: true
+site_mail: false
+emails: ''
+subject: 'OiRA - [node:type] - To be reviewed'
+body:
+  value: "<p>You have a new [node:type] to review, added by [node:author:name] ([node:author:mail]).</p>\r\n<p>You can review it by going to this link [node:url]</p>\r\n<p><a href=\"[node:url]\">[node:title]</a></p>"
+  format: full_html
+label: 'Notification when to be reviewed for Project Manager.'

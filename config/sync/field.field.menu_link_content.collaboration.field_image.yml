@@ -1,0 +1,29 @@
+uuid: 356b7ff1-b3ed-4cb4-9a05-2b7f93dfc82e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.menu_link_content.field_image
+    - media.type.image
+    - system.menu.collaboration
+id: menu_link_content.collaboration.field_image
+field_name: field_image
+entity_type: menu_link_content
+bundle: collaboration
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

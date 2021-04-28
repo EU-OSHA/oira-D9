@@ -1,0 +1,47 @@
+uuid: 29465c76-21e2-4c6d-8134-fabc8d4b1f71
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8605ea21-9290-4675-854c-ada9b02ce9e7'
+  module:
+    - block_content
+    - context
+    - system
+    - user
+  theme:
+    - oira_theme
+id: privatezoneheader
+theme: oira_theme
+region: content
+weight: -24
+provider: null
+plugin: 'block_content:8605ea21-9290-4675-854c-ada9b02ce9e7'
+settings:
+  id: 'block_content:8605ea21-9290-4675-854c-ada9b02ce9e7'
+  label: 'Private zone header'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*"
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      partner: partner
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

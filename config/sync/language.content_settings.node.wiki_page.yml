@@ -14,5 +14,5 @@ third_party_settings:
 id: node.wiki_page
 target_entity_type_id: node
 target_bundle: wiki_page
-default_langcode: und
+default_langcode: site_default
 language_alterable: true

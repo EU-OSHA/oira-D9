@@ -1,0 +1,15 @@
+uuid: d81db15e-61ab-42df-b615-9f0600472971
+langcode: en
+status: true
+dependencies: {  }
+name: generic_thumb_image_auto_crop_600x300_
+label: 'Generic thumb image (auto crop - 600X300)'
+effects:
+  a28f8379-f676-4671-b96c-f7fb9b3120ea:
+    uuid: a28f8379-f676-4671-b96c-f7fb9b3120ea
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: 200
+      upscale: false

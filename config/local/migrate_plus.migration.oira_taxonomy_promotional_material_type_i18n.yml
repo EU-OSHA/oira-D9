@@ -24,7 +24,7 @@ process:
   langcode:
     plugin: static_map
     bypass: true
-    source: ltlanguage
+    source: language
     map:
       pt: pt-pt
       'no': nn
@@ -33,7 +33,7 @@ process:
       plugin: default_value
       default_value: promotional_material_type
   name: name_field_value
-  description/value: description
+  description/value: description_field_value
   description/format: format
   weight: weight
   parent_id:

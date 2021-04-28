@@ -1,0 +1,8 @@
+uuid: c179d5fd-bd20-44a5-9dff-3443d8f07164
+langcode: en
+status: true
+dependencies: {  }
+id: mt
+label: Maltese
+weight: -10
+native_name: Malti

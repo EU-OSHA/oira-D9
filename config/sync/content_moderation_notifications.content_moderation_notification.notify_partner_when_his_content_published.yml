@@ -1,0 +1,22 @@
+uuid: 32f7aca5-4bc9-4e9e-9383-a826f67c239c
+langcode: en
+status: true
+dependencies: {  }
+id: notify_partner_when_his_content_published
+workflow: oira
+transitions:
+  publish: publish
+  publishing: publishing
+roles:
+  administrator: administrator
+  editor: editor
+  partner: partner
+  oira_supervisor: oira_supervisor
+author: true
+site_mail: false
+emails: ''
+subject: 'OiRA - [node:content-type] - New content has been published for your organisation'
+body:
+  value: "<p>OiRA: New content has been published for your organisation</p>\r\n\r\n<p>Dear Partner,</p>\r\n\r\n<p>The [node:type] item that you submitted for publication on your organisation’s profile has been validated by EU-OSHA and has now been published.</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n\r\n<p>Thank you for your participation in the OiRA project.</p>\r\n"
+  format: full_html
+label: 'Notify partner when his content published'

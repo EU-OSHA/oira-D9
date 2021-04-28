@@ -103,7 +103,7 @@ display:
         uid:
           label: Autor
         changed:
-          label: Actualizado
+          label: 'Updated date'
       filters:
         name:
           expose:

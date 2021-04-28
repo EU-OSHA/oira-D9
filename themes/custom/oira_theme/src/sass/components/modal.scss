@@ -1,0 +1,58 @@
+.ui-dialog {
+  border-radius: 8px;
+  padding: 0;
+  .ui-dialog-titlebar {
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $bg-color-grey-light-2;
+    border-radius: 0;
+    &:before,
+    &:after {
+      display: none !important;
+    }
+  }
+  .ui-dialog-content {
+    padding: 1rem 1rem 0.5rem;
+  }
+  .ui-dialog-titlebar-close {
+    position: relative;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    &:before {
+      display: block;
+      content: "x";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      line-height: 1;
+      color: $text-color-black;
+    }
+  }
+  .form-select {
+    max-width: 360px;
+    padding: 0.3rem;
+    border: 1px solid $bg-color-grey-light-2;
+  }
+  .form-actions {
+    button {
+      background: $text-color-blue;
+      color: $text-color-white;
+      border-radius: 0;
+      border: none;
+      &:before {
+        content: "> ";
+      }
+    }
+  }
+}

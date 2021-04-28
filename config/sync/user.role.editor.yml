@@ -51,7 +51,6 @@ permissions:
   - 'use text format full_html_minimal'
   - 'use workbench access'
   - 'view all unpublished content'
-  - 'view any unpublished content'
   - 'view files'
   - 'view osh content tab'
   - 'view own files'

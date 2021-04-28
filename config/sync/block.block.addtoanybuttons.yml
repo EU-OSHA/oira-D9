@@ -1,0 +1,38 @@
+uuid: 74202577-bf27-49f4-b822-44d7d8ef8567
+langcode: en
+status: true
+dependencies:
+  module:
+    - addtoany
+    - context
+    - node
+  theme:
+    - oira_theme
+id: addtoanybuttons
+theme: oira_theme
+region: content
+weight: -16
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: 'AddToAny buttons'
+  provider: addtoany
+  label_display: '0'
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: "/oira-community\r\n/node/58\r\n/page-not-found"
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

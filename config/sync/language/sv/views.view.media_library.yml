@@ -98,7 +98,7 @@ display:
         uid:
           label: Författare
         changed:
-          label: Uppdaterad
+          label: 'Updated date'
       filters:
         name:
           expose:

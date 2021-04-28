@@ -72,7 +72,7 @@ display:
         uid:
           label: Autors
         changed:
-          label: Atjaunināts
+          label: 'Updated date'
       filters:
         name:
           expose:

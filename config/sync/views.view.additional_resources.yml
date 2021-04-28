@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_external_url
   module:
-    - datetime
     - link
     - node
     - user
@@ -117,20 +116,7 @@ display:
           separator: ', '
           field_api_classes: false
       filters: {  }
-      sorts:
-        field_publication_date_value:
-          id: field_publication_date_value
-          table: node__field_publication_date
-          field: field_publication_date_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: DESC
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          plugin_id: datetime
+      sorts: {  }
       header: {  }
       footer: {  }
       empty: {  }
@@ -190,6 +176,9 @@ display:
         style: false
         row: false
         fields: false
+        filters: false
+        filter_groups: false
+        sorts: false
       arguments:
         nid:
           id: nid
@@ -390,7 +379,7 @@ display:
             link_class: ''
             prefix: ''
             suffix: ''
-            target: ''
+            target: _blank
             nl2br: false
             max_length: 0
             word_boundary: false
@@ -480,6 +469,27 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
+      filters: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      sorts:
+        changed:
+          id: changed
+          table: node_field_data
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: changed
+          plugin_id: date
     cache_metadata:
       max-age: -1
       contexts:
@@ -583,6 +593,7 @@ display:
         style: false
         row: false
         relationships: false
+        sorts: false
       filters: {  }
       filter_groups:
         operator: AND
@@ -619,6 +630,22 @@ display:
           required: false
           entity_type: node
           plugin_id: entity_reverse
+      sorts:
+        changed:
+          id: changed
+          table: node_field_data
+          field: changed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: changed
+          plugin_id: date
     cache_metadata:
       max-age: -1
       contexts:

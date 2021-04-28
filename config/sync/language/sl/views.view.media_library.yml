@@ -52,7 +52,7 @@ display:
         uid:
           label: Avtor
         changed:
-          label: Posodobljeno
+          label: 'Updated date'
       filters:
         name:
           expose:

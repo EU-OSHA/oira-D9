@@ -1,0 +1,14 @@
+uuid: 54a6c8b5-65a0-4982-a3db-90628c3addf2
+langcode: en
+status: true
+dependencies: {  }
+name: resize_image_600x350_
+label: 'Resize Image (600X350)'
+effects:
+  8f8eaeb9-26ae-4cc5-abe8-1c4111dda55b:
+    uuid: 8f8eaeb9-26ae-4cc5-abe8-1c4111dda55b
+    id: image_resize
+    weight: 1
+    data:
+      width: 600
+      height: 350

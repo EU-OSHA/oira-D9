@@ -1,0 +1,34 @@
+uuid: c50c9d81-3de7-47a7-aa7d-c9962deb1ad7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bae9f851-0b15-4563-aa19-3729a45b19a6'
+  module:
+    - block_content
+    - context
+  theme:
+    - oira_theme
+id: headerprintandfontsize
+theme: oira_theme
+region: header
+weight: -26
+provider: null
+plugin: 'block_content:bae9f851-0b15-4563-aa19-3729a45b19a6'
+settings:
+  id: 'block_content:bae9f851-0b15-4563-aa19-3729a45b19a6'
+  label: 'Header (print and font size)'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    pages: ''
+    negate: null
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

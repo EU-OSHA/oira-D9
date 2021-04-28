@@ -32,7 +32,6 @@ permissions:
   - 'use text format filtered_html'
   - 'use text format full_html'
   - 'use text format full_html_minimal'
-  - 'use workbench access'
   - 'view the administration theme'
   - 'view translation content validators'
   - 'view translation job'

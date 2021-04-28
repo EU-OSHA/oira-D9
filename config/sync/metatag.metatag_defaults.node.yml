@@ -7,6 +7,7 @@ _core:
 id: node
 label: Content
 tags:
+  keywords: '[node:field_tags]'
+  canonical_url: '[node:url]'
   title: '[node:title] | [site:name]'
   description: '[node:summary]'
-  canonical_url: '[node:url]'

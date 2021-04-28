@@ -1,0 +1,15 @@
+uuid: fb97d735-7f6d-4ba6-9cd9-7f84d6f36007
+langcode: en
+status: true
+dependencies: {  }
+name: scale_600x350_background_dfd8e4_align_to_left_
+label: 'Scale 600x350 (background #dfd8e4, align to left)'
+effects:
+  c2daad21-4651-43d6-9dfd-9d4e0d15e1d9:
+    uuid: c2daad21-4651-43d6-9dfd-9d4e0d15e1d9
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: 350
+      upscale: false

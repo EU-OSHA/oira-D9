@@ -11,6 +11,5 @@ permissions:
   - 'masquerade as any user'
   - 'masquerade as user'
   - 'use text format filtered_html'
-  - 'use workbench access'
   - 'view translation job'
   - 'view translation job item'

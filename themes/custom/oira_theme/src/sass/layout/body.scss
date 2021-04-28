@@ -140,7 +140,7 @@ select.custom-select{
   border: none;
   font-weight: bold;
   height: initial;
-  background: url(../images/select-ico.png) no-repeat 100% -2px;
+  background: url(../images/select-arrow-gray.svg) no-repeat 100% 50%;
   background-color: rgba(0, 0, 0, 0);
   padding-right: 1.5em;
 }
@@ -183,31 +183,51 @@ select.custom-select{
   font-weight: bold;
 }
 
+.node--type-article {
+  .field--name-body {
+    ul {
+      margin-left: 30px;
+      padding: 0;
+      list-style: disc;
+    }
+    .highlighted-text {
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
 .field--name-field-summary{
   font-weight: bold;
   margin-bottom: 15px;
 }
 
+.sidebar .block {
+  padding: 0;
+}
+
 .sidebar_first {
-  float: left;
-  background: $bg-color-purple;
   .block{
     border: 0;
   }
   aside{
-    float: right;
     color:$text-color-white;
     h2{
+      cursor: pointer;
+      padding: 10px 0;
+      margin-bottom: 5px;
       font-family: 'Oswald';
       color:$text-color-white;
       font-size: 1.2rem;
       font-weight: normal;
-      text-shadow: 0 0 0 #fff;
+      text-shadow: 0 0 0 $text-color-white;
+      border-top: 2px solid $text-color-white;
+      border-bottom: none;
       &:after{
         content: "\e252";
         font-family: "Glyphicons Halflings";
         display: inline-block;
         margin-left: 10px;
+        line-height: 1;
       }
     }
     h2.active{
@@ -216,6 +236,7 @@ select.custom-select{
         font-family: "Glyphicons Halflings";
         display: inline-block;
         margin-left: 10px;
+
       }
     }
     a{
@@ -233,21 +254,25 @@ select.custom-select{
 
 .content-two-columns{
   display: flex;
-  padding-top: 1rem;
-  .two-column{
-    float: right;
-    background: $bg-color-purple-light;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#765e84+1,765e84+35,dfd8e4+35,dfd8e4+35,dfd8e4+100 */
+  background: #765e84; /* Old browsers */
+  background: -moz-linear-gradient(left,  #765e84 1%, #765e84 35%, #dfd8e4 35%, #dfd8e4 35%, #dfd8e4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #765e84 1%,#765e84 35%,#dfd8e4 35%,#dfd8e4 35%,#dfd8e4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #765e84 1%,#765e84 35%,#dfd8e4 35%,#dfd8e4 35%,#dfd8e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#765e84', endColorstr='#dfd8e4',GradientType=1 ); /* IE6-9 */
+
+  .sidebar_first {
+    background: #765e84;
+    padding: 30px 30px 30px 15px;
+  }
+  .main-column {
     border-left: 5px solid $bg-color-white;
-    padding-bottom: 2rem;
+    padding: 14px 15px 30px 30px;
+    background: #dfd8e4;
   }
 }
 
 /*Styling inputs*/
-.page-view-oira-ws{
-  .sidebar_first{
-
-  }
-}
 
 /* End Common elements */
 
@@ -302,6 +327,7 @@ select.custom-select{
       margin-right: 30px;
       margin-bottom: 20px;
       border: 1px solid grey;
+      max-width: 260px;
     }
   }
 }
@@ -398,7 +424,6 @@ select.custom-select{
   }
   main {
     position: relative;
-    max-width: 70%;
     padding: 15px;
     .form-row {
       width: 100%;
@@ -443,6 +468,7 @@ select.custom-select{
       }
       .group-left {
         flex: 0 1 25%;
+        min-width: 25%;
         padding-right: 15px;
       }
       .group-right {
@@ -568,7 +594,7 @@ select.custom-select{
             padding-top: 5px;
             padding-right: 5px;
           }
-          select.custom-select{
+          select.custom-select {
             width: auto;
             margin-top: 7px;
             margin-left: 7px;
@@ -587,7 +613,6 @@ select.custom-select{
   }
 
   #sidebar_first {
-    padding-top: 2rem;
     aside{
       h2{
         border-bottom: 0;
@@ -595,7 +620,7 @@ select.custom-select{
       }
       #edit-submit-oira-ws--2{
         position: absolute;
-        top: 18px;
+        top: 4px;
         right: 0px;
         color: #786586;
         border: none;
@@ -626,9 +651,11 @@ select.custom-select{
       }
     }
     .block{
-      border-top: 2px solid $bg-color-white;
-      padding: 1rem 0 0 0;
       margin-bottom: 0;
+      &:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
     }
   }
   #block-exposedformoira-wstools-ws{
@@ -637,17 +664,13 @@ select.custom-select{
     }
   }
   .view{
-    padding-left: 0.5rem;
     .view-header{
-      width: 70%;
       text-align: right;
-      margin-top: 20px;
       padding: 15px 0 15px 0;
       border-top: 2px solid $bg-color-purple;
       border-bottom: 2px solid $bg-color-purple;
     }
     .view-content.row{
-      width: 70%;
       margin: 2rem 0 0 0;
       padding-top: 2rem;
       background: $bg-color-white;
@@ -898,7 +921,10 @@ select.custom-select{
   }
   .views-field-description__value{
     font-size: 0.85rem;
-    padding-top: 10px;
+    padding-top: 15px;
+    p {
+      margin-bottom: 11px;
+    }
   }
 }
 
@@ -1093,11 +1119,20 @@ select.custom-select{
       color: $text-color-blue-hover;
     }
   }
-  .field--name-field-country {
+  .field--name-field-country,
+  .field--name-field-language {
+    margin: 0;
     display: flex;
+    align-items: flex-start;
+    .field__label {
+      margin-right: 4px;
+    }
     .field__item {
       font-weight: bold;
       font-style: italic;
+      p {
+        margin: 0;
+      }
     }
   }
   .partners-wrapper {
@@ -1144,6 +1179,17 @@ select.custom-select{
       &:hover {
         color: $text-color-blue-hover;
       }
+    }
+  }
+  .views-field-field-tool-link a {
+    &:after {
+      display: inline-block;
+      margin-left: 10px;
+      content: "\e164";
+      font-family: 'Glyphicons Halflings';
+      font-style: normal;
+      font-weight: $font-weight-normal;
+      color: $text-color-blue-light;
     }
   }
   .views-field-view-node .field-content {
@@ -1270,16 +1316,20 @@ select.custom-select{
 
 /*** Language switcher ***/
 .block-lang-dropdown {
+  margin-bottom: 6px;
   .form-select {
     border: 2px solid #003399;
     outline: none;
     border-radius: 0px;
     height: initial;
     padding: 2px 3px;
-    background-color: #786586;
+    background-color: $bg-color-purple !important;
+    background-image: url(../images/select-arrow.svg);
+    background-position: 97% 50%;
     color: #ffffff;
     width: 190px !important;
     font-size: 1rem;
+    font-weight: $font-weight-normal;
   }
 }
 
@@ -1416,16 +1466,17 @@ select.custom-select{
   @extend .full-width;
   background: $bg-color-purple;
   padding-top: 22px;
-  h2, .content {
+  .content {
     margin: 0 auto;
     max-width: 1140px;
-    color: white;
+    color: $text-color-white;
   }
   h2 {
+    max-width: 1140px;
     padding-bottom: 15px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
     font-family: $font-family-oswald;
-    color: #ffffff;
+    color: $text-color-white;
     font-size: 2rem;
     border-bottom: 2px solid #ffffff;
     &:after {
@@ -1434,8 +1485,8 @@ select.custom-select{
       background-size: 100%;
       width: 40px;
       height: 40px;
-      float: right;
       width: 35px;
+      float: right;
     }
   }
   .view-news {
@@ -1475,7 +1526,11 @@ select.custom-select{
   h2, .content {
     margin: 0 auto;
     max-width: 1140px;
-    color: $text-color-purple;
+    color: $text-color-purple-light;
+  }
+  .content {
+    border-bottom: 2px solid $text-color-purple-light;
+    padding-bottom: 23px;
   }
   h2 {
     margin-bottom: 22px;
@@ -1589,6 +1644,7 @@ select.custom-select{
       margin: 0;
     }
     .views-exposed-form {
+      margin-bottom: 15px;
       position: relative;
     }
     .form-item-sort-by {
@@ -1602,10 +1658,7 @@ select.custom-select{
       }
     }
     .block-facets {
-      border-top: 2px solid $bg-color-white !important;
-      padding-top: 10px;
       clear: both;
-      margin-top: 15px;
       .facets-widget-links {
         display: none;
       }
@@ -1637,9 +1690,6 @@ select.custom-select{
       margin: 0;
       padding: 0;
     }
-    #edit-reset--2 {
-      display: none;
-    }
     #edit-submit-search--2 {
       position: absolute;
       top: 2px;
@@ -1662,6 +1712,7 @@ select.custom-select{
       }
     }
   }
+
   #main {
     padding-bottom: 90px;
     padding-left: 30px;
@@ -1669,7 +1720,6 @@ select.custom-select{
   }
   .oira-content {
     .views-exposed-form {
-      max-width: 70%;
       margin-bottom: 30px;
       padding: 15px 0;
       border-radius: 0px;
@@ -1695,7 +1745,6 @@ select.custom-select{
     }
   }
   .view-search {
-    max-width: 70%;
     position: relative;
     .view-content.row {
       margin: 0;
@@ -1703,7 +1752,6 @@ select.custom-select{
       padding: 30px;
     }
     .view-header {
-      max-width: 70%;
       position: absolute;
       top: -68px;
       right: -0;
@@ -1840,24 +1888,38 @@ select.custom-select{
   }
 }
 
+#edit-reset--2 {
+  display: none;
+  &.show-me {
+    display: block;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 /**** Partner content page ***/
 
 .view-partner-intro {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto 30px;
+  .view-content.row {
+
+  }
+  .views-row {
+    width: 100%;
+  }
   .partner__intro-data {
     display: flex;
     align-items: center;
     background-color: $bg-color-white;
     border-bottom: 2px solid $text-color-purple;
-    padding-top: 10px;
-    margin-bottom: 35px;
-    padding-bottom: 10px;
-  }
-  .partner__logo {
-    width: 25%;
-    max-width: 25%;
+    padding: 10px 0;
+    margin: 0 15px 35px;
+    img {
+      margin: 0;
+    }
   }
   .partner__title {
     width: 66%;
@@ -1866,13 +1928,17 @@ select.custom-select{
       font-size: 2.5625rem;
     }
   }
-  .partner__address {
+  .views-field-nothing-1 {
+    width: 25%;
     padding: 0 15px;
+    margin-bottom: 40px;
+  }
+  .partner__address {
     .field__label {
       display: block;
       margin-bottom: 15px;
       font-weight: $font-weight-bold;
-      color: $text-color-purple;
+      color: $text-color-purple-light;
     }
     .field__content {
       display: flex;
@@ -1892,12 +1958,13 @@ select.custom-select{
     }
   }
   .partner__socialprofile {
+    width: 25%;
     padding: 0 15px;
     .field__label {
       display: block;
       margin-bottom: 15px;
       font-weight: $font-weight-bold;
-      color: $text-color-purple;
+      color: $text-color-purple-light;
     }
     .list-group {
       margin: 0;
@@ -1924,6 +1991,8 @@ select.custom-select{
 .view-country-partner-content {
   > .view-content.row {
     background: $bg-color-white;
+    margin-left: 0;
+    margin-rigth: 0;
     > h3 {
       &:after {
         display: block;
@@ -1934,6 +2003,18 @@ select.custom-select{
         height: 45px;
         float: right;
       }
+    }
+  }
+  .datetime {
+    color: $text-color-purple-light;
+  }
+  .views-field-field-image {
+    a {
+      display: block;
+    }
+    img {
+      width: 100%;
+      border: 1px solid $bg-color-grey;
     }
   }
   h3 {
@@ -1949,16 +2030,13 @@ select.custom-select{
   }
   .view-header,
   .view-footer {
-    padding-bottom: 30px;
     .view-content > h3 {
-      padding: 0 15px;
       max-width: 1140px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-top: 0;
-      margin-bottom: 15px;
       &:after {
         display: block;
         content: "";
@@ -1978,7 +2056,7 @@ select.custom-select{
       background: $bg-color-purple-light;
     }
     .views-row {
-      padding: 15px 15px;
+      padding: 30px 15px;
       max-width: 1140px;
       margin: 0 auto;
     }
@@ -2013,9 +2091,19 @@ select.custom-select{
     padding: 0 15px;
   }
   .group-right {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 75%;
     padding: 0 15px;
+    .revised-date,
+    .tags,
+    .expandible {
+      flex: 0 0 auto;
+    }
+    .title {
+      flex: 1 1 auto;
+    }
   }
   .title {
     h3 {
@@ -2029,6 +2117,7 @@ select.custom-select{
   .tool-link {
     position: absolute;
     right: 0;
+    bottom: 0;
     display: flex;
     justify-content: flex-end;
     a {
@@ -2132,17 +2221,15 @@ select.custom-select{
     .views-field-field-image {
       position: relative;
       display: inline-block;
-      float: left;
-      margin-right: 30px;
-      margin-bottom: 35px;
       border: 1px solid grey;
+      width: 100%;
       a {
         display: block;
       }
     }
   }
   .group-right {
-    width: auto;
+    width: 100%;
     padding: 0 15px;
     .news__view-node {
       a {
@@ -2206,12 +2293,17 @@ select.custom-select{
   .partners__list {
     list-style: none;
     padding: 0;
+    margin: 0;
+  }
+  .item-list {
+    width: 100%;
   }
   .partner__item {
-    margin-bottom: 45px;
+    position: relative;
+    margin-bottom: 0;
   }
   .partner__data-wrapper {
-    padding: 50px 15px 30px 0;
+    padding: 10px 15px 10px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2237,12 +2329,26 @@ select.custom-select{
     line-height: 1.2;
   }
   .partner__country {
-    padding-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0 11px;
     font-size: 1.75rem;
     font-style: italic;
     font-weight: $font-weight-bold;
     color: $text-color-purple;
     border-bottom: 2px solid $bg-color-purple;
+  }
+  .partner__country-flag {
+    width: 45px;
+    position: relative;
+    height: 29px;
+    overflow: hidden;
+    border: 1px solid $bg-color-grey;
+    img {
+      display: block;
+    }
   }
   .partner__name {
     font-size: 1.75rem;
@@ -2275,6 +2381,20 @@ select.custom-select{
     }
     a {
       font-style: normal;
+    }
+  }
+}
+
+.view-oira-partners.view-oira-national-partners-page,
+.view-oira-partners.view-display-id-page_1{
+  .partner__item {
+    padding: 30px 15px !important;
+    border-top: 2px solid $bg-color-purple;
+    &:first-child {
+      border-top: none;
+    }
+    .partner__data-wrapper {
+      padding: 0;
     }
   }
 }
@@ -2332,6 +2452,217 @@ select.custom-select{
       line-height: 45px;
       display: block;
       color: $text-color-white;
+    }
+  }
+}
+
+/*** Page Partners ***/
+.page-node-67 {
+  h1 {
+    color: $text-color-purple;
+  }
+  .field--name-field-summary p {
+    font-family: $font-family-oswald;
+    font-size: 1.375rem;
+    font-weight: $font-weight-normal;
+    line-height: 1.45;
+  }
+  #share-this-on {
+    display: none;
+  }
+  .field--name-body {
+    h2 {
+      font-size: 1.5625rem;
+      margin-bottom: 20px;
+      color: $text-color-purple;
+    }
+    hr {
+      margin: 35px 0 40px;
+      border-top: 2px solid $text-color-purple;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#block-oiracommunity{
+  @extend .full-width;
+  padding: 48px 0 40px;
+  margin-bottom: 20px;
+  background: $bg-color-purple;
+}
+
+.menu--oira-community {
+  .menu {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+  }
+  .menu-item {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 0 auto;
+    }
+    > a {
+      order: 2;
+      color: $text-color-white;
+    }
+  }
+  .menu-link-contentoira-community {
+    order: 1;
+  }
+}
+
+/*** Page How to carry out risk assessment ***/
+.page-node-65,
+.how-carry-out-risk-assessment {
+  .text-formatted {
+    h4 {
+      font-size: 1.25rem;
+      font-weight: normal;
+    }
+  }
+}
+
+/*** SiteMap ***/
+.sitemap {
+  .sitemap-item {
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: $bg-color-purple-light;
+  }
+  .block-system-main-block {
+    .navbar-nav {
+      margin: 0 auto;
+      max-width: 1170px;
+      padding: 0 15px;
+    }
+    .nav-item {
+      margin-top: 8px;
+      .dropdown {
+        margin-bottom: 0;
+      }
+      &:before {
+        display: inline-block;
+        content:">";
+      }
+      .nav-link {
+        display: inline-block;
+        padding: 0;
+        &:after {
+          display: none;
+        }
+      }
+      a {
+        padding: 0;
+      }
+    }
+    .dropdown-menu {
+      padding: 0 0 0 1.5rem;
+      display: block !important;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+    }
+    .menu-item--expanded {
+      .dropdown-toggle {
+        font-weight: $font-weight-bold;
+        font-style: italic;
+      }
+      .dropdown-item {
+        margin-top: 8px;
+        padding: 0;
+        background: transparent;
+        &:before {
+          content: "-";
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+/*** Contacto ***/
+.contact-us {
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $text-color-purple-light;
+    border-bottom: 2px solid $text-color-purple-light !important;
+    padding-bottom: 15px;
+    &:after {
+      content: "";
+      background: url(../images/icon-contact.png) no-repeat;
+      background-size: 100%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .node--type-article {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    p {
+      font-family: $font-family-oswald;
+      font-size: 1.375rem;
+      line-height: 1.45;
+    }
+  }
+  .addtoany_list{
+    display: none;
+  }
+  .block-webform {
+    background: $bg-color-purple;
+    @extend .full-width;
+    padding: 20px 0;
+    .form-group {
+      label {
+        color: white;
+        font-weight: $font-weight-bold;
+      }
+    }
+    .webform-submission-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    select.custom-select,
+    .form-control,
+    textarea {
+      border-radius: 0;
+    }
+    select.custom-select {
+      padding: 0.5rem;
+      background-position: 97% 50%;
+    }
+    .form-actions {
+      .btn.btn-primary {
+        margin: 15px 0;
+        background: white;
+        border: none;
+        border-radius: 0;
+        color: $text-color-blue-light;
+        font-style: italic;
+        font-weight: $font-weight-bold;
+      }
     }
   }
 }

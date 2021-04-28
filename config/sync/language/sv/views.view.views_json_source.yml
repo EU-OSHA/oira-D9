@@ -1,0 +1,42 @@
+display:
+  default:
+    display_title: Huvud
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Verkställ
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      pager:
+        options:
+          tags:
+            previous: '‹ Föregående'
+            next: 'Nästa ›'
+            first: '« Första'
+            last: 'Sista »'
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera
+      title: 'Exempel 1'
+  example_1:
+    display_title: 'Exempel 1'
+  example_2:
+    display_title: 'Exempel 2'
+    display_options:
+      title: 'Exempel 2'
+      arguments:
+        parameter:
+          exception:
+            title: Alla
+  example_3:
+    display_title: 'Exempel 3'
+    display_options:
+      title: 'Exempel 3'
+      fields:
+        value:
+          label: ID
+        value_1:
+          label: Författare

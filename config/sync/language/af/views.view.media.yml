@@ -1,0 +1,43 @@
+display:
+  default:
+    display_title: Meester
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtreer
+          reset_button_label: Herstel
+      pager:
+        options:
+          expose:
+            items_per_page_options_all_label: '- Alle -'
+      fields:
+        media_bulk_form:
+          action_title: Aksie
+        bundle:
+          label: Tipe
+        uid:
+          label: Outeur
+        status:
+          label: Status
+          settings:
+            format_custom_true: Gepubliseerd
+            format_custom_false: Ongepubliseerd
+        changed:
+          label: Updated
+        operations:
+          label: Aksies
+      filters:
+        bundle:
+          expose:
+            label: Tipe
+        status:
+          group_info:
+            label: 'Published '
+            group_items:
+              1:
+                title: Gepubliseerd
+              2:
+                title: Ongepubliseerd
+        langcode:
+          expose:
+            label: Taal
