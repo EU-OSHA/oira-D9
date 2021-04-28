@@ -11,9 +11,9 @@ entity_type: node
 type: language_field
 settings:
   language_range:
-    11: '11'
     1: '1'
     12: '12'
+    11: 0
     2: 0
     site_default: 0
     und: 0
