@@ -14,5 +14,5 @@ third_party_settings:
 id: node.slideshare
 target_entity_type_id: node
 target_bundle: slideshare
-default_langcode: und
+default_langcode: en
 language_alterable: true

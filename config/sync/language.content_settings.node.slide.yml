@@ -14,5 +14,5 @@ third_party_settings:
 id: node.slide
 target_entity_type_id: node
 target_bundle: slide
-default_langcode: und
+default_langcode: en
 language_alterable: true
