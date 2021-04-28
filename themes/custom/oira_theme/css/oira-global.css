@@ -1718,6 +1718,19 @@ select.custom-select {
   cursor: pointer;
   text-decoration: underline;
 }
+.block-views-blocktools-block-2 .views-col .more-link.expanded {
+  font-size: 0;
+}
+.block-views-blocktools-block-2 .views-col .more-link.expanded:before {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-size: 1.2rem;
+  line-height: 0;
+  margin-right: 0;
+}
+.block-views-blocktools-block-2 .views-col .more-link.expanded:before:hover {
+  text-decoration: none;
+}
 
 /*** FACTS AND FIGURES ***/
 .page-node-402,
@@ -1999,6 +2012,10 @@ select.custom-select {
 .block-views-blocknews-block-2 .view-news .views-row a:hover {
   text-decoration: underline;
 }
+.block-views-blocknews-block-2 .view-news .views-row a:before {
+  content: ">";
+  margin-right: 5px;
+}
 .block-views-blocknews-block-2 .view-news .views-field-field-image {
   display: none;
 }
@@ -2044,10 +2061,20 @@ select.custom-select {
   width: 35px;
 }
 .block-views-blockadditional-resources-block .view-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.375rem;
   font-weight: normal;
   margin-bottom: 15px;
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
+}
+.block-views-blockadditional-resources-block .view-header:after {
+  content: "";
+  background: url(../images/icon-plus.png) no-repeat;
+  background-size: 100%;
+  width: 25px;
+  height: 25px;
 }
 .block-views-blockadditional-resources-block .views-row {
   display: grid;
@@ -3130,6 +3157,14 @@ select.custom-select {
 .site-footer .site-footer__bottom .region {
   margin-top: 0;
 }
+.site-footer .site-footer__bottom .menu--social-menu-footer .menu {
+  margin: 0;
+  display: flex;
+}
+.site-footer .site-footer__bottom .menu--social-menu-footer .menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
 .site-footer #block-copyright {
   width: 100%;
 }
@@ -3179,8 +3214,11 @@ select.custom-select {
 .site-footer .menu--social-menu-footer ul .menu-item a {
   border-right: 0;
 }
+.site-footer .menu--social-menu-footer ul .field--type-image {
+  margin: 0;
+}
 .site-footer .menu--social-menu-footer ul .field--type-image img {
-  margin: 0 10px 0 0;
+  margin: 0;
 }
 
 #navbar {
