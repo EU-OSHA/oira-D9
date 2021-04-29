@@ -12,8 +12,8 @@ dependencies:
     - oira_theme
 id: resourcemedialanguagenameresource
 theme: oira_theme
-region: sidebar_first
-weight: -9
+region: footer_end
+weight: -11
 provider: null
 plugin: 'facet_block:resource_media_language_name_resource'
 settings:
