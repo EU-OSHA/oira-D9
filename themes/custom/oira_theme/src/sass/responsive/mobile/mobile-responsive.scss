@@ -1,4 +1,12 @@
 @media only screen and (max-width : 767px) {
+
+  #page {
+    padding-bottom: 150px;
+  }
+  .block-addtoany-block {
+    padding: 0 15px;
+  }
+
   /*** Stiky header ***/
   body {
     padding-top: 165px;
@@ -239,7 +247,6 @@
     }
     .view-tools > .more-link {
       padding: 0 15px;
-      margin-bottom: 2rem;
     }
   }
 
@@ -387,6 +394,38 @@
 
   .block-views-blockadditional-resources-block {
     padding-bottom: 6rem;
+  }
+
+  .page-node-67 {
+    .oira-content {
+      > .image-fluid {
+        margin: 0;
+      }
+      .field--name-field-summary {
+        padding: 0 15px;
+        margin-bottom: 30px;
+        p {
+          color: $text-color-purple;
+        }
+      }
+    }
+    .menu--oira-community {
+      padding-left: 15px;
+      padding-right: 15px;
+      .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li {
+          width: 70%;
+          margin: 0 auto 2rem;
+          text-align: center;
+          .menu_link_content {
+            max-width: 100px;
+          }
+        }
+      }
+    }
   }
 
 }/* End Media 767px */
