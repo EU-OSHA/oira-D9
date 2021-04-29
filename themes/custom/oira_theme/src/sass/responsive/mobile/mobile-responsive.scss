@@ -212,6 +212,12 @@
     padding: 0;
   }
   .block-views-blocknews-block-1 {
+    .views-col {
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: none;
+      }
+    }
     h2 {
       max-width: 720px;
     }
@@ -225,6 +231,21 @@
   .block-views-blocktools-block-2 {
     h2 {
       max-width: 720px;
+    }
+    .views-col {
+      background: transparent;
+      padding: 0 0 1rem;
+      border-bottom: 2px solid $bg-color-purple;
+    }
+    .view-tools > .more-link {
+      padding: 0 15px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .view-additional-resources {
+    .views-view-grid {
+      padding: 0;
     }
   }
 
@@ -364,6 +385,10 @@
     padding: 24px 15px;
   }
 
+  .block-views-blockadditional-resources-block {
+    padding-bottom: 6rem;
+  }
+
 }/* End Media 767px */
 
 @media only screen and (max-width : 480px) {
@@ -424,7 +449,6 @@
   }
 
   /*** What's New ***/
-
   .block-views-blocknews-block-1 {
     h2 {
       max-width: 100%;
