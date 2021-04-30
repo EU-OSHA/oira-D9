@@ -4872,6 +4872,87 @@ body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
   .view-id-faqs_oira .views-row .views-row .ui-accordion-header-icon {
     display: none;
   }
+
+  /*** National Partners ****/
+  .view-partners-list .partner__data-wrapper {
+    flex-direction: column;
+  }
+  .view-partners-list .partner__group {
+    flex-direction: column;
+  }
+  .view-partners-list .partner__group.partner__group--01 {
+    width: 100%;
+  }
+  .view-partners-list .partner__group.partner__group--02 {
+    width: 100%;
+  }
+  .view-partners-list .partner__logo {
+    padding: 0;
+    margin: 0 auto 15px;
+    width: auto;
+  }
+  .view-partners-list .partner__name {
+    margin-bottom: 15px;
+  }
+  .view-partners-list .count-item__label {
+    font-size: 13px;
+  }
+  .view-partners-list .content-count {
+    flex-direction: column;
+  }
+  .view-partners-list .content-count-item {
+    border: none;
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+  .view-partners-list .content-count-item:first-child {
+    border: none;
+  }
+  .view-partners-list .content-count-item > * {
+    text-align: left;
+    display: inline-block;
+  }
+  .view-partners-list .content-count-item .count-item__label {
+    font-weight: 700;
+    font-style: italic;
+  }
+  .view-partners-list .content-count-item .count-item__number {
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  .view-promotional-materials-type .views-view-grid {
+    margin: 0 auto;
+  }
+  .view-promotional-materials-type .views-view-grid .views-col {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .page-view-promotional-resources-search main {
+    padding: 0;
+    background: #FFF;
+  }
+  .page-view-promotional-resources-search main .view-content.row {
+    padding: 0;
+  }
+  .page-view-promotional-resources-search .content-two-columns .main-column {
+    background: #FFF !important;
+  }
+  .page-view-promotional-resources-search .views-row .group-right {
+    padding: 0 !important;
+  }
+  .page-view-promotional-resources-search .views-row .content-view-pm-view {
+    flex-direction: column;
+  }
+  .page-view-promotional-resources-search .views-row .content-view-pm-view .tags {
+    flex-direction: column;
+  }
+  .page-view-promotional-resources-search .views-row .content-view-pm-view .tags > p {
+    width: 100%;
+    margin: 0 0 0.5rem;
+  }
 }
 /* End Media 767px */
 @media only screen and (max-width: 480px) {
@@ -4969,51 +5050,6 @@ body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
   }
   .path-private-zone .views-exposed-form .form-actions {
     padding: 0;
-  }
-
-  /*** National Partners ****/
-  .view-partners-list .partner__data-wrapper {
-    flex-direction: column;
-  }
-  .view-partners-list .partner__group {
-    flex-direction: column;
-  }
-  .view-partners-list .partner__group.partner__group--01 {
-    width: 100%;
-  }
-  .view-partners-list .partner__group.partner__group--02 {
-    width: 100%;
-  }
-  .view-partners-list .partner__logo {
-    padding: 0;
-    margin: 0 auto 15px;
-    width: auto;
-  }
-  .view-partners-list .partner__name {
-    margin-bottom: 15px;
-  }
-  .view-partners-list .count-item__label {
-    font-size: 13px;
-  }
-  .view-partners-list .content-count {
-    flex-direction: column;
-  }
-  .view-partners-list .content-count-item {
-    border: none;
-    width: 100%;
-    display: block;
-    text-align: left;
-  }
-  .view-partners-list .content-count-item:first-child {
-    border: none;
-  }
-  .view-partners-list .content-count-item > * {
-    text-align: left;
-    display: inline-block;
-  }
-  .view-partners-list .content-count-item .count-item__label {
-    font-weight: 700;
-    font-style: italic;
   }
 }
 /* End Media 480px */
