@@ -13,7 +13,7 @@ dependencies:
 id: countryforsearchsite
 theme: oira_theme
 region: sidebar_first
-weight: -12
+weight: -22
 provider: null
 plugin: 'facet_block:country_search_facet'
 settings:

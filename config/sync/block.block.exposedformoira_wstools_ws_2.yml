@@ -13,7 +13,7 @@ dependencies:
 id: exposedformoira_wstools_ws_2
 theme: oira_theme
 region: sidebar_first
-weight: -19
+weight: -29
 provider: null
 plugin: 'views_exposed_filter_block:oira_ws-tools_ws'
 settings:
