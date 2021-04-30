@@ -428,6 +428,154 @@
     }
   }
 
+  .page-view-oira-ws .block-system-main-block .view-content.row .views-row .content-view-tools-view {
+    .group-left {
+      width: 100%;
+      margin: 0 auto 1rem;
+      img {
+        width: 100%;
+      }
+    }
+    .tool-link {
+      margin-bottom: 15px;
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: underline;
+        &:before {
+          order: 2;
+          text-decoration: none;
+        }
+      }
+    }
+    .revised-date {
+      display: none;
+    }
+  }
+
+  .view-display-id-tools_ws .partners-wrapper {
+    .related-partners {
+      flex-direction: column;
+      > a {
+        border: none;
+        margin: 0 auto 1rem;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+      }
+      h4 {
+        width: auto;
+        text-align: center;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .view-id-faqs_oira .views-row .views-row {
+    .views-accordion-header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .field-content {
+      width: 100%;
+    }
+    .ui-accordion-header-icon {
+      display: none;
+    }
+  }
+
+  /*** National Partners ****/
+  .view-partners-list {
+    .partner__data-wrapper {
+      flex-direction: column;
+    }
+    .partner__group {
+      flex-direction: column;
+      &.partner__group--01 {
+        width: 100%;
+      }
+      &.partner__group--02 {
+        width: 100%;
+      }
+    }
+    .partner__logo {
+      padding: 0;
+      margin: 0 auto 15px;
+      width: auto;
+    }
+    .partner__name {
+      margin-bottom: 15px;
+    }
+    .count-item__label {
+      font-size: 13px;
+    }
+    .content-count {
+      flex-direction: column;
+    };
+    .content-count-item {
+      border: none;
+      width: 100%;
+      display: block;
+      text-align: left;
+      &:first-child {
+        border: none;
+      }
+      > * {
+        text-align: left;
+        display: inline-block;
+      }
+      .count-item__label {
+        font-weight: $font-weight-bold;
+        font-style: italic;
+      }
+      .count-item__number {
+        font-size: 1rem;
+        font-style: italic;
+      }
+    }
+  }
+
+  .view-promotional-materials-type .views-view-grid {
+    margin: 0 auto;
+    .views-col {
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+
+  .page-view-promotional-resources-search {
+
+    main {
+      padding: 0;
+      background: $bg-color-white;
+      .view-content.row {
+        padding: 0;
+      }
+    }
+
+    .content-two-columns .main-column {
+      background: $bg-color-white !important;
+    }
+    .views-row .group-right {
+      padding: 0 !important;
+    }
+    .views-row {
+      .content-view-pm-view {
+        flex-direction: column;
+        .tags {
+          flex-direction: column;
+          > p {
+            width: 100%;
+            margin: 0 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
 }/* End Media 767px */
 
 @media only screen and (max-width : 480px) {
@@ -548,51 +696,6 @@
     }
   }
 
-  /*** National Partners ****/
-  .view-partners-list {
-    .partner__data-wrapper {
-      flex-direction: column;
-    }
-    .partner__group {
-      flex-direction: column;
-      &.partner__group--01 {
-        width: 100%;
-      }
-      &.partner__group--02 {
-        width: 100%;
-      }
-    }
-    .partner__logo {
-      padding: 0;
-      margin: 0 auto 15px;
-      width: auto;
-    }
-    .partner__name {
-      margin-bottom: 15px;
-    }
-    .count-item__label {
-      font-size: 13px;
-    }
-    .content-count {
-      flex-direction: column;
-    };
-    .content-count-item {
-      border: none;
-      width: 100%;
-      display: block;
-      text-align: left;
-      &:first-child {
-        border: none;
-      }
-      > * {
-        text-align: left;
-        display: inline-block;
-      }
-      .count-item__label {
-        font-weight: $font-weight-bold;
-        font-style: italic;
-      }
-    }
-  }
+
 
 }/* End Media 480px */
