@@ -208,6 +208,7 @@ h1 {
 
 @media only screen and (max-width: 480px) {
   .node--type-article h1 {
+    margin-bottom: 15px;
     font-size: 2rem;
     color: #786586 !important;
   }
@@ -4817,6 +4818,59 @@ body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
   }
   .page-node-67 .menu--oira-community .menu li .menu_link_content {
     max-width: 100px;
+  }
+
+  .page-view-oira-ws .block-system-main-block .view-content.row .views-row .content-view-tools-view .group-left {
+    width: 100%;
+    margin: 0 auto 1rem;
+  }
+  .page-view-oira-ws .block-system-main-block .view-content.row .views-row .content-view-tools-view .group-left img {
+    width: 100%;
+  }
+  .page-view-oira-ws .block-system-main-block .view-content.row .views-row .content-view-tools-view .tool-link {
+    margin-bottom: 15px;
+  }
+  .page-view-oira-ws .block-system-main-block .view-content.row .views-row .content-view-tools-view .tool-link a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: underline;
+  }
+  .page-view-oira-ws .block-system-main-block .view-content.row .views-row .content-view-tools-view .tool-link a:before {
+    order: 2;
+    text-decoration: none;
+  }
+  .page-view-oira-ws .block-system-main-block .view-content.row .views-row .content-view-tools-view .revised-date {
+    display: none;
+  }
+
+  .view-display-id-tools_ws .partners-wrapper .related-partners {
+    flex-direction: column;
+  }
+  .view-display-id-tools_ws .partners-wrapper .related-partners > a {
+    border: none;
+    margin: 0 auto 1rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .view-display-id-tools_ws .partners-wrapper .related-partners h4 {
+    width: auto;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .view-id-faqs_oira .views-row .views-row .views-accordion-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .view-id-faqs_oira .views-row .views-row .field-content {
+    width: 100%;
+  }
+  .view-id-faqs_oira .views-row .views-row .ui-accordion-header-icon {
+    display: none;
   }
 }
 /* End Media 767px */

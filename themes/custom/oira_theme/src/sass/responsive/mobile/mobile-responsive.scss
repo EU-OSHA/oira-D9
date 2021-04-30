@@ -428,6 +428,65 @@
     }
   }
 
+  .page-view-oira-ws .block-system-main-block .view-content.row .views-row .content-view-tools-view {
+    .group-left {
+      width: 100%;
+      margin: 0 auto 1rem;
+      img {
+        width: 100%;
+      }
+    }
+    .tool-link {
+      margin-bottom: 15px;
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: underline;
+        &:before {
+          order: 2;
+          text-decoration: none;
+        }
+      }
+    }
+    .revised-date {
+      display: none;
+    }
+  }
+
+  .view-display-id-tools_ws .partners-wrapper {
+    .related-partners {
+      flex-direction: column;
+      > a {
+        border: none;
+        margin: 0 auto 1rem;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+      }
+      h4 {
+        width: auto;
+        text-align: center;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .view-id-faqs_oira .views-row .views-row {
+    .views-accordion-header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .field-content {
+      width: 100%;
+    }
+    .ui-accordion-header-icon {
+      display: none;
+    }
+  }
+
 }/* End Media 767px */
 
 @media only screen and (max-width : 480px) {
