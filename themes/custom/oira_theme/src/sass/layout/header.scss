@@ -41,7 +41,11 @@
           margin-top: 41px;
           img{
             width: 75px;
+            margin: 0;
           }
+        }
+        a {
+          cursor: default;
         }
       }
     }
@@ -233,7 +237,7 @@ body.user-logged-in {
   padding-top: 185px;
 }
 
-body.user-logged-in.toolbar-fixed {
+body.toolbar-fixed {
   padding-top: 256px !important;
   #header {
     padding-top: 40px;
@@ -241,7 +245,7 @@ body.user-logged-in.toolbar-fixed {
   &.toolbar-tray-open {
     padding-top: 290px !important;
     #header {
-      padding-top: 75px;
+      padding-top: 75px !important;
     }
   }
 }

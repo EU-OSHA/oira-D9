@@ -1109,8 +1109,22 @@ select.custom-select {
 }
 
 /* OiRA Tools View */
+.page-view-oira-ws .form-item-sort-by .js-form-type-select {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 250px;
+}
+.page-view-oira-ws .form-item-sort-by .js-form-type-select > * {
+  flex: 1;
+}
 .page-view-oira-ws .form-item-sort-by .form-select {
   background-color: transparent !important;
+  background-image: none;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #58585a;
+  max-width: 100px;
 }
 .page-view-oira-ws .two-column section {
   position: relative;
@@ -1845,7 +1859,7 @@ select.custom-select {
   height: initial;
   padding: 2px 3px;
   background-color: #786586 !important;
-  background-image: url(../images/select-arrow.svg);
+  background-image: none;
   background-position: 97% 50%;
   color: #ffffff;
   width: 190px !important;
@@ -2257,6 +2271,9 @@ select.custom-select {
 }
 .path-search .view-search {
   position: relative;
+}
+.path-search .view-search .item-list {
+  width: 100%;
 }
 .path-search .view-search .view-content.row {
   margin: 0;
@@ -3275,6 +3292,10 @@ select.custom-select {
 }
 .top-header-content .region-top-header-logos .field--name-field-image > .field__item:last-child img {
   width: 75px;
+  margin: 0;
+}
+.top-header-content .region-top-header-logos .field--name-field-image > .field__item a {
+  cursor: default;
 }
 .top-header-content .region-medium-header-logos {
   margin: 0 auto;
@@ -3437,17 +3458,17 @@ body.user-logged-in {
   padding-top: 185px;
 }
 
-body.user-logged-in.toolbar-fixed {
+body.toolbar-fixed {
   padding-top: 256px !important;
 }
-body.user-logged-in.toolbar-fixed #header {
+body.toolbar-fixed #header {
   padding-top: 40px;
 }
-body.user-logged-in.toolbar-fixed.toolbar-tray-open {
+body.toolbar-fixed.toolbar-tray-open {
   padding-top: 290px !important;
 }
-body.user-logged-in.toolbar-fixed.toolbar-tray-open #header {
-  padding-top: 75px;
+body.toolbar-fixed.toolbar-tray-open #header {
+  padding-top: 75px !important;
 }
 
 #header {

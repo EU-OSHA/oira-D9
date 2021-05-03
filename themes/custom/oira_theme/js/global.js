@@ -131,15 +131,10 @@ jQuery(document).ready(function($){
       }
     });
 
-  /*$('.block-facet--checkbox h2').click(function(){
-    $(this).toggleClass('clicked');
-    $(this).parent('.block-facets').find('.facets-widget-checkbox').slideToggle();
-  });*/
 
   //Sidebar toggle facets
   $('.block-facets h2').click(function(){
     $(this).toggleClass('clicked');
-    //$(this).parent('.block-facets').find('.facets-widget-links').slideToggle();
     $(this).parent('.block-facets').find('.facets-widget-checkbox').slideToggle();
   });
 
@@ -155,8 +150,8 @@ jQuery(document).ready(function($){
     });
 
     //Clear filters toggler
-    $('.facets-checkbox').filter(':checked').each(function(index) {
-      $(this).parents('#sidebar_first').find('#edit-reset--2').addClass("show-me");
+    $('.facets-checkbox:checked').each(function(index) {
+      $(this).addClass("clicked-input").parent('aside').find('#edit-reset--2').addClass("show-me");
     });
 
     //Move the summary before the menu (in node 67)

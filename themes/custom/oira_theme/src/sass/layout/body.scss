@@ -577,8 +577,24 @@ select.custom-select{
 
 /* OiRA Tools View */
 .page-view-oira-ws{
+  .form-item-sort-by {
+    .js-form-type-select {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 250px;
+      > * {
+        flex: 1;
+      }
+    }
+  }
   .form-item-sort-by .form-select {
     background-color: transparent !important;
+    background-image: none;
+    border: none;
+    font-size: .875rem;
+    font-weight: bold;
+    color: $text-color-black;
+    max-width: 100px;
   }
   .two-column{
     section{
@@ -1337,7 +1353,7 @@ select.custom-select{
     height: initial;
     padding: 2px 3px;
     background-color: $bg-color-purple !important;
-    background-image: url(../images/select-arrow.svg);
+    background-image: none;
     background-position: 97% 50%;
     color: #ffffff;
     width: 190px !important;
@@ -1773,6 +1789,9 @@ select.custom-select{
   }
   .view-search {
     position: relative;
+    .item-list {
+      width: 100%;
+    }
     .view-content.row {
       margin: 0;
       background-color: $bg-color-white;
