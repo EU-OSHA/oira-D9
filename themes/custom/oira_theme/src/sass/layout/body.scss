@@ -79,7 +79,6 @@ a{
 
 /* Share this on articles icons */
 #share-this-on{
-  float: left;
   padding-top: 0;
   padding-bottom: 1rem;
   width: 100%;
@@ -1491,10 +1490,13 @@ select.custom-select{
   }
 }
 
+.block-views-blockoshwiki-featured-articles-oshwiki-related-articles,
 .block-views-blocknews-block-2 {
   @extend .full-width;
   background: $bg-color-purple;
   padding-top: 22px;
+  border-bottom: 10px solid white;
+  padding-bottom: 15px;
   .content {
     margin: 0 auto;
     max-width: 1140px;
@@ -1518,6 +1520,7 @@ select.custom-select{
       float: right;
     }
   }
+  .view-id-oshwiki_featured_articles,
   .view-news {
     .views-row {
       padding: 0;
@@ -1547,6 +1550,29 @@ select.custom-select{
       a {
         color: $text-color-white;
       }
+    }
+  }
+}
+
+.block-views-blockoshwiki-featured-articles-oshwiki-related-articles {
+  .view-content.row {
+    margin: 0;
+  }
+  h2 {
+    max-width: 1140px;
+    padding-bottom: 15px;
+    margin: 0 auto 15px;
+    font-family: $font-family-oswald;
+    color: $text-color-white;
+    font-size: 2rem;
+    border-bottom: 2px solid #ffffff;
+    &:after {
+      content: "";
+      background: url(../images/icon-oswiki.png) no-repeat;
+      background-size: 100%;
+      height: 40px;
+      float: right;
+      width: 35px;
     }
   }
 }
@@ -1677,6 +1703,7 @@ select.custom-select{
     }
     .form-group {
       margin: 0;
+      padding: 0;
     }
     .form-row {
       margin: 0;
@@ -1694,7 +1721,7 @@ select.custom-select{
       display: none;
     }
     .form-item-search-api-fulltext {
-      margin: 0;
+      margin: 0 0 1rem;
       padding: 0;
       label {
         display: none;
@@ -1935,12 +1962,17 @@ select.custom-select{
 }
 
 #edit-reset--2 {
-  display: none;
+  margin: 4px 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  &:hover {
+    text-decoration: underline;
+  }
   &.show-me {
     display: block;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -2709,6 +2741,15 @@ select.custom-select{
         font-style: italic;
         font-weight: $font-weight-bold;
       }
+    }
+  }
+}
+
+/*** Roles and Responsibilities ***/
+.page-node-60 {
+  .field--name-body {
+    li p {
+      margin: 0 0 0.5rem;
     }
   }
 }
