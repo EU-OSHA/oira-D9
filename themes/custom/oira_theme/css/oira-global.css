@@ -4460,9 +4460,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   #navbar-main ul.navbar-nav li.menu-item--expanded.dropdown ul.dropdown-menu li a {
     color: #58585a;
   }
-  #navbar-main ul.navbar-nav .dropdown-toggle::after {
-    content: " ";
-  }
 
   #block-oira-theme-main-menu {
     width: 100%;
@@ -5025,8 +5022,21 @@ body.toolbar-fixed.toolbar-tray-open #header {
     margin: 0 0 0.5rem;
   }
 
+  .menu--main .nav-link.dropdown-toggle {
+    display: flex;
+    align-items: center;
+  }
   .menu--main .nav-link.dropdown-toggle:after {
     border: none !important;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+    content: "" !important;
+    font-family: "Glyphicons Halflings";
+    color: #FFF;
+  }
+  .menu--main .nav-link.dropdown-toggle.clicked:after {
+    content: "" !important;
   }
 }
 /* End Media 767px */

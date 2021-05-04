@@ -158,6 +158,13 @@ jQuery(document).ready(function($){
     $('.page-node-67 .field--name-field-summary').insertBefore("#block-oiracommunity");
     $('.page-node-67 .field--name-field-summary').addClass(".jquery--element-moved");
 
+
+  $('.menu--main .nav-link.dropdown-toggle').click(function(){
+    $(this).toggleClass('clicked');
+    $(this).parent('.nav-item').find('.dropdown-menu').slideToggle();
+  });
+
+
 });
 
 
