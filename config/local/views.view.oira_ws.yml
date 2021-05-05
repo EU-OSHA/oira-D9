@@ -957,8 +957,8 @@ display:
             link_to_entity: 0
             format:
               iso: iso
-              name: name
-              name_native: 0
+              name_native: name_native
+              name: 0
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1902,6 +1902,18 @@ display:
           exposed: true
           expose:
             label: Sector
+          plugin_id: search_api
+        field_revised_date:
+          id: field_revised_date
+          table: search_api_index_oira_tools
+          field: field_revised_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
           plugin_id: search_api
       title: ''
       header:
