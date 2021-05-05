@@ -1,0 +1,18 @@
+uuid: 6bf40592-f1dc-4b27-a817-434fc7e5f8cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_url
+id: node.external_url.created
+field_name: created
+entity_type: node
+bundle: external_url
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

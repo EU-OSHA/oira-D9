@@ -1,0 +1,18 @@
+uuid: 1dc0d1bc-3d11-4a8e-b506-4484b536c2eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_url
+id: node.external_url.changed
+field_name: changed
+entity_type: node
+bundle: external_url
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

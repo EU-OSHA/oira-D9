@@ -1,0 +1,20 @@
+uuid: 9e30eb5c-c1ec-44a3-8e7a-f4b78490565e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificates
+id: node.certificates.uid
+field_name: uid
+entity_type: node
+bundle: certificates
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

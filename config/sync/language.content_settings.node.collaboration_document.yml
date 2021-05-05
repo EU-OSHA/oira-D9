@@ -14,5 +14,5 @@ third_party_settings:
 id: node.collaboration_document
 target_entity_type_id: node
 target_bundle: collaboration_document
-default_langcode: en
+default_langcode: site_default
 language_alterable: true

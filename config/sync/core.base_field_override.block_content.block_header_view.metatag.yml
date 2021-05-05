@@ -1,0 +1,18 @@
+uuid: a27863f1-04ec-4dd0-be0a-9aa67f6d8725
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_header_view
+id: block_content.block_header_view.metatag
+field_name: metatag
+entity_type: block_content
+bundle: block_header_view
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map
