@@ -57,8 +57,6 @@ display:
           label: Naam
         uid:
           label: Outeur
-        changed:
-          label: Updated
       filters:
         name:
           expose:

@@ -23,21 +23,12 @@ display:
       fields:
         subject:
           label: Subiect
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -60,18 +51,9 @@ display:
       fields:
         subject:
           label: Subiect
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Autor
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '

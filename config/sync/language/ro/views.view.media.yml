@@ -24,21 +24,14 @@ display:
       fields:
         thumbnail__target_id:
           label: Thumbnail
-          separator: ', '
-        name:
-          separator: ', '
         bundle:
           label: Tip
-          separator: ', '
         uid:
           label: Autor
-          separator: ', '
         status:
           label: Stare
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
       filters:
