@@ -1,0 +1,20 @@
+uuid: f4d1ed79-a2db-41a9-95e7-7454ca761fcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificates
+  module:
+    - path
+id: node.certificates.path
+field_name: path
+entity_type: node
+bundle: certificates
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

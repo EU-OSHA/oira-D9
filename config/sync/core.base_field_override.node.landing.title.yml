@@ -1,0 +1,18 @@
+uuid: 1c8f5a9e-a743-450e-8e2b-d092f91688a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing
+id: node.landing.title
+field_name: title
+entity_type: node
+bundle: landing
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

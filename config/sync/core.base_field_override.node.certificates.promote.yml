@@ -1,0 +1,22 @@
+uuid: 2a83af2b-d679-410c-9b4c-245fb56fa68a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.certificates
+id: node.certificates.promote
+field_name: promote
+entity_type: node
+bundle: certificates
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
