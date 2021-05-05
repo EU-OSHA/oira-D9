@@ -22,8 +22,6 @@ display:
           label: Tipe
         name:
           label: Outeur
-        changed:
-          label: Updated
         operations:
           label: Aksies
       filters:

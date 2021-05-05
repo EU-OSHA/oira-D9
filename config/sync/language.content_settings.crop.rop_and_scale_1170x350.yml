@@ -1,0 +1,11 @@
+uuid: 22643982-cfb2-4a9b-9fdd-84b38e833425
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.rop_and_scale_1170x350
+id: crop.rop_and_scale_1170x350
+target_entity_type_id: crop
+target_bundle: rop_and_scale_1170x350
+default_langcode: site_default
+language_alterable: false

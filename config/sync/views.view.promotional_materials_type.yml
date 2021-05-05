@@ -450,7 +450,7 @@ display:
         weight: 9
         context: '0'
         menu_name: main
-      rendering_language: '***LANGUAGE_entity_translation***'
+      rendering_language: '***LANGUAGE_language_interface***'
       filters:
         vid:
           id: vid
@@ -516,7 +516,6 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
       tags:

@@ -12,8 +12,8 @@ entity_type: node
 bundle: news
 label: Partner
 description: '<small>Select the proper editorial group for this content.</small>'
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

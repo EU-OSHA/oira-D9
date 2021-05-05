@@ -1,0 +1,18 @@
+uuid: f585375c-00ed-4c07-83b7-0167f9ee44dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.external_url
+id: node.external_url.title
+field_name: title
+entity_type: node
+bundle: external_url
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

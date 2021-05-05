@@ -23,17 +23,16 @@ display:
       fields:
         title:
           label: Titlu
-          separator: ', '
         type:
-          separator: ', '
-        moderation_state:
-          separator: ', '
+          label: 'Content type'
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
       filters:
         title:
           expose:
             label: Titlu
+        type:
+          expose:
+            label: 'Content type'

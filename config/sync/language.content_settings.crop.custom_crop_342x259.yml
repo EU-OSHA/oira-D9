@@ -1,0 +1,11 @@
+uuid: aa1300bc-c9b4-47e8-a865-15a4540c1127
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.custom_crop_342x259
+id: crop.custom_crop_342x259
+target_entity_type_id: crop
+target_bundle: custom_crop_342x259
+default_langcode: site_default
+language_alterable: false
