@@ -10,7 +10,6 @@ dependencies:
     - field.storage.node.field_logo
     - field.storage.node.field_promotional_material_type
     - field.storage.node.field_revised_date
-    - image.style.media_library
     - image.style.medium
     - image.style.thumbnail
     - search_api.index.promotional_resources
@@ -25,7 +24,6 @@ dependencies:
     - search_api
     - taxonomy
     - text
-    - user
 id: promotional_resources_search
 label: 'Promotional Resources Search'
 module: views
@@ -41,24 +39,22 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: none
         options: {  }
       query:
         type: views_query
         options:
-          skip_access: 0
-          bypass_access: 0
-          preserve_facet_query_args: 1
-          contextual_filters_or: 0
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
       exposed_form:
         type: bef
         options:
           submit_button: Apply
-          reset_button: false
+          reset_button: true
           reset_button_label: 'Clear filter'
           exposed_sorts_label: Order
           expose_sort_order: false
@@ -518,14 +514,13 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: media_thumbnail
+          type: entity_reference_entity_view
           settings:
-            image_style: media_library
-            image_link: ''
+            view_mode: default
           group_column: target_id
           group_columns: {  }
           group_rows: true
-          delta_limit: 0
+          delta_limit: 1
           delta_offset: 0
           delta_reversed: false
           delta_first_last: false
@@ -923,16 +918,16 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 250
+            max_length: 0
             word_boundary: true
             ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: true
-            trim: true
-            preserve_tags: ''
-            html: true
+            trim: false
+            preserve_tags: '<p>'
+            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -946,8 +941,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 300
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1501,7 +1497,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"content-view-pm-view\">\r\n\r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }}</div>\r\n  </div>\r\n\r\n  <div class=\"group-right\">\r\n    <div class=\"field-revised-date\">{{ field_revised_date }}</div>\r\n    <div class=\"tags\"> \r\n      <p class=\"tag-country\">{{ name }}</p> \r\n      <p class=\"tag-type\">{{ name_3 }}</p> \r\n      <p class=\"tag-language\">{{field_language }}</p>\r\n    </div>\r\n    <div class=\"pm-title\"><h3>{{ title }}</h3></div>\r\n    <div class=\"pm-body\">{{ body }} </div>\r\n    <div class=\"resource-link\">{{ field_link }}</div>\r\n\r\n    <div class=\"partners-wrapper\">\r\n      \r\n      {% if (title_1) %}\r\n      <div class=\"partner-wrapper partner-wrapper-related\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n         {{field_logo}}\r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n          <h4>{{ title_1 }}</h4>\r\n          {{ path }} \r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n  \r\n      {% if (title_2)%}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_2 }}</h4>\r\n           {{ view_node_1 }}\r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n    </div>\r\n\r\n    <span class=\"more-link\"> See more</span>\r\n\r\n  </div>\r\n</div>"
+            text: "<div class=\"content-view-pm-view\">\r\n\r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }} </div>\r\n  </div>\r\n\r\n  <div class=\"group-right\">\r\n    <div class=\"field-revised-date\">{{ field_revised_date }}</div>\r\n    <div class=\"tags\"> \r\n      <p class=\"tag-country\">{{ name }}</p> \r\n      <p class=\"tag-type\">{{ name_3 }}</p> \r\n      <p class=\"tag-language\">{{field_language }}</p>\r\n    </div>\r\n    <div class=\"pm-title\"><h3>{{ title }}</h3></div>\r\n    <div class=\"pm-body\">{{ body }} </div>\r\n    <div class=\"resource-link\">{{ field_link }}</div>\r\n\r\n    <div class=\"partners-wrapper\">\r\n      \r\n      {% if (title_1) %}\r\n      <div class=\"partner-wrapper partner-wrapper-related\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n         {{field_logo}}\r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n          <h4>{{ title_1 }}</h4>\r\n          {{ path }} \r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n  \r\n      {% if (title_2)%}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_2 }}</h4>\r\n           {{ view_node_1 }}\r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n    </div>\r\n\r\n    <span class=\"more-link\"> See more</span>\r\n\r\n  </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -1540,44 +1536,6 @@ display:
           hide_alter_empty: false
           plugin_id: custom
       filters:
-        status:
-          id: status
-          table: search_api_index_promotional_resources
-          field: status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: search_api_boolean
         type:
           id: type
           table: search_api_index_promotional_resources
@@ -1640,12 +1598,11 @@ display:
             operator_list: {  }
             identifier: search_api_fulltext
             required: false
-            remember: true
+            remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              administrator: '0'
               editor: '0'
               approver: '0'
               translation_manager: '0'
@@ -1657,30 +1614,27 @@ display:
               oira_project_manager: '0'
               oira_supervisor: '0'
               superadministrator: '0'
+              administrator: '0'
             placeholder: Search
             expose_fields: false
             searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
           group_info:
-            label: 'Fulltext search'
-            description: null
-            identifier: search_api_fulltext
+            label: ''
+            description: ''
+            identifier: ''
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items:
-              1: {  }
-              2: {  }
-              3: {  }
+            group_items: {  }
           parse_mode: terms
           min_length: null
           fields:
             - body
             - field_language_1
-            - field_promotional_material_type
             - name_2
             - name_3
             - rendered_item
@@ -1688,10 +1642,10 @@ display:
             - title
           plugin_id: search_api_fulltext
       sorts:
-        field_revised_date:
-          id: field_revised_date
+        field_publication_date:
+          id: field_publication_date
           table: search_api_index_promotional_resources
-          field: field_revised_date
+          field: field_publication_date
           relationship: none
           group_type: group
           admin_label: ''
@@ -1778,11 +1732,11 @@ display:
           default_argument_type: taxonomy_tid
           default_argument_options:
             term_page: '1'
-            node: true
             anyall: ','
+            node: false
             limit: false
             vids: {  }
-          default_argument_skip_url: true
+          default_argument_skip_url: false
           summary_options: {  }
           summary:
             sort_order: asc
@@ -1797,11 +1751,6 @@ display:
           not: false
           plugin_id: search_api
       display_extenders: {  }
-      use_ajax: false
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
     cache_metadata:
       max-age: -1
       contexts:
@@ -1811,7 +1760,6 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - 'user.node_grants:view'
-        - user.permissions
       tags:
         - 'config:field.storage.media.field_language'
         - 'config:field.storage.media.field_link'
@@ -1831,7 +1779,6 @@ display:
       path: promotional-resources-search/%
       cache:
         type: none
-        options: {  }
       defaults:
         cache: false
       exposed_block: true
@@ -1844,7 +1791,6 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - 'user.node_grants:view'
-        - user.permissions
       tags:
         - 'config:field.storage.media.field_language'
         - 'config:field.storage.media.field_link'
