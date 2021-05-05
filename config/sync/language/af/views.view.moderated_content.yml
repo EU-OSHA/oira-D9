@@ -14,14 +14,17 @@ display:
       fields:
         title:
           label: Titel
-        changed:
-          label: Updated
+        type:
+          label: 'Content type'
         operations:
           label: Aksies
       filters:
         title:
           expose:
             label: Titel
+        type:
+          expose:
+            label: 'Content type'
       title: 'Gemodereerde inhoud'
   moderated_content:
     display_title: 'Gemodereerde inhoud'

@@ -22,8 +22,6 @@ display:
           settings:
             format_custom_true: Gepubliseerd
             format_custom_false: Ongepubliseerd
-        changed:
-          label: Updated
         operations:
           label: Aksies
       filters:

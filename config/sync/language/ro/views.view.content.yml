@@ -20,7 +20,7 @@ display:
         title:
           label: Titlu
         type:
-          separator: ', '
+          label: 'Content type'
         name:
           label: Autor
         status:
@@ -33,6 +33,9 @@ display:
         title:
           expose:
             label: Titlu
+        type:
+          expose:
+            label: 'Content type'
         status:
           expose:
             label: Stare
