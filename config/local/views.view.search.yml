@@ -32,7 +32,6 @@ dependencies:
     - node
     - pagerer
     - search_api
-    - taxonomy
     - text
 id: search
 label: Search
@@ -57,14 +56,15 @@ display:
       query:
         type: views_query
         options:
-          bypass_access: false
-          skip_access: false
-          preserve_facet_query_args: false
+          skip_access: 0
+          bypass_access: 0
+          preserve_facet_query_args: 1
+          contextual_filters_or: 0
       exposed_form:
         type: bef
         options:
           submit_button: Search
-          reset_button: true
+          reset_button: false
           reset_button_label: 'Clear filter'
           exposed_sorts_label: Order
           expose_sort_order: false
@@ -251,7 +251,7 @@ display:
           type: datetime_default
           settings:
             timezone_override: ''
-            format_type: eu_short_date
+            format_type: short
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -556,16 +556,16 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
+            max_length: 250
             word_boundary: true
             ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: true
-            trim: false
-            preserve_tags: '<p>'
-            html: false
+            trim: true
+            preserve_tags: ''
+            html: true
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -579,9 +579,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_trimmed
-          settings:
-            trim_length: 400
+          type: text_default
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -626,16 +625,16 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
+            max_length: 175
             word_boundary: true
             ellipsis: true
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: false
-            trim: false
+            strip_tags: true
+            trim: true
             preserve_tags: ''
-            html: false
+            html: true
           element_type: ''
           element_class: ''
           element_label_type: ''
@@ -649,9 +648,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_trimmed
-          settings:
-            trim_length: 250
+          type: text_default
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -875,6 +873,59 @@ display:
           multi_type: separator
           multi_separator: ', '
           plugin_id: search_api
+        search_api_excerpt:
+          id: search_api_excerpt
+          table: search_api_index_default_multilingual_node_index
+          field: search_api_excerpt
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: '{{ search_api_excerpt }} <a href="{{url}}"> See more </a>'
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          link_to_item: false
+          use_highlighting: true
+          multi_type: separator
+          multi_separator: ', '
+          plugin_id: search_api
         field_sector:
           id: field_sector
           table: search_api_index_default_multilingual_node_index
@@ -992,18 +1043,18 @@ display:
               wiki_categories:
                 display_method: label
           plugin_id: search_api_field
-        search_api_excerpt:
-          id: search_api_excerpt
+        field_sector_category:
+          id: field_sector_category
           table: search_api_index_default_multilingual_node_index
-          field: search_api_excerpt
+          field: field_sector_category
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: true
           alter:
-            alter_text: true
-            text: '{{ search_api_excerpt }} <a href="{{url}}"> See more </a>'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -1040,11 +1091,192 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          link_to_item: false
-          use_highlighting: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
           multi_type: separator
-          multi_separator: ', '
-          plugin_id: search_api
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article_types:
+                display_method: label
+                view_mode: default
+              contact_topic:
+                display_method: label
+              contact_type:
+                display_method: label
+              contact_type_of_sender:
+                display_method: label
+              country:
+                display_method: label
+                view_mode: default
+              country_status:
+                display_method: label
+                view_mode: default
+              esener:
+                display_method: label
+                view_mode: default
+              organisation_type:
+                display_method: label
+                view_mode: default
+              partner_types:
+                display_method: label
+              practical_tool_types:
+                display_method: label
+              promotional_material_type:
+                display_method: label
+                view_mode: default
+              section:
+                display_method: label
+                view_mode: default
+              sector:
+                display_method: label
+              sector_category:
+                display_method: label
+              tags:
+                display_method: label
+                view_mode: default
+              wg_category:
+                display_method: label
+              wg_role_1:
+                display_method: label
+              wg_role_2:
+                display_method: label
+              wiki_categories:
+                display_method: label
+          plugin_id: search_api_field
+        field_multiple_sector:
+          id: field_multiple_sector
+          table: search_api_index_default_multilingual_node_index
+          field: field_multiple_sector
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods:
+              article_types:
+                display_method: label
+                view_mode: default
+              contact_topic:
+                display_method: label
+              contact_type:
+                display_method: label
+              contact_type_of_sender:
+                display_method: label
+              country:
+                display_method: label
+                view_mode: default
+              country_status:
+                display_method: label
+                view_mode: default
+              esener:
+                display_method: label
+                view_mode: default
+              organisation_type:
+                display_method: label
+                view_mode: default
+              partner_types:
+                display_method: label
+              practical_tool_types:
+                display_method: label
+              promotional_material_type:
+                display_method: label
+                view_mode: default
+              section:
+                display_method: label
+                view_mode: default
+              sector:
+                display_method: label
+              sector_category:
+                display_method: label
+              tags:
+                display_method: label
+                view_mode: default
+              wg_category:
+                display_method: label
+              wg_role_1:
+                display_method: label
+              wg_role_2:
+                display_method: label
+              wiki_categories:
+                display_method: label
+          plugin_id: search_api_field
         url_2:
           id: url_2
           table: search_api_index_default_multilingual_node_index
@@ -1113,7 +1345,7 @@ display:
             make_link: true
             path: '{{ field_wiki_page_url__uri }} '
             absolute: false
-            external: false
+            external: true
             replace_spaces: false
             path_case: none
             trim_whitespace: false
@@ -1122,7 +1354,7 @@ display:
             link_class: ''
             prefix: ''
             suffix: ''
-            target: ''
+            target: _blank
             nl2br: false
             max_length: 0
             word_boundary: true
@@ -1153,7 +1385,7 @@ display:
             url_only: false
             url_plain: false
             rel: '0'
-            target: '0'
+            target: _blank
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1187,7 +1419,7 @@ display:
             make_link: true
             path: '{{ field_tool_link__uri }} '
             absolute: false
-            external: false
+            external: true
             replace_spaces: false
             path_case: none
             trim_whitespace: false
@@ -1273,15 +1505,15 @@ display:
             suffix: ''
             target: ''
             nl2br: false
-            max_length: 0
+            max_length: null
             word_boundary: true
-            ellipsis: true
+            ellipsis: false
             more_link: false
             more_link_text: ''
             more_link_path: ''
             strip_tags: true
-            trim: false
-            preserve_tags: '<p>'
+            trim: true
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
@@ -2085,240 +2317,6 @@ display:
             multi_separator: ', '
           entity_type: media
           plugin_id: search_api_field
-        field_sector_category:
-          id: field_sector_category
-          table: search_api_index_default_multilingual_node_index
-          field: field_sector_category
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api_entity
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-            display_methods:
-              article_types:
-                display_method: label
-                view_mode: default
-              contact_topic:
-                display_method: label
-              contact_type:
-                display_method: label
-              contact_type_of_sender:
-                display_method: label
-              country:
-                display_method: label
-                view_mode: default
-              country_status:
-                display_method: label
-                view_mode: default
-              esener:
-                display_method: label
-                view_mode: default
-              organisation_type:
-                display_method: label
-                view_mode: default
-              partner_types:
-                display_method: label
-              practical_tool_types:
-                display_method: label
-              promotional_material_type:
-                display_method: label
-                view_mode: default
-              section:
-                display_method: label
-                view_mode: default
-              sector:
-                display_method: label
-              sector_category:
-                display_method: label
-              tags:
-                display_method: label
-                view_mode: default
-              wg_category:
-                display_method: label
-              wg_role_1:
-                display_method: label
-              wg_role_2:
-                display_method: label
-              wiki_categories:
-                display_method: label
-          plugin_id: search_api_field
-        field_multiple_sector:
-          id: field_multiple_sector
-          table: search_api_index_default_multilingual_node_index
-          field: field_multiple_sector
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api_entity
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-            display_methods:
-              article_types:
-                display_method: label
-                view_mode: default
-              contact_topic:
-                display_method: label
-              contact_type:
-                display_method: label
-              contact_type_of_sender:
-                display_method: label
-              country:
-                display_method: label
-                view_mode: default
-              country_status:
-                display_method: label
-                view_mode: default
-              esener:
-                display_method: label
-                view_mode: default
-              organisation_type:
-                display_method: label
-                view_mode: default
-              partner_types:
-                display_method: label
-              practical_tool_types:
-                display_method: label
-              promotional_material_type:
-                display_method: label
-                view_mode: default
-              section:
-                display_method: label
-                view_mode: default
-              sector:
-                display_method: label
-              sector_category:
-                display_method: label
-              tags:
-                display_method: label
-                view_mode: default
-              wg_category:
-                display_method: label
-              wg_role_1:
-                display_method: label
-              wg_role_2:
-                display_method: label
-              wiki_categories:
-                display_method: label
-          plugin_id: search_api_field
         field_tool_link_1:
           id: field_tool_link_1
           table: search_api_datasource_default_multilingual_node_index_entity_node
@@ -2396,7 +2394,77 @@ display:
           plugin_id: search_api_field
         title_3:
           id: title_3
-          table: search_api_datasource_default_multilingual_node_index_entity_node
+          table: search_api_index_default_multilingual_node_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: 'Tool title'
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: true
+            path: '{{ field_tool_link_1 }} '
+            absolute: false
+            external: true
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: _blank
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
+        title_4:
+          id: title_4
+          table: search_api_index_default_multilingual_node_index
           field: title
           relationship: none
           group_type: group
@@ -2463,22 +2531,95 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          entity_type: node
           plugin_id: search_api_field
-        title_4:
-          id: title_4
-          table: search_api_datasource_default_multilingual_node_index_entity_node
-          field: title
+        field_wiki_page_url_1:
+          id: field_wiki_page_url_1
+          table: search_api_index_default_multilingual_node_index
+          field: field_wiki_page_url
           relationship: none
           group_type: group
-          admin_label: 'Title tool'
+          admin_label: ''
           label: ''
           exclude: true
           alter:
-            alter_text: true
-            text: '{{ title_4}}'
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: true
+            url_plain: true
+            rel: '0'
+            target: _blank
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+          plugin_id: search_api_field
+        title_5:
+          id: title_5
+          table: search_api_index_default_multilingual_node_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: 'wiki title'
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
             make_link: true
-            path: '{{ field_tool_link_1 }} '
+            path: '{{ field_wiki_page_url_1 }} '
             absolute: false
             external: true
             replace_spaces: false
@@ -2534,7 +2675,6 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-          entity_type: node
           plugin_id: search_api_field
         nothing:
           id: nothing
@@ -2547,7 +2687,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"results\">\r\n\r\n  {% if (type == \"Article\") %}\r\n  <div class=\" result-item type-article\">\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{body}}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"News\") %}\r\n  <div class=\"result-item type-news\">\r\n    <div class=\"field-publication-date\"> {{ field_publication_date }} </div>\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"summary\">{{ field_summary }}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Partner\" ) %}\r\n   <div class=\"result-item type-partner\">\r\n     <h3 class=\"title\">{{title}}</h3>\r\n     <div class=\"type\">{{type}}</div>\r\n     <div class=\"tag tag-country\">{{ field_country }}</div>\r\n     <div class=\"see-more\">{{ url_2 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Wiki page\") %}\r\n  <div class=\"result-item type-wikipage\">\r\n     <h3 class=\"title\">{{title}}</h3>\r\n     <div class=\"type\">{{type}}</div>\r\n     <div class=\"summary\">{{ field_summary }}</div>\r\n     <div class=\"see-more\">{{ field_wiki_page_url }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"OiRA Tools\" ) %}\r\n   <div class=\"result-item type-tools\">\r\n    <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n    <div class=\"tags\">\r\n      <p class=\"tag tag-country\">{{ field_country }}</p>\r\n      <p class=\"tag tag-sector\">{{ field_sector_category }}</p>\r\n    </div>\r\n    <h3 class=\"title\">{{title_4}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body}}</div>\r\n    <div class=\"body-expanded\">{{body_1}}</div>\r\n    <div class=\"tool-link\">{{ field_tool_link }}</div>\r\n    <div class=\"expand\">\r\n      <div class=\"partners-wrapper\">\r\n  \r\n       {% if (title_1 )%}\r\n       <div class=\"partner-wrapper partner-wrapper-related\">\r\n         <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{field_logo}}\r\n         </div>\r\n         <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_1 }}</h4>\r\n           {{ path }}\r\n         </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      {% if (title_2) %}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n         <h4>{{ title_2 }}</h4>\r\n         {{path_1 }}\r\n        </div>\r\n     </div>\r\n     {% endif %}\r\n\r\n     </div>\r\n    </div>\r\n    <span class=\"more-link\"> See more</span>\r\n    \r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Promotional resources\" ) %}\r\n  <div class=\"result-item type-promo\">\r\n    <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n    <div class=\"tags\">\r\n      <p class=\"tag tag-country\">{{ field_country }}</p>\r\n      <p class=\"tag tag-language\">{{ field_language }} </p>\r\n    </div>\r\n    <h3 class=\"title\">{{title_3}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body}}</div>\r\n    <div class=\"body-expanded\">{{body_1}}</div>\r\n    <div class=\"resource-field-link\">{{ field_link }} </div>\r\n    <div class=\"resource-field-mediafile\">{{ field_media_file }}</div>\r\n\r\n    <div class=\"expand\">\r\n      <div class=\"partners-wrapper\">\r\n  \r\n       {% if (title_1 )%}\r\n       <div class=\"partner-wrapper partner-wrapper-related\">\r\n         <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{field_logo}}\r\n         </div>\r\n         <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_1 }}</h4>\r\n           {{ path }}\r\n         </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      {% if (title_2) %}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n         <h4>{{ title_2 }}</h4>\r\n         {{path_1 }}\r\n        </div>\r\n     </div>\r\n     {% endif %}\r\n\r\n     </div>\r\n    </div>\r\n    <span class=\"more-link\"> See more</span>\r\n    \r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"FAQ\" ) %}\r\n   <div class=\"result-item type-faq\">\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body }}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n  \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>"
+            text: "<div class=\"results\">\r\n\r\n  {% if (type == \"Article\") %}\r\n  <div class=\" result-item type-article\">\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{body}}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"News\") %}\r\n  <div class=\"result-item type-news\">\r\n    <div class=\"field-publication-date\"> {{ field_publication_date }} </div>\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"summary\">{{ field_summary }}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Partner\" ) %}\r\n   <div class=\"result-item type-partner\">\r\n     <h3 class=\"title\">{{title}}</h3>\r\n     <div class=\"type\">{{type}}</div>\r\n     <div class=\"tag tag-country\">{{ field_country }}</div>\r\n     <div class=\"see-more\">{{ url_2 }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Wiki page\") %}\r\n  <div class=\"result-item type-wikipage\">\r\n     <h3 class=\"title\">{{title_5}}</h3>\r\n     <div class=\"type\">{{type}}</div>\r\n     <div class=\"summary\">{{ field_summary }}</div>\r\n     <div class=\"see-more\">{{ field_wiki_page_url }} </div>\r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"OiRA Tools\" ) %}\r\n   <div class=\"result-item type-tools\">\r\n    <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n    <div class=\"tags\">\r\n      <p class=\"tag tag-country\">{{ field_country }}</p>\r\n      <p class=\"tag tag-sector\">{{ field_sector_category }}</p>\r\n    </div>\r\n    <h3 class=\"title\">{{title_3}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n      <div class=\"body\">{{ body}}</div>\r\n    \r\n    <div class=\"tool-link\">{{ field_tool_link }}</div>\r\n    <div class=\"expand\">\r\n<div class=\"body-expanded\">{{body_1}}</div>\r\n      <div class=\"partners-wrapper\">\r\n  \r\n       {% if (title_1 )%}\r\n       <div class=\"partner-wrapper partner-wrapper-related\">\r\n         <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{field_logo}}\r\n         </div>\r\n         <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_1 }}</h4>\r\n           {{ path }}\r\n         </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      {% if (title_2) %}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n         <h4>{{ title_2 }}</h4>\r\n         {{path_1 }}\r\n        </div>\r\n     </div>\r\n     {% endif %}\r\n\r\n     </div>\r\n    </div>\r\n    <span class=\"more-link\"> See more</span>\r\n    \r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"Promotional resources\" ) %}\r\n  <div class=\"result-item type-promo\">\r\n    <div class=\"field-revised-date\"> {{ field_revised_date }} </div>\r\n    <div class=\"tags\">\r\n      <p class=\"tag tag-country\">{{ field_country }}</p>\r\n      <p class=\"tag tag-language\">{{ field_language }} </p>\r\n    </div>\r\n    <h3 class=\"title\">{{title_4}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body}}</div>\r\n    \r\n    <div class=\"resource-field-link\">{{ field_link }} </div>\r\n    <div class=\"resource-field-mediafile\">{{ field_media_file }}</div>\r\n\r\n    <div class=\"expand\">\r\n<div class=\"body-expanded\">{{body_1}}</div>\r\n      <div class=\"partners-wrapper\">\r\n  \r\n       {% if (title_1 )%}\r\n       <div class=\"partner-wrapper partner-wrapper-related\">\r\n         <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{field_logo}}\r\n         </div>\r\n         <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_1 }}</h4>\r\n           {{ path }}\r\n         </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n      {% if (title_2) %}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n         <h4>{{ title_2 }}</h4>\r\n         {{path_1 }}\r\n        </div>\r\n     </div>\r\n     {% endif %}\r\n\r\n     </div>\r\n    </div>\r\n    <span class=\"more-link\"> See more</span>\r\n    \r\n  </div>\r\n  {% endif %}\r\n\r\n  {% if (type == \"FAQ\" ) %}\r\n   <div class=\"result-item type-faq\">\r\n    <h3 class=\"title\">{{title}}</h3>\r\n    <div class=\"type\">{{type}}</div>\r\n    <div class=\"body\">{{ body }}</div>\r\n    <div class=\"see-more\">{{ url_1 }} </div>\r\n  </div>\r\n  {% endif %}\r\n  \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -2930,7 +3070,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: true
           expose:
             label: Date
@@ -2990,17 +3130,6 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Resource: Media'
-          required: false
-          skip_access: false
-          entity_type: node
-          plugin_id: search_api
-        field_sector:
-          id: field_sector
-          table: search_api_datasource_default_multilingual_node_index_entity_node
-          field: field_sector
-          relationship: none
-          group_type: group
-          admin_label: 'Sector: Taxonomy term'
           required: false
           skip_access: false
           entity_type: node
