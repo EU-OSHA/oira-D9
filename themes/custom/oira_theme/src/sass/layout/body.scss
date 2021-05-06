@@ -714,7 +714,7 @@ select.custom-select{
       > div:nth-child(1){
         position: absolute;
         right: 0;
-        top: 30px;
+        top: 50px;
         a{
           font-size: 0.9rem;
           color: $text-color-black;
@@ -1352,7 +1352,7 @@ select.custom-select{
     height: initial;
     padding: 2px 3px;
     background-color: $bg-color-purple !important;
-    background-image: none;
+    background-image: url(../images/select-arrow.svg);
     background-position: 97% 50%;
     color: #ffffff;
     width: 190px !important;
@@ -2751,5 +2751,16 @@ select.custom-select{
     li p {
       margin: 0 0 0.5rem;
     }
+  }
+}
+
+/*** Privacy Notice ***/
+.page-node-27,
+.privacy-notice {
+  .node--type-article p {
+    margin: 0 0 11px;
+  }
+  #share-this-on {
+    margin: 25px 0;
   }
 }
