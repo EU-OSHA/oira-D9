@@ -448,8 +448,8 @@ select.custom-select{
     }
     .view-header {
       position: absolute;
-      right: 0;
-      top: -70px;
+      right: 15px;
+      top: 48px;
     }
     .view-content.row {
       margin: 0;
@@ -572,6 +572,11 @@ select.custom-select{
       }
     }
   }
+}
+
+.user-logged-in.page-view-promotional-resources-search main .view-header {
+  right: 0;
+  top: -70px;
 }
 
 /* OiRA Tools View */

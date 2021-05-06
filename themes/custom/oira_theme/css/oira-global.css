@@ -983,8 +983,8 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .view-header {
   position: absolute;
-  right: 0;
-  top: -70px;
+  right: 15px;
+  top: 48px;
 }
 .page-view-promotional-resources-search main .view-content.row {
   margin: 0;
@@ -1103,6 +1103,11 @@ select.custom-select {
   font-size: 1.2rem;
   line-height: 0;
   color: #10b2e4;
+}
+
+.user-logged-in.page-view-promotional-resources-search main .view-header {
+  right: 0;
+  top: -70px;
 }
 
 /* OiRA Tools View */
