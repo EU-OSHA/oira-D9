@@ -45,6 +45,8 @@ display:
       fields:
         entity_label:
           label: Entitate
+        type:
+          label: 'Tip de entitate'
       arguments:
         fid:
           exception:
