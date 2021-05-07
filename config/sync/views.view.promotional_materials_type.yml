@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_image
     - image.style.large
+    - system.menu.main
     - taxonomy.vocabulary.promotional_material_type
   module:
     - image
@@ -442,7 +443,7 @@ display:
       display_extenders: {  }
       path: promotional-resources
       menu:
-        type: none
+        type: normal
         title: 'Promotional resources'
         description: ''
         expanded: false
@@ -450,7 +451,7 @@ display:
         weight: 9
         context: '0'
         menu_name: main
-      rendering_language: '***LANGUAGE_language_interface***'
+      rendering_language: '***LANGUAGE_entity_translation***'
       filters:
         vid:
           id: vid
@@ -509,13 +510,16 @@ display:
       defaults:
         filters: false
         filter_groups: false
+        title: false
       filter_groups:
         operator: AND
         groups:
           1: AND
+      title: 'Promotional resources'
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
       tags:

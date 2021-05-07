@@ -1,0 +1,15 @@
+uuid: 0aa075d8-cc3a-40e6-80a9-5b0a985154aa
+langcode: en
+status: true
+dependencies: {  }
+id: what_s_new_article
+label: Articles
+description: ''
+entityType: node
+entityBundle: article
+language: und
+breadcrumbPaths: '<nolink>'
+breadcrumbTitles: "[node:menu-link:root]\r\n"
+type: '1'
+pathPattern: /what-is-new
+extraCacheContexts: ''
