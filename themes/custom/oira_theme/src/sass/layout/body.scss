@@ -1483,6 +1483,74 @@ select.custom-select{
   }
 }
 
+.path-private-zone.private-zone-collaboration-area {
+  .block-system.block-system-main-block {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+    background: transparent;
+    .view-content.row {
+      margin: 0 auto;
+    }
+  }
+  .menu--collaboration {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+    ul.menu {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 2rem auto;
+    }
+    li.menu-item {
+      margin: 0 3rem;
+      a {
+        max-width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-style: italic;
+        font-size: 1.1875rem;
+        &:before {
+          margin: 0 auto 1rem;
+          content: "";
+          width: 150px;
+          height: 150px;
+          border-radius: 100px;
+          background-color: $bg-color-purple;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      &:first-child {
+        a:before {
+          background-image: url(../images/icon-bg-documents.png);
+        }
+      }
+      &:nth-child(2) {
+        a:before {
+          background-image: url(../images/icon-meeting-docs.png);
+        }
+      }
+      &:nth-child(3) {
+        a:before {
+          background-image: url(../images/icon-audiovisual-materials.png);
+        }
+      }
+      &:last-child {
+        a:before {
+          background-image: url(../images/icon-image-gallery.png);
+        }
+      }
+    }
+  }
+}
+
 /**** Risks Page ***/
 .page-node-31,
 .what-risk-assessment {
@@ -2769,3 +2837,13 @@ select.custom-select{
     margin: 25px 0;
   }
 }
+
+/*** Page user ***/
+.path-user {
+  .block-system-main-block {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1170px;
+  }
+}
+
