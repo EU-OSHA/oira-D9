@@ -983,8 +983,8 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .view-header {
   position: absolute;
-  right: 0;
-  top: -70px;
+  right: 15px;
+  top: 48px;
 }
 .page-view-promotional-resources-search main .view-content.row {
   margin: 0;
@@ -1103,6 +1103,11 @@ select.custom-select {
   font-size: 1.2rem;
   line-height: 0;
   color: #10b2e4;
+}
+
+.user-logged-in.page-view-promotional-resources-search main .view-header {
+  right: 0;
+  top: -70px;
 }
 
 /* OiRA Tools View */
@@ -1975,6 +1980,64 @@ select.custom-select {
 }
 .path-private-zone .table-striped > tbody > tr:nth-of-type(even):hover {
   background-color: #f9f9f9;
+}
+
+.path-private-zone.private-zone-collaboration-area .block-system.block-system-main-block {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1170px;
+  background: transparent;
+}
+.path-private-zone.private-zone-collaboration-area .block-system.block-system-main-block .view-content.row {
+  margin: 0 auto;
+}
+.path-private-zone.private-zone-collaboration-area .menu--collaboration {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1170px;
+}
+.path-private-zone.private-zone-collaboration-area .menu--collaboration ul.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem auto;
+}
+.path-private-zone.private-zone-collaboration-area .menu--collaboration li.menu-item {
+  margin: 0 3rem;
+}
+.path-private-zone.private-zone-collaboration-area .menu--collaboration li.menu-item a {
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1875rem;
+}
+.path-private-zone.private-zone-collaboration-area .menu--collaboration li.menu-item a:before {
+  margin: 0 auto 1rem;
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: #786586;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.path-private-zone.private-zone-collaboration-area .menu--collaboration li.menu-item:first-child a:before {
+  background-image: url(../images/icon-bg-documents.png);
+}
+.path-private-zone.private-zone-collaboration-area .menu--collaboration li.menu-item:nth-child(2) a:before {
+  background-image: url(../images/icon-meeting-docs.png);
+}
+.path-private-zone.private-zone-collaboration-area .menu--collaboration li.menu-item:nth-child(3) a:before {
+  background-image: url(../images/icon-audiovisual-materials.png);
+}
+.path-private-zone.private-zone-collaboration-area .menu--collaboration li.menu-item:last-child a:before {
+  background-image: url(../images/icon-image-gallery.png);
 }
 
 /**** Risks Page ***/
@@ -3230,6 +3293,13 @@ select.custom-select {
 .page-node-27 #share-this-on,
 .privacy-notice #share-this-on {
   margin: 25px 0;
+}
+
+/*** Page user ***/
+.path-user .block-system-main-block {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1170px;
 }
 
 .site-footer {
