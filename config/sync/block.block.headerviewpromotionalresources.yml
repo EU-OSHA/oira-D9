@@ -28,12 +28,12 @@ visibility:
   request_path_exclusion:
     id: request_path_exclusion
     pages: ''
-    negate: null
+    negate: true
   view_inclusion:
     id: view_inclusion
-    negate: null
+    negate: false
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/promotional-resources\r\n/promotional-resources-search/*"
+    pages: "/promotional-resources\r\n/promotional-resources-search/*\r\n/promotional-resources-search"
     negate: false
