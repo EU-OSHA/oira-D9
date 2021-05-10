@@ -164,6 +164,16 @@ jQuery(document).ready(function($){
     $(this).parent('.nav-item').find('.dropdown-menu').slideToggle();
   });
 
+  /*** Slide Toggle in Partner profile ***/
+  $('.partner__address .field__label-widget').click(function(){
+    $(this).toggleClass('clicked');
+    $(this).parent('.partner__address').find('.field__content-wrapper').slideToggle();
+  });
+
+  $('.partner__socialprofile .field__label-widget').click(function(){
+    $(this).toggleClass('clicked');
+    $(this).parent('.partner__socialprofile').find('.item-list').slideToggle();
+  });
 
 });
 

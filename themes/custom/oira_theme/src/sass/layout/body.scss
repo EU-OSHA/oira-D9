@@ -2108,9 +2108,12 @@ select.custom-select{
       }
     }
   }
+  .partner__address,
   .partner__socialprofile {
-    width: 25%;
+    width: 27%;
     padding: 0 15px;
+  }
+  .partner__socialprofile {
     .field__label {
       display: block;
       margin-bottom: 15px;
@@ -2120,13 +2123,49 @@ select.custom-select{
     .list-group {
       margin: 0;
       .list-group-item {
+        padding: 0;
         margin-bottom: 5px;
         border: none;
+        &:first-child {
+          .url-icon {
+            background-image: url(../images/share-twitter.png);
+          }
+        }
+        &:nth-child(2) {
+          .url-icon {
+            background-image: url(../images/share-facebook.png);
+          }
+        }
+        &:nth-child(3) {
+          .url-icon {
+            background-image: url(../images/share-youtube.png);
+          }
+        }
+        &:nth-child(4) {
+          .url-icon {
+            background-image: url(../images/share-linkedin.png);
+          }
+        }
+      }
+      .social-profile-link {
+        display: flex;
       }
       a {
+        margin: 0 0 4px;
         color: $text-color-black;
         font-weight: $font-weight-normal;
         font-style: normal;
+        line-height: 1.2;
+        .url-icon {
+          display: inline-block;
+          margin: 0 6px 0 0;
+          width: 20px;
+          min-width: 20px;
+          height: 20px;
+          background-size: cover;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+        }
       }
     }
   }
