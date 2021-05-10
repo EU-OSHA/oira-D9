@@ -6,7 +6,6 @@ dependencies:
     - search_api_solr
     - node
     - taxonomy
-    - content_moderation
     - path
     - media
     - search_api
@@ -24,7 +23,6 @@ dependencies:
     - field.storage.media.field_language
     - field.storage.media.field_link
     - field.storage.media.field_link_image
-    - field.storage.node.field_revised_date
     - search_api.server.apachesolr
 third_party_settings:
   search_api_solr:
@@ -72,13 +70,6 @@ name: 'Promotional resources'
 description: ''
 read_only: false
 field_settings:
-  aggregated_field:
-    label: 'Aggregated field'
-    property_path: aggregated_field
-    type: string
-    configuration:
-      type: union
-      fields: {  }
   body:
     label: Description
     datasource_id: 'entity:node'
@@ -181,7 +172,7 @@ field_settings:
     label: 'Promotional material type'
     datasource_id: 'entity:node'
     property_path: field_promotional_material_type
-    type: text
+    type: integer
     dependencies:
       config:
         - field.storage.node.field_promotional_material_type
@@ -193,14 +184,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_publication_date
-  field_revised_date:
-    label: 'Revised date'
-    datasource_id: 'entity:node'
-    property_path: field_revised_date
-    type: date
-    dependencies:
-      config:
-        - field.storage.node.field_revised_date
   field_workbench_access:
     label: 'Partner wb access'
     datasource_id: 'entity:node'
@@ -219,14 +202,10 @@ field_settings:
         - field.storage.node.field_resource_fc
       module:
         - media
-  moderation_state:
-    label: 'Moderation state'
-    datasource_id: 'entity:node'
-    property_path: moderation_state
+  language_with_fallback:
+    label: 'Language (with fallback)'
+    property_path: language_with_fallback
     type: string
-    dependencies:
-      module:
-        - content_moderation
   name:
     label: 'Country » Taxonomy term » Name'
     datasource_id: 'entity:node'
@@ -316,7 +295,7 @@ field_settings:
     label: 'Promotional material type » Taxonomy term » Term ID'
     datasource_id: 'entity:node'
     property_path: 'field_promotional_material_type:entity:tid'
-    type: integer
+    type: text
     dependencies:
       config:
         - field.storage.node.field_promotional_material_type

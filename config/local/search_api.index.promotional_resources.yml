@@ -202,6 +202,10 @@ field_settings:
         - field.storage.node.field_resource_fc
       module:
         - media
+  language_with_fallback:
+    label: 'Language (with fallback)'
+    property_path: language_with_fallback
+    type: string
   name:
     label: 'Country » Taxonomy term » Name'
     datasource_id: 'entity:node'
@@ -271,6 +275,14 @@ field_settings:
       view_mode:
         'entity:node':
           promotional_material: ''
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
   summary:
     label: 'Description » Summary'
     datasource_id: 'entity:node'
