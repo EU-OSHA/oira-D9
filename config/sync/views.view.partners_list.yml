@@ -640,7 +640,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      title: 'Others partners'
+      title: 'Other partners'
       defaults:
         title: false
         filters: false

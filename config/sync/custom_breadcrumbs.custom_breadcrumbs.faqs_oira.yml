@@ -1,0 +1,15 @@
+uuid: 4bfaf7a4-4657-43eb-bc2f-76238785d39c
+langcode: en
+status: true
+dependencies: {  }
+id: faqs_oira
+label: 'FAQs OIRA'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: '<nolink>'
+breadcrumbTitles: 'Oira & Tools'
+type: '2'
+pathPattern: /oira-faqs
+extraCacheContexts: ''

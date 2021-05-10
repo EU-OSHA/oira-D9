@@ -1,0 +1,15 @@
+uuid: d0f30d23-2827-45e3-a243-cd7926cfc891
+langcode: en
+status: true
+dependencies: {  }
+id: irat_partners
+label: 'IRAT partners'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Partners
+type: '2'
+pathPattern: /irat-network
+extraCacheContexts: ''

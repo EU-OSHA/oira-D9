@@ -1,0 +1,15 @@
+uuid: 36974823-495a-40fc-9e69-220eb3f36833
+langcode: en
+status: true
+dependencies: {  }
+id: others_partners
+label: 'Others partners'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Partners
+type: '2'
+pathPattern: /others-partners
+extraCacheContexts: ''

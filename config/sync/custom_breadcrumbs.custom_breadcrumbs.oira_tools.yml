@@ -1,0 +1,15 @@
+uuid: 2de41c58-19fe-4c77-8303-bf7663891642
+langcode: en
+status: true
+dependencies: {  }
+id: oira_tools
+label: 'Oira Tools'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: '<nolink>'
+breadcrumbTitles: 'OiRA & Tools'
+type: '2'
+pathPattern: /oira-tools
+extraCacheContexts: ''
