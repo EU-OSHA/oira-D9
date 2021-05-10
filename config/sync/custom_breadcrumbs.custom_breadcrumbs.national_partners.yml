@@ -1,0 +1,15 @@
+uuid: 3e2dcbf7-3c75-4919-b712-65687da43720
+langcode: en
+status: true
+dependencies: {  }
+id: national_partners
+label: 'National Partners'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Partners
+type: '2'
+pathPattern: /national-partners
+extraCacheContexts: ''

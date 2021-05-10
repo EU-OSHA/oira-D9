@@ -1,0 +1,15 @@
+uuid: 16e000af-b26d-47d2-af5d-a796e1f47ac0
+langcode: en
+status: true
+dependencies: {  }
+id: oira_community
+label: 'Oira Community'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Partners
+type: '2'
+pathPattern: /oira-community
+extraCacheContexts: ''
