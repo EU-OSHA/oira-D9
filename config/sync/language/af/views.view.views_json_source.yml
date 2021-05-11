@@ -1,25 +1,25 @@
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: 'Pas toe'
-          reset_button_label: Herstel
+          submit_button: Apply
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
   example_2:
     display_options:
       arguments:
         parameter:
           exception:
-            title: Alle
+            title: All
   example_3:
     display_options:
       fields:
         value:
           label: ID
         value_1:
-          label: Outeur
+          label: Author

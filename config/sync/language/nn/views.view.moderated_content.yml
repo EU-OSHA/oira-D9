@@ -4,15 +4,15 @@ display:
       exposed_form:
         options:
           submit_button: Filtrer
-          reset_button_label: 'Sett til standard'
-          exposed_sorts_label: 'Sorter etter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       fields:
         title:
-          label: Tittel
+          label: Title
           separator: ', '
         type:
           label: 'Content type'
@@ -27,7 +27,7 @@ display:
       filters:
         title:
           expose:
-            label: Tittel
+            label: Title
         type:
           expose:
             label: 'Content type'

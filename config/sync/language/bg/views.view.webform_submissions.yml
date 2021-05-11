@@ -3,8 +3,8 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
-          reset_button_label: Рестартирай
+          submit_button: Apply
+          reset_button_label: Reset
       fields:
         created:
           label: Създадено
@@ -14,7 +14,7 @@ display:
       arguments:
         in_draft:
           exception:
-            title: Всички
+            title: All
   embed_administer:
     display_options:
       fields:
@@ -44,7 +44,7 @@ display:
           text: преглед
         edit_webform_submission:
           label: Действия
-          text: редактирай
+          text: edit
       filters:
         sticky:
           expose:

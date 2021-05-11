@@ -3,12 +3,12 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: 'Pas toe'
-          reset_button_label: Herstel
+          submit_button: Apply
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
-    display_title: Meester
+            items_per_page_options_all_label: '- All -'
+    display_title: Master
   page_1:
     display_title: Bladsy

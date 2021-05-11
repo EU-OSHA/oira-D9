@@ -1,11 +1,11 @@
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: 'Pas toe'
-          reset_button_label: Herstel
+          submit_button: Apply
+          reset_button_label: Reset
       use_more_text: Meer
   block_1:
     display_title: Blok

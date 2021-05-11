@@ -5,25 +5,25 @@ display:
       exposed_form:
         options:
           submit_button: Filtreer
-          reset_button_label: Herstel
+          reset_button_label: Reset
       fields:
         title:
-          label: Titel
+          label: Title
         type:
           label: 'Content type'
         name:
-          label: Outeur
+          label: Author
         status:
           label: Status
           settings:
-            format_custom_true: Gepubliseerd
+            format_custom_true: Published
             format_custom_false: Ongepubliseerd
         operations:
           label: Aksies
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
             label: 'Content type'
@@ -34,14 +34,14 @@ display:
             label: 'Published '
             group_items:
               1:
-                title: Gepubliseerd
+                title: Published
               2:
                 title: Ongepubliseerd
         langcode:
           expose:
             label: Taal
       title: Inhoud
-    display_title: Meester
+    display_title: Master
   page_1:
     display_options:
       menu:

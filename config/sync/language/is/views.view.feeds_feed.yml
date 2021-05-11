@@ -3,9 +3,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Virkja
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
@@ -14,17 +14,17 @@ display:
             first: '« fremsta'
             last: 'aftasta »'
           expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
       fields:
         title:
-          label: Titill
+          label: Title
           separator: ', '
         type:
-          label: Gerð
+          label: Type
           separator: ', '
         name:
-          label: Höfundur
+          label: Author
           separator: ', '
         changed:
           label: 'Updated date'
@@ -36,9 +36,9 @@ display:
       filters:
         title:
           expose:
-            label: Titill
+            label: Title
         type:
           expose:
-            label: Gerð
+            label: Type
   page_1:
     display_title: Síða

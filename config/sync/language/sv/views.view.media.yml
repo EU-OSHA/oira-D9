@@ -2,26 +2,26 @@ label: Media
 description: 'Hitta och hantera media.'
 display:
   default:
-    display_title: Huvud
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtrera
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Inlägg per sida'
-            items_per_page_options_all_label: '- Alla -'
-            offset_label: Kompensera
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
-            previous: '‹ Föregående'
-            next: 'Nästa ›'
-            first: '« Första'
-            last: 'Sista »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Åtgärd
@@ -32,15 +32,15 @@ display:
           label: Medianamn
           separator: ', '
         bundle:
-          label: Typ
+          label: Type
           separator: ', '
         uid:
-          label: Författare
+          label: Author
           separator: ', '
         status:
           label: Status
           settings:
-            format_custom_true: Publicerad
+            format_custom_true: Published
             format_custom_false: 'Ej publicerad'
           separator: ', '
         changed:
@@ -54,7 +54,7 @@ display:
             label: Medianamn
         bundle:
           expose:
-            label: Typ
+            label: Type
         status:
           expose:
             label: Sant
@@ -62,7 +62,7 @@ display:
             label: 'Status för publicering'
             group_items:
               1:
-                title: Publicerad
+                title: Published
               2:
                 title: 'Ej publicerad'
         langcode:

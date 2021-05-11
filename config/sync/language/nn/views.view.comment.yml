@@ -5,8 +5,8 @@ display:
       exposed_form:
         options:
           submit_button: Filtrer
-          reset_button_label: 'Sett til standard'
-          exposed_sorts_label: 'Sorter etter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
@@ -15,7 +15,7 @@ display:
             first: '« første'
             last: 'siste »'
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       fields:
         subject:
           label: Emne
@@ -23,7 +23,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Forfattar
+          label: Author
           separator: ', '
         entity_id:
           label: 'Skreve i'
@@ -68,7 +68,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Forfattar
+          label: Author
           separator: ', '
         entity_id:
           label: 'Skreve i'

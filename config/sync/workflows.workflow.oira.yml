@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.news
+    - node.type.practical_tool
+    - node.type.promotional_material
     - node.type.strategic_documentation
   module:
     - content_moderation
@@ -18,12 +21,12 @@ type_settings:
       weight: -3
     final_draft:
       published: false
-      default_revision: false
+      default_revision: true
       label: 'Final Draft'
       weight: -2
     needs_review:
       published: false
-      default_revision: false
+      default_revision: true
       label: 'To Be Reviewed'
       weight: -1
     published:
@@ -33,7 +36,7 @@ type_settings:
       weight: 1
     to_be_approved:
       published: false
-      default_revision: false
+      default_revision: true
       label: 'To Be Approved'
       weight: 0
   transitions:
@@ -42,11 +45,119 @@ type_settings:
       from:
         - draft
       to: final_draft
-      weight: -3
+      weight: -9
+    from_draft_to_be_approved:
+      label: 'From Draft to be Approved'
+      from:
+        - draft
+      to: to_be_approved
+      weight: -7
+    from_draft_to_be_reviewed_:
+      label: 'From Draft to be Reviewed '
+      from:
+        - draft
+      to: needs_review
+      weight: -8
+    from_draft_to_draft:
+      label: 'From Draft to Draft'
+      from:
+        - draft
+      to: draft
+      weight: -10
+    from_final_draft_to_be_approved:
+      label: 'From Final Draft to Be Approved'
+      from:
+        - final_draft
+      to: to_be_approved
+      weight: -2
+    from_final_draft_to_draft:
+      label: 'From Final Draft to Draft'
+      from:
+        - final_draft
+      to: draft
+      weight: -5
+    from_final_draft_to_final_draft:
+      label: 'From Final Draft to Final Draft'
+      from:
+        - final_draft
+      to: final_draft
+      weight: -4
+    from_final_draft_to_published:
+      label: 'From Final Draft to Published'
+      from:
+        - final_draft
+      to: published
+      weight: -1
+    from_published_to_be_reviewed:
+      label: 'From Published to be Reviewed'
+      from:
+        - published
+      to: needs_review
+      weight: 12
+    from_published_to_draft:
+      label: 'From Published to Draft'
+      from:
+        - published
+      to: draft
+      weight: 10
+    from_published_to_final_draft:
+      label: 'From Published to Final Draft'
+      from:
+        - published
+      to: final_draft
+      weight: 11
+    from_published_to_published:
+      label: 'From Published to Published'
+      from:
+        - published
+      to: published
+      weight: 14
+    from_published_to_to_be_approved:
+      label: 'From Published to To be Approved'
+      from:
+        - published
+      to: to_be_approved
+      weight: 13
+    from_to_be_approved_to_be_approved:
+      label: 'From To Be Approved to Be approved'
+      from:
+        - to_be_approved
+      to: to_be_approved
+      weight: 8
+    from_to_be_approved_to_be_reviewed:
+      label: 'From To Be Approved to Be Reviewed'
+      from:
+        - to_be_approved
+      to: needs_review
+      weight: 7
+    from_to_be_approved_to_final_draft:
+      label: 'From To Be Approved to Final Draft'
+      from:
+        - to_be_approved
+      to: final_draft
+      weight: 6
+    from_to_be_reviewed_to_be_reviewed:
+      label: 'From to be Reviewed to be Reviewed'
+      from:
+        - needs_review
+      to: needs_review
+      weight: 2
+    from_to_be_reviewed_to_final_draft:
+      label: 'From to be Reviewed to Final Draft'
+      from:
+        - needs_review
+      to: final_draft
+      weight: 1
+    from_to_be_reviewed_to_published:
+      label: 'From To Be Reviewed to Published'
+      from:
+        - needs_review
+      to: published
+      weight: 4
     publish:
       label: 'Publishing Draft'
       to: published
-      weight: -2
+      weight: -6
       from:
         - draft
     publishing:
@@ -54,13 +165,13 @@ type_settings:
       from:
         - to_be_approved
       to: published
-      weight: 3
+      weight: 9
     reject_approved_draft:
       label: 'Reject Approved Draft'
       from:
         - to_be_approved
       to: draft
-      weight: 2
+      weight: 5
     reject_reviewed_draft:
       label: 'Reject Reviewed Draft'
       from:
@@ -72,14 +183,17 @@ type_settings:
       from:
         - needs_review
       to: to_be_approved
-      weight: 1
+      weight: 3
     reviewing_final_draft:
       label: 'Reviewing Final Draft'
       from:
         - final_draft
       to: needs_review
-      weight: -1
+      weight: -3
   entity_types:
     node:
+      - news
+      - practical_tool
+      - promotional_material
       - strategic_documentation
   default_moderation_state: draft

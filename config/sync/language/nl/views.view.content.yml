@@ -7,28 +7,28 @@ display:
         options:
           submit_button: Filter
           reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Vorige'
-            next: 'Volgende ›'
-            first: '« Eerste'
-            last: 'Laatste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         title:
-          label: Titel
+          label: Title
         type:
           label: Inhoudstype
           separator: ', '
         name:
-          label: Auteur
+          label: Author
         status:
           label: Status
           settings:
-            format_custom_true: Gepubliceerd
+            format_custom_true: Published
             format_custom_false: 'Niet gepubliceerd'
         changed:
           label: 'Updated date'
@@ -37,7 +37,7 @@ display:
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
             label: Inhoudstype
@@ -48,7 +48,7 @@ display:
             label: Publicatiestatus
             group_items:
               1:
-                title: Gepubliceerd
+                title: Published
               2:
                 title: 'Niet gepubliceerd'
         langcode:
@@ -58,7 +58,7 @@ display:
       empty:
         area_text_custom:
           content: 'Geen inhoud beschikbaar.'
-    display_title: Hoofd
+    display_title: Master
   page_1:
     display_options:
       menu:

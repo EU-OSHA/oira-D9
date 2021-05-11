@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       pager:
         options:
           tags:
@@ -13,11 +13,11 @@ display:
             last: 'zadnja »'
       fields:
         title:
-          label: Naslov
+          label: Title
         type:
-          label: Tip
+          label: Type
         name:
-          label: Avtor
+          label: Author
         changed:
           label: 'Updated date'
         operations:
@@ -25,9 +25,9 @@ display:
       filters:
         title:
           expose:
-            label: Naslov
+            label: Title
         type:
           expose:
-            label: Tip
+            label: Type
   page_1:
     display_title: Stran

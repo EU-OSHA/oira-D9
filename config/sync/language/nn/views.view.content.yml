@@ -6,20 +6,20 @@ display:
       exposed_form:
         options:
           submit_button: Filtrer
-          reset_button_label: 'Sett til standard'
-          exposed_sorts_label: 'Sorter etter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       fields:
         title:
-          label: Tittel
+          label: Title
         type:
           label: 'Content type'
           separator: ', '
         name:
-          label: Forfattar
+          label: Author
         status:
           label: Status
           settings:
-            format_custom_true: Publisert
+            format_custom_true: Published
             format_custom_false: Upublisert
         changed:
           label: Oppdatert
@@ -28,7 +28,7 @@ display:
       filters:
         title:
           expose:
-            label: Tittel
+            label: Title
         type:
           expose:
             label: 'Content type'
@@ -39,7 +39,7 @@ display:
             label: 'Published '
             group_items:
               1:
-                title: Publisert
+                title: Published
               2:
                 title: Upublisert
         langcode:

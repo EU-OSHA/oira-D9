@@ -2,7 +2,7 @@ default_config:
   tags:
     pages:
       prefix_label: Síða
-      previous: '< Fyrri'
+      previous: '‹ Previous'
       page_current_title: 'Núverandi síða'
       page_title: 'Fara á síðu @number'
       first_title: 'Fara á fremstu síðu'
@@ -15,9 +15,9 @@ default_config:
       last_reader: 'Síðasta síða'
     items:
       prefix_label: Hlutur
-      previous: '< Fyrri'
+      previous: '‹ Previous'
       page_reader: Hlutur
     item_ranges:
       prefix_label: Hlutir
-      previous: '< Fyrri'
+      previous: '‹ Previous'
       page_reader: Hlutir

@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         created:
           label: Ustvarjeno
@@ -15,7 +15,7 @@ display:
       arguments:
         in_draft:
           exception:
-            title: Vsi
+            title: All
   embed_administer:
     display_options:
       fields:
@@ -41,7 +41,7 @@ display:
           text: pogled
         edit_webform_submission:
           label: Operacije
-          text: uredi
+          text: edit
   embed_review:
     display_options:
       fields:

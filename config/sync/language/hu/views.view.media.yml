@@ -2,26 +2,26 @@ label: Média
 description: 'Média keresés és kezelés.'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Szűrő
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Elemek száma oldalanként'
-            items_per_page_options_all_label: '– Mind –'
-            offset_label: Eltolás
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
-            previous: '‹ Előző'
-            next: 'Következő ›'
-            first: '« Első'
-            last: 'Utolsó »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Művelet
@@ -32,15 +32,15 @@ display:
           label: 'Média neve'
           separator: ', '
         bundle:
-          label: Típus
+          label: Type
           separator: ', '
         uid:
-          label: Szerző
+          label: Author
           separator: ', '
         status:
           label: Állapot
           settings:
-            format_custom_true: Közzétéve
+            format_custom_true: Published
             format_custom_false: Rejtett
           separator: ', '
         changed:
@@ -54,7 +54,7 @@ display:
             label: 'Média neve'
         bundle:
           expose:
-            label: Típus
+            label: Type
         status:
           expose:
             label: Igaz
@@ -62,7 +62,7 @@ display:
             label: 'Közzététel állapota'
             group_items:
               1:
-                title: Közzétéve
+                title: Published
               2:
                 title: Rejtett
         langcode:

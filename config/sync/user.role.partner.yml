@@ -43,6 +43,7 @@ permissions:
   - 'use manualcrop'
   - 'use media wysiwyg'
   - 'use text format filtered_html_minimal'
+  - 'use text format restricted_html'
   - 'use workbench access'
   - 'view all unpublished content'
   - 'view collaboration_document revisions'

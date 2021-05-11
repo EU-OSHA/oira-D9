@@ -4,10 +4,10 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         title:
-          label: Naslov
+          label: Title
         type:
           label: 'Tip vsebine'
         changed:
@@ -17,7 +17,7 @@ display:
       filters:
         title:
           expose:
-            label: Naslov
+            label: Title
         type:
           expose:
             label: 'Tip vsebine'

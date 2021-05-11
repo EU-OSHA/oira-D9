@@ -1,15 +1,15 @@
 label: Commenti
 display:
   default:
-    display_title: Principale
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtra
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -18,9 +18,9 @@ display:
             first: '« prima'
             last: 'ultima »'
           expose:
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options_all_label: '- Tutto -'
-            offset_label: Scostamento
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         comment_bulk_form:
           action_title: Azione
@@ -30,7 +30,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autore
+          label: Author
           separator: ', '
         entity_id:
           label: 'Inserito in'
@@ -86,7 +86,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autore
+          label: Author
           separator: ', '
         entity_id:
           label: 'Inserito in'

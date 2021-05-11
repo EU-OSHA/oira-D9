@@ -5,19 +5,19 @@ display:
       exposed_form:
         options:
           submit_button: Φίλτρο
-          reset_button_label: Επαναφορά
-          exposed_sorts_label: 'Ταξινόμηση κατά'
-          sort_asc_label: Αύξ
-          sort_desc_label: Φθί
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Είδη ανά σελίδα'
-            items_per_page_options_all_label: '- Όλα -'
-            offset_label: Αντιστάθμιση
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
-            previous: '‹ Προηγούμενο'
-            next: 'Επόμενο ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
       fields:
         media_bulk_form:
           action_title: Ενέργεια
@@ -27,15 +27,15 @@ display:
         name:
           separator: ', '
         bundle:
-          label: Τύπος
+          label: Type
           separator: ', '
         uid:
-          label: Συντάκτης
+          label: Author
           separator: ', '
         status:
           label: Κατάσταση
           settings:
-            format_custom_true: Δημοσιευμένο
+            format_custom_true: Published
             format_custom_false: 'Μη δημοσιευμένο'
           separator: ', '
         changed:
@@ -46,7 +46,7 @@ display:
       filters:
         bundle:
           expose:
-            label: Τύπος
+            label: Type
         status:
           expose:
             label: Αληθής
@@ -54,7 +54,7 @@ display:
             label: 'Κατάσταση δημοσίευσης'
             group_items:
               1:
-                title: Δημοσιευμένο
+                title: Published
               2:
                 title: 'Μη δημοσιευμένο'
         langcode:

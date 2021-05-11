@@ -49,7 +49,7 @@ display:
         name:
           label: Name
         uid:
-          label: Autor
+          label: Author
         changed:
           label: Actualizat
       filters:

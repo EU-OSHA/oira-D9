@@ -3,17 +3,17 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Действие
       filters:
         status:
           group_info:
-            label: Публикувано
+            label: Published
             group_items:
               1:
-                title: Публикувано
+                title: Published
         name:
           expose:
             label: Име
@@ -40,7 +40,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Всички
+            title: All
       header:
         display_link_table:
           label: Таблица
@@ -52,7 +52,7 @@ display:
         name:
           label: Име
         uid:
-          label: Автор
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -62,7 +62,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Всички
+            title: All
       header:
         display_link_table:
           label: Таблица

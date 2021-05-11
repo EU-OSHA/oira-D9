@@ -3,13 +3,13 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: 'Sett til standard'
-          exposed_sorts_label: 'Sorter etter'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       title: Kjelder
   feed_1:
     display_options:

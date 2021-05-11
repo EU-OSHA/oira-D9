@@ -4,7 +4,7 @@ tips:
   search-api-index-fields-machine-name:
     label: 'Stroju čitljiv naziv'
   search-api-index-fields-type:
-    label: Vrsta
+    label: Type
   search-api-index-fields-edit:
     label: 'Uredi polje'
   search-api-index-fields-remove:

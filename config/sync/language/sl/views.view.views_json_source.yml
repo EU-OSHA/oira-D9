@@ -3,15 +3,15 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
   example_2:
     display_options:
       arguments:
         parameter:
           exception:
-            title: Vsi
+            title: All
   example_3:
     display_options:
       fields:
         value_1:
-          label: Avtor
+          label: Author

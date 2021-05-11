@@ -3,8 +3,8 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
-          reset_button_label: Рестартирай
+          submit_button: Apply
+          reset_button_label: Reset
       pager:
         options:
           tags:
@@ -14,11 +14,11 @@ display:
             last: 'последна »'
       fields:
         title:
-          label: Заглавие
+          label: Title
         type:
-          label: Тип
+          label: Type
         name:
-          label: Автор
+          label: Author
         changed:
           label: 'Updated date'
         operations:
@@ -26,9 +26,9 @@ display:
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
         type:
           expose:
-            label: Тип
+            label: Type
   page_1:
     display_title: Страница

@@ -6,10 +6,10 @@ display:
       exposed_form:
         options:
           submit_button: Pročisti
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         media_bulk_form:
           action_title: Akcija
@@ -19,15 +19,15 @@ display:
         name:
           separator: ', '
         bundle:
-          label: Vrsta
+          label: Type
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
           label: Status
           settings:
-            format_custom_true: Objavljeno
+            format_custom_true: Published
           separator: ', '
         changed:
           label: 'Updated date'
@@ -37,7 +37,7 @@ display:
       filters:
         bundle:
           expose:
-            label: Vrsta
+            label: Type
         status:
           expose:
             label: Istina
@@ -45,7 +45,7 @@ display:
             label: 'Published '
             group_items:
               1:
-                title: Objavljeno
+                title: Published
         langcode:
           expose:
             label: Jezik

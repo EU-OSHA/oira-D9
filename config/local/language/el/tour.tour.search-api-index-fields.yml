@@ -4,7 +4,7 @@ tips:
   search-api-index-fields-machine-name:
     label: 'Όνομα μηχανής'
   search-api-index-fields-type:
-    label: Τύπος
+    label: Type
   search-api-index-fields-edit:
     label: 'Επεξεργασία πεδίου'
   search-api-index-fields-submit:

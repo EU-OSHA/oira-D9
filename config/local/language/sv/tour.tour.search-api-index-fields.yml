@@ -4,7 +4,7 @@ tips:
   search-api-index-fields-machine-name:
     label: 'Maskinläsbart namn'
   search-api-index-fields-type:
-    label: Typ
+    label: Type
   search-api-index-fields-edit:
     label: 'Redigera fält'
   search-api-index-fields-remove:

@@ -6,29 +6,29 @@ display:
       exposed_form:
         options:
           submit_button: Filtrera
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Föregående'
-            next: 'Nästa ›'
-            first: '« Första'
-            last: 'Sista »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         title:
-          label: Titel
+          label: Title
         type:
           label: Innehållstyp
           separator: ', '
         name:
-          label: Författare
+          label: Author
         status:
           label: Status
           settings:
-            format_custom_true: Publicerad
+            format_custom_true: Published
             format_custom_false: 'Ej publicerad'
         changed:
           label: 'Updated date'
@@ -37,7 +37,7 @@ display:
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
             label: Innehållstyp
@@ -48,7 +48,7 @@ display:
             label: 'Status för publicering'
             group_items:
               1:
-                title: Publicerad
+                title: Published
               2:
                 title: 'Ej publicerad'
         langcode:
@@ -58,7 +58,7 @@ display:
       empty:
         area_text_custom:
           content: 'Inget innehåll tillgängligt.'
-    display_title: Huvud
+    display_title: Master
   page_1:
     display_options:
       menu:

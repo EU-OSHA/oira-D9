@@ -4,9 +4,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: 'Sett til standard'
-          exposed_sorts_label: 'Sorter etter'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       title: 'Nye brukarar'
   block_1:
     display_title: 'Nye brukarar'

@@ -5,20 +5,20 @@ display:
       exposed_form:
         options:
           submit_button: Филтър
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Действие
         thumbnail__target_id:
           label: Умалена
         bundle:
-          label: Тип
+          label: Type
         uid:
-          label: Автор
+          label: Author
         status:
           label: Статус
           settings:
-            format_custom_true: Публикувано
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
@@ -26,13 +26,13 @@ display:
       filters:
         bundle:
           expose:
-            label: Тип
+            label: Type
         status:
           group_info:
             label: 'Published '
             group_items:
               1:
-                title: Публикувано
+                title: Published
         langcode:
           expose:
             label: Език
