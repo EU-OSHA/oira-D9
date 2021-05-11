@@ -1,6 +1,6 @@
 settings:
   default_submit_button_label: 'Legg inn'
-  default_reset_button_label: 'Sett til standard'
+  default_reset_button_label: Reset
   default_delete_button_label: Slett
   default_wizard_start_label: Byrjar
   default_preview_next_button_label: Førehandsvis

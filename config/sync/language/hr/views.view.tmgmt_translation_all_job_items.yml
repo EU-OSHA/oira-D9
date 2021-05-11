@@ -4,18 +4,18 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Primjeni
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         state:
           label: Država
         label:
           label: Oznaka
         type:
-          label: Vrsta
+          label: Type
         source_language:
           label: Od
           separator: ', '

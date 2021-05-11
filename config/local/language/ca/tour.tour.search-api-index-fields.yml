@@ -4,7 +4,7 @@ tips:
   search-api-index-fields-machine-name:
     label: Nom-màquina
   search-api-index-fields-type:
-    label: Tipus
+    label: Type
   search-api-index-fields-edit:
     label: 'Edita el camp'
   search-api-index-fields-remove:

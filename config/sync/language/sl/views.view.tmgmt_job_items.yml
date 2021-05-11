@@ -3,7 +3,7 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       pager:
         options:
           tags:
@@ -15,7 +15,7 @@ display:
         label:
           label: Oznaka
         type:
-          label: Tip
+          label: Type
         tags_count:
           label: Oznake
         operations:
@@ -23,11 +23,11 @@ display:
       arguments:
         tjid:
           exception:
-            title: Vsi
+            title: All
   checkout:
     display_options:
       fields:
         label:
           label: Oznaka
         type:
-          label: Tip
+          label: Type

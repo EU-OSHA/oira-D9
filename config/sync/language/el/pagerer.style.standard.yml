@@ -2,8 +2,8 @@ default_config:
   tags:
     pages:
       prefix_label: Σελίδα
-      previous: '‹ Προηγούμενο'
-      next: 'Επόμενο ›'
+      previous: '‹ Previous'
+      next: 'Next ›'
       page_current_title: 'Τρέχουσα σελίδα'
       page_title: 'πήγαινε στη σελίδα @number'
       first_title: 'Πρώτη σελίδα'
@@ -15,12 +15,12 @@ default_config:
       previous_reader: 'Προηγούμενη σελίδα'
     items:
       prefix_label: Αντικείμενο
-      previous: '‹ Προηγούμενο'
-      next: 'Επόμενο ›'
+      previous: '‹ Previous'
+      next: 'Next ›'
       page_reader: Αντικείμενο
       first_reader: 'Πρώτο στοιχείο'
     item_ranges:
       prefix_label: Αντικείμενα
-      previous: '‹ Προηγούμενο'
-      next: 'Επόμενο ›'
+      previous: '‹ Previous'
+      next: 'Next ›'
       page_reader: Αντικείμενα

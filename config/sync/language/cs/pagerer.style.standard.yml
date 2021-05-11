@@ -2,10 +2,10 @@ default_config:
   tags:
     pages:
       prefix_label: Stránka
-      first: '« První'
-      previous: '‹ Předchozí'
-      next: 'Následující ›'
-      last: 'Poslední »'
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
       page_current_title: 'Aktuální stránka'
       page_title: 'Přejít na stranu @number'
       first_title: 'Přejít na první stranu'
@@ -19,16 +19,16 @@ default_config:
       last_reader: 'Poslední stránka'
     items:
       prefix_label: Položka
-      first: '« První'
-      previous: '‹ Předchozí'
-      next: 'Následující ›'
-      last: 'Poslední »'
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
       page_reader: Položka
       first_reader: 'První položka'
     item_ranges:
       prefix_label: Položky
-      first: '« První'
-      previous: '‹ Předchozí'
-      next: 'Následující ›'
-      last: 'Poslední »'
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
       page_reader: Položky

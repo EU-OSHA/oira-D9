@@ -1,7 +1,7 @@
 label: 'onlangse kommentaar'
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       title: 'onlangse kommentaar'
       empty:

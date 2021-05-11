@@ -1,13 +1,13 @@
 label: 'Canales de noticias'
 display:
   default:
-    display_title: Máster
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Aplicar
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -18,21 +18,21 @@ display:
             first: '« primero'
             last: 'último »'
           expose:
-            items_per_page_label: 'Elementos por página'
-            items_per_page_options_all_label: '- Todo -'
-            offset_label: Desplazamiento
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         feeds_feed_bulk_form:
           label: 'Actualización masiva'
           action_title: 'Con selección'
         title:
-          label: Título
+          label: Title
           separator: ', '
         type:
-          label: Tipo
+          label: Type
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         changed:
           label: 'Updated date'
@@ -45,10 +45,10 @@ display:
       filters:
         title:
           expose:
-            label: Título
+            label: Title
         type:
           expose:
-            label: Tipo
+            label: Type
       title: 'Canales de noticias'
   page_1:
     display_title: Página

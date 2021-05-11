@@ -2,15 +2,15 @@ label: Kommentaarid
 description: 'Leia ja halda kommentaare.'
 display:
   default:
-    display_title: Peamine
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtreeri
-          reset_button_label: Tühista
-          exposed_sorts_label: 'Sorteerimise alus'
-          sort_asc_label: Kasvav
-          sort_desc_label: Kahanev
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -19,9 +19,9 @@ display:
             first: '« esimene'
             last: 'viimane »'
           expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         comment_bulk_form:
           action_title: Tegevus
@@ -31,7 +31,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         entity_id:
           label: Postitatud
@@ -91,7 +91,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         entity_id:
           label: Postitatud

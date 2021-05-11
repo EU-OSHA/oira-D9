@@ -1,26 +1,26 @@
 label: Media
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Suodatus
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Merkintöjä sivua kohti'
-            items_per_page_options_all_label: '- Kaikki -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
             offset_label: Offset
           tags:
-            previous: '‹ Edellinen'
-            next: 'Seuraava ›'
-            first: '« Ensimmäinen'
-            last: 'Viimeinen »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Toiminto
@@ -30,15 +30,15 @@ display:
         name:
           separator: ', '
         bundle:
-          label: Tyyppi
+          label: Type
           separator: ', '
         uid:
-          label: Tekijä
+          label: Author
           separator: ', '
         status:
           label: Tila
           settings:
-            format_custom_true: Julkaistu
+            format_custom_true: Published
             format_custom_false: Julkaisematon
           separator: ', '
         changed:
@@ -49,7 +49,7 @@ display:
       filters:
         bundle:
           expose:
-            label: Tyyppi
+            label: Type
         status:
           expose:
             label: Tosi
@@ -57,7 +57,7 @@ display:
             label: Julkaisutila
             group_items:
               1:
-                title: Julkaistu
+                title: Published
               2:
                 title: Julkaisematon
         langcode:

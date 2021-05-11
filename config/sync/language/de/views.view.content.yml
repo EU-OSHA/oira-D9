@@ -6,29 +6,29 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Zurücksetzen
-          exposed_sorts_label: 'Sortieren nach'
-          sort_asc_label: Aufsteigend
-          sort_desc_label: Absteigend
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Vorherige Seite'
-            next: 'Nächste Seite ›'
-            first: '« Anfang'
-            last: 'Ende »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         title:
-          label: Titel
+          label: Title
         type:
           label: Inhaltstyp
           separator: ', '
         name:
-          label: Autor
+          label: Author
         status:
           label: Status
           settings:
-            format_custom_true: Veröffentlicht
+            format_custom_true: Published
             format_custom_false: 'Nicht veröffentlicht'
         changed:
           label: 'Updated date'
@@ -37,7 +37,7 @@ display:
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
             label: Inhaltstyp
@@ -48,7 +48,7 @@ display:
             label: Veröffentlichungsstatus
             group_items:
               1:
-                title: Veröffentlicht
+                title: Published
               2:
                 title: 'Nicht veröffentlicht'
         langcode:

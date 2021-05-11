@@ -3,8 +3,8 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
-          reset_button_label: Рестартирай
+          submit_button: Apply
+          reset_button_label: Reset
       pager:
         options:
           tags:
@@ -18,7 +18,7 @@ display:
         label:
           label: Заглавие
         type:
-          label: Тип
+          label: Type
         tags_count:
           label: Таг
         operations:
@@ -26,7 +26,7 @@ display:
       arguments:
         tjid:
           exception:
-            title: Всички
+            title: All
   checkout:
     display_title: Поръчване
     display_options:
@@ -34,4 +34,4 @@ display:
         label:
           label: Заглавие
         type:
-          label: Тип
+          label: Type

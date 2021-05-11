@@ -3,13 +3,13 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
           tags:
             previous: ‹‹
             next: ››
@@ -21,10 +21,10 @@ display:
           expose:
             label: Birtingarstaða
           group_info:
-            label: Birt
+            label: Published
             group_items:
               1:
-                title: Birt
+                title: Published
               2:
                 title: 'Ekki birt'
         name:
@@ -54,7 +54,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Allt
+            title: All
       header:
         display_link_grid:
           label: Grind
@@ -68,7 +68,7 @@ display:
         name:
           label: Nafn
         uid:
-          label: Höfundur
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -78,7 +78,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Allt
+            title: All
       header:
         display_link_grid:
           label: Grind

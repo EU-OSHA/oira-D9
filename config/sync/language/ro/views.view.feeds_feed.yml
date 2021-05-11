@@ -25,11 +25,11 @@ display:
           label: 'Actualizare în masă'
           action_title: 'Cu cele selectate'
         title:
-          label: Titlu
+          label: Title
         type:
           label: Tip
         name:
-          label: Autor
+          label: Author
         changed:
           label: Actualizat
         operations:
@@ -37,7 +37,7 @@ display:
       filters:
         title:
           expose:
-            label: Titlu
+            label: Title
         type:
           expose:
             label: Tip

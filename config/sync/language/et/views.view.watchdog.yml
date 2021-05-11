@@ -2,21 +2,21 @@ label: Watchdog
 description: 'Viimased logiteated'
 display:
   default:
-    display_title: Peamine
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtreeri
-          reset_button_label: Tühista
-          exposed_sorts_label: 'Sorteerimise alus'
-          sort_asc_label: Kasvav
-          sort_desc_label: Kahanev
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -28,7 +28,7 @@ display:
         severity:
           label: Tõsidus
         type:
-          label: Liik
+          label: Type
         timestamp:
           label: Kuupäev
         message:
@@ -43,7 +43,7 @@ display:
       filters:
         type:
           expose:
-            label: Liik
+            label: Type
         severity:
           expose:
             label: Tõsidus

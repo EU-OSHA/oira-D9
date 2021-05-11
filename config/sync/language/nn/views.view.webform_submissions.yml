@@ -3,13 +3,13 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: 'Sett til standard'
-          exposed_sorts_label: 'Sorter etter'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       fields:
         sid:
           separator: ', '
@@ -26,7 +26,7 @@ display:
       arguments:
         in_draft:
           exception:
-            title: Alle
+            title: All
   embed_administer:
     display_options:
       fields:
@@ -70,7 +70,7 @@ display:
           text: vis
         edit_webform_submission:
           label: Operasjonar
-          text: endre
+          text: edit
   embed_review:
     display_options:
       fields:

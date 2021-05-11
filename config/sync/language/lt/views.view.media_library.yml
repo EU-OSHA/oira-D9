@@ -3,23 +3,23 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
       fields:
         media_bulk_form:
           action_title: Veiksmas
       filters:
         status:
           group_info:
-            label: Paskelbtas
+            label: Published
             group_items:
               1:
-                title: Paskelbtas
+                title: Published
               2:
                 title: Nepaskelbtas
         name:
@@ -56,7 +56,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Visi
+            title: All
       header:
         display_link_grid:
           label: Tinklelis
@@ -70,7 +70,7 @@ display:
         name:
           label: Pavadinimas
         uid:
-          label: Autorius
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -80,7 +80,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Visi
+            title: All
       header:
         display_link_grid:
           label: Tinklelis

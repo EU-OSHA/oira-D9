@@ -2,15 +2,15 @@ label: 'Contenuti recenti'
 description: 'Contenuti recenti.'
 display:
   default:
-    display_title: Principale
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Applica
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       fields:
         changed:
           separator: ', '

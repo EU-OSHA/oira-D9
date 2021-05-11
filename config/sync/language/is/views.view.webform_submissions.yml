@@ -3,17 +3,17 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Virkja
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
           expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
       fields:
         sid:
           separator: ', '
@@ -31,7 +31,7 @@ display:
       arguments:
         in_draft:
           exception:
-            title: Allt
+            title: All
   embed_administer:
     display_options:
       fields:
@@ -83,7 +83,7 @@ display:
           text: skoða
         edit_webform_submission:
           label: Aðgerðir
-          text: breyta
+          text: edit
   embed_review:
     display_options:
       fields:

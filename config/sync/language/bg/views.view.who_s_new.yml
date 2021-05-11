@@ -4,8 +4,8 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
-          reset_button_label: Рестартирай
+          submit_button: Apply
+          reset_button_label: Reset
       title: 'Нови потребители'
   block_1:
     display_title: 'Нови потребители'

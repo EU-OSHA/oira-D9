@@ -1,21 +1,21 @@
 label: Waghond
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtreer
-          reset_button_label: Herstel
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       fields:
         severity:
           label: Strengheid
         type:
-          label: Tipe
+          label: Type
         timestamp:
           label: Datum
         message:
@@ -27,7 +27,7 @@ display:
       filters:
         type:
           expose:
-            label: Tipe
+            label: Type
         severity:
           expose:
             label: Strengheid

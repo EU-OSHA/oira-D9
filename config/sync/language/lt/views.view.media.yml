@@ -5,26 +5,26 @@ display:
       exposed_form:
         options:
           submit_button: Filtruoti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
       fields:
         media_bulk_form:
           action_title: Veiksmas
         thumbnail__target_id:
           label: Miniatūra
         bundle:
-          label: Tipas
+          label: Type
         uid:
-          label: Autorius
+          label: Author
         status:
           label: Būsena
           settings:
-            format_custom_true: Paskelbtas
+            format_custom_true: Published
             format_custom_false: Nepaskelbtas
         changed:
           label: 'Updated date'
@@ -33,7 +33,7 @@ display:
       filters:
         bundle:
           expose:
-            label: Tipas
+            label: Type
         status:
           expose:
             label: 'True'
@@ -41,7 +41,7 @@ display:
             label: 'Paskelbta statusas'
             group_items:
               1:
-                title: Paskelbtas
+                title: Published
               2:
                 title: Nepaskelbtas
         langcode:

@@ -19,28 +19,24 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
             - Strike
-            - Superscript
-            - Subscript
+            - JustifyBlock
             - '-'
-            - RemoveFormat
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
         -
           name: Lists
           items:
             - BulletedList
             - NumberedList
         -
+          name: Linking
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
           name: Media
           items:
-            - Blockquote
             - DrupalImage
-            - Table
-            - HorizontalRule
         -
           name: 'Block Formatting'
           items:
@@ -48,8 +44,20 @@ settings:
         -
           name: Tools
           items:
-            - ShowBlocks
             - Source
+            - Cut
+            - Copy
+            - Paste
+            - PasteText
+            - PasteFromWord
+        -
+          name: Table
+          items:
+            - Table
+        -
+          name: Others
+          items:
+            - DrupalMediaLibrary
   plugins:
     stylescombo:
       styles: ''

@@ -2,24 +2,24 @@ label: Fájlok
 description: 'Fájlok keresése és kezelése.'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Szűrő
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Előző'
-            next: 'Következő ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
-            items_per_page_label: 'Elemek száma oldalanként'
-            items_per_page_options_all_label: '– Mind –'
-            offset_label: Eltolás
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         fid:
           label: Fid
@@ -66,12 +66,12 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Előző'
-            next: 'Következő ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
-            items_per_page_label: 'Elemek száma oldalanként'
-            items_per_page_options_all_label: '– Mind –'
-            offset_label: Eltolás
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         entity_label:
           label: Entitás
@@ -86,5 +86,5 @@ display:
       arguments:
         fid:
           exception:
-            title: Mind
+            title: All
           title: '{{ arguments.fid }} fájlhasználati információi'

@@ -5,9 +5,9 @@ display:
       exposed_form:
         options:
           submit_button: Filtrēt
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -16,14 +16,14 @@ display:
             first: '« pirmā'
             last: 'pēdējā »'
           expose:
-            items_per_page_options_all_label: '- Visi -'
+            items_per_page_options_all_label: '- All -'
       fields:
         comment_bulk_form:
           action_title: Darbība
         subject:
           label: Temats
         name:
-          label: Autors
+          label: Author
         entity_id:
           label: Ievietots
         changed:
@@ -68,7 +68,7 @@ display:
         subject:
           label: Temats
         name:
-          label: Autors
+          label: Author
         entity_id:
           label: Ievietots
         changed:

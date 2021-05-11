@@ -2,7 +2,7 @@ tips:
   search-api-index-fields-label:
     label: Заглавие
   search-api-index-fields-type:
-    label: Тип
+    label: Type
   search-api-index-fields-edit:
     label: 'Редактиране на поле'
   search-api-index-fields-submit:

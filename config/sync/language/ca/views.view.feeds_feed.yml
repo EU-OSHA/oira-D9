@@ -1,13 +1,13 @@
 label: Canals
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Aplica
-          reset_button_label: Reinicialitza
-          exposed_sorts_label: 'Ordena per'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
@@ -18,21 +18,21 @@ display:
             first: '« primer'
             last: 'últim »'
           expose:
-            items_per_page_label: 'Elements per pàgina'
-            items_per_page_options_all_label: '- Tot -'
-            offset_label: Desplaçament
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         feeds_feed_bulk_form:
           label: 'Actualització massiva'
           action_title: 'Amb la selecció'
         title:
-          label: Títol
+          label: Title
           separator: ', '
         type:
-          label: Tipus
+          label: Type
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         changed:
           label: 'Updated date'
@@ -45,10 +45,10 @@ display:
       filters:
         title:
           expose:
-            label: Títol
+            label: Title
         type:
           expose:
-            label: Tipus
+            label: Type
       title: Canals
   page_1:
     display_title: Pàgina

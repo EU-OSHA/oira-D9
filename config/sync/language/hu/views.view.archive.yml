@@ -2,22 +2,22 @@ label: Archiválás
 description: 'Minden tartalom, hónaponként csoportosítva.'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       title: 'Havi archívum'
       exposed_form:
         options:
-          submit_button: Alkalmaz
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Elemek száma oldalanként'
-            items_per_page_options_all_label: '– Mind –'
-            offset_label: Eltolás
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››

@@ -1,0 +1,45 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      fields:
+        title:
+          label: Title
+        type:
+          label: Type
+        status:
+          label: Published
+        changed:
+          label: 'Last updated'
+        uid:
+          label: Author
+      filters:
+        title:
+          expose:
+            label: Title
+        type:
+          expose:
+            label: Type
+        status:
+          expose:
+            label: Published
+      arguments:
+        uid_revision:
+          exception:
+            title: All
+  block_1:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'

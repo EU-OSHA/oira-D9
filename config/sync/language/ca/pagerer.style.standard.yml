@@ -3,10 +3,10 @@ default_config:
     page_breaker: …
     pages:
       prefix_label: Pàgina
-      first: '« Primer'
-      previous: '‹ Anterior'
-      next: 'Següent ›'
-      last: 'Últim »'
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
       page_current_title: 'Pàgina actual'
       page_title: 'Vés a la pàgina @number'
       first_title: 'Vés a la primera pàgina'
@@ -21,16 +21,16 @@ default_config:
       last_reader: 'Última pàgina'
     items:
       prefix_label: Element
-      first: '« Primer'
-      previous: '‹ Anterior'
-      next: 'Següent ›'
-      last: 'Últim »'
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
       page_reader: Element
       first_reader: 'Primer element'
     item_ranges:
       prefix_label: Elements
-      first: '« Primer'
-      previous: '‹ Anterior'
-      next: 'Següent ›'
-      last: 'Últim »'
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
       page_reader: Elements

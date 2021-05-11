@@ -2,21 +2,21 @@ label: Vigilant
 description: 'Missatges recents del registre'
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtra
-          reset_button_label: Reinicialitza
-          exposed_sorts_label: 'Ordena per'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Elements per pàgina'
-            items_per_page_options_all_label: '- Tot -'
-            offset_label: Desplaçament
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -28,7 +28,7 @@ display:
         severity:
           label: Severitat
         type:
-          label: Tipus
+          label: Type
         timestamp:
           label: Data
         message:
@@ -43,7 +43,7 @@ display:
       filters:
         type:
           expose:
-            label: Tipus
+            label: Type
         severity:
           expose:
             label: Severitat

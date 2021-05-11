@@ -5,18 +5,18 @@ display:
       exposed_form:
         options:
           submit_button: Филтър
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
       fields:
         title:
-          label: Заглавие
+          label: Title
         type:
           label: 'Тип на съдържанието'
         name:
-          label: Автор
+          label: Author
         status:
           label: Статус
           settings:
-            format_custom_true: Публикувано
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
@@ -24,7 +24,7 @@ display:
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
         type:
           expose:
             label: 'Тип на съдържанието'
@@ -35,7 +35,7 @@ display:
             label: 'Published '
             group_items:
               1:
-                title: Публикувано
+                title: Published
         langcode:
           expose:
             label: Език

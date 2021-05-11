@@ -1,26 +1,26 @@
 label: Media
 display:
   default:
-    display_title: Principal
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtro
-          reset_button_label: Reiniciar
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Itens por página'
-            items_per_page_options_all_label: '- Todos -'
-            offset_label: Deslocamento
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
-            previous: '‹ Anterior'
-            next: 'Seguinte ›'
-            first: '« Primeira'
-            last: 'Última »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         media_bulk_form:
           action_title: Ação
@@ -31,15 +31,15 @@ display:
           label: 'Nome do Media'
           separator: ', '
         bundle:
-          label: Tipo
+          label: Type
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         status:
           label: Estado
           settings:
-            format_custom_true: Publicado
+            format_custom_true: Published
             format_custom_false: 'Não publicado'
           separator: ', '
         changed:
@@ -53,7 +53,7 @@ display:
             label: 'Nome do Media'
         bundle:
           expose:
-            label: Tipo
+            label: Type
         status:
           expose:
             label: Verdadeiro
@@ -61,7 +61,7 @@ display:
             label: 'Estado da publicação'
             group_items:
               1:
-                title: Publicado
+                title: Published
               2:
                 title: 'Não publicado'
         langcode:

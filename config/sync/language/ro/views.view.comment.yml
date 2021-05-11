@@ -24,7 +24,7 @@ display:
         subject:
           label: Subiect
         name:
-          label: Autor
+          label: Author
         changed:
           label: Actualizat
         operations:
@@ -52,7 +52,7 @@ display:
         subject:
           label: Subiect
         name:
-          label: Autor
+          label: Author
         changed:
           label: Actualizat
         operations:
