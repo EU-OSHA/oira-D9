@@ -1923,6 +1923,11 @@ select.custom-select{
       font-weight: $font-weight-bold;
       color: $text-color-purple;
     }
+    .tags {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
     .tag {
       background-color: #b4a4bf;
       display: inline-block;
@@ -1931,10 +1936,9 @@ select.custom-select{
       font-size: 0.8em;
       font-weight: bold;
       font-style: italic;
-      margin-top: 0em;
       margin-right: 5px;
+      margin-bottom: 0;
       border-radius: 15px;
-      margin-bottom: 20px;
     }
     .see-more {
       margin-top: 15px;
@@ -1964,9 +1968,23 @@ select.custom-select{
     .expand {
       display: none;
     }
-    .result-item.type-tools {
+    .result-item {
+      .body {
+        &.hideme {
+          display: none;
+        }
+      }
+      .body-expanded {
+        display: none;
+        &.showme {
+          display: block;
+        }
+      }
+    }
+    .result-item.type-tools,
+    .result-item.type-promo{
       .more-link {
-        margin: -30px 0 0;
+        margin: -5px 0 0;
         display: flex;
         cursor: pointer;
         color: $text-color-blue-light;
@@ -2035,6 +2053,7 @@ select.custom-select{
 }
 
 #edit-reset--2 {
+  display: none;
   margin: 4px 0;
   padding: 0;
   background: transparent;
