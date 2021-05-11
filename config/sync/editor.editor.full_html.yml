@@ -33,6 +33,7 @@ settings:
           items:
             - DrupalLink
             - DrupalUnlink
+            - Anchor
         -
           name: Media
           items:
@@ -41,6 +42,8 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Font
+            - FontSize
         -
           name: Tools
           items:
@@ -58,11 +61,29 @@ settings:
           name: Others
           items:
             - DrupalMediaLibrary
+            - Accordion
+            - Resize
   plugins:
     stylescombo:
       styles: ''
     language:
       language_list: un
+    font:
+      font_names: ''
+      font_sizes: ''
+    wordcount:
+      enable: true
+      show_remaining: false
+      show_paragraphs: false
+      show_word_count: true
+      show_char_count: false
+      count_bytes: false
+      count_spaces: false
+      count_html: 0
+      count_line_breaks: false
+      max_words: -1
+      max_chars: -1
+      hard_limit: 1
 image_upload:
   status: true
   scheme: public

@@ -3,14 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.section
     - user.role.administrator
     - user.role.oira_project_manager
     - user.role.oira_supervisor
     - workbench_access.access_scheme.partner
     - workflows.workflow.oira
-  content:
-    - 'taxonomy_term:section:73cbd05a-e0f5-489e-aff4-54988b377c41'
   enforced:
     module:
       - content_moderation
@@ -2083,52 +2080,6 @@ display:
             group_items: {  }
           entity_type: node
           plugin_id: latest_translation_affected_revision
-        field_workbench_access_target_id:
-          id: field_workbench_access_target_id
-          table: node__field_workbench_access
-          field: field_workbench_access_target_id
-          relationship: nid
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            302: 302
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          type: select
-          limit: true
-          vid: section
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
       filter_groups:
         operator: AND
         groups: {  }
@@ -2186,7 +2137,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

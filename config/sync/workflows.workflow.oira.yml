@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.news
+    - node.type.practical_tool
+    - node.type.promotional_material
     - node.type.strategic_documentation
   module:
     - content_moderation
@@ -81,5 +84,8 @@ type_settings:
       weight: -1
   entity_types:
     node:
+      - news
+      - practical_tool
+      - promotional_material
       - strategic_documentation
   default_moderation_state: draft
