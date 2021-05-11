@@ -1,6 +1,6 @@
 uuid: 8ef8d67b-1936-4807-b89f-35c6c3018964
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - editor
@@ -8,7 +8,7 @@ _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
 name: 'Basic HTML'
 format: basic_html
-weight: -8
+weight: -5
 filters:
   filter_html:
     id: filter_html
