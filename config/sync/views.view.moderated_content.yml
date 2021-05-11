@@ -3,6 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.article
+    - node.type.news
+    - node.type.practical_tool
+    - node.type.promotional_material
+    - node.type.wiki_page
     - user.role.administrator
     - user.role.oira_project_manager
     - user.role.oira_supervisor
@@ -71,7 +76,7 @@ display:
             first: '« First'
             last: 'Last »'
           expose:
-            items_per_page: false
+            items_per_page: true
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
@@ -701,8 +706,8 @@ display:
   moderated_content:
     display_plugin: page
     id: moderated_content
-    display_title: 'Moderated content'
-    position: 1
+    display_title: 'Old Moderated content'
+    position: 5
     display_options:
       display_extenders: {  }
       path: admin/content/moderated
@@ -1112,6 +1117,7 @@ display:
           replica: false
           query_comment: ''
           query_tags: null
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -1675,11 +1681,11 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
-    position: 5
+    display_title: 'Moderated content'
+    position: 1
     display_options:
       display_extenders: {  }
-      path: admin/content/moderated-bis
+      path: admin/content/moderated
       fields:
         title:
           id: title
@@ -1992,6 +1998,76 @@ display:
           make_link: 0
           entity_type: node
           plugin_id: workbench_access_section
+        moderation_state_1:
+          id: moderation_state_1
+          table: node_field_data
+          field: moderation_state
+          entity_type: node
+          plugin_id: moderation_state_field
+          relationship: nid
+        moderation_state_2:
+          id: moderation_state_2
+          table: node_field_revision
+          field: moderation_state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: 'Moderation state'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: content_moderation_state
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          plugin_id: moderation_state_field
       defaults:
         fields: false
         filters: false
@@ -2012,14 +2088,14 @@ display:
           group: 1
           exposed: false
           expose:
-            operator_id: ''
-            label: ''
-            description: ''
+            operator_id: langcode_op
+            label: 'Translation language'
+            description: null
             use_operator: false
-            operator: ''
+            operator: langcode_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: ''
+            identifier: langcode
             required: false
             remember: false
             multiple: false
@@ -2080,6 +2156,173 @@ display:
             group_items: {  }
           entity_type: node
           plugin_id: latest_translation_affected_revision
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: nid
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Title
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              editor: '0'
+              approver: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              partner: '0'
+              oira_project_manager: '0'
+              oira_supervisor: '0'
+              superadministrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: nid
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            article: article
+            news: news
+            practical_tool: practical_tool
+            promotional_material: promotional_material
+            wiki_page: wiki_page
+          group: 1
+          exposed: true
+          expose:
+            operator_id: type_op
+            label: Type
+            description: ''
+            use_operator: false
+            operator: type_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              editor: '0'
+              approver: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              partner: '0'
+              oira_project_manager: '0'
+              oira_supervisor: '0'
+              superadministrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+        moderation_state:
+          id: moderation_state
+          table: node_field_revision
+          field: moderation_state
+          relationship: nid
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            all: all
+          group: 1
+          exposed: true
+          expose:
+            operator_id: moderation_state_op
+            label: 'Moderation state'
+            description: ''
+            use_operator: false
+            operator: moderation_state_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: moderation_state
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              editor: '0'
+              approver: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              partner: '0'
+              oira_project_manager: '0'
+              oira_supervisor: '0'
+              superadministrator: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          plugin_id: moderation_state_filter
       filter_groups:
         operator: AND
         groups: {  }
@@ -2118,9 +2361,9 @@ display:
       sorts:
         changed:
           id: changed
-          table: users_field_data
+          table: node_field_revision
           field: changed
-          relationship: uid
+          relationship: none
           group_type: group
           admin_label: ''
           order: DESC
@@ -2128,18 +2371,21 @@ display:
           expose:
             label: ''
           granularity: second
-          entity_type: user
+          entity_type: node
           entity_field: changed
           plugin_id: date
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:workflow_list'
   page_3:
     display_plugin: page
     id: page_3

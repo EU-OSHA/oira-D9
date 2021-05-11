@@ -21,12 +21,12 @@ type_settings:
       weight: -3
     final_draft:
       published: false
-      default_revision: false
+      default_revision: true
       label: 'Final Draft'
       weight: -2
     needs_review:
       published: false
-      default_revision: false
+      default_revision: true
       label: 'To Be Reviewed'
       weight: -1
     published:
@@ -36,7 +36,7 @@ type_settings:
       weight: 1
     to_be_approved:
       published: false
-      default_revision: false
+      default_revision: true
       label: 'To Be Approved'
       weight: 0
   transitions:
@@ -106,6 +106,12 @@ type_settings:
         - published
       to: final_draft
       weight: 11
+    from_published_to_published:
+      label: 'From Published to Published'
+      from:
+        - published
+      to: published
+      weight: 14
     from_published_to_to_be_approved:
       label: 'From Published to To be Approved'
       from:
