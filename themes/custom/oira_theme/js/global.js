@@ -175,6 +175,12 @@ jQuery(document).ready(function($){
     $(this).parent('.partner__socialprofile').find('.item-list').slideToggle();
   });
 
+  /*** Search result toggle text ***/
+  $('.result-item .more-link').click(function(){
+    $(this).parent('.result-item').find('.body').toggleClass('hideme');
+    $(this).parent('.result-item').find('.body-expanded').toggleClass('showme');
+  });
+
 });
 
 
