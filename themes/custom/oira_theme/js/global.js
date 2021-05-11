@@ -149,10 +149,10 @@ jQuery(document).ready(function($){
       $('#sidebar_first').removeClass('sidebar-expanded');
     });
 
-    //Clear filters toggler
-    $('.facets-checkbox:checked').each(function(index) {
-      $(this).addClass("clicked-input").parent('aside').find('#edit-reset--2').addClass("show-me");
-    });
+    /*** Show clear button on active facet ***/
+    if ($(".block-facets").hasClass("facet-active")) {
+      $('#edit-reset--2').addClass("show-me");
+    }
 
     //Move the summary before the menu (in node 67)
     $('.page-node-67 .field--name-field-summary').insertBefore("#block-oiracommunity");
