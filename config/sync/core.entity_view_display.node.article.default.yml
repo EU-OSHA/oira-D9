@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_image2
     - field.field.node.article.field_image2_media
+    - field.field.node.article.field_no
     - field.field.node.article.field_page_count
     - field.field.node.article.field_publication_date
     - field.field.node.article.field_recommended_articles
@@ -46,6 +47,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: hidden
+  field_no:
+    weight: 6
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_recommended_articles:
     weight: 5
     label: hidden
