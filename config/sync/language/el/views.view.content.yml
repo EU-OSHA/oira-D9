@@ -49,9 +49,6 @@ display:
                 title: Published
               2:
                 title: 'Μη δημοσιευμένο'
-        langcode:
-          expose:
-            label: Γλώσσα
       title: Περιεχόμενο
       empty:
         area_text_custom:

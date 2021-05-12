@@ -41,9 +41,6 @@ display:
             label: Stare
           group_info:
             label: 'Published status'
-        langcode:
-          expose:
-            label: Limba
       title: Conţinut
     display_title: Expert
   page_1:

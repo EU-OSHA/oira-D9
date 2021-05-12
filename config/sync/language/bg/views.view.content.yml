@@ -36,9 +36,6 @@ display:
             group_items:
               1:
                 title: Published
-        langcode:
-          expose:
-            label: Език
       title: Съдържание
   page_1:
     display_options:

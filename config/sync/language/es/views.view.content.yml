@@ -51,9 +51,6 @@ display:
                 title: Published
               2:
                 title: 'Sin publicar'
-        langcode:
-          expose:
-            label: Idioma
       title: Contenido
       empty:
         area_text_custom:

@@ -37,9 +37,6 @@ display:
                 title: Published
               2:
                 title: Ongepubliseerd
-        langcode:
-          expose:
-            label: Taal
       title: Inhoud
     display_title: Master
   page_1:
