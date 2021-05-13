@@ -42,6 +42,7 @@ visibility:
     roles:
       administrator: administrator
       partner: partner
+      superadministrator: superadministrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
