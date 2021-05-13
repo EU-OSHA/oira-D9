@@ -2,6 +2,8 @@ uuid: 890a2b74-1b5f-44d4-ac60-1f7abc628079
 langcode: en
 status: true
 dependencies:
+  module:
+    - user
   theme:
     - oira_theme
 _core:
@@ -19,4 +21,12 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      superadministrator: superadministrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
