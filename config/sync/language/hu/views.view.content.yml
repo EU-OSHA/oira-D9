@@ -51,9 +51,6 @@ display:
                 title: Published
               2:
                 title: Rejtett
-        langcode:
-          expose:
-            label: Nyelv
       title: Tartalom
       empty:
         area_text_custom:

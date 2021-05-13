@@ -51,9 +51,6 @@ display:
                 title: Published
               2:
                 title: 'Non publié'
-        langcode:
-          expose:
-            label: Langue
       title: Contenu
       empty:
         area_text_custom:

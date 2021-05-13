@@ -41,9 +41,6 @@ display:
             group_items:
               1:
                 title: Published
-        langcode:
-          expose:
-            label: Jezik
       title: Sadržaj
       empty:
         area_text_custom:

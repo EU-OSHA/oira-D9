@@ -42,9 +42,6 @@ display:
                 title: Published
               2:
                 title: Upublisert
-        langcode:
-          expose:
-            label: Språk
       title: Innhald
   page_1:
     display_options:

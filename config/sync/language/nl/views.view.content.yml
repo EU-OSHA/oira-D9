@@ -51,9 +51,6 @@ display:
                 title: Published
               2:
                 title: 'Niet gepubliceerd'
-        langcode:
-          expose:
-            label: Taal
       title: Inhoud
       empty:
         area_text_custom:

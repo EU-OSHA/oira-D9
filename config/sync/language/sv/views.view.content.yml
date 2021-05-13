@@ -51,9 +51,6 @@ display:
                 title: Published
               2:
                 title: 'Ej publicerad'
-        langcode:
-          expose:
-            label: Språk
       title: Innehåll
       empty:
         area_text_custom:
