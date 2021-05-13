@@ -1,0 +1,15 @@
+uuid: d745c7d2-c9ff-4b5c-a109-673f1458f832
+langcode: en
+status: true
+dependencies: {  }
+id: private_zone_collaboration_area_meetings_ppt
+label: 'Private zone - Collaboration area - meetings PPT'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: "/private-zone/collaboration-area/\r\n/private-zone/collaboration-area/"
+breadcrumbTitles: "Private Zone\r\nCollaboration Area"
+type: '2'
+pathPattern: '/private-zone/collaboration-area/*'
+extraCacheContexts: ''

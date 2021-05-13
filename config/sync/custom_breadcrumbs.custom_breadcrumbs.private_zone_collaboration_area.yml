@@ -1,0 +1,15 @@
+uuid: a0b1b1b9-9a7d-4fce-857b-56c912a0d8c2
+langcode: en
+status: true
+dependencies: {  }
+id: private_zone_collaboration_area
+label: 'Private zone - Collaboration area'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: /private-zone/collaboration-area
+breadcrumbTitles: 'Private zone'
+type: '2'
+pathPattern: /private-zone/collaboration-area
+extraCacheContexts: ''

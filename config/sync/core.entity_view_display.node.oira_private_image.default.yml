@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.oira_private_image.field_sector
     - node.type.oira_private_image
   module:
+    - media
     - text
     - user
 id: node.oira_private_image.default
@@ -24,15 +25,16 @@ content:
     region: content
   field_oira_private_image:
     weight: 102
-    label: above
+    label: hidden
     settings:
-      link: true
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: entity_reference_label
+    type: media_thumbnail
     region: content
   field_sector:
     weight: 103
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -40,10 +42,12 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
