@@ -5,10 +5,13 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_collaboration_items
+    - field.storage.node.field_strategic_type_2
     - node.type.collaboration_document
     - user.role.administrator
     - user.role.partner
   module:
+    - file
+    - media
     - node
     - options
     - pagerer
@@ -75,43 +78,57 @@ display:
       row:
         type: fields
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
+        field_strategic_type_2:
+          id: field_strategic_type_2
+          table: node__field_strategic_type_2
+          field: field_strategic_type_2
           relationship: none
           group_type: group
           admin_label: ''
-          exclude: false
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
+          type: list_default
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -122,6 +139,138 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
+        uri:
+          id: uri
+          table: file_managed
+          field: uri
+          relationship: field_media_file_1_target_id
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: true
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: file_uri
+          settings:
+            link_to_file: false
+            file_download_path: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: file
+          entity_field: uri
+          plugin_id: field
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
         body:
           id: body
           table: node__body
@@ -196,8 +345,8 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
+            make_link: true
+            path: '{{uri}}'
             absolute: false
             external: false
             replace_spaces: false
@@ -233,9 +382,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: entity_reference_label
           settings:
-            view_mode: media_library
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -314,7 +463,22 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
-      sorts: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+          entity_type: node
+          entity_field: created
+          plugin_id: date
       title: 'Background documents'
       header:
         result:
@@ -327,9 +491,38 @@ display:
           empty: true
           content: 'Showing @start - @end from @total'
           plugin_id: result
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: true
+          content: '<h2 class="pane-title">{{ field_strategic_type_2 }}<h2>'
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        field_collaboration_items:
+          id: field_collaboration_items
+          table: node__field_collaboration_items
+          field: field_collaboration_items
+          relationship: none
+          group_type: group
+          admin_label: 'field_collaboration_items: Media'
+          required: false
+          plugin_id: standard
+        field_media_file_1_target_id:
+          id: field_media_file_1_target_id
+          table: media__field_media_file_1
+          field: field_media_file_1_target_id
+          relationship: field_collaboration_items
+          group_type: group
+          admin_label: 'file from field_media_file_1'
+          required: false
+          plugin_id: standard
       arguments: {  }
       display_extenders: {  }
       css_class: eu-osha-files-view
@@ -344,220 +537,12 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_collaboration_items'
-  eu_osha_files_audiovisual_materials:
-    display_plugin: block
-    id: eu_osha_files_audiovisual_materials
-    display_title: 'Audiovisual materials'
-    position: 3
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: 'Audiovisual materials'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            collaboration_document: collaboration_document
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-        field_strategic_type_2_value:
-          id: field_strategic_type_2_value
-          table: node__field_strategic_type_2
-          field: field_strategic_type_2_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            audiovisual: audiovisual
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: list_field
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_collaboration_items'
-  eu_osha_files_background_documents:
-    display_plugin: block
-    id: eu_osha_files_background_documents
-    display_title: 'Background documents'
-    position: 1
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_collaboration_items'
-  eu_osha_files_meeting_documents:
-    display_plugin: block
-    id: eu_osha_files_meeting_documents
-    display_title: 'Meeting documents'
-    position: 2
-    display_options:
-      display_extenders: {  }
-      display_description: ''
-      title: 'Meeting documents/PPTs'
-      defaults:
-        title: false
-        filters: false
-        filter_groups: false
-      filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-          group: 1
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          value:
-            collaboration_document: collaboration_document
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-        field_strategic_type_2_value:
-          id: field_strategic_type_2_value
-          table: node__field_strategic_type_2
-          field: field_strategic_type_2_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value:
-            meeting: meeting
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          reduce_duplicates: false
-          plugin_id: list_field
-      filter_groups:
-        operator: AND
-        groups:
-          1: AND
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_collaboration_items'
+        - 'config:field.storage.node.field_strategic_type_2'
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Page
-    position: 4
+    display_title: 'Collaboration area'
+    position: 1
     display_options:
       display_extenders: {  }
       path: private-zone/collaboration-area
@@ -649,7 +634,7 @@ display:
           tokenize: false
           content: "<div class=\"page-title-wrapper\">\r\n          <div class=\"container page-title-container\">\r\n            <h1 class=\"page-header\">EU-OSHA Files</h1>\r\n          </div>\r\n        </div>"
           plugin_id: text_custom
-      title: 'EU-OSHA Files'
+      title: 'Collaboration area'
       style:
         type: default
         options:
@@ -659,6 +644,7 @@ display:
       row:
         type: fields
         options: {  }
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -669,11 +655,12 @@ display:
   page_2:
     display_plugin: page
     id: page_2
-    display_title: 'Page 2'
-    position: 5
+    display_title: 'Background documents'
+    position: 2
     display_options:
       display_extenders: {  }
       path: private-zone/collaboration-area/eu-osha-documents
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -685,11 +672,12 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_collaboration_items'
+        - 'config:field.storage.node.field_strategic_type_2'
   page_3:
     display_plugin: page
     id: page_3
-    display_title: 'Page 3'
-    position: 6
+    display_title: 'Meeting Documents - PPTs'
+    position: 3
     display_options:
       display_extenders: {  }
       filters:
@@ -762,13 +750,113 @@ display:
       defaults:
         filters: false
         filter_groups: false
-        style: false
-        row: false
+        style: true
+        row: true
+        title: false
       filter_groups:
         operator: AND
         groups:
           1: AND
       path: private-zone/collaboration-area/partners-documents
+      display_description: ''
+      title: 'EU-OSHA documents'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_collaboration_items'
+        - 'config:field.storage.node.field_strategic_type_2'
+  page_4:
+    display_plugin: page
+    id: page_4
+    display_title: 'Audiovisual materials'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            collaboration_document: collaboration_document
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_strategic_type_2_value:
+          id: field_strategic_type_2_value
+          table: node__field_strategic_type_2
+          field: field_strategic_type_2_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            audiovisual: audiovisual
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+      defaults:
+        filters: false
+        filter_groups: false
+        style: false
+        row: false
+        title: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      path: private-zone/collaboration-area/audiovisual-materials
       style:
         type: html_list
         options:
@@ -781,6 +869,8 @@ display:
       row:
         type: fields
         options: {  }
+      display_description: ''
+      title: 'EU-OSHA documents'
     cache_metadata:
       max-age: -1
       contexts:
@@ -792,3 +882,4 @@ display:
       tags:
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_collaboration_items'
+        - 'config:field.storage.node.field_strategic_type_2'

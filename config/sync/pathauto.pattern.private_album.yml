@@ -1,0 +1,22 @@
+uuid: 3c37a383-a783-4104-8740-da796cbf8245
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: private_album
+label: 'Private Album'
+type: 'canonical_entities:node'
+pattern: 'private-zone/collaboration-area/private-images/[node:title]'
+selection_criteria:
+  4015375e-d57c-4b2d-8310-22791173aef4:
+    id: node_type
+    bundles:
+      private_album: private_album
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4015375e-d57c-4b2d-8310-22791173aef4
+selection_logic: and
+weight: -5
+relationships: {  }

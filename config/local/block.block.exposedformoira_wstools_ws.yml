@@ -1,28 +1,27 @@
-uuid: 27cc3753-be5b-418a-9c21-05b6ffc251e0
+uuid: f9342486-e6f3-46c1-8d16-010f4919a185
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.partner_intro_info
+    - views.view.oira_ws
   module:
     - context
-    - node
+    - system
     - views
   theme:
     - oira_theme
-id: views_block__partner_intro_info_block_1
+id: exposedformoira_wstools_ws
 theme: oira_theme
 region: content
-weight: -19
+weight: -14
 provider: null
-plugin: 'views_block:partner_intro_info-block_1'
+plugin: 'views_exposed_filter_block:oira_ws-tools_ws'
 settings:
-  id: 'views_block:partner_intro_info-block_1'
+  id: 'views_exposed_filter_block:oira_ws-tools_ws'
   label: ''
   provider: views
-  label_display: '0'
+  label_display: visible
   views_label: ''
-  items_per_page: none
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
@@ -32,10 +31,7 @@ visibility:
     id: view_inclusion
     negate: null
     view_inclusion: {  }
-  node_type:
-    id: node_type
-    bundles:
-      partner: partner
+  request_path:
+    id: request_path
+    pages: /oira-tools
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'

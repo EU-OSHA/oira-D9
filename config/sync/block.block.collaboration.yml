@@ -12,7 +12,7 @@ dependencies:
 id: collaboration
 theme: oira_theme
 region: content
-weight: -8
+weight: -22
 provider: null
 plugin: 'system_menu_block:collaboration'
 settings:
@@ -27,12 +27,12 @@ visibility:
   request_path_exclusion:
     id: request_path_exclusion
     pages: ''
-    negate: null
+    negate: true
   view_inclusion:
     id: view_inclusion
-    negate: null
+    negate: false
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: /private-zone/collaboration-area
+    pages: "/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*"
     negate: false
