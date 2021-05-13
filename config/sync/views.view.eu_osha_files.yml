@@ -75,6 +75,14 @@ display:
             offset_label: Offset
       style:
         type: default
+        options:
+          grouping:
+            -
+              field: field_strategic_type_2
+              rendered: true
+              rendered_strip: false
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
       fields:
@@ -88,8 +96,8 @@ display:
           label: ''
           exclude: true
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<h2 class="pane-title">{{ field_strategic_type_2 }} </h2>'
             make_link: false
             path: ''
             absolute: false
@@ -114,8 +122,8 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
-          element_class: ''
+          element_type: h2
+          element_class: pane-title
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -489,19 +497,8 @@ display:
           group_type: group
           admin_label: ''
           empty: true
-          content: 'Showing @start - @end from @total'
+          content: '<div class="row">Showing @start - @end from @total</div>'
           plugin_id: result
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: true
-          content: '<h2 class="pane-title">{{ field_strategic_type_2 }}<h2>'
-          plugin_id: text_custom
       footer: {  }
       empty: {  }
       relationships:
@@ -562,6 +559,7 @@ display:
         title: false
         style: false
         row: false
+        footer: false
       fields:
         nothing:
           id: nothing
@@ -622,18 +620,7 @@ display:
         options:
           items_per_page: 1
           offset: 0
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: "<div class=\"page-title-wrapper\">\r\n          <div class=\"container page-title-container\">\r\n            <h1 class=\"page-header\">EU-OSHA Files</h1>\r\n          </div>\r\n        </div>"
-          plugin_id: text_custom
+      header: {  }
       title: 'Collaboration area'
       style:
         type: default
@@ -645,6 +632,7 @@ display:
         type: fields
         options: {  }
       display_description: ''
+      footer: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -858,14 +846,15 @@ display:
           1: AND
       path: private-zone/collaboration-area/audiovisual-materials
       style:
-        type: html_list
+        type: default
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: field_strategic_type_2
+              rendered: true
+              rendered_strip: false
           row_class: ''
           default_row_class: true
-          type: ul
-          wrapper_class: item-list
-          class: ''
       row:
         type: fields
         options: {  }
