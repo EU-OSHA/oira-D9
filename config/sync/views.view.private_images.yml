@@ -328,7 +328,18 @@ display:
             label: ''
           granularity: second
       title: 'Image Gallery'
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: '<h2 class="pane-title">Image Gallery </h2>'
+          plugin_id: text_custom
       footer: {  }
       empty:
         area:

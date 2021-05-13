@@ -13,7 +13,7 @@ dependencies:
 id: privatezone
 theme: oira_theme
 region: content
-weight: -23
+weight: -24
 provider: null
 plugin: 'system_menu_block:private-zone'
 settings:

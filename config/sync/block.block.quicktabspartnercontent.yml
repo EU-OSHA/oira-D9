@@ -11,7 +11,7 @@ dependencies:
 id: quicktabspartnercontent
 theme: oira_theme
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: 'quicktabs_block:partner_content'
 settings:

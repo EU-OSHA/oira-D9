@@ -1,18 +1,17 @@
-uuid: 259f1513-7bb6-49c9-a4a2-89fdc41c8754
+uuid: 7749acc8-42b1-4349-b2f0-216caf3d1984
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.collaboration
   module:
-    - context
     - system
   theme:
     - oira_theme
-id: collaboration
+id: collaboration_2
 theme: oira_theme
 region: content
-weight: -18
+weight: -16
 provider: null
 plugin: 'system_menu_block:collaboration'
 settings:
@@ -24,15 +23,7 @@ settings:
   depth: 0
   expand_all_items: false
 visibility:
-  request_path_exclusion:
-    id: request_path_exclusion
-    pages: ''
-    negate: true
-  view_inclusion:
-    id: view_inclusion
-    negate: false
-    view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/private-zone/collaboration-area/*\r\n"
+    pages: /private-zone/collaboration-area
     negate: false
