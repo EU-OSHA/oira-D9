@@ -2926,11 +2926,16 @@ select.custom-select{
     padding: 1em 2em 2em 2em;
     background: $bg-color-white;
   }
-  .item-list {
-    li {
-      border-top: 2px solid $bg-color-purple;
-      padding-bottom: 25px;
-      padding-top: 25px;
+  .views-row {
+    border-top: 2px solid $bg-color-purple;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    width: 100%;
+    .views-field-field-collaboration-items {
+      a {
+        font-style: normal;
+        font-weight: normal;
+      }
     }
   }
   .views-field-title {

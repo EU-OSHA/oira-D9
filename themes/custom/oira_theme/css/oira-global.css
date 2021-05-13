@@ -3379,10 +3379,15 @@ select.custom-select {
   padding: 1em 2em 2em 2em;
   background: #FFF;
 }
-.view-eu-osha-files .item-list li {
+.view-eu-osha-files .views-row {
   border-top: 2px solid #786586;
   padding-bottom: 25px;
   padding-top: 25px;
+  width: 100%;
+}
+.view-eu-osha-files .views-row .views-field-field-collaboration-items a {
+  font-style: normal;
+  font-weight: normal;
 }
 .view-eu-osha-files .views-field-title a {
   display: block;
@@ -4395,6 +4400,40 @@ body.toolbar-fixed.toolbar-tray-open #header {
   opacity: 1;
   color: #786586;
   background-image: none;
+}
+
+.page-view-eu-osha-files .menu--collaboration {
+  margin-bottom: 10px;
+  background: #786586;
+}
+.page-view-eu-osha-files .menu--collaboration ul {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.page-view-eu-osha-files .menu--collaboration ul .menu-item {
+  display: inline-block;
+  padding: 15px 40px;
+  margin: 0;
+}
+.page-view-eu-osha-files .menu--collaboration ul .menu-item .field--name-field-image {
+  display: none;
+}
+.page-view-eu-osha-files .menu--collaboration ul .menu-item a {
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+}
+.page-view-eu-osha-files .menu--collaboration ul .menu-item.menu-item--active-trail {
+  background: #dfd8e4;
+}
+.page-view-eu-osha-files .menu--collaboration ul .menu-item.menu-item--active-trail a {
+  color: #786586;
 }
 
 .node-form {
