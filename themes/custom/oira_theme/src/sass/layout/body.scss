@@ -1353,16 +1353,17 @@ select.custom-select{
   .form-select {
     border: 2px solid #003399;
     outline: none;
-    border-radius: 0px;
+    border-radius: 0;
     height: initial;
     padding: 2px 3px;
-    background-color: $bg-color-purple !important;
-    background-image: url(../images/select-arrow.svg);
-    background-position: 97% 50%;
+    background: $bg-color-purple url(../images/select-arrow.svg) no-repeat !important;
+    background-position: 97% 50% !important;
     color: #ffffff;
     width: 190px !important;
     font-size: 1rem;
     font-weight: $font-weight-normal;
+    -webkit-appearance: none;
+    appearance: none;
   }
 }
 
@@ -2902,6 +2903,51 @@ select.custom-select{
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1170px;
+  }
+}
+
+/*** Private Zone Files ***/
+.view-eu-osha-files {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  max-width: 1140px;
+  .view-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 1.8rem;
+    padding: 1rem 0;
+    border-top: 2px solid $bg-color-purple;
+    border-bottom: 2px solid $bg-color-purple;
+  }
+  .view-content.row {
+    margin: 0 auto;
+    padding: 1em 2em 2em 2em;
+    background: $bg-color-white;
+  }
+  .views-row {
+    border-top: 2px solid $bg-color-purple;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    width: 100%;
+    .views-field-field-collaboration-items {
+      a {
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+  }
+  .views-field-title {
+    a {
+      display: block;
+      margin: 0 0 10px;
+      color: $text-color-black;
+      font-family: $font-family-oswald;
+      font-weight: normal;
+      font-size: 2rem;
+      font-style: normal;
+    }
   }
 }
 
