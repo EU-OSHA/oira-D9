@@ -74,6 +74,7 @@
 
 /*** Private menu ***/
 .menu--private-zone {
+  margin-bottom: 15px;
   overflow: hidden;
   @extend .full-width;
   padding: 15px 0;
@@ -181,4 +182,41 @@
     }
   }
 }
+
+.page-view-eu-osha-files {
+  .menu--collaboration {
+    margin-bottom: 10px;
+    background: $bg-color-purple;
+    ul {
+      width: 100%;
+      max-width: 1140px;
+      padding: 0 15px;
+      margin: 0 auto;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .menu-item {
+        display: inline-block;
+        padding: 15px 40px;
+        margin: 0;
+        .field--name-field-image {
+          display: none;
+        }
+        a {
+          color: white;
+          font-style: normal;
+          font-weight: normal;
+        }
+        &.menu-item--active-trail {
+          background: $bg-color-purple-light;
+          a {
+            color: $text-color-purple;
+          }
+        }
+      }
+    }
+  }
+}
+
 
