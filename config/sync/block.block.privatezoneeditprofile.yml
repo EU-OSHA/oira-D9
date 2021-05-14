@@ -1,0 +1,38 @@
+uuid: ff5a96c7-092d-4982-8e1b-c6b0b7370111
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d8ae632b-2569-4a81-81f4-ea0738801202'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - oira_theme
+id: privatezoneeditprofile
+theme: oira_theme
+region: content
+weight: -22
+provider: null
+plugin: 'block_content:d8ae632b-2569-4a81-81f4-ea0738801202'
+settings:
+  id: 'block_content:d8ae632b-2569-4a81-81f4-ea0738801202'
+  label: 'Private zone - Edit profile'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/node/*/edit'
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      partner: partner
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

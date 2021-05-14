@@ -13,7 +13,7 @@ dependencies:
 id: headerviewfaqsoira
 theme: oira_theme
 region: header_view
-weight: 0
+weight: -31
 provider: null
 plugin: 'block_content:41b9823c-eead-47b8-9461-4594f19e681e'
 settings:

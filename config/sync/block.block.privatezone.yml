@@ -13,7 +13,7 @@ dependencies:
 id: privatezone
 theme: oira_theme
 region: content
-weight: -24
+weight: -25
 provider: null
 plugin: 'system_menu_block:private-zone'
 settings:
@@ -35,14 +35,12 @@ visibility:
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n/node/*/edit"
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/*/edit\r\n/node/add/*\r\n"
     negate: false
   user_role:
     id: user_role
     roles:
-      administrator: administrator
       partner: partner
-      superadministrator: superadministrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
