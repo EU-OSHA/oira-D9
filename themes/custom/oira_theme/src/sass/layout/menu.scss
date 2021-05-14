@@ -31,6 +31,10 @@
         color: $text-color-white;
         padding-top: 0;
         padding-bottom: 0;
+        display: block;
+        @media(min-width: 1024px) {
+          text-align: center;
+        }
       }
       ul.dropdown-menu{
         background-color: $bg-color-blue-light;
