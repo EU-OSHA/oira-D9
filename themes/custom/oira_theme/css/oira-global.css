@@ -75,7 +75,7 @@ img {
 
 .full-width, .menu--private-zone, .contact-us .block-webform, #block-oiracommunity, .block-views-blockadditional-resources-block, .block-views-blockoshwiki-featured-articles-oshwiki-related-articles,
 .block-views-blocknews-block-2, .page-node-402 .esener-template li,
-.facts-and-figures .esener-template li, .block-views-blocknews-block-1 {
+.facts-and-figures .esener-template li, .block-views-blocknews-block-1, .page-view-faqs-oira .field--name-field-article-header .field-name-body {
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -93,6 +93,28 @@ input[type=text],
 input[type=search] {
   border-radius: 0;
   border: none;
+}
+
+.container, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title {
+    width: 1170px;
+  }
 }
 
 /* Font Family */
@@ -602,7 +624,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.container, fix-paddings {
+.container, .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, fix-paddings {
   padding-left: 0;
   padding-right: 0;
 }
@@ -1350,13 +1372,50 @@ select.custom-select {
 }
 
 /* OiRA FAQs */
+.page-view-faqs-oira {
+  width: 100%;
+  overflow-x: hidden;
+}
+.page-view-faqs-oira .layout-main-wrapper > .container:nth-child(2), .page-view-faqs-oira .field--name-field-article-header .field-name-body .layout-main-wrapper > p:nth-child(2), .page-view-faqs-oira .field--name-field-article-header .layout-main-wrapper > .field-name-node-title:nth-child(2) {
+  max-width: 100%;
+  margin: 0;
+}
+.page-view-faqs-oira .layout-main-wrapper > .container:nth-child(2) .row, .page-view-faqs-oira .field--name-field-article-header .field-name-body .layout-main-wrapper > p:nth-child(2) .row, .page-view-faqs-oira .field--name-field-article-header .layout-main-wrapper > .field-name-node-title:nth-child(2) .row {
+  margin: 0;
+}
+.page-view-faqs-oira .field--name-field-article-header {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1023px) {
+  .page-view-faqs-oira .field--name-field-article-header .field-name-node-title {
+    padding: 0 15px;
+  }
+}
+.page-view-faqs-oira .field--name-field-article-header .field-name-body {
+  padding-top: 17px;
+  margin-bottom: -1px;
+  background: #dfd8e4;
+}
+.page-view-faqs-oira .field--name-field-article-header .field-name-body p {
+  margin: 0 auto !important;
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+@media (max-width: 1023px) {
+  .page-view-faqs-oira .field--name-field-article-header .field-name-body p {
+    padding: 0 15px;
+  }
+}
+
 .view-id-faqs_oira {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background: #dfd8e4;
 }
 .view-id-faqs_oira .views-accordion-header {
-  font-family: "Oswald";
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
   background: transparent;
   color: #786586;
   font-size: 1.3rem;
@@ -1396,6 +1455,13 @@ select.custom-select {
 }
 .view-id-faqs_oira .views-row .views-row .ui-accordion-header-icon {
   visibility: hidden;
+}
+.view-id-faqs_oira .views-row .views-row .views-field-body a {
+  color: #786586;
+  text-decoration: underline;
+}
+.view-id-faqs_oira .views-row .views-row .views-field-body a:hover {
+  color: #23527c;
 }
 .view-id-faqs_oira .ui-accordion .ui-accordion-header {
   padding-left: 0;
@@ -2301,11 +2367,14 @@ select.custom-select {
 .path-search .sidebar_first .form-item-search-api-fulltext label {
   display: none;
 }
+.path-search .sidebar_first .facets-widget-checkbox {
+  display: none;
+}
 .path-search .sidebar_first .block-facets {
   clear: both;
 }
-.path-search .sidebar_first .block-facets .facets-widget-links {
-  display: none;
+.path-search .sidebar_first .block-facets .facet-active {
+  display: block;
 }
 .path-search .sidebar_first .block-facets h2 {
   font-size: 1.1875rem;
@@ -4253,7 +4322,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   background-color: #10b2e4;
   color: #FFF;
 }
-#navbar-main #CollapsingNavbar > div.container {
+#navbar-main #CollapsingNavbar > div.container, #navbar-main .page-view-faqs-oira .field--name-field-article-header #CollapsingNavbar > div.field-name-node-title, .page-view-faqs-oira .field--name-field-article-header #navbar-main #CollapsingNavbar > div.field-name-node-title {
   justify-content: center;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
@@ -4271,6 +4340,12 @@ body.toolbar-fixed.toolbar-tray-open #header {
   color: #FFF;
   padding-top: 0;
   padding-bottom: 0;
+  display: block;
+}
+@media (min-width: 1024px) {
+  #navbar-main ul.navbar-nav li a {
+    text-align: center;
+  }
 }
 #navbar-main ul.navbar-nav li ul.dropdown-menu {
   background-color: #10b2e4;
@@ -4494,6 +4569,23 @@ body.toolbar-fixed.toolbar-tray-open #header {
     width: 137px !important;
   }
 
+  .menu--main .nav-link.dropdown-toggle {
+    display: flex;
+    align-items: center;
+  }
+  .menu--main .nav-link.dropdown-toggle:after {
+    border: none !important;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+    content: "" !important;
+    font-family: "Glyphicons Halflings";
+    color: #FFF;
+  }
+  .menu--main .nav-link.dropdown-toggle.clicked:after {
+    content: "" !important;
+  }
+
   #block-headerprintandfontsize {
     display: none;
   }
@@ -4710,7 +4802,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
     display: none;
   }
 
-  .navbar-collapse .container {
+  .navbar-collapse .container, .navbar-collapse .page-view-faqs-oira .field--name-field-article-header .field-name-node-title, .page-view-faqs-oira .field--name-field-article-header .navbar-collapse .field-name-node-title, .navbar-collapse .page-view-faqs-oira .field--name-field-article-header .field-name-body p, .page-view-faqs-oira .field--name-field-article-header .field-name-body .navbar-collapse p {
     max-width: 100%;
     width: 100%;
     padding: 0;
@@ -5335,23 +5427,6 @@ body.toolbar-fixed.toolbar-tray-open #header {
   .page-view-promotional-resources-search .views-row .content-view-pm-view .tags > p {
     width: 100%;
     margin: 0 0 0.5rem;
-  }
-
-  .menu--main .nav-link.dropdown-toggle {
-    display: flex;
-    align-items: center;
-  }
-  .menu--main .nav-link.dropdown-toggle:after {
-    border: none !important;
-    display: inline-block;
-    margin-top: 5px;
-    margin-left: 15px;
-    content: "" !important;
-    font-family: "Glyphicons Halflings";
-    color: #FFF;
-  }
-  .menu--main .nav-link.dropdown-toggle.clicked:after {
-    content: "" !important;
   }
 
   .view-news .view-header h1 {

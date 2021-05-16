@@ -8,6 +8,28 @@
       width: 137px !important;
     }
   }
+
+  .menu--main {
+    .nav-link.dropdown-toggle {
+      display: flex;
+      align-items: center;
+      &:after {
+        border: none !important;
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 15px;
+        content: "\e250" !important;
+        font-family: "Glyphicons Halflings";
+        color: $text-color-white;
+      }
+      &.clicked {
+        &:after {
+          content: "\e252" !important;
+        }
+      }
+    }
+  }
+
   #block-headerprintandfontsize {
     display: none;
   }
@@ -37,6 +59,7 @@
       max-width: 40px;
     }
   }
+
   .content-two-columns {
     flex-direction: column;
     background: $bg-color-purple-light;

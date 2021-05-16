@@ -835,12 +835,52 @@ select.custom-select{
 
 
 /* OiRA FAQs */
+.page-view-faqs-oira {
+  width: 100%;
+  overflow-x: hidden;
+  .layout-main-wrapper {
+    > .container:nth-child(2) {
+      max-width: 100%;
+      margin: 0;
+      .row {
+        margin: 0;
+      }
+    }
+  }
+  .field--name-field-article-header {
+    margin: 0;
+    padding: 0;
+    .field-name-node-title {
+      @extend .container;
+      @media(max-width: 1023px) {
+        padding: 0 15px;
+      }
+    }
+    .field-name-body {
+      @extend .full-width;
+      padding-top: 17px;
+      margin-bottom: -1px;
+      background: $bg-color-purple-light;
+      p {
+        @extend .container;
+        margin: 0 auto !important;
+        font-family: $font-family-oswald;
+        font-size: 1.375rem;
+        font-weight: $font-weight-normal;
+        @media(max-width: 1023px) {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+
 .view-id-faqs_oira{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background: $bg-color-purple-light;
   .views-accordion-header{
-    font-family: "Oswald";
+    font-family: $font-family-oswald;
     background: transparent;
     color: $text-color-purple;
     font-size: 1.3rem;
@@ -854,7 +894,6 @@ select.custom-select{
     background: transparent;
     color: $text-color-black;
   }
-
   .row{
     margin-left: 0;
     margin-right: 0;
@@ -885,6 +924,15 @@ select.custom-select{
       }
       .ui-accordion-header-icon{
         visibility: hidden;
+      }
+      .views-field-body {
+        a {
+          color: $text-color-purple;
+          text-decoration: underline;
+          &:hover {
+            color: $text-color-blue-hover;
+          }
+        }
       }
     }
   }
@@ -1801,10 +1849,13 @@ select.custom-select{
         display: none;
       }
     }
+    .facets-widget-checkbox {
+      display: none;
+    }
     .block-facets {
       clear: both;
-      .facets-widget-links {
-        display: none;
+      .facet-active {
+        display: block;
       }
       h2 {
         font-size: 1.1875rem;
