@@ -28,5 +28,10 @@ entities:
   user: 0
   webform_submission: 0
   section_association: 0
+  content_moderation_state: 0
+  crop: 0
+  feeds_feed: 0
+  feeds_subscription: 0
+  redirect: 0
 _core:
   default_config_hash: '-oeXHVXl-m1HE6XR_-FXfNgJOgPuHcOCWSkymfOR7Sc'

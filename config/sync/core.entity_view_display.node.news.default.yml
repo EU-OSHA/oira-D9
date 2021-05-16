@@ -31,24 +31,24 @@ bundle: news
 mode: default
 content:
   addtoany:
-    weight: 0
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   body:
     label: hidden
     type: text_default
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     region: content
   content_moderation_control:
-    weight: -20
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_image:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       image_style: news_list_and_node
@@ -57,7 +57,7 @@ content:
     type: media_thumbnail
     region: content
   field_publication_date:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       timezone_override: ''
@@ -66,7 +66,7 @@ content:
     type: datetime_default
     region: content
   field_summary:
-    weight: 2
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }

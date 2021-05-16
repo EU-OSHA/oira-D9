@@ -13,7 +13,7 @@ dependencies:
 id: togglesidebar
 theme: oira_theme
 region: content
-weight: -30
+weight: -32
 provider: null
 plugin: 'block_content:e948cdb2-8a0b-46eb-8ae2-4d39efd86628'
 settings:

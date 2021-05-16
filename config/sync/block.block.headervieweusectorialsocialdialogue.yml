@@ -13,7 +13,7 @@ dependencies:
 id: headervieweusectorialsocialdialogue
 theme: oira_theme
 region: header_view
-weight: 0
+weight: -27
 provider: null
 plugin: 'block_content:9efa7896-6851-409b-9711-3af1f228d770'
 settings:

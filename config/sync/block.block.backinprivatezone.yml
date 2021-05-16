@@ -1,0 +1,39 @@
+uuid: 538a3c7a-15c7-4b91-a01b-171a3ebb5739
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:73bce426-af39-4c4e-b9c3-3e29dc4cc125'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - oira_theme
+id: backinprivatezone
+theme: oira_theme
+region: content
+weight: -21
+provider: null
+plugin: 'block_content:73bce426-af39-4c4e-b9c3-3e29dc4cc125'
+settings:
+  id: 'block_content:73bce426-af39-4c4e-b9c3-3e29dc4cc125'
+  label: 'Back in private zone'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/private-zone/*\r\n/private-zone/collaboration-area/*\r\n/private-zone/collaboration-area/private-images/*\r\n/node/add/promotional_material\r\n/node/add/practical_tool\r\n/node/add/news\r\n/node/*/edit"
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      partner: partner
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

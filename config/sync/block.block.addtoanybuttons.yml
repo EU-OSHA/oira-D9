@@ -11,7 +11,7 @@ dependencies:
 id: addtoanybuttons
 theme: oira_theme
 region: content
-weight: -14
+weight: -11
 provider: null
 plugin: addtoany_block
 settings:

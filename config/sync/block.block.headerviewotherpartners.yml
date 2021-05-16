@@ -13,7 +13,7 @@ dependencies:
 id: headerviewotherpartners
 theme: oira_theme
 region: header_view
-weight: 0
+weight: -26
 provider: null
 plugin: 'block_content:0476c546-67e8-41f0-9f70-fc807b7829df'
 settings:
