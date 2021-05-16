@@ -8,8 +8,8 @@ description: ''
 entityType: _none
 entityBundle: _none
 language: und
-breadcrumbPaths: '<nolink>'
-breadcrumbTitles: 'OiRA & Tools'
+breadcrumbPaths: "<nolink>\r\n<nolink>"
+breadcrumbTitles: "OiRA & Tools\r\nOiRA Tools"
 type: '2'
 pathPattern: /oira-tools
 extraCacheContexts: ''
