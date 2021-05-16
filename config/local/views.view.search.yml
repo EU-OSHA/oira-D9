@@ -67,12 +67,12 @@ display:
           submit_button: Search
           reset_button: true
           reset_button_label: 'Clear filter'
-          exposed_sorts_label: Order
+          exposed_sorts_label: 'Order:'
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
           text_input_required: 'Select any filter and click on Apply to see results'
-          text_input_required_format: basic_html
+          text_input_required_format: full_html
           bef:
             general:
               autosubmit: true
@@ -2582,11 +2582,68 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
-          hide_alter_empty: false
+          hide_alter_empty: true
           plugin_id: custom
       filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_default_multilingual_node_index
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: Search
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: search_api_fulltext
+            required: false
+            remember: true
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              editor: '0'
+              approver: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              partner: '0'
+              oira_project_manager: '0'
+              oira_supervisor: '0'
+              superadministrator: '0'
+            placeholder: Search
+            expose_fields: false
+            searched_fields_id: search_api_fulltext_searched_fields
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: terms
+          min_length: null
+          fields: {  }
+          plugin_id: search_api_fulltext
         status:
           id: status
           table: search_api_index_default_multilingual_node_index
@@ -2672,6 +2729,50 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: search_api_options
+        nid:
+          id: nid
+          table: search_api_index_default_multilingual_node_index
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '!='
+          value:
+            min: ''
+            max: ''
+            value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_numeric
         search_api_language:
           id: search_api_language
           table: search_api_index_default_multilingual_node_index
@@ -2842,63 +2943,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: search_api_date
-        search_api_fulltext:
-          id: search_api_fulltext
-          table: search_api_index_default_multilingual_node_index
-          field: search_api_fulltext
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: or
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: search_api_fulltext_op
-            label: Search
-            description: ''
-            use_operator: false
-            operator: search_api_fulltext_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: search_api_fulltext
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              editor: '0'
-              approver: '0'
-              translation_manager: '0'
-              translation_liaison: '0'
-              layout_validator: '0'
-              content_validator: '0'
-              project_manager: '0'
-              partner: '0'
-              oira_project_manager: '0'
-              oira_supervisor: '0'
-              superadministrator: '0'
-              administrator: '0'
-            placeholder: Search
-            expose_fields: false
-            searched_fields_id: search_api_fulltext_searched_fields
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          parse_mode: terms
-          min_length: null
-          fields: {  }
-          plugin_id: search_api_fulltext
       sorts:
         title:
           id: title
@@ -2931,7 +2975,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: true
           expose:
             label: Date
@@ -3065,76 +3109,6 @@ display:
         type: none
       defaults:
         cache: false
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - url.query_args
-        - 'url.query_args:sort_by'
-        - 'user.node_grants:view'
-      tags:
-        - 'config:field.storage.media.field_language'
-        - 'config:field.storage.media.field_link'
-        - 'config:field.storage.media.field_media_file'
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_country'
-        - 'config:field.storage.node.field_image'
-        - 'config:field.storage.node.field_logo'
-        - 'config:field.storage.node.field_multiple_sector'
-        - 'config:field.storage.node.field_publication_date'
-        - 'config:field.storage.node.field_resource_fc'
-        - 'config:field.storage.node.field_revised_date'
-        - 'config:field.storage.node.field_sector'
-        - 'config:field.storage.node.field_sector_category'
-        - 'config:field.storage.node.field_summary'
-        - 'config:field.storage.node.field_tool_link'
-        - 'config:field.storage.node.field_wiki_page_url'
-        - 'config:search_api.index.default_multilingual_node_index'
-  page_2:
-    display_plugin: page
-    id: page_2
-    display_title: Page
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: search/site-bis
-      exposed_block: true
-      cache:
-        type: none
-      defaults:
-        cache: false
-        style: false
-        row: false
-      style:
-        type: html_list
-        options:
-          grouping: {  }
-          row_class: search-results__result
-          default_row_class: true
-          type: ul
-          wrapper_class: item-list
-          class: search-results__list
-      row:
-        type: search_api
-        options:
-          view_modes:
-            'entity:node':
-              article: search_index
-              certificates: search_index
-              collaboration_document: search_index
-              faq: search_index
-              file: search_index
-              news: search_index
-              oira_private_image: search_index
-              partner: search_index
-              practical_tool: search_index
-              private_album: search_index
-              promotional_material: search_index
-              slideshare: search_index
-              strategic_documentation: search_index
-              wiki_page: search_index
     cache_metadata:
       max-age: -1
       contexts:
