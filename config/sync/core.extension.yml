@@ -52,6 +52,7 @@ module:
   dblog: 0
   diff: 0
   draggableviews: 0
+  dynamic_entity_reference: 0
   dynamic_page_cache: 0
   editor: 0
   editor_advanced_link: 0
@@ -98,6 +99,7 @@ module:
   layout_discovery: 0
   layoutcomponents: 0
   link: 0
+  linkchecker: 0
   locale: 0
   mailsystem: 0
   masquerade: 0
@@ -120,6 +122,7 @@ module:
   pagerer: 0
   path: 0
   path_alias: 0
+  pathologic: 0
   quickedit: 0
   quicktabs: 0
   r4032login: 0

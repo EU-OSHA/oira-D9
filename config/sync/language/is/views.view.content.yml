@@ -45,6 +45,9 @@ display:
                 title: Published
               2:
                 title: 'Ekki birt'
+        langcode:
+          expose:
+            label: Tungumál
       title: Innihald
   page_1:
     display_options:

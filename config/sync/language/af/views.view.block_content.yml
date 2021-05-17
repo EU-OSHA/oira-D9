@@ -13,6 +13,8 @@ display:
       fields:
         info:
           label: Blokbeskrywing
+        changed:
+          label: Updated
         operations:
           label: Aksies
       filters:

@@ -16,6 +16,8 @@ display:
           label: Title
         type:
           label: 'Content type'
+        changed:
+          label: Updated
         operations:
           label: Aksies
       filters:
