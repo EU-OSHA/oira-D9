@@ -292,4 +292,20 @@ body.toolbar-fixed {
   }
 }
 
+#block-generalsearch-api {
+  margin-bottom: 0.5rem;
+  .views-exposed-form {
+    .form-row {
+      flex-wrap: nowrap;
+      .form-group {
+        width: auto;
+        margin-right: 0;
+      }
+      .form-actions {
+        margin: 0;
+      }
+    }
+  }
+}
+
 

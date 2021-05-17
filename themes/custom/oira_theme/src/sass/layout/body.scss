@@ -311,15 +311,40 @@ select.custom-select{
 
 /* News detail */
 .node--type-news{
+  .section.container {
+    position: relative;
+  }
+  #block-backtonews {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    a {
+      color: $text-color-blue-light;
+      font-style: normal;
+      font-weight: $font-weight-normal;
+      &:after {
+        content: "";
+        background: url(../images/back-news.png) no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        width: 22px;
+        height: 20px;
+        vertical-align: middle;
+        margin-left: 5px;
+      }
+    }
+  }
   h1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
     color: $text-color-black;
   }
-}
-/* End news detail */
-
-/* Node News */
-.node--type-news{
   .node__content{
+    position: relative;
+    .field--name-field-publication-date {
+      position: absolute;
+      top: -130px;
+    }
     .field--name-field-image {
       display: inline-block;
       float: left;
@@ -330,6 +355,7 @@ select.custom-select{
     }
   }
 }
+/* End news detail */
 
 /**** Promotional Resources Search View ***/
 .page-view-promotional-resources-search {
@@ -378,6 +404,9 @@ select.custom-select{
           font-family: "Glyphicons Halflings";
         }
       }
+    }
+    fieldset:not(.form-item-search-api-fulltext) {
+      display: none;
     }
     .form-item-sort-by {
       display: none;
@@ -442,6 +471,9 @@ select.custom-select{
           display: none;
         }
       }
+    }
+    .form-type-textfield {
+      display: none;
     }
     .form-item-search-api-fulltext {
       display: none;
@@ -1532,14 +1564,18 @@ select.custom-select{
   }
 }
 
-.path-private-zone.private-zone-collaboration-area {
+.page-view-eu-osha-files.private-zone-collaboration-area {
   .block-system.block-system-main-block {
     margin: 0 auto;
     padding: 0 15px;
     max-width: 1170px;
     background: transparent;
+    .view-eu-osha-files {
+      padding: 0;
+    }
     .view-content.row {
       margin: 0 auto;
+      padding: 0;
     }
   }
   .menu--collaboration {
@@ -2960,6 +2996,23 @@ select.custom-select{
   }
 }
 
+/***** PRIVATE ZONE ****/
+.private-zone.page-title-container .page-header.h1 {
+  font-family: $font-family-oswald;
+  color: $text-color-purple;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+body[class*="private-zone-"] {
+  .page-header.h1 {
+    font-family: $font-family-oswald;
+    color: $text-color-purple;
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+}
+
 /*** Private zone back ***/
 #block-backinprivatezone {
   .private-zone-back-wrapper {
@@ -2982,6 +3035,22 @@ select.custom-select{
       margin-left: 5px;
       background: url(../images/back-news.png) center center no-repeat;
       background-size: 100%;
+    }
+  }
+}
+
+.role-partner {
+  #block-backinprivatezone {
+    .private-zone-back-link {
+      top: 90px;
+    }
+  }
+}
+
+.page-view-eu-osha-files.private-zone-collaboration-area {
+  #block-backinprivatezone {
+    .private-zone-back-link {
+      top: 40px;
     }
   }
 }
@@ -3063,7 +3132,6 @@ select.custom-select{
 }
 
 /*** Private zone table ***/
-
 .page-view-partner-content {
   .table-striped {
     background: transparent;
@@ -3097,6 +3165,77 @@ select.custom-select{
       }
       > tr:nth-of-type(even) {
         background-color: $bg-color-purple-light;
+      }
+    }
+  }
+}
+
+/*** Private zone Image Gallery Page ***/
+.page-view-private-images.private-zone-collaboration-area-private-images .block-system.block-system-main-block {
+  background: transparent;
+  .view-private-images {
+    margin: 0 auto;
+    max-width: 1170px;
+    @media (min-width: 768px) {
+      width: 720px;
+    }
+    @media (min-width: 992px) {
+      width: 970px;
+    }
+    @media (min-width: 1200px) {
+      width: 1170px;
+    }
+    .view-header {
+      h2 {
+        padding: 0 15px;
+        padding-bottom: 1rem;
+        margin-bottom: 11px;
+        font-size: 2.125rem;
+        color: $text-color-purple;
+        font-family: $font-family-oswald;
+      }
+    }
+    .view-content.row {
+      padding: 0 15px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      @media(min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 30px;
+      }
+    }
+    .views-field-title {
+      padding: 15px 15px 0px 15px;
+      a {
+        color: white;
+        font-style: normal;
+        &:before {
+          content:"> ";
+        }
+      }
+    }
+    .views-row {
+      margin-bottom: 30px;
+      flex: 1;
+      background: $bg-color-purple;
+    }
+    .item-list {
+      display: flex;
+      padding: 10px 15px 10px 15px;
+      min-height: 65px;
+      .list-group-item {
+        background-color: $bg-color-purple-light-2;
+        display: inline-block;
+        color: $text-color-white;
+        padding: 2px 10px;
+        font-size: 0.8em;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 0em;
+        margin-right: 5px;
+        border-radius: 15px;
       }
     }
   }
