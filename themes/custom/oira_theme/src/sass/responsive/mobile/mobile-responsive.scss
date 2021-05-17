@@ -198,7 +198,13 @@
       }
       span.see-more, .more-link {
         float: none;
+        display: flex;
       }
+      > .more-link {
+        display: flex;
+        justify-content: flex-end;
+      }
+
       .views-view-grid.horizontal {
         padding-left: 0;
         padding-right: 0;
