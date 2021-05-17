@@ -2376,9 +2376,6 @@ select.custom-select{
     }
   }
   .tool-link {
-    position: absolute;
-    right: 0;
-    bottom: 0;
     display: flex;
     justify-content: flex-end;
     a {
@@ -2417,7 +2414,8 @@ select.custom-select{
       background-color: $bg-color-purple;
       padding: 15px;
       color: $text-color-white;
-      margin-top: 50px;
+      margin-top: 20px;
+      margin-bottom: 50px;
       a {
         color: $text-color-white;
       }
@@ -2428,6 +2426,8 @@ select.custom-select{
     font-weight: $font-weight-bold;
     font-style: italic;
     display: block;
+    width: 100px;
+    margin: -20px 0 0 0;
     &:hover {
       cursor: pointer;
     }
@@ -2439,7 +2439,10 @@ select.custom-select{
       top: -1px;
     }
     &.clicked {
-      margin-top: 20px;
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      margin-top: 0;
       height: 20px;
       display: flex;
       justify-content: flex-end;
@@ -2957,6 +2960,32 @@ select.custom-select{
   }
 }
 
+/*** Private zone back ***/
+#block-backinprivatezone {
+  .private-zone-back-wrapper {
+    position: relative;
+  }
+  .private-zone-back-link {
+    position: absolute;
+    width: auto;
+    top: 70px;
+    right: 15px;
+    z-index: 10;
+    color: $text-color-blue-light;
+    font-style: normal;
+    font-weight: normal;
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 22px;
+      height: 20px;
+      margin-left: 5px;
+      background: url(../images/back-news.png) center center no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
 /*** Private Zone Files ***/
 .view-eu-osha-files {
   margin: 0 auto;
@@ -2971,6 +3000,17 @@ select.custom-select{
     padding: 1rem 0;
     border-top: 2px solid $bg-color-purple;
     border-bottom: 2px solid $bg-color-purple;
+    .row {
+      margin: 0;
+    }
+  }
+  .pane-title {
+    color: $text-color-purple;
+    padding-bottom: 0px;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    font-family: $font-family-oswald;
+    font-size: 2.125rem;
   }
   .view-content.row {
     margin: 0 auto;
@@ -2982,10 +3022,30 @@ select.custom-select{
     padding-bottom: 25px;
     padding-top: 25px;
     width: 100%;
+    p {
+      margin: 0 0 11px;
+    }
     .views-field-field-collaboration-items {
       a {
+
         font-style: normal;
         font-weight: normal;
+      }
+      a[href$=".pdf"]:before {
+        margin: 0 4px 0 0;
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url(../images/application-pdf.png) center center no-repeat;
+      }
+      a[href$=".pptx"]:before {
+        margin: 0 4px 0 0;
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url(../images/x-office-presentation.png) center center no-repeat;
       }
     }
   }
@@ -3001,4 +3061,45 @@ select.custom-select{
     }
   }
 }
+
+/*** Private zone table ***/
+
+.page-view-partner-content {
+  .table-striped {
+    background: transparent;
+    border: none;
+    > tbody {
+      tr:not(:last-child) td {
+        border-bottom: 2px solid $bg-color-purple-light-3;
+      }
+      tr td {
+        padding: 8px;
+        line-height: 1.4;
+        vertical-align: top;
+        background: transparent;
+        border-top: 1px solid $bg-color-grey-light-4;
+        color: $text-color-black;
+        a {
+          color: $text-color-purple;
+          &:hover {
+            color: $text-color-blue-hover;
+          }
+        }
+        &:hover {
+          background: $bg-color-grey-light;
+        }
+      }
+      tr:first-child td {
+        background-color: $bg-color-grey-light;
+      }
+      > tr:nth-of-type(odd) {
+        background-color: $bg-color-grey-light;
+      }
+      > tr:nth-of-type(even) {
+        background-color: $bg-color-purple-light;
+      }
+    }
+  }
+}
+
 

@@ -596,6 +596,13 @@ table tr td {
   border: 1px solid #58585a;
 }
 
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #d2c7da;
+}
+
 /* Common elements */
 body {
   position: relative;
@@ -2861,9 +2868,6 @@ select.custom-select {
   border-bottom: none;
 }
 .view-country-partner-content .tool-link {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -2903,7 +2907,8 @@ select.custom-select {
   background-color: #786586;
   padding: 15px;
   color: #FFF;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .view-country-partner-content .partners-wrapper .partner-wrapper a {
   color: #FFF;
@@ -2913,6 +2918,8 @@ select.custom-select {
   font-weight: 700;
   font-style: italic;
   display: block;
+  width: 100px;
+  margin: -20px 0 0 0;
 }
 .view-country-partner-content .more-link:hover {
   cursor: pointer;
@@ -2925,7 +2932,10 @@ select.custom-select {
   top: -1px;
 }
 .view-country-partner-content .more-link.clicked {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  margin-top: 0;
   height: 20px;
   display: flex;
   justify-content: flex-end;
@@ -3427,6 +3437,30 @@ select.custom-select {
   max-width: 1170px;
 }
 
+/*** Private zone back ***/
+#block-backinprivatezone .private-zone-back-wrapper {
+  position: relative;
+}
+#block-backinprivatezone .private-zone-back-link {
+  position: absolute;
+  width: auto;
+  top: 70px;
+  right: 15px;
+  z-index: 10;
+  color: #10b2e4;
+  font-style: normal;
+  font-weight: normal;
+}
+#block-backinprivatezone .private-zone-back-link:after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  margin-left: 5px;
+  background: url(../images/back-news.png) center center no-repeat;
+  background-size: 100%;
+}
+
 /*** Private Zone Files ***/
 .view-eu-osha-files {
   margin: 0 auto;
@@ -3443,6 +3477,17 @@ select.custom-select {
   border-top: 2px solid #786586;
   border-bottom: 2px solid #786586;
 }
+.view-eu-osha-files .view-header .row {
+  margin: 0;
+}
+.view-eu-osha-files .pane-title {
+  color: #786586;
+  padding-bottom: 0px;
+  margin-top: 22px;
+  margin-bottom: 15px;
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+  font-size: 2.125rem;
+}
 .view-eu-osha-files .view-content.row {
   margin: 0 auto;
   padding: 1em 2em 2em 2em;
@@ -3454,9 +3499,28 @@ select.custom-select {
   padding-top: 25px;
   width: 100%;
 }
+.view-eu-osha-files .views-row p {
+  margin: 0 0 11px;
+}
 .view-eu-osha-files .views-row .views-field-field-collaboration-items a {
   font-style: normal;
   font-weight: normal;
+}
+.view-eu-osha-files .views-row .views-field-field-collaboration-items a[href$=".pdf"]:before {
+  margin: 0 4px 0 0;
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../images/application-pdf.png) center center no-repeat;
+}
+.view-eu-osha-files .views-row .views-field-field-collaboration-items a[href$=".pptx"]:before {
+  margin: 0 4px 0 0;
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../images/x-office-presentation.png) center center no-repeat;
 }
 .view-eu-osha-files .views-field-title a {
   display: block;
@@ -3466,6 +3530,41 @@ select.custom-select {
   font-weight: normal;
   font-size: 2rem;
   font-style: normal;
+}
+
+/*** Private zone table ***/
+.page-view-partner-content .table-striped {
+  background: transparent;
+  border: none;
+}
+.page-view-partner-content .table-striped > tbody tr:not(:last-child) td {
+  border-bottom: 2px solid #d2c7da;
+}
+.page-view-partner-content .table-striped > tbody tr td {
+  padding: 8px;
+  line-height: 1.4;
+  vertical-align: top;
+  background: transparent;
+  border-top: 1px solid #ddd;
+  color: #58585a;
+}
+.page-view-partner-content .table-striped > tbody tr td a {
+  color: #786586;
+}
+.page-view-partner-content .table-striped > tbody tr td a:hover {
+  color: #23527c;
+}
+.page-view-partner-content .table-striped > tbody tr td:hover {
+  background: #f9f9f9;
+}
+.page-view-partner-content .table-striped > tbody tr:first-child td {
+  background-color: #f9f9f9;
+}
+.page-view-partner-content .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.page-view-partner-content .table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #dfd8e4;
 }
 
 .site-footer {
