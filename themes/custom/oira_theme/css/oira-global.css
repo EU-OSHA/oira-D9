@@ -4502,6 +4502,23 @@ body.toolbar-fixed.toolbar-tray-open #header {
   height: 40px;
   float: right;
 }
+.content-oira-partners .view-content.row {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+  .content-oira-partners .view-content.row {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .content-oira-partners .view-content.row {
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 .content-oira-partners .view-oira-partners {
   padding-bottom: 0;
   padding-top: 20px;
@@ -4518,6 +4535,9 @@ body.toolbar-fixed.toolbar-tray-open #header {
   border-top: 2px solid #786586;
   padding-top: 20px;
   text-align: right;
+}
+.content-oira-partners .partner__item .views-field {
+  padding: 10px;
 }
 
 /*** Responsive Homepage ***/
@@ -5050,7 +5070,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
     padding: 0;
   }
   #navbar-main .navbar-toggler {
-    padding: 1rem;
+    padding: 0.6rem;
   }
   #navbar-main .navbar-toggler .icon-bar {
     background-color: #FFF;
