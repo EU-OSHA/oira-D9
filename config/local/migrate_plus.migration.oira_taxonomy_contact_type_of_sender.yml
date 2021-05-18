@@ -10,7 +10,7 @@ migration_tags: null
 migration_group: oira_migrate_tax
 label: 'Terms: Contact Type Of Sender'
 source:
-  plugin: d7_taxonomy_term
+  plugin: d7_taxonomy_term_custom
   bundle: contact_type_of_sender
 process:
   tid: tid
@@ -21,6 +21,10 @@ process:
   name: name
   description/value: description
   description/format: format
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
+  path/alias: alias
   weight: weight
   parent_id:
     -

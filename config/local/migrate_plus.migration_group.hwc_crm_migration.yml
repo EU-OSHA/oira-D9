@@ -1,0 +1,17 @@
+uuid: 53b6b487-904c-42d3-9188-320f64de33dc
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - hwc_crm_migration
+_core:
+  default_config_hash: 9T8ZNKXSQY5Z4s3i1sXt4G8n1b7omeGY6m9KvHofFiA
+id: hwc_crm_migration
+label: 'HWC CRM Migration'
+description: 'Migration of partners from CRM'
+source_type: XML
+module: null
+shared_configuration:
+  source:
+    key: migrate

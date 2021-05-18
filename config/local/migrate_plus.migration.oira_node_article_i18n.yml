@@ -1,4 +1,4 @@
-uuid: 26643907-9f24-4780-a394-a38c6d9e1112
+uuid: 90822b99-36ab-49f3-af2a-685f7196197c
 langcode: en
 status: true
 dependencies:
@@ -27,17 +27,6 @@ process:
       'no': nn
   title: title
   body: body
-  uid: uid
-  status: status
-  created: created
-  changed: changed
-  promote: promote
-  sticky: sticky
-  revision_uid: revision_uid
-  revision_log: log
-  revision_timestamp: timestamp
-  content_translation_source: source
-  content_translation_outdated: translate
   field_aditional_resources: field_aditional_resources
   field_archived: field_archived
   field_article_type:
@@ -96,6 +85,21 @@ process:
       source: field_tags
       process:
         target_id: tid
+  uid: uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  content_translation_source: source
+  content_translation_outdated: translate
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
+  path/alias: alias
 destination:
   plugin: 'entity:node'
   translations: true

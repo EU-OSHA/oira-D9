@@ -10,7 +10,7 @@ migration_tags: null
 migration_group: oira_migrate_tax
 label: 'Terms: Country'
 source:
-  plugin: d7_taxonomy_term
+  plugin: d7_taxonomy_term_custom
   bundle: country
 process:
   tid: tid
@@ -37,6 +37,10 @@ process:
   forum_container: is_container
   changed: timestamp
   langcode: language
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
+  path/alias: alias
   field_iso2: field_iso2
   field_country_status:
     plugin: sub_process
@@ -48,7 +52,6 @@ process:
   field_ncw_fp_link:
     plugin: field_link
     source: field_ncw_fp_link
-  field_flag: field_flag
 destination:
   plugin: 'entity:taxonomy_term'
 migration_dependencies:

@@ -10,7 +10,7 @@ migration_tags: null
 migration_group: oira_migrate_tax
 label: 'Terms: Organisation Type'
 source:
-  plugin: d7_taxonomy_term
+  plugin: d7_taxonomy_term_custom
   bundle: organisation_type
 process:
   tid: tid
