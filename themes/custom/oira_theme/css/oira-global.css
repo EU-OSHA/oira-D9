@@ -603,6 +603,19 @@ table tr td {
   background-color: #d2c7da;
 }
 
+/*** Sidebar Toggle ***/
+.toggle-sidebar {
+  display: none;
+}
+
+.sidebar_first aside:after {
+  display: none;
+}
+
+.sidebar_first .facets-widget-checkbox {
+  display: none;
+}
+
 /* Common elements */
 body {
   position: relative;
@@ -2361,15 +2374,6 @@ select.custom-select {
   font-family: "Glyphicons Halflings";
   font-style: normal;
   color: #10b2e4;
-}
-
-/*** Sidebar Toggle ***/
-.toggle-sidebar {
-  display: none;
-}
-
-.sidebar_first aside:after {
-  display: none;
 }
 
 /***** Search Results ****/

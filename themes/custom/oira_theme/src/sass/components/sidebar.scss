@@ -1,0 +1,19 @@
+/*** Sidebar Toggle ***/
+.toggle-sidebar {
+  display: none;
+}
+
+.sidebar_first {
+  aside {
+    &:after {
+      display:none;
+    }
+  }
+}
+
+.sidebar_first {
+  .facets-widget-checkbox {
+    display: none;
+  }
+}
+

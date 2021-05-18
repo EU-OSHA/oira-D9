@@ -1827,19 +1827,6 @@ select.custom-select{
   }
 }
 
-/*** Sidebar Toggle ***/
-.toggle-sidebar {
-  display: none;
-}
-
-.sidebar_first {
-  aside {
-    &:after {
-      display:none;
-    }
-  }
-}
-
 
 /***** Search Results ****/
 .path-search {
