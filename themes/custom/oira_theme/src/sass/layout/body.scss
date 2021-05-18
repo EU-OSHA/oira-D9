@@ -200,56 +200,6 @@ select.custom-select{
   margin-bottom: 15px;
 }
 
-.sidebar .block {
-  padding: 0;
-}
-
-.sidebar_first {
-  .block{
-    border: 0;
-  }
-  aside{
-    color:$text-color-white;
-    h2{
-      cursor: pointer;
-      padding: 10px 0;
-      margin-bottom: 5px;
-      font-family: 'Oswald';
-      color:$text-color-white;
-      font-size: 1.2rem;
-      font-weight: normal;
-      text-shadow: 0 0 0 $text-color-white;
-      border-top: 2px solid $text-color-white;
-      border-bottom: none;
-      &:after{
-        content: "\e252";
-        font-family: "Glyphicons Halflings";
-        display: inline-block;
-        margin-left: 10px;
-        line-height: 1;
-      }
-    }
-    h2.active{
-      &:after{
-        content: "\e250";
-        font-family: "Glyphicons Halflings";
-        display: inline-block;
-        margin-left: 10px;
-
-      }
-    }
-    a{
-      color:$text-color-white;
-    }
-    .facets-widget-checkbox{
-      ul{
-        list-style: none;
-        padding-left: 0;
-        margin-bottom: 5px;
-      }
-    }
-  }
-}
 
 .content-two-columns{
   display: flex;
@@ -1831,21 +1781,6 @@ select.custom-select{
 /***** Search Results ****/
 .path-search {
   .sidebar_first {
-    aside  {
-      h2 {
-        cursor: pointer;
-        &.clicked {
-          &:after {
-            content: "\e252";
-          }
-        }
-        &:after {
-          content: "\e250";
-          font-family: "Glyphicons Halflings";
-          margin-left: 10px;
-        }
-      }
-    }
     .form-group {
       margin: 0;
       padding: 0;

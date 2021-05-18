@@ -29,10 +29,11 @@
       margin-bottom: 0;
     }
   }
-  #block-footermenu{
+  #block-footermenu {
     margin: 0;
     ul{
       li{
+        display: inline-block;
         border-right: 2px solid $bg-color-white;
         a{
           color: $text-color-white;
@@ -42,6 +43,9 @@
           &:hover{
             text-decoration: underline;
           }
+        }
+        &:nth-child(5) {
+          display: none;
         }
         &:last-child {
           border-right: none;
@@ -80,3 +84,19 @@
     }
   }
 }
+
+.role-authenticated {
+  .site-footer{
+    #block-footermenu {
+      ul li {
+        &:nth-child(4) {
+          display: none;
+        }
+        &:nth-child(5) {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
