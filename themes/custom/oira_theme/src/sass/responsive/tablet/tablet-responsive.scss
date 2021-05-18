@@ -125,6 +125,14 @@
       max-width: 100%;
     }
   }
+
+  .block-views-blockadditional-resources-block {
+    .views-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -218,8 +226,7 @@
   #navbar-main {
     padding: 0;
     .navbar-toggler {
-      padding: 1rem;
-
+      padding: 0.6rem;
       .icon-bar {
         background-color: $bg-color-white;
         display: block;
@@ -255,7 +262,6 @@
   #block-oira-theme-main-menu{
     width: 100%;
   }
-
 
   #navbar-main ul.navbar-nav li:hover ul.dropdown-menu {
     display: none;

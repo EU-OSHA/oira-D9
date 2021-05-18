@@ -460,6 +460,19 @@
     height: 40px;
     float: right;
   }
+  .view-content.row {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media(min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+    @media(min-width: 1024px) {
+      gap: 30px;
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
   .view-oira-partners{
     padding-bottom: 0;
     padding-top: 20px;
@@ -477,7 +490,9 @@
       text-align: right;
     }
   }
-
+  .partner__item .views-field {
+    padding: 10px;
+  }
 }
 
 /*** Responsive Homepage ***/

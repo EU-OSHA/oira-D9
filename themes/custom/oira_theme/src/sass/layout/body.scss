@@ -1614,21 +1614,34 @@ select.custom-select{
   @extend .full-width;
   background: $bg-color-purple;
   padding-top: 22px;
-  border-bottom: 10px solid white;
   padding-bottom: 15px;
-  .content {
+  .content, h2 {
     margin: 0 auto;
-    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    color: $text-color-purple-light;
+    @media(min-width: 768px) {
+      width: 750px;
+    }
+    @media(min-width: 992px) {
+      width: 970px;
+    }
+    @media(min-width: 1200px) {
+      width: 1170px;
+    }
+  }
+  .content {
     color: $text-color-white;
+    > div {
+      padding-top: 15px;
+      border-top: 2px solid white;
+    }
   }
   h2 {
-    max-width: 1140px;
-    padding-bottom: 15px;
     margin: 0 auto 15px;
     font-family: $font-family-oswald;
     color: $text-color-white;
     font-size: 2rem;
-    border-bottom: 2px solid #ffffff;
     &:after {
       content: "";
       background: url(../images/icon-news-white.png) no-repeat;
@@ -1696,6 +1709,11 @@ select.custom-select{
   }
 }
 
+.node--type-article {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .block-views-blockadditional-resources-block {
   @extend .full-width;
   padding-top: 25px;
@@ -1703,17 +1721,28 @@ select.custom-select{
   background: $bg-color-purple-light;
   h2, .content {
     margin: 0 auto;
-    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
     color: $text-color-purple-light;
+    @media(min-width: 768px) {
+      width: 750px;
+    }
+    @media(min-width: 992px) {
+      width: 970px;
+    }
+    @media(min-width: 1200px) {
+      width: 1170px;
+    }
   }
   .content {
-    border-bottom: 2px solid $text-color-purple-light;
     padding-bottom: 23px;
+    > div {
+      padding-top: 15px;
+      border-top: 2px solid $text-color-purple-light;
+    }
   }
   h2 {
     margin-bottom: 22px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #967ea7;
     font-size: 2.1875rem; /*** 35px ***/
     font-family: $font-family-oswald;
     &:after {
