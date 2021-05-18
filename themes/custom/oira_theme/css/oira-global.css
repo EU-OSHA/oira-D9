@@ -498,22 +498,22 @@ div.pagerer-right-pane {
   background-image: url(../images/show-all-icon-p.png);
 }
 .node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:before {
-  background-image: url(../images/tools-icon-w.png);
-}
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:focus:before {
-  background-image: url(../images/tools-icon-p.png);
-}
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2).active a:before {
-  background-image: url(../images/tools-icon-p.png);
-}
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:before {
   background-image: url(../images/promotional-resources-icon-w.png);
 }
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:focus:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:focus:before {
   background-image: url(../images/promotional-resources-icon-p.png);
 }
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2.active a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2).active a:before {
   background-image: url(../images/promotional-resources-icon-p.png);
+}
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:before {
+  background-image: url(../images/tools-icon-w.png);
+}
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:focus:before {
+  background-image: url(../images/tools-icon-p.png);
+}
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2.active a:before {
+  background-image: url(../images/tools-icon-p.png);
 }
 .node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-3 a:before {
   background-image: url(../images/news-icon-w.png);
@@ -601,6 +601,68 @@ table tr td {
 }
 .table-striped > tbody > tr:nth-of-type(even) {
   background-color: #d2c7da;
+}
+
+/*** Sidebar Toggle ***/
+.toggle-sidebar {
+  display: none;
+}
+
+.sidebar .block {
+  padding: 0;
+}
+
+.sidebar_first .block {
+  border: 0;
+}
+.sidebar_first aside {
+  color: #FFF;
+}
+.sidebar_first aside h2 {
+  cursor: pointer;
+  padding: 10px 0;
+  margin-bottom: 5px;
+  font-family: "Oswald";
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-shadow: 0 0 0 #FFF;
+  border-top: 2px solid #FFF;
+  border-bottom: none;
+}
+.sidebar_first aside h2:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  display: inline-block;
+  margin-left: 10px;
+  line-height: 1;
+}
+.sidebar_first aside a {
+  color: #FFF;
+}
+.sidebar_first aside .facets-widget-checkbox ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.sidebar_first aside:after {
+  display: none;
+}
+
+.sidebar_first h2 {
+  cursor: pointer;
+}
+.sidebar_first h2.clicked:after {
+  content: "";
+}
+.sidebar_first h2:after {
+  content: "";
+  font-family: "Glyphicons Halflings";
+  margin-left: 10px;
+}
+.sidebar_first .facets-widget-checkbox {
+  display: none;
 }
 
 /* Common elements */
@@ -789,50 +851,6 @@ select.custom-select {
   margin-bottom: 15px;
 }
 
-.sidebar .block {
-  padding: 0;
-}
-
-.sidebar_first .block {
-  border: 0;
-}
-.sidebar_first aside {
-  color: #FFF;
-}
-.sidebar_first aside h2 {
-  cursor: pointer;
-  padding: 10px 0;
-  margin-bottom: 5px;
-  font-family: "Oswald";
-  color: #FFF;
-  font-size: 1.2rem;
-  font-weight: normal;
-  text-shadow: 0 0 0 #FFF;
-  border-top: 2px solid #FFF;
-  border-bottom: none;
-}
-.sidebar_first aside h2:after {
-  content: "";
-  font-family: "Glyphicons Halflings";
-  display: inline-block;
-  margin-left: 10px;
-  line-height: 1;
-}
-.sidebar_first aside h2.active:after {
-  content: "";
-  font-family: "Glyphicons Halflings";
-  display: inline-block;
-  margin-left: 10px;
-}
-.sidebar_first aside a {
-  color: #FFF;
-}
-.sidebar_first aside .facets-widget-checkbox ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 5px;
-}
-
 .content-two-columns {
   display: flex;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#765e84+1,765e84+35,dfd8e4+35,dfd8e4+35,dfd8e4+100 */
@@ -933,6 +951,11 @@ select.custom-select {
   margin-bottom: 20px;
   border: 1px solid grey;
   max-width: 260px;
+}
+
+.role-authenticated.role-administrator .node--type-news .node__content .field--name-field-publication-date {
+  position: absolute;
+  top: -190px;
 }
 
 /* End news detail */
@@ -2363,29 +2386,9 @@ select.custom-select {
   color: #10b2e4;
 }
 
-/*** Sidebar Toggle ***/
-.toggle-sidebar {
-  display: none;
-}
-
-.sidebar_first aside:after {
-  display: none;
-}
-
 /***** Search Results ****/
 .path-search .sidebar_first {
   padding-top: 30px;
-}
-.path-search .sidebar_first aside h2 {
-  cursor: pointer;
-}
-.path-search .sidebar_first aside h2.clicked:after {
-  content: "";
-}
-.path-search .sidebar_first aside h2:after {
-  content: "";
-  font-family: "Glyphicons Halflings";
-  margin-left: 10px;
 }
 .path-search .sidebar_first .form-group {
   margin: 0;
@@ -3741,6 +3744,7 @@ body[class*=private-zone-] .page-header.h1 {
   margin: 0;
 }
 .site-footer #block-footermenu ul li {
+  display: inline-block;
   border-right: 2px solid #FFF;
 }
 .site-footer #block-footermenu ul li a {
@@ -3751,6 +3755,9 @@ body[class*=private-zone-] .page-header.h1 {
 }
 .site-footer #block-footermenu ul li a:hover {
   text-decoration: underline;
+}
+.site-footer #block-footermenu ul li:nth-child(5) {
+  display: none;
 }
 .site-footer #block-footermenu ul li:last-child {
   border-right: none;
@@ -3782,6 +3789,13 @@ body[class*=private-zone-] .page-header.h1 {
 }
 .site-footer .menu--social-menu-footer ul .field--type-image img {
   margin: 0;
+}
+
+.role-authenticated .site-footer #block-footermenu ul li:nth-child(4) {
+  display: none;
+}
+.role-authenticated .site-footer #block-footermenu ul li:nth-child(5) {
+  display: inline-block;
 }
 
 #navbar {
