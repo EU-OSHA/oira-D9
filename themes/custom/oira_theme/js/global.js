@@ -47,15 +47,14 @@ jQuery(document).ready(function($){
   });
 
   //Add display block
-  if ($(".page-view-oira-ws")[0]) {
+  /*if ($(".page-view-oira-ws")[0]) {
     setTimeout(function () {
       $("#sidebar_first aside h2").click(function () {
-        $(this).toggleClass("active");
         $(this).parent().toggleClass("active");
         $(this).parent().children('.content').slideToggle();
       });
     }, 200);
-  }
+  } */
 
 
     windowWidth= jQuery(window).width();
