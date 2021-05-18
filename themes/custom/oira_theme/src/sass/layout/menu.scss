@@ -187,19 +187,30 @@
   }
 }
 
-.page-view-eu-osha-files {
+.page-view-private-images.private-zone-collaboration-area-private-images,
+.private-zone-collaboration-area-partners-documents {
   .menu--collaboration {
     margin-bottom: 10px;
     background: $bg-color-purple;
     ul {
       width: 100%;
-      max-width: 1140px;
+      max-width: 1170px;
+      @media (min-width: 768px) {
+        width: 720px;
+      }
+      @media (min-width: 992px) {
+        width: 970px;
+      }
+      @media (min-width: 1200px) {
+        width: 1170px;
+      }
       padding: 0 15px;
       margin: 0 auto;
       list-style: none;
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      flex-wrap: wrap;
       .menu-item {
         display: inline-block;
         padding: 15px 40px;
