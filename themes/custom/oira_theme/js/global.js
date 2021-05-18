@@ -182,6 +182,16 @@ jQuery(document).ready(function($){
   });
 
 
+  $('#edit-search-api-fulltext--2').blur(function(){
+    if(!$(this).val()){
+      $(this).addClass("has-value");
+      $(this).parent(".content-two-columns").find(".results-for").addClass("show-me");
+    } else{
+      $(this).removeClass("has-value");
+      $(this).parent(".content-two-columns").find(".results-for").removeClass("show-me");
+      $(this).parent(".content-two-columns").find(".results-for").addClass("hide-me");
+    }
+  });
 
 
 });
