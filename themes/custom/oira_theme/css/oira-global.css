@@ -2197,24 +2197,52 @@ select.custom-select {
 .block-views-blocknews-block-2 {
   background: #786586;
   padding-top: 22px;
-  border-bottom: 10px solid white;
   padding-bottom: 15px;
+}
+.block-views-blockoshwiki-featured-articles-oshwiki-related-articles .content, .block-views-blockoshwiki-featured-articles-oshwiki-related-articles h2,
+.block-views-blocknews-block-2 .content,
+.block-views-blocknews-block-2 h2 {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  color: #967ea7;
+}
+@media (min-width: 768px) {
+  .block-views-blockoshwiki-featured-articles-oshwiki-related-articles .content, .block-views-blockoshwiki-featured-articles-oshwiki-related-articles h2,
+.block-views-blocknews-block-2 .content,
+.block-views-blocknews-block-2 h2 {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .block-views-blockoshwiki-featured-articles-oshwiki-related-articles .content, .block-views-blockoshwiki-featured-articles-oshwiki-related-articles h2,
+.block-views-blocknews-block-2 .content,
+.block-views-blocknews-block-2 h2 {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .block-views-blockoshwiki-featured-articles-oshwiki-related-articles .content, .block-views-blockoshwiki-featured-articles-oshwiki-related-articles h2,
+.block-views-blocknews-block-2 .content,
+.block-views-blocknews-block-2 h2 {
+    width: 1170px;
+  }
 }
 .block-views-blockoshwiki-featured-articles-oshwiki-related-articles .content,
 .block-views-blocknews-block-2 .content {
-  margin: 0 auto;
-  max-width: 1140px;
   color: #FFF;
+}
+.block-views-blockoshwiki-featured-articles-oshwiki-related-articles .content > div,
+.block-views-blocknews-block-2 .content > div {
+  padding-top: 15px;
+  border-top: 2px solid white;
 }
 .block-views-blockoshwiki-featured-articles-oshwiki-related-articles h2,
 .block-views-blocknews-block-2 h2 {
-  max-width: 1140px;
-  padding-bottom: 15px;
   margin: 0 auto 15px;
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #FFF;
   font-size: 2rem;
-  border-bottom: 2px solid #ffffff;
 }
 .block-views-blockoshwiki-featured-articles-oshwiki-related-articles h2:after,
 .block-views-blocknews-block-2 h2:after {
@@ -2298,6 +2326,11 @@ select.custom-select {
   width: 35px;
 }
 
+.node--type-article {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .block-views-blockadditional-resources-block {
   padding-top: 25px;
   padding-bottom: 23px;
@@ -2305,17 +2338,34 @@ select.custom-select {
 }
 .block-views-blockadditional-resources-block h2, .block-views-blockadditional-resources-block .content {
   margin: 0 auto;
-  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
   color: #967ea7;
 }
+@media (min-width: 768px) {
+  .block-views-blockadditional-resources-block h2, .block-views-blockadditional-resources-block .content {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .block-views-blockadditional-resources-block h2, .block-views-blockadditional-resources-block .content {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .block-views-blockadditional-resources-block h2, .block-views-blockadditional-resources-block .content {
+    width: 1170px;
+  }
+}
 .block-views-blockadditional-resources-block .content {
-  border-bottom: 2px solid #967ea7;
   padding-bottom: 23px;
+}
+.block-views-blockadditional-resources-block .content > div {
+  padding-top: 15px;
+  border-top: 2px solid #967ea7;
 }
 .block-views-blockadditional-resources-block h2 {
   margin-bottom: 22px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #967ea7;
   font-size: 2.1875rem;
   /*** 35px ***/
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
@@ -4987,6 +5037,12 @@ body.toolbar-fixed.toolbar-tray-open #header {
 .path-search .view-search {
     max-width: 100%;
   }
+
+  .block-views-blockadditional-resources-block .views-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   /**** What's News ***/
@@ -5183,12 +5239,12 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 
   /*** Stiky header ***/
-  body {
-    padding-top: 165px;
+  body.role-anonymous {
+    padding-top: 115px;
   }
 
   body.user-logged-in {
-    padding-top: 165px !important;
+    padding-top: 155px !important;
   }
   body.user-logged-in #header {
     padding-top: 40px;
@@ -5538,7 +5594,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 
   .block-views-blockadditional-resources-block {
-    padding-bottom: 6rem;
+    padding-bottom: 23px;
   }
 
   .page-node-67 .oira-content > .image-fluid {
@@ -5763,6 +5819,12 @@ body.toolbar-fixed.toolbar-tray-open #header {
     width: 65%;
     max-width: 65%;
     padding: 0;
+  }
+
+  .block-views-blockadditional-resources-block .views-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
   }
 }
 /* End Media 767px */

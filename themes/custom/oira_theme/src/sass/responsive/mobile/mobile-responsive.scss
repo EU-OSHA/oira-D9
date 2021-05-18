@@ -13,12 +13,12 @@
   }
 
   /*** Stiky header ***/
-  body {
-    padding-top: 165px;
+  body.role-anonymous {
+    padding-top: 115px;
   }
 
   body.user-logged-in {
-    padding-top: 165px !important;
+    padding-top: 155px !important;
     #header {
       padding-top: 40px;
     }
@@ -403,7 +403,7 @@
   }
 
   .block-views-blockadditional-resources-block {
-    padding-bottom: 6rem;
+    padding-bottom: 23px;
   }
 
   .page-node-67 {
@@ -625,7 +625,6 @@
     }
   }
 
-
   .view-news {
     .view-header {
       h1 {
@@ -649,6 +648,14 @@
         max-width: 65%;
         padding: 0;
       }
+    }
+  }
+
+  .block-views-blockadditional-resources-block {
+    .views-row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 0;
     }
   }
 
