@@ -31,7 +31,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: true
+          distinct: false
           replica: false
           query_comment: ''
           query_tags: {  }
@@ -431,12 +431,12 @@ display:
           entity_field: status
         moderation_state:
           id: moderation_state
-          table: node_field_revision
+          table: node_field_data
           field: moderation_state
           relationship: none
           group_type: group
           admin_label: ''
-          label: wORKFLOW
+          label: 'Moderation state'
           exclude: false
           alter:
             alter_text: false
@@ -620,22 +620,37 @@ display:
           operator: in
           value:
             '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+            und: und
+            zxx: zxx
           group: 1
           exposed: false
           expose:
-            operator_id: ''
-            label: ''
+            operator_id: langcode_1_op
+            label: 'Translation language'
             description: ''
             use_operator: false
-            operator: ''
+            operator: langcode_1_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: ''
+            identifier: langcode_1
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              editor: '0'
+              approver: '0'
+              translation_manager: '0'
+              translation_liaison: '0'
+              layout_validator: '0'
+              content_validator: '0'
+              project_manager: '0'
+              partner: '0'
+              oira_project_manager: '0'
+              oira_supervisor: '0'
+              superadministrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -716,7 +731,7 @@ display:
             identifier: type
             required: false
             remember: false
-            multiple: false
+            multiple: true
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -802,93 +817,6 @@ display:
           entity_type: node
           entity_field: uid
           plugin_id: user_name
-        langcode_2:
-          id: langcode_2
-          table: node_field_revision
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            all: all
-            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
-            es: es
-            bg: bg
-            cs: cs
-            af: af
-            de: de
-            el: el
-            et: et
-            fi: fi
-            hr: hr
-            fr: fr
-            hu: hu
-            is: is
-            it: it
-            lv: lv
-            lt: lt
-            nl: nl
-            nn: nn
-            pl: pl
-            pt-pt: pt-pt
-            sk: sk
-            sl: sl
-            sv: sv
-            ca: ca
-            da: da
-            ro: ro
-            mt: mt
-            'no': 'no'
-            en: en
-            und: und
-            zxx: zxx
-          group: 1
-          exposed: true
-          expose:
-            operator_id: langcode_2_op
-            label: Language
-            description: ''
-            use_operator: false
-            operator: langcode_2_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: langcode_2
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              editor: '0'
-              approver: '0'
-              translation_manager: '0'
-              translation_liaison: '0'
-              layout_validator: '0'
-              content_validator: '0'
-              project_manager: '0'
-              partner: '0'
-              oira_project_manager: '0'
-              oira_supervisor: '0'
-              superadministrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: node
-          entity_field: langcode
-          plugin_id: language
         status:
           id: status
           table: node_field_data
@@ -937,10 +865,10 @@ display:
           plugin_id: boolean
           entity_type: node
           entity_field: status
-        moderation_state:
-          id: moderation_state
-          table: node_field_data
-          field: moderation_state
+        langcode:
+          id: langcode
+          table: node_field_revision
+          field: langcode
           relationship: none
           group_type: group
           admin_label: ''
@@ -949,14 +877,14 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: moderation_state_op
-            label: 'Moderation state'
+            operator_id: langcode_op
+            label: 'Translated in '
             description: ''
             use_operator: false
-            operator: moderation_state_op
+            operator: langcode_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: moderation_state
+            identifier: langcode
             required: false
             remember: false
             multiple: false
@@ -989,7 +917,8 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          plugin_id: moderation_state_filter
+          entity_field: langcode
+          plugin_id: language
       sorts: {  }
       title: Content
       empty:
@@ -1014,7 +943,6 @@ display:
         operator: OR
         groups:
           1: AND
-          2: AND
       display_extenders: {  }
       footer:
         result:
@@ -1040,8 +968,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: 0
-      tags:
-        - 'config:workflow_list'
+      tags: {  }
   page_1:
     display_options:
       path: admin/content/node
@@ -1049,28 +976,29 @@ display:
         type: 'default tab'
         title: Content
         description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
         menu_name: admin
-        weight: -10
-        context: ''
       tab_options:
-        type: normal
+        type: tab
         title: Content
         description: 'Find and manage content'
-        menu_name: admin
-        weight: -10
+        weight: 0
       display_extenders: {  }
-      rendering_language: '***LANGUAGE_entity_default***'
+      rendering_language: '***LANGUAGE_entity_translation***'
     display_plugin: page
     display_title: Page
     id: page_1
     position: 1
     cache_metadata:
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: 0
-      tags:
-        - 'config:workflow_list'
+      tags: {  }

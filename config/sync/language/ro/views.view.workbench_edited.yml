@@ -25,6 +25,8 @@ display:
           label: Title
         type:
           label: Tip
+        status:
+          label: Published
         uid:
           label: Author
       filters:
@@ -34,6 +36,9 @@ display:
         type:
           expose:
             label: Tip
+        status:
+          expose:
+            label: Published
       arguments:
         uid_revision:
           exception:

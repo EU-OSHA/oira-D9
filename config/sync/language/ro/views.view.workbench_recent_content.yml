@@ -25,6 +25,8 @@ display:
           label: Title
         type:
           label: Tip
+        status:
+          label: Published
         name:
           label: Author
       filters:
@@ -34,6 +36,9 @@ display:
         type:
           expose:
             label: Tip
+        status:
+          expose:
+            label: Published
   block_1:
     display_options:
       pager:
@@ -45,6 +50,10 @@ display:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
+      filters:
+        status:
+          expose:
+            label: Published
       fields:
         title:
           label: Title

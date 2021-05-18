@@ -33,7 +33,7 @@ process:
       plugin: default_value
       default_value: sector_category
   name: name_field_value
-  description/value: description
+  description/value: description_field_value
   description/format: format
   weight: weight
   parent_id:
@@ -50,6 +50,10 @@ process:
     source: '@parent_id'
   forum_container: is_container
   changed: timestamp
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
+  path/alias: alias
 destination:
   plugin: 'entity:taxonomy_term'
   translations: true

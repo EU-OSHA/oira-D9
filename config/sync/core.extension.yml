@@ -52,6 +52,7 @@ module:
   dblog: 0
   diff: 0
   draggableviews: 0
+  dynamic_entity_reference: 0
   dynamic_page_cache: 0
   editor: 0
   editor_advanced_link: 0
@@ -75,6 +76,7 @@ module:
   help: 0
   history: 0
   htmlmail: 0
+  hwc_crm_migration: 0
   image: 0
   image_widget_crop: 0
   imce: 0
@@ -98,6 +100,7 @@ module:
   layout_discovery: 0
   layoutcomponents: 0
   link: 0
+  linkchecker: 0
   locale: 0
   mailsystem: 0
   masquerade: 0
@@ -109,17 +112,20 @@ module:
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
+  ncw_migration: 0
   node: 0
   node_export: 0
   notification: 0
   oira_masquerade: 0
   oira_partner: 0
   oira_partner_content_count: 0
+  oira_workflow: 0
   options: 0
   page_cache: 0
   pagerer: 0
   path: 0
   path_alias: 0
+  pathologic: 0
   quickedit: 0
   quicktabs: 0
   r4032login: 0
@@ -134,6 +140,7 @@ module:
   slick_ui: 0
   slick_views: 0
   sliderwidget: 0
+  smtp: 0
   social_media_links: 0
   social_media_links_field: 0
   system: 0
@@ -145,6 +152,7 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
+  ultimate_cron: 0
   update: 0
   url_redirect: 0
   user: 0

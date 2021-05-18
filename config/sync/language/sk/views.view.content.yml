@@ -51,6 +51,9 @@ display:
                 title: Published
               2:
                 title: Nezverejnené
+        langcode:
+          expose:
+            label: Jazyk
       title: Obsah
       empty:
         area_text_custom:

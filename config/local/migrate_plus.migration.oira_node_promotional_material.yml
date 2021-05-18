@@ -1,4 +1,4 @@
-uuid: fc5ecac1-c757-4837-8c06-3f0c490df94c
+uuid: 8bb53f7e-9fdf-4ef2-a118-a25313db5b99
 langcode: en
 status: true
 dependencies:
@@ -17,7 +17,6 @@ source:
   node_type: promotional_material
 process:
   nid: tnid
-  vid: vid
   type:
     -
       plugin: default_value
