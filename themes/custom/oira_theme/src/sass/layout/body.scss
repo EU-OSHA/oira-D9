@@ -305,6 +305,17 @@ select.custom-select{
     }
   }
 }
+
+.role-authenticated.role-administrator {
+  .node--type-news{
+    .node__content {
+      .field--name-field-publication-date {
+        position: absolute;
+        top: -190px;
+      }
+    }
+  }
+}
 /* End news detail */
 
 /**** Promotional Resources Search View ***/

@@ -498,22 +498,22 @@ div.pagerer-right-pane {
   background-image: url(../images/show-all-icon-p.png);
 }
 .node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:before {
-  background-image: url(../images/tools-icon-w.png);
-}
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:focus:before {
-  background-image: url(../images/tools-icon-p.png);
-}
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2).active a:before {
-  background-image: url(../images/tools-icon-p.png);
-}
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:before {
   background-image: url(../images/promotional-resources-icon-w.png);
 }
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:focus:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2) a:focus:before {
   background-image: url(../images/promotional-resources-icon-p.png);
 }
-.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2.active a:before {
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs li.list-group-item:nth-child(2).active a:before {
   background-image: url(../images/promotional-resources-icon-p.png);
+}
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:before {
+  background-image: url(../images/tools-icon-w.png);
+}
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:hover:before, .node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2 a:focus:before {
+  background-image: url(../images/tools-icon-p.png);
+}
+.node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-2.active a:before {
+  background-image: url(../images/tools-icon-p.png);
 }
 .node--type-partner .block-quicktabs .item-list .quicktabs-tabs #quicktabs-tab-partner_content-3 a:before {
   background-image: url(../images/news-icon-w.png);
@@ -951,6 +951,11 @@ select.custom-select {
   margin-bottom: 20px;
   border: 1px solid grey;
   max-width: 260px;
+}
+
+.role-authenticated.role-administrator .node--type-news .node__content .field--name-field-publication-date {
+  position: absolute;
+  top: -190px;
 }
 
 /* End news detail */
