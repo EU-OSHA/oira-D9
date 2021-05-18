@@ -51,6 +51,9 @@ display:
                 title: Published
               2:
                 title: 'Sense publicar'
+        langcode:
+          expose:
+            label: Llengua
       title: Contingut
       empty:
         area_text_custom:

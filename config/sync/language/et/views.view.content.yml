@@ -51,6 +51,9 @@ display:
                 title: Published
               2:
                 title: Avaldamata
+        langcode:
+          expose:
+            label: Keel
       title: Sisu
       empty:
         area_text_custom:

@@ -25,6 +25,8 @@ display:
           label: Author
         entity_id:
           label: 'Gepos in'
+        changed:
+          label: Updated
         operations:
           label: Aksies
       filters:
@@ -61,5 +63,7 @@ display:
           label: Author
         entity_id:
           label: 'Gepos in'
+        changed:
+          label: Updated
         operations:
           label: Aksies

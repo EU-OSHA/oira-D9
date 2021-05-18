@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - media
+    - pathologic
 name: 'Full HTML Minimal'
 format: full_html_minimal
 weight: -9
@@ -45,3 +46,13 @@ filters:
       default_view_mode: default
       allowed_media_types: {  }
       allowed_view_modes: {  }
+  filter_pathologic:
+    id: filter_pathologic
+    provider: pathologic
+    status: true
+    weight: 50
+    settings:
+      settings_source: global
+      local_settings:
+        protocol_style: full
+        local_paths: ''
