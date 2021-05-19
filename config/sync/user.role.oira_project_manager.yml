@@ -79,6 +79,7 @@ permissions:
   - 'use text format full_html_minimal'
   - 'use text format restricted_html'
   - 'use workbench_moderation needs review tab'
+  - 'view all revisions'
   - 'view all unpublished content'
   - 'view files'
   - 'view latest version'
