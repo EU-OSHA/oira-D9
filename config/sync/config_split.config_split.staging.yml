@@ -7,35 +7,21 @@ label: Staging
 description: ''
 folder: sites/oira/config/staging
 module:
+  search_api: 0
+  search_api_solr: 0
+  search_api_solr_admin: 0
   authorization: 0
   authorization_drupal_roles: 0
   automated_cron: 0
-  custom_migrations: 0
-  hwc_crm_migration: 0
   ldap_authentication: 0
   ldap_authorization: 0
   ldap_query: 0
   ldap_servers: 0
   ldap_user: 0
   memcache: 0
-  ncw_migration: 0
-  oira_workflow: 0
-  search_api: 0
-  search_api_solr: 0
-  search_api_solr_admin: 0
-  ultimate_cron: 0
 theme: {  }
 blacklist: {  }
 graylist:
-  - core.entity_view_display.node.article.rss
-  - core.entity_view_mode.node.rss
-  - migrate_drupal.settings
-  - migrate_plus.migration.hwc_crm_partner
-  - migrate_plus.migration_group.default
-  - migrate_plus.migration_group.hwc_crm_migration
-  - migrate_plus.migration_group.ncw_migration
-  - ncw_migration.config
-  - oira_workflow.config
   - search_api.index.default_multilingual_node_index
   - search_api.index.default_solr_index
   - search_api.index.oira_tools
@@ -109,14 +95,6 @@ graylist:
   - search_api_solr.solr_request_handler.request_handler_spell_default_7_0_0
   - search_api_solr.solr_request_handler.request_handler_suggest_default_7_0_0
   - search_api_solr.solr_request_handler.request_handler_tvrh_default_7_0_0
-  - ultimate_cron.job.feeds_cron
-  - ultimate_cron.job.hwc_crm_migration_cron
-  - ultimate_cron.job.ncw_migration_cron
-  - ultimate_cron.job.node_cron
-  - ultimate_cron.job.oira_workflow_cron
-  - views.view.ncw_export
-  - workflows.workflow.editorial
-  - workflows.workflow.oira
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
