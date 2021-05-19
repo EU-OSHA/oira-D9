@@ -20,10 +20,12 @@ content:
       include_locked: true
     third_party_settings: {  }
   title:
-    type: menu_item_extras_view_mode_selector_select
+    type: string_textfield
     weight: -5
     region: content
-    settings: {  }
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   view_mode:
     type: menu_item_extras_view_mode_selector_select

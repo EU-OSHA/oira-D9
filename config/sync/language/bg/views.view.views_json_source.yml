@@ -3,16 +3,16 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
-          reset_button_label: Рестартирай
+          submit_button: Apply
+          reset_button_label: Reset
   example_2:
     display_options:
       arguments:
         parameter:
           exception:
-            title: Всички
+            title: All
   example_3:
     display_options:
       fields:
         value_1:
-          label: Автор
+          label: Author

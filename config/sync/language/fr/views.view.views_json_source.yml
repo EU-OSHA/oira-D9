@@ -1,25 +1,25 @@
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Appliquer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Précédent'
-            next: 'Suivant ›'
-            first: '« Premier'
-            last: 'Dernier »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Éléments par page'
-            items_per_page_options_all_label: '- Tout -'
-            offset_label: Décalage
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       title: 'Exemple 1'
   example_1:
     display_title: 'Exemple 1'
@@ -30,7 +30,7 @@ display:
       arguments:
         parameter:
           exception:
-            title: Tout
+            title: All
   example_3:
     display_title: 'Exemple 3'
     display_options:
@@ -39,4 +39,4 @@ display:
         value:
           label: 'Identifiant (ID)'
         value_1:
-          label: Auteur
+          label: Author

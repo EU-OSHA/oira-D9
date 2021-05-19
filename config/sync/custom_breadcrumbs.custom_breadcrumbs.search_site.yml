@@ -1,0 +1,15 @@
+uuid: a3a89d84-9d64-4e9e-8ba9-3064b79ef96f
+langcode: en
+status: true
+dependencies: {  }
+id: search_site
+label: 'Search Site'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: "<nolink>\r\n<nolink>"
+breadcrumbTitles: "Search\r\n[current-page:query:search_api_fulltext]\r\n"
+type: '2'
+pathPattern: /search/site
+extraCacheContexts: ''

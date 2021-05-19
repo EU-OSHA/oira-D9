@@ -5,13 +5,13 @@ display:
       exposed_form:
         options:
           submit_button: Sía
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
           tags:
             previous: ‹‹
             next: ››
@@ -21,7 +21,7 @@ display:
         severity:
           label: Alvarleiki
         type:
-          label: Gerð
+          label: Type
         timestamp:
           label: Dagsetning
         message:
@@ -34,7 +34,7 @@ display:
       filters:
         type:
           expose:
-            label: Gerð
+            label: Type
         severity:
           expose:
             label: Alvarleiki

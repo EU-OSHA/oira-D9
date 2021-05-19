@@ -12,10 +12,10 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Anterior'
-            next: 'Următor ›'
-            first: '« Primul'
-            last: 'Ultimul »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
@@ -32,4 +32,4 @@ display:
         value:
           label: Identificator
         value_1:
-          label: Autor
+          label: Author

@@ -6,7 +6,12 @@ dependencies:
     - field.storage.node.body
     - node.type.external_url
   module:
+    - linkchecker
     - text
+third_party_settings:
+  linkchecker:
+    scan: true
+    extractor: html_link_extractor
 id: node.external_url.body
 field_name: body
 entity_type: node
@@ -14,7 +19,7 @@ bundle: external_url
 label: Body
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

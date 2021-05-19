@@ -1,0 +1,17 @@
+uuid: a2c79893-1aa1-42f5-bf08-d805759d9890
+langcode: en
+status: true
+dependencies:
+  module:
+    - oira_workflow
+title: 'Default cron handler'
+id: oira_workflow_cron
+weight: 0
+module: oira_workflow
+callback: oira_workflow_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

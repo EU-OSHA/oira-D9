@@ -7,10 +7,10 @@ default_config:
       page_current: '@number'
       page_previous: '@number'
       page_next: '@number'
-      first: '« Anfang'
-      previous: '‹ Vorherige Seite'
-      next: 'Nächste Seite ›'
-      last: 'Ende »'
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
       page_current_title: 'Aktuelle Seite'
       page_title: 'Gehe zu Seite @number'
       first_title: 'Zur ersten Seite'
@@ -25,16 +25,16 @@ default_config:
       last_reader: 'Letzte Seite'
     items:
       prefix_label: Element
-      first: '« Anfang'
-      previous: '‹ Vorherige Seite'
-      next: 'Nächste Seite ›'
-      last: 'Ende »'
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
       page_reader: Element
       first_reader: 'Erstes Element'
     item_ranges:
       prefix_label: Elemente
-      first: '« Anfang'
-      previous: '‹ Vorherige Seite'
-      next: 'Nächste Seite ›'
-      last: 'Ende »'
+      first: '« First'
+      previous: '‹ Previous'
+      next: 'Next ›'
+      last: 'Last »'
       page_reader: Elemente

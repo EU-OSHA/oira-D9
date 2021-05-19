@@ -47,15 +47,14 @@ jQuery(document).ready(function($){
   });
 
   //Add display block
-  if ($(".page-view-oira-ws")[0]) {
+  /*if ($(".page-view-oira-ws")[0]) {
     setTimeout(function () {
       $("#sidebar_first aside h2").click(function () {
-        $(this).toggleClass("active");
         $(this).parent().toggleClass("active");
         $(this).parent().children('.content').slideToggle();
       });
     }, 200);
-  }
+  } */
 
 
     windowWidth= jQuery(window).width();
@@ -149,10 +148,10 @@ jQuery(document).ready(function($){
       $('#sidebar_first').removeClass('sidebar-expanded');
     });
 
-    //Clear filters toggler
-    $('.facets-checkbox:checked').each(function(index) {
-      $(this).addClass("clicked-input").parent('aside').find('#edit-reset--2').addClass("show-me");
-    });
+    /*** Show clear button on active facet ***/
+    if ($(".block-facets").hasClass("facet-active")) {
+      $('#edit-reset--2').addClass("show-me");
+    }
 
     //Move the summary before the menu (in node 67)
     $('.page-node-67 .field--name-field-summary').insertBefore("#block-oiracommunity");
@@ -162,6 +161,35 @@ jQuery(document).ready(function($){
   $('.menu--main .nav-link.dropdown-toggle').click(function(){
     $(this).toggleClass('clicked');
     $(this).parent('.nav-item').find('.dropdown-menu').slideToggle();
+  });
+
+  /*** Slide Toggle in Partner profile ***/
+  $('.partner__address .field__label-widget').click(function(){
+    $(this).toggleClass('clicked');
+    $(this).parent('.partner__address').find('.field__content-wrapper').slideToggle();
+  });
+
+  $('.partner__socialprofile .field__label-widget').click(function(){
+    $(this).toggleClass('clicked');
+    $(this).parent('.partner__socialprofile').find('.item-list').slideToggle();
+  });
+
+  /*** Search result toggle text ***/
+  $('.result-item .more-link').click(function(){
+    $(this).parent('.result-item').find('.body').toggleClass('hideme');
+    $(this).parent('.result-item').find('.body-expanded').toggleClass('showme');
+  });
+
+
+  $('#edit-search-api-fulltext--2').blur(function(){
+    if(!$(this).val()){
+      $(this).addClass("has-value");
+      $(this).parent(".content-two-columns").find(".results-for").addClass("show-me");
+    } else{
+      $(this).removeClass("has-value");
+      $(this).parent(".content-two-columns").find(".results-for").removeClass("show-me");
+      $(this).parent(".content-two-columns").find(".results-for").addClass("hide-me");
+    }
   });
 
 

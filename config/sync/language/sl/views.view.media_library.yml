@@ -3,17 +3,17 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         media_bulk_form:
           action_title: Akcija
       filters:
         status:
           group_info:
-            label: Objavljeno
+            label: Published
             group_items:
               1:
-                title: Objavljeno
+                title: Published
         name:
           expose:
             label: Ime
@@ -40,7 +40,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Vsi
+            title: All
       header:
         display_link_table:
           label: Tabela
@@ -50,7 +50,7 @@ display:
         name:
           label: Ime
         uid:
-          label: Avtor
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -60,7 +60,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Vsi
+            title: All
       header:
         display_link_table:
           label: Tabela

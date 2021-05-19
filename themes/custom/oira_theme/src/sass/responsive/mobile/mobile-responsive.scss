@@ -1,19 +1,24 @@
 @media only screen and (max-width : 767px) {
-
+  .block-oira-masquerade {
+    display: none;
+  }
+  #block-logoosha {
+    max-width: 200px;
+  }
   #page {
-    padding-bottom: 225px;
+    padding-bottom: 180px;
   }
   .block-addtoany-block {
     padding: 0 15px;
   }
 
   /*** Stiky header ***/
-  body {
-    padding-top: 165px;
+  body.role-anonymous {
+    padding-top: 115px;
   }
 
   body.user-logged-in {
-    padding-top: 165px !important;
+    padding-top: 155px !important;
     #header {
       padding-top: 40px;
     }
@@ -46,10 +51,12 @@
   .top-header-content #block-logooira img {
     width: 84px;
   }
+
   .block-lang-dropdown {
     position: absolute;
     right: 50px;
-    top: 50px;
+    top: 60px;
+    margin-top: 0;
     z-index: 3;
     .form-item-lang-dropdown-select {
       position: relative;
@@ -72,9 +79,9 @@
       width: 100px !important;
       background-color: transparent !important;
       border: none;
-
     }
   }
+
   .page-view-oira-ws {
     .pagerer-center-pane {
       width: 100%;
@@ -120,9 +127,13 @@
     }
   }
 
+  .top-header-content .region-top-header-logos .field--name-field-image .field__item:first-child {
+    width: auto;
+  }
+
   .top-header-content{
     .header-menu-news {
-      top: 50px;
+      top: 60px;
       right: 46px;
       z-index: 2;
       color: $text-color-white;
@@ -145,7 +156,7 @@
     .header-blocks{
       .block-search-form-block {
         right: 15px;
-        top: 50px;
+        top: 60px;
         z-index: 999;
         .btn-primary{
           background: transparent;
@@ -188,7 +199,13 @@
       }
       span.see-more, .more-link {
         float: none;
+        display: flex;
       }
+      > .more-link {
+        display: flex;
+        justify-content: flex-end;
+      }
+
       .views-view-grid.horizontal {
         padding-left: 0;
         padding-right: 0;
@@ -387,7 +404,7 @@
   }
 
   .block-views-blockadditional-resources-block {
-    padding-bottom: 6rem;
+    padding-bottom: 23px;
   }
 
   .page-node-67 {
@@ -532,6 +549,46 @@
     }
   }
 
+  .view-partner-intro {
+    .view-content.row {
+      flex-direction: column;
+    }
+    .partner__intro-data {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 auto;
+      padding-bottom: 35px;
+      .partner__title {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .partner__address,
+    .partner__socialprofile {
+      width: 100%;
+      padding: 15px 0;
+      margin-bottom: 0;
+      border-bottom: 2px solid $bg-color-purple;
+      .field__label-widget {
+        display: block;
+        margin: 0;
+        cursor: pointer;
+        &:after {
+          content: "\e252";
+          font-family: "Glyphicons Halflings";
+          padding-left: 10px;
+          color: $text-color-blue-light;
+          vertical-align: middle;
+        }
+      }
+      > .field__content-wrapper,
+      > .item-list {
+        padding-top: 15px;
+        display: none;
+      }
+    }
+  }
+
   .view-promotional-materials-type .views-view-grid {
     margin: 0 auto;
     .views-col {
@@ -541,7 +598,6 @@
   }
 
   .page-view-promotional-resources-search {
-
     main {
       padding: 0;
       background: $bg-color-white;
@@ -570,26 +626,6 @@
     }
   }
 
-  .menu--main {
-    .nav-link.dropdown-toggle {
-      display: flex;
-      align-items: center;
-      &:after {
-        border: none !important;
-        display: inline-block;
-        margin-top: 5px;
-        margin-left: 15px;
-        content: "\e250" !important;
-        font-family: "Glyphicons Halflings";
-        color: $text-color-white;
-      }
-      &.clicked {
-        &:after {
-          content: "\e252" !important;
-        }
-      }
-    }
-  }
   .view-news {
     .view-header {
       h1 {
@@ -613,6 +649,14 @@
         max-width: 65%;
         padding: 0;
       }
+    }
+  }
+
+  .block-views-blockadditional-resources-block {
+    .views-row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 0;
     }
   }
 

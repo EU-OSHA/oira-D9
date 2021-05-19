@@ -1,0 +1,30 @@
+display:
+  block_1:
+    display_options:
+      title: 'Τελευταία νέα'
+      fields:
+        view_node:
+          text: 'Εμφάνιση περισσότερων'
+      use_more_text: 'Προβολή όλων'
+  block_2:
+    display_options:
+      use_more_text: 'Προβολή όλων'
+  oshnews_latest:
+    display_options:
+      fields:
+        view_node:
+          text: 'Εμφάνιση περισσότερων'
+      use_more_text: 'Προβολή όλων'
+  oshnews_list:
+    display_options:
+      fields:
+        view_node_1:
+          text: 'Εμφάνιση περισσότερων'
+        body:
+          alter:
+            more_link_text: 'Εμφάνιση περισσότερων'
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Εμφάνιση περισσότερων'

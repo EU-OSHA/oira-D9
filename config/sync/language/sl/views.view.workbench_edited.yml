@@ -3,29 +3,29 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         title:
-          label: Naslov
+          label: Title
         type:
-          label: Tip
+          label: Type
         status:
-          label: Objavljeno
+          label: Published
         changed:
-          label: 'Nazadnje posodobljeno'
+          label: 'Last updated'
         uid:
-          label: Avtor
+          label: Author
       filters:
         title:
           expose:
-            label: Naslov
+            label: Title
         type:
           expose:
-            label: Tip
+            label: Type
         status:
           expose:
-            label: Objavljeno
+            label: Published
       arguments:
         uid_revision:
           exception:
-            title: Vsi
+            title: All

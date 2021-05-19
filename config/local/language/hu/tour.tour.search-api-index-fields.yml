@@ -6,7 +6,7 @@ tips:
   search-api-index-fields-machine-name:
     label: 'Programok által használt név'
   search-api-index-fields-type:
-    label: Típus
+    label: Type
   search-api-index-fields-boost:
     label: Kiemelés
   search-api-index-fields-edit:

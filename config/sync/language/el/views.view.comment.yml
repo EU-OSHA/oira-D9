@@ -5,10 +5,10 @@ display:
       exposed_form:
         options:
           submit_button: Φίλτρο
-          reset_button_label: Επαναφορά
-          exposed_sorts_label: 'Ταξινόμηση κατά'
-          sort_asc_label: Αύξ
-          sort_desc_label: Φθί
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
@@ -17,9 +17,9 @@ display:
             first: '« πρώτη'
             last: 'τελευταία »'
           expose:
-            items_per_page_label: 'Είδη ανά σελίδα'
-            items_per_page_options_all_label: '- Όλα -'
-            offset_label: Αντιστάθμιση
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         comment_bulk_form:
           action_title: Ενέργεια
@@ -29,7 +29,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Συντάκτης
+          label: Author
           separator: ', '
         entity_id:
           label: 'Αναρτήθηκε στο'
@@ -82,7 +82,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Συντάκτης
+          label: Author
           separator: ', '
         entity_id:
           label: 'Αναρτήθηκε στο'

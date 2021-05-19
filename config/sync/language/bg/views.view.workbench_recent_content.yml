@@ -3,47 +3,47 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
-          reset_button_label: Рестартирай
+          submit_button: Apply
+          reset_button_label: Reset
       fields:
         title:
-          label: Заглавие
+          label: Title
         type:
-          label: Тип
+          label: Type
         status:
-          label: Публикувано
+          label: Published
         name:
-          label: Автор
+          label: Author
         changed:
-          label: 'Последно обновяване'
+          label: 'Last updated'
         edit_node:
-          label: Действия
-          text: редактирай
+          label: Actions
+          text: edit
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
         type:
           expose:
-            label: Тип
+            label: Type
         status:
           expose:
-            label: Публикувано
+            label: Published
   block_1:
     display_options:
       filters:
         status:
           expose:
-            label: Публикувано
+            label: Published
       fields:
         title:
-          label: Заглавие
+          label: Title
         type:
-          label: Тип
+          label: Type
         name:
-          label: Автор
+          label: Author
         changed:
-          label: 'Последно обновяване'
+          label: 'Last updated'
         edit_node:
-          label: Действия
-          text: редактирай
+          label: Actions
+          text: edit

@@ -1,12 +1,12 @@
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Käytä
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       fields:
@@ -15,7 +15,7 @@ display:
         name:
           separator: ', '
         access:
-          label: 'Viimeisin vierailu'
+          label: 'Last visit'
           separator: ', '
         roles:
           separator: ', '

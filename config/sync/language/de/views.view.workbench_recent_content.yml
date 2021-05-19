@@ -1,101 +1,101 @@
-label: 'Arbeitsbereich: Neuester Inhalt'
-description: 'Inhalt-Übersichtsseite für Arbeitsbereich.'
+label: 'Workbench: Recent content'
+description: 'Content overview page for Workbench.'
 display:
   default:
     display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Anwenden
-          reset_button_label: Zurücksetzen
-          exposed_sorts_label: 'Sortieren nach'
-          sort_asc_label: Aufsteigend
-          sort_desc_label: Absteigend
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Vorherige Seite'
-            next: 'Nächste Seite ›'
-            first: '« Anfang'
-            last: 'Ende »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elemente pro Seite'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Versatz
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         title:
-          label: Titel
+          label: Title
           separator: ', '
         type:
-          label: Typ
+          label: Type
           separator: ', '
         status:
-          label: Veröffentlicht
+          label: Published
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         changed:
-          label: 'Zuletzt aktualisiert'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Aktionen
-          text: Bearbeiten
+          label: Actions
+          text: edit
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
-            label: Typ
+            label: Type
         status:
           expose:
-            label: Veröffentlicht
-      title: 'Arbeitsbereich: Neuester Inhalt'
+            label: Published
+      title: 'Workbench: Recent content'
       empty:
         area:
           content:
-            value: 'Es gibt für Sie noch keinen zu bearbeitenden Inhalt.'
-      use_more_text: 'Alle anzeigen'
+            value: 'There is no content available for you to edit.'
+      use_more_text: 'view all'
   block_1:
-    display_title: Übersichtsblock
+    display_title: 'Overview block'
     display_options:
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Anfang'
-            last: 'Ende »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elemente pro Seite'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Versatz
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       filters:
         status:
           expose:
-            label: Veröffentlicht
+            label: Published
       fields:
         title:
-          label: Titel
+          label: Title
           separator: ', '
         type:
-          label: Typ
+          label: Type
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         changed:
-          label: 'Zuletzt aktualisiert'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Aktionen
-          text: Bearbeiten
+          label: Actions
+          text: edit
       header:
         area:
           content:
-            value: '<h3>Neuester Inhalt</h3>'
+            value: '<h3>Recent content</h3>'
   embed_1:
-    display_title: 'Seite einbetten'
+    display_title: 'Page Embed'
     display_options:
-      display_description: 'Die eingebettete Ansicht zur Verwendung auf einer Einstiegsseite'
+      display_description: 'The embedded view for use on a landing page'

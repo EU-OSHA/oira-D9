@@ -1,59 +1,59 @@
 display:
   default:
-    display_title: Peamine
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Rakenda
-          reset_button_label: Tühista
-          exposed_sorts_label: 'Sorteerimise alus'
-          sort_asc_label: Kasvav
-          sort_desc_label: Kahanev
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Eelmine'
-            next: 'Järgmine ›'
-            first: '« Esimene'
-            last: 'Viimane »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         nid:
           separator: ', '
         title:
-          label: Pealkiri
+          label: Title
           separator: ', '
         type:
-          label: Liik
+          label: Type
           separator: ', '
         status:
-          label: Avaldatud
+          label: Published
           separator: ', '
         changed:
-          label: 'Viimati uuendatud'
+          label: 'Last updated'
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         revision_uid:
           separator: ', '
       filters:
         title:
           expose:
-            label: Pealkiri
+            label: Title
         type:
           expose:
-            label: Liik
+            label: Type
         status:
           expose:
-            label: Avaldatud
+            label: Published
       arguments:
         uid_revision:
           exception:
-            title: Kõik
+            title: All
   block_1:
     display_options:
       pager:
@@ -61,9 +61,9 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Esimene'
-            last: 'Viimane »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Kirjeid lehel'
-            items_per_page_options_all_label: '- Kõik -'
-            offset_label: Nihe
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset

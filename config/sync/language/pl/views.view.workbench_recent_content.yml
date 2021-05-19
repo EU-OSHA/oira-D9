@@ -1,59 +1,59 @@
 display:
   default:
-    display_title: Główny
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Zastosuj
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Poprzednia'
-            next: 'Następna ›'
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elementów na stronę'
-            items_per_page_options_all_label: '- Wszystko -'
-            offset_label: Przesunięcie
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         title:
-          label: Tytuł
+          label: Title
           separator: ', '
         type:
-          label: Typ
+          label: Type
           separator: ', '
         status:
-          label: Opublikowane
+          label: Published
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         changed:
-          label: 'Ostatnia aktualizacja'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Akcje
-          text: edytuj
+          label: Actions
+          text: edit
       filters:
         title:
           expose:
-            label: Tytuł
+            label: Title
         type:
           expose:
-            label: Typ
+            label: Type
         status:
           expose:
-            label: Opublikowane
+            label: Published
       empty:
         area:
           content:
-            value: 'Brak treści dostępnych dla ciebie do edycji.'
-      use_more_text: 'zobacz wszytkie'
+            value: 'There is no content available for you to edit.'
+      use_more_text: 'view all'
   block_1:
     display_options:
       pager:
@@ -61,29 +61,29 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Pierwsza'
-            last: 'Ostatnia »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elementów na stronę'
-            items_per_page_options_all_label: '- Wszystko -'
-            offset_label: Przesunięcie
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       filters:
         status:
           expose:
-            label: Opublikowane
+            label: Published
       fields:
         title:
-          label: Tytuł
+          label: Title
           separator: ', '
         type:
-          label: Typ
+          label: Type
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         changed:
-          label: 'Ostatnia aktualizacja'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Akcje
-          text: edytuj
+          label: Actions
+          text: edit

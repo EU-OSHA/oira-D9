@@ -1,12 +1,12 @@
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Aplica
-          reset_button_label: Reinicialitza
-          exposed_sorts_label: 'Ordena per'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       fields:
@@ -15,9 +15,9 @@ display:
         name:
           separator: ', '
         edit_user:
-          text: 'Edita el meu perfil'
+          text: 'Edit my profile'
         access:
-          label: 'Darrera visita'
+          label: 'Last visit'
           separator: ', '
         roles:
           separator: ', '

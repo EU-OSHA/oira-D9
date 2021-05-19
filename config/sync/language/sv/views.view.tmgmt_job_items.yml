@@ -1,20 +1,20 @@
 display:
   default:
-    display_title: Huvud
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Verkställ
-          reset_button_label: Återställ
-          exposed_sorts_label: 'Sortera efter'
-          sort_asc_label: Stigande
-          sort_desc_label: Fallande
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Inlägg per sida'
-            items_per_page_options_all_label: '- Alla -'
-            offset_label: Kompensera
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: '‹ föregående'
             next: 'nästa ›'
@@ -26,7 +26,7 @@ display:
         label:
           label: Etikett
         type:
-          label: Typ
+          label: Type
         progress:
           label: Framsteg
         word_count:
@@ -41,7 +41,7 @@ display:
       arguments:
         tjid:
           exception:
-            title: Alla
+            title: All
   checkout:
     display_title: Kassan
     display_options:
@@ -49,7 +49,7 @@ display:
         label:
           label: Etikett
         type:
-          label: Typ
+          label: Type
         word_count:
           separator: ', '
         changed:

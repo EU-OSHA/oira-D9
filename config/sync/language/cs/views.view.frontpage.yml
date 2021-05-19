@@ -7,23 +7,23 @@ display:
           content: 'Pro hlavní stranu zatím neexistuje žádný obsah. Instrukce pro přidání obsahu najdete v <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">uživatelské příručce</a>.'
       exposed_form:
         options:
-          submit_button: Použít
+          submit_button: Apply
           reset_button_label: Reset
-          exposed_sorts_label: 'Řadit dle'
-          sort_asc_label: Vzestupně
-          sort_desc_label: Sestupně
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Položek na stránku'
-            items_per_page_options_all_label: '- Vše -'
-            offset_label: Posun
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
-            previous: '‹ Předchozí'
-            next: 'Následující ›'
-            first: '« První'
-            last: 'Poslední »'
-    display_title: Nadřízené
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+    display_title: Master
   feed_1:
     display_title: Zdroj
   page_1:

@@ -1,25 +1,25 @@
 display:
   default:
-    display_title: Principale
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Applica
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Prima'
-            last: 'Ultima »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options_all_label: '- Tutto -'
-            offset_label: Scostamento
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         sid:
           separator: ', '
@@ -41,7 +41,7 @@ display:
       arguments:
         in_draft:
           exception:
-            title: Tutti
+            title: All
   embed_administer:
     display_options:
       fields:
@@ -106,7 +106,7 @@ display:
           text: mostra
         edit_webform_submission:
           label: Operazioni
-          text: modifica
+          text: edit
       filters:
         sticky:
           expose:

@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.article.field_related_oshwiki_articles
     - field.field.node.article.field_sector
     - field.field.node.article.field_summary
+    - field.field.node.article.field_summary_article
     - field.field.node.article.field_tags
     - field.field.node.article.field_wiki_categories
     - field.field.node.article.field_workbench_access
@@ -56,6 +57,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
@@ -74,6 +76,7 @@ hidden:
   field_related_oshwiki_articles: true
   field_sector: true
   field_summary: true
+  field_summary_article: true
   field_wiki_categories: true
   field_workbench_access: true
   langcode: true

@@ -2,21 +2,21 @@ label: 'Biblioteka mediów'
 description: 'Znajdź i zarządaj mediami.'
 display:
   default:
-    display_title: Główny
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: 'Zastosuj filtry'
-          reset_button_label: Resetuj
-          exposed_sorts_label: 'Sortuj po'
-          sort_asc_label: Rosnąco
-          sort_desc_label: Malejąco
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Elementów na stronę'
-            items_per_page_options_all_label: '- Wszystko -'
-            offset_label: Przesunięcie
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -28,10 +28,10 @@ display:
           expose:
             label: 'Status publikacji'
           group_info:
-            label: Opublikowane
+            label: Published
             group_items:
               1:
-                title: Opublikowane
+                title: Published
               2:
                 title: Nieopublikowany
         name:
@@ -87,7 +87,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Wszystko
+            title: All
       header:
         display_link_grid:
           label: Siatka
@@ -102,7 +102,7 @@ display:
         name:
           label: Nazwa
         uid:
-          label: Autor
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -112,7 +112,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Wszystko
+            title: All
       header:
         display_link_grid:
           label: Siatka

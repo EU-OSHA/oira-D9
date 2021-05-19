@@ -3,10 +3,10 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apstiprināt
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       fields:
         access:
-          label: 'Pēdējais apmeklējums'
+          label: 'Last visit'

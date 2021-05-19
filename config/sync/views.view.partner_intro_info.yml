@@ -108,7 +108,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
+          element_type: '0'
           element_class: partner__country
           element_label_type: ''
           element_label_class: ''
@@ -171,7 +171,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: div
+          element_type: '0'
           element_class: partner__logo
           element_label_type: ''
           element_label_class: ''
@@ -234,7 +234,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h1
+          element_type: '0'
           element_class: partner__title
           element_label_type: ''
           element_label_class: ''
@@ -735,10 +735,10 @@ display:
             html: false
           element_type: ''
           element_class: ''
-          element_label_type: strong
+          element_label_type: '0'
           element_label_class: field__label
           element_label_colon: false
-          element_wrapper_type: div
+          element_wrapper_type: '0'
           element_wrapper_class: partner__socialprofile
           element_default_classes: false
           empty: ''
@@ -775,7 +775,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"partner__address\">\r\n\r\n{% if (field_country or field_ph_address or field_ph_town or field_ph_cp) %}\r\n<div>\r\n<strong class=\"field__label\">Contact information</strong>\r\n<div class=\"field__content\">\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_address }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_cp }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_town }}\r\n</div>\r\n\r\n<div class=\"field__content-bit\">\r\n{{ field_country }}\r\n</div>\r\n\r\n</div>\r\n{% endif %}\r\n\r\n<div class=\"field__content field__content-url\">\r\n\r\n{% if (field_website) %}\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Website:</strong> \r\n{{ field_website }}\r\n</div>\r\n{% endif %}\r\n\r\n{% if (field_dedicated_oira_website) %}\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Dedicated OiRA website:</strong>\r\n{{ field_dedicated_oira_website }}\r\n</div>\r\n{% endif %}\r\n\r\n{% if (field_general_email) %}\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Email:</strong> \r\n{{ field_general_email }}\r\n</div>\r\n{% endif %}\r\n\r\n\r\n</div>\r\n</div>\r\n</div>\r\n\r\n"
+            text: "<div class=\"partner__address\">\r\n{% if (field_country or field_ph_address or field_ph_town or field_ph_cp) %}\r\n<div class=\"field__label field__label-widget\">Contact information</div>\r\n<div class=\"field__content-wrapper\">\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_address }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_cp }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_ph_town }}\r\n</div>\r\n<div class=\"field__content-bit\">\r\n{{ field_country }}\r\n</div>\r\n{% endif %}\r\n<div class=\"field__content field__content-url\">\r\n{% if (field_website) %}\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Website:</strong>\r\n{{ field_website }}\r\n</div>\r\n{% endif %}\r\n{% if (field_dedicated_oira_website) %}\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Dedicated OiRA website:</strong>\r\n{{ field_dedicated_oira_website }}\r\n</div>\r\n{% endif %}\r\n{% if (field_general_email) %}\r\n<div class=\"field__content-bit\">\r\n<strong class=\"field__label\">Email:</strong>\r\n{{ field_general_email }}\r\n</div>\r\n{% endif %}\r\n</div>\r\n</div>\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -800,12 +800,12 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: '0'
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
+          element_wrapper_type: '0'
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
@@ -824,7 +824,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"partner__socialprofile\">\r\n{% if (field_social_profile)%}\r\n<strong class=\"field__label\">Social media profiles</strong>\r\n{{ field_social_profile }}\r\n{% endif %}\r\n</div>"
+            text: "<div class=\"partner__socialprofile\">\r\n{% if (field_social_profile)%}\r\n<div class=\"field__label field__label-widget\">Social media profiles</div>\r\n{{ field_social_profile }}\r\n{% endif %}\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -849,12 +849,12 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: '0'
           element_class: ''
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
+          element_wrapper_type: '0'
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''

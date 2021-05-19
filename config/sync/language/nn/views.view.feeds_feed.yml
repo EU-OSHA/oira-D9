@@ -3,9 +3,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: 'Sett til standard'
-          exposed_sorts_label: 'Sorter etter'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
@@ -14,16 +14,16 @@ display:
             first: '« første'
             last: 'siste »'
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       fields:
         title:
-          label: Tittel
+          label: Title
           separator: ', '
         type:
           label: Type
           separator: ', '
         name:
-          label: Forfattar
+          label: Author
           separator: ', '
         changed:
           label: Oppdatert
@@ -35,7 +35,7 @@ display:
       filters:
         title:
           expose:
-            label: Tittel
+            label: Title
         type:
           expose:
             label: Type

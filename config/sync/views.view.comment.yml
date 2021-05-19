@@ -875,8 +875,9 @@ display:
         type: tab
         title: Comments
         description: 'Comments published'
+        expanded: false
         parent: ''
-        weight: 0
+        weight: 4
         context: '0'
         menu_name: admin
       display_description: 'The approved comments listing.'

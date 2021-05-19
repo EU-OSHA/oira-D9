@@ -6,29 +6,29 @@ display:
       exposed_form:
         options:
           submit_button: Filtra
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Precedente'
-            next: 'Seguente ›'
-            first: '« Prima'
-            last: 'Ultima »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         title:
-          label: Titolo
+          label: Title
         type:
           label: 'Tipo di contenuto'
           separator: ', '
         name:
-          label: Autore
+          label: Author
         status:
           label: Stato
           settings:
-            format_custom_true: Pubblicato
+            format_custom_true: Published
             format_custom_false: 'Non pubblicato'
         changed:
           label: 'Updated date'
@@ -37,7 +37,7 @@ display:
       filters:
         title:
           expose:
-            label: Titolo
+            label: Title
         type:
           expose:
             label: 'Tipo di contenuto'
@@ -48,7 +48,7 @@ display:
             label: 'Stato pubblicazione'
             group_items:
               1:
-                title: Pubblicato
+                title: Published
               2:
                 title: 'Non pubblicato'
         langcode:
@@ -58,7 +58,7 @@ display:
       empty:
         area_text_custom:
           content: 'Nessun contenuto disponibile.'
-    display_title: Principale
+    display_title: Master
   page_1:
     display_options:
       menu:

@@ -1,23 +1,23 @@
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Alkalmaz
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         uid:
           separator: ', '
         name:
           separator: ', '
         edit_user:
-          text: 'Saját profil szerkesztése'
+          text: 'Edit my profile'
         access:
-          label: 'Utolsó látogatás'
+          label: 'Last visit'
           separator: ', '
         roles:
           separator: ', '

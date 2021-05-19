@@ -27,16 +27,8 @@ process:
     source: language
     default_value: und
   title: title
+  field_summary_article: field_summary/0
   body: body
-  uid: node_uid
-  status: status
-  created: created
-  changed: changed
-  promote: promote
-  sticky: sticky
-  revision_uid: revision_uid
-  revision_log: log
-  revision_timestamp: timestamp
   field_aditional_resources: field_aditional_resources
   field_archived: field_archived
   field_article_type:
@@ -95,6 +87,15 @@ process:
       source: field_tags
       process:
         target_id: tid
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
 destination:
   plugin: 'entity:node'
 migration_dependencies:

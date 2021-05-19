@@ -1,23 +1,23 @@
 display:
   default:
-    display_title: Hoofd
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Toepassen
+          submit_button: Apply
           reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         uid:
           separator: ', '
         name:
           separator: ', '
         edit_user:
-          text: 'Profiel aanpassen'
+          text: 'Edit my profile'
         access:
-          label: 'Laatste bezoek'
+          label: 'Last visit'
           separator: ', '
         roles:
           separator: ', '

@@ -1,0 +1,27 @@
+display:
+  block_2:
+    display_options:
+      use_more_text: 'Katso kaikki'
+  oshnews_latest:
+    display_title: Uutisia
+    display_options:
+      use_more_text: 'Katso kaikki'
+      fields:
+        view_node:
+          text: Lisätietoa
+  oshnews_list:
+    display_options:
+      fields:
+        view_node_1:
+          text: Lisätietoa
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: Lisätietoa
+      use_more_text: 'Katso kaikki'
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: Lisätietoa

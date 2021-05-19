@@ -3,14 +3,14 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pritaikyti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
           tags:
             previous: '‹ ankstesnis'
             next: 'kitas  ›'
@@ -22,7 +22,7 @@ display:
         label:
           label: Žymė
         type:
-          label: Tipas
+          label: Type
         tags_count:
           label: Raktažodžiai
         changed:
@@ -32,7 +32,7 @@ display:
       arguments:
         tjid:
           exception:
-            title: Visi
+            title: All
   checkout:
     display_title: Pirkti
     display_options:
@@ -40,7 +40,7 @@ display:
         label:
           label: Žymė
         type:
-          label: Tipas
+          label: Type
         changed:
           label: Pakeista
   submitted:

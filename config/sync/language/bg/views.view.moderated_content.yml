@@ -4,10 +4,10 @@ display:
       exposed_form:
         options:
           submit_button: Филтър
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
       fields:
         title:
-          label: Заглавие
+          label: Title
         type:
           label: 'Тип на съдържанието'
         changed:
@@ -17,7 +17,7 @@ display:
       filters:
         title:
           expose:
-            label: Заглавие
+            label: Title
         type:
           expose:
             label: 'Тип на съдържанието'

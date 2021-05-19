@@ -3,14 +3,14 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apstiprināt
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Visi -'
+            items_per_page_options_all_label: '- All -'
           tags:
             previous: '‹ iepriekšējā'
             next: 'nākamā ›'
@@ -22,7 +22,7 @@ display:
         label:
           label: Etiķete
         type:
-          label: Veids
+          label: Type
         tags_count:
           label: Iezīmes
         changed:
@@ -32,7 +32,7 @@ display:
       arguments:
         tjid:
           exception:
-            title: Visi
+            title: All
   checkout:
     display_title: Pirkt
     display_options:
@@ -40,7 +40,7 @@ display:
         label:
           label: Etiķete
         type:
-          label: Veids
+          label: Type
         changed:
           label: Labots
   submitted:

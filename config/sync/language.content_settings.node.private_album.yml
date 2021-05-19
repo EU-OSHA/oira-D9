@@ -15,4 +15,4 @@ id: node.private_album
 target_entity_type_id: node
 target_bundle: private_album
 default_langcode: en
-language_alterable: false
+language_alterable: true

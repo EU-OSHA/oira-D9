@@ -1,0 +1,38 @@
+uuid: bfb0d25c-8b38-4899-8db6-07fd011d48c1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cd9b92e3-ce4f-4cf2-9181-00a54e461d18'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - oira_theme
+id: yourprofile
+theme: oira_theme
+region: content
+weight: -24
+provider: null
+plugin: 'block_content:cd9b92e3-ce4f-4cf2-9181-00a54e461d18'
+settings:
+  id: 'block_content:cd9b92e3-ce4f-4cf2-9181-00a54e461d18'
+  label: 'Your Profile'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/Partners/*'
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      partner: partner
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

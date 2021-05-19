@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.private_album.field_private_images
     - node.type.private_album
   module:
+    - ds
     - user
 id: node.private_album.default
 targetEntityType: node
@@ -15,7 +16,7 @@ mode: default
 content:
   field_multiple_sector:
     weight: 103
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -24,18 +25,28 @@ content:
   field_private_images:
     type: entity_reference_entity_view
     weight: 102
-    label: above
+    label: hidden
     settings:
-      view_mode: default
+      view_mode: colorbox_image
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  addtoany: true
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true

@@ -3,15 +3,15 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Търси
-          reset_button_label: Рестартирай
+          submit_button: Apply
+          reset_button_label: Reset
       fields:
         state:
           label: Статус
         label:
           label: Заглавие
         type:
-          label: Тип
+          label: Type
         source_language:
           label: От
         target_language:

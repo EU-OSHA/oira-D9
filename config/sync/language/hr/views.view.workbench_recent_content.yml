@@ -4,40 +4,40 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Primjeni
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         title:
-          label: Naziv
+          label: Title
           separator: ', '
         type:
-          label: Vrsta
+          label: Type
           separator: ', '
         status:
-          label: Objavljeno
+          label: Published
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         changed:
-          label: 'Posljednje osvježenje'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Akcije
-          text: uredi
+          label: Actions
+          text: edit
       filters:
         title:
           expose:
-            label: Naziv
+            label: Title
         type:
           expose:
-            label: Vrsta
+            label: Type
         status:
           expose:
-            label: Objavljeno
+            label: Published
   block_1:
     display_options:
       pager:
@@ -48,20 +48,20 @@ display:
       filters:
         status:
           expose:
-            label: Objavljeno
+            label: Published
       fields:
         title:
-          label: Naziv
+          label: Title
           separator: ', '
         type:
-          label: Vrsta
+          label: Type
           separator: ', '
         name:
-          label: Autor
+          label: Author
           separator: ', '
         changed:
-          label: 'Posljednje osvježenje'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Akcije
-          text: uredi
+          label: Actions
+          text: edit

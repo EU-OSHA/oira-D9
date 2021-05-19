@@ -32,6 +32,8 @@
   justify-content: space-between;
   .region-top-header-logos {
     margin: 0;
+    display: flex;
+    align-items: flex-end;
     .field--name-field-image {
       display: flex;
       margin: 0;
@@ -232,11 +234,12 @@
 
 /*** Stiky header ***/
 body {
-  padding-top: 195px;
+  padding-top: 186px;
 }
 
 body.user-logged-in {
-  padding-top: 185px;
+  /*padding-top: 185px;*/
+  padding-top: 215px;
 }
 
 body.toolbar-fixed {
@@ -287,6 +290,23 @@ body.toolbar-fixed {
     }
     &:hover {
       color: $text-color-white;
+    }
+  }
+}
+
+#block-generalsearch-api {
+  margin-bottom: 0.5rem;
+  .views-exposed-form {
+    .form-row {
+      flex-wrap: nowrap;
+      margin: 0;
+      .form-group {
+        width: auto;
+        margin-right: 0;
+      }
+      .form-actions {
+        margin: 0;
+      }
     }
   }
 }

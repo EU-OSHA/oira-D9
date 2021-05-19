@@ -6,18 +6,18 @@ display:
       exposed_form:
         options:
           submit_button: Filtruoti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
       fields:
         severity:
           label: sunkumas
         type:
-          label: Tipas
+          label: Type
         timestamp:
           label: Data
         message:
@@ -29,7 +29,7 @@ display:
       filters:
         type:
           expose:
-            label: Tipas
+            label: Type
         severity:
           expose:
             label: sunkumas

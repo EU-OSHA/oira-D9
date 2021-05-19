@@ -5,7 +5,7 @@ display:
       exposed_form:
         options:
           submit_button: Филтър
-          reset_button_label: Рестартирай
+          reset_button_label: Reset
       fields:
         name:
           label: 'Потребителско име'

@@ -4,6 +4,6 @@ tips:
   search-api-index-fields-machine-name:
     label: 'Strojno ime'
   search-api-index-fields-type:
-    label: Tip
+    label: Type
   search-api-index-fields-edit:
     label: 'uredi polje'

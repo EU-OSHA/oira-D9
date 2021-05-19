@@ -1,0 +1,30 @@
+uuid: 6c79845e-a3e2-4658-a88b-34f22fb678bd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4fe65a73-522b-45ee-8fd6-f0376058dfa0'
+  module:
+    - block_content
+    - system
+  theme:
+    - oira_theme
+id: searchtitle
+theme: oira_theme
+region: header_view
+weight: 0
+provider: null
+plugin: 'block_content:4fe65a73-522b-45ee-8fd6-f0376058dfa0'
+settings:
+  id: 'block_content:4fe65a73-522b-45ee-8fd6-f0376058dfa0'
+  label: 'Search title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /search/site
+    negate: false

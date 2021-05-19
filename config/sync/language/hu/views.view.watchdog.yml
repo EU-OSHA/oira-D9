@@ -2,21 +2,21 @@ label: Eseménynapló
 description: 'Legutóbbi naplóüzenetek'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Szűrő
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Elemek száma oldalanként'
-            items_per_page_options_all_label: '– Mind –'
-            offset_label: Eltolás
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -28,7 +28,7 @@ display:
         severity:
           label: Szint
         type:
-          label: Típus
+          label: Type
         timestamp:
           label: Dátum
         message:
@@ -43,7 +43,7 @@ display:
       filters:
         type:
           expose:
-            label: Típus
+            label: Type
         severity:
           expose:
             label: Szint

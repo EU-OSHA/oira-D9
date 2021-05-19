@@ -10,7 +10,7 @@ dependencies:
 id: oiramasquerade
 theme: oira_theme
 region: header_form
-weight: -23
+weight: -30
 provider: null
 plugin: oira_masquerade
 settings:

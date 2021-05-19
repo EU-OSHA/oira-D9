@@ -1,0 +1,25 @@
+uuid: 3e271724-8326-4bf3-9c01-82cf8ca1fc28
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6f2adf4b-a9e5-428b-9768-76a7bcbebb98'
+  module:
+    - block_content
+  theme:
+    - oira_theme
+id: generalsearch_api
+theme: oira_theme
+region: header_form
+weight: -32
+provider: null
+plugin: 'block_content:6f2adf4b-a9e5-428b-9768-76a7bcbebb98'
+settings:
+  id: 'block_content:6f2adf4b-a9e5-428b-9768-76a7bcbebb98'
+  label: 'General search_api'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,65 +1,65 @@
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Alkalmaz
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Előző'
-            next: 'Következő ›'
-            first: '« Első'
-            last: 'Utolsó »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elemek száma oldalanként'
-            items_per_page_options_all_label: '– Mind –'
-            offset_label: Eltolás
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         nid:
           separator: ', '
         title:
-          label: Cím
+          label: Title
           separator: ', '
         type:
-          label: Típus
+          label: Type
           separator: ', '
         status:
-          label: Közzétéve
+          label: Published
           separator: ', '
         changed:
-          label: 'Legutóbb frissítve'
+          label: 'Last updated'
           separator: ', '
         uid:
-          label: Szerző
+          label: Author
           separator: ', '
         revision_uid:
-          label: Megvizsgálta
+          label: 'Revised by'
           separator: ', '
       filters:
         title:
           expose:
-            label: Cím
+            label: Title
         type:
           expose:
-            label: Típus
+            label: Type
         status:
           expose:
-            label: Közzétéve
-      title: 'Saját szerkesztések'
+            label: Published
+      title: 'My Edits'
       empty:
         area:
           content:
-            value: 'Még nem lett létrehozva tartalom.'
+            value: 'You haven''t created or edited any content.'
       arguments:
         uid_revision:
           exception:
-            title: Mind
+            title: All
   block_1:
     display_options:
       pager:
@@ -67,10 +67,10 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Első'
-            last: 'Utolsó »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elemek száma oldalanként'
-            items_per_page_options_all_label: '– Mind –'
-            offset_label: Eltolás
-      use_more_text: 'összes megtekintése'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      use_more_text: 'view all'

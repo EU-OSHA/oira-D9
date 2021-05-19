@@ -1,0 +1,5 @@
+display:
+  default:
+    display_options:
+      title: 'Εταίροι OiRA'
+      use_more_text: 'Προβολή όλων'

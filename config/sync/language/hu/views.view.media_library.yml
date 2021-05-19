@@ -2,21 +2,21 @@ label: Médiakönyvtár
 description: 'Média keresés és kezelés.'
 display:
   default:
-    display_title: Mester
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: 'Szűrők alkalmazása'
-          reset_button_label: Alaphelyzet
-          exposed_sorts_label: Rendezés
-          sort_asc_label: Növekvő
-          sort_desc_label: Csökkenő
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Elemek száma oldalanként'
-            items_per_page_options_all_label: '– Mind –'
-            offset_label: Eltolás
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -28,10 +28,10 @@ display:
           expose:
             label: 'Közzététel állapota'
           group_info:
-            label: Közzétéve
+            label: Published
             group_items:
               1:
-                title: Közzétéve
+                title: Published
               2:
                 title: Rejtett
         name:
@@ -87,7 +87,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Mind
+            title: All
       header:
         display_link_grid:
           label: Rács
@@ -102,7 +102,7 @@ display:
         name:
           label: Név
         uid:
-          label: Szerző
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -112,7 +112,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Mind
+            title: All
       header:
         display_link_grid:
           label: Rács

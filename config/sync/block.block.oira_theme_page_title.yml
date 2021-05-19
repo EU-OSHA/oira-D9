@@ -12,7 +12,7 @@ _core:
 id: oira_theme_page_title
 theme: oira_theme
 region: content
-weight: -28
+weight: -31
 provider: null
 plugin: page_title_block
 settings:
@@ -23,11 +23,11 @@ settings:
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
-    negate: null
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n/node/*/edit"
+    negate: true
   view_inclusion:
     id: view_inclusion
-    negate: null
+    negate: false
     view_inclusion: {  }
   'entity_bundle:node':
     id: 'entity_bundle:node'

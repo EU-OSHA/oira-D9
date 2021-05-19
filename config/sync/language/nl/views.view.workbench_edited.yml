@@ -1,65 +1,65 @@
 display:
   default:
-    display_title: Hoofd
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Toepassen
+          submit_button: Apply
           reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Vorige'
-            next: 'Volgende ›'
-            first: '« Eerste'
-            last: 'Laatste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Startpunt
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         nid:
           separator: ', '
         title:
-          label: Titel
+          label: Title
           separator: ', '
         type:
           label: Type
           separator: ', '
         status:
-          label: Gepubliceerd
+          label: Published
           separator: ', '
         changed:
-          label: 'Laatst bijgewerkt'
+          label: 'Last updated'
           separator: ', '
         uid:
-          label: Auteur
+          label: Author
           separator: ', '
         revision_uid:
-          label: 'Revisie door'
+          label: 'Revised by'
           separator: ', '
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
             label: Type
         status:
           expose:
-            label: Gepubliceerd
-      title: 'Mijn bewerkingen'
+            label: Published
+      title: 'My Edits'
       empty:
         area:
           content:
-            value: 'U heeft geen inhoud aangemaakt of bewerkt.'
+            value: 'You haven''t created or edited any content.'
       arguments:
         uid_revision:
           exception:
-            title: Alle
+            title: All
   block_1:
     display_options:
       pager:
@@ -67,10 +67,10 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Eerste'
-            last: 'Laatste »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Startpunt
-      use_more_text: 'alles weergeven'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      use_more_text: 'view all'

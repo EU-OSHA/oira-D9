@@ -5,26 +5,26 @@ display:
       exposed_form:
         options:
           submit_button: Filtrēt
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Visi -'
+            items_per_page_options_all_label: '- All -'
       fields:
         media_bulk_form:
           action_title: Darbība
         thumbnail__target_id:
           label: Sīktēls
         bundle:
-          label: Veids
+          label: Type
         uid:
-          label: Autors
+          label: Author
         status:
           label: Statuss
           settings:
-            format_custom_true: Publicēts
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
@@ -32,7 +32,7 @@ display:
       filters:
         bundle:
           expose:
-            label: Veids
+            label: Type
         status:
           expose:
             label: Jā
@@ -40,7 +40,7 @@ display:
             label: 'Published '
             group_items:
               1:
-                title: Publicēts
+                title: Published
         langcode:
           expose:
             label: Valoda

@@ -5,8 +5,8 @@ display:
       exposed_form:
         options:
           submit_button: Sía
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
@@ -15,8 +15,8 @@ display:
             first: '« fremsta'
             last: 'aftasta »'
           expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
       fields:
         comment_bulk_form:
           action_title: Aðgerð
@@ -26,7 +26,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Höfundur
+          label: Author
           separator: ', '
         entity_id:
           separator: ', '
@@ -72,7 +72,7 @@ display:
         uid:
           separator: ', '
         name:
-          label: Höfundur
+          label: Author
           separator: ', '
         entity_id:
           separator: ', '

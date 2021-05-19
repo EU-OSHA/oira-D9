@@ -1,0 +1,6 @@
+display:
+  default:
+    display_options:
+      title: 'Партньори на OiRA'
+      use_more_text: 'Вижте всички'
+label: 'Партньори на OiRA'

@@ -1,0 +1,22 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Meer weergeven'
+  oshnews_latest:
+    display_title: 'Laatste nieuws'
+    display_options:
+      fields:
+        view_node:
+          text: 'Meer weergeven'
+      use_more_text: 'Alles weergeven'
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Meer weergeven'
+      use_more_text: 'Alles weergeven'
+  block_2:
+    display_options:
+      use_more_text: 'Alles weergeven'

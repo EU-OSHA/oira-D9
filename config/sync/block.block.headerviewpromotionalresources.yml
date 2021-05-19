@@ -13,7 +13,7 @@ dependencies:
 id: headerviewpromotionalresources
 theme: oira_theme
 region: header_view
-weight: 0
+weight: -30
 provider: null
 plugin: 'block_content:689a94b1-8d4a-4ce3-83a8-1eb2ea78d4cc'
 settings:
@@ -28,12 +28,12 @@ visibility:
   request_path_exclusion:
     id: request_path_exclusion
     pages: ''
-    negate: null
+    negate: true
   view_inclusion:
     id: view_inclusion
-    negate: null
+    negate: false
     view_inclusion: {  }
   request_path:
     id: request_path
-    pages: "/promotional-resources\r\n/promotional-resources-search/*"
+    pages: "/promotional-resources\r\n/promotional-resources-search/*\r\n/promotional-resources-search"
     negate: false

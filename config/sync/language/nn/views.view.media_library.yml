@@ -3,19 +3,19 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: 'Sett til standard'
-          exposed_sorts_label: 'Sorter etter'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       filters:
         status:
           group_info:
-            label: Publisert
+            label: Published
             group_items:
               1:
-                title: Publisert
+                title: Published
               2:
                 title: Upublisert
         name:
@@ -44,7 +44,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Alle
+            title: All
       header:
         display_link_table:
           label: Tabell
@@ -54,7 +54,7 @@ display:
         name:
           label: Namn
         uid:
-          label: Forfattar
+          label: Author
         changed:
           label: Oppdatert
       filters:
@@ -64,7 +64,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Alle
+            title: All
       header:
         display_link_table:
           label: Tabell

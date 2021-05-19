@@ -5,7 +5,7 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         name:
           label: 'Uporabniško ime'

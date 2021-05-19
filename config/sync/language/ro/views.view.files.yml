@@ -12,8 +12,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Anterior'
-            next: 'Următor ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
@@ -36,8 +36,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Anterior'
-            next: 'Următor ›'
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
@@ -45,6 +45,8 @@ display:
       fields:
         entity_label:
           label: Entitate
+        type:
+          label: 'Tip de entitate'
       arguments:
         fid:
           exception:

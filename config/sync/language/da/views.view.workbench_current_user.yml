@@ -4,18 +4,18 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Udfør
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         uid:
           separator: ', '
         name:
           separator: ', '
         access:
-          label: 'Seneste besøg'
+          label: 'Last visit'
           separator: ', '
         roles:
           separator: ', '

@@ -1,24 +1,24 @@
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          reset_button_label: Herstel
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       fields:
         media_bulk_form:
           action_title: Aksie
       filters:
         status:
           group_info:
-            label: Gepubliseerd
+            label: Published
             group_items:
               1:
-                title: Gepubliseerd
+                title: Published
               2:
                 title: Ongepubliseerd
         name:
@@ -46,7 +46,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Alle
+            title: All
       header:
         display_link_table:
           label: Tabel
@@ -56,7 +56,7 @@ display:
         name:
           label: Naam
         uid:
-          label: Outeur
+          label: Author
       filters:
         name:
           expose:
@@ -64,7 +64,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Alle
+            title: All
       header:
         display_link_table:
           label: Tabel

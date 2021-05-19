@@ -1,12 +1,12 @@
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Appliquer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       fields:
@@ -15,10 +15,10 @@ display:
         name:
           separator: ', '
         edit_user:
-          text: 'Modifier mon profil'
+          text: 'Edit my profile'
         access:
-          label: 'Dernière visite'
+          label: 'Last visit'
           separator: ', '
         roles:
-          label: 'Rôles attribués'
+          label: 'Assigned roles'
           separator: ', '

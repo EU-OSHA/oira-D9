@@ -16,7 +16,7 @@ tips:
     label: Eigenschaftspfad
     body: 'Die interne Beziehung, die das indizierte Element mit dem Feld verknüpft, wobei die Links durch Doppelpunkte (:) getrennt sind. Dies kann für fortgeschrittene Benutzer nützliche Informationen sein, kann aber ansonsten ignoriert werden.'
   search-api-index-fields-type:
-    label: Typ
+    label: Type
     body: 'Der Datentyp, der bei der Indizierung des Feldes verwendet werden soll. Legt fest, wie ein Feld bei der Suche verwendet werden kann. Informationen zu den verfügbaren Typen finden Sie in der Box <a href="#search-api-data-types-table">"Datentyptabelle"</a> am Ende der Seite.'
   search-api-index-fields-boost:
     label: Boost

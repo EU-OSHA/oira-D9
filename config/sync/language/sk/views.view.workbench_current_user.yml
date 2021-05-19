@@ -3,18 +3,18 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Použiť
+          submit_button: Apply
           reset_button_label: Reset
-          exposed_sorts_label: 'Zoradiť podľa'
-          sort_asc_label: Vzostupne
-          sort_desc_label: Zostupne
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         uid:
           separator: ', '
         name:
           separator: ', '
         access:
-          label: 'Posledná návšteva'
+          label: 'Last visit'
           separator: ', '
         roles:
           separator: ', '

@@ -4,16 +4,16 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Gendan
-          exposed_sorts_label: 'Sortér efter'
-          sort_asc_label: Stigende
-          sort_desc_label: Faldende
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Antal elementer'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskydning
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -25,10 +25,10 @@ display:
           expose:
             label: Publiceringsstatus
           group_info:
-            label: Udgivet
+            label: Published
             group_items:
               1:
-                title: Udgivet
+                title: Published
               2:
                 title: 'Ikke udgivet'
         name:
@@ -72,7 +72,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Alle
+            title: All
       header:
         display_link_grid:
           label: Gitter
@@ -86,7 +86,7 @@ display:
         name:
           label: Navn
         uid:
-          label: Forfatter
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -96,7 +96,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Alle
+            title: All
       header:
         display_link_grid:
           label: Gitter

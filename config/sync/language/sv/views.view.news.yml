@@ -1,0 +1,22 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Se mer'
+  oshnews_latest:
+    display_title: 'Senaste nyheter'
+    display_options:
+      fields:
+        view_node:
+          text: 'Se mer'
+      use_more_text: 'Visa alla'
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Se mer'
+      use_more_text: 'Visa alla'
+  block_2:
+    display_options:
+      use_more_text: 'Visa alla'

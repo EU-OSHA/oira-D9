@@ -152,7 +152,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: 'promotional-resources-search/{{tid}}'
+            path: 'promotional-resources-search?search_api_fulltext=&type={{tid}}'
             absolute: true
             external: false
             replace_spaces: false
@@ -218,7 +218,7 @@ display:
             alter_text: false
             text: ''
             make_link: true
-            path: 'promotional-resources-search/{{tid}}'
+            path: 'promotional-resources-search?search_api_fulltext=&type={{tid}}'
             absolute: true
             external: false
             replace_spaces: false
@@ -447,10 +447,10 @@ display:
         description: ''
         expanded: false
         parent: ''
-        weight: 9
+        weight: -41
         context: '0'
         menu_name: main
-      rendering_language: '***LANGUAGE_language_interface***'
+      rendering_language: '***LANGUAGE_entity_translation***'
       filters:
         vid:
           id: vid
@@ -509,13 +509,16 @@ display:
       defaults:
         filters: false
         filter_groups: false
+        title: false
       filter_groups:
         operator: AND
         groups:
           1: AND
+      title: 'Promotional resources'
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - user.permissions
       tags:

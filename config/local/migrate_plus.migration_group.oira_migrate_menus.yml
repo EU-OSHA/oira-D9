@@ -1,0 +1,15 @@
+uuid: b470f685-6c42-4c55-8906-c1ac7b44292e
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - custom_migrations
+id: oira_migrate_menus
+label: 'Migrate Oira Menus'
+description: 'Migration Menus from D7 to Drupal 8'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: migrate

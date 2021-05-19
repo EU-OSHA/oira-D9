@@ -4,7 +4,7 @@ tips:
   search-api-index-fields-machine-name:
     label: 'Koneluettava nimi'
   search-api-index-fields-type:
-    label: Tyyppi
+    label: Type
   search-api-index-fields-edit:
     label: 'Muokkaa kenttää'
   search-api-index-fields-remove:

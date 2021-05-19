@@ -1,65 +1,65 @@
 display:
   default:
-    display_title: Maître
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Appliquer
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Précédent'
-            next: 'Suivant ›'
-            first: '« Premier'
-            last: 'Dernier »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Éléments par page'
-            items_per_page_options_all_label: '- Tout -'
-            offset_label: Décalage
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         nid:
           separator: ', '
         title:
-          label: Titre
+          label: Title
           separator: ', '
         type:
           label: Type
           separator: ', '
         status:
-          label: Publié
+          label: Published
           separator: ', '
         changed:
-          label: 'Dernière mise à jour'
+          label: 'Last updated'
           separator: ', '
         uid:
-          label: Auteur
+          label: Author
           separator: ', '
         revision_uid:
-          label: 'Revu par'
+          label: 'Revised by'
           separator: ', '
       filters:
         title:
           expose:
-            label: Titre
+            label: Title
         type:
           expose:
             label: Type
         status:
           expose:
-            label: Publié
-      title: 'Mes Contributions'
+            label: Published
+      title: 'My Edits'
       empty:
         area:
           content:
-            value: 'Vous n''avez créé ou édité aucun contenu.'
+            value: 'You haven''t created or edited any content.'
       arguments:
         uid_revision:
           exception:
-            title: Tout
+            title: All
   block_1:
     display_options:
       pager:
@@ -67,12 +67,12 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Premier'
-            last: 'Dernier »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Éléments par page'
-            items_per_page_options_all_label: '- Tout -'
-            offset_label: Décalage
-      use_more_text: 'voir tout'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      use_more_text: 'view all'
   embed_1:
-    display_title: 'Page intégrée'
+    display_title: 'Page Embed'

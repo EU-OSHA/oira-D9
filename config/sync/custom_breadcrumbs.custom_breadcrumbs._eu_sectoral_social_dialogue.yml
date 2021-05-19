@@ -1,0 +1,15 @@
+uuid: 07e49efe-5883-4244-a909-a17b4e308778
+langcode: en
+status: true
+dependencies: {  }
+id: _eu_sectoral_social_dialogue
+label: ' EU sectoral social dialogue'
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: /oira-community
+breadcrumbTitles: Partners
+type: '2'
+pathPattern: /sectoral-social-partners
+extraCacheContexts: ''

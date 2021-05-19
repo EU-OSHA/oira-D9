@@ -1,54 +1,54 @@
 display:
   default:
-    display_title: Principale
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Applica
-          reset_button_label: Ripristina
-          exposed_sorts_label: 'Ordina per'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
-          sort_desc_label: Disc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Precedente'
-            next: 'Seguente ›'
-            first: '« Prima'
-            last: 'Ultima »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options_all_label: '- Tutto -'
-            offset_label: Scostamento
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         title:
-          label: Titolo
+          label: Title
           separator: ', '
         type:
-          label: Tipo
+          label: Type
           separator: ', '
         status:
-          label: Pubblicato
+          label: Published
           separator: ', '
         name:
-          label: Autore
+          label: Author
           separator: ', '
         changed:
-          label: 'Ultimo aggiornamento'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Azioni
-          text: modifica
+          label: Actions
+          text: edit
       filters:
         title:
           expose:
-            label: Titolo
+            label: Title
         type:
           expose:
-            label: Tipo
+            label: Type
         status:
           expose:
-            label: Pubblicato
+            label: Published
   block_1:
     display_options:
       pager:
@@ -56,29 +56,29 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Prima'
-            last: 'Ultima »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options_all_label: '- Tutto -'
-            offset_label: Scostamento
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       filters:
         status:
           expose:
-            label: Pubblicato
+            label: Published
       fields:
         title:
-          label: Titolo
+          label: Title
           separator: ', '
         type:
-          label: Tipo
+          label: Type
           separator: ', '
         name:
-          label: Autore
+          label: Author
           separator: ', '
         changed:
-          label: 'Ultimo aggiornamento'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Azioni
-          text: modifica
+          label: Actions
+          text: edit

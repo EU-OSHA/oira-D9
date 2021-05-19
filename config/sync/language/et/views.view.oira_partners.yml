@@ -1,0 +1,6 @@
+label: 'OiRA partnerid'
+display:
+  default:
+    display_options:
+      title: 'OiRA partnerid'
+      use_more_text: 'Vaata kõiki'

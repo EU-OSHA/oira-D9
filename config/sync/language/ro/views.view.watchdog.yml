@@ -18,6 +18,8 @@ display:
       fields:
         type:
           label: Tip
+        timestamp:
+          label: Data
         message:
           label: Mesaj
         name:

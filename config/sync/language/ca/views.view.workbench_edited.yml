@@ -1,59 +1,59 @@
 display:
   default:
-    display_title: Mestre
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Aplica
-          reset_button_label: Reinicialitza
-          exposed_sorts_label: 'Ordena per'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Anterior'
-            next: 'Següent ›'
-            first: '« Primer'
-            last: 'Últim »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elements per pàgina'
-            items_per_page_options_all_label: '- Tot -'
-            offset_label: Desplaçament
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         nid:
           separator: ', '
         title:
-          label: Títol
+          label: Title
           separator: ', '
         type:
-          label: Tipus
+          label: Type
           separator: ', '
         status:
-          label: Publicat
+          label: Published
           separator: ', '
         changed:
-          label: 'Última actualització'
+          label: 'Last updated'
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         revision_uid:
           separator: ', '
       filters:
         title:
           expose:
-            label: Títol
+            label: Title
         type:
           expose:
-            label: Tipus
+            label: Type
         status:
           expose:
-            label: Publicat
+            label: Published
       arguments:
         uid_revision:
           exception:
-            title: Tot
+            title: All
   block_1:
     display_options:
       pager:
@@ -61,10 +61,10 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Primer'
-            last: 'Últim »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elements per pàgina'
-            items_per_page_options_all_label: '- Tot -'
-            offset_label: Desplaçament
-      use_more_text: 'veure tots'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      use_more_text: 'view all'

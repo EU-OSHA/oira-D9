@@ -6,13 +6,13 @@ display:
       exposed_form:
         options:
           submit_button: Pročisti
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         title:
-          label: Naziv
+          label: Title
           separator: ', '
         type:
           label: 'Vrsta sadržaja'
@@ -27,7 +27,7 @@ display:
       filters:
         title:
           expose:
-            label: Naziv
+            label: Title
         type:
           expose:
             label: 'Vrsta sadržaja'

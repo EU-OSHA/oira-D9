@@ -2,21 +2,21 @@ label: Media-bibliotheek
 description: 'Media zoeken en beheren.'
 display:
   default:
-    display_title: Hoofd
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: 'Filters toepassen'
           reset_button_label: Reset
-          exposed_sorts_label: 'Sorteren op'
-          sort_asc_label: Oplopend
-          sort_desc_label: Aflopend
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Startpunt
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -28,10 +28,10 @@ display:
           expose:
             label: Publicatiestatus
           group_info:
-            label: Gepubliceerd
+            label: Published
             group_items:
               1:
-                title: Gepubliceerd
+                title: Published
               2:
                 title: 'Niet gepubliceerd'
         name:
@@ -87,7 +87,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Alle
+            title: All
       header:
         display_link_grid:
           label: Raster
@@ -102,7 +102,7 @@ display:
         name:
           label: Naam
         uid:
-          label: Auteur
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -112,7 +112,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Alle
+            title: All
       header:
         display_link_grid:
           label: Raster

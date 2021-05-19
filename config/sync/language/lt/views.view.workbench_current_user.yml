@@ -3,11 +3,11 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pritaikyti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       fields:
         edit_user:
-          text: 'Redaguoti mano profilį'
+          text: 'Edit my profile'
         access:
-          label: 'Paskutinis apsilankymas'
+          label: 'Last visit'

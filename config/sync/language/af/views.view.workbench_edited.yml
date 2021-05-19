@@ -1,43 +1,43 @@
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: 'Pas toe'
-          reset_button_label: Herstel
+          submit_button: Apply
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       fields:
         title:
-          label: Titel
+          label: Title
         type:
-          label: Tipe
+          label: Type
         status:
-          label: Gepubliseerd
+          label: Published
         changed:
-          label: 'Laas opgedateer'
+          label: 'Last updated'
         uid:
-          label: Outeur
+          label: Author
       filters:
         title:
           expose:
-            label: Titel
+            label: Title
         type:
           expose:
-            label: Tipe
+            label: Type
         status:
           expose:
-            label: Gepubliseerd
+            label: Published
       arguments:
         uid_revision:
           exception:
-            title: Alle
+            title: All
   block_1:
     display_options:
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'

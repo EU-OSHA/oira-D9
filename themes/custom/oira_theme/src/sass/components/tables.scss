@@ -9,3 +9,15 @@ table {
     border: 1px solid $text-color-black;
   }
 }
+
+
+.table-striped {
+  > tbody {
+    > tr:nth-of-type(odd) {
+      background-color: $bg-color-grey-light;
+    }
+    > tr:nth-of-type(even) {
+      background-color: $bg-color-purple-light-3;
+    }
+  }
+}

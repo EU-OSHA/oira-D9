@@ -11,14 +11,13 @@ dependencies:
     - image.style.medium
     - image.style.thumbnail
     - node.type.partner
-    - system.menu.main
     - taxonomy.vocabulary.partner_types
   content:
-    - 'taxonomy_term:country:c6c72fdb-d0b6-4a6e-b233-a160a4169f00'
-    - 'taxonomy_term:partner_types:0dd6e0d0-a2ac-4f61-9b9d-6f02646c4c1a'
+    - 'taxonomy_term:country:9d0e0a4a-c171-4794-a2fb-b47f646a7030'
+    - 'taxonomy_term:partner_types:26c1ef88-0312-498f-9ec9-4a2d799efc17'
     - 'taxonomy_term:partner_types:386de8a7-9b66-4fc1-a39d-411f79b9ef89'
-    - 'taxonomy_term:partner_types:cf2868b6-cf50-4933-89d3-4affcacc2039'
-    - 'taxonomy_term:partner_types:e55ab3a4-7560-465a-93cd-b5e1f33c1d74'
+    - 'taxonomy_term:partner_types:6bf70a0a-dc03-4b2f-ac12-44acc3648845'
+    - 'taxonomy_term:partner_types:f1725630-834f-4c04-ba84-94583c5bfeb8'
   module:
     - image
     - media
@@ -640,7 +639,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      title: 'Others partners'
+      title: 'Other partners'
       defaults:
         title: false
         filters: false
@@ -1393,12 +1392,12 @@ display:
           query_tags: null
       path: others-partners
       menu:
-        type: normal
+        type: none
         title: 'Other partners'
         description: ''
         expanded: false
-        parent: 'menu_link_content:944658e1-3c00-481d-abf9-de4af9d3433f'
-        weight: 4
+        parent: ''
+        weight: -42
         context: '0'
         menu_name: main
       cache:
@@ -2165,12 +2164,12 @@ display:
           query_tags: null
       path: irat-network
       menu:
-        type: normal
+        type: none
         title: 'IRAT partners'
         description: ''
         expanded: false
-        parent: 'menu_link_content:944658e1-3c00-481d-abf9-de4af9d3433f'
-        weight: 2
+        parent: ''
+        weight: -43
         context: '0'
         menu_name: main
       css_class: 'view-oira-partners container hwc-alpha-pager-view'
@@ -2193,7 +2192,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      title: 'OiRA National partners details'
+      title: 'OiRA National partners'
       defaults:
         title: false
         filters: false
@@ -2802,7 +2801,7 @@ display:
       rendering_language: '***LANGUAGE_site_default***'
       path: national-partners
       menu:
-        type: normal
+        type: none
         title: 'OiRA National partners'
         description: ''
         expanded: false
@@ -2967,12 +2966,12 @@ display:
           query_tags: null
       path: sectoral-social-partners
       menu:
-        type: normal
+        type: none
         title: 'EU sectoral social dialogue'
         description: ''
         expanded: false
-        parent: 'menu_link_content:944658e1-3c00-481d-abf9-de4af9d3433f'
-        weight: 3
+        parent: ''
+        weight: -40
         context: '0'
         menu_name: main
       fields:

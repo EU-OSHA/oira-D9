@@ -3,12 +3,12 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         label:
           label: Oznaka
         type:
-          label: Tip
+          label: Type
         source_language:
           label: Od
         target_language:

@@ -1,19 +1,19 @@
 display:
   default:
-    display_title: Nadřízené
+    display_title: Master
     display_options:
       exposed_form:
         options:
           reset_button_label: Reset
-          exposed_sorts_label: 'Řadit dle'
-          sort_asc_label: Vzestupně
-          sort_desc_label: Sestupně
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Položek na stránku'
-            items_per_page_options_all_label: '- Vše -'
-            offset_label: Posun
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -25,10 +25,10 @@ display:
           expose:
             label: 'Stav zveřejnění'
           group_info:
-            label: Zveřejněno
+            label: Published
             group_items:
               1:
-                title: Zveřejněno
+                title: Published
               2:
                 title: Skryto
         name:
@@ -64,7 +64,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Vše
+            title: All
       header:
         display_link_grid:
           label: Mřížka
@@ -78,7 +78,7 @@ display:
         name:
           label: Jméno
         uid:
-          label: Autor
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -88,7 +88,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Vše
+            title: All
       header:
         display_link_grid:
           label: Mřížka

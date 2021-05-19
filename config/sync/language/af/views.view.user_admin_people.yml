@@ -1,16 +1,16 @@
 label: Mense
 display:
   default:
-    display_title: Meester
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtreer
-          reset_button_label: Herstel
+          reset_button_label: Reset
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
       fields:
         name:
           label: Gebruiksersnaam

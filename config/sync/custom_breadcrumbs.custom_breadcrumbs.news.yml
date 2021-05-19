@@ -1,0 +1,15 @@
+uuid: 23d9927d-f9a6-493c-bfd6-bc25a22413cf
+langcode: en
+status: true
+dependencies: {  }
+id: news
+label: News
+description: ''
+entityType: node
+entityBundle: news
+language: und
+breadcrumbPaths: "/node/450\r\n/news"
+breadcrumbTitles: "What's new\r\nNews"
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

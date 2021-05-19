@@ -10,7 +10,7 @@ dependencies:
 id: languagedropdownswitcher
 theme: oira_theme
 region: header_form
-weight: -24
+weight: -31
 provider: null
 plugin: 'language_dropdown_block:language_interface'
 settings:

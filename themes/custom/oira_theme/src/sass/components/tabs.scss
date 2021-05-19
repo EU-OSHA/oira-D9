@@ -100,24 +100,6 @@
         li.list-group-item:nth-child(2) {
           a {
             &:before {
-              background-image: url(../images/tools-icon-w.png);
-            }
-            &:hover,
-            &:focus {
-              &:before {
-                background-image: url(../images/tools-icon-p.png);
-              }
-            }
-          }
-          &.active {
-            a:before {
-              background-image: url(../images/tools-icon-p.png);
-            }
-          }
-        }
-        #quicktabs-tab-partner_content-2 {
-          a {
-            &:before {
               background-image: url(../images/promotional-resources-icon-w.png);
             }
             &:hover,
@@ -130,6 +112,24 @@
           &.active {
             a:before {
               background-image: url(../images/promotional-resources-icon-p.png);
+            }
+          }
+        }
+        #quicktabs-tab-partner_content-2 {
+          a {
+            &:before {
+              background-image: url(../images/tools-icon-w.png);
+            }
+            &:hover,
+            &:focus {
+              &:before {
+                background-image: url(../images/tools-icon-p.png);
+              }
+            }
+          }
+          &.active {
+            a:before {
+              background-image: url(../images/tools-icon-p.png);
             }
           }
         }
@@ -155,3 +155,5 @@
     }
   }
 }
+
+

@@ -1,0 +1,32 @@
+uuid: c8edfc71-d7e8-49a3-916d-c044924421fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - oira_theme
+id: pagetitle
+theme: oira_theme
+region: content
+weight: -25
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title for private zone options'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "Partners/*\r\noira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n"
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      partner: partner
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

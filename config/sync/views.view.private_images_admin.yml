@@ -149,7 +149,7 @@ display:
               action_id: 'entity:unpublish_action:node'
               preconfiguration:
                 add_confirmation: 0
-          force_selection_info: 0
+          force_selection_info: false
           plugin_id: views_bulk_operations_bulk_form
         field_private_images:
           id: field_private_images
@@ -563,10 +563,10 @@ display:
         title: 'Private Images'
         description: 'Administrate Private Images'
         expanded: false
-        parent: ''
-        weight: 0
+        parent: system.admin_content
+        weight: 12
         context: '0'
-        menu_name: main
+        menu_name: admin
     cache_metadata:
       max-age: 0
       contexts:

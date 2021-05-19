@@ -5,12 +5,12 @@ display:
       exposed_form:
         options:
           submit_button: Filter
-          reset_button_label: Ponastavi
+          reset_button_label: Reset
       fields:
         severity:
           label: Resnost
         type:
-          label: Tip
+          label: Type
         timestamp:
           label: Datum
         message:
@@ -22,7 +22,7 @@ display:
       filters:
         type:
           expose:
-            label: Tip
+            label: Type
         severity:
           expose:
             label: Resnost

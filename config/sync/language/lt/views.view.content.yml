@@ -6,19 +6,19 @@ display:
       exposed_form:
         options:
           submit_button: Filtruoti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       fields:
         title:
-          label: Pavadinimas
+          label: Title
         type:
           label: 'Turinio tipas'
         name:
-          label: Autorius
+          label: Author
         status:
           label: Būsena
           settings:
-            format_custom_true: Paskelbtas
+            format_custom_true: Published
             format_custom_false: Nepaskelbtas
         changed:
           label: 'Updated date'
@@ -27,7 +27,7 @@ display:
       filters:
         title:
           expose:
-            label: Pavadinimas
+            label: Title
         type:
           expose:
             label: 'Turinio tipas'
@@ -38,7 +38,7 @@ display:
             label: 'Paskelbta statusas'
             group_items:
               1:
-                title: Paskelbtas
+                title: Published
               2:
                 title: Nepaskelbtas
         langcode:

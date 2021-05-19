@@ -12,8 +12,8 @@ display:
       pager:
         options:
           tags:
-            first: '« Primul'
-            last: 'Ultimul »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'

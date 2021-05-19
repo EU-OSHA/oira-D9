@@ -4,9 +4,9 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Pritaikyti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       title: 'Naujausias turinys'
       empty:
         area_text_custom:

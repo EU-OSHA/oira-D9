@@ -4,45 +4,45 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Primjeni
-          reset_button_label: Poništi
-          exposed_sorts_label: 'Rasporedi po'
-          sort_asc_label: Uzlazno
-          sort_desc_label: Silazno
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         nid:
           separator: ', '
         title:
-          label: Naziv
+          label: Title
           separator: ', '
         type:
-          label: Vrsta
+          label: Type
           separator: ', '
         status:
-          label: Objavljeno
+          label: Published
           separator: ', '
         changed:
-          label: 'Posljednje osvježenje'
+          label: 'Last updated'
           separator: ', '
         uid:
-          label: Autor
+          label: Author
           separator: ', '
         revision_uid:
           separator: ', '
       filters:
         title:
           expose:
-            label: Naziv
+            label: Title
         type:
           expose:
-            label: Vrsta
+            label: Type
         status:
           expose:
-            label: Objavljeno
+            label: Published
       arguments:
         uid_revision:
           exception:
-            title: Svi
+            title: All
   block_1:
     display_options:
       pager:

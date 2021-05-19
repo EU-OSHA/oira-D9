@@ -1,54 +1,54 @@
 display:
   default:
-    display_title: Isäntä
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Käytä
-          reset_button_label: Palauta
-          exposed_sorts_label: Lajittele
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Edellinen'
-            next: 'Seuraava ›'
-            first: '« Ensimmäinen'
-            last: 'Viimeinen »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Merkintöjä sivua kohti'
-            items_per_page_options_all_label: '- Kaikki -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
             offset_label: Offset
       fields:
         title:
-          label: Otsikko
+          label: Title
           separator: ', '
         type:
-          label: Tyyppi
+          label: Type
           separator: ', '
         status:
-          label: Julkaistu
+          label: Published
           separator: ', '
         name:
-          label: Tekijä
+          label: Author
           separator: ', '
         changed:
-          label: 'Viimeksi päivitetty'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Toimenpiteet
-          text: muokkaa
+          label: Actions
+          text: edit
       filters:
         title:
           expose:
-            label: Otsikko
+            label: Title
         type:
           expose:
-            label: Tyyppi
+            label: Type
         status:
           expose:
-            label: Julkaistu
+            label: Published
   block_1:
     display_options:
       pager:
@@ -56,29 +56,29 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Ensimmäinen'
-            last: 'Viimeinen »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Merkintöjä sivua kohti'
-            items_per_page_options_all_label: '- Kaikki -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
             offset_label: Offset
       filters:
         status:
           expose:
-            label: Julkaistu
+            label: Published
       fields:
         title:
-          label: Otsikko
+          label: Title
           separator: ', '
         type:
-          label: Tyyppi
+          label: Type
           separator: ', '
         name:
-          label: Tekijä
+          label: Author
           separator: ', '
         changed:
-          label: 'Viimeksi päivitetty'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Toimenpiteet
-          text: muokkaa
+          label: Actions
+          text: edit

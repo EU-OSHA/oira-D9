@@ -1,0 +1,6 @@
+label: 'OiRA samstarfsaðilar'
+display:
+  default:
+    display_options:
+      title: 'OiRA samstarfsaðilar'
+      use_more_text: 'Skoða allt'

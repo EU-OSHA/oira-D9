@@ -6,20 +6,20 @@ display:
       exposed_form:
         options:
           submit_button: Filtrēt
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       fields:
         title:
-          label: Virsraksts
+          label: Title
         type:
           label: 'Satura veids'
         name:
-          label: Autors
+          label: Author
         status:
           label: Statuss
           settings:
-            format_custom_true: Publicēts
+            format_custom_true: Published
         changed:
           label: 'Updated date'
         operations:
@@ -27,7 +27,7 @@ display:
       filters:
         title:
           expose:
-            label: Virsraksts
+            label: Title
         type:
           expose:
             label: 'Satura veids'
@@ -38,7 +38,7 @@ display:
             label: 'Published '
             group_items:
               1:
-                title: Publicēts
+                title: Published
         langcode:
           expose:
             label: Valoda

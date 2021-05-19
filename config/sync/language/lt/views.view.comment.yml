@@ -5,8 +5,8 @@ display:
       exposed_form:
         options:
           submit_button: Filtruoti
-          reset_button_label: Išvalyti
-          exposed_sorts_label: 'Rikiuoti pagal'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
@@ -15,15 +15,15 @@ display:
             first: '« pirmas'
             last: 'paskutinis  »'
           expose:
-            items_per_page_label: 'Vienetų kiekis puslapyje'
-            items_per_page_options_all_label: '- Visos -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
       fields:
         comment_bulk_form:
           action_title: Veiksmas
         subject:
           label: Tema
         name:
-          label: Autorius
+          label: Author
         entity_id:
           label: kategorijoje
         changed:
@@ -65,7 +65,7 @@ display:
         subject:
           label: Tema
         name:
-          label: Autorius
+          label: Author
         entity_id:
           label: kategorijoje
         changed:

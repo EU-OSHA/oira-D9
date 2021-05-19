@@ -3,45 +3,45 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Virkja
-          reset_button_label: Endursetja
-          exposed_sorts_label: 'Raða eftir'
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
       pager:
         options:
           tags:
-            previous: '< Fyrri'
+            previous: '‹ Previous'
           expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
       fields:
         title:
-          label: Titill
+          label: Title
           separator: ', '
         type:
-          label: Gerð
+          label: Type
           separator: ', '
         status:
-          label: Birt
+          label: Published
           separator: ', '
         name:
-          label: Höfundur
+          label: Author
           separator: ', '
         changed:
-          label: 'Síðast uppfært'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Aðgerðir
-          text: breyta
+          label: Actions
+          text: edit
       filters:
         title:
           expose:
-            label: Titill
+            label: Title
         type:
           expose:
-            label: Gerð
+            label: Type
         status:
           expose:
-            label: Birt
+            label: Published
   block_1:
     display_options:
       pager:
@@ -50,25 +50,25 @@ display:
             previous: ‹‹
             next: ››
           expose:
-            items_per_page_label: 'Hlutir per síðu'
-            items_per_page_options_all_label: '- Allt -'
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
       filters:
         status:
           expose:
-            label: Birt
+            label: Published
       fields:
         title:
-          label: Titill
+          label: Title
           separator: ', '
         type:
-          label: Gerð
+          label: Type
           separator: ', '
         name:
-          label: Höfundur
+          label: Author
           separator: ', '
         changed:
-          label: 'Síðast uppfært'
+          label: 'Last updated'
           separator: ', '
         edit_node:
-          label: Aðgerðir
-          text: breyta
+          label: Actions
+          text: edit

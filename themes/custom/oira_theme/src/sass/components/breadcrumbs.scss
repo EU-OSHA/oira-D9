@@ -14,6 +14,11 @@
   margin-bottom: 0;
   .breadcrumb-item {
     font-size: 1rem;
+    &:nth-child(2) {
+      color: $text-color-blue-light;
+      font-style: italic;
+      font-weight: bold;
+    }
     &:last-child {
       color: $text-color-black;
       font-style: normal;

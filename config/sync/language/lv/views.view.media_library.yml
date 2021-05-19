@@ -3,26 +3,26 @@ display:
     display_options:
       exposed_form:
         options:
-          reset_button_label: Attīrīt
-          exposed_sorts_label: 'Kārtot pēc'
-          sort_desc_label: Dilst.
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_options_all_label: '- Visi -'
+            items_per_page_options_all_label: '- All -'
           tags:
-            previous: '"'
-            next: '"'
+            previous: ‹‹
+            next: ››
       fields:
         media_bulk_form:
           action_title: Darbība
       filters:
         status:
           group_info:
-            label: Publicēts
+            label: Published
             group_items:
               1:
-                title: Publicēts
+                title: Published
         name:
           expose:
             label: Nosaukums
@@ -56,7 +56,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Visi
+            title: All
       header:
         display_link_grid:
           label: Grid
@@ -70,7 +70,7 @@ display:
         name:
           label: Nosaukums
         uid:
-          label: Autors
+          label: Author
         changed:
           label: 'Updated date'
       filters:
@@ -80,7 +80,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: Visi
+            title: All
       header:
         display_link_grid:
           label: Grid

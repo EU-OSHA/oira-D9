@@ -4,7 +4,7 @@ tips:
   search-api-index-fields-machine-name:
     label: 'Süsteemne nimetus'
   search-api-index-fields-type:
-    label: Liik
+    label: Type
   search-api-index-fields-boost:
     label: Kiirendamine
   search-api-index-fields-edit:

@@ -17,8 +17,8 @@ display:
             offset_label: Decalaj
       fields:
         title:
-          label: Titlu
+          label: Title
         name:
-          label: Autor
+          label: Author
   page_1:
     display_title: Pagina

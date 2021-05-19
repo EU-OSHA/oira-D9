@@ -13,7 +13,7 @@ dependencies:
 id: views_block__partner_intro_info_block_1
 theme: oira_theme
 region: content
-weight: -20
+weight: -19
 provider: null
 plugin: 'views_block:partner_intro_info-block_1'
 settings:
@@ -23,14 +23,15 @@ settings:
   label_display: '0'
   views_label: ''
   items_per_page: none
+  context_mapping: {  }
 visibility:
   request_path_exclusion:
     id: request_path_exclusion
-    pages: ''
-    negate: null
+    pages: "/node/*/edit\r\n/node/add/news\r\n/node/add/practical-tool\r\n/node/add/promotional-material"
+    negate: true
   view_inclusion:
     id: view_inclusion
-    negate: null
+    negate: false
     view_inclusion: {  }
   node_type:
     id: node_type
