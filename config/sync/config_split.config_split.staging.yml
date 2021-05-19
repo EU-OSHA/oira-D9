@@ -133,7 +133,6 @@ graylist:
   - search_api_solr.solr_request_handler.request_handler_spell_default_7_0_0
   - search_api_solr.solr_request_handler.request_handler_suggest_default_7_0_0
   - search_api_solr.solr_request_handler.request_handler_tvrh_default_7_0_0
-  - ultimate_cron.job.hwc_crm_migration_cron
   - migrate_plus.migration.oira_menu
   - migrate_plus.migration.oira_menu_i18n
   - migrate_plus.migration.oira_node_article

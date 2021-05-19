@@ -17,9 +17,13 @@ module:
   migrate_tools: 0
   search_api: 0
   search_api_solr: 0
+  hwc_crm_migration: 0
+  ncw_migration: 0
 theme: {  }
 blacklist: {  }
 graylist:
+  - migrate_plus.migration_group.hwc_crm_migration
+  - migrate_plus.migration_group.ncw_migration
   - migrate_plus.migration.oira_node_article
   - migrate_plus.migration.oira_node_article_i18n
   - migrate_plus.migration.oira_node_article_media_images_1
