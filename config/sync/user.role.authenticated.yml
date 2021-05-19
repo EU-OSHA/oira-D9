@@ -13,6 +13,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access devel information'
+  - 'access media overview'
   - 'access news feeds'
   - 'access site map'
   - 'display EU Cookie Compliance popup'
@@ -24,3 +25,4 @@ permissions:
   - 'use exclude node title'
   - 'use manualcrop'
   - 'view files'
+  - 'view media'

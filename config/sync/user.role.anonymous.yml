@@ -12,6 +12,7 @@ permissions:
   - 'access PDF version'
   - 'access comments'
   - 'access content'
+  - 'access media overview'
   - 'access news feeds'
   - 'access site map'
   - 'access site-wide contact form'
@@ -24,3 +25,4 @@ permissions:
   - 'use exclude node title'
   - 'use manualcrop'
   - 'view files'
+  - 'view media'

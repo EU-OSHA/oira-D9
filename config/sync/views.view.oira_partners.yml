@@ -478,6 +478,22 @@ display:
     display_options:
       display_extenders: {  }
       display_description: 'OiRA Partners Home page Block'
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: partner__item
+          default_row_class: true
+      defaults:
+        style: false
+        row: false
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
     cache_metadata:
       max-age: -1
       contexts:
