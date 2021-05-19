@@ -8,6 +8,7 @@ weight: 10
 is_admin: null
 permissions:
   - 'access content'
+  - 'access content overview'
   - 'access media browser'
   - 'access workbench access by role'
   - 'create files'

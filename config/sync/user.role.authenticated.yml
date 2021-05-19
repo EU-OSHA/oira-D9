@@ -13,6 +13,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access devel information'
+  - 'access files overview'
   - 'access media overview'
   - 'access news feeds'
   - 'access site map'
