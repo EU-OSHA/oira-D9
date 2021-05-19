@@ -6,7 +6,7 @@ popup_find_more_button_message: 'En savoir plus'
 popup_hide_button_message: Masquer
 popup_info:
   value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>By clicking the Accept button, you agree to us doing so.</p>\r\n"
-popup_link: '<front>'
+popup_link: /
 disagree_button_label: 'Non, merci.'
 withdraw_message:
   value: '<h2>Nous utilisons des cookies sur ce site pour améliorer votre expérience d''utilisateur.</h2><p>Vous avez consenti à l''ajout de cookies.</p>'

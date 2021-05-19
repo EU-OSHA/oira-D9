@@ -1,4 +1,3 @@
 title: Kontakt
 settings:
   confirmation_message: 'Wiadomość została wysłana.'
-  confirmation_url: '<front>'
