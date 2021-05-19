@@ -1,0 +1,22 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'További tudnivalók'
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'További tudnivalók'
+      use_more_text: 'Az összes megtekintése'
+  block_2:
+    display_options:
+      use_more_text: 'Az összes megtekintése'
+  oshnews_latest:
+    display_title: 'Legfrissebb hírek'
+    display_options:
+      use_more_text: 'Az összes megtekintése'
+      fields:
+        view_node:
+          text: 'További tudnivalók'

@@ -1,0 +1,6 @@
+display:
+  default:
+    display_options:
+      use_more_text: 'Ver todos'
+      title: 'Socios de OiRA'
+label: 'Socios de OiRA'

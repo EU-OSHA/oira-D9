@@ -25,9 +25,6 @@ display:
           label: Author
         status:
           label: Stare
-          settings:
-            format_custom_true: Published
-            format_custom_false: Unpublished
         changed:
           label: Actualizat
         operations:
@@ -44,11 +41,6 @@ display:
             label: Stare
           group_info:
             label: 'Published status'
-            group_items:
-              1:
-                title: Published
-              2:
-                title: Unpublished
         langcode:
           expose:
             label: Limba

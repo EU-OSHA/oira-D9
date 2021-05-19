@@ -1,0 +1,20 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Prikaži više'
+  block_1:
+    display_options:
+      title: 'Najnovije vijesti'
+      use_more_text: 'Potpuni prikaz'
+      fields:
+        view_node:
+          text: 'Prikaži više'
+  oshnews_latest:
+    display_options:
+      fields:
+        view_node:
+          text: 'Prikaži više'
+      use_more_text: 'Potpuni prikaz'
+      block_description: 'Najnovije vijesti'

@@ -13,6 +13,11 @@ display:
           sort_desc_label: Desc
       pager:
         options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'

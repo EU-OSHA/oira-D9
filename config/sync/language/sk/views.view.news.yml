@@ -1,0 +1,22 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Zobraziť viac'
+  oshnews_latest:
+    display_title: 'Najnovšie správy'
+    display_options:
+      fields:
+        view_node:
+          text: 'Zobraziť viac'
+      use_more_text: 'Zobraziť všetko'
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Zobraziť viac'
+      use_more_text: 'Zobraziť všetko'
+  block_2:
+    display_options:
+      use_more_text: 'Zobraziť všetko'

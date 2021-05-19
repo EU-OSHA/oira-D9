@@ -22,8 +22,6 @@ display:
           label: Type
         name:
           label: Author
-        changed:
-          label: Updated
         operations:
           label: Aksies
       filters:

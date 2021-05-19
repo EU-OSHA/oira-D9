@@ -1,4 +1,3 @@
-label: 'Old Moderated content'
 display:
   default:
     display_options:
@@ -11,6 +10,9 @@ display:
           sort_desc_label: Desc
       pager:
         options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'
@@ -36,6 +38,3 @@ display:
         type:
           expose:
             label: 'Τύπος περιεχομένου'
-      title: 'Old Moderated content'
-  moderated_content:
-    display_title: 'Old Moderated content'

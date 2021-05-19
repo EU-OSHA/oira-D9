@@ -1,0 +1,6 @@
+label: OiRA-partnerek
+display:
+  default:
+    display_options:
+      title: OiRA-partnerek
+      use_more_text: 'Az összes megtekintése'

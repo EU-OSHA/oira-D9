@@ -1,0 +1,22 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Skatīt vairāk'
+  oshnews_latest:
+    display_title: 'Jaunākās ziņas'
+    display_options:
+      fields:
+        view_node:
+          text: 'Skatīt vairāk'
+      use_more_text: 'Skatīt visu'
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Skatīt vairāk'
+      use_more_text: 'Skatīt visu'
+  block_2:
+    display_options:
+      use_more_text: 'Skatīt visu'

@@ -1,0 +1,6 @@
+label: OiRA-kumppanit
+display:
+  default:
+    display_options:
+      title: OiRA-kumppanit
+      use_more_text: 'Katso kaikki'

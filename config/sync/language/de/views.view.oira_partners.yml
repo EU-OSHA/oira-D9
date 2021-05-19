@@ -1,0 +1,6 @@
+label: OiRA-Partner
+display:
+  default:
+    display_options:
+      title: OiRA-Partner
+      use_more_text: 'Alle anzeigen'

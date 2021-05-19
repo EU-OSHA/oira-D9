@@ -1,4 +1,3 @@
-label: 'Old Moderated content'
 display:
   default:
     display_title: Expert
@@ -12,6 +11,11 @@ display:
           sort_desc_label: Desc
       pager:
         options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
@@ -32,6 +36,3 @@ display:
         type:
           expose:
             label: 'Content type'
-      title: 'Old Moderated content'
-  moderated_content:
-    display_title: 'Old Moderated content'
