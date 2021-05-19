@@ -2353,20 +2353,27 @@ select.custom-select{
   .view-show-all {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    @media(min-width: 768px) {
+      flex-direction: row;
+    }
   }
   .group-left {
-    width: 30%;
+    @media(max-width: 767px) {
+      margin: 0 0 1rem;
+    }
     @media(min-width: 768px) {
       padding: 0 15px;
+      width: 30%;
     }
   }
   .group-right {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 70%;
     @media(min-width: 768px) {
       padding: 0 15px;
+      width: 70%;
     }
     .revised-date,
     .tags,

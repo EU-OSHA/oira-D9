@@ -529,14 +529,6 @@ div.pagerer-right-pane {
   background-image: url(../images/news-icon-p.png);
 }
 
-@media (max-width: 1023px) {
-  .node--type-partner .block-quicktabs .content .quicktabs-tabs > li > a {
-    font-size: 0;
-  }
-  .node--type-partner .block-quicktabs .content .quicktabs-tabs > li > a:before {
-    margin: 0;
-  }
-}
 input [type=text],
 input [type=number],
 input [type=search],
@@ -2961,24 +2953,33 @@ select.custom-select {
 .view-country-partner-content .view-show-all {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
-.view-country-partner-content .group-left {
-  width: 30%;
+@media (min-width: 768px) {
+  .view-country-partner-content .view-show-all {
+    flex-direction: row;
+  }
+}
+@media (max-width: 767px) {
+  .view-country-partner-content .group-left {
+    margin: 0 0 1rem;
+  }
 }
 @media (min-width: 768px) {
   .view-country-partner-content .group-left {
     padding: 0 15px;
+    width: 30%;
   }
 }
 .view-country-partner-content .group-right {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 70%;
 }
 @media (min-width: 768px) {
   .view-country-partner-content .group-right {
     padding: 0 15px;
+    width: 70%;
   }
 }
 .view-country-partner-content .group-right .revised-date,
@@ -4954,6 +4955,20 @@ body.toolbar-fixed.toolbar-tray-open #header {
 }
 
 @media (max-width: 1023px) {
+  .node--type-partner .block-quicktabs .item-list {
+    background: none;
+  }
+  .node--type-partner .block-quicktabs .content .quicktabs-tabs > li > a {
+    font-size: 0;
+    background: #786586;
+  }
+  .node--type-partner .block-quicktabs .content .quicktabs-tabs > li > a:before {
+    margin: 0;
+  }
+  .node--type-partner .block-quicktabs .content .quicktabs-tabs > li.active > a {
+    background-color: #dfd8e4;
+  }
+
   #block-logoosha {
     max-width: 280px;
   }
@@ -5268,7 +5283,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 
   #page {
-    padding-bottom: 225px;
+    padding-bottom: 180px;
   }
 
   .block-addtoany-block {

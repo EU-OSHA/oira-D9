@@ -156,14 +156,4 @@
   }
 }
 
-@media(max-width: 1023px) {
-  .node--type-partner {
-    .block-quicktabs .content .quicktabs-tabs > li > a {
-       font-size: 0;
-      &:before {
-        margin: 0;
-      }
-    }
-  }
-}
 
