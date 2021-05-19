@@ -13,6 +13,7 @@ permissions:
   - 'preview layout validation'
   - 'use text format filtered_html'
   - 'use text format full_html'
+  - 'use text format full_html_minimal'
   - 'view needs content validation list'
   - 'view the administration theme'
   - 'view translation job'

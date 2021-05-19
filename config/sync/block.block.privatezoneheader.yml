@@ -14,7 +14,7 @@ dependencies:
 id: privatezoneheader
 theme: oira_theme
 region: content
-weight: -26
+weight: -27
 provider: null
 plugin: 'block_content:8605ea21-9290-4675-854c-ada9b02ce9e7'
 settings:

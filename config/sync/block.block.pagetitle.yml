@@ -10,7 +10,7 @@ dependencies:
 id: pagetitle
 theme: oira_theme
 region: content
-weight: -24
+weight: -25
 provider: null
 plugin: page_title_block
 settings:

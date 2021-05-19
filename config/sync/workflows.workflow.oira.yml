@@ -2,11 +2,6 @@ uuid: dff50416-7afa-4e09-81ed-22889b35ccee
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.article
-    - node.type.news
-    - node.type.practical_tool
-    - node.type.promotional_material
   module:
     - content_moderation
 id: oira
@@ -190,10 +185,5 @@ type_settings:
         - final_draft
       to: needs_review
       weight: -11
-  entity_types:
-    node:
-      - article
-      - news
-      - practical_tool
-      - promotional_material
+  entity_types: {  }
   default_moderation_state: draft
