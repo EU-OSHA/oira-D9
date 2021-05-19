@@ -26,7 +26,8 @@
     max-width: 280px;
   }
   .block-lang-dropdown {
-    margin-right: 65px;
+    margin-right: 45px;
+    margin-top: -8px;
     .form-select {
       width: 137px !important;
     }
@@ -59,6 +60,7 @@
   .top-header-content {
     .header-blocks {
       margin-left: 0;
+      height: 100%;
       .region-header-form {
         align-items: flex-start;
       }
@@ -192,14 +194,14 @@
 
 @media only screen and (max-width : 991px) {
   /* Header Search */
-
   .top-header-content{
-    align-items: flex-end;
+    align-items: stretch;
     .header-blocks{
       .block-search-form-block{
         position: absolute;
         right: 20px;
         top: 0;
+        z-index: 10;
         input {
           display: none;
           height: 30px;
@@ -215,9 +217,6 @@
         img {
           margin: 0;
         }
-      }
-      .field__item:first-child {
-        width: 280px;
       }
       > .field__item:last-child {
         margin-top: 0;

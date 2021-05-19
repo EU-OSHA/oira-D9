@@ -55,7 +55,8 @@
   .block-lang-dropdown {
     position: absolute;
     right: 50px;
-    top: 30px;
+    top: 60px;
+    margin-top: 0;
     z-index: 3;
     .form-item-lang-dropdown-select {
       position: relative;
@@ -132,7 +133,7 @@
 
   .top-header-content{
     .header-menu-news {
-      top: 30px;
+      top: 60px;
       right: 46px;
       z-index: 2;
       color: $text-color-white;
@@ -155,7 +156,7 @@
     .header-blocks{
       .block-search-form-block {
         right: 15px;
-        top: 30px;
+        top: 60px;
         z-index: 999;
         .btn-primary{
           background: transparent;
