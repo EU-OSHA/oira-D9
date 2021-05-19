@@ -76,7 +76,6 @@ module:
   help: 0
   history: 0
   htmlmail: 0
-  hwc_crm_migration: 0
   image: 0
   image_widget_crop: 0
   imce: 0
@@ -112,7 +111,6 @@ module:
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
-  ncw_migration: 0
   node: 0
   node_export: 0
   notification: 0

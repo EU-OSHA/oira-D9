@@ -1,0 +1,15 @@
+uuid: 67c41757-deed-4e20-b533-1e621b3a17f2
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ncw_migration
+id: ncw_migration
+label: 'NCW Migrations'
+description: 'Migration Taxonomies from D7 to Drupal 8'
+source_type: JSON
+module: null
+shared_configuration:
+  source:
+    key: migrate
