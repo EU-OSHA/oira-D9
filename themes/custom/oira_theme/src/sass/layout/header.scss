@@ -32,6 +32,8 @@
   justify-content: space-between;
   .region-top-header-logos {
     margin: 0;
+    display: flex;
+    align-items: flex-end;
     .field--name-field-image {
       display: flex;
       margin: 0;
@@ -297,6 +299,7 @@ body.toolbar-fixed {
   .views-exposed-form {
     .form-row {
       flex-wrap: nowrap;
+      margin: 0;
       .form-group {
         width: auto;
         margin-right: 0;
