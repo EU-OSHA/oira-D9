@@ -133,6 +133,8 @@ module:
   redirect: 0
   rest: 0
   search: 0
+  search_api_autocomplete: 0
+  search_autocomplete: 0
   serialization: 0
   shortcut: 0
   sitemap: 0

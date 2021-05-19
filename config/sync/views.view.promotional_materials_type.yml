@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_image
     - image.style.large
-    - system.menu.main
     - taxonomy.vocabulary.promotional_material_type
   module:
     - image
@@ -443,12 +442,12 @@ display:
       display_extenders: {  }
       path: promotional-resources
       menu:
-        type: normal
+        type: none
         title: 'Promotional resources'
         description: ''
         expanded: false
         parent: ''
-        weight: 9
+        weight: -41
         context: '0'
         menu_name: main
       rendering_language: '***LANGUAGE_entity_translation***'

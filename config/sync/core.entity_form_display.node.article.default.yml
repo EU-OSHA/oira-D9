@@ -26,7 +26,6 @@ dependencies:
     - field.field.node.article.field_workbench_access
     - node.type.article
   module:
-    - content_moderation
     - datetime
     - entity_browser
     - entityqueue
@@ -42,7 +41,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 5
+    weight: 4
     region: content
     settings:
       rows: 9
@@ -52,12 +51,12 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 23
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   field_aditional_resources:
-    weight: 15
+    weight: 14
     settings:
       entity_browser: browser_additional_resources
       field_widget_display: label
@@ -71,7 +70,7 @@ content:
     type: entity_browser_entity_reference
     region: content
   field_archived:
-    weight: 14
+    weight: 13
     settings:
       display_label: true
     third_party_settings: {  }
@@ -84,40 +83,40 @@ content:
     type: options_select
     region: content
   field_character_count:
-    weight: 18
+    weight: 17
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_expiration_date:
-    weight: 8
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_image:
     type: media_library_widget
-    weight: 6
+    weight: 5
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_page_count:
-    weight: 19
+    weight: 18
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_publication_date:
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_recommended_articles:
-    weight: 17
+    weight: 16
     settings:
       entity_browser: browser_recommended_articles
       field_widget_display: label
@@ -132,7 +131,7 @@ content:
     region: content
   field_recommended_resources:
     type: entity_browser_entity_reference
-    weight: 16
+    weight: 15
     region: content
     settings:
       entity_browser: browser_additional_resources
@@ -145,7 +144,7 @@ content:
       field_widget_display_settings: {  }
     third_party_settings: {  }
   field_related_oshwiki_articles:
-    weight: 12
+    weight: 11
     settings:
       link_to_entity: false
       link_to_edit_form: true
@@ -157,18 +156,10 @@ content:
     type: entityqueue_dragtable
     region: content
   field_sector:
-    weight: 10
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_summary:
-    weight: 4
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
     region: content
   field_summary_article:
     weight: 3
@@ -180,12 +171,12 @@ content:
     region: content
   field_tags:
     type: options_select
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   field_wiki_categories:
-    weight: 11
+    weight: 10
     settings:
       match_operator: CONTAINS
       match_limit: '3'
@@ -204,7 +195,7 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 22
+    weight: 21
     region: content
     settings:
       include_locked: true
@@ -217,7 +208,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 26
+    weight: 25
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -225,21 +216,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 24
+    weight: 23
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 20
+    weight: 19
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 25
+    weight: 24
     region: content
     third_party_settings: {  }
   title:
@@ -251,21 +242,22 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: options_select
-    weight: 21
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   url_redirects:
-    weight: 27
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_image2: true
   field_image2_media: true
+  field_summary: true
