@@ -2251,8 +2251,10 @@ select.custom-select{
   > .view-content.row {
     background: $bg-color-white;
     margin-left: 0;
-    margin-rigth: 0;
+    margin-right: 0;
+    padding-top: 15px;
     > h3 {
+      font-size: 2.1875rem;
       &:after {
         display: block;
         content: "";
@@ -2278,23 +2280,25 @@ select.custom-select{
   }
   h3 {
     color: $text-color-purple-light;
-    border-bottom: 2px solid $text-color-purple-light;
-    font-size: 2.1875rem;
-    line-height: 1.6;
+    font-style: 1.1875rem;
+    @media(min-width: 768px) {
+      font-size: 2.1875rem;
+    }
+    line-height: 1.1;
     padding-bottom: 5px;
     font-family: 'Oswald';
-    margin-top: 30px;
-    margin-bottom: 15px;
     width: 100%;
   }
+
   .view-header,
   .view-footer {
     .view-content > h3 {
-      max-width: 1140px;
+      padding: 0 15px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @extend .container;
       margin-top: 0;
       &:after {
         display: block;
@@ -2307,16 +2311,16 @@ select.custom-select{
       }
     }
     .view-content.row {
+      padding-top: 15px;
       flex-direction: column;
-      padding: 30px 0;
       width: 100vw;
       margin-left: 50%;
       transform: translateX(-50%);
       background: $bg-color-purple-light;
     }
     .views-row {
-      padding: 30px 15px;
-      max-width: 1140px;
+      padding: 8px 15px 15px;
+      max-width: 1170px;
       margin: 0 auto;
     }
   }
@@ -2335,33 +2339,39 @@ select.custom-select{
   }
   .views-row {
     width: 100%;
-    padding: 30px 0;
-    border-bottom: 2px solid $text-color-purple-light;
+    padding: 0;
     &:last-child {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
+  }
+  .views-field-nothing {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-top: 2px solid $text-color-purple-light;
+    border-bottom: 2px solid $text-color-purple-light;
   }
   .view-show-all {
     display: flex;
     justify-content: space-between;
   }
   .group-left {
-    width: 25%;
-    padding: 0 15px;
+    width: 30%;
+    @media(min-width: 768px) {
+      padding: 0 15px;
+    }
   }
   .group-right {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 75%;
-    padding: 0 15px;
+    width: 70%;
+    @media(min-width: 768px) {
+      padding: 0 15px;
+    }
     .revised-date,
     .tags,
     .expandible {
       flex: 0 0 auto;
-    }
-    .title {
-      flex: 1 1 auto;
     }
   }
   .title {
