@@ -70,13 +70,13 @@ module:
   feeds: 0
   field: 0
   field_group: 0
-  field_group_migrate: 0
   field_ui: 0
   file: 0
   filter: 0
   help: 0
   history: 0
   htmlmail: 0
+  hwc_crm_migration: 0
   image: 0
   image_widget_crop: 0
   imce: 0
@@ -112,18 +112,14 @@ module:
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
-  migrate: 0
-  migrate_drupal: 0
-  migrate_drupal_ui: 0
-  migrate_file_to_media: 0
-  migrate_plus: 0
-  migrate_tools: 0
+  ncw_migration: 0
   node: 0
   node_export: 0
   notification: 0
   oira_masquerade: 0
   oira_partner: 0
   oira_partner_content_count: 0
+  oira_workflow: 0
   options: 0
   page_cache: 0
   pagerer: 0
@@ -158,6 +154,7 @@ module:
   toolbar: 0
   tour: 0
   twig_tweak: 0
+  ultimate_cron: 0
   update: 0
   url_redirect: 0
   user: 0
