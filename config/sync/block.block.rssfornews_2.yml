@@ -20,7 +20,7 @@ settings:
   id: 'block_content:9221ec70-c1b8-44e2-adc7-9eddc0f43e0b'
   label: 'RSS for News'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
