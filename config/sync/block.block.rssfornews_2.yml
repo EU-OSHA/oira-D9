@@ -1,0 +1,41 @@
+uuid: 1fd58924-7c7e-49fc-a111-246fa93baa4e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9221ec70-c1b8-44e2-adc7-9eddc0f43e0b'
+  module:
+    - block_content
+    - ctools
+    - node
+  theme:
+    - oira_theme
+id: rssfornews_2
+theme: oira_theme
+region: content
+weight: -15
+provider: null
+plugin: 'block_content:9221ec70-c1b8-44e2-adc7-9eddc0f43e0b'
+settings:
+  id: 'block_content:9221ec70-c1b8-44e2-adc7-9eddc0f43e0b'
+  label: 'RSS for News'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

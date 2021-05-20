@@ -21,6 +21,7 @@ display:
       fields:
         filename:
           label: Name
+          separator: ', '
         filesize:
           label: Mărime
         status:
