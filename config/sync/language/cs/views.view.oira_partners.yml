@@ -1,0 +1,6 @@
+label: 'Partneři OiRA'
+display:
+  default:
+    display_options:
+      title: 'Partneři OiRA'
+      use_more_text: 'Zobrazit vše'

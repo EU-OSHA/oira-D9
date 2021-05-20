@@ -1,0 +1,22 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Zobacz więcej'
+  oshnews_latest:
+    display_title: 'Najnowsze wiadomości'
+    display_options:
+      fields:
+        view_node:
+          text: 'Zobacz więcej'
+      use_more_text: 'Wyświetl wszystkie narzędzia'
+  block_1:
+    display_options:
+      use_more_text: 'Wyświetl wszystkie narzędzia'
+      fields:
+        view_node:
+          text: 'Zobacz więcej'
+  block_2:
+    display_options:
+      use_more_text: 'Wyświetl wszystkie narzędzia'

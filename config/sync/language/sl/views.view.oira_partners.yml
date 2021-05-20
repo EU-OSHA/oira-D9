@@ -1,0 +1,6 @@
+label: 'Partnerji OiRA'
+display:
+  default:
+    display_options:
+      title: 'Partnerji OiRA'
+      use_more_text: 'Prikaži vse'

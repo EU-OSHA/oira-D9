@@ -1,0 +1,22 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Vedeți mai mult'
+  oshnews_latest:
+    display_title: 'Ultimele știri'
+    display_options:
+      fields:
+        view_node:
+          text: 'Vedeți mai mult'
+      use_more_text: 'Afișare completă'
+  block_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Vedeți mai mult'
+      use_more_text: 'Afișare completă'
+  block_2:
+    display_options:
+      use_more_text: 'Afișare completă'

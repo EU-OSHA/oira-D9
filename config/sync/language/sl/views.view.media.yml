@@ -16,7 +16,6 @@ display:
           label: Stanje
           settings:
             format_custom_true: Published
-            format_custom_false: Unpublished
         changed:
           label: 'Updated date'
         operations:
@@ -31,8 +30,6 @@ display:
             group_items:
               1:
                 title: Published
-              2:
-                title: Unpublished
         langcode:
           expose:
             label: Jezik

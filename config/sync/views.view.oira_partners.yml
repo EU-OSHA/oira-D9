@@ -8,8 +8,8 @@ dependencies:
     - node.type.partner
     - taxonomy.vocabulary.partner_types
   content:
-    - 'taxonomy_term:partner_types:baff9e73-14f4-45f8-afb5-d7d6470c492f'
-    - 'taxonomy_term:partner_types:db042554-da72-4cc6-a614-8fe0736f95e8'
+    - 'taxonomy_term:partner_types:26c1ef88-0312-498f-9ec9-4a2d799efc17'
+    - 'taxonomy_term:partner_types:6bf70a0a-dc03-4b2f-ac12-44acc3648845'
   module:
     - media
     - node
@@ -478,6 +478,22 @@ display:
     display_options:
       display_extenders: {  }
       display_description: 'OiRA Partners Home page Block'
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: partner__item
+          default_row_class: true
+      defaults:
+        style: false
+        row: false
+      row:
+        type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
     cache_metadata:
       max-age: -1
       contexts:

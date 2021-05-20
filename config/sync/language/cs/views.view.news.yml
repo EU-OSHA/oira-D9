@@ -1,0 +1,30 @@
+display:
+  block_1:
+    display_options:
+      title: 'Nejnovější zprávy'
+      use_more_text: 'Zobrazit vše'
+      fields:
+        view_node:
+          text: Více
+  block_2:
+    display_options:
+      use_more_text: 'Zobrazit vše'
+  oshnews_latest:
+    display_options:
+      use_more_text: 'Zobrazit vše'
+      fields:
+        view_node:
+          text: Více
+  oshnews_list:
+    display_options:
+      fields:
+        view_node_1:
+          text: Více
+        body:
+          alter:
+            more_link_text: Více
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: Více

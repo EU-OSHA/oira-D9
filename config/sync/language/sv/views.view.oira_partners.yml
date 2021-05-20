@@ -1,0 +1,6 @@
+label: OiRA-partner
+display:
+  default:
+    display_options:
+      title: OiRA-partner
+      use_more_text: 'Visa alla'

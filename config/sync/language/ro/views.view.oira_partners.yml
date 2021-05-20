@@ -1,0 +1,6 @@
+label: 'Partenerii OiRA'
+display:
+  default:
+    display_options:
+      title: 'Partenerii OiRA'
+      use_more_text: 'Afișare completă'

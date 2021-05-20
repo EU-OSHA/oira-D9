@@ -1,0 +1,23 @@
+display:
+  block_1:
+    display_options:
+      title: 'Последни новини'
+      use_more_text: 'Вижте всички'
+      fields:
+        view_node:
+          text: 'Вижте още'
+  block_2:
+    display_options:
+      use_more_text: 'Вижте всички'
+  oshnews_latest:
+    display_title: 'Последни новини'
+    display_options:
+      use_more_text: 'Вижте всички'
+      fields:
+        view_node:
+          text: 'Вижте още'
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Вижте още'

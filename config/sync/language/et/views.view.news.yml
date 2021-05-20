@@ -1,0 +1,22 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: Lisateave
+  block_1:
+    display_options:
+      title: 'Viimased uudised'
+      fields:
+        view_node:
+          text: Lisateave
+      use_more_text: 'Vaata kõiki'
+  block_2:
+    display_options:
+      use_more_text: 'Vaata kõiki'
+  oshnews_latest:
+    display_options:
+      use_more_text: 'Vaata kõiki'
+      fields:
+        view_node:
+          text: Lisateave

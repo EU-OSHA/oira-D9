@@ -1,0 +1,20 @@
+display:
+  attachment_1:
+    display_options:
+      fields:
+        view_node:
+          text: 'Weitere Informationen anzeigen'
+  block_1:
+    display_options:
+      title: 'Aktuelle Nachrichten'
+      fields:
+        view_node:
+          text: 'Weitere Informationen anzeigen'
+      use_more_text: 'Alle anzeigen'
+  oshnews_latest:
+    display_title: 'Aktuelle Nachrichten'
+    display_options:
+      fields:
+        view_node:
+          text: 'Weitere Informationen anzeigen'
+      use_more_text: 'Alle anzeigen'

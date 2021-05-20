@@ -1,0 +1,6 @@
+display:
+  block:
+    display_options:
+      header:
+        area_text_custom:
+          content: 'Išorės šaltiniai'

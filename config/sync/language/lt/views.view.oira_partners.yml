@@ -1,0 +1,6 @@
+label: 'OiRA partneriai'
+display:
+  default:
+    display_options:
+      title: 'OiRA partneriai'
+      use_more_text: 'Rodyti viską'
