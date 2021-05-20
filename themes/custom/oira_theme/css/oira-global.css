@@ -461,7 +461,7 @@ div.pagerer-right-pane {
 }
 .block-quicktabs .content .quicktabs-main {
   padding: 0;
-  margin: 1rem auto 0;
+  margin: 0.8rem auto 0;
 }
 .block-quicktabs .content .quicktabs-tabpage {
   max-width: 1170px;
@@ -2337,7 +2337,7 @@ select.custom-select {
   width: 35px;
 }
 
-.node--type-article {
+.path-node.node--type-article {
   overflow-x: hidden;
   width: 100%;
 }
@@ -2928,6 +2928,9 @@ select.custom-select {
   max-width: 1170px;
   margin: 0 auto;
 }
+.view-country-partner-content .view-header + .view-footer .view-content.row {
+  background: white;
+}
 .view-country-partner-content .view-footer .view-content > h3:after {
   display: block;
   content: "";
@@ -2946,9 +2949,7 @@ select.custom-select {
 }
 .view-country-partner-content .views-field-nothing {
   padding-top: 23px;
-  padding-bottom: 23px;
   border-top: 2px solid #967ea7;
-  border-bottom: 2px solid #967ea7;
 }
 .view-country-partner-content .view-show-all {
   display: flex;
@@ -3084,23 +3085,46 @@ select.custom-select {
 .view-country-partner-content.view-country-partner--news .view-content.row,
 .view-country-partner-content.view-country-partner--promotional-resources .view-content.row,
 .view-country-partner-content.view-country-partner--tools .view-content.row {
+  display: flex;
+  flex-direction: column;
   padding: 30px 0;
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
   background: #dfd8e4;
 }
+.view-country-partner-content.view-country-partner--news .view-content.row .views-row,
+.view-country-partner-content.view-country-partner--promotional-resources .view-content.row .views-row,
+.view-country-partner-content.view-country-partner--tools .view-content.row .views-row {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #786586;
+}
 .view-country-partner-content.view-country-partner--news .views-wrapper,
 .view-country-partner-content.view-country-partner--promotional-resources .views-wrapper,
 .view-country-partner-content.view-country-partner--tools .views-wrapper {
   display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .view-country-partner-content.view-country-partner--news .views-wrapper,
+.view-country-partner-content.view-country-partner--promotional-resources .views-wrapper,
+.view-country-partner-content.view-country-partner--tools .views-wrapper {
+    flex-direction: row;
+  }
 }
 .view-country-partner-content.view-country-partner--news .group-left,
 .view-country-partner-content.view-country-partner--promotional-resources .group-left,
 .view-country-partner-content.view-country-partner--tools .group-left {
-  width: 25%;
-  min-width: 25%;
   padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .view-country-partner-content.view-country-partner--news .group-left,
+.view-country-partner-content.view-country-partner--promotional-resources .group-left,
+.view-country-partner-content.view-country-partner--tools .group-left {
+    width: 25%;
+    min-width: 25%;
+  }
 }
 .view-country-partner-content.view-country-partner--news .group-left .news__publication-date,
 .view-country-partner-content.view-country-partner--promotional-resources .group-left .news__publication-date,
@@ -3124,8 +3148,14 @@ select.custom-select {
 .view-country-partner-content.view-country-partner--news .group-right,
 .view-country-partner-content.view-country-partner--promotional-resources .group-right,
 .view-country-partner-content.view-country-partner--tools .group-right {
-  width: 100%;
   padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .view-country-partner-content.view-country-partner--news .group-right,
+.view-country-partner-content.view-country-partner--promotional-resources .group-right,
+.view-country-partner-content.view-country-partner--tools .group-right {
+    width: 100%;
+  }
 }
 .view-country-partner-content.view-country-partner--news .group-right .news__view-node a,
 .view-country-partner-content.view-country-partner--promotional-resources .group-right .news__view-node a,
@@ -3294,7 +3324,7 @@ select.custom-select {
 
 .view-oira-partners.view-oira-national-partners-page .partner__item,
 .view-oira-partners.view-display-id-page_1 .partner__item {
-  padding: 30px 15px !important;
+  padding: 30px 15px;
   border-top: 2px solid #786586;
 }
 .view-oira-partners.view-oira-national-partners-page .partner__item:first-child,
@@ -5098,6 +5128,19 @@ body.toolbar-fixed.toolbar-tray-open #header {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
+
+  .view-oira-partners.view-oira-national-partners-page .partner__item {
+    padding-left: 0;
+  }
+  .view-oira-partners.view-oira-national-partners-page .partner__item .partner__name {
+    padding-right: 0;
+  }
+  .view-oira-partners.view-oira-national-partners-page .partner__item .content-count {
+    padding-left: 0;
+  }
+  .view-oira-partners.view-oira-national-partners-page .partner__item .count-item__label {
+    font-size: 0.8125rem;
+  }
 }
 @media only screen and (max-width: 1024px) {
   /**** What's News ***/
@@ -5437,6 +5480,13 @@ body.toolbar-fixed.toolbar-tray-open #header {
     background: transparent;
   }
 
+  .role-authenticated.role-administrator .top-header-content .header-menu-news {
+    top: 64px;
+  }
+  .role-authenticated.role-administrator .header-blocks .block-search-form-block {
+    top: 64px;
+  }
+
   /* Home */
   .content-home {
     padding-left: 1rem;
@@ -5642,6 +5692,20 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
   .site-footer .site-footer__bottom .region .menu--social-menu-footer {
     margin-left: 0;
+  }
+
+  .view-oira-partners.view-oira-national-partners-page .partner__item {
+    padding: 1rem;
+  }
+  .view-oira-partners.view-oira-national-partners-page .partner__item .partner__name,
+.view-oira-partners.view-oira-national-partners-page .partner__item .content-count {
+    padding: 0;
+  }
+  .view-oira-partners.view-oira-national-partners-page .partner__item .partner__group {
+    align-items: flex-start;
+  }
+  .view-oira-partners.view-oira-national-partners-page .partner__item .partner__logo {
+    margin: 0;
   }
 
   .block-views-blocknews-block-2,

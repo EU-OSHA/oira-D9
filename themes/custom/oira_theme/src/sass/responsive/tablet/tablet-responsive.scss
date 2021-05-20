@@ -158,6 +158,18 @@
       grid-gap: 30px;
     }
   }
+  .view-oira-partners.view-oira-national-partners-page .partner__item {
+    padding-left: 0;
+    .partner__name {
+      padding-right: 0;
+    }
+    .content-count {
+      padding-left: 0;
+    }
+    .count-item__label {
+      font-size: 0.8125rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {

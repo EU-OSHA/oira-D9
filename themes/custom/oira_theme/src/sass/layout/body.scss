@@ -1709,7 +1709,7 @@ select.custom-select{
   }
 }
 
-.node--type-article {
+.path-node.node--type-article {
   overflow-x: hidden;
   width: 100%;
 }
@@ -2324,6 +2324,11 @@ select.custom-select{
       margin: 0 auto;
     }
   }
+  .view-header + .view-footer {
+    .view-content.row {
+      background: white;
+    }
+  }
   .view-footer {
     .view-content > h3 {
       &:after {
@@ -2346,9 +2351,7 @@ select.custom-select{
   }
   .views-field-nothing {
     padding-top: 23px;
-    padding-bottom: 23px;
     border-top: 2px solid $text-color-purple-light;
-    border-bottom: 2px solid $text-color-purple-light;
   }
   .view-show-all {
     display: flex;
@@ -2480,18 +2483,31 @@ select.custom-select{
     display: none;
   }
   .view-content.row {
+    display: flex;
+    flex-direction: column;
     padding: 30px 0;
     width: 100vw;
     margin-left: 50%;
     transform: translateX(-50%);
     background: $bg-color-purple-light;
+    .views-row {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid $bg-color-purple;
+    }
   }
   .views-wrapper {
     display: flex;
+    flex-direction: column;
+    @media(min-width: 768px) {
+      flex-direction: row;
+    }
   }
   .group-left {
-    width: 25%;
-    min-width: 25%;
+    @media(min-width: 768px) {
+      width: 25%;
+      min-width: 25%;
+    }
     padding: 0 15px;
     .news__publication-date {
       font-weight: $font-weight-bold;
@@ -2508,7 +2524,9 @@ select.custom-select{
     }
   }
   .group-right {
-    width: 100%;
+    @media(min-width: 768px) {
+      width: 100%;
+    }
     padding: 0 15px;
     .news__view-node {
       a {
@@ -2667,7 +2685,7 @@ select.custom-select{
 .view-oira-partners.view-oira-national-partners-page,
 .view-oira-partners.view-display-id-page_1{
   .partner__item {
-    padding: 30px 15px !important;
+    padding: 30px 15px;
     border-top: 2px solid $bg-color-purple;
     &:first-child {
       border-top: none;

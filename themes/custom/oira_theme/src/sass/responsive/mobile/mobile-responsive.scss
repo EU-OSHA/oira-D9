@@ -165,6 +165,19 @@
     }
   }
 
+  .role-authenticated.role-administrator {
+    .top-header-content {
+      .header-menu-news {
+        top: 64px;
+      }
+    }
+    .header-blocks {
+      .block-search-form-block {
+        top: 64px;
+      }
+    }
+  }
+
   /* Home */
   .content-home{
     padding-left: 1rem;
@@ -395,6 +408,20 @@
       .menu--social-menu-footer {
         margin-left: 0;
       }
+    }
+  }
+
+  .view-oira-partners.view-oira-national-partners-page .partner__item {
+    padding: 1rem;
+    .partner__name,
+    .content-count {
+      padding: 0;
+    }
+    .partner__group {
+      align-items: flex-start;
+    }
+    .partner__logo {
+      margin: 0;
     }
   }
 
