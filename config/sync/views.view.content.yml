@@ -5,6 +5,7 @@ dependencies:
   config:
     - workbench_access.access_scheme.partner
   module:
+    - content_moderation
     - node
     - user
     - workbench_access
@@ -1000,6 +1001,7 @@ display:
         weight: 0
       display_extenders: {  }
       rendering_language: '***LANGUAGE_entity_translation***'
+      enabled: false
     display_plugin: page
     display_title: Page
     id: page_1
