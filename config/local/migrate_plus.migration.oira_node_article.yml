@@ -13,7 +13,7 @@ migration_tags: null
 migration_group: oira_migrate_node
 label: 'Node: Article'
 source:
-  plugin: d7_node
+  plugin: d7_node_moderation_state
   node_type: article
 process:
   nid: tnid
@@ -89,6 +89,7 @@ process:
         target_id: tid
   uid: node_uid
   status: status
+  moderation_state: moderation_state
   created: created
   changed: changed
   promote: promote
