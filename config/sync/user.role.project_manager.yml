@@ -15,6 +15,7 @@ permissions:
   - 'use text format full_html'
   - 'use text format full_html_minimal'
   - 'use text format restricted_html'
+  - 'use workbench access'
   - 'view latest version'
   - 'view own unpublished media'
   - 'view translation job'

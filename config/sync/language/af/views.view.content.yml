@@ -18,6 +18,8 @@ display:
           settings:
             format_custom_true: Published
             format_custom_false: Ongepubliseerd
+        changed:
+          label: Updated
         operations:
           label: Aksies
       filters:

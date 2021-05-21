@@ -12,6 +12,8 @@ display:
       pager:
         options:
           tags:
+            previous: ‹‹
+            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -19,7 +21,32 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
+        entity_field:
+          separator: ', '
+        entity_langcode:
+          separator: ', '
+        url:
+          separator: ', '
+        last_check:
+          separator: ', '
+        method:
+          label: Method
+          separator: ', '
+        code:
+          separator: ', '
+        error:
+          separator: ', '
+        fail_count:
+          separator: ', '
+        status:
+          separator: ', '
         operations:
           label: Operations
+      filters:
+        code_1:
+          group_info:
+            group_items:
+              1:
+                title: Failed
   page_1:
     display_title: Pagina

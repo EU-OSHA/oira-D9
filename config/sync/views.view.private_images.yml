@@ -327,7 +327,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Image Gallery'
+      title: ''
       header:
         area_text_custom:
           id: area_text_custom

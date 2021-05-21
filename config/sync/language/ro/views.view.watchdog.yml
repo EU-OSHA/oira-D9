@@ -15,7 +15,12 @@ display:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
+          tags:
+            previous: ‹‹
+            next: ››
       fields:
+        nothing:
+          admin_label: Icon
         type:
           label: Tip
         timestamp:
@@ -24,6 +29,7 @@ display:
           label: Mesaj
         name:
           label: User
+          separator: ', '
         link:
           label: Operations
       filters:
