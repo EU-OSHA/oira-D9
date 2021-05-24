@@ -23,6 +23,7 @@ dependencies:
     - field.storage.media.field_language
     - field.storage.media.field_link
     - field.storage.media.field_link_image
+    - field.storage.node.field_revised_date
     - search_api.server.apachesolr
 third_party_settings:
   search_api_solr:
@@ -191,6 +192,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_publication_date
+  field_revised_date:
+    label: 'Revised date'
+    datasource_id: 'entity:node'
+    property_path: field_revised_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_revised_date
   field_workbench_access:
     label: 'Partner wb access'
     datasource_id: 'entity:node'
@@ -278,6 +287,14 @@ field_settings:
       view_mode:
         'entity:node':
           promotional_material: ''
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
   summary:
     label: 'Description » Summary'
     datasource_id: 'entity:node'
@@ -290,7 +307,7 @@ field_settings:
     label: 'Promotional material type » Taxonomy term » Term ID'
     datasource_id: 'entity:node'
     property_path: 'field_promotional_material_type:entity:tid'
-    type: integer
+    type: text
     dependencies:
       config:
         - field.storage.node.field_promotional_material_type
