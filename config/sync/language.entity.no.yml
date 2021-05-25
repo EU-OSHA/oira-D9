@@ -1,9 +1,9 @@
-uuid: aecfee0e-d2b5-49f7-8086-9a35b40a6a80
+uuid: b718cb67-459d-48e5-a0f2-16fafc965359
 langcode: en
 status: true
 dependencies: {  }
 id: 'no'
 label: Norwegian
 direction: ltr
-weight: 12
+weight: 3
 locked: false

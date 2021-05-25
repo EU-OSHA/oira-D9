@@ -2798,7 +2798,7 @@ display:
           plugin_id: custom
       arguments: {  }
       group_by: false
-      rendering_language: '***LANGUAGE_site_default***'
+      rendering_language: '***LANGUAGE_language_interface***'
       path: national-partners
       menu:
         type: none
