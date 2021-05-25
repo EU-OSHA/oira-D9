@@ -26,7 +26,6 @@ display:
           action_title: 'Cu cele selectate'
         redirect_source__path:
           label: 'De la'
-          separator: ', '
         created:
           label: Creat
       filters:

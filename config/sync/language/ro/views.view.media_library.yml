@@ -14,9 +14,6 @@ display:
             items_per_page_label: 'Elemente pe pagină'
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
-          tags:
-            previous: ‹‹
-            next: ››
       fields:
         media_bulk_form:
           action_title: Action
@@ -42,8 +39,6 @@ display:
       fields:
         media_bulk_form:
           action_title: Action
-        name:
-          separator: ', '
         edit_media:
           text: Edit
         delete_media:

@@ -27,11 +27,8 @@ display:
           label: Label
         type:
           label: Tip
-        word_count:
-          separator: ', '
         tags_count:
           label: Etichete
-          separator: ', '
         changed:
           label: Schimbat
         operations:
@@ -47,8 +44,5 @@ display:
           label: Label
         type:
           label: Tip
-        word_count:
-          separator: ', '
         changed:
           label: Schimbat
-          separator: ', '
