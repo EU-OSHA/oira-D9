@@ -27,7 +27,6 @@ display:
           label: Produs
         name:
           label: Name
-          separator: ', '
       title: Mesaje
       arguments:
         tjid:

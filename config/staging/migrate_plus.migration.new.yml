@@ -172,6 +172,10 @@ process:
       plugin: default_value
       default_value: ncw
   status: status
+  moderation_state:
+    -
+      plugin: nm_content_moderation
+      source: status
   created: created
   changed: changed
   promote: promote
@@ -179,4 +183,14 @@ process:
 destination:
   default_bundle: news
   plugin: 'entity:node'
+  overwrite_properties:
+    - title
+    - body
+    - field_publication_date
+    - field_tags
+    - status
+    - created
+    - changed
+    - promote
+    - sticky
 migration_dependencies: {  }

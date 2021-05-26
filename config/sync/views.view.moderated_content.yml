@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - user.role.administrator
+    - user.role.editor
     - user.role.oira_project_manager
     - user.role.oira_supervisor
+    - user.role.project_manager
+    - user.role.superadministrator
     - workbench_access.access_scheme.partner
     - workflows.workflow.oira
   enforced:
@@ -37,7 +40,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'view any unpublished content'
+          perm: 'access content overview'
       cache:
         type: none
         options: {  }
@@ -3874,8 +3877,11 @@ display:
         options:
           role:
             administrator: administrator
+            editor: editor
+            project_manager: project_manager
             oira_project_manager: oira_project_manager
             oira_supervisor: oira_supervisor
+            superadministrator: superadministrator
       fields:
         title:
           id: title
@@ -4462,7 +4468,11 @@ display:
         options:
           role:
             administrator: administrator
+            editor: editor
+            project_manager: project_manager
             oira_project_manager: oira_project_manager
+            oira_supervisor: oira_supervisor
+            superadministrator: superadministrator
       fields:
         title:
           id: title
