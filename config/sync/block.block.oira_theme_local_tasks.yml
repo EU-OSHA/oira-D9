@@ -26,6 +26,9 @@ visibility:
     id: user_role
     roles:
       administrator: administrator
+      partner: partner
+      oira_project_manager: oira_project_manager
+      oira_supervisor: oira_supervisor
       superadministrator: superadministrator
     negate: false
     context_mapping:

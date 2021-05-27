@@ -8,8 +8,18 @@ weight: 9
 is_admin: null
 permissions:
   - 'accept job item translation'
+  - 'delete news revisions'
+  - 'delete own news content'
+  - 'delete own practical_tool content'
+  - 'delete own promotional_material content'
+  - 'delete practical_tool revisions'
+  - 'delete promotional_material revisions'
   - 'masquerade as any user'
+  - 'masquerade as authenticated'
+  - 'masquerade as partner'
+  - 'masquerade as super user'
   - 'masquerade as user'
+  - 'use oira transition from_final_draft_to_final_draft'
   - 'use text format filtered_html'
   - 'view translation job'
   - 'view translation job item'

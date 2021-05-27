@@ -1,0 +1,24 @@
+uuid: dcac8e2a-f2ab-4b69-9575-834987181b29
+langcode: en
+status: true
+dependencies: {  }
+id: status_is_back_to_draft
+workflow: oira
+transitions:
+  from_final_draft_to_draft: from_final_draft_to_draft
+  reject_reviewed_draft: reject_reviewed_draft
+  reject_approved_draft: reject_approved_draft
+  from_published_to_draft: from_published_to_draft
+roles:
+  administrator: administrator
+  partner: partner
+  oira_project_manager: oira_project_manager
+  oira_supervisor: oira_supervisor
+author: false
+site_mail: false
+emails: ''
+subject: 'OiRA - [node:type] - Draft'
+body:
+  value: "<p>A new [node:type] added by [node:author:name] ([node:author:mail]) has been sent back to Draft status.</p>\r\n\r\n<p>You can see it by going to this link [node:url]</p>\r\n\r\n<p><a href=\"[node:url]\">[node:title]</a></p>\r\n"
+  format: full_html
+label: 'Status is back to draft'
