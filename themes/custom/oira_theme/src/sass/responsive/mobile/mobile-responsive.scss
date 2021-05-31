@@ -616,6 +616,23 @@
     }
   }
 
+  .view-country-partner-content {
+    .partners-wrapper {
+      .partners-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .partner-wrapper {
+        flex: 0 1 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+
   .view-promotional-materials-type .views-view-grid {
     margin: 0 auto;
     .views-col {
