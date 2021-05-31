@@ -71,6 +71,13 @@ jQuery(document).ready(function($){
       });
     }
 
+    // Prevent default behavior on click in link
+    if(windowWidth <= 1023){
+      $('#navbar-main ul.navbar-nav li:nth-child(6) a').click(function(event) {
+        event.preventDefault();
+      });
+    }
+
     // See more - less
     $('.view-display-id-block_1 .views-col .see-more').click(function(){
       $(this).toggleClass('expanded');
@@ -108,10 +115,13 @@ jQuery(document).ready(function($){
   });
 
     // See more/less, Partners node
+    $('.view-country-partner-content .partners-wrapper').wrapInner( "<div class='partners-container' />");
     $('.view-country-partner-content .more-link').click(function(){
       $(this).toggleClass('clicked');
       $(this).parents('.expandible').find('.partners-wrapper').slideToggle('fast');
     });
+
+
 
     // Pager index
     $('.pagination').each(function () {
