@@ -41,6 +41,9 @@ display:
         state:
           expose:
             label: Status
+        source_language:
+          expose:
+            label: 'Limbă sursă'
         translator:
           expose:
             label: Furnizor

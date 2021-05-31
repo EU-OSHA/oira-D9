@@ -67,7 +67,6 @@ module:
   facets: 0
   fakeobjects: 0
   features: 0
-  feeds: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -129,6 +128,7 @@ module:
   r4032login: 0
   rdf: 0
   redirect: 0
+  reroute_email: 0
   rest: 0
   search: 0
   search_api_autocomplete: 0
@@ -151,6 +151,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  translation_views: 0
   twig_tweak: 0
   ultimate_cron: 0
   update: 0

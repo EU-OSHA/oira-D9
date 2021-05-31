@@ -11,7 +11,7 @@ _core:
 id: oira_theme_local_tasks
 theme: oira_theme
 region: content
-weight: -30
+weight: -31
 provider: null
 plugin: local_tasks_block
 settings:
@@ -26,6 +26,8 @@ visibility:
     id: user_role
     roles:
       administrator: administrator
+      oira_project_manager: oira_project_manager
+      oira_supervisor: oira_supervisor
       superadministrator: superadministrator
     negate: false
     context_mapping:

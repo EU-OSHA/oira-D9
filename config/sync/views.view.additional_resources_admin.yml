@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.external_url
+    - user.role.administrator
+    - user.role.superadministrator
     - workbench_access.access_scheme.partner
   module:
     - node
@@ -25,9 +27,11 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            administrator: administrator
+            superadministrator: superadministrator
       cache:
         type: none
         options: {  }
@@ -763,7 +767,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }
   additional_resources_page:
     display_plugin: page
@@ -791,5 +795,5 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }

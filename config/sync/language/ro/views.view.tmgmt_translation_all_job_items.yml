@@ -41,5 +41,8 @@ display:
         state:
           group_info:
             label: Status
+        source_language:
+          expose:
+            label: 'Limbă sursă'
   page_1:
     display_title: Pagina
