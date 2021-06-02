@@ -235,6 +235,9 @@
 /*** Stiky header ***/
 body {
   padding-top: 186px;
+  &.role-anonymous {
+    padding-top: 210px;
+  }
 }
 
 body.user-logged-in {
@@ -264,7 +267,7 @@ body.toolbar-fixed {
   background: white;
 }
 
-.scrolldown {
+.scrolldown.scrolled {
   #header {
     position: fixed;
     top: -23rem !important;

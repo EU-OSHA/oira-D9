@@ -7,6 +7,7 @@ workflow: oira
 transitions:
   requesting_approval: requesting_approval
 roles:
+  administrator: administrator
   oira_project_manager: oira_project_manager
 author: false
 site_mail: false
