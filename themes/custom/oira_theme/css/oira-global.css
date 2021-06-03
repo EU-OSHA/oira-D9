@@ -2876,6 +2876,58 @@ select.custom-select {
   /*** ***/
 }
 
+/*** Tabs and related content ***/
+.partners-related-content .nav-wrapper {
+  margin: 0 0 1rem;
+  background: #786586;
+}
+.partners-related-content li a.item-nav-link {
+  display: block;
+  padding: 15px;
+  color: #FFF;
+  font-style: italic;
+  border: none;
+}
+.partners-related-content li a.item-nav-link:hover {
+  background-color: #dfd8e4;
+  color: #786586;
+  text-decoration: none;
+}
+.partners-related-content li a.item-nav-link:before {
+  display: inline-block;
+  content: "";
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.partners-related-content li.nav-item-showall a:before {
+  background-image: url(../images/show-all-icon-w.png);
+}
+.partners-related-content li.nav-item-showall a:hover:before {
+  background-image: url(../images/show-all-icon-p.png);
+}
+.partners-related-content li.nav-item-promotional a:before {
+  background-image: url(../images/tools-icon-w.png);
+}
+.partners-related-content li.nav-item-promotional a:hover:before {
+  background-image: url(../images/tools-icon-p.png);
+}
+.partners-related-content li.nav-item-oiratools a:before {
+  background-image: url(../images/promotional-resources-icon-w.png);
+}
+.partners-related-content li.nav-item-oiratools a:hover:before {
+  background-image: url(../images/promotional-resources-icon-p.png);
+}
+.partners-related-content li.nav-item-news a:before {
+  background-image: url(../images/news-icon-w.png);
+}
+.partners-related-content li.nav-item-news a:hover:before {
+  background-image: url(../images/news-icon-p.png);
+}
+
 .view-country-partner-content > .view-content.row {
   background: #FFF;
   margin-left: 0;
