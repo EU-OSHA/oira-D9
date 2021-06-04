@@ -19,10 +19,6 @@ display:
             items_per_page_options_all_label: '- Toate -'
             offset_label: Decalaj
       fields:
-        info:
-          separator: ', '
-        type:
-          separator: ', '
         changed:
           label: Actualizat
         operations:

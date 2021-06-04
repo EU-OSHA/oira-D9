@@ -26,21 +26,12 @@ display:
           action_title: Action
         subject:
           label: Subiect
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Author
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '
       filters:
         subject:
           expose:
@@ -70,18 +61,9 @@ display:
           action_title: Action
         subject:
           label: Subiect
-          separator: ', '
-        uid:
-          separator: ', '
         name:
           label: Author
-          separator: ', '
-        entity_id:
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
-        name_1:
-          separator: ', '

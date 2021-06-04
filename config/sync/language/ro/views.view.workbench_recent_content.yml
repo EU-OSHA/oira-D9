@@ -23,18 +23,12 @@ display:
       fields:
         title:
           label: Title
-          separator: ', '
         type:
           label: Tip
-          separator: ', '
         status:
           label: Published
-          separator: ', '
         name:
           label: Author
-          separator: ', '
-        changed:
-          separator: ', '
       filters:
         title:
           expose:
@@ -50,8 +44,6 @@ display:
       pager:
         options:
           tags:
-            previous: ‹‹
-            next: ››
             first: '« First'
             last: 'Last »'
           expose:
@@ -65,12 +57,7 @@ display:
       fields:
         title:
           label: Title
-          separator: ', '
         type:
           label: Tip
-          separator: ', '
         name:
           label: Author
-          separator: ', '
-        changed:
-          separator: ', '
