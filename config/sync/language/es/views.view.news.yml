@@ -4,8 +4,7 @@ display:
       fields:
         view_node:
           text: 'Ver más información'
-        nothing_1:
-          alter: {  }
+      title: Noticias
   block_1:
     display_options:
       fields:
@@ -32,3 +31,7 @@ display:
         nothing:
           alter:
             text: "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"news__image col-3\">\r\n      {{field_image}}\r\n    </div>\r\n    <div class=\"news--content col-9\">\r\n      {{field_publication_date}}\r\n      <h2>{{title}}</h2>\r\n      {{field_summary}}<span class=\"Ver más información\">{{ view_node_1 }}</span>\r\n    </div>\r\n  </div>\r\n</div>"
+      title: Noticias
+  default:
+    display_options:
+      title: Noticias
