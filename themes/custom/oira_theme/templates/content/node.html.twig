@@ -125,10 +125,14 @@
     <div class="container">
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active show" id="show-all">
-          <div class="views-wrapper">Show All goes here.</div>
+          <div class="views-wrapper">Show All goes here.
+            {{ drupal_view('country_partner_content', 'block_1') }}
+          </div>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="promotional-resources">
-          <div class="views-wrapper">Promotional Resources goes here.</div>
+          <div class="views-wrapper">
+            {{ drupal_view('country_partner_content', 'block_2') }}
+          </div>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="oria-tools">
           <div class="views-wrapper">Oira Tools goes here.</div>
