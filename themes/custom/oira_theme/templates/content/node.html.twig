@@ -106,7 +106,7 @@
               <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab">Show all</a></li>
               <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab">Promotional Resources</a></li>
               <li class="dropdown nav-item nav-item-oiratools">
-                <a class="dropdown-toggle item-nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oira Tools</a>
+                <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oira Tools</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <li><a href="#">Action</a></li>
                   <li><a href="#">Another action</a></li>
@@ -131,14 +131,14 @@
         </div>
         <div role="tabpanel" class="tab-pane fade" id="promotional-resources">
           <div class="views-wrapper">
-            {{ drupal_view('country_partner_content', 'block_2') }}
+            {{ drupal_view('country_partner_content', 'block_5') }}
           </div>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="oria-tools">
-          <div class="views-wrapper">Oira Tools goes here.</div>
+          <div class="views-wrapper">{{ drupal_view('country_partner_content', 'block_3') }}</div>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="news">
-          <div class="views-wrapper">News goes here.</div>
+          <div class="views-wrapper">{{ drupal_view('country_partner_content', 'block_4') }}</div>
         </div>
       </div>
     </div>

@@ -449,32 +449,54 @@ div.pagerer-right-pane {
   vertical-align: middle;
   margin-right: 10px;
 }
+.partners-related-content li a.item-nav-link.active {
+  background-color: #dfd8e4;
+  color: #786586;
+  text-decoration: none;
+}
 .partners-related-content li.nav-item-showall a:before {
   background-image: url(../images/show-all-icon-w.png);
 }
-.partners-related-content li.nav-item-showall a:hover:before {
+.partners-related-content li.nav-item-showall a:hover:before,
+.partners-related-content li.nav-item-showall a.active:before {
   background-image: url(../images/show-all-icon-p.png);
 }
 .partners-related-content li.nav-item-promotional a:before {
   background-image: url(../images/tools-icon-w.png);
 }
-.partners-related-content li.nav-item-promotional a:hover:before {
+.partners-related-content li.nav-item-promotional a:hover:before,
+.partners-related-content li.nav-item-promotional a.active:before {
   background-image: url(../images/tools-icon-p.png);
 }
 .partners-related-content li.nav-item-oiratools a:before {
   background-image: url(../images/promotional-resources-icon-w.png);
 }
-.partners-related-content li.nav-item-oiratools a:hover:before {
+.partners-related-content li.nav-item-oiratools a:hover:before,
+.partners-related-content li.nav-item-oiratools a.active:before {
   background-image: url(../images/promotional-resources-icon-p.png);
 }
 .partners-related-content li.nav-item-news a:before {
   background-image: url(../images/news-icon-w.png);
 }
-.partners-related-content li.nav-item-news a:hover:before {
+.partners-related-content li.nav-item-news a:hover:before,
+.partners-related-content li.nav-item-news a.active:before {
   background-image: url(../images/news-icon-p.png);
 }
 .partners-related-content .dropdown-menu {
   border: none;
+}
+@media all and (min-width: 992px) {
+  .nav .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .nav .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .nav .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
 }
 /**** Old ***/
 .block-quicktabs .content {
@@ -2080,6 +2102,9 @@ select.custom-select {
   font-weight: 400;
   -webkit-appearance: none;
   appearance: none;
+}
+.block-lang-dropdown .language-icon {
+  display: none !important;
 }
 
 /**** Tables in Private Zone ****/
