@@ -2280,6 +2280,70 @@ select.custom-select{
   /*** ***/
 }
 
+/*** Tabs and related content ***/
+.partners-related-content {
+  .nav-wrapper {
+    margin: 0 0 1rem;
+    background: $bg-color-purple;
+  }
+  li {
+    a.item-nav-link {
+      display: block;
+      padding: 15px;
+      color: $text-color-white;
+      font-style: italic;
+      border: none;
+      &:hover {
+        background-color: $bg-color-purple-light;
+        color: $bg-color-purple;
+        text-decoration: none;
+      }
+      &:before {
+        display: inline-block;
+        content: "";
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+    &.nav-item-showall {
+      a:before {
+        background-image: url(../images/show-all-icon-w.png);
+      }
+      a:hover:before {
+        background-image: url(../images/show-all-icon-p.png);
+      }
+    }
+    &.nav-item-promotional {
+      a:before {
+        background-image: url(../images/tools-icon-w.png);
+      }
+      a:hover:before {
+        background-image: url(../images/tools-icon-p.png);
+      }
+    }
+    &.nav-item-oiratools {
+      a:before {
+        background-image: url(../images/promotional-resources-icon-w.png);
+      }
+      a:hover:before {
+        background-image: url(../images/promotional-resources-icon-p.png);
+      }
+    }
+    &.nav-item-news {
+      a:before {
+        background-image: url(../images/news-icon-w.png);
+      }
+      a:hover:before {
+        background-image: url(../images/news-icon-p.png);
+      }
+    }
+  }
+}
+
 .view-country-partner-content {
   > .view-content.row {
     background: $bg-color-white;
