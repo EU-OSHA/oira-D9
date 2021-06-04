@@ -12,7 +12,7 @@ entity_type: node
 bundle: practical_tool
 label: Partner
 description: '<small>Select the proper editorial group for this content.</small>'
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
