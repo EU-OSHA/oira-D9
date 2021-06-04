@@ -19,15 +19,10 @@ display:
       fields:
         title:
           label: Title
-          separator: ', '
         type:
           label: 'Content type'
-          separator: ', '
-        moderation_state:
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
       filters:

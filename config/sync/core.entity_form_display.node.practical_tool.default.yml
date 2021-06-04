@@ -25,6 +25,7 @@ dependencies:
     - field.field.node.practical_tool.field_wf_notification
     - field.field.node.practical_tool.field_workbench_access
     - node.type.practical_tool
+    - workflows.workflow.oira
   module:
     - content_moderation
     - datetime
@@ -133,11 +134,10 @@ content:
   field_language:
     weight: 12
     settings:
-      size: '60'
-      autocomplete_route_name: languagefield.autocomplete
-      placeholder: ''
+      format:
+        name: name
     third_party_settings: {  }
-    type: languagefield_autocomplete
+    type: languagefield_select
     region: content
   field_publication_date:
     weight: 5
@@ -176,11 +176,10 @@ content:
   field_third_language:
     weight: 7
     settings:
-      size: '60'
-      autocomplete_route_name: languagefield.autocomplete
-      placeholder: ''
+      format:
+        name: name
     third_party_settings: {  }
-    type: languagefield_autocomplete
+    type: languagefield_select
     region: content
   field_third_partner:
     weight: 17
@@ -284,6 +283,11 @@ content:
       placeholder: ''
       match_limit: 10
     region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   langcode: true
