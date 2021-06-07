@@ -26,6 +26,9 @@
         vertical-align: middle;
         margin-right: 10px;
       }
+      &:after {
+        display: none;
+      }
       &.active {
         background-color: $bg-color-purple-light;
         color: $bg-color-purple;
@@ -71,8 +74,18 @@
   }
   .dropdown-menu {
     border: none;
-    li {
-
+    width: 260px;
+    li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: $text-color-black;
+      font-style: normal;
+      font-weight: normal;
+      &:hover {
+        background: $bg-color-purple;
+        color: $text-color-white;
+        text-decoration: none;
+      }
     }
   }
 }

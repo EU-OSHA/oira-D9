@@ -449,6 +449,9 @@ div.pagerer-right-pane {
   vertical-align: middle;
   margin-right: 10px;
 }
+.partners-related-content li a.item-nav-link:after {
+  display: none;
+}
 .partners-related-content li a.item-nav-link.active {
   background-color: #dfd8e4;
   color: #786586;
@@ -484,7 +487,21 @@ div.pagerer-right-pane {
 }
 .partners-related-content .dropdown-menu {
   border: none;
+  width: 260px;
 }
+.partners-related-content .dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #58585a;
+  font-style: normal;
+  font-weight: normal;
+}
+.partners-related-content .dropdown-menu li a:hover {
+  background: #786586;
+  color: #FFF;
+  text-decoration: none;
+}
+
 @media all and (min-width: 992px) {
   .nav .nav-item .dropdown-menu {
     display: none;
