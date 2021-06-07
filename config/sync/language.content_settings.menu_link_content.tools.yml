@@ -15,4 +15,4 @@ id: menu_link_content.tools
 target_entity_type_id: menu_link_content
 target_bundle: tools
 default_langcode: en
-language_alterable: false
+language_alterable: true

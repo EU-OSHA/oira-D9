@@ -1,3 +1,108 @@
+/*** Tabs in partner ***/
+.partners-related-content {
+  .nav-wrapper {
+    margin: 0 0 1rem;
+    background: $bg-color-purple;
+  }
+  li {
+    a.item-nav-link {
+      display: block;
+      padding: 15px;
+      color: $text-color-white;
+      font-style: italic;
+      border: none;
+      &:hover {
+        background-color: $bg-color-purple-light;
+        color: $bg-color-purple;
+        text-decoration: none;
+      }
+      &:before {
+        display: inline-block;
+        content: "";
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+      &:after {
+        display: none;
+      }
+      &.active {
+        background-color: $bg-color-purple-light;
+        color: $bg-color-purple;
+        text-decoration: none;
+      }
+    }
+    &.nav-item-showall {
+      a:before {
+        background-image: url(../images/show-all-icon-w.png);
+      }
+      a:hover:before,
+      a.active:before {
+        background-image: url(../images/show-all-icon-p.png);
+      }
+    }
+    &.nav-item-promotional {
+      a:before {
+        background-image: url(../images/tools-icon-w.png);
+      }
+      a:hover:before,
+      a.active:before {
+        background-image: url(../images/tools-icon-p.png);
+      }
+    }
+    &.nav-item-oiratools {
+      a:before {
+        background-image: url(../images/promotional-resources-icon-w.png);
+      }
+      a:hover:before,
+      a.active:before {
+        background-image: url(../images/promotional-resources-icon-p.png);
+      }
+    }
+    &.nav-item-news {
+      a:before {
+        background-image: url(../images/news-icon-w.png);
+      }
+      a:hover:before,
+      a.active:before {
+        background-image: url(../images/news-icon-p.png);
+      }
+    }
+  }
+  .dropdown-menu {
+    border: none;
+    width: 260px;
+    li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: $text-color-black;
+      font-style: normal;
+      font-weight: normal;
+      &:hover {
+        background: $bg-color-purple;
+        color: $text-color-white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+  .nav .nav-item .dropdown-menu{ display: none; }
+  .nav .nav-item:hover .nav-link{   }
+  .nav .nav-item:hover .dropdown-menu{ display: block; }
+  .nav .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+
+
+
+
+
+/**** Old ***/
 .block-quicktabs {
   .content {
     border: none;

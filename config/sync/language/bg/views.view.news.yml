@@ -21,3 +21,6 @@ display:
       fields:
         view_node:
           text: 'Вижте още'
+  oshnews_list:
+    display_options:
+      title: Новини

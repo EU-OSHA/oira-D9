@@ -26,24 +26,17 @@ display:
           action_title: Action
         thumbnail__target_id:
           label: Thumbnail
-          separator: ', '
-        name:
-          separator: ', '
         bundle:
           label: Tip
-          separator: ', '
         uid:
           label: Author
-          separator: ', '
         status:
           label: Stare
           settings:
             format_custom_true: Published
             format_custom_false: Unpublished
-          separator: ', '
         changed:
           label: Actualizat
-          separator: ', '
         operations:
           label: Operations
       filters:

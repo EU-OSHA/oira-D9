@@ -33,6 +33,10 @@ visibility:
     id: view_inclusion
     negate: false
     view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/*/edit\r\n/node/add/*\r\n"
+    negate: false
   user_role:
     id: user_role
     roles:
@@ -40,7 +44,3 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-  request_path:
-    id: request_path
-    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/*/edit\r\n/node/add/*\r\n"
-    negate: false
