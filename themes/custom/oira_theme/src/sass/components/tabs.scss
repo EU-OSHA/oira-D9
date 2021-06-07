@@ -26,12 +26,21 @@
         vertical-align: middle;
         margin-right: 10px;
       }
+      &:after {
+        display: none;
+      }
+      &.active {
+        background-color: $bg-color-purple-light;
+        color: $bg-color-purple;
+        text-decoration: none;
+      }
     }
     &.nav-item-showall {
       a:before {
         background-image: url(../images/show-all-icon-w.png);
       }
-      a:hover:before {
+      a:hover:before,
+      a.active:before {
         background-image: url(../images/show-all-icon-p.png);
       }
     }
@@ -39,7 +48,8 @@
       a:before {
         background-image: url(../images/tools-icon-w.png);
       }
-      a:hover:before {
+      a:hover:before,
+      a.active:before {
         background-image: url(../images/tools-icon-p.png);
       }
     }
@@ -47,7 +57,8 @@
       a:before {
         background-image: url(../images/promotional-resources-icon-w.png);
       }
-      a:hover:before {
+      a:hover:before,
+      a.active:before {
         background-image: url(../images/promotional-resources-icon-p.png);
       }
     }
@@ -55,17 +66,35 @@
       a:before {
         background-image: url(../images/news-icon-w.png);
       }
-      a:hover:before {
+      a:hover:before,
+      a.active:before {
         background-image: url(../images/news-icon-p.png);
       }
     }
   }
   .dropdown-menu {
     border: none;
-    li {
-
+    width: 260px;
+    li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: $text-color-black;
+      font-style: normal;
+      font-weight: normal;
+      &:hover {
+        background: $bg-color-purple;
+        color: $text-color-white;
+        text-decoration: none;
+      }
     }
   }
+}
+
+@media all and (min-width: 992px) {
+  .nav .nav-item .dropdown-menu{ display: none; }
+  .nav .nav-item:hover .nav-link{   }
+  .nav .nav-item:hover .dropdown-menu{ display: block; }
+  .nav .nav-item .dropdown-menu{ margin-top:0; }
 }
 
 

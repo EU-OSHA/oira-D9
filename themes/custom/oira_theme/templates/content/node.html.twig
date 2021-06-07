@@ -103,19 +103,24 @@
         <div class="row">
           <div class="col">
             <ul id="myTabs" class="col nav nav-pills" role="tablist" data-tabs="tabs">
-              <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab">Show all</a></li>
-              <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab">Promotional Resources</a></li>
+              <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab">{{ 'Show all'|t }}</a></li>
+              <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab">{{ 'Promotional Resources'|t }}</a></li>
               <li class="dropdown nav-item nav-item-oiratools">
-                <a class="dropdown-toggle item-nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oira Tools</a>
+                <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ 'Oira Tools'|t }}</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">{{ 'Any'|t }}</a></li>
+                  <li><a href="#">{{ 'Agriculture, forestry & fishing'|t }}</a></li>
+                  <li><a href="#">{{ 'Cleaning services'|t }}</a></li>
+                  <li><a href="#">{{ 'Construction & maintenance'|t }}</a></li>
+                  <li><a href="#">{{ 'Food production & sale'|t }}</a></li>
+                  <li><a href="#">{{ 'Hairdressers & beauty salons'|t }}</a></li>
+                  <li><a href="#">{{ 'Hotels restaurants catering'|t }}</a></li>
+                  <li><a href="#">{{ 'Live Performance'|t }}</a></li>
+                  <li><a href="#">{{ 'Public/passenger transport'|t }}</a></li>
+                  <li><a href="#">{{ 'Woodworking & related activities'|t }}</a></li>
                 </ul>
               </li>
-              <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab">News</a></li>
+              <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab">{{ 'News'|t }}</a></li>
             </ul>
           </div>
         </div>
@@ -125,20 +130,20 @@
     <div class="container">
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active show" id="show-all">
-          <div class="views-wrapper">Show All goes here.
+          <div class="views-wrapper">
             {{ drupal_view('country_partner_content', 'block_1') }}
           </div>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="promotional-resources">
           <div class="views-wrapper">
-            {{ drupal_view('country_partner_content', 'block_2') }}
+            {{ drupal_view('country_partner_content', 'block_5') }}
           </div>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="oria-tools">
-          <div class="views-wrapper">Oira Tools goes here.</div>
+          <div class="views-wrapper">{{ drupal_view('country_partner_content', 'block_3') }}</div>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="news">
-          <div class="views-wrapper">News goes here.</div>
+          <div class="views-wrapper">{{ drupal_view('country_partner_content', 'block_4') }}</div>
         </div>
       </div>
     </div>

@@ -1425,6 +1425,9 @@ select.custom-select{
     -webkit-appearance: none;
     appearance: none;
   }
+  .language-icon {
+    display: none !important;
+  }
 }
 
 /**** Tables in Private Zone ****/
