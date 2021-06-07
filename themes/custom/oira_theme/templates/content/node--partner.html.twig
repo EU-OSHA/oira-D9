@@ -72,6 +72,12 @@
     'clearfix',
   ]
 %}
+
+{% set viewShowAll = drupal_view_result('country_partner_content', 'block_1')|length %}
+{% set viewPromotional = drupal_view_result('country_partner_content', 'block_5')|length %}
+{% set viewOiraTools = drupal_view_result('country_partner_content', 'block_3')|length %}
+{% set viewNews = drupal_view_result('country_partner_content', 'block_4')|length %}
+
 <article{{ attributes.addClass(classes) }}>
   <header>
     {{ title_prefix }}
@@ -103,12 +109,17 @@
         <div class="row">
           <div class="col">
             <ul id="myTabs" class="col nav nav-pills" role="tablist" data-tabs="tabs">
-              <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab">{{ 'Show all'|t }}</a></li>
-              <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab">{{ 'Promotional Resources'|t }}</a></li>
+              {% if viewShowAll > 0 %}
+                <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab">{{ 'Show all'|t }}</a></li>
+              {% endif %}
+              {% if drupal_view_result('country_partner_content', 'block_5') is not empty %}
+                <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab">{{ 'Promotional Resources'|t }}</a></li>
+              {% endif %}
+              {% if drupal_view_result('country_partner_content', 'block_3') is not empty %}
               <li class="dropdown nav-item nav-item-oiratools">
-                <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ 'Oira Tools'|t }}</a>
+                <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="tab" aria-haspopup="true" aria-expanded="false">{{ 'Oira Tools'|t }}</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a href="#">{{ 'Any'|t }}</a></li>
+                  <li><a href="#oira-tools" data-toggle="tab">{{ 'Any'|t }}</a></li>
                   <li><a href="#">{{ 'Agriculture, forestry & fishing'|t }}</a></li>
                   <li><a href="#">{{ 'Cleaning services'|t }}</a></li>
                   <li><a href="#">{{ 'Construction & maintenance'|t }}</a></li>
@@ -120,7 +131,10 @@
                   <li><a href="#">{{ 'Woodworking & related activities'|t }}</a></li>
                 </ul>
               </li>
-              <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab">{{ 'News'|t }}</a></li>
+              {% endif %}
+              {% if drupal_view_result('country_partner_content', 'block_4') is not empty %}
+                <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab">{{ 'News'|t }}</a></li>
+              {% endif %}
             </ul>
           </div>
         </div>
@@ -129,22 +143,37 @@
 
     <div class="container">
       <div class="tab-content">
+        {% if viewShowAll > 0 %}
         <div role="tabpanel" class="tab-pane fade in active show" id="show-all">
           <div class="views-wrapper">
             {{ drupal_view('country_partner_content', 'block_1') }}
           </div>
         </div>
+        {% endif %}
+
+        {% if viewPromotional > 0 %}
         <div role="tabpanel" class="tab-pane fade" id="promotional-resources">
           <div class="views-wrapper">
             {{ drupal_view('country_partner_content', 'block_5') }}
           </div>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="oria-tools">
-          <div class="views-wrapper">{{ drupal_view('country_partner_content', 'block_3') }}</div>
+        {% endif %}
+
+        {% if viewOiraTools > 0 %}
+        <div role="tabpanel" class="tab-pane fade" id="oira-tools">
+          <div class="views-wrapper">
+            {{ drupal_view('country_partner_content', 'block_3') }}
+          </div>
         </div>
+        {% endif %}
+
+        {% if viewNews > 0 %}
         <div role="tabpanel" class="tab-pane fade" id="news">
-          <div class="views-wrapper">{{ drupal_view('country_partner_content', 'block_4') }}</div>
+          <div class="views-wrapper">
+            {{ drupal_view('country_partner_content', 'block_4') }}
+          </div>
         </div>
+        {% endif %}
       </div>
     </div>
 
