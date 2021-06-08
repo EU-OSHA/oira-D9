@@ -78,6 +78,9 @@
 {% set viewOiraTools = drupal_view_result('country_partner_content', 'block_3')|length %}
 {% set viewNews = drupal_view_result('country_partner_content', 'block_4')|length %}
 
+{% set viewOiraToolsAgriculture = drupal_view_result('country_partner_content', 'block_8')|length %}
+
+
 <article{{ attributes.addClass(classes) }}>
   <header>
     {{ title_prefix }}
@@ -110,30 +113,30 @@
           <div class="col">
             <ul id="myTabs" class="col nav nav-pills" role="tablist" data-tabs="tabs">
               {% if viewShowAll > 0 %}
-                <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab">{{ 'Show all'|t }}</a></li>
+                <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab"><span class="text">{{ 'Show all'|t }}</span></a></li>
               {% endif %}
               {% if drupal_view_result('country_partner_content', 'block_5') is not empty %}
-                <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab">{{ 'Promotional Resources'|t }}</a></li>
+                <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab"><span class="text">{{ 'Promotional Resources'|t }}</span></a></li>
               {% endif %}
-              {% if drupal_view_result('country_partner_content', 'block_3') is not empty %}
+{#              {% if drupal_view_result('country_partner_content', 'block_3') is not empty %}#}
               <li class="dropdown nav-item nav-item-oiratools">
-                <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="tab" aria-haspopup="true" aria-expanded="false">{{ 'Oira Tools'|t }}</a>
+                <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="tab" aria-haspopup="true" aria-expanded="false"><span class="text">{{ 'Oira Tools'|t }}</span></a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a href="#oira-tools" data-toggle="tab">{{ 'Any'|t }}</a></li>
-                  <li><a href="#">{{ 'Agriculture, forestry & fishing'|t }}</a></li>
-                  <li><a href="#">{{ 'Cleaning services'|t }}</a></li>
-                  <li><a href="#">{{ 'Construction & maintenance'|t }}</a></li>
-                  <li><a href="#">{{ 'Food production & sale'|t }}</a></li>
-                  <li><a href="#">{{ 'Hairdressers & beauty salons'|t }}</a></li>
-                  <li><a href="#">{{ 'Hotels restaurants catering'|t }}</a></li>
-                  <li><a href="#">{{ 'Live Performance'|t }}</a></li>
-                  <li><a href="#">{{ 'Public/passenger transport'|t }}</a></li>
-                  <li><a href="#">{{ 'Woodworking & related activities'|t }}</a></li>
+                  <li data-toggle="tab"><a href="#oira-tools" data-toggle="tab">{{ 'Any'|t }}</a></li>
+                  <li data-toggle="tab"><a href="#oira-tools-agriculture" data-toggle="tab"><span class="text">{{ 'Agriculture, forestry & fishing'|t }}</span></a></li>
+                  <li data-toggle="tab"><a href="#">{{ 'Cleaning services'|t }}</a></li>
+                  <li data-toggle="tab"><a href="#">{{ 'Construction & maintenance'|t }}</a></li>
+                  <li data-toggle="tab"><a href="#">{{ 'Food production & sale'|t }}</a></li>
+                  <li data-toggle="tab"><a href="#">{{ 'Hairdressers & beauty salons'|t }}</a></li>
+                  <li data-toggle="tab"><a href="#">{{ 'Hotels restaurants catering'|t }}</a></li>
+                  <li data-toggle="tab"><a href="#">{{ 'Live Performance'|t }}</a></li>
+                  <li data-toggle="tab"><a href="#">{{ 'Public/passenger transport'|t }}</a></li>
+                  <li data-toggle="tab"><a href="#">{{ 'Woodworking & related activities'|t }}</a></li>
                 </ul>
               </li>
-              {% endif %}
+{#              {% endif %}#}
               {% if drupal_view_result('country_partner_content', 'block_4') is not empty %}
-                <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab">{{ 'News'|t }}</a></li>
+                <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab"><span class="text">{{ 'News'|t }}</span></a></li>
               {% endif %}
             </ul>
           </div>
@@ -159,13 +162,21 @@
         </div>
         {% endif %}
 
-        {% if viewOiraTools > 0 %}
+{#        {% if viewOiraTools > 0 %}#}
         <div role="tabpanel" class="tab-pane fade" id="oira-tools">
           <div class="views-wrapper">
             {{ drupal_view('country_partner_content', 'block_3') }}
           </div>
         </div>
-        {% endif %}
+{#        {% endif %}#}
+
+{#        {% if viewOiraToolsAgriculture > 0 %}#}
+          <div role="tabpanel" class="tab-pane fade" id="oira-tools-agriculture">
+            <div class="views-wrapper">
+              {{ drupal_view('country_partner_content', 'block_3', '1157', '1157', '1179') }}
+            </div>
+          </div>
+{#        {% endif %}#}
 
         {% if viewNews > 0 %}
         <div role="tabpanel" class="tab-pane fade" id="news">

@@ -502,19 +502,7 @@ div.pagerer-right-pane {
   text-decoration: none;
 }
 
-@media all and (min-width: 992px) {
-  .nav .nav-item .dropdown-menu {
-    display: none;
-  }
-
-  .nav .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-
-  .nav .nav-item .dropdown-menu {
-    margin-top: 0;
-  }
-}
+/*****/
 /**** Old ***/
 .block-quicktabs .content {
   border: none;
@@ -2981,6 +2969,7 @@ select.custom-select {
 }
 .view-country-partner-content > .view-content.row > h3 {
   font-size: 2.1875rem;
+  border-bottom: 2px solid #967ea7;
 }
 .view-country-partner-content > .view-content.row > h3:after {
   display: block;
@@ -3016,7 +3005,7 @@ select.custom-select {
 }
 .view-country-partner-content .view-header .view-content > h3,
 .view-country-partner-content .view-footer .view-content > h3 {
-  padding: 0 15px;
+  padding: 0 15px 10px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -5146,18 +5135,35 @@ body.toolbar-fixed.toolbar-tray-open #header {
 }
 
 @media (max-width: 1023px) {
-  .node--type-partner .block-quicktabs .item-list {
-    background: none;
+  .node--type-partner {
+    /*** Old ***/
+    /*.block-quicktabs {
+      .item-list {
+        background: none;
+      }
+      .content .quicktabs-tabs > li {
+        > a {
+          font-size: 0;
+          background: $bg-color-purple;
+          &:before {
+            margin: 0;
+          }
+        }
+        &.active {
+          > a {
+            background-color: $bg-color-purple-light;
+          }
+        }
+      }
+    }*/
   }
-  .node--type-partner .block-quicktabs .content .quicktabs-tabs > li > a {
-    font-size: 0;
-    background: #786586;
+
+  .partners-related-content li a.item-nav-link span.text {
+    display: none;
   }
-  .node--type-partner .block-quicktabs .content .quicktabs-tabs > li > a:before {
-    margin: 0;
-  }
-  .node--type-partner .block-quicktabs .content .quicktabs-tabs > li.active > a {
-    background-color: #dfd8e4;
+
+  .view-country-partner-content > .view-content.row {
+    margin: 0 15px;
   }
 
   #block-logoosha {
@@ -5452,6 +5458,20 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 }
 /* End Media 991px */
+/*** Tabs ***/
+@media all and (min-width: 992px) {
+  .nav .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .nav .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .nav .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .top-header-content .region-top-header-logos .field--name-field-image {
     display: flex;
