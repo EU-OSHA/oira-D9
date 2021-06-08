@@ -1,0 +1,48 @@
+.view-partner-profile {
+  .view-content.row {
+    margin: 0 auto;
+    margin: 0 auto;
+    display: block;
+    color: $text-color-purple;
+  }
+  .partner-section-title {
+    font-family: $font-family-oswald;
+    color: $text-color-purple;
+  }
+  .partner-section-title {
+    margin: 22px 0 11px;
+    font-size: 2rem;
+    padding: 20px 0;
+    border-top: 2px solid $bg-color-purple;
+  }
+  .partner-profile-section-content {
+    margin: 0 0 30px;
+    &.section-flex {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+  .partner-profile-column {
+    flex: 1;
+  }
+  .field-partner-profile {
+    margin-bottom: 15px;
+    .field-label{
+      font-weight: $font-weight-bold;
+    }
+    .field-content {
+      width: 100%;
+      min-height: 42px;
+      padding: 0.5rem;
+      border: 1px solid $bg-color-purple;
+      color: $text-color-black;
+    }
+    &.field-partner-profile--logo {
+      .field-content {
+        padding: 0;
+        border: none;
+      }
+    }
+  }
+}

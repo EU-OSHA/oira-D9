@@ -751,6 +751,51 @@ table tr td {
   display: none;
 }
 
+.view-partner-profile .view-content.row {
+  margin: 0 auto;
+  margin: 0 auto;
+  display: block;
+  color: #786586;
+}
+.view-partner-profile .partner-section-title {
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+  color: #786586;
+}
+.view-partner-profile .partner-section-title {
+  margin: 22px 0 11px;
+  font-size: 2rem;
+  padding: 20px 0;
+  border-top: 2px solid #786586;
+}
+.view-partner-profile .partner-profile-section-content {
+  margin: 0 0 30px;
+}
+.view-partner-profile .partner-profile-section-content.section-flex {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.view-partner-profile .partner-profile-column {
+  flex: 1;
+}
+.view-partner-profile .field-partner-profile {
+  margin-bottom: 15px;
+}
+.view-partner-profile .field-partner-profile .field-label {
+  font-weight: 700;
+}
+.view-partner-profile .field-partner-profile .field-content {
+  width: 100%;
+  min-height: 42px;
+  padding: 0.5rem;
+  border: 1px solid #786586;
+  color: #58585a;
+}
+.view-partner-profile .field-partner-profile.field-partner-profile--logo .field-content {
+  padding: 0;
+  border: none;
+}
+
 /* Common elements */
 body {
   position: relative;
