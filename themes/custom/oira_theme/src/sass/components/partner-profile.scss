@@ -1,4 +1,15 @@
+.page-view-partner-profile #main-wrapper {
+  padding-bottom: 1rem;
+}
+
 .view-partner-profile {
+  .wrapper {
+    padding: 0.5rem 0;
+    background: $bg-color-purple-light;
+    &.wrapper-last {
+      padding: 0 0 2.5rem;
+    }
+  }
   .view-content.row {
     margin: 0 auto;
     margin: 0 auto;
@@ -8,15 +19,17 @@
   .partner-section-title {
     font-family: $font-family-oswald;
     color: $text-color-purple;
-  }
-  .partner-section-title {
     margin: 22px 0 11px;
     font-size: 2rem;
     padding: 20px 0;
-    border-top: 2px solid $bg-color-purple;
+    &.partner-first-section-title {
+      font-size: 2.5675rem;
+    }
+    &.partner-section-title--separator {
+      border-top: 2px solid $bg-color-purple;
+    }
   }
   .partner-profile-section-content {
-    margin: 0 0 30px;
     &.section-flex {
       display: flex;
       gap: 30px;
@@ -29,7 +42,17 @@
   .field-partner-profile {
     margin-bottom: 15px;
     .field-label{
+      margin: 0 0 5px 0;
       font-weight: $font-weight-bold;
+      &:after {
+        margin: 0 0 0 7px;
+        display: inline-block;
+        content:"";
+        width: 20px;
+        height: 20px;
+        background: url(../images/icon-screen.png) center no-repeat;
+        background-size: cover;
+      }
     }
     .field-content {
       width: 100%;
@@ -38,10 +61,36 @@
       border: 1px solid $bg-color-purple;
       color: $text-color-black;
     }
+
     &.field-partner-profile--logo {
+      margin: 0;
       .field-content {
         padding: 0;
         border: none;
+      }
+    }
+    &.field-partner-profile--title {
+      width: auto;
+      max-width: 48.5%;
+    }
+    &.field-partner-profile--social-links {
+      .field-content {
+        border: none;
+        padding: 0;
+        .list-group {
+          margin: 0;
+          li.list-group-item {
+            margin-bottom: 10px;
+            min-height: 42px;
+            padding: 0.5rem;
+            border: 1px solid $bg-color-purple;
+            border-radius: 0;
+            background: transparent;
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
       }
     }
   }
