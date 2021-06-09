@@ -751,6 +751,17 @@ table tr td {
   display: none;
 }
 
+.page-view-partner-profile #main-wrapper {
+  padding-bottom: 1rem;
+}
+
+.view-partner-profile .wrapper {
+  padding: 0.5rem 0;
+  background: #dfd8e4;
+}
+.view-partner-profile .wrapper.wrapper-last {
+  padding: 0 0 2.5rem;
+}
 .view-partner-profile .view-content.row {
   margin: 0 auto;
   margin: 0 auto;
@@ -760,15 +771,15 @@ table tr td {
 .view-partner-profile .partner-section-title {
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #786586;
-}
-.view-partner-profile .partner-section-title {
   margin: 22px 0 11px;
   font-size: 2rem;
   padding: 20px 0;
-  border-top: 2px solid #786586;
 }
-.view-partner-profile .partner-profile-section-content {
-  margin: 0 0 30px;
+.view-partner-profile .partner-section-title.partner-first-section-title {
+  font-size: 2.5675rem;
+}
+.view-partner-profile .partner-section-title.partner-section-title--separator {
+  border-top: 2px solid #786586;
 }
 .view-partner-profile .partner-profile-section-content.section-flex {
   display: flex;
@@ -782,7 +793,17 @@ table tr td {
   margin-bottom: 15px;
 }
 .view-partner-profile .field-partner-profile .field-label {
+  margin: 0 0 5px 0;
   font-weight: 700;
+}
+.view-partner-profile .field-partner-profile .field-label:after {
+  margin: 0 0 0 7px;
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon-screen.png) center no-repeat;
+  background-size: cover;
 }
 .view-partner-profile .field-partner-profile .field-content {
   width: 100%;
@@ -791,9 +812,34 @@ table tr td {
   border: 1px solid #786586;
   color: #58585a;
 }
+.view-partner-profile .field-partner-profile.field-partner-profile--logo {
+  margin: 0;
+}
 .view-partner-profile .field-partner-profile.field-partner-profile--logo .field-content {
   padding: 0;
   border: none;
+}
+.view-partner-profile .field-partner-profile.field-partner-profile--title {
+  width: auto;
+  max-width: 48.5%;
+}
+.view-partner-profile .field-partner-profile.field-partner-profile--social-links .field-content {
+  border: none;
+  padding: 0;
+}
+.view-partner-profile .field-partner-profile.field-partner-profile--social-links .field-content .list-group {
+  margin: 0;
+}
+.view-partner-profile .field-partner-profile.field-partner-profile--social-links .field-content .list-group li.list-group-item {
+  margin-bottom: 10px;
+  min-height: 42px;
+  padding: 0.5rem;
+  border: 1px solid #786586;
+  border-radius: 0;
+  background: transparent;
+}
+.view-partner-profile .field-partner-profile.field-partner-profile--social-links .field-content .list-group li.list-group-item:last-child {
+  margin: 0;
 }
 
 /* Common elements */
