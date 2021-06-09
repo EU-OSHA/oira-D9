@@ -6227,6 +6227,14 @@ body.toolbar-fixed.toolbar-tray-open #header {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
   }
+
+  .view-partner-profile .partner-profile-section-content.section-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .view-partner-profile .field-partner-profile.field-partner-profile--title {
+    max-width: 100%;
+  }
 }
 /* End Media 767px */
 @media only screen and (max-width: 480px) {
