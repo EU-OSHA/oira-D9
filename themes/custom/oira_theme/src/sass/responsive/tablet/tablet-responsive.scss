@@ -1,7 +1,8 @@
 @media(max-width: 1023px) {
 
   .node--type-partner {
-    .block-quicktabs {
+    /*** Old ***/
+    /*.block-quicktabs {
       .item-list {
         background: none;
       }
@@ -19,7 +20,19 @@
           }
         }
       }
+    }*/
+  }
+
+  .partners-related-content {
+    li a.item-nav-link {
+      span.text {
+        display: none;
+      }
     }
+  }
+
+  .view-country-partner-content > .view-content.row {
+    margin: 0 15px;
   }
 
   #block-logoosha {
@@ -340,6 +353,16 @@
 
 
 }/* End Media 991px */
+
+/*** Tabs ***/
+@media all and (min-width: 992px) {
+  .nav .nav-item .dropdown-menu{ display: none; }
+  .nav .nav-item:hover .nav-link{   }
+  .nav .nav-item:hover .dropdown-menu{ display: block; }
+  .nav .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+
 @media only screen and (min-width : 1024px) and (max-width: 1279px) {
   .top-header-content .region-top-header-logos .field--name-field-image {
     display: flex;

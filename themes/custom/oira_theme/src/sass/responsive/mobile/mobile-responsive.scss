@@ -704,6 +704,18 @@
     }
   }
 
+  .view-partner-profile {
+    .partner-profile-section-content {
+      &.section-flex {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .field-partner-profile.field-partner-profile--title {
+      max-width: 100%;
+    }
+  }
+
 
 }/* End Media 767px */
 
