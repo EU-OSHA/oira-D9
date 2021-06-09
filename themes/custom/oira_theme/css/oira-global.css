@@ -3812,11 +3812,58 @@ select.custom-select {
 }
 
 /***** PRIVATE ZONE ****/
+.private-zone.page-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .private-zone.page-title-container .page-header.h1 {
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #786586;
   font-size: 3.5rem;
   font-weight: 400;
+}
+.private-zone.page-title-container .show-menu,
+.private-zone.page-title-container .hide-menu {
+  padding: 0;
+  background: none;
+  border: none;
+  color: #786586;
+}
+.private-zone.page-title-container .show-menu:after,
+.private-zone.page-title-container .hide-menu:after {
+  margin-left: 10px;
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  font-family: "Glyphicons Halflings";
+  line-height: 24px;
+  background: #10b2e4;
+  border-radius: 25px;
+  color: white;
+  font-size: 13px;
+}
+.private-zone.page-title-container .show-menu:focus,
+.private-zone.page-title-container .hide-menu:focus {
+  outline: none;
+}
+.private-zone.page-title-container .show-menu {
+  display: none;
+}
+.private-zone.page-title-container .show-menu:after {
+  content: "";
+  line-height: 24px;
+}
+.private-zone.page-title-container .show-menu.active {
+  display: block;
+}
+.private-zone.page-title-container .hide-menu:after {
+  content: "";
+  line-height: 20px;
+}
+.private-zone.page-title-container .hide-menu.clicked {
+  display: none !important;
 }
 
 body[class*=private-zone-] .page-header.h1 {
