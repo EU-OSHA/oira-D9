@@ -3050,11 +3050,58 @@ select.custom-select{
 }
 
 /***** PRIVATE ZONE ****/
-.private-zone.page-title-container .page-header.h1 {
-  font-family: $font-family-oswald;
-  color: $text-color-purple;
-  font-size: 3.5rem;
-  font-weight: 400;
+.private-zone.page-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .page-header.h1 {
+    font-family: $font-family-oswald;
+    color: $text-color-purple;
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  .show-menu,
+  .hide-menu {
+    padding: 0;
+    background: none;
+    border: none;
+    color: $text-color-purple;
+    &:after {
+      margin-left: 10px;
+      display: inline-block;
+      content:"";
+      width: 20px;
+      height: 20px;
+      font-family: "Glyphicons Halflings";
+      line-height: 24px;
+      background: $bg-color-blue-light;
+      border-radius: 25px;
+      color: white;
+      font-size: 13px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .show-menu {
+    display: none;
+    &:after {
+      content: "\e252";
+      line-height: 24px;
+    }
+    &.active {
+      display: block;
+    }
+  }
+  .hide-menu {
+    &:after {
+      content: "\e253";
+      line-height: 20px;
+    }
+    &.clicked {
+      display: none !important;
+    }
+  }
 }
 
 body[class*="private-zone-"] {
