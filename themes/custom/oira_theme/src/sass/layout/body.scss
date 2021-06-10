@@ -3343,4 +3343,25 @@ body[class*="private-zone-"] {
   }
 }
 
+.node--type-collaboration-document {
+  .block-system-main-block {
+    @extend .container;
+    .content {
+      padding: 0 15px;
+      .node--view-mode-full {
+        @extend .col;
+      }
+      .field--name-field-languages {
+        font-weight: $font-weight-bold;
+        font-style: italic;
+      }
+    }
+  }
+  h1 {
+    @media(max-width: 767px) {
+      padding: 0 15px;
+    }
+  }
+}
+
 
