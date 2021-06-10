@@ -716,6 +716,28 @@
     }
   }
 
+  .page-view-promotional-resources-search {
+    main .views-row .content-view-pm-view {
+      border: none;
+    }
+    .views-exposed-form,
+    .view-header {
+      display: none;
+    }
+    .content-view-pm-view {
+      border-top: none;
+    }
+  }
+
+  .block-views-blockoshwiki-featured-articles-oshwiki-related-articles,
+  .block-views-blocknews-block-2,
+  .block-views-blockadditional-resources-block {
+    .content,
+    h2{
+      padding: 0;
+    }
+  }
+
 
 }/* End Media 767px */
 
