@@ -3880,8 +3880,8 @@ body[class*=private-zone-] .page-header.h1 {
 #block-backinprivatezone .private-zone-back-link {
   position: absolute;
   width: auto;
-  top: 70px;
-  right: 15px;
+  top: 3px;
+  right: 0;
   z-index: 10;
   color: #10b2e4;
   font-style: normal;
@@ -3895,10 +3895,6 @@ body[class*=private-zone-] .page-header.h1 {
   margin-left: 5px;
   background: url(../images/back-news.png) center center no-repeat;
   background-size: 100%;
-}
-
-.role-partner #block-backinprivatezone .private-zone-back-link {
-  top: 90px;
 }
 
 .page-view-eu-osha-files.private-zone-collaboration-area #block-backinprivatezone .private-zone-back-link {
@@ -5270,6 +5266,29 @@ body.toolbar-fixed.toolbar-tray-open #header {
 }
 .node-form js-filter-guidelines {
   display: none;
+}
+.node-form .form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.node-form .form-actions #edit-submit {
+  background-color: #10b2e4;
+  margin-top: 40px;
+  min-width: 200px;
+  max-width: 300px;
+  flex: 1;
+}
+.node-form .form-actions #edit-submit:before {
+  display: inline-block;
+  content: "> ";
+}
+.node-form .form-actions .oira-save {
+  display: block;
+  width: 100%;
+  height: 70px;
+  margin-top: 50px;
+  font-size: 1.4em;
 }
 
 @media (max-width: 1023px) {
