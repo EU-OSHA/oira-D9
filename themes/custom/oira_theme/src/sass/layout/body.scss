@@ -3121,8 +3121,8 @@ body[class*="private-zone-"] {
   .private-zone-back-link {
     position: absolute;
     width: auto;
-    top: 70px;
-    right: 15px;
+    top: 3px;
+    right: 0;
     z-index: 10;
     color: $text-color-blue-light;
     font-style: normal;
@@ -3135,14 +3135,6 @@ body[class*="private-zone-"] {
       margin-left: 5px;
       background: url(../images/back-news.png) center center no-repeat;
       background-size: 100%;
-    }
-  }
-}
-
-.role-partner {
-  #block-backinprivatezone {
-    .private-zone-back-link {
-      top: 90px;
     }
   }
 }

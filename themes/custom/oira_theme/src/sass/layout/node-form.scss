@@ -42,5 +42,29 @@
   js-filter-guidelines {
     display: none;
   }
+  .form-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #edit-submit {
+      background-color: $bg-color-blue-light;
+      margin-top: 40px;
+      min-width: 200px;
+      max-width: 300px;
+      flex: 1;
+      &:before {
+        display: inline-block;
+        content: "> ";
+      }
+    }
+    .oira-save {
+      display: block;
+      width: 100%;
+      height: 70px;
+      margin-top: 50px;
+      font-size: 1.4em;
+    }
+  }
 }
+
 
