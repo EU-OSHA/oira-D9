@@ -11,7 +11,7 @@ field_name: field_image
 entity_type: node
 bundle: news
 label: Image
-description: ''
+description: "Image News list. Recommended image format: .png Manual Crop ratio: 259px 259px\r\nFiles must be less than 5 MB.\r\nAllowed file types: png gif jpg jpeg."
 required: false
 translatable: false
 default_value: {  }
