@@ -2316,6 +2316,9 @@ select.custom-select {
   background-color: #f9f9f9;
 }
 
+.page-view-eu-osha-files.private-zone-collaboration-area #page {
+  padding-bottom: 0;
+}
 .page-view-eu-osha-files.private-zone-collaboration-area .block-system.block-system-main-block {
   margin: 0 auto;
   padding: 0 15px;
@@ -2340,10 +2343,12 @@ select.custom-select {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
+  padding: 0;
 }
 .page-view-eu-osha-files.private-zone-collaboration-area .menu--collaboration li.menu-item {
   margin: 0 3rem;
+  max-height: 240px;
 }
 .page-view-eu-osha-files.private-zone-collaboration-area .menu--collaboration li.menu-item a {
   max-width: 150px;
@@ -3052,8 +3057,15 @@ select.custom-select {
   /*** ***/
 }
 
+.view-country-partner-content {
+  /*.view-header + .view-footer {
+    .view-content.row {
+      background: white;
+    }
+  }*/
+}
 .view-country-partner-content > .view-content.row {
-  background: #FFF;
+  /* background: $bg-color-white; */
   margin-left: 0;
   margin-right: 0;
   padding-top: 15px;
@@ -3128,8 +3140,11 @@ select.custom-select {
   max-width: 1170px;
   margin: 0 auto;
 }
-.view-country-partner-content .view-header + .view-footer .view-content.row {
+.view-country-partner-content > div:nth-child(even) .view-content.row {
   background: white;
+}
+.view-country-partner-content > div:nth-child(odd) .view-content.row {
+  background: #dfd8e4;
 }
 .view-country-partner-content .view-footer .view-content > h3:after {
   display: block;
@@ -3504,6 +3519,7 @@ select.custom-select {
 }
 .view-partners-list .partner__country-flag img {
   display: block;
+  height: 100%;
 }
 .view-partners-list .partner__name {
   font-size: 1.75rem;
@@ -3515,7 +3531,7 @@ select.custom-select {
 .view-partners-list .content-count {
   display: flex;
   width: 100%;
-  padding: 0 15px;
+  padding: 0;
 }
 .view-partners-list .content-count-item {
   width: 33%;
@@ -6192,6 +6208,14 @@ body.toolbar-fixed.toolbar-tray-open #header {
   .view-partners-list .content-count-item .count-item__number {
     font-size: 1rem;
     font-style: italic;
+  }
+  .view-partners-list .content-count-item .count-item__number:before {
+    content: "(";
+    display: inline-block;
+  }
+  .view-partners-list .content-count-item .count-item__number:after {
+    content: ")";
+    display: inline-block;
   }
 
   .view-partner-intro .view-content.row {
