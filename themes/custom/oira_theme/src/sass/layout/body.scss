@@ -193,6 +193,15 @@ select.custom-select{
       font-weight: $font-weight-bold;
     }
   }
+  &.node--view-mode-full {
+    .field--name-field-summary-article {
+      margin-bottom: 25px;
+      font-weight: $font-weight-bold;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  }
+
 }
 
 .field--name-field-summary{
@@ -1548,6 +1557,9 @@ select.custom-select{
 }
 
 .page-view-eu-osha-files.private-zone-collaboration-area {
+  #page {
+    padding-bottom: 0;
+  }
   .block-system.block-system-main-block {
     margin: 0 auto;
     padding: 0 15px;
@@ -1571,10 +1583,12 @@ select.custom-select{
       flex-wrap: wrap;
       justify-content: center;
       align-items: flex-start;
-      margin: 2rem auto;
+      margin: 2rem auto 0;
+      padding: 0;
     }
     li.menu-item {
       margin: 0 3rem;
+      max-height: 240px;
       a {
         max-width: 150px;
         display: flex;
@@ -2285,7 +2299,7 @@ select.custom-select{
 
 .view-country-partner-content {
   > .view-content.row {
-    background: $bg-color-white;
+    /* background: $bg-color-white; */
     margin-left: 0;
     margin-right: 0;
     padding-top: 15px;
@@ -2361,11 +2375,24 @@ select.custom-select{
       margin: 0 auto;
     }
   }
-  .view-header + .view-footer {
+
+  > div:nth-child(even) {
     .view-content.row {
       background: white;
     }
   }
+
+  > div:nth-child(odd) {
+    .view-content.row {
+      background: $bg-color-purple-light;
+    }
+  }
+
+  /*.view-header + .view-footer {
+    .view-content.row {
+      background: white;
+    }
+  }*/
   .view-footer {
     .view-content > h3 {
       &:after {
@@ -2701,6 +2728,7 @@ select.custom-select{
     border: 1px solid $bg-color-grey;
     img {
       display: block;
+      height: 100%;
     }
   }
   .partner__name {
@@ -2713,7 +2741,7 @@ select.custom-select{
   .content-count {
     display: flex;
     width: 100%;
-    padding: 0 15px;
+    padding: 0;
   }
   .content-count-item {
     width: 33%;
@@ -2978,6 +3006,7 @@ select.custom-select{
       font-size: 1.375rem;
       line-height: 1.45;
     }
+
   }
   .addtoany_list{
     display: none;
