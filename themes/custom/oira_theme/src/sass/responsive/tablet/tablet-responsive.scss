@@ -1,26 +1,11 @@
 @media(max-width: 1023px) {
 
-  .node--type-partner {
-    /*** Old ***/
-    /*.block-quicktabs {
-      .item-list {
-        background: none;
+  .block-menu.menu--main {
+    .nav > li.nav-item:first-child {
+      a {
+        margin: 0 auto;
       }
-      .content .quicktabs-tabs > li {
-        > a {
-          font-size: 0;
-          background: $bg-color-purple;
-          &:before {
-            margin: 0;
-          }
-        }
-        &.active {
-          > a {
-            background-color: $bg-color-purple-light;
-          }
-        }
-      }
-    }*/
+    }
   }
 
   .partners-related-content {

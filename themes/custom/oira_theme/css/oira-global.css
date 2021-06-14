@@ -1023,6 +1023,12 @@ select.custom-select {
 .node--type-article .field--name-body .highlighted-text {
   font-weight: 700;
 }
+.node--type-article.node--view-mode-full .field--name-field-summary-article {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
 
 .field--name-field-summary {
   font-weight: bold;
@@ -5321,27 +5327,8 @@ body.toolbar-fixed.toolbar-tray-open #header {
 }
 
 @media (max-width: 1023px) {
-  .node--type-partner {
-    /*** Old ***/
-    /*.block-quicktabs {
-      .item-list {
-        background: none;
-      }
-      .content .quicktabs-tabs > li {
-        > a {
-          font-size: 0;
-          background: $bg-color-purple;
-          &:before {
-            margin: 0;
-          }
-        }
-        &.active {
-          > a {
-            background-color: $bg-color-purple-light;
-          }
-        }
-      }
-    }*/
+  .block-menu.menu--main .nav > li.nav-item:first-child a {
+    margin: 0 auto;
   }
 
   .partners-related-content li a.item-nav-link span.text {

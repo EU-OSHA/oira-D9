@@ -193,6 +193,15 @@ select.custom-select{
       font-weight: $font-weight-bold;
     }
   }
+  &.node--view-mode-full {
+    .field--name-field-summary-article {
+      margin-bottom: 25px;
+      font-weight: $font-weight-bold;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  }
+
 }
 
 .field--name-field-summary{
@@ -2997,6 +3006,7 @@ select.custom-select{
       font-size: 1.375rem;
       line-height: 1.45;
     }
+
   }
   .addtoany_list{
     display: none;
