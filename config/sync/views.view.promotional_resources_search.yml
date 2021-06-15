@@ -1015,7 +1015,7 @@ display:
           click_sort_column: uri
           type: link
           settings:
-            trim_length: 80
+            trim_length: null
             url_only: false
             url_plain: false
             rel: nofollow
@@ -2063,8 +2063,7 @@ display:
       display_extenders: {  }
       path: promotional-resources-search
       cache:
-        type: search_api_tag
-        options: {  }
+        type: none
       defaults:
         cache: false
       exposed_block: true
