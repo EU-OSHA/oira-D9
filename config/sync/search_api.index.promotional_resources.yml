@@ -8,6 +8,7 @@ dependencies:
     - taxonomy
     - path
     - media
+    - file
     - search_api
   config:
     - field.storage.node.field_country
@@ -19,7 +20,10 @@ dependencies:
     - field.storage.taxonomy_term.field_image
     - field.storage.node.field_promotional_material_type
     - field.storage.node.field_publication_date
+    - field.storage.media.field_media_file
     - field.storage.node.field_resource_fc
+    - field.storage.media.field_media_file_1
+    - field.storage.media.field_col_item_label
     - field.storage.media.field_language
     - field.storage.media.field_link
     - field.storage.media.field_link_image
@@ -94,6 +98,17 @@ field_settings:
     dependencies:
       module:
         - node
+  field_col_item_label:
+    label: 'Resource » Media » Item label'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_fc:entity:field_col_item_label'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_col_item_label
+        - field.storage.node.field_resource_fc
+      module:
+        - media
   field_image:
     label: Image
     datasource_id: 'entity:node'
@@ -176,6 +191,17 @@ field_settings:
         - field.storage.node.field_resource_fc
       module:
         - media
+  field_media_file:
+    label: 'Resource » Media » File'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_fc:entity:field_media_file'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.media.field_media_file
+        - field.storage.node.field_resource_fc
+      module:
+        - media
   field_promotional_material_type:
     label: 'Promotional material type'
     datasource_id: 'entity:node'
@@ -208,8 +234,42 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_workbench_access
+  filename:
+    label: 'Resource » Media » Item files » File » Filename'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_fc:entity:field_media_file_1:entity:filename'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_file_1
+        - field.storage.node.field_resource_fc
+      module:
+        - file
+        - media
+  filename_1:
+    label: 'Resource » Media » File » File » Filename'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_fc:entity:field_media_file:entity:filename'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_file
+        - field.storage.node.field_resource_fc
+      module:
+        - file
+        - media
   langcode:
     label: 'Resource » Media » Language code'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_fc:entity:langcode'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_resource_fc
+      module:
+        - media
+  langcode_1:
+    label: 'Resource » Media » Language'
     datasource_id: 'entity:node'
     property_path: 'field_resource_fc:entity:langcode'
     type: string
@@ -258,6 +318,16 @@ field_settings:
         - field.storage.node.field_promotional_material_type
       module:
         - taxonomy
+  name_4:
+    label: 'Resource » Media » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_fc:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_resource_fc
+      module:
+        - media
   nid:
     label: ID
     datasource_id: 'entity:node'
@@ -339,6 +409,30 @@ field_settings:
     dependencies:
       module:
         - node
+  uri:
+    label: 'Resource » Media » Item files » File » URI'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_fc:entity:field_media_file_1:entity:uri'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_file_1
+        - field.storage.node.field_resource_fc
+      module:
+        - file
+        - media
+  uri_1:
+    label: 'Resource » Media » File » File » URI'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_fc:entity:field_media_file:entity:uri'
+    type: string
+    dependencies:
+      config:
+        - field.storage.media.field_media_file
+        - field.storage.node.field_resource_fc
+      module:
+        - file
+        - media
 datasource_settings:
   'entity:node':
     bundles:
