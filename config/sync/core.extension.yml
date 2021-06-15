@@ -148,6 +148,7 @@ module:
   social_media_links_field: 0
   system: 0
   taxonomy: 0
+  taxonomy_manager: 0
   text: 0
   tmgmt: 0
   tmgmt_locale: 0
