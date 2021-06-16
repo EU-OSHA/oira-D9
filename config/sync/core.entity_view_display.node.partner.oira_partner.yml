@@ -1,8 +1,9 @@
-uuid: 819e58c4-4184-4a48-a5d8-65f6ad86addb
+uuid: 14b2538d-166c-4000-8535-672d380c6734
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.oira_partner
     - field.field.node.partner.field_collaborator
     - field.field.node.partner.field_country
     - field.field.node.partner.field_dedicated_oira_website
@@ -27,12 +28,71 @@ dependencies:
     - field.field.node.partner.field_workbench_access
     - node.type.partner
   module:
+    - ds
+    - layout_builder
+    - media
     - user
-id: node.partner.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  ds:
+    layout:
+      id: layout_twocol_section
+      library: layout_builder/twocol_section
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        column_widths: 50-50
+    regions:
+      first:
+        - field_logo
+      second:
+        - node_title
+        - node_links
+    fields:
+      node_links:
+        plugin_id: node_links
+        weight: 2
+        label: hidden
+        formatter: default
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+          exclude_node_title: '1'
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.partner.oira_partner
 targetEntityType: node
 bundle: partner
-mode: default
-content: {  }
+mode: oira_partner
+content:
+  field_logo:
+    type: media_thumbnail
+    weight: 0
+    region: first
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
 hidden:
   addtoany: true
   breadcrumbs: true
@@ -46,7 +106,6 @@ hidden:
   field_general_phone: true
   field_guid_main_contact: true
   field_guid_organisation: true
-  field_logo: true
   field_main_contact: true
   field_main_contact_email: true
   field_mission_statement: true

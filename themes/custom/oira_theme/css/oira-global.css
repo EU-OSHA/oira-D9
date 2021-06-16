@@ -4127,6 +4127,55 @@ body[class*=private-zone-] .page-header.h1 {
   }
 }
 
+.node--type-practical-tool.node--view-mode-full .node__content {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+@media (min-width: 768px) {
+  .node--type-practical-tool.node--view-mode-full .node__content .field--name-field-image {
+    width: 25%;
+    min-width: 25%;
+    padding: 0 15px;
+  }
+}
+@media (min-width: 768px) {
+  .node--type-practical-tool.node--view-mode-full .node__content .oita-tool-content {
+    width: 75%;
+    min-width: 75%;
+    padding: 0 15px;
+  }
+}
+.node--type-practical-tool.node--view-mode-full .node__content .field .field__label {
+  font-weight: 700;
+}
+.node--type-practical-tool.node--view-mode-full .node__content .field--name-field-sector-category,
+.node--type-practical-tool.node--view-mode-full .node__content .field--type-language-field,
+.node--type-practical-tool.node--view-mode-full .node__content .field--name-field-country {
+  font-weight: 700;
+  font-style: italic;
+}
+.node--type-practical-tool.node--view-mode-full .node__content .field--name-field-tool-link {
+  margin: 0 0 2rem;
+}
+.node--type-practical-tool.node--view-mode-full .node__content .field--name-field-tool-link a {
+  color: #58585a;
+}
+.node--type-practical-tool.node--view-mode-full .node__content .field--name-node-title h2 {
+  font-size: 1.125rem;
+}
+.node--type-practical-tool.node--view-mode-full .node__content .field--name-field-related-partners .layout--twocol-section {
+  align-items: center;
+}
+.node--type-practical-tool.node--view-mode-full .node__content .field--name-field-related-partners .layout--twocol-section .layout__region {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .site-footer {
   width: 100%;
   height: auto;

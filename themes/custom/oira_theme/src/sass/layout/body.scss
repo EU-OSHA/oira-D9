@@ -3393,4 +3393,59 @@ body[class*="private-zone-"] {
   }
 }
 
+.node--type-practical-tool.node--view-mode-full {
+  .node__content {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    .field--name-field-image {
+      @media(min-width: 768px) {
+        width: 25%;
+        min-width: 25%;
+        padding: 0 15px;
+      }
+    }
+    .oita-tool-content {
+      @media(min-width: 768px) {
+        width: 75%;
+        min-width: 75%;
+        padding: 0 15px;
+      }
+    }
+    .field {
+      .field__label {
+        font-weight: $font-weight-bold;
+      }
+    }
+    .field--name-field-sector-category,
+    .field--type-language-field,
+    .field--name-field-country {
+      font-weight: $font-weight-bold;
+      font-style: italic;
+    }
+    .field--name-field-tool-link {
+      margin: 0 0 2rem;
+      a {
+        color: $text-color-black;
+      }
+    }
+    .field--name-node-title {
+      h2 {
+        font-size: 1.125rem;
+      }
+    }
+    .field--name-field-related-partners .layout--twocol-section {
+      align-items: center;
+      .layout__region {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
+
 
