@@ -4486,6 +4486,14 @@ body.toolbar-fixed.toolbar-tray-open #header {
   color: #FFF;
 }
 
+.role-partner .block-oira-masquerade a {
+  padding: 0;
+  background: transparent;
+  color: #003399;
+  font-style: italic;
+  font-weight: 700;
+}
+
 #block-generalsearch-api {
   margin-bottom: 0.5rem;
 }
@@ -5355,16 +5363,42 @@ body.toolbar-fixed.toolbar-tray-open #header {
     display: flex;
     align-items: center;
   }
-  #block-oira-theme-main-menu .nav-link.dropdown-toggle:after {
+  #block-oira-theme-main-menu li.nav-item.menu-item--expanded {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #block-oira-theme-main-menu li.nav-item.menu-item--expanded .nav-link:after {
+    display: inline-block;
     border: none !important;
     display: inline-block;
     margin-left: 15px;
     content: "" !important;
     font-family: "Glyphicons Halflings";
     color: #FFF;
+    text-indent: normal;
   }
-  #block-oira-theme-main-menu .nav-link.dropdown-toggle.clicked:after {
+  #block-oira-theme-main-menu li.nav-item.menu-item--expanded .nav-link.cliked:before {
     content: "" !important;
+  }
+  #block-oira-theme-main-menu li.nav-item.menu-item--expanded .dropdown-menu {
+    width: 100%;
+    padding-left: 1rem;
+    box-shadow: none;
+    background: none;
+  }
+  #block-oira-theme-main-menu li.nav-item.menu-item--expanded .dropdown-menu.show-me {
+    display: block;
+  }
+  #block-oira-theme-main-menu li.nav-item.menu-item--expanded .dropdown-menu li {
+    padding-left: 0;
+    border-bottom: 1px solid #37d0ff;
+  }
+  #block-oira-theme-main-menu li.nav-item.menu-item--expanded .dropdown-menu li a {
+    color: #58585a;
+  }
+  #block-oira-theme-main-menu li.nav-item.menu-item--expanded .dropdown-menu li:last-child {
+    border-bottom: none;
   }
 
   #block-headerprintandfontsize {
@@ -5419,7 +5453,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   /*** Sidebar Toggle ***/
   .toggle-sidebar {
     border: none;
-    background-color: #786586;
+    background-color: #765e84;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5436,16 +5470,21 @@ body.toolbar-fixed.toolbar-tray-open #header {
     font-size: 1.3rem;
     color: #FFF;
   }
+  .toggle-sidebar:focus {
+    outline: none;
+  }
 
   .sidebar_first.sidebar-expanded {
     display: block !important;
     position: absolute;
-    top: 0;
-    left: 0;
+    max-width: 720px;
+    top: 500px;
+    left: 24px;
     z-index: 9999;
     padding-bottom: 1.5rem;
   }
-  .sidebar_first aside:after {
+  .sidebar_first aside .sidebar-close:after {
+    cursor: pointer;
     display: block;
     content: "";
     font-family: "Glyphicons Halflings";
@@ -5945,18 +5984,10 @@ body.toolbar-fixed.toolbar-tray-open #header {
   .sidebar_first.sidebar-expanded {
     display: block !important;
     position: absolute;
-    top: 0;
+    top: 470px;
     left: 0;
     z-index: 9999;
     padding-bottom: 1.5rem;
-  }
-  .sidebar_first aside:after {
-    display: block;
-    content: "";
-    font-family: "Glyphicons Halflings";
-    font-size: 1.2em;
-    color: #FFF;
-    float: right;
   }
 
   /*** OiRA TOols ***/
