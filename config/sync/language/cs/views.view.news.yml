@@ -23,6 +23,7 @@ display:
         body:
           alter:
             more_link_text: Více
+      title: Zprávy
   attachment_1:
     display_options:
       fields:

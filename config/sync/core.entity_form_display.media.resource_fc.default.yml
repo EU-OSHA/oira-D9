@@ -9,6 +9,7 @@ dependencies:
     - media.type.resource_fc
   module:
     - file
+    - imce
     - languagefield
     - link
     - path
@@ -44,7 +45,9 @@ content:
     weight: 2
     settings:
       progress_indicator: throbber
-    third_party_settings: {  }
+    third_party_settings:
+      imce:
+        enabled: false
     type: file_generic
     region: content
   name:
