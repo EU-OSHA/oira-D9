@@ -35,17 +35,45 @@
     .nav-link.dropdown-toggle {
       display: flex;
       align-items: center;
-      &:after {
-        border: none !important;
-        display: inline-block;
-        margin-left: 15px;
-        content: "\e250" !important;
-        font-family: "Glyphicons Halflings";
-        color: $text-color-white;
-      }
-      &.clicked {
+    }
+    li.nav-item.menu-item--expanded {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .nav-link {
         &:after {
-          content: "\e252" !important;
+          display: inline-block;
+          border: none !important;
+          display: inline-block;
+          margin-left: 15px;
+          content: "\e250" !important;
+          font-family: "Glyphicons Halflings";
+          color: $text-color-white;
+          text-indent: normal;
+        }
+        &.cliked {
+          &:before {
+            content: "\e252" !important;
+          }
+        }
+      }
+      .dropdown-menu {
+        width: 100%;
+        padding-left: 1rem;
+        box-shadow: none;
+        background: none;
+        &.show-me {
+          display: block;
+        }
+        li {
+          padding-left: 0;
+          border-bottom: 1px solid #37d0ff;
+          a {
+            color: #58585a;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
         }
       }
     }
@@ -102,7 +130,7 @@
   /*** Sidebar Toggle ***/
   .toggle-sidebar {
     border: none;
-    background-color: $bg-color-purple;
+    background-color: #765e84;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,25 +146,32 @@
       font-size: 1.3rem;
       color: $text-color-white;
     }
+    &:focus {
+      outline: none;
+    }
   }
 
   .sidebar_first {
     &.sidebar-expanded {
       display: block !important;
       position: absolute;
-      top: 0;
-      left: 0;
+      max-width: 720px;
+      top: 500px;
+      left: 24px;
       z-index: 9999;
       padding-bottom: 1.5rem;
     }
     aside {
-      &:after {
-        display:block;
-        content: "\e253";
-        font-family: "Glyphicons Halflings";
-        font-size: 1.2em;
-        color: $text-color-white;
-        float: right;
+      .sidebar-close {
+        &:after {
+          cursor: pointer;
+          display:block;
+          content: "\e253";
+          font-family: "Glyphicons Halflings";
+          font-size: 1.2em;
+          color: $text-color-white;
+          float: right;
+        }
       }
     }
   }

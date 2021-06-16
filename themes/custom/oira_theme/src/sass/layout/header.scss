@@ -297,6 +297,17 @@ body.toolbar-fixed {
   }
 }
 
+.role-partner {
+  .block-oira-masquerade a {
+    padding: 0;
+    background: transparent;
+    color: $text-color-blue;
+    font-style: italic;
+    font-weight: $font-weight-bold;
+  }
+}
+
+
 #block-generalsearch-api {
   margin-bottom: 0.5rem;
   .views-exposed-form {

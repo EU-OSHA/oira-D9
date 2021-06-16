@@ -46,16 +46,6 @@ jQuery(document).ready(function($){
     });
   });
 
-  //Add display block
-  /*if ($(".page-view-oira-ws")[0]) {
-    setTimeout(function () {
-      $("#sidebar_first aside h2").click(function () {
-        $(this).parent().toggleClass("active");
-        $(this).parent().children('.content').slideToggle();
-      });
-    }, 200);
-  } */
-
 
     windowWidth= jQuery(window).width();
 
@@ -153,7 +143,7 @@ jQuery(document).ready(function($){
       $('#sidebar_first').toggleClass('sidebar-expanded');
     });
 
-    $('.sidebar_first aside').click(function(){
+    $('.sidebar_first aside .sidebar-close').click(function(){
       $(this).toggleClass('clicked');
       $('#sidebar_first').removeClass('sidebar-expanded');
     });
@@ -168,10 +158,18 @@ jQuery(document).ready(function($){
     $('.page-node-67 .field--name-field-summary').addClass(".jquery--element-moved");
 
 
-  $('.menu--main .nav-link.dropdown-toggle').click(function(){
+  /*** Menu on mobile ***/
+  //$('.menu--main .nav-item.menu-item--expanded .dropdown-menu').before( "<span class='nav-icon'>&nbsp;</span>" );
+  $('.menu--main .nav-item.menu-item--expanded .nav-link').click(function(){
     $(this).toggleClass('clicked');
-    $(this).parent('.nav-item').find('.dropdown-menu').slideToggle();
+    $(this).parent('.nav-item').find('ul.dropdown-menu').toggleClass('show-me');
   });
+  $('.menu--main .nav-item.menu-item--expanded:nth-child(6)').removeClass('dropdown');
+  $('.menu--main .nav-item.menu-item--expanded:nth-child(6) a').removeClass('dropdown-toggle');
+  $('.menu--main .nav-item.menu-item--expanded:nth-child(6) ul li').removeClass('dropdown-item');
+  $('.menu--main .nav-item.menu-item--expanded:nth-child(6) a').removeAttr( "data-drupal-link-system-path" );
+  /*** ***/
+
 
   /*** Slide Toggle in Partner profile ***/
   $('.partner__address .field__label-widget').click(function(){
