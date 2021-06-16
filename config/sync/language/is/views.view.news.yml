@@ -20,3 +20,6 @@ display:
         view_node:
           text: 'Frekari upplýsingar'
       use_more_text: 'Skoða allt'
+  oshnews_list:
+    display_options:
+      title: Fréttir
