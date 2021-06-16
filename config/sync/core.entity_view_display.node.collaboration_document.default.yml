@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.collaboration_document.field_strategic_type_2
     - node.type.collaboration_document
   module:
-    - options
+    - languagefield
     - text
     - user
 id: node.collaboration_document.default
@@ -21,51 +21,37 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
   field_collaboration_items:
     type: entity_reference_entity_view
-    weight: 105
-    label: above
+    weight: 1
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
     region: content
   field_languages:
-    weight: 103
+    weight: 2
     label: above
     settings:
-      link: true
+      link_to_entity: false
+      format:
+        name: name
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_multiple_sector:
-    weight: 104
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_strategic_type_2:
-    weight: 106
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+    type: languagefield_default
     region: content
 hidden:
   addtoany: true
+  breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_multiple_sector: true
+  field_strategic_type_2: true
   langcode: true
+  links: true
   search_api_excerpt: true

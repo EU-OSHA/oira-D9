@@ -90,12 +90,21 @@ display:
           summary: ''
           description: ''
           columns:
+            node_bulk_form: node_bulk_form
             title: title
             type: type
             name: name
-            moderation_state: moderation_state
+            workbench_access_section__partner: workbench_access_section__partner
+            status: status
+            moderation_state_1: moderation_state_1
             changed: changed
+            operations: operations
           info:
+            node_bulk_form:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
             title:
               sortable: true
               default_sort_order: asc
@@ -111,14 +120,28 @@ display:
               empty_column: false
               responsive: ''
             name:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            workbench_access_section__partner:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            moderation_state:
+            status:
               sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            moderation_state_1:
+              sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
@@ -127,6 +150,11 @@ display:
             changed:
               sortable: true
               default_sort_order: desc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            operations:
               align: ''
               separator: ''
               empty_column: false

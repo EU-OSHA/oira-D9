@@ -304,20 +304,10 @@
     &.sidebar-expanded {
       display: block !important;
       position: absolute;
-      top: 0;
+      top: 470px;
       left: 0;
       z-index: 9999;
       padding-bottom: 1.5rem;
-    }
-    aside {
-      &:after {
-        display:block;
-        content: "\e253";
-        font-family: "Glyphicons Halflings";
-        font-size: 1.2em;
-        color: $text-color-white;
-        float: right;
-      }
     }
   }
 
@@ -572,6 +562,14 @@
       .count-item__number {
         font-size: 1rem;
         font-style: italic;
+        &:before {
+          content:"(";
+          display: inline-block;
+        }
+        &:after {
+          content:")";
+          display: inline-block;
+        }
       }
     }
   }
@@ -713,6 +711,28 @@
     }
     .field-partner-profile.field-partner-profile--title {
       max-width: 100%;
+    }
+  }
+
+  .page-view-promotional-resources-search {
+    main .views-row .content-view-pm-view {
+      border: none;
+    }
+    .views-exposed-form,
+    .view-header {
+      display: none;
+    }
+    .content-view-pm-view {
+      border-top: none;
+    }
+  }
+
+  .block-views-blockoshwiki-featured-articles-oshwiki-related-articles,
+  .block-views-blocknews-block-2,
+  .block-views-blockadditional-resources-block {
+    .content,
+    h2{
+      padding: 0;
     }
   }
 

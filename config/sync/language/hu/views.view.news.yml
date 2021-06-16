@@ -20,3 +20,6 @@ display:
       fields:
         view_node:
           text: 'További tudnivalók'
+  oshnews_list:
+    display_options:
+      title: Hírek

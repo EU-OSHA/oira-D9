@@ -1,0 +1,28 @@
+uuid: 31162fa8-b8a1-4212-98d7-8fb85cf2b3bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.resource_media_language_name_resource
+  module:
+    - facets
+    - system
+  theme:
+    - oira_theme
+id: resourcemedialanguagenameresource_2
+theme: oira_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:resource_media_language_name_resource'
+settings:
+  id: 'facet_block:resource_media_language_name_resource'
+  label: Language
+  provider: facets
+  label_display: visible
+  block_id: resourcemedialanguagenameresource_2
+visibility:
+  request_path:
+    id: request_path
+    pages: "/promotional-resources-search/*\r\n/promotional-resources-search"
+    negate: false

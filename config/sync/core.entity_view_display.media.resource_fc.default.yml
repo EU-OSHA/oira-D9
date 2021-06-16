@@ -8,6 +8,7 @@ dependencies:
     - field.field.media.resource_fc.field_media_file
     - media.type.resource_fc
   module:
+    - ds
     - file
     - languagefield
     - link
@@ -43,10 +44,18 @@ content:
     weight: 2
     settings:
       use_description_as_link_text: true
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: file_default
     region: content
 hidden:
+  breadcrumbs: true
   created: true
   entity_print_view_epub: true
   entity_print_view_pdf: true

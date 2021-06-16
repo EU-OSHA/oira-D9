@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.collaboration_document.field_strategic_type_2
     - node.type.collaboration_document
   module:
-    - media_library
+    - chosen_field
     - path
     - text
 id: node.collaboration_document.default
@@ -35,23 +35,22 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_collaboration_items:
-    type: media_library_widget
+    type: options_select
     weight: 5
-    settings:
-      media_types: {  }
+    settings: {  }
     third_party_settings: {  }
     region: content
   field_languages:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_multiple_sector:
     weight: 4
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: options_buttons
     region: content
   field_strategic_type_2:
     weight: 26
@@ -59,18 +58,13 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  langcode:
-    type: language_select
-    weight: 12
+  moderation_state:
+    type: string_textfield
+    weight: 100
     region: content
     settings:
-      include_locked: true
-    third_party_settings: {  }
-  moderation_state:
-    type: moderation_state_default
-    weight: 100
-    settings: {  }
-    region: content
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path
@@ -109,17 +103,19 @@ content:
     third_party_settings: {  }
   translation:
     weight: 10
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   uid:
-    type: entity_reference_autocomplete
+    type: chosen_select
     weight: 6
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
+    settings: {  }
     region: content
     third_party_settings: {  }
-hidden: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
