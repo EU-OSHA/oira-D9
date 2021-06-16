@@ -29,11 +29,57 @@ dependencies:
   module:
     - datetime
     - ds
+    - field_group
     - languagefield
     - link
     - media
     - text
     - user
+third_party_settings:
+  field_group:
+    group_image:
+      children:
+        - field_image
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: oita-tool-image
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Image
+    group_content:
+      children:
+        - field_publication_date
+        - body
+        - field_language
+        - field_country
+        - field_tool_link
+        - field_related_partners
+        - field_co_author_node
+        - field_third_partner_node
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: oita-tool-content
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Content
 id: node.practical_tool.default
 targetEntityType: node
 bundle: practical_tool
@@ -42,17 +88,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  content_moderation_control:
-    weight: -20
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
   field_co_author_node:
-    weight: 8
+    weight: 9
     label: hidden
     settings:
       view_mode: related_partner
@@ -61,7 +102,7 @@ content:
     type: entity_reference_entity_view
     region: content
   field_country:
-    weight: 5
+    weight: 6
     label: above
     settings:
       link: false
@@ -69,7 +110,7 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    weight: 0
+    weight: 1
     label: hidden
     settings:
       image_style: media_library
@@ -78,7 +119,7 @@ content:
     type: media_thumbnail
     region: content
   field_language:
-    weight: 4
+    weight: 5
     label: above
     settings:
       link_to_entity: false
@@ -88,7 +129,7 @@ content:
     type: languagefield_default
     region: content
   field_publication_date:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       timezone_override: ''
@@ -97,24 +138,23 @@ content:
     type: datetime_default
     region: content
   field_related_partners:
-    weight: 7
+    weight: 8
     label: hidden
     settings:
-      view_mode: related_partner
+      view_mode: oira_partner
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: entity_reference_entity_view
     region: content
-  field_sector_category:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_third_partner_node:
-    weight: 9
+    weight: 10
     label: hidden
     settings:
       view_mode: related_partner
@@ -130,7 +170,7 @@ content:
     type: entity_reference_entity_view
     region: content
   field_tool_link:
-    weight: 6
+    weight: 7
     label: hidden
     settings:
       trim_length: 80
@@ -141,13 +181,10 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  links:
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   addtoany: true
+  breadcrumbs: true
+  content_moderation_control: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
@@ -155,6 +192,7 @@ hidden:
   field_alternative_title: true
   field_co_author: true
   field_revised_date: true
+  field_sector_category: true
   field_third_description: true
   field_third_language: true
   field_third_partner: true
@@ -163,4 +201,5 @@ hidden:
   field_wf_notification: true
   field_workbench_access: true
   langcode: true
+  links: true
   search_api_excerpt: true
