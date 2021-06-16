@@ -1,0 +1,10 @@
+uuid: 18d279b6-4fe1-4851-9324-38f7e511950f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.oira_partner
+label: 'Oira Partner'
+targetEntityType: node
+cache: true
