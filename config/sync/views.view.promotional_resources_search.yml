@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.storage.media.field_language
-    - field.storage.media.field_link
     - field.storage.node.body
     - field.storage.node.field_image
     - field.storage.node.field_logo
     - field.storage.node.field_promotional_material_type
+    - field.storage.node.field_resource_file
+    - field.storage.node.field_resource_language
+    - field.storage.node.field_resource_link
     - field.storage.node.field_revised_date
     - image.style.medium
     - image.style.thumbnail
@@ -758,75 +760,6 @@ display:
                 display_method: label
           entity_type: node
           plugin_id: search_api_field
-        field_language:
-          id: field_language
-          table: search_api_index_promotional_resources
-          field: field_language
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-          plugin_id: search_api_field
         title:
           id: title
           table: search_api_index_promotional_resources
@@ -949,80 +882,6 @@ display:
           type: text_default
           settings: {  }
           group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
-          plugin_id: search_api_field
-        field_link:
-          id: field_link
-          table: search_api_index_promotional_resources
-          field: field_link
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: uri
-          type: link
-          settings:
-            trim_length: null
-            url_only: false
-            url_plain: false
-            rel: nofollow
-            target: _blank
-          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -1678,10 +1537,10 @@ display:
             multi_type: separator
             multi_separator: ', '
           plugin_id: search_api_field
-        field_language_2:
-          id: field_language_2
+        field_resource_language:
+          id: field_resource_language
           table: search_api_index_promotional_resources
-          field: field_language
+          field: field_resource_language
           relationship: none
           group_type: group
           admin_label: ''
@@ -1710,7 +1569,7 @@ display:
             more_link: false
             more_link_text: ''
             more_link_path: ''
-            strip_tags: true
+            strip_tags: false
             trim: false
             preserve_tags: ''
             html: false
@@ -1731,9 +1590,9 @@ display:
           settings:
             link_to_entity: 0
             format:
-              iso: iso
+              name: name
               icon: 0
-              name: 0
+              iso: 0
               name_native: 0
           group_column: value
           group_columns: {  }
@@ -1753,10 +1612,10 @@ display:
             multi_type: separator
             multi_separator: ', '
           plugin_id: search_api_field
-        filename_1:
-          id: filename_1
+        field_resource_link:
+          id: field_resource_link
           table: search_api_index_promotional_resources
-          field: filename_1
+          field: field_resource_link
           relationship: none
           group_type: group
           admin_label: ''
@@ -1801,10 +1660,15 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings: {  }
-          group_column: value
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: null
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: _blank
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -1822,20 +1686,20 @@ display:
             multi_type: separator
             multi_separator: ', '
           plugin_id: search_api_field
-        uri_1:
-          id: uri_1
+        field_resource_file:
+          id: field_resource_file
           table: search_api_index_promotional_resources
-          field: uri_1
+          field: field_resource_file
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: true
           alter:
-            alter_text: true
-            text: '<span class="icon-file"></span>{{ filename_1 }} ({{field_language_2|upper}})'
-            make_link: true
-            path: '{{ uri_1}}'
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -1846,7 +1710,7 @@ display:
             link_class: ''
             prefix: ''
             suffix: ''
-            target: _blank
+            target: ''
             nl2br: false
             max_length: 0
             word_boundary: true
@@ -1870,12 +1734,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: value
-          type: file_uri
+          click_sort_column: target_id
+          type: file_default
           settings:
-            link_to_file: true
-            file_download_path: true
-          group_column: value
+            use_description_as_link_text: true
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -1904,7 +1767,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"content-view-pm-view\">\r\n\r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }} </div>\r\n  </div>\r\n\r\n  <div class=\"group-right\">\r\n    <div class=\"field-revised-date\">{{ field_revised_date }}</div>\r\n    <div class=\"tags\"> \r\n      <p class=\"tag-country\">{{ name }}</p> \r\n      <p class=\"tag-type\">{{ name_3 }}</p> \r\n      <p class=\"tag-language\">{{field_language }}</p>\r\n    </div>\r\n    <div class=\"pm-title\"><h3>{{ title }}</h3></div>\r\n    <div class=\"pm-body\">{{ body }} </div>\r\n    <div class=\"resource-link\">{{ field_link }}</div>\r\n    <div class=\"file\">{{ uri_1 }}</div>\r\n\r\n    <div class=\"partners-wrapper\">\r\n      \r\n      {% if (title_1) %}\r\n      <div class=\"partner-wrapper partner-wrapper-related\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n         {{field_logo}}\r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n          <h4>{{ title_1 }}</h4>\r\n          {{ path }} \r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n  \r\n      {% if (title_2)%}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_2 }}</h4>\r\n           {{ view_node_1 }}\r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n    </div>\r\n\r\n    <span class=\"more-link\"> See more</span>\r\n\r\n  </div>\r\n</div>\r\n"
+            text: "<div class=\"content-view-pm-view\">\r\n\r\n  <div class=\"group-left\">\r\n    <div class=\"views-field views-field-field-image\">{{ field_image }} </div>\r\n  </div>\r\n\r\n  <div class=\"group-right\">\r\n    <div class=\"field-revised-date\">{{ field_revised_date }}</div>\r\n    <div class=\"tags\"> \r\n      <p class=\"tag-country\">{{ name }}</p> \r\n      <p class=\"tag-type\">{{ name_3 }}</p> \r\n      {{ field_resource_language }} \r\n    </div>\r\n    <div class=\"pm-title\"><h3>{{ title }}</h3></div>\r\n    <div class=\"pm-body\">{{ body }} </div>\r\n    <div class=\"resource-link\">{{ field_resource_link }}</div>\r\n    <div class=\"file\">{{ field_resource_file }}</div>\r\n\r\n    <div class=\"partners-wrapper\">\r\n      \r\n      {% if (title_1) %}\r\n      <div class=\"partner-wrapper partner-wrapper-related\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n         {{field_logo}}\r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n          <h4>{{ title_1 }}</h4>\r\n          {{ path }} \r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n  \r\n      {% if (title_2)%}\r\n      <div class=\"partner-wrapper partner-wrapper-co-author\">\r\n        <div class=\"partner-inner-group partner-inner-group--img\">\r\n          {{ field_logo_1 }} \r\n        </div>\r\n        <div class=\"partner-inner-group partner-inner-group--data\">\r\n           <h4>{{ title_2 }}</h4>\r\n           {{ view_node_1 }}\r\n        </div>\r\n      </div>\r\n      {% endif %}\r\n\r\n    </div>\r\n\r\n    <span class=\"more-link\"> See more</span>\r\n\r\n  </div>\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -2264,11 +2127,13 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.media.field_language'
-        - 'config:field.storage.media.field_link'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_logo'
         - 'config:field.storage.node.field_promotional_material_type'
+        - 'config:field.storage.node.field_resource_file'
+        - 'config:field.storage.node.field_resource_language'
+        - 'config:field.storage.node.field_resource_link'
         - 'config:field.storage.node.field_revised_date'
         - 'config:search_api.index.promotional_resources'
   page_1:
@@ -2296,10 +2161,12 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.media.field_language'
-        - 'config:field.storage.media.field_link'
         - 'config:field.storage.node.body'
         - 'config:field.storage.node.field_image'
         - 'config:field.storage.node.field_logo'
         - 'config:field.storage.node.field_promotional_material_type'
+        - 'config:field.storage.node.field_resource_file'
+        - 'config:field.storage.node.field_resource_language'
+        - 'config:field.storage.node.field_resource_link'
         - 'config:field.storage.node.field_revised_date'
         - 'config:search_api.index.promotional_resources'
