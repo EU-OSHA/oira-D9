@@ -11,7 +11,7 @@ field_name: field_oira_private_image
 entity_type: node
 bundle: oira_private_image
 label: Image
-description: ''
+description: "Files must be less than 1.95 GB.\r\nAllowed file types: png gif jpg jpeg."
 required: true
 translatable: false
 default_value: {  }

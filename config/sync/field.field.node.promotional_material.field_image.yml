@@ -11,7 +11,7 @@ field_name: field_image
 entity_type: node
 bundle: promotional_material
 label: Image
-description: ''
+description: "Files must be less than 5 MB.\r\nAllowed file types: png gif jpg jpeg."
 required: false
 translatable: false
 default_value: {  }
