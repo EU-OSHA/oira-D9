@@ -62,11 +62,11 @@ jQuery(document).ready(function($){
     }
 
     // Prevent default behavior on click in link
-    if(windowWidth <= 1023){
+    /*if(windowWidth <= 1023){
       $('#navbar-main ul.navbar-nav li:nth-child(6) a').click(function(event) {
         event.preventDefault();
       });
-    }
+    }*/
 
     // See more - less
     $('.view-display-id-block_1 .views-col .see-more').click(function(){
@@ -159,17 +159,11 @@ jQuery(document).ready(function($){
 
 
   /*** Menu on mobile ***/
-  //$('.menu--main .nav-item.menu-item--expanded .dropdown-menu').before( "<span class='nav-icon'>&nbsp;</span>" );
-  $('.menu--main .nav-item.menu-item--expanded .nav-link').click(function(){
+  $('.menu--main .nav-item.menu-item--expanded').click(function(){
     $(this).toggleClass('clicked');
-    $(this).parent('.nav-item').find('ul.dropdown-menu').toggleClass('show-me');
+    $(this).find('ul.dropdown-menu').slideToggle('show-me');
   });
-  $('.menu--main .nav-item.menu-item--expanded:nth-child(6)').removeClass('dropdown');
-  $('.menu--main .nav-item.menu-item--expanded:nth-child(6) a').removeClass('dropdown-toggle');
-  $('.menu--main .nav-item.menu-item--expanded:nth-child(6) ul li').removeClass('dropdown-item');
-  $('.menu--main .nav-item.menu-item--expanded:nth-child(6) a').removeAttr( "data-drupal-link-system-path" );
   /*** ***/
-
 
   /*** Slide Toggle in Partner profile ***/
   $('.partner__address .field__label-widget').click(function(){
