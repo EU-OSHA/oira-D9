@@ -752,7 +752,7 @@ display:
             label: ''
           plugin_id: standard
       css_class: 'view-oira-partners container'
-      rendering_language: '***LANGUAGE_site_default***'
+      rendering_language: '***LANGUAGE_language_interface***'
       style:
         type: html_list
         options:
@@ -1550,7 +1550,7 @@ display:
       row:
         type: fields
         options: {  }
-      rendering_language: '***LANGUAGE_site_default***'
+      rendering_language: '***LANGUAGE_language_interface***'
       fields:
         field_flag:
           id: field_flag
@@ -2955,7 +2955,7 @@ display:
       row:
         type: fields
         options: {  }
-      rendering_language: '***LANGUAGE_site_default***'
+      rendering_language: '***LANGUAGE_language_interface***'
       query:
         type: views_query
         options:
