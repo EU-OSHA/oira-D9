@@ -11,7 +11,7 @@ field_name: field_image_home_latest_material
 entity_type: node
 bundle: promotional_material
 label: 'Image Home latest material'
-description: ''
+description: "Image to Home page. Recommended image dimensions: 342 x 259 pixels\r\nFiles must be less than 5 MB.\r\nAllowed file types: png gif jpg jpeg."
 required: false
 translatable: false
 default_value: {  }
