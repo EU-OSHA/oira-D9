@@ -2299,9 +2299,15 @@ select.custom-select{
 
 .view-country-partner-content {
   > .view-content.row {
-    /* background: $bg-color-white; */
     margin-left: 0;
     margin-right: 0;
+    @media(max-width: 767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media(min-width: 768px) {
+      margin: 0 -15px;
+    }
     padding-top: 15px;
     > h3 {
       font-size: 2.1875rem;
@@ -2315,6 +2321,10 @@ select.custom-select{
         height: 45px;
         float: right;
       }
+    }
+    .views-row {
+      padding-bottom: 23px;
+      border-bottom: 2px solid $text-color-purple-light;
     }
   }
   .datetime {
@@ -2343,13 +2353,27 @@ select.custom-select{
 
   .view-header,
   .view-footer {
+    .view-content.row {
+      @media(max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
     .view-content > h3 {
-      padding: 0 15px 10px;
+      padding: 0 0 10px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      @extend .container;
+      @media(min-width: 768px) {
+        width: 750px;
+      }
+      @media(min-width: 992px) {
+        width: 970px;
+      }
+      @media(min-width: 1200px) {
+        width: 1170px;
+      }
       margin-top: 0;
       &:after {
         display: block;
@@ -2370,9 +2394,21 @@ select.custom-select{
       background: $bg-color-purple-light;
     }
     .views-row {
-      padding: 8px 15px 15px;
-      max-width: 1170px;
       margin: 0 auto;
+      border-bottom: 2px solid $bg-color-purple;
+      @media(max-width: 767px) {
+        padding: 0 0 15px;
+      }
+      @media(min-width: 768px) {
+        padding: 0 0 15px;
+        width: 750px;
+      }
+      @media(min-width: 992px) {
+        width: 970px;
+      }
+      @media(min-width: 1200px) {
+        width: 1170px;
+      }
     }
   }
 
@@ -2388,11 +2424,6 @@ select.custom-select{
     }
   }
 
-  /*.view-header + .view-footer {
-    .view-content.row {
-      background: white;
-    }
-  }*/
   .view-footer {
     .view-content > h3 {
       &:after {
@@ -2415,7 +2446,7 @@ select.custom-select{
       }
     }
     &:last-child {
-      margin-bottom: 10px;
+      margin-bottom: 23px;
     }
   }
   .views-field-nothing {
