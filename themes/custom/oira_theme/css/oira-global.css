@@ -5457,6 +5457,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    cursor: pointer;
   }
   #block-oira-theme-main-menu li.nav-item.menu-item--expanded .nav-link:after {
     display: inline-block;
@@ -5468,7 +5469,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
     color: #FFF;
     text-indent: normal;
   }
-  #block-oira-theme-main-menu li.nav-item.menu-item--expanded .nav-link.cliked:before {
+  #block-oira-theme-main-menu li.nav-item.menu-item--expanded.clicked .nav-link:after {
     content: "" !important;
   }
   #block-oira-theme-main-menu li.nav-item.menu-item--expanded .dropdown-menu {

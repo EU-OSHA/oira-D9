@@ -37,6 +37,7 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+      cursor: pointer;
       .nav-link {
         &:after {
           display: inline-block;
@@ -48,8 +49,10 @@
           color: $text-color-white;
           text-indent: normal;
         }
-        &.cliked {
-          &:before {
+      }
+      &.clicked {
+        .nav-link {
+          &:after {
             content: "\e252" !important;
           }
         }
