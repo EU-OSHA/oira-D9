@@ -1470,6 +1470,8 @@ select.custom-select{
       min-width: 25%;
       display: flex;
       margin-right: 0.8rem;
+      display: flex;
+      flex-direction: column;
       .form-group {
         margin-right: 0;
         width: auto;
@@ -3181,7 +3183,7 @@ body[class*="private-zone-"] {
   .private-zone-back-link {
     position: absolute;
     width: auto;
-    top: 3px;
+    top: 10px;
     right: 0;
     z-index: 10;
     color: $text-color-blue-light;

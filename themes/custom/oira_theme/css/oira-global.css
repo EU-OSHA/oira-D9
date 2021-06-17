@@ -2231,6 +2231,8 @@ select.custom-select {
   min-width: 25%;
   display: flex;
   margin-right: 0.8rem;
+  display: flex;
+  flex-direction: column;
 }
 .path-private-zone .views-exposed-form .form-group .form-group {
   margin-right: 0;
@@ -3947,7 +3949,7 @@ body[class*=private-zone-] .page-header.h1 {
 #block-backinprivatezone .private-zone-back-link {
   position: absolute;
   width: auto;
-  top: 3px;
+  top: 10px;
   right: 0;
   z-index: 10;
   color: #10b2e4;
