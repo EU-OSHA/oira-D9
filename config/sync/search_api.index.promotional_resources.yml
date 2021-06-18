@@ -20,6 +20,9 @@ dependencies:
     - field.storage.taxonomy_term.field_image
     - field.storage.node.field_promotional_material_type
     - field.storage.node.field_publication_date
+    - field.storage.node.field_resource_file
+    - field.storage.node.field_resource_language
+    - field.storage.node.field_resource_link
     - field.storage.media.field_media_file
     - field.storage.node.field_resource_fc
     - field.storage.media.field_media_file_1
@@ -218,6 +221,30 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_publication_date
+  field_resource_file:
+    label: 'Resource File'
+    datasource_id: 'entity:node'
+    property_path: field_resource_file
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_resource_file
+  field_resource_language:
+    label: 'Resource Language'
+    datasource_id: 'entity:node'
+    property_path: field_resource_language
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_resource_language
+  field_resource_link:
+    label: 'Resource Link'
+    datasource_id: 'entity:node'
+    property_path: field_resource_link
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_resource_link
   field_revised_date:
     label: 'Revised date'
     datasource_id: 'entity:node'

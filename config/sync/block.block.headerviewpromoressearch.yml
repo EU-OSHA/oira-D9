@@ -1,0 +1,30 @@
+uuid: 9aa02938-9ca0-4209-bd2a-20849a96e62e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_header_view:17369ec5-44ba-453b-9ed1-dfa64c9a8524'
+  module:
+    - block_content
+    - system
+  theme:
+    - oira_theme
+id: headerviewpromoressearch
+theme: oira_theme
+region: header_view
+weight: 0
+provider: null
+plugin: 'block_content:17369ec5-44ba-453b-9ed1-dfa64c9a8524'
+settings:
+  id: 'block_content:17369ec5-44ba-453b-9ed1-dfa64c9a8524'
+  label: 'Header View Promo-res Search'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/promotional-resources-search\r\n/promotional-resources-search/*\r\n/promotional-resources-search?*"
+    negate: false
