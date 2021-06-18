@@ -1393,6 +1393,11 @@ select.custom-select {
   top: -70px;
 }
 
+.user-logged-in.role-partner.page-view-promotional-resources-search main .view-header {
+  right: 15px;
+  top: 50px;
+}
+
 /* OiRA Tools View */
 .page-view-oira-ws .form-item-sort-by .js-form-type-select {
   display: flex;
@@ -2231,6 +2236,8 @@ select.custom-select {
   min-width: 25%;
   display: flex;
   margin-right: 0.8rem;
+  display: flex;
+  flex-direction: column;
 }
 .path-private-zone .views-exposed-form .form-group .form-group {
   margin-right: 0;
@@ -3947,7 +3954,7 @@ body[class*=private-zone-] .page-header.h1 {
 #block-backinprivatezone .private-zone-back-link {
   position: absolute;
   width: auto;
-  top: 3px;
+  top: 10px;
   right: 0;
   z-index: 10;
   color: #10b2e4;
@@ -5384,6 +5391,19 @@ body.toolbar-fixed.toolbar-tray-open #header {
 .node-form .js-form-item {
   display: flex;
   flex-direction: column;
+}
+.node-form .form-group.js-form-item-title-0-value {
+  margin: 0;
+}
+.node-form .form-group.js-form-item-title-0-value:after {
+  width: 100%;
+  margin: 0 0 1rem;
+  content: "The English tool name";
+  display: block;
+  color: #58585a;
+}
+.node-form .form-group.js-filter-wrapper {
+  display: none;
 }
 .node-form select.custom-select {
   padding: 0.5rem;

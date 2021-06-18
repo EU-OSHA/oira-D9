@@ -23,6 +23,19 @@
       display: flex;
       flex-direction: column;
   }
+  .form-group.js-form-item-title-0-value {
+    margin: 0;
+    &:after {
+      width: 100%;
+      margin: 0 0 1rem;
+      content: "The English tool name";
+      display: block;
+      color: $text-color-black;
+    }
+  }
+  .form-group.js-filter-wrapper {
+    display: none;
+  }
   select.custom-select {
     padding: 0.5rem;
     background-position: 98% 50%;
