@@ -18,9 +18,13 @@
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
   }
+  .nav-item.menu-item--expanded {
+    position: relative !important;
+  }
   ul.navbar-nav{
     li{
       border-right: 2px solid $bg-color-white ;
+      position: relative !important;
       .nav-link{
         padding: 0 0.5rem;
       }

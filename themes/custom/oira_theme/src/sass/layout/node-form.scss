@@ -1,3 +1,8 @@
+.node-add-practical-tool {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .node-form {
   background-color: $bg-color-purple-light;
   overflow: auto;
@@ -77,6 +82,44 @@
       margin-top: 50px;
       font-size: 1.4em;
     }
+  }
+  .js-form-type-select {
+    label {
+      font-style: italic;
+    }
+  }
+  small.description {
+    font-size: 1rem !important;
+    color: $text-color-black !important;
+  }
+  select.form-select {
+    background: url(../images/down-arrow-inputs.png) no-repeat right #ffffff;
+    appearance: none;
+    padding-right: 50px !important;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-position-x: right;
+    background-size: contain;
+    margin-right: 0px;
+  }
+  select.form-select[multiple="multiple"] {
+    background: $bg-color-white;
+  }
+}
+
+.node-form-fields-group {
+  margin-bottom: 22px;
+  padding: 0 15px 15px;
+  background: white;
+  h3 {
+    margin: 0 -15px 15px;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    color: $text-color-black-extra;
+    background-color: $bg-color-grey-light-5;
+    border-color: $bg-color-grey-light-4;
   }
 }
 

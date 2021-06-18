@@ -5146,8 +5146,12 @@ body.toolbar-fixed.toolbar-tray-open #header {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
 }
+#navbar-main .nav-item.menu-item--expanded {
+  position: relative !important;
+}
 #navbar-main ul.navbar-nav li {
   border-right: 2px solid #FFF;
+  position: relative !important;
 }
 #navbar-main ul.navbar-nav li .nav-link {
   padding: 0 0.5rem;
@@ -5366,6 +5370,11 @@ body.toolbar-fixed.toolbar-tray-open #header {
   color: #786586;
 }
 
+.node-add-practical-tool {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .node-form {
   background-color: #dfd8e4;
   overflow: auto;
@@ -5446,6 +5455,42 @@ body.toolbar-fixed.toolbar-tray-open #header {
   height: 70px;
   margin-top: 50px;
   font-size: 1.4em;
+}
+.node-form .js-form-type-select label {
+  font-style: italic;
+}
+.node-form small.description {
+  font-size: 1rem !important;
+  color: #58585a !important;
+}
+.node-form select.form-select {
+  background: url(../images/down-arrow-inputs.png) no-repeat right #ffffff;
+  appearance: none;
+  padding-right: 50px !important;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-position-x: right;
+  background-size: contain;
+  margin-right: 0px;
+}
+.node-form select.form-select[multiple=multiple] {
+  background: #FFF;
+}
+
+.node-form-fields-group {
+  margin-bottom: 22px;
+  padding: 0 15px 15px;
+  background: white;
+}
+.node-form-fields-group h3 {
+  margin: 0 -15px 15px;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
 }
 
 @media (max-width: 1023px) {

@@ -10,7 +10,7 @@ field_name: field_alternative_title
 entity_type: node
 bundle: practical_tool
 label: 'Alternative title'
-description: ''
+description: 'This title will be shown when user is navigating the site in tool''s language'
 required: false
 translatable: true
 default_value: {  }

@@ -44,13 +44,19 @@ third_party_settings:
         - field_language
       parent_name: ''
       weight: 2
-      format_type: fieldset
+      format_type: html_element
       region: content
       format_settings:
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
         id: ''
-        classes: ''
-        description: ''
-        required_fields: true
+        classes: node-form-fields-group
+        required_fields: false
       label: 'Alternative language'
     group_third_language:
       children:
@@ -59,13 +65,19 @@ third_party_settings:
         - field_third_language
       parent_name: ''
       weight: 3
-      format_type: fieldset
+      format_type: html_element
       region: content
       format_settings:
+        element: div
+        show_label: true
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
         id: ''
-        classes: ''
-        description: ''
-        required_fields: true
+        classes: node-form-fields-group
+        required_fields: false
       label: 'Third language'
 id: node.practical_tool.default
 targetEntityType: node
