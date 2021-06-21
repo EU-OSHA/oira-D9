@@ -5863,6 +5863,11 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 }
 @media only screen and (max-width: 767px) {
+  #block-privatezoneheader,
+#block-yourprofile {
+    padding: 0 15px;
+  }
+
   .block-oira-masquerade {
     display: none;
   }
