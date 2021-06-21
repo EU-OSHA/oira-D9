@@ -206,6 +206,11 @@ jQuery(document).ready(function($){
     $('.hide-menu').removeClass('clicked');
     $(this).parents('.section.oira-section').find('.menu--private-zone').slideToggle();
   });
+
+  /*** Show/Hide popup in oira tool node form ***/
+  $('#field_image-media-library-wrapper--description').click(function(){
+    $('ul').toggleClass('show-me');
+  });
 });
 
 
