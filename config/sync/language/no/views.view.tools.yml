@@ -1,0 +1,22 @@
+display:
+  block_1:
+    display_options:
+      title: 'Nyeste verktøy'
+      use_more_text: 'Vis alle verktøy'
+      fields:
+        field_tool_link:
+          alter:
+            text: '<a target="_blank" href="{{field_tool_link__uri}}">Få tilgang til verktøyet</a>'
+        field_country: {  }
+        field_language:
+          label: Språk
+        nothing:
+          alter:
+            text: 'Vis mer'
+  default:
+    display_options:
+      fields:
+        field_language:
+          label: Språk
+        field_country:
+          label: Land
