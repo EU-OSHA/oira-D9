@@ -1,0 +1,27 @@
+uuid: f47eeaeb-9822-4fdd-8b7b-a2bd16185a9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_file
+    - node.type.promotional_material
+  module:
+    - file
+id: node.promotional_material.field_resource_file
+field_name: field_resource_file
+entity_type: node
+bundle: promotional_material
+label: 'Resource File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'txt pdf docx zip ppt pptx doc rar odt odp otp xls xlsx'
+  max_filesize: '100 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
