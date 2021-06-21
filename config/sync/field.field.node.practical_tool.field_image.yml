@@ -11,7 +11,7 @@ field_name: field_image
 entity_type: node
 bundle: practical_tool
 label: Image
-description: ''
+description: "<span class=\"help-icon\"></span><span class=\"help-text\">More information</span>\r\n<ul>\r\n<li>File requirements</li>\r\n<li>Files must be less than 5 MB.</li>\r\n<li>Allowed file types: png gif jpg jpeg.</li>\r\n</ul>"
 required: false
 translatable: false
 default_value: {  }
