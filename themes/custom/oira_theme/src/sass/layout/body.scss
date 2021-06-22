@@ -1180,7 +1180,7 @@ select.custom-select{
     border-bottom: 2px solid $text-color-purple-light;
     font-size: 2.187rem;
     font-family: $font-family-oswald;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-normal;
     &:after {
       display: block;
       content:"";
@@ -1408,17 +1408,6 @@ select.custom-select{
 .tabs {
   margin: 0 auto;
   max-width: 1140px;
-}
-
-/**** User Related ***/
-.user-login-form {
-  margin: 0 auto;
-  max-width: 1140px;
-  .btn.btn-primary {
-    background: $bg-color-purple;
-    border: 1px solid $bg-color-purple;
-    color: white;
-  }
 }
 
 /*** Language switcher ***/
@@ -3515,6 +3504,7 @@ body[class*="private-zone-"] {
   }
 }
 
+/*** Sesame page ***/
 .page-node-70,
 .sesame {
   .field--name-body {
@@ -3525,6 +3515,11 @@ body[class*="private-zone-"] {
       }
     }
   }
+}
+
+/**** Results for css ***/
+.results-for {
+  display: none;
 }
 
 

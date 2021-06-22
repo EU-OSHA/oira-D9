@@ -1,0 +1,77 @@
+/**** User Related ***/
+.user-login-form,
+.user-pass {
+  margin: 0 auto;
+  max-width: 500px;
+  .btn.btn-primary {
+    width: 100%;
+    background: $bg-color-blue-light;
+    border: 1px solid $bg-color-blue-light;
+    color: white;
+    text-align: center;
+    &:before {
+      display: inline-block;
+      margin: 0 5px 0 0;
+      font-family: 'Glyphicons Halflings';
+      content: "\e161";
+    }
+    &:hover {
+      background: $text-color-black;
+      border: 1px solid $text-color-black;
+    }
+  }
+  label {
+    color: $text-color-purple;
+    font-weight: $font-weight-bold;
+    &:after {
+      content: "*";
+      background: none;
+      vertical-align: baseline;
+    }
+  }
+  .form-control {
+    margin: 0 0 5px;
+    border: 1px solid $bg-color-grey-light-6;
+    border-radius: 4px;
+    &:focus {
+      border: 1px solid $bg-color-blue-light-2;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .description {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+}
+
+.user-login,
+.user-password {
+  .tabs {
+    margin: 0 auto 20px;
+    max-width: 500px;
+    border-bottom: 1px solid $bg-color-grey-light-4;
+  }
+  .nav-tabs {
+    border: none;
+    .nav-item a {
+      font-style: normal;
+      background: $text-color-black;
+      color: white;
+      opacity: 0.1;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    .active.nav-item a {
+      opacity: 1;
+      background: $bg-color-purple;
+      color: white;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+

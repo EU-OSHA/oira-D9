@@ -2151,7 +2151,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      title: 'New Tools'
+      title: 'New tools'
       defaults:
         title: false
         style: false

@@ -838,6 +838,94 @@ table tr td {
   margin: 0;
 }
 
+/**** User Related ***/
+.user-login-form,
+.user-pass {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.user-login-form .btn.btn-primary,
+.user-pass .btn.btn-primary {
+  width: 100%;
+  background: #10b2e4;
+  border: 1px solid #10b2e4;
+  color: white;
+  text-align: center;
+}
+.user-login-form .btn.btn-primary:before,
+.user-pass .btn.btn-primary:before {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  font-family: "Glyphicons Halflings";
+  content: "";
+}
+.user-login-form .btn.btn-primary:hover,
+.user-pass .btn.btn-primary:hover {
+  background: #58585a;
+  border: 1px solid #58585a;
+}
+.user-login-form label,
+.user-pass label {
+  color: #786586;
+  font-weight: 700;
+}
+.user-login-form label:after,
+.user-pass label:after {
+  content: "*";
+  background: none;
+  vertical-align: baseline;
+}
+.user-login-form .form-control,
+.user-pass .form-control {
+  margin: 0 0 5px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+.user-login-form .form-control:focus,
+.user-pass .form-control:focus {
+  border: 1px solid #66afe9;
+  outline: none;
+  box-shadow: none;
+}
+.user-login-form .description,
+.user-pass .description {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.user-login .tabs,
+.user-password .tabs {
+  margin: 0 auto 20px;
+  max-width: 500px;
+  border-bottom: 1px solid #dddddd;
+}
+.user-login .nav-tabs,
+.user-password .nav-tabs {
+  border: none;
+}
+.user-login .nav-tabs .nav-item a,
+.user-password .nav-tabs .nav-item a {
+  font-style: normal;
+  background: #58585a;
+  color: white;
+  opacity: 0.1;
+}
+.user-login .nav-tabs .nav-item a:hover,
+.user-password .nav-tabs .nav-item a:hover {
+  opacity: 0.5;
+}
+.user-login .nav-tabs .active.nav-item a,
+.user-password .nav-tabs .active.nav-item a {
+  opacity: 1;
+  background: #786586;
+  color: white;
+}
+.user-login .nav-tabs .active.nav-item a:hover,
+.user-password .nav-tabs .active.nav-item a:hover {
+  opacity: 1;
+}
+
 /* Common elements */
 body {
   position: relative;
@@ -1935,7 +2023,7 @@ select.custom-select {
   border-bottom: 2px solid #967ea7;
   font-size: 2.187rem;
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 .block-views-blocktools-block-2 h2:after {
   display: block;
@@ -2167,17 +2255,6 @@ select.custom-select {
 .tabs {
   margin: 0 auto;
   max-width: 1140px;
-}
-
-/**** User Related ***/
-.user-login-form {
-  margin: 0 auto;
-  max-width: 1140px;
-}
-.user-login-form .btn.btn-primary {
-  background: #786586;
-  border: 1px solid #786586;
-  color: white;
 }
 
 /*** Language switcher ***/
@@ -4071,7 +4148,7 @@ body[class*=private-zone-] .page-header.h1 {
   line-height: 1.4;
   vertical-align: top;
   background: transparent;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dddddd;
   color: #58585a;
 }
 .page-view-partner-content .table-striped > tbody tr td a {
@@ -4259,6 +4336,7 @@ body[class*=private-zone-] .page-header.h1 {
   justify-content: center;
 }
 
+/*** Sesame page ***/
 .page-node-70 .field--name-body a,
 .sesame .field--name-body a {
   text-decoration: underline;
@@ -4266,6 +4344,11 @@ body[class*=private-zone-] .page-header.h1 {
 .page-node-70 .field--name-body a:hover,
 .sesame .field--name-body a:hover {
   color: #23527c;
+}
+
+/**** Results for css ***/
+.results-for {
+  display: none;
 }
 
 .site-footer {
@@ -5606,7 +5689,7 @@ body.toolbar-fixed.toolbar-tray-open #header {
   border-top-left-radius: 3px;
   color: #333333;
   background-color: #f5f5f5;
-  border-color: #ddd;
+  border-color: #dddddd;
 }
 
 @media (max-width: 1023px) {
