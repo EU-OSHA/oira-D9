@@ -3836,8 +3836,20 @@ select.custom-select {
   padding: 20px 0;
 }
 .contact-us .block-webform .form-group label {
+  display: flex;
   color: white;
   font-weight: 700;
+}
+.contact-us .block-webform .form-group label:after {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: baseline;
+  margin: 0 0 0 4px;
+  content: "*";
+  font-weight: 700;
+  color: #FFF;
+  background: none !important;
 }
 .contact-us .block-webform .webform-submission-form {
   max-width: 600px;
@@ -4178,6 +4190,25 @@ body[class*=private-zone-] .page-header.h1 {
     padding: 0 15px;
   }
 }
+.node--type-collaboration-document .view-eu-osha-files {
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .node--type-collaboration-document .view-eu-osha-files {
+    padding: 0 15px;
+  }
+}
+.node--type-collaboration-document .view-eu-osha-files .view-content.row {
+  padding: 0;
+}
+.node--type-collaboration-document .view-eu-osha-files .views-row {
+  padding: 0.5rem 0 1rem 1rem;
+  border: none;
+  border-bottom: 1px solid #ededed;
+}
+.node--type-collaboration-document .view-eu-osha-files .views-row .list-group-item {
+  border: none;
+}
 
 .node--type-practical-tool.node--view-mode-full .node__content {
   margin: 0 auto;
@@ -4226,6 +4257,15 @@ body[class*=private-zone-] .page-header.h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.page-node-70 .field--name-body a,
+.sesame .field--name-body a {
+  text-decoration: underline;
+}
+.page-node-70 .field--name-body a:hover,
+.sesame .field--name-body a:hover {
+  color: #23527c;
 }
 
 .site-footer {

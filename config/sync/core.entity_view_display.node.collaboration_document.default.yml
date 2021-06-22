@@ -10,9 +10,23 @@ dependencies:
     - field.field.node.collaboration_document.field_strategic_type_2
     - node.type.collaboration_document
   module:
+    - ds
     - languagefield
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - body
+        - field_languages
 id: node.collaboration_document.default
 targetEntityType: node
 bundle: collaboration_document
@@ -25,31 +39,23 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_collaboration_items:
-    type: entity_reference_entity_view
-    weight: 1
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    region: content
   field_languages:
-    weight: 2
+    type: languagefield_default
+    weight: 1
+    region: content
     label: above
     settings:
       link_to_entity: false
       format:
         name: name
     third_party_settings: {  }
-    type: languagefield_default
-    region: content
 hidden:
   addtoany: true
   breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_collaboration_items: true
   field_multiple_sector: true
   field_strategic_type_2: true
   langcode: true
