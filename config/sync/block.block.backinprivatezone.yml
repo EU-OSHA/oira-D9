@@ -33,6 +33,7 @@ visibility:
     id: user_role
     roles:
       administrator: administrator
+      editor: editor
       partner: partner
     negate: false
     context_mapping:
