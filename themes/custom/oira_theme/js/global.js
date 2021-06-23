@@ -49,14 +49,13 @@ jQuery(document).ready(function($){
 
     windowWidth= jQuery(window).width();
 
-    if(windowWidth <= 992){
-      //search header al hacer click
-      $("#edit-submit-search-api").click(function(){
-        $(this).toggleClass('clicked');
-        //$('#block-oira-theme-search .form-search').stop().show({direction: 'left'}, 500);
-        //$('#block-oira-theme-search .btn-primary').css("pointer-events" , "auto");
-      });
-    };
+  if(windowWidth <= 992){
+    //search header al hacer click
+    $("#edit-actions").click(function(){
+      $('#views-exposed-form-search-api-search-api-block #edit-search-api-fulltext').stop().show({direction: 'left'}, 500);
+      $('#edit-actions .btn-primary').css("pointer-events" , "auto");
+    });
+  }
 
 
     // See more - less

@@ -4601,6 +4601,7 @@ body[class*=private-zone-] .page-header.h1 {
   float: right;
 }
 .top-header-content .header-blocks .block-search-form-block .btn-primary {
+  cursor: pointer;
   border-radius: 0px;
   width: 30px;
   height: 30px;
@@ -4733,9 +4734,11 @@ body.toolbar-fixed.toolbar-tray-open #header {
 #block-generalsearch-api .views-exposed-form .form-row .form-group {
   width: auto;
   margin-right: 0;
+  margin-bottom: 0;
 }
 #block-generalsearch-api .views-exposed-form .form-row .form-actions {
   margin: 0;
+  cursor: pointer;
 }
 
 /* SCSS to Home Page */
