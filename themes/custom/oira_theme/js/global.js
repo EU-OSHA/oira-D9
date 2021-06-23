@@ -49,24 +49,14 @@ jQuery(document).ready(function($){
 
     windowWidth= jQuery(window).width();
 
-    if(windowWidth <= 992){
-      //search header al hacer click
-      $("#edit-actions").click(function(){
-        $('#block-oira-theme-search .form-search').stop().show({direction: 'left'}, 500);
-        $('#block-oira-theme-search .btn-primary').css("pointer-events" , "auto");
-      });
-      $(".search-block-form").mouseleave(function(){
-        $('#block-oira-theme-search .form-search').stop().hide({direction: 'right'}, 500);
-        $('#block-oira-theme-search .btn-primary').css("pointer-events" , "none");
-      });
-    }
+  if(windowWidth <= 992){
+    //search header al hacer click
+    $("#edit-actions").click(function(){
+      $('#views-exposed-form-search-api-search-api-block #edit-search-api-fulltext').stop().show({direction: 'left'}, 500);
+      $('#edit-actions .btn-primary').css("pointer-events" , "auto");
+    });
+  }
 
-    // Prevent default behavior on click in link
-    /*if(windowWidth <= 1023){
-      $('#navbar-main ul.navbar-nav li:nth-child(6) a').click(function(event) {
-        event.preventDefault();
-      });
-    }*/
 
     // See more - less
     $('.view-display-id-block_1 .views-col .see-more').click(function(){

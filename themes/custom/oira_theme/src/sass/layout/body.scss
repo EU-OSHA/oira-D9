@@ -1180,7 +1180,7 @@ select.custom-select{
     border-bottom: 2px solid $text-color-purple-light;
     font-size: 2.187rem;
     font-family: $font-family-oswald;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-normal;
     &:after {
       display: block;
       content:"";
@@ -1408,17 +1408,6 @@ select.custom-select{
 .tabs {
   margin: 0 auto;
   max-width: 1140px;
-}
-
-/**** User Related ***/
-.user-login-form {
-  margin: 0 auto;
-  max-width: 1140px;
-  .btn.btn-primary {
-    background: $bg-color-purple;
-    border: 1px solid $bg-color-purple;
-    color: white;
-  }
 }
 
 /*** Language switcher ***/
@@ -3055,8 +3044,20 @@ select.custom-select{
     padding: 20px 0;
     .form-group {
       label {
+        display: flex;
         color: white;
         font-weight: $font-weight-bold;
+        &:after {
+          display: inline-block;
+          width: auto;
+          height: auto;
+          vertical-align: baseline;
+          margin: 0 0 0 4px;
+          content:"*";
+          font-weight: $font-weight-bold;
+          color: $text-color-white;
+          background: none !important;
+        }
       }
     }
     .webform-submission-form {
@@ -3429,6 +3430,23 @@ body[class*="private-zone-"] {
       padding: 0 15px;
     }
   }
+  .view-eu-osha-files {
+    padding: 0;
+    @media(max-width: 767px) {
+      padding: 0 15px;
+    }
+    .view-content.row {
+      padding: 0;
+    }
+    .views-row {
+      padding: 0.5rem 0 1rem 1rem;
+      border: none;
+      border-bottom: 1px solid $bg-color-grey-light-3;
+      .list-group-item {
+        border: none;
+      }
+    }
+  }
 }
 
 .node--type-practical-tool.node--view-mode-full {
@@ -3484,6 +3502,24 @@ body[class*="private-zone-"] {
       }
     }
   }
+}
+
+/*** Sesame page ***/
+.page-node-70,
+.sesame {
+  .field--name-body {
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: $text-color-blue-hover;
+      }
+    }
+  }
+}
+
+/**** Results for css ***/
+.results-for {
+  display: none;
 }
 
 
