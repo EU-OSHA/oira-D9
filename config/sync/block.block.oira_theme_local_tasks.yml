@@ -25,6 +25,7 @@ visibility:
   user_role:
     id: user_role
     roles:
+      anonymous: anonymous
       administrator: administrator
       oira_project_manager: oira_project_manager
       oira_supervisor: oira_supervisor

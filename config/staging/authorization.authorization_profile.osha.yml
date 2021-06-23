@@ -10,7 +10,7 @@ consumer: authorization_drupal_roles
 provider_config:
   status:
     server: osha
-    only_ldap_authenticated: false
+    only_ldap_authenticated: true
   filter_and_mappings:
     use_first_attr_as_groupid: false
 provider_mappings:
@@ -27,7 +27,7 @@ provider_mappings:
     query: 'cn=PM,ou=OIRA,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
-    query: 'cn=REVIEW,ou=OIRA,ou=Sites,dc=osha,dc=europa,dc=eu'
+    query: 'cn=RVNM,ou=OIRA,ou=Sites,dc=osha,dc=europa,dc=eu'
     is_regex: false
   -
     query: ''
@@ -41,9 +41,9 @@ consumer_mappings:
   -
     role: editor
   -
-    role: project_manager
+    role: oira_project_manager
   -
-    role: none
+    role: oira_supervisor
   -
     role: none
 synchronization_modes:

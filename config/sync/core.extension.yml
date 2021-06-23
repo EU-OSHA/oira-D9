@@ -117,6 +117,7 @@ module:
   oira_masquerade: 0
   oira_partner: 0
   oira_partner_content_count: 0
+  oira_tool: 0
   oira_workflow: 0
   options: 0
   page_cache: 0

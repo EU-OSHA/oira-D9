@@ -14,7 +14,7 @@ body{
 }
 
 #main-wrapper{
-  padding-bottom: 2rem;
+  padding-bottom: 7rem;
 }
 
 a{
@@ -479,6 +479,25 @@ select.custom-select{
     }
     .views-row {
       width: 100%;
+      .resource-link {
+        margin-top: 1rem;
+        a {
+          color: $text-color-blue-light;
+          &:before {
+            display: inline-block;
+            margin: 0 0.5rem 0 0;
+            content: "\e164";
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            color: $text-color-purple;
+          }
+          &:hover {
+            color: $text-color-purple-light;
+          }
+        }
+      }
       .content-view-pm-view {
         display: flex;
         border-top: 2px solid #786586;
@@ -598,6 +617,11 @@ select.custom-select{
 .user-logged-in.page-view-promotional-resources-search main .view-header {
   right: 0;
   top: -70px;
+}
+
+.user-logged-in.role-partner.page-view-promotional-resources-search main .view-header {
+  right: 15px;
+  top: 50px;
 }
 
 /* OiRA Tools View */
@@ -1175,7 +1199,7 @@ select.custom-select{
     border-bottom: 2px solid $text-color-purple-light;
     font-size: 2.187rem;
     font-family: $font-family-oswald;
-    font-weight: $font-weight-medium;
+    font-weight: $font-weight-normal;
     &:after {
       display: block;
       content:"";
@@ -1405,17 +1429,6 @@ select.custom-select{
   max-width: 1140px;
 }
 
-/**** User Related ***/
-.user-login-form {
-  margin: 0 auto;
-  max-width: 1140px;
-  .btn.btn-primary {
-    background: $bg-color-purple;
-    border: 1px solid $bg-color-purple;
-    color: white;
-  }
-}
-
 /*** Language switcher ***/
 .block-lang-dropdown {
   margin-bottom: 6px;
@@ -1470,6 +1483,8 @@ select.custom-select{
       min-width: 25%;
       display: flex;
       margin-right: 0.8rem;
+      display: flex;
+      flex-direction: column;
       .form-group {
         margin-right: 0;
         width: auto;
@@ -2299,9 +2314,15 @@ select.custom-select{
 
 .view-country-partner-content {
   > .view-content.row {
-    /* background: $bg-color-white; */
     margin-left: 0;
     margin-right: 0;
+    @media(max-width: 767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media(min-width: 768px) {
+      margin: 0 -15px;
+    }
     padding-top: 15px;
     > h3 {
       font-size: 2.1875rem;
@@ -2315,6 +2336,10 @@ select.custom-select{
         height: 45px;
         float: right;
       }
+    }
+    .views-row {
+      padding-bottom: 23px;
+      border-bottom: 2px solid $text-color-purple-light;
     }
   }
   .datetime {
@@ -2343,13 +2368,27 @@ select.custom-select{
 
   .view-header,
   .view-footer {
+    .view-content.row {
+      @media(max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
     .view-content > h3 {
-      padding: 0 15px 10px;
+      padding: 0 0 10px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      @extend .container;
+      @media(min-width: 768px) {
+        width: 750px;
+      }
+      @media(min-width: 992px) {
+        width: 970px;
+      }
+      @media(min-width: 1200px) {
+        width: 1170px;
+      }
       margin-top: 0;
       &:after {
         display: block;
@@ -2370,9 +2409,21 @@ select.custom-select{
       background: $bg-color-purple-light;
     }
     .views-row {
-      padding: 8px 15px 15px;
-      max-width: 1170px;
       margin: 0 auto;
+      border-bottom: 2px solid $bg-color-purple;
+      @media(max-width: 767px) {
+        padding: 0 0 15px;
+      }
+      @media(min-width: 768px) {
+        padding: 0 0 15px;
+        width: 750px;
+      }
+      @media(min-width: 992px) {
+        width: 970px;
+      }
+      @media(min-width: 1200px) {
+        width: 1170px;
+      }
     }
   }
 
@@ -2388,11 +2439,6 @@ select.custom-select{
     }
   }
 
-  /*.view-header + .view-footer {
-    .view-content.row {
-      background: white;
-    }
-  }*/
   .view-footer {
     .view-content > h3 {
       &:after {
@@ -2415,7 +2461,7 @@ select.custom-select{
       }
     }
     &:last-child {
-      margin-bottom: 10px;
+      margin-bottom: 23px;
     }
   }
   .views-field-nothing {
@@ -3017,8 +3063,20 @@ select.custom-select{
     padding: 20px 0;
     .form-group {
       label {
+        display: flex;
         color: white;
         font-weight: $font-weight-bold;
+        &:after {
+          display: inline-block;
+          width: auto;
+          height: auto;
+          vertical-align: baseline;
+          margin: 0 0 0 4px;
+          content:"*";
+          font-weight: $font-weight-bold;
+          color: $text-color-white;
+          background: none !important;
+        }
       }
     }
     .webform-submission-form {
@@ -3150,7 +3208,7 @@ body[class*="private-zone-"] {
   .private-zone-back-link {
     position: absolute;
     width: auto;
-    top: 3px;
+    top: 10px;
     right: 0;
     z-index: 10;
     color: $text-color-blue-light;
@@ -3391,6 +3449,96 @@ body[class*="private-zone-"] {
       padding: 0 15px;
     }
   }
+  .view-eu-osha-files {
+    padding: 0;
+    @media(max-width: 767px) {
+      padding: 0 15px;
+    }
+    .view-content.row {
+      padding: 0;
+    }
+    .views-row {
+      padding: 0.5rem 0 1rem 1rem;
+      border: none;
+      border-bottom: 1px solid $bg-color-grey-light-3;
+      .list-group-item {
+        border: none;
+      }
+    }
+  }
+}
+
+.node--type-practical-tool.node--view-mode-full {
+  .node__content {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    .field--name-field-image {
+      @media(min-width: 768px) {
+        width: 25%;
+        min-width: 25%;
+        padding: 0 15px;
+      }
+    }
+    .oita-tool-content {
+      @media(min-width: 768px) {
+        width: 75%;
+        min-width: 75%;
+        padding: 0 15px;
+      }
+    }
+    .field {
+      .field__label {
+        font-weight: $font-weight-bold;
+      }
+    }
+    .field--name-field-sector-category,
+    .field--type-language-field,
+    .field--name-field-country {
+      font-weight: $font-weight-bold;
+      font-style: italic;
+    }
+    .field--name-field-tool-link {
+      margin: 0 0 2rem;
+      a {
+        color: $text-color-black;
+      }
+    }
+    .field--name-node-title {
+      h2 {
+        font-size: 1.125rem;
+      }
+    }
+    .field--name-field-related-partners .layout--twocol-section {
+      align-items: center;
+      .layout__region {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/*** Sesame page ***/
+.page-node-70,
+.sesame {
+  .field--name-body {
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: $text-color-blue-hover;
+      }
+    }
+  }
+}
+
+/**** Results for css ***/
+.results-for {
+  display: none;
 }
 
 

@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - context
-    - ctools
   theme:
     - oira_theme
 _core:
@@ -29,10 +28,3 @@ visibility:
     id: view_inclusion
     negate: false
     view_inclusion: {  }
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      partner: partner
-    negate: true
-    context_mapping:
-      node: '@node.node_route_context:node'

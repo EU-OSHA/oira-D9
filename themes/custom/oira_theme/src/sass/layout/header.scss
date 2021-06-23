@@ -170,6 +170,7 @@
         float: right;
       }
       .btn-primary{
+        cursor: pointer;
         border-radius: 0px;
         width: 30px;
         height: 30px;
@@ -317,9 +318,11 @@ body.toolbar-fixed {
       .form-group {
         width: auto;
         margin-right: 0;
+        margin-bottom: 0;
       }
       .form-actions {
         margin: 0;
+        cursor: pointer;
       }
     }
   }
