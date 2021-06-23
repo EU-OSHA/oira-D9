@@ -73,16 +73,12 @@
   ]
 %}
 
-{% set viewShowAll = drupal_view_result('country_partner_content', 'block_1')|length %}
-{% set viewPromotional = drupal_view_result('country_partner_content', 'block_5')|length %}
-{% set viewOiraTools = drupal_view_result('country_partner_content', 'block_3')|length %}
-{% set viewNews = drupal_view_result('country_partner_content', 'block_4')|length %}
 
-{% set viewOiraToolsAgriculture = drupal_view_result('country_partner_content', 'block_3', node.id , node.id , node.id, '1179')|length %}
-{% set viewOiraToolsCleaning = drupal_view_result('country_partner_content', 'block_3', node.id , node.id , node.id, '1185')|length %}
-{% set viewOiraToolsConstruction = drupal_view_result('country_partner_content', 'block_3', node.id , node.id , node.id, '1184')|length %}
-{% set viewOiraToolsFood = drupal_view_result('country_partner_content', 'block_3', node.id , node.id , node.id, '1189')|length %}
-{% set viewOiraToolsHairdressers = drupal_view_result('country_partner_content', 'block_3', node.id , node.id , node.id, '1192')|length %}
+{% set viewShowAll = drupal_view_result('country_partner_content', 'block_1', node.id, node.id)|length %}
+{% set viewPromotional = drupal_view_result('country_partner_content', 'block_5', node.id, node.id)|length %}
+{% set viewOiraTools = drupal_view_result('country_partner_content', 'block_3', node.id, node.id, node.id)|length %}
+{% set terms = getViewResults('country_partner_content', 'block_3', 'sector_category', node.id) %}
+{% set viewNews = drupal_view_result('country_partner_content', 'block_4', node.id, node.id)|length %}
 
 <article{{ attributes.addClass(classes) }}>
   <header>
@@ -115,31 +111,23 @@
         <div class="row">
           <div class="col">
             <ul id="myTabs" class="col nav nav-pills" role="tablist" data-tabs="tabs">
-              {% if viewShowAll > 0 %}
-                <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab"><span class="text">{{ 'Show all'|t }}</span></a></li>
+              <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab"><span class="text">{{ 'Show all'|t }}</span></a></li>
+              {% if viewOiraTools > 0 %}
+                <li class="dropdown nav-item nav-item-oiratools">
+                  <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="tab" aria-haspopup="true" aria-expanded="false"><span class="text">{{ 'Oira Tools'|t ~ ' (' ~ viewOiraTools ~ ')' }}</span></a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a href="#oira-tools" data-toggle="tab">{{ 'Any'|t }}</a></li>
+                    {% for term in terms %}
+                      <li data-toggle="tab"><a href="#{{ term.href }}" data-toggle="tab"><span class="text">{{ term.name|t }}</span></a></li>
+                    {% endfor %}
+                  </ul>
+                </li>
               {% endif %}
-              {% if drupal_view_result('country_partner_content', 'block_5') is not empty %}
-                <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab"><span class="text">{{ 'Promotional Resources'|t }}</span></a></li>
+              {% if viewPromotional > 0 %}
+                <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab"><span class="text">{{ 'Promotional Resources'|t ~ ' (' ~ viewPromotional ~ ')' }}</span></a></li>
               {% endif %}
-              {% if drupal_view_result('country_partner_content', 'block_3') is not empty %}
-              <li class="dropdown nav-item nav-item-oiratools">
-                <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="tab" aria-haspopup="true" aria-expanded="false"><span class="text">{{ 'Oira Tools'|t }}</span></a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a href="#oira-tools" data-toggle="tab">{{ 'Any'|t }}</a></li>
-                  <li data-toggle="tab"><a href="#oira-tools-agriculture" data-toggle="tab"><span class="text">{{ 'Agriculture, forestry & fishing'|t }}</span></a></li>
-                  <li data-toggle="tab"><a href="#oira-tools-cleaning" data-toggle="tab">{{ 'Cleaning services'|t }}</a></li>
-                  <li data-toggle="tab"><a href="#oira-tools-construction" data-toggle="tab">{{ 'Construction & maintenance'|t }}</a></li>
-                  <li data-toggle="tab"><a href="#oira-tools-food" data-toggle="tab">{{ 'Food production & sale'|t }}</a></li>
-                  <li data-toggle="tab"><a href="#oira-tools-hairdressers" data-toggle="tab">{{ 'Hairdressers & beauty salons'|t }}</a></li>
-                  <li data-toggle="tab"><a href="#oira-tools-hotels" data-toggle="tab">{{ 'Hotels restaurants catering'|t }}</a></li>
-                  <li data-toggle="tab"><a href="#oira-tools-live-performance" data-toggle="tab">{{ 'Live Performance'|t }}</a></li>
-                  <li data-toggle="tab"><a href="#oira-tools-public-transport" data-toggle="tab">{{ 'Public/passenger transport'|t }}</a></li>
-                  <li data-toggle="tab"><a href="#oira-tools-woodworking" data-toggle="tab">{{ 'Woodworking & related activities'|t }}</a></li>
-                </ul>
-              </li>
-             {% endif %}
-              {% if drupal_view_result('country_partner_content', 'block_4') is not empty %}
-                <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab"><span class="text">{{ 'News'|t }}</span></a></li>
+              {% if viewNews > 0 %}
+                <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab"><span class="text">{{ 'News'|t ~ ' (' ~ viewNews ~ ')' }}</span></a></li>
               {% endif %}
             </ul>
           </div>
@@ -149,13 +137,11 @@
 
     <div class="container">
       <div class="tab-content">
-        {% if viewShowAll > 0 %}
         <div role="tabpanel" class="tab-pane fade in active show" id="show-all">
           <div class="views-wrapper">
-            {{ drupal_view('country_partner_content', 'block_1') }}
+            {{ drupal_view('country_partner_content', 'block_1', node.id, node.id) }}
           </div>
         </div>
-        {% endif %}
 
         {% if viewPromotional > 0 %}
         <div role="tabpanel" class="tab-pane fade" id="promotional-resources">
@@ -173,59 +159,22 @@
         </div>
        {% endif %}
 
-        {% if viewOiraToolsAgriculture > 0 %}
-          <div role="tabpanel" class="tab-pane fade" id="oira-tools-agriculture">
-            <div class="views-wrapper">
-              {{ drupal_dump(node.id) }}
-              {{ drupal_view('country_partner_content', 'block_3', node.id , node.id , node.id, '1179') }}
-            </div>
-          </div>
-        {% endif %}
-
-        {% if viewOiraToolsCleaning > 0 %}
-          <div role="tabpanel" class="tab-pane fade" id="oira-tools-cleaning">
-            <div class="views-wrapper">
-              {{ drupal_dump() }}
-              {{ drupal_view('country_partner_content', 'block_3', node.id , node.id , node.id, '1185') }}
-            </div>
-          </div>
-        {% endif %}
-
-        {% if viewOiraToolsConstruction > 0 %}
-          <div role="tabpanel" class="tab-pane fade" id="oira-tools-construction">
-            <div class="views-wrapper">
-              {{ drupal_dump(node.id) }}
-              {{ drupal_view('country_partner_content', 'block_3', node.id , node.id , node.id, '1184') }}
-            </div>
-          </div>
-        {% endif %}
-
-        {% if viewOiraToolsFood > 0 %}
-          <div role="tabpanel" class="tab-pane fade" id="oira-tools-food">
-            <div class="views-wrapper">
-              {{ drupal_dump(node.id) }}
-              {{ drupal_view('country_partner_content', 'block_3', node.id , node.id , node.id, '1189') }}
-            </div>
-          </div>
-        {% endif %}
-
-        {% if viewOiraToolsHairdressers > 0 %}
-          <div role="tabpanel" class="tab-pane fade" id="oira-tools-hairdressers">
-            <div class="views-wrapper">
-              {{ drupal_dump(node.id) }}
-              {{ drupal_view('country_partner_content', 'block_3', node.id , node.id , node.id, '1192') }}
-            </div>
-          </div>
-        {% endif %}
-
+       {% for term in terms %}
+         <div role="tabpanel" class="tab-pane fade" id="{{ term.href }}">
+           <div class="views-wrapper">
+             {{ drupal_view('country_partner_content', 'block_3', node.id , node.id , node.id, term.id) }}
+           </div>
+         </div>
+       {% endfor %}
 
         {% if viewNews > 0 %}
-        <div role="tabpanel" class="tab-pane fade" id="news">
-          <div class="views-wrapper">
-            {{ drupal_view('country_partner_content', 'block_4') }}
+          <div role="tabpanel" class="tab-pane fade" id="news">
+            <div class="views-wrapper">
+              {{ drupal_view('country_partner_content', 'block_4', node.id, node.id) }}
+            </div>
           </div>
-        </div>
         {% endif %}
+
       </div>
     </div>
 
