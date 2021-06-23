@@ -1370,6 +1370,25 @@ select.custom-select {
 .page-view-promotional-resources-search main .views-row {
   width: 100%;
 }
+.page-view-promotional-resources-search main .views-row .resource-link {
+  margin-top: 1rem;
+}
+.page-view-promotional-resources-search main .views-row .resource-link a {
+  color: #10b2e4;
+}
+.page-view-promotional-resources-search main .views-row .resource-link a:before {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+  content: "";
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  color: #786586;
+}
+.page-view-promotional-resources-search main .views-row .resource-link a:hover {
+  color: #967ea7;
+}
 .page-view-promotional-resources-search main .views-row .content-view-pm-view {
   display: flex;
   border-top: 2px solid #786586;
