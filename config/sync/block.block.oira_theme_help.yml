@@ -11,7 +11,7 @@ _core:
 id: oira_theme_help
 theme: oira_theme
 region: content
-weight: -6
+weight: -30
 provider: null
 plugin: help_block
 settings:

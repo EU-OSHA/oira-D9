@@ -894,6 +894,11 @@ table tr td {
   font-size: 1rem;
 }
 
+.user-login .block-page-title-block,
+.user-password .block-page-title-block {
+  margin: 0 auto 20px;
+  max-width: 500px;
+}
 .user-login .tabs,
 .user-password .tabs {
   margin: 0 auto 20px;
@@ -6062,6 +6067,13 @@ body.toolbar-fixed.toolbar-tray-open #header {
   }
 }
 @media only screen and (max-width: 767px) {
+  .user-login .block-page-title-block,
+.user-login .tabs,
+.user-password .block-page-title-block,
+.user-password .tabs {
+    margin: 0 15px 1rem;
+  }
+
   #block-privatezoneheader,
 #block-yourprofile {
     padding: 0 15px;

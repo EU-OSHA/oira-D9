@@ -53,7 +53,6 @@ content:
     type: file_table
     region: content
 hidden:
-  breadcrumbs: true
   created: true
   entity_print_view_epub: true
   entity_print_view_pdf: true

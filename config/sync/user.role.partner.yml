@@ -47,7 +47,6 @@ permissions:
   - 'use text format filtered_html_minimal'
   - 'use text format restricted_html'
   - 'use workbench access'
-  - 'view all media revisions'
   - 'view all unpublished content'
   - 'view any unpublished content'
   - 'view files'

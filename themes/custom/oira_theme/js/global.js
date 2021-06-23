@@ -51,22 +51,13 @@ jQuery(document).ready(function($){
 
     if(windowWidth <= 992){
       //search header al hacer click
-      $("#edit-actions").click(function(){
-        $('#block-oira-theme-search .form-search').stop().show({direction: 'left'}, 500);
-        $('#block-oira-theme-search .btn-primary').css("pointer-events" , "auto");
+      $("#edit-submit-search-api").click(function(){
+        $(this).toggleClass('clicked');
+        //$('#block-oira-theme-search .form-search').stop().show({direction: 'left'}, 500);
+        //$('#block-oira-theme-search .btn-primary').css("pointer-events" , "auto");
       });
-      $(".search-block-form").mouseleave(function(){
-        $('#block-oira-theme-search .form-search').stop().hide({direction: 'right'}, 500);
-        $('#block-oira-theme-search .btn-primary').css("pointer-events" , "none");
-      });
-    }
+    };
 
-    // Prevent default behavior on click in link
-    /*if(windowWidth <= 1023){
-      $('#navbar-main ul.navbar-nav li:nth-child(6) a').click(function(event) {
-        event.preventDefault();
-      });
-    }*/
 
     // See more - less
     $('.view-display-id-block_1 .views-col .see-more').click(function(){
