@@ -14,7 +14,7 @@ emailTemplateUsageResolveConflict: false
 emailTemplateUsageNeverUpdate: false
 emailTemplateUsagePromptUser: false
 emailTemplateUsageRedirectOnLogin: false
-emailTemplateUsagePromptRegex: '.*@example\\.com'
+emailTemplateUsagePromptRegex: '.*@fake-domain\.com'
 passwordOption: allow
 allowOnlyIfTextInDn: {  }
 excludeIfTextInDn: {  }
