@@ -479,6 +479,25 @@ select.custom-select{
     }
     .views-row {
       width: 100%;
+      .resource-link {
+        margin-top: 1rem;
+        a {
+          color: $text-color-blue-light;
+          &:before {
+            display: inline-block;
+            margin: 0 0.5rem 0 0;
+            content: "\e164";
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            color: $text-color-purple;
+          }
+          &:hover {
+            color: $text-color-purple-light;
+          }
+        }
+      }
       .content-view-pm-view {
         display: flex;
         border-top: 2px solid #786586;
