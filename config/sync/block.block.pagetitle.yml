@@ -26,6 +26,7 @@ visibility:
   user_role:
     id: user_role
     roles:
+      editor: editor
       partner: partner
     negate: false
     context_mapping:
