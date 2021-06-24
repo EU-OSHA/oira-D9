@@ -4375,6 +4375,12 @@ body[class*=private-zone-] .page-header.h1 {
   display: none;
 }
 
+/*** Counter ***/
+.textfield_counter_counter {
+  margin-top: 4px;
+  font-weight: normal;
+}
+
 .site-footer {
   width: 100%;
   height: auto;
