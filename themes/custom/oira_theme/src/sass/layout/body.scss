@@ -469,9 +469,6 @@ select.custom-select{
       right: 15px;
       top: 48px;
     }
-    .results-for {
-      display: none;
-    }
     .view-content.row {
       margin: 0;
       padding: 30px;
@@ -2044,9 +2041,6 @@ select.custom-select{
       right: -0;
       font-size: .875rem;
     }
-    .results-for {
-      display: none;
-    }
   }
   .search-results__result {
     border-top: 2px solid $text-color-purple;
@@ -3581,6 +3575,23 @@ body[class*="private-zone-"] {
 /**** Results for css ***/
 .results-for {
   display: none;
+}
+
+.section.oira-section > .results-for {
+  display: block;
+  margin: 10px 0 -20px;
+  line-height: 1;
+  .searched-text {
+    font-family: $font-family-oswald;
+    font-size: 2.6rem;
+    color: $text-color-purple;
+  }
+}
+
+.block-oira-theme-page-title {
+  h1 {
+    display: none;
+  }
 }
 
 /*** Counter ***/
