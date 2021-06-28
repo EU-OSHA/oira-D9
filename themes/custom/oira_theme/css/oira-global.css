@@ -1359,9 +1359,6 @@ select.custom-select {
   right: 15px;
   top: 48px;
 }
-.page-view-promotional-resources-search main .results-for {
-  display: none;
-}
 .page-view-promotional-resources-search main .view-content.row {
   margin: 0;
   padding: 30px;
@@ -1388,6 +1385,31 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .views-row .resource-link a:hover {
   color: #967ea7;
+}
+.page-view-promotional-resources-search main .views-row .file {
+  padding-left: 0;
+}
+.page-view-promotional-resources-search main .views-row .file a {
+  display: flex;
+  align-items: center;
+  color: #10b2e4;
+}
+.page-view-promotional-resources-search main .views-row .file a:hover {
+  color: #967ea7;
+  text-decoration: underline;
+}
+.page-view-promotional-resources-search main .views-row .file a:before {
+  margin-right: 5px;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+}
+.page-view-promotional-resources-search main .views-row .file a[href$=".pdf"]:before {
+  background: url(../images/icon-application-pdf.png) center no-repeat;
+}
+.page-view-promotional-resources-search main .views-row .file a[href$=".zip"]:before {
+  background: url(../images/icon-package-x-generic.png) center no-repeat;
 }
 .page-view-promotional-resources-search main .views-row .content-view-pm-view {
   display: flex;
@@ -1632,7 +1654,7 @@ select.custom-select {
 .page-view-oira-ws .content-view-tools-view .group-right > div:nth-child(1) {
   position: absolute;
   right: 0;
-  top: 50px;
+  top: 28px;
 }
 .page-view-oira-ws .content-view-tools-view .group-right > div:nth-child(1) a {
   font-size: 0.9rem;
@@ -1682,6 +1704,11 @@ select.custom-select {
 }
 
 /*** OiRA Tools Views ***/
+.page-view-oira-ws {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .view-display-id-tools_ws .expandible {
   display: none;
 }
@@ -1690,6 +1717,7 @@ select.custom-select {
 }
 .view-display-id-tools_ws .tags {
   display: flex;
+  margin: 5px 0 0 0;
 }
 .view-display-id-tools_ws .tags > * {
   background-color: #b4a4bf;
@@ -2877,9 +2905,6 @@ select.custom-select {
   right: 0;
   font-size: 0.875rem;
 }
-.path-search .view-search .results-for {
-  display: none;
-}
 .path-search .search-results__result {
   border-top: 2px solid #786586;
   padding: 30px 0px;
@@ -3904,6 +3929,11 @@ select.custom-select {
 }
 
 /*** Contacto ***/
+.page-node-58 #main-wrapper,
+.contact-us #main-wrapper {
+  padding-bottom: 1rem;
+}
+
 .contact-us h1 {
   display: flex;
   align-items: center;
@@ -4373,6 +4403,27 @@ body[class*=private-zone-] .page-header.h1 {
 /**** Results for css ***/
 .results-for {
   display: none;
+}
+
+.section.oira-section > .results-for {
+  display: block;
+  margin: 10px 0 -20px;
+  line-height: 1;
+}
+.section.oira-section > .results-for .searched-text {
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+  font-size: 2.6rem;
+  color: #786586;
+}
+
+.block-oira-theme-page-title h1 {
+  display: none;
+}
+
+/*** Counter ***/
+.textfield_counter_counter {
+  margin-top: 4px;
+  font-weight: normal;
 }
 
 .site-footer {

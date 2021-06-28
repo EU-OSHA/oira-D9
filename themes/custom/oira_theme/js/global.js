@@ -121,6 +121,12 @@ jQuery(document).ready(function($){
     });
 
 
+    // Search results text
+  $(document).ready(function() {
+    $('.results-for').insertBefore('.oira-section .no-container');
+  });
+
+
   //Sidebar toggle facets
   $('.block-facets h2').click(function(){
     $(this).toggleClass('clicked');
