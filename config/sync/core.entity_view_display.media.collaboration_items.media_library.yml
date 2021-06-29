@@ -10,6 +10,7 @@ dependencies:
     - field.field.media.collaboration_items.field_media_file_1
     - media.type.collaboration_items
   module:
+    - ds
     - file
     - link
 id: media.collaboration_items.media_library
@@ -21,7 +22,7 @@ content:
     type: link
     weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       target: _blank
@@ -30,14 +31,23 @@ content:
       rel: '0'
     third_party_settings: {  }
   field_media_file_1:
-    type: file_default
+    type: file_table
     weight: 0
     region: content
     label: hidden
     settings:
-      use_description_as_link_text: false
-    third_party_settings: {  }
+      use_description_as_link_text: true
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 hidden:
+  breadcrumbs: true
   created: true
   entity_print_view_epub: true
   entity_print_view_pdf: true

@@ -1,40 +1,39 @@
-uuid: 19d4f14b-bc00-4902-8d02-4feb2dce1521
+uuid: c3e66619-f6c8-4559-80aa-a56acc13ab9e
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.full
     - field.field.media.collaboration_items.field_col_item_desc
     - field.field.media.collaboration_items.field_col_item_label
     - field.field.media.collaboration_items.field_col_item_links
     - field.field.media.collaboration_items.field_media_file_1
     - media.type.collaboration_items
   module:
+    - ds
     - file
+    - layout_builder
     - link
-    - text
-id: media.collaboration_items.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: media.collaboration_items.full
 targetEntityType: media
 bundle: collaboration_items
-mode: default
+mode: full
 content:
-  field_col_item_desc:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_col_item_label:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_col_item_links:
-    weight: 3
-    label: above
+    weight: 2
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -45,12 +44,20 @@ content:
     type: link
     region: content
   field_media_file_1:
-    label: above
-    weight: 2
+    label: hidden
+    weight: 1
     settings:
       use_description_as_link_text: false
-    third_party_settings: {  }
-    type: file_table
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: file_default
     region: content
 hidden:
   breadcrumbs: true
@@ -58,6 +65,7 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_col_item_desc: true
   langcode: true
   name: true
   search_api_excerpt: true

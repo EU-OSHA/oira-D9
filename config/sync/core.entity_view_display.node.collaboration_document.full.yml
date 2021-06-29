@@ -1,8 +1,9 @@
-uuid: 63ca06e7-ce0f-429d-a2f8-d0d43e846cbd
+uuid: a89cd11e-9cc3-48cb-9a66-dc4d2da72635
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.collaboration_document.body
     - field.field.node.collaboration_document.field_collaboration_items
     - field.field.node.collaboration_document.field_languages
@@ -11,12 +12,18 @@ dependencies:
     - node.type.collaboration_document
   module:
     - ds
+    - layout_builder
+    - linked_field
     - text
     - user
-id: node.collaboration_document.default
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.collaboration_document.full
 targetEntityType: node
 bundle: collaboration_document
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -41,6 +48,12 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+      linked_field:
+        linked: '1'
+        type: custom
+        destination: '[media:field_media_document:entity][node:field_collaboration_items:2:entity][node:field_collaboration_items]'
+        advanced: {  }
+        token: ''
     region: content
 hidden:
   addtoany: true
