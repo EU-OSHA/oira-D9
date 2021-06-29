@@ -111,10 +111,17 @@
         <div class="row">
           <div class="col">
             <ul id="myTabs" class="col nav nav-pills" role="tablist" data-tabs="tabs">
-              <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab"><span class="text">{{ 'Show all'|t }}</span></a></li>
+              {% if viewOiraTools > 0 %}
+                <li class="active nav-item nav-item-showall"><a class="item-nav-link" href="#show-all" data-toggle="tab"><span class="text tab-show-all">{{ 'Show all'|t }}</span></a></li>
+              {% endif %}
+
+              {% if viewPromotional > 0 %}
+                <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab"><span class="text tab-promotional">{{ 'Promotional Resources'|t ~ ' (' ~ viewPromotional ~ ')' }}</span></a></li>
+              {% endif %}
+
               {% if viewOiraTools > 0 %}
                 <li class="dropdown nav-item nav-item-oiratools">
-                  <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="tab" aria-haspopup="true" aria-expanded="false"><span class="text">{{ 'Oira Tools'|t ~ ' (' ~ viewOiraTools ~ ')' }}</span></a>
+                  <a class="dropdown-toggle item-nav-link" href="#oira-tools" role="button" id="dropdownMenuLink" data-toggle="tab" aria-haspopup="true" aria-expanded="false"><span class="text tab-oira-tools">{{ 'Oira Tools'|t ~ ' (' ~ viewOiraTools ~ ')' }}</span></a>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a href="#oira-tools" data-toggle="tab">{{ 'Any'|t }}</a></li>
                     {% for term in terms %}
@@ -123,11 +130,9 @@
                   </ul>
                 </li>
               {% endif %}
-              {% if viewPromotional > 0 %}
-                <li class="nav-item nav-item-promotional"><a class="item-nav-link" href="#promotional-resources" data-toggle="tab"><span class="text">{{ 'Promotional Resources'|t ~ ' (' ~ viewPromotional ~ ')' }}</span></a></li>
-              {% endif %}
+
               {% if viewNews > 0 %}
-                <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab"><span class="text">{{ 'News'|t ~ ' (' ~ viewNews ~ ')' }}</span></a></li>
+                <li class="nav-item nav-item-news"><a class="item-nav-link" href="#news" data-toggle="tab"><span class="text tab-news">{{ 'News'|t ~ ' (' ~ viewNews ~ ')' }}</span></a></li>
               {% endif %}
             </ul>
           </div>

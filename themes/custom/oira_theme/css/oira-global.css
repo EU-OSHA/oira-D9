@@ -461,18 +461,18 @@ div.pagerer-right-pane {
   background-image: url(../images/show-all-icon-p.png);
 }
 .partners-related-content li.nav-item-promotional a:before {
-  background-image: url(../images/tools-icon-w.png);
+  background-image: url(../images/promotional-resources-icon-w.png);
 }
 .partners-related-content li.nav-item-promotional a:hover:before,
 .partners-related-content li.nav-item-promotional a.active:before {
-  background-image: url(../images/tools-icon-p.png);
+  background-image: url(../images/promotional-resources-icon-p.png);
 }
 .partners-related-content li.nav-item-oiratools a:before {
-  background-image: url(../images/promotional-resources-icon-w.png);
+  background-image: url(../images/tools-icon-w.png);
 }
 .partners-related-content li.nav-item-oiratools a:hover:before,
 .partners-related-content li.nav-item-oiratools a.active:before {
-  background-image: url(../images/promotional-resources-icon-p.png);
+  background-image: url(../images/tools-icon-p.png);
 }
 .partners-related-content li.nav-item-news a:before {
   background-image: url(../images/news-icon-w.png);

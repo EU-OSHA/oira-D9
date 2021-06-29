@@ -46,20 +46,20 @@
     }
     &.nav-item-promotional {
       a:before {
-        background-image: url(../images/tools-icon-w.png);
-      }
-      a:hover:before,
-      a.active:before {
-        background-image: url(../images/tools-icon-p.png);
-      }
-    }
-    &.nav-item-oiratools {
-      a:before {
         background-image: url(../images/promotional-resources-icon-w.png);
       }
       a:hover:before,
       a.active:before {
         background-image: url(../images/promotional-resources-icon-p.png);
+      }
+    }
+    &.nav-item-oiratools {
+      a:before {
+        background-image: url(../images/tools-icon-w.png);
+      }
+      a:hover:before,
+      a.active:before {
+        background-image: url(../images/tools-icon-p.png);
       }
     }
     &.nav-item-news {
