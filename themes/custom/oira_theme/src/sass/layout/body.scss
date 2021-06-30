@@ -469,9 +469,6 @@ select.custom-select{
       right: 15px;
       top: 48px;
     }
-    .results-for {
-      display: none;
-    }
     .view-content.row {
       margin: 0;
       padding: 30px;
@@ -483,6 +480,7 @@ select.custom-select{
         margin-top: 1rem;
         a {
           color: $text-color-blue-light;
+          word-break: break-all;
           &:before {
             display: inline-block;
             margin: 0 0.5rem 0 0;
@@ -495,6 +493,35 @@ select.custom-select{
           }
           &:hover {
             color: $text-color-purple-light;
+          }
+        }
+      }
+      .file {
+        padding-left: 0;
+        a {
+          display: flex;
+          align-items: center;
+          color: $text-color-blue-light;
+          &:hover {
+            color: $text-color-purple-light;
+            text-decoration: underline;
+          }
+          &:before {
+            margin-right: 5px;
+            content:"";
+            display: inline-block;
+            width: 16px;
+            height: 20px;
+          }
+        }
+        a[href$=".pdf"] {
+          &:before {
+            background: url(../images/icon-application-pdf.png) center no-repeat;
+          }
+        }
+        a[href$=".zip"] {
+          &:before {
+            background: url(../images/icon-package-x-generic.png) center no-repeat;
           }
         }
       }
@@ -538,7 +565,6 @@ select.custom-select{
       }
       .partners-wrapper {
         display: none;
-        background: $bg-color-purple;
         padding: 15px;
         color: $text-color-white;
         a {
@@ -549,7 +575,8 @@ select.custom-select{
         display: flex;
         .partner-inner-group--img {
           width: 40%;
-          padding: 0 15px;
+          padding: 15px;
+          background: $bg-color-purple;
           a {
             display: flex;
             align-items: center;
@@ -562,7 +589,8 @@ select.custom-select{
         }
         .partner-inner-group--data {
           width: 60%;
-          padding: 0 15px;
+          padding: 15px;
+          background: $bg-color-purple;
           h4 {
             font-size: 1.25rem;
             a {
@@ -648,10 +676,13 @@ select.custom-select{
   .two-column{
     section{
       position: relative;
+      .no-container {
+        position: relative;
+      }
       #block-exposedformoira-wstools-ws{
         position: absolute;
         z-index: 1;
-        top: 12px;
+        top: 24px;
         left: 7px;
         .form-item-sort-by{
           label{
@@ -764,7 +795,7 @@ select.custom-select{
       > div:nth-child(1){
         position: absolute;
         right: 0;
-        top: 50px;
+        top: 28px;
         a{
           font-size: 0.9rem;
           color: $text-color-black;
@@ -817,6 +848,11 @@ select.custom-select{
 }
 
 /*** OiRA Tools Views ***/
+.page-view-oira-ws {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .view-display-id-tools_ws {
   .expandible {
     display: none;
@@ -826,6 +862,7 @@ select.custom-select{
   }
   .tags {
     display: flex;
+    margin: 5px 0 0 0;
     > * {
       background-color: $bg-color-purple-light-2;
       display: inline-block;
@@ -2009,9 +2046,6 @@ select.custom-select{
       right: -0;
       font-size: .875rem;
     }
-    .results-for {
-      display: none;
-    }
   }
   .search-results__result {
     border-top: 2px solid $text-color-purple;
@@ -2313,6 +2347,63 @@ select.custom-select{
 }
 
 .view-country-partner-content {
+  .view-footer {
+    position: relative;
+    a.all-partner-promo-res {
+      position: absolute;
+      top: -35px;
+      right: 5px;
+      color: $text-color-blue-light;
+      &:before {
+        content: '>';
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        top: -1px;
+        font-style: italic;
+      }
+    }
+  }
+  .view-header-content {
+    .view-content + .view-footer {
+      position: relative;
+      z-index: 2;
+      margin: -40px 0 30px;
+      display: flex;
+      justify-content: flex-end;
+      a:first-child {
+        color: $text-color-blue-light;
+        &:before {
+          content: '>';
+          margin-right: 5px;
+          display: inline-block;
+          position: relative;
+          top: -1px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  .view-footer-content {
+    .view-footer {
+      position: relative;
+      z-index: 2;
+      margin: -40px 0 30px;
+      display: flex;
+      justify-content: flex-end;
+      a:first-child {
+        color: $text-color-blue-light;
+        &:before {
+          content: '>';
+          margin-right: 5px;
+          display: inline-block;
+          position: relative;
+          top: -1px;
+          font-style: italic;
+        }
+      }
+    }
+  }
   > .view-content.row {
     margin-left: 0;
     margin-right: 0;
@@ -2461,7 +2552,7 @@ select.custom-select{
       }
     }
     &:last-child {
-      margin-bottom: 23px;
+      margin-bottom: 53px;
     }
   }
   .views-field-nothing {
@@ -3027,6 +3118,13 @@ select.custom-select{
 }
 
 /*** Contacto ***/
+.page-node-58,
+.contact-us {
+  #main-wrapper {
+    padding-bottom: 1rem;
+  }
+}
+
 .contact-us {
   h1 {
     display: flex;
@@ -3449,6 +3547,15 @@ body[class*="private-zone-"] {
       padding: 0 15px;
     }
   }
+  .field--name-field-collaboration-items {
+    padding: 0.5rem 0 1rem 1rem;
+    border: none;
+    border-bottom: 1px solid darken($bg-color-grey-light-3, 5%);
+    a {
+      font-style: normal;
+      font-weight: $font-weight-normal;
+    }
+  }
   .view-eu-osha-files {
     padding: 0;
     @media(max-width: 767px) {
@@ -3541,4 +3648,40 @@ body[class*="private-zone-"] {
   display: none;
 }
 
+.section.oira-section > .results-for {
+  display: block;
+  margin: 10px 0 -5px;
+  line-height: 1;
+  .searched-text {
+    font-family: $font-family-oswald;
+    font-size: 2.6rem;
+    color: $text-color-purple;
+  }
+}
+
+.block-oira-theme-page-title {
+  h1 {
+    display: none;
+  }
+}
+
+/*** Counter ***/
+.textfield_counter_counter {
+  margin-top: 4px;
+  font-weight: normal;
+}
+
+/*** Partners page (Comunity) ***/
+.page-node-67 {
+  .field--name-field-summary-article {
+    display: none;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-family: $font-family-oswald;
+    color: $text-color-black;
+  }
+  .block-page-title-block + .field--name-field-summary-article {
+    display: block;
+  }
+}
 

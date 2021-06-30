@@ -85,15 +85,28 @@
   }
 }
 
+.site-footer{
+  #block-footermenu {
+    ul li {
+      &:nth-child(4) {
+        display: none;
+      }
+      &:nth-child(5) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
 .role-authenticated {
   .site-footer{
     #block-footermenu {
       ul li {
         &:nth-child(4) {
-          display: none;
+          display: inline-block;
         }
         &:nth-child(5) {
-          display: inline-block;
+          display: none;
         }
       }
     }

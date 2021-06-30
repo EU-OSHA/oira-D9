@@ -121,6 +121,12 @@ jQuery(document).ready(function($){
     });
 
 
+    /*** Search results text ***/
+  $(document).ready(function() {
+    $('.results-for').insertBefore('.oira-section .no-container');
+  });
+
+
   //Sidebar toggle facets
   $('.block-facets h2').click(function(){
     $(this).toggleClass('clicked');
@@ -201,6 +207,10 @@ jQuery(document).ready(function($){
   $('#field_image-media-library-wrapper--description').click(function(){
     $('ul').toggleClass('show-me');
   });
+
+  /*** Move intro text on node 67 ***/
+  $('.page-node-67 .field--name-field-summary-article').insertBefore('.menu--oira-community');
+
 });
 
 

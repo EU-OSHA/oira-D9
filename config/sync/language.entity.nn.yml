@@ -1,9 +1,9 @@
 uuid: 08d237e7-cdd1-4541-b82e-5baf92f8134c
-langcode: en
+langcode: nn
 status: true
 dependencies: {  }
 id: nn
-label: 'Norwegian Nynorsk'
+label: Norsk
 direction: ltr
 weight: 4
 locked: false

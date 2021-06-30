@@ -25,7 +25,7 @@
       border-top: 2px solid $text-color-white;
       border-bottom: none;
       &:after{
-        content: "\e250";
+        content: "\e252";
         font-family: "Glyphicons Halflings";
         display: inline-block;
         margin-left: 10px;
@@ -58,17 +58,35 @@
     cursor: pointer;
     &.clicked {
       &:after {
-        content: "\e252";
+        font-family: "Glyphicons Halflings";
+        content: "\e250";
       }
     }
     &:after {
-      content: "\e250";
+      content: "\e252";
       font-family: "Glyphicons Halflings";
       margin-left: 10px;
     }
   }
   .facets-widget-checkbox {
-    display: none;
+    /*display: none;*/
+  }
+}
+
+.page-view-search {
+  .sidebar_first {
+    aside {
+      h2 {
+        &:after {
+          content: "\e250";
+        }
+        &.clicked {
+          &:after {
+            content: "\e252";
+          }
+        }
+      }
+    }
   }
 }
 
