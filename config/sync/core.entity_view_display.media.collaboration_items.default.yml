@@ -45,12 +45,12 @@ content:
     type: link
     region: content
   field_media_file_1:
-    label: above
+    label: hidden
     weight: 2
     settings:
       use_description_as_link_text: false
     third_party_settings: {  }
-    type: file_table
+    type: file_default
     region: content
 hidden:
   breadcrumbs: true

@@ -1,4 +1,4 @@
-uuid: c3e66619-f6c8-4559-80aa-a56acc13ab9e
+uuid: 468894e4-cdd1-4644-a20f-6f1946f101b9
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,6 @@ dependencies:
     - ds
     - file
     - layout_builder
-    - link
 third_party_settings:
   layout_builder:
     allow_custom: false
@@ -23,29 +22,9 @@ targetEntityType: media
 bundle: collaboration_items
 mode: full
 content:
-  field_col_item_label:
-    weight: 0
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_col_item_links:
-    weight: 2
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
   field_media_file_1:
     label: hidden
-    weight: 1
+    weight: 0
     settings:
       use_description_as_link_text: false
     third_party_settings:
@@ -66,6 +45,8 @@ hidden:
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
   field_col_item_desc: true
+  field_col_item_label: true
+  field_col_item_links: true
   langcode: true
   name: true
   search_api_excerpt: true
