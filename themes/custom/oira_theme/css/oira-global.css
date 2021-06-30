@@ -461,18 +461,18 @@ div.pagerer-right-pane {
   background-image: url(../images/show-all-icon-p.png);
 }
 .partners-related-content li.nav-item-promotional a:before {
-  background-image: url(../images/tools-icon-w.png);
+  background-image: url(../images/promotional-resources-icon-w.png);
 }
 .partners-related-content li.nav-item-promotional a:hover:before,
 .partners-related-content li.nav-item-promotional a.active:before {
-  background-image: url(../images/tools-icon-p.png);
+  background-image: url(../images/promotional-resources-icon-p.png);
 }
 .partners-related-content li.nav-item-oiratools a:before {
-  background-image: url(../images/promotional-resources-icon-w.png);
+  background-image: url(../images/tools-icon-w.png);
 }
 .partners-related-content li.nav-item-oiratools a:hover:before,
 .partners-related-content li.nav-item-oiratools a.active:before {
-  background-image: url(../images/promotional-resources-icon-p.png);
+  background-image: url(../images/tools-icon-p.png);
 }
 .partners-related-content li.nav-item-news a:before {
   background-image: url(../images/news-icon-w.png);
@@ -713,7 +713,7 @@ table tr td {
   border-bottom: none;
 }
 .sidebar_first aside h2:after {
-  content: "";
+  content: "";
   font-family: "Glyphicons Halflings";
   display: inline-block;
   margin-left: 10px;
@@ -736,15 +736,23 @@ table tr td {
   cursor: pointer;
 }
 .sidebar_first h2.clicked:after {
-  content: "";
+  font-family: "Glyphicons Halflings";
+  content: "";
 }
 .sidebar_first h2:after {
-  content: "";
+  content: "";
   font-family: "Glyphicons Halflings";
   margin-left: 10px;
 }
 .sidebar_first .facets-widget-checkbox {
-  display: none;
+  /*display: none;*/
+}
+
+.page-view-search .sidebar_first aside h2:after {
+  content: "";
+}
+.page-view-search .sidebar_first aside h2.clicked:after {
+  content: "";
 }
 
 .page-view-partner-profile #main-wrapper {
@@ -1372,6 +1380,7 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .views-row .resource-link a {
   color: #10b2e4;
+  word-break: break-all;
 }
 .page-view-promotional-resources-search main .views-row .resource-link a:before {
   display: inline-block;
@@ -1449,7 +1458,6 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .views-row .partners-wrapper {
   display: none;
-  background: #786586;
   padding: 15px;
   color: #FFF;
 }
@@ -1461,7 +1469,8 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .views-row .partner-wrapper .partner-inner-group--img {
   width: 40%;
-  padding: 0 15px;
+  padding: 15px;
+  background: #786586;
 }
 .page-view-promotional-resources-search main .views-row .partner-wrapper .partner-inner-group--img a {
   display: flex;
@@ -1474,7 +1483,8 @@ select.custom-select {
 }
 .page-view-promotional-resources-search main .views-row .partner-wrapper .partner-inner-group--data {
   width: 60%;
-  padding: 0 15px;
+  padding: 15px;
+  background: #786586;
 }
 .page-view-promotional-resources-search main .views-row .partner-wrapper .partner-inner-group--data h4 {
   font-size: 1.25rem;
@@ -1553,10 +1563,13 @@ select.custom-select {
 .page-view-oira-ws .two-column section {
   position: relative;
 }
+.page-view-oira-ws .two-column section .no-container {
+  position: relative;
+}
 .page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws {
   position: absolute;
   z-index: 1;
-  top: 12px;
+  top: 24px;
   left: 7px;
 }
 .page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws .form-item-sort-by label {
@@ -4321,6 +4334,15 @@ body[class*=private-zone-] .page-header.h1 {
     padding: 0 15px;
   }
 }
+.node--type-collaboration-document .field--name-field-collaboration-items {
+  padding: 0.5rem 0 1rem 1rem;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+.node--type-collaboration-document .field--name-field-collaboration-items a {
+  font-style: normal;
+  font-weight: 400;
+}
 .node--type-collaboration-document .view-eu-osha-files {
   padding: 0;
 }
@@ -4407,7 +4429,7 @@ body[class*=private-zone-] .page-header.h1 {
 
 .section.oira-section > .results-for {
   display: block;
-  margin: 10px 0 -20px;
+  margin: 10px 0 -5px;
   line-height: 1;
 }
 .section.oira-section > .results-for .searched-text {
@@ -4424,6 +4446,18 @@ body[class*=private-zone-] .page-header.h1 {
 .textfield_counter_counter {
   margin-top: 4px;
   font-weight: normal;
+}
+
+/*** Partners page (Comunity) ***/
+.page-node-67 .field--name-field-summary-article {
+  display: none;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-family: "Oswald", "Helvetica", Arial, sans-serif;
+  color: #58585a;
+}
+.page-node-67 .block-page-title-block + .field--name-field-summary-article {
+  display: block;
 }
 
 .site-footer {

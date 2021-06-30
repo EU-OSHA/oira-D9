@@ -1,55 +1,41 @@
-uuid: 19d4f14b-bc00-4902-8d02-4feb2dce1521
+uuid: 468894e4-cdd1-4644-a20f-6f1946f101b9
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.full
     - field.field.media.collaboration_items.field_col_item_desc
     - field.field.media.collaboration_items.field_col_item_label
     - field.field.media.collaboration_items.field_col_item_links
     - field.field.media.collaboration_items.field_media_file_1
     - media.type.collaboration_items
   module:
+    - ds
     - file
-    - link
-    - text
-id: media.collaboration_items.default
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: media.collaboration_items.full
 targetEntityType: media
 bundle: collaboration_items
-mode: default
+mode: full
 content:
-  field_col_item_desc:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_col_item_label:
-    weight: 0
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_col_item_links:
-    weight: 3
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
   field_media_file_1:
     label: hidden
-    weight: 2
+    weight: 0
     settings:
       use_description_as_link_text: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: file_default
     region: content
 hidden:
@@ -58,6 +44,9 @@ hidden:
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
+  field_col_item_desc: true
+  field_col_item_label: true
+  field_col_item_links: true
   langcode: true
   name: true
   search_api_excerpt: true
