@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - context
+    - system
   theme:
     - oira_theme
 _core:
@@ -28,3 +29,7 @@ visibility:
     id: view_inclusion
     negate: false
     view_inclusion: {  }
+  request_path:
+    id: request_path
+    pages: "/Partners/*\r\n/oira-community/*\r\n/private-zone/collaboration-area\r\n/private-zone/collaboration-area/*\r\n/private-zone/*\r\n/node/add/*\r\n/promotional-resources\r\n/national-partners\r\n/sectoral-social-partners\r\n/others-partners\r\n/irat-network\r\n/oira-faqs"
+    negate: true

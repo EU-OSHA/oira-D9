@@ -1,0 +1,39 @@
+uuid: c2cf3a4b-24d1-40b1-9649-5afb783d3911
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c1393ca9-9dde-48bc-91ba-36326a12047c'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - oira_theme
+id: pzhidemenu
+theme: oira_theme
+region: content
+weight: -28
+provider: null
+plugin: 'block_content:c1393ca9-9dde-48bc-91ba-36326a12047c'
+settings:
+  id: 'block_content:c1393ca9-9dde-48bc-91ba-36326a12047c'
+  label: 'PZ Hide Menu'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/Partners/*'
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      editor: editor
+      partner: partner
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
