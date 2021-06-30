@@ -3198,6 +3198,59 @@ select.custom-select {
   /*** ***/
 }
 
+.view-country-partner-content .view-footer {
+  position: relative;
+}
+.view-country-partner-content .view-footer a.all-partner-promo-res {
+  position: absolute;
+  top: -35px;
+  right: 5px;
+  color: #10b2e4;
+}
+.view-country-partner-content .view-footer a.all-partner-promo-res:before {
+  content: ">";
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  font-style: italic;
+}
+.view-country-partner-content .view-header-content .view-content + .view-footer {
+  position: relative;
+  z-index: 2;
+  margin: -40px 0 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.view-country-partner-content .view-header-content .view-content + .view-footer a:first-child {
+  color: #10b2e4;
+}
+.view-country-partner-content .view-header-content .view-content + .view-footer a:first-child:before {
+  content: ">";
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  font-style: italic;
+}
+.view-country-partner-content .view-footer-content .view-footer {
+  position: relative;
+  z-index: 2;
+  margin: -40px 0 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.view-country-partner-content .view-footer-content .view-footer a:first-child {
+  color: #10b2e4;
+}
+.view-country-partner-content .view-footer-content .view-footer a:first-child:before {
+  content: ">";
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  font-style: italic;
+}
 .view-country-partner-content > .view-content.row {
   margin-left: 0;
   margin-right: 0;
@@ -3360,7 +3413,7 @@ select.custom-select {
   border-top: 2px solid #967ea7;
 }
 .view-country-partner-content .views-row:last-child {
-  margin-bottom: 23px;
+  margin-bottom: 53px;
 }
 .view-country-partner-content .views-field-nothing {
   padding-top: 23px;
@@ -4543,11 +4596,18 @@ body[class*=private-zone-] .page-header.h1 {
   margin: 0;
 }
 
-.role-authenticated .site-footer #block-footermenu ul li:nth-child(4) {
+.site-footer #block-footermenu ul li:nth-child(4) {
   display: none;
 }
-.role-authenticated .site-footer #block-footermenu ul li:nth-child(5) {
+.site-footer #block-footermenu ul li:nth-child(5) {
   display: inline-block;
+}
+
+.role-authenticated .site-footer #block-footermenu ul li:nth-child(4) {
+  display: inline-block;
+}
+.role-authenticated .site-footer #block-footermenu ul li:nth-child(5) {
+  display: none;
 }
 
 #navbar {
