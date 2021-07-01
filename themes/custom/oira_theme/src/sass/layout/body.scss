@@ -524,6 +524,11 @@ select.custom-select{
             background: url(../images/icon-package-x-generic.png) center no-repeat;
           }
         }
+        a[href$=".ppt"] {
+          &:before {
+            background: url(../images/icon-ppt.png) center no-repeat;
+          }
+        }
       }
       .content-view-pm-view {
         display: flex;

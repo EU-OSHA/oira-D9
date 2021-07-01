@@ -1420,6 +1420,9 @@ select.custom-select {
 .page-view-promotional-resources-search main .views-row .file a[href$=".zip"]:before {
   background: url(../images/icon-package-x-generic.png) center no-repeat;
 }
+.page-view-promotional-resources-search main .views-row .file a[href$=".ppt"]:before {
+  background: url(../images/icon-ppt.png) center no-repeat;
+}
 .page-view-promotional-resources-search main .views-row .content-view-pm-view {
   display: flex;
   border-top: 2px solid #786586;
