@@ -191,10 +191,14 @@ jQuery(document).ready(function($){
   });
 
   /*** Show/Hide Private ZOne menu ***/
-  $('.private-zone.page-title-container .hide-menu').click(function(){
-    $(this).toggleClass('clicked');
-    $('.show-menu').addClass('active');
-    $(this).parents('.section.oira-section').find('.menu--private-zone').slideToggle();
+  $('#block-pzhidemenu .hide-link').click(function(){
+    $(this).hide();
+    $('.show-link').show();
+  });
+
+  $('#block-pzhidemenu .show-link').click(function(){
+    $(this).hide();
+    $('.hide-link').show();
   });
 
   $('.private-zone.page-title-container .show-menu').click(function(){

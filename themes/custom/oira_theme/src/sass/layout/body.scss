@@ -3240,6 +3240,62 @@ select.custom-select{
 }
 
 /***** PRIVATE ZONE ****/
+#block-pzhidemenu {
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  .content {
+    position: absolute;
+    right: 15px;
+    top: -40px;
+  }
+  .container {
+    width: auto !important;
+  }
+  .hide-link,
+  .show-link {
+    color: $text-color-purple;
+    font-size: 16px;
+    cursor: pointer;
+    &:after {
+      margin-left: 10px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      font-family: "Glyphicons Halflings";
+      line-height: 20px;
+      text-align: center;
+      background: $bg-color-blue-light;
+      border-radius: 25px;
+      color: white;
+      font-size: 13px;
+    }
+  }
+  .hide-link:after {
+    content: "\e253";
+  }
+  .show-link:after {
+    content: "\e252";
+  }
+  /*.toogle-content-switcher {
+    &:not(.collapsed) {
+      .hide-link {
+        display: block;
+      }
+    }
+    &.collapsed {
+      .show-link {
+        display: block !important;
+      }
+      .hide-link {
+        display: none;
+      }
+    }
+  }*/
+}
+
 .private-zone.page-title-container {
   display: flex;
   justify-content: space-between;
@@ -3249,48 +3305,6 @@ select.custom-select{
     color: $text-color-purple;
     font-size: 3.5rem;
     font-weight: 400;
-  }
-  .show-menu,
-  .hide-menu {
-    padding: 0;
-    background: none;
-    border: none;
-    color: $text-color-purple;
-    &:after {
-      margin-left: 10px;
-      display: inline-block;
-      content:"";
-      width: 20px;
-      height: 20px;
-      font-family: "Glyphicons Halflings";
-      line-height: 24px;
-      background: $bg-color-blue-light;
-      border-radius: 25px;
-      color: white;
-      font-size: 13px;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
-  .show-menu {
-    display: none;
-    &:after {
-      content: "\e252";
-      line-height: 24px;
-    }
-    &.active {
-      display: block;
-    }
-  }
-  .hide-menu {
-    &:after {
-      content: "\e253";
-      line-height: 20px;
-    }
-    &.clicked {
-      display: none !important;
-    }
   }
 }
 
