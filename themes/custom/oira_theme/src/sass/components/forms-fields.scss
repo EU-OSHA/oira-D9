@@ -46,7 +46,7 @@ legend {
     border-radius: 0.2em;
     transition: .2s;
     clear: both;
-    background: #FFF;
+    background: white;
     width: 20px;
     height: 20px;
     padding-left: 5px;
@@ -55,10 +55,11 @@ legend {
     padding-bottom: 14px;
     margin-bottom: 10px;
     margin-right: 10px;
+    color: transparent;
   }
   input[type=checkbox]:checked + label:before{
-    background-color: #FFF;
-    border-color: #FFF;
+    background-color: white;
+    border-color: white;
     color: $bg-color-purple;
   }
 }
