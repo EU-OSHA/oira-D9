@@ -13,7 +13,7 @@ dependencies:
   module:
     - ds
     - layout_builder
-    - linked_field
+    - options
     - text
     - user
 third_party_settings:
@@ -37,7 +37,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      view_mode: media_library
+      view_mode: full
       link: false
     third_party_settings:
       ds:
@@ -48,20 +48,28 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-      linked_field:
-        linked: '1'
-        type: custom
-        destination: '[media:field_media_document:entity][node:field_collaboration_items:2:entity][node:field_collaboration_items]'
-        advanced: {  }
-        token: ''
     region: content
+  field_languages:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: true
+            classes: {  }
 hidden:
   addtoany: true
   breadcrumbs: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
   entity_print_view_word_docx: true
-  field_languages: true
   field_multiple_sector: true
   field_strategic_type_2: true
   langcode: true

@@ -31,7 +31,7 @@ content:
       rel: '0'
     third_party_settings: {  }
   field_media_file_1:
-    type: file_table
+    type: file_default
     weight: 0
     region: content
     label: hidden
