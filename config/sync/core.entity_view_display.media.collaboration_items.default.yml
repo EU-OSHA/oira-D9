@@ -9,7 +9,8 @@ dependencies:
     - field.field.media.collaboration_items.field_media_file_1
     - media.type.collaboration_items
   module:
-    - file
+    - ds
+    - file_download_link
     - link
     - text
 id: media.collaboration_items.default
@@ -34,7 +35,7 @@ content:
     region: content
   field_col_item_links:
     weight: 3
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -48,9 +49,21 @@ content:
     label: hidden
     weight: 2
     settings:
-      use_description_as_link_text: false
-    third_party_settings: {  }
-    type: file_default
+      link_text: '[media:name]'
+      new_tab: true
+      force_download: true
+      link_title: ''
+      custom_classes: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: file_download_link
     region: content
 hidden:
   breadcrumbs: true

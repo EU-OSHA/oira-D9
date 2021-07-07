@@ -159,7 +159,7 @@
         {% if viewOiraTools > 0 %}
         <div role="tabpanel" class="tab-pane fade" id="oira-tools">
           <div class="views-wrapper">
-            {{ drupal_view('country_partner_content', 'block_3') }}
+            {{ drupal_view('country_partner_content', 'block_3',node.id, node.id, node.id) }}
           </div>
         </div>
        {% endif %}
