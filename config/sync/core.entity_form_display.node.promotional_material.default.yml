@@ -126,16 +126,6 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_resource_fc:
-    type: entity_reference_autocomplete
-    weight: 23
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_resource_file:
     weight: 30
     settings:
@@ -178,13 +168,6 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  langcode:
-    type: language_select
-    weight: 25
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
     weight: 22
@@ -227,7 +210,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 24
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -246,4 +229,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_resource_fc: true
+  langcode: true

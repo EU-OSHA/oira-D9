@@ -1771,6 +1771,8 @@ display:
           include_exclude: include
           selected_actions:
             - node_delete_action
+            - node_save_action
+            - pathauto_update_alias_node
           entity_type: node
           plugin_id: node_bulk_form
         title:
