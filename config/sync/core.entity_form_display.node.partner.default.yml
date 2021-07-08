@@ -40,7 +40,7 @@ third_party_settings:
         - group_rigth
         - group_footer
       parent_name: ''
-      weight: 0
+      weight: 3
       format_type: html_element
       region: content
       format_settings:
@@ -117,25 +117,25 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 25
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
   field_collaborator:
     type: media_library_widget
-    weight: 20
+    weight: 19
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_country:
-    weight: 9
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_dedicated_oira_website:
-    weight: 14
+    weight: 13
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -143,7 +143,7 @@ content:
     type: link_default
     region: content
   field_general_email:
-    weight: 6
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -151,7 +151,7 @@ content:
     type: email_default
     region: content
   field_general_phone:
-    weight: 8
+    weight: 7
     settings:
       size: 60
       placeholder: ''
@@ -159,7 +159,7 @@ content:
     type: string_textfield
     region: content
   field_guid_main_contact:
-    weight: 16
+    weight: 15
     settings:
       size: 60
       placeholder: ''
@@ -167,7 +167,7 @@ content:
     type: string_textfield
     region: content
   field_guid_organisation:
-    weight: 15
+    weight: 14
     settings:
       size: 60
       placeholder: ''
@@ -176,13 +176,13 @@ content:
     region: content
   field_logo:
     type: media_library_widget
-    weight: 2
+    weight: 1
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_main_contact:
-    weight: 18
+    weight: 17
     settings:
       size: 60
       placeholder: ''
@@ -190,7 +190,7 @@ content:
     type: string_textfield
     region: content
   field_main_contact_email:
-    weight: 19
+    weight: 18
     settings:
       size: 60
       placeholder: ''
@@ -198,7 +198,7 @@ content:
     type: email_default
     region: content
   field_mission_statement:
-    weight: 3
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -206,20 +206,20 @@ content:
     type: string_textarea
     region: content
   field_oira_eu_level:
-    weight: 22
+    weight: 21
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_orgtype:
-    weight: 12
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_partner_other_users:
-    weight: 21
+    weight: 20
     settings:
       size: 60
       placeholder: ''
@@ -227,7 +227,7 @@ content:
     type: string_textfield
     region: content
   field_partner_type:
-    weight: 13
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -241,7 +241,7 @@ content:
     type: string_textfield
     region: content
   field_ph_cp:
-    weight: 5
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -249,7 +249,7 @@ content:
     type: string_textfield
     region: content
   field_ph_town:
-    weight: 10
+    weight: 9
     settings:
       size: 60
       placeholder: ''
@@ -257,7 +257,7 @@ content:
     type: string_textfield
     region: content
   field_social_profile:
-    weight: 17
+    weight: 16
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -265,7 +265,7 @@ content:
     type: link_default
     region: content
   field_website:
-    weight: 7
+    weight: 6
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -273,27 +273,20 @@ content:
     type: link_default
     region: content
   field_workbench_access:
-    weight: 11
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  langcode:
-    type: language_select
-    weight: 23
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 32
+    weight: 30
     settings: {  }
     region: content
     third_party_settings: {  }
   path:
     type: path
-    weight: 28
+    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -301,39 +294,39 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 26
+    weight: 24
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 29
+    weight: 27
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 27
+    weight: 25
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 30
+    weight: 28
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 24
+    weight: 22
     settings:
       match_operator: CONTAINS
       size: 60
@@ -342,9 +335,10 @@ content:
     region: content
     third_party_settings: {  }
   url_redirects:
-    weight: 31
+    weight: 29
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_partner: true
+  langcode: true
