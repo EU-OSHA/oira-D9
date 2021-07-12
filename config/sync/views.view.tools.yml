@@ -1402,6 +1402,7 @@ display:
             link_to_entity: 0
             format:
               name: name
+              icon: 0
               iso: 0
               name_native: 0
           group_column: value
