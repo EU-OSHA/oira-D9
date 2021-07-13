@@ -1,0 +1,38 @@
+uuid: 372468fe-4bba-4702-a34a-e5250a5745cf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bb2d26b5-eccb-4764-a726-5fc54c02eddb'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - oira_theme
+id: loginpartners
+theme: oira_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:bb2d26b5-eccb-4764-a726-5fc54c02eddb'
+settings:
+  id: 'block_content:bb2d26b5-eccb-4764-a726-5fc54c02eddb'
+  label: 'Login Partners'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /national-partners
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

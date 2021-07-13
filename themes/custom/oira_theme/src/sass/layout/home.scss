@@ -25,12 +25,22 @@
   .field__label{
     float: left;
     &:after{
+      display: inline-block;
       content: ':';
     }
   }
   .field__item{
+    display: inline-block;
+    margin-left: 5px;
     font-style: italic;
     font-weight: 600;
+  }
+  .intro-text-view {
+    color: #967ea7;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 14px 0px;
+    font-style: italic;
   }
 }
 
