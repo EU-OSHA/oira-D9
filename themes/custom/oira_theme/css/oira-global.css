@@ -1269,6 +1269,9 @@ select.custom-select {
 
 /* End news detail */
 /**** Promotional Resources Search View ***/
+.page-view-promotional-resources-search .field--name-field-media-image img {
+  border: 1px solid #808080;
+}
 .page-view-promotional-resources-search .form-item-sort-by .form-select {
   background-color: transparent !important;
 }
@@ -1916,6 +1919,9 @@ select.custom-select {
   background: #dfd8e4;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.page-view-promotional-materials-type #main-wrapper {
+  padding-bottom: 0;
 }
 
 .view-promotional-materials-type .views-view-grid {
