@@ -345,6 +345,11 @@ select.custom-select{
 
 /**** Promotional Resources Search View ***/
 .page-view-promotional-resources-search {
+  .field--name-field-media-image {
+    img {
+      border: 1px solid $bg-color-grey;
+    }
+  }
   .form-item-sort-by .form-select {
     background-color: transparent !important;
   }
@@ -446,10 +451,32 @@ select.custom-select{
       padding: 15px 0 15px 0;
       border-top: 2px solid $bg-color-purple;
       border-bottom: 2px solid $bg-color-purple;
-      .form-item-sort-by {
-        margin: 0;
+      .js-form-item-sort-by {
+        margin: 0 !important;
+        padding: 0;
+        display: block;
+        width: auto;
         label {
-          margin: 0 10px 0 0;
+          margin: 0;
+          display: inline-block;
+          text-align: left;
+          width: auto;
+          color: #555555;
+          font-size: 0.9rem;
+          &:after {
+            content:":";
+            display: inline-block;
+            margin-right: 1px;
+          }
+        }
+        select.form-select {
+          width: 150px;
+          display: inline-block;
+          background: transparent;
+          border: none;
+          font-size: 0.9rem;
+          color: #555555;
+          font-weight: $font-weight-bold;
         }
       }
       .form-actions{
@@ -467,7 +494,8 @@ select.custom-select{
     .view-header {
       position: absolute;
       right: 15px;
-      top: 48px;
+      top: 43px;
+      font-size: 0.9rem;
     }
     .view-content.row {
       margin: 0;
@@ -1041,6 +1069,9 @@ select.custom-select{
     background:$bg-color-purple-light;
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  #main-wrapper {
+    padding-bottom: 0;
   }
 }
 
@@ -3754,3 +3785,5 @@ body[class*="private-zone-"] {
     }
   }
 }
+
+

@@ -1269,6 +1269,9 @@ select.custom-select {
 
 /* End news detail */
 /**** Promotional Resources Search View ***/
+.page-view-promotional-resources-search .field--name-field-media-image img {
+  border: 1px solid #808080;
+}
 .page-view-promotional-resources-search .form-item-sort-by .form-select {
   background-color: transparent !important;
 }
@@ -1368,11 +1371,33 @@ select.custom-select {
   border-top: 2px solid #786586;
   border-bottom: 2px solid #786586;
 }
-.page-view-promotional-resources-search main .form-row .form-item-sort-by {
-  margin: 0;
+.page-view-promotional-resources-search main .form-row .js-form-item-sort-by {
+  margin: 0 !important;
+  padding: 0;
+  display: block;
+  width: auto;
 }
-.page-view-promotional-resources-search main .form-row .form-item-sort-by label {
-  margin: 0 10px 0 0;
+.page-view-promotional-resources-search main .form-row .js-form-item-sort-by label {
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+  width: auto;
+  color: #555555;
+  font-size: 0.9rem;
+}
+.page-view-promotional-resources-search main .form-row .js-form-item-sort-by label:after {
+  content: ":";
+  display: inline-block;
+  margin-right: 1px;
+}
+.page-view-promotional-resources-search main .form-row .js-form-item-sort-by select.form-select {
+  width: 150px;
+  display: inline-block;
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: #555555;
+  font-weight: 700;
 }
 .page-view-promotional-resources-search main .form-row .form-actions button {
   display: none;
@@ -1386,7 +1411,8 @@ select.custom-select {
 .page-view-promotional-resources-search main .view-header {
   position: absolute;
   right: 15px;
-  top: 48px;
+  top: 43px;
+  font-size: 0.9rem;
 }
 .page-view-promotional-resources-search main .view-content.row {
   margin: 0;
@@ -1916,6 +1942,9 @@ select.custom-select {
   background: #dfd8e4;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.page-view-promotional-materials-type #main-wrapper {
+  padding-bottom: 0;
 }
 
 .view-promotional-materials-type .views-view-grid {
