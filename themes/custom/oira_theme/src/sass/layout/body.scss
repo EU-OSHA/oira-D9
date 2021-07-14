@@ -681,9 +681,14 @@ select.custom-select{
   top: -70px;
 }
 
-.user-logged-in.role-partner.page-view-promotional-resources-search main .view-header {
+.user-logged-in.role-admin.page-view-promotional-resources-search main .view-header {
   right: 15px;
   top: 50px;
+}
+
+.user-logged-in.role-partner.page-view-promotional-resources-search main .view-header {
+  right: 15px;
+  top: 102px;
 }
 
 /* OiRA Tools View */
@@ -723,6 +728,7 @@ select.custom-select{
             float: left;
             padding-top: 5px;
             padding-right: 5px;
+            font-size: 0.9em;
           }
           select.custom-select {
             width: auto;
@@ -799,6 +805,7 @@ select.custom-select{
       padding: 15px 0 15px 0;
       border-top: 2px solid $bg-color-purple;
       border-bottom: 2px solid $bg-color-purple;
+      font-size: 0.9rem;
     }
     .view-content.row{
       margin: 2rem 0 0 0;
