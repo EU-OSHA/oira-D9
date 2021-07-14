@@ -84,6 +84,14 @@
     padding-bottom: 4.3rem;
     font-size: 1.2rem;
   }
+  .views-field.views-field-field-image {
+    height: 457px;
+    overflow: hidden;
+    img {
+      height: 457px;
+      object-fit: cover;
+    }
+  }
   .slick-dots{
     bottom: 20px;
   }

@@ -780,8 +780,13 @@ table tr td {
   padding-bottom: 1rem;
 }
 
+.page-view-partner-profile {
+  overflow: hidden;
+  width: 100%;
+}
+
 .view-partner-profile .wrapper {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   background: #dfd8e4;
 }
 .view-partner-profile .wrapper.wrapper-last {
@@ -793,18 +798,23 @@ table tr td {
   display: block;
   color: #786586;
 }
+.view-partner-profile .field-content.profile-intro-title .partner-first-section-title {
+  margin-top: -5px;
+}
 .view-partner-profile .partner-section-title {
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
   color: #786586;
-  margin: 22px 0 11px;
+  margin: 20px 0 11px;
   font-size: 2rem;
-  padding: 20px 0;
+  padding: 0;
 }
 .view-partner-profile .partner-section-title.partner-first-section-title {
   font-size: 2.5675rem;
 }
 .view-partner-profile .partner-section-title.partner-section-title--separator {
   border-top: 2px solid #786586;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 .view-partner-profile .partner-profile-section-content.section-flex {
   display: flex;
@@ -1588,9 +1598,14 @@ select.custom-select {
   top: -70px;
 }
 
-.user-logged-in.role-partner.page-view-promotional-resources-search main .view-header {
+.user-logged-in.role-admin.page-view-promotional-resources-search main .view-header {
   right: 15px;
   top: 50px;
+}
+
+.user-logged-in.role-partner.page-view-promotional-resources-search main .view-header {
+  right: 15px;
+  top: 102px;
 }
 
 /* OiRA Tools View */
@@ -1627,6 +1642,7 @@ select.custom-select {
   float: left;
   padding-top: 5px;
   padding-right: 5px;
+  font-size: 0.9em;
 }
 .page-view-oira-ws .two-column section #block-exposedformoira-wstools-ws .form-item-sort-by select.custom-select {
   width: auto;
@@ -1689,6 +1705,7 @@ select.custom-select {
   padding: 15px 0 15px 0;
   border-top: 2px solid #786586;
   border-bottom: 2px solid #786586;
+  font-size: 0.9rem;
 }
 .page-view-oira-ws .view .view-content.row {
   margin: 2rem 0 0 0;
@@ -5101,6 +5118,14 @@ body.toolbar-fixed.toolbar-tray-open #header {
   padding-top: 0;
   padding-bottom: 4.3rem;
   font-size: 1.2rem;
+}
+.home-slider .views-field.views-field-field-image {
+  height: 457px;
+  overflow: hidden;
+}
+.home-slider .views-field.views-field-field-image img {
+  height: 457px;
+  object-fit: cover;
 }
 .home-slider .slick-dots {
   bottom: 20px;
