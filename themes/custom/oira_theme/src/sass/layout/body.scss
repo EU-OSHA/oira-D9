@@ -3730,9 +3730,14 @@ body[class*="private-zone-"] {
 }
 
 .section.oira-section > .results-for {
-  display: block;
   margin: 10px 0 -5px;
   line-height: 1;
+  &.show-me {
+    display: block;
+  }
+  &.hide-me {
+    display: none;
+  }
   .searched-text {
     font-family: $font-family-oswald;
     font-size: 2.6rem;

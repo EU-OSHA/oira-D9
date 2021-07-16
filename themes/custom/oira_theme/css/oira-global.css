@@ -4591,9 +4591,14 @@ body[class*=private-zone-] .page-header.h1 {
 }
 
 .section.oira-section > .results-for {
-  display: block;
   margin: 10px 0 -5px;
   line-height: 1;
+}
+.section.oira-section > .results-for.show-me {
+  display: block;
+}
+.section.oira-section > .results-for.hide-me {
+  display: none;
 }
 .section.oira-section > .results-for .searched-text {
   font-family: "Oswald", "Helvetica", Arial, sans-serif;
