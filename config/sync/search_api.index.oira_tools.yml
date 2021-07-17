@@ -8,21 +8,21 @@ dependencies:
     - node
     - search_api
   config:
+    - field.storage.node.body
     - field.storage.node.field_alternative_body
     - field.storage.node.field_co_author
     - field.storage.node.field_country
-    - field.storage.taxonomy_term.field_iso2
-    - field.storage.node.body
-    - field.storage.node.field_third_description
-    - field.storage.node.field_wf_notification
     - field.storage.node.field_image
-    - field.storage.node.field_third_language
+    - field.storage.taxonomy_term.field_iso2
     - field.storage.node.field_language
     - field.storage.node.field_publication_date
     - field.storage.node.field_revised_date
     - field.storage.node.field_sector_category
+    - field.storage.node.field_third_description
+    - field.storage.node.field_third_language
     - field.storage.node.field_third_title
     - field.storage.node.field_tool_link
+    - field.storage.node.field_wf_notification
     - field.storage.node.field_tool_type
     - search_api.server.apachesolr
 third_party_settings:
@@ -336,6 +336,40 @@ processor_settings:
   content_access:
     weights:
       preprocess_query: -30
+  html_filter:
+    all_fields: false
+    fields:
+      - body
+      - title
+    title: false
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignore_character:
+    all_fields: false
+    fields:
+      - title
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
   language_with_fallback: {  }
   rendered_item: {  }
   solr_date_range:

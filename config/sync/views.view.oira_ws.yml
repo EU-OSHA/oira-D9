@@ -1940,20 +1940,7 @@ display:
           empty: false
           content: '<div class="global summary">Showing @start - @end from @total</div>'
           plugin_id: result
-      footer:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: "<script>\r\nlet order = document.getElementById('edit-sort-by--3')\r\n\r\nthis.window.locationhref=\"https://prodd9.oiraproject.eu/en/oira-tools?search_api_fulltext=&sort_by=field_publication_date\"\r\n</script>"
-            format: full_html
-          plugin_id: text
+      footer: {  }
       empty: {  }
       relationships:
         field_country:
